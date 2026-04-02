@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="wrap">
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+    <p><small>Type: {{ .Params.page_type }} · Intent: {{ .Params.search_intent }}</small></p>
+  </header>
+  {{ .Content }}
+  {{ partial "page-type-block.html" . }}
+  {{ partial "related.html" . }}
+</article>
+{{ end }}

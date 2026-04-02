@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <ul class="menu">
+        {{ range .Site.Menus.footer }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <p>Built for solo operators: workflow-first, practical, and implementation-focused.</p>
+  </div>
+</footer>

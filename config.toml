@@ -1,0 +1,89 @@
+baseURL = "https://example.com/"
+languageCode = "en-us"
+title = "Solo Workflow Systems"
+enableRobotsTXT = true
+summaryLength = 28
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  siteDescription = "Workflow-first playbooks for freelancers, consultants, and solo operators."
+  defaultImage = "/og-default.svg"
+  author = "Solo Workflow Systems"
+
+[permalinks]
+  client-workflow-systems = "/workflows/:slug/"
+  software-stack-blueprints = "/guides/:slug/"
+  workflow-comparisons = "/comparisons/:slug/"
+  templates-checklists = "/templates/:slug/"
+  glossary = "/glossary/:slug/"
+  faq = "/faq/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  page_type = "page-types"
+  search_intent = "search-intents"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML"]
+
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 80
+  [[related.indices]]
+    name = "category"
+    weight = 40
+
+[[menu.main]]
+  name = "Workflows"
+  url = "/client-workflow-systems/"
+  weight = 10
+[[menu.main]]
+  name = "Blueprints"
+  url = "/software-stack-blueprints/"
+  weight = 20
+[[menu.main]]
+  name = "Comparisons"
+  url = "/workflow-comparisons/"
+  weight = 30
+[[menu.main]]
+  name = "Templates"
+  url = "/templates-checklists/"
+  weight = 40
+[[menu.main]]
+  name = "Glossary"
+  url = "/glossary/"
+  weight = 50
+[[menu.main]]
+  name = "FAQ"
+  url = "/faq/"
+  weight = 60
+
+[[menu.footer]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+[[menu.footer]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 20
+[[menu.footer]]
+  name = "Editorial Policy"
+  url = "/editorial-policy/"
+  weight = 30
+[[menu.footer]]
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 40
+[[menu.footer]]
+  name = "Terms"
+  url = "/terms/"
+  weight = 50
