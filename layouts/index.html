@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="wrap">
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.summary | default .Site.Params.siteDescription }}</p>
+
+  <section>
+    <h2>Start by category</h2>
+    <ul>
+      <li><a href="/client-workflow-systems/">Client Workflow Systems</a></li>
+      <li><a href="/software-stack-blueprints/">Software Stack Blueprints</a></li>
+      <li><a href="/workflow-comparisons/">Workflow Comparisons</a></li>
+      <li><a href="/templates-checklists/">Templates &amp; Checklists</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Featured workflow pages</h2>
+    <ul>
+      {{ range first 5 (where .Site.RegularPages "Params.page_type" "workflow") }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</div>
+{{ end }}

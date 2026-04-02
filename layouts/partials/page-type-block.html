@@ -1,0 +1,14 @@
+{{ $type := .Params.page_type }}
+{{ if eq $type "workflow" }}
+<section><h2>Workflow checkpoints</h2><p>Document stage handoffs, owners, and outputs for each step.</p></section>
+{{ else if eq $type "comparison" }}
+<section><h2>Decision criteria</h2><p>Compare options by workflow fit, constraints, and tradeoffs.</p></section>
+{{ else if eq $type "template" }}
+<section><h2>How to use this asset</h2><p>Use the checklist/template in sequence and pair it with related guides.</p></section>
+{{ else if eq $type "glossary" }}
+<section><h2>In practice</h2><p>This term is linked to the workflow stage where it matters.</p></section>
+{{ else if eq $type "faq" }}
+<section><h2>Quick answer</h2><p>Keep the answer short, then route the reader to next-step pages.</p></section>
+{{ else }}
+<section><h2>Implementation notes</h2><p>Focus on specific actions, not abstract advice.</p></section>
+{{ end }}
