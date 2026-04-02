@@ -92,3 +92,14 @@ Then execute onboarding with: [Client Onboarding Checklist for Freelancers and C
 - Intake foundation: [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/)
 - End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
 - Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+
+
+## Handoff completion standard
+
+Treat the handoff as complete only when:
+- contract scope and proposal scope match line-for-line,
+- milestone owners are named,
+- invoice triggers are documented,
+- onboarding inputs are ready before kickoff date.
+
+If one item is missing, pause kickoff and close the gap first.

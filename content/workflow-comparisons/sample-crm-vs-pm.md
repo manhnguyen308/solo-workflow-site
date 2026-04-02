@@ -91,3 +91,12 @@ For end-to-end process context, use the anchor page first: [Freelance Client Wor
 1. Buying both CRM and PM tools before process is documented.
 2. Letting sales notes live in chat while delivery lives elsewhere.
 3. Choosing hybrid because it sounds advanced, not because constraints require it.
+
+
+## Quick decision snapshot
+
+- Choose **CRM-first** when lead flow and follow-up reliability are your top bottlenecks.
+- Choose **PM-first** when delivery execution quality and milestone visibility are your top bottlenecks.
+- Choose **Hybrid** only when both lead and delivery complexity are consistently high and you can maintain clear ownership boundaries.
+
+If still unsure, start PM-first for simpler operations and add CRM depth only when pipeline complexity demands it.

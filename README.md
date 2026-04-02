@@ -175,3 +175,8 @@ Immediate next step once unblocked:
 1. Run `hugo version`
 2. Run `hugo --minify --gc`
 3. Execute runbook/checklist in `DAY10_LAUNCH_PACKAGE.md`
+
+
+Launch handoff artifacts:
+- `DAY10_LAUNCH_PACKAGE.md` (inventory, runbook, go/no-go checklist, risk register)
+- `DAY9_LAUNCH_QA.md` (pre-launch QA findings and readiness verdict)

@@ -53,3 +53,8 @@ Use this once per week (same day, same time) to stabilize operations across all 
 - Workflow model: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
 - Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
 - Billing process: [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
+
+
+## Weekly completion rule
+
+Do not mark this checklist complete until one process improvement is captured and scheduled. The checklist is not just maintenance; it is your weekly optimization loop.
