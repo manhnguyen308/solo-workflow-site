@@ -1,238 +1,274 @@
-# Day 10: Final Pre-Launch Package (Content + Readiness + Deployment Handoff)
+﻿# Day 10 Launch Package
 
-## 1) Final high-value content gap pass
+This document is the final launch handoff package after Hugo environment setup and successful build verification.
 
-### Added in Day 10
-- `content/glossary/system-of-record.md` (new support glossary term to reduce recurring confusion in blueprint/comparison pages).
+## 1. Final high-value content gap review
 
-### Why only one new page
-The highest-value unresolved content gap was glossary depth around core operating concepts. Other major launch-critical guides/checklists were already implemented and stronger value came from trust-page polish, launch packaging, and deployment runbook completion.
+### Decision
 
----
+No new launch page was added in this pass.
 
-## 2) Final polish pass completed
+### Why no page was added
+
+The launch set already covers the core workflow, stack, comparison, template, FAQ, glossary, and trust needs for a workflow-first MVP. The highest-value remaining work was polish, defect removal, and verification rather than page expansion.
+
+## 2. Final page polish pass
+
+### Targeted improvements completed
+
+- Removed merge-conflict markers from homepage and trust pages.
+- Rewrote homepage and section hub intros so they route by workflow need, not generic category labels.
+- Strengthened trust pages so they read as usable launch pages rather than placeholders.
+- Fixed a broken internal link in `content/software-stack-blueprints/sample-stack-blueprint.md`.
+- Tightened operator-facing transitions and conclusions in the workflow anchor, intake guide, automation guide, and comparison pages.
+- Clarified decision boundaries in both comparison pages.
+
+### Most important page-level outcomes
+
+- `content/client-workflow-systems/sample-client-workflow.md`
+  - added clearer stage-to-stage implementation links for handoff, delivery QA, invoicing, and offboarding
+  - improved the opening framing and final usage guidance
+- `content/software-stack-blueprints/sample-stack-blueprint.md`
+  - fixed the outdated migration link
+  - sharpened the close so readers do not keep buying tools while undecided
+- `content/workflow-comparisons/sample-crm-vs-pm.md`
+  - improved decision clarity with a fast shortcut section
+- `content/workflow-comparisons/sample-notion-vs-clickup.md`
+  - made the comparison boundary explicit so readers do not confuse workspace choice with system-of-record choice
+
+## 3. Homepage and section hub polish
 
 ### Improved pages
-- Trust/support pages upgraded from placeholder-level:
-  - `content/about/_index.md`
-  - `content/contact/_index.md`
-  - `content/editorial-policy/_index.md`
-  - `content/privacy-policy/_index.md`
-  - `content/terms/_index.md`
-- Glossary hub upgraded with start-here links:
-  - `content/glossary/_index.md`
 
-### Practical polish outcomes
-- clearer value framing and audience fit,
-- stronger correction/update transparency,
-- improved trust-page completeness for MVP launch,
-- better support routing from glossary into core pages.
-
----
-
-## 3) Final homepage and hub polish status
-
-### Home and hubs now provide
-- explicit “start here” sequencing,
-- workflow-first pathways into guides/comparisons/assets,
-- clearer category differentiation.
-
-### Current hub strength
-- Strong: Client Workflow Systems, Software Stack Blueprints, Templates & Checklists.
-- Improved and now adequate: Glossary.
-- Still intentionally concise: FAQ hub (content in page entries is substantive).
-
----
-
-## 4) Launch package inventory
-
-## A) Core implementation content (real pages)
-
-### Client Workflow Systems
-- `content/client-workflow-systems/sample-client-workflow.md`
-- `content/client-workflow-systems/sample-intake-guide.md`
-- `content/client-workflow-systems/proposal-to-contract-handoff.md`
-- `content/client-workflow-systems/workflow-automation-basics-for-solo-service-businesses.md`
-
-### Software Stack Blueprints
-- `content/software-stack-blueprints/sample-stack-blueprint.md`
-- `content/software-stack-blueprints/consultant-va-collaboration-stack-blueprint.md`
-- `content/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system.md`
-
-### Workflow Comparisons
-- `content/workflow-comparisons/sample-crm-vs-pm.md`
-- `content/workflow-comparisons/sample-notion-vs-clickup.md`
-
-### Templates & Checklists
-- `content/templates-checklists/sample-onboarding-checklist.md`
-- `content/templates-checklists/weekly-client-operations-checklist.md`
-- `content/templates-checklists/invoice-payment-workflow-checklist.md`
-- `content/templates-checklists/delivery-qa-checklist-before-client-handoff.md`
-- `content/templates-checklists/client-offboarding-testimonial-template.md`
-
-### Support pages
-- `content/faq/sample-stack-faq.md`
-- `content/glossary/sample-workflow-definition.md`
-- `content/glossary/system-of-record.md`
-
-## B) Hubs and homepage
 - `content/_index.md`
 - `content/client-workflow-systems/_index.md`
 - `content/software-stack-blueprints/_index.md`
 - `content/workflow-comparisons/_index.md`
 - `content/templates-checklists/_index.md`
-- `content/glossary/_index.md`
 - `content/faq/_index.md`
+- `content/glossary/_index.md`
 
-## C) Trust/support pages
+### Outcomes
+
+- clearer start-here routing
+- stronger workflow-first positioning
+- better separation between workflow design, stack choice, comparisons, and implementation assets
+- more credible MVP positioning through visible trust-page links and support-page routing
+
+## 4. Launch package inventory
+
+### Implemented real launch pages
+
+#### Client Workflow Systems
+
+- `content/client-workflow-systems/sample-client-workflow.md`
+- `content/client-workflow-systems/sample-intake-guide.md`
+- `content/client-workflow-systems/proposal-to-contract-handoff.md`
+- `content/client-workflow-systems/workflow-automation-basics-for-solo-service-businesses.md`
+
+#### Software Stack Blueprints
+
+- `content/software-stack-blueprints/sample-stack-blueprint.md`
+- `content/software-stack-blueprints/consultant-va-collaboration-stack-blueprint.md`
+- `content/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system.md`
+
+#### Workflow Comparisons
+
+- `content/workflow-comparisons/sample-crm-vs-pm.md`
+- `content/workflow-comparisons/sample-notion-vs-clickup.md`
+
+#### Templates and Checklists
+
+- `content/templates-checklists/sample-onboarding-checklist.md`
+- `content/templates-checklists/delivery-qa-checklist-before-client-handoff.md`
+- `content/templates-checklists/invoice-payment-workflow-checklist.md`
+- `content/templates-checklists/client-offboarding-testimonial-template.md`
+- `content/templates-checklists/weekly-client-operations-checklist.md`
+
+### Support pages
+
+- `content/faq/sample-stack-faq.md`
+- `content/glossary/sample-workflow-definition.md`
+- `content/glossary/system-of-record.md`
+
+### Trust pages
+
 - `content/about/_index.md`
 - `content/contact/_index.md`
 - `content/editorial-policy/_index.md`
 - `content/privacy-policy/_index.md`
 - `content/terms/_index.md`
 
-## D) Remaining placeholder/incomplete risk
-- Trust pages are now acceptable for MVP, but should receive legal/editorial final review pre-launch.
-- Technical build verification remains blocked pending Hugo availability.
+### Section hubs and homepage
 
----
+- `content/_index.md`
+- `content/client-workflow-systems/_index.md`
+- `content/software-stack-blueprints/_index.md`
+- `content/workflow-comparisons/_index.md`
+- `content/templates-checklists/_index.md`
+- `content/faq/_index.md`
+- `content/glossary/_index.md`
 
-## 5) Deployment verification handoff runbook (when Hugo is available)
+### Remaining placeholders or incomplete pages
 
-## Step 0 — Precheck
-1. Confirm binary exists and is executable.
-2. Confirm working directory is repo root.
+- No launch-critical content gaps were identified.
+- Trust pages are MVP-ready but can still receive optional final legal or editorial review.
 
-## Step 1 — Hugo version verification
+## 5. Hugo environment and verification runbook
+
+### Local binary installed
+
+- `tools/hugo/hugo.exe`
+- `tools/hugo/v0.159.2/hugo.exe`
+
+### Verified Hugo version
+
 ```bash
-hugo version
+tools/hugo/hugo.exe version
 ```
-Success criteria:
-- Command succeeds.
-- Version string is printed.
 
-## Step 2 — Clean production build
+Verified result:
+- `hugo v0.159.2+withdeploy windows/amd64`
+
+### Verified production build
+
 ```bash
-hugo --minify --gc
+tools/hugo/hugo.exe --minify --gc
 ```
-Success criteria:
-- Exit code 0.
-- No fatal front matter/template errors.
 
-## Step 3 — Local preview sanity
+Verified result:
+- build completed successfully
+- `public/` generated cleanly
+- key rendered output confirmed for homepage, trust pages, guides, comparisons, templates, and workflows
+
+### Final preview command before deployment
+
 ```bash
-hugo server -D --disableFastRender
+tools/hugo/hugo.exe server -D --disableFastRender
 ```
-Validate quickly:
-- homepage loads,
-- section hubs load,
-- key pages render,
-- no obvious broken links in top pathways.
 
-## Step 4 — If build fails, inspect first
-1. Front matter format errors in changed content files.
-2. Missing/malformed internal links in recent pages.
-3. Template assumptions in `layouts/_default/single.html` and related partials.
-4. Taxonomy/permalink conflicts in `config.toml`.
+Inspect first:
+- homepage
+- Client Workflow Systems hub
+- Software Stack Blueprints hub
+- Workflow Comparisons hub
+- Templates and Checklists hub
+- About, Contact, Editorial Policy, Privacy Policy, Terms
+- workflow anchor
+- solo stack blueprint
+- CRM vs PM comparison
+- onboarding checklist
 
-## Step 5 — Pre-deploy checks for Cloudflare
-- Confirm generated `public/` is complete.
-- Spot-check canonical/meta output on key pages.
-- Confirm robots/crawl assumptions match launch policy.
-- Confirm trust pages are accessible.
+### Before Cloudflare deployment
 
-## Step 6 — Post-deploy checks
-- Verify homepage + top section hubs + top 10 pages live.
-- Check redirects/URL shape matches permalink strategy.
-- Recheck key internal pathways (workflow anchor → guide → template → comparison).
-- Validate OG/meta tags on a few representative pages.
+- confirm browser preview looks correct
+- confirm homepage and section hubs route to intended pages
+- confirm trust pages are accessible
+- confirm representative title, meta description, canonical, and OG output are sane
 
----
+### After Cloudflare deployment
 
-## 6) Final metadata and structural audit
+- verify homepage loads on the live domain
+- verify top hubs and top launch pages resolve correctly
+- verify key workflow path works end to end
+- verify representative metadata and OG output still look correct in production
 
-### Audit summary
-- Required fields present for implemented `page_type` pages.
-- Page-role usage is consistent (workflow anchor, guide, comparison node, asset page, support).
-- Internal links are intentional and mostly strong across main pathways.
+## 6. Final metadata and structural audit
 
-### Fixes completed
-- Added missing glossary support depth (`system-of-record`).
-- Upgraded trust pages from bare placeholders.
+### Static audit completed
 
-### Remaining watch items
-- Run automated link check once Hugo build is available.
-- Perform final legal/compliance review of trust pages.
+- checked implemented content files for required workflow metadata patterns
+- checked static internal links against current content routes
+- checked homepage and hub routing quality
+- checked for merge-conflict markers in content and docs
+- checked for encoding corruption in edited files
+- checked the outdated route found during the audit
 
----
+### Issues fixed
 
-## 7) Go / no-go checklist
+- merge-conflict markers removed from launch content and docs
+- broken internal link removed from the solo stack blueprint
+- homepage and hubs rewritten for stronger routing
+- comparison and workflow pages tightened where sequencing or decision clarity was weak
 
-## Content readiness
-- [ ] Core workflow anchor pages are complete.
-- [ ] Core blueprint + comparison + checklist pathways are complete.
-- [ ] FAQ/glossary cover common decision blockers.
+### Build verification completed
 
-## Structure/readability readiness
-- [ ] Homepage gives clear start path.
-- [ ] Section hubs provide curated pathways.
-- [ ] Key pages end with actionable next steps.
+- Hugo installed locally into workspace
+- version verified successfully
+- production build verified successfully
+- key output files confirmed in `public/`
 
-## Metadata readiness
-- [ ] Required front matter present on all launch pages.
-- [ ] Descriptions and summaries are specific and non-generic.
-- [ ] Page role and search intent usage is consistent.
+## 7. Go / no-go checklist
 
-## Internal-link readiness
-- [ ] No effective orphan pages in launch set.
-- [ ] Workflow anchors link to implementation assets and comparisons.
-- [ ] Comparisons link back to workflow/blueprint context.
+### Content readiness
 
-## Trust-page readiness
-- [ ] About/Contact/Editorial Policy/Privacy/Terms present and usable.
-- [ ] Disclosure language reviewed before launch.
+- [x] Core workflow anchor is complete
+- [x] Blueprint, comparison, and checklist pathways are complete
+- [x] FAQ and glossary cover the highest-friction support questions
 
-## Build/deployment readiness
-- [ ] `hugo version` succeeds.
-- [ ] `hugo --minify --gc` succeeds.
-- [ ] Preview sanity check completed.
+### Structure and readability readiness
 
-## Post-deploy sanity
-- [ ] Top pathways render correctly in production.
-- [ ] Metadata/OG output validated on representative pages.
+- [x] Homepage gives a clear start path
+- [x] Section hubs route by practical job to be done
+- [x] Important pages end with a clear next action
 
-### Go/No-go definitions
-- **Go:** all checklist groups pass including build/deploy.
-- **No-go:** build fails, major trust pages missing, or critical pathways broken.
-- **Go once Hugo verified:** content/structure pass, but technical build check pending solely due environment blocker.
+### Metadata readiness
 
----
+- [x] Implemented launch pages have required editorial front matter
+- [x] Descriptions and summaries are specific and non-generic
+- [x] Page role, page type, and search intent usage are consistent
 
-## 8) Launch risk register
+### Internal-link readiness
 
-| Risk | Why it matters | Current status | Mitigation | Launch blocker? |
+- [x] No statically detectable broken internal links remain
+- [x] Workflow pages route into implementation assets and comparisons
+- [x] Comparison pages route back into workflow and blueprint context
+
+### Trust-page readiness
+
+- [x] About, Contact, Editorial Policy, Privacy Policy, and Terms are present and usable
+- [ ] Final legal or editorial review is complete if required before launch
+
+### Build and deployment readiness
+
+- [x] `tools/hugo/hugo.exe version` succeeds
+- [x] `tools/hugo/hugo.exe --minify --gc` succeeds
+- [ ] Browser preview sanity check completed
+
+### Post-deploy sanity checks
+
+- [ ] homepage and section hubs render correctly in production
+- [ ] top launch pages render correctly in production
+- [ ] representative metadata and OG output look sane in production
+
+### Launch definitions
+
+- **Go:** all pre-deploy checks pass and browser preview is clean.
+- **No-go:** browser preview or deployment checks reveal rendering, routing, or trust-page issues.
+- **Current status:** build-verified and ready for final preview plus deployment.
+
+## 8. Launch risk register
+
+| Risk | Impact | Current status | Mitigation | Blocker? |
 |---|---|---|---|---|
-| Hugo unavailable in environment | Cannot run final build verification | Open | Provide binary via environment setup or vendored `tools/hugo/hugo` | Yes |
-| Hidden template/content mismatch | Could break build on first real run | Possible | Run `hugo --minify --gc` immediately when binary available | Yes |
-| Trust page legal adequacy | Compliance/reputation risk | Partial | Final legal/editorial pass pre-launch | Potential |
-| Overlap drift as more pages added | Weakens SEO clarity and user paths | Controlled | Keep Day 3 + Day 9 QA gates active | No |
-| Link-path regressions | Reduces usefulness and crawl strength | Possible | Post-build internal link QA sweep | Potential |
+| Browser-only rendering issue not visible in build logs | Could affect usability despite successful build | Open | Run final browser preview with `tools/hugo/hugo.exe server -D --disableFastRender` | Potential |
+| Live-domain deployment issue | Could break routing or metadata after publish | Open | Run Cloudflare post-deploy sanity checks immediately after publish | Potential |
+| Trust-page legal adequacy | Could delay operator approval | Partial | Run final legal or editorial review if required | Potential |
+| Future page additions could weaken page-role clarity | Could blur site positioning over time | Controlled | Keep Day 3 editorial model and this checklist as the gate for new pages | No |
 
----
+## 9. Documentation status
 
-## 9) Final readiness recommendation
+This package and `README.md` now reflect:
+- successful local Hugo installation
+- successful build verification
+- current launch inventory
+- remaining preview and deployment checks
+- exact next-step sequence
 
-**Recommendation:** **Go once Hugo verified**.
+## 10. Final recommendation
 
-Reasoning:
-- Content, hubs, metadata, and internal linking are now strong enough for early MVP launch.
-- Remaining critical blocker is technical verification (`hugo version` + successful build), which is environment-gated rather than content-gated.
+**Recommendation:** proceed to final browser preview and deployment checks.
 
----
+### Exact next step
 
-## 10) First action once blocker is removed
-
-1. Run `hugo version`.
-2. Run `hugo --minify --gc`.
-3. Resolve any build-time content/template errors immediately.
-4. Run preview sanity and deploy checklist.
+Run `tools/hugo/hugo.exe server -D --disableFastRender` from the repo root.

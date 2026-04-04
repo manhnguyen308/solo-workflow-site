@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "How to Migrate from Scattered Tools to One Workflow System"
 description = "A step-by-step migration guide for freelancers consolidating fragmented tools into a reliable workflow-first system."
 summary = "Use this migration playbook to audit your current stack, preserve critical data, and move to a cleaner operating system without service disruption."
@@ -62,7 +62,7 @@ Document these rules before migration:
 ## Step 5: Protect active client operations during migration
 
 - Do not change system for all clients simultaneously.
-- Pilot with 1–2 active projects first.
+- Pilot with 1-2 active projects first.
 - Keep a rollback note for each migration step.
 
 ## Step 6: Stabilize with weekly operations review

@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "CRM vs Project Management Tool for Client Workflows"
 description = "Choose CRM-first, PM-first, or hybrid based on your client workflow complexity, lead volume, and handoff needs."
 summary = "This comparison helps solo operators pick the right system of record and avoid fragmented client operations."
@@ -74,11 +74,17 @@ For end-to-end process context, use the anchor page first: [Freelance Client Wor
 | Setup complexity | Medium | Low | High |
 | Best early-stage fit | If lead-heavy | If delivery-heavy | Rarely |
 
-## Choose this if…
+## Choose this if
 
 - **Choose CRM-first** if you lose deals due to weak follow-up and have a meaningful sales pipeline.
 - **Choose PM-first** if work delivery quality is your bottleneck and lead flow is manageable.
 - **Choose Hybrid** only if you can define strict ownership rules and maintain both systems consistently.
+
+## Fast decision shortcut
+
+- If more revenue is lost before kickoff than after kickoff, default CRM-first.
+- If more friction appears after kickoff than before kickoff, default PM-first.
+- If both are true and both are persistent, evaluate hybrid carefully.
 
 ## Next-step implementation by model
 
@@ -91,7 +97,6 @@ For end-to-end process context, use the anchor page first: [Freelance Client Wor
 1. Buying both CRM and PM tools before process is documented.
 2. Letting sales notes live in chat while delivery lives elsewhere.
 3. Choosing hybrid because it sounds advanced, not because constraints require it.
-
 
 ## Quick decision snapshot
 

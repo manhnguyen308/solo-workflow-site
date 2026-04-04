@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "Privacy Policy"
 description = "Privacy commitments for visitors of Solo Workflow Systems."
 +++
@@ -9,7 +9,7 @@ This site is designed to collect minimal data required for basic operation and a
 
 - basic visit analytics,
 - voluntary contact submissions,
-- technical logs for site reliability.
+- technical logs for site reliability and abuse prevention.
 
 ## What we do not do
 
@@ -17,4 +17,10 @@ This site is designed to collect minimal data required for basic operation and a
 - collect unnecessary personal details,
 - require account creation for reading core content.
 
-If tooling changes, this policy is updated accordingly.
+## Cookies and analytics
+
+If analytics tooling uses cookies or similar identifiers, we keep it limited to site performance and content relevance. If tooling changes, this policy is updated.
+
+## Contact
+
+Questions about privacy can be sent via [Contact](/contact/).

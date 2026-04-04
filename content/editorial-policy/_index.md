@@ -1,7 +1,9 @@
-+++
+﻿+++
 title = "Editorial Policy"
 description = "How recommendations are evaluated, updated, and disclosed on Solo Workflow Systems."
 +++
+
+Solo Workflow Systems is workflow-first. We do not publish generic tool lists without operational context.
 
 ## Editorial principles
 
@@ -18,10 +20,16 @@ Every comparison page must:
 - include tradeoffs and failure modes,
 - avoid declaring a universal winner.
 
+## Source and update standards
+
+- High-intent pages (workflow anchors, stack blueprints, key comparisons) are reviewed on a recurring cadence.
+- If a workflow decision is time-sensitive, we state the assumptions and update when they change.
+
 ## Monetization transparency
 
-If partner/affiliate links are used, they are disclosed clearly and never replace scenario-based recommendation logic.
+- If partner or affiliate links are used, they are disclosed clearly.
+- Monetization does not override scenario-based recommendations.
 
-## Update policy
+## Corrections
 
-High-intent pages (workflow anchors, stack blueprints, key comparisons) are reviewed on a recurring cadence and corrected when outdated.
+If you spot a factual error or unclear recommendation boundary, use the correction format on the Contact page: [Contact](/contact/).

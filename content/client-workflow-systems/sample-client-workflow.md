@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "Freelance Client Workflow System: Inquiry to Final Payment"
 description = "A practical end-to-end workflow for solo freelancers who need reliable client handoffs from lead intake to payment and offboarding."
 summary = "Use this six-stage workflow to run client work consistently, reduce missed handoffs, and tighten operations without overcomplicating your stack."
@@ -13,14 +13,14 @@ related = ["/client-workflow-systems/sample-intake-guide/", "/software-stack-blu
 featured = true
 +++
 
-Most solo operators do not have a client delivery problem—they have a **handoff problem**. Leads come in one way, proposals go out another way, delivery happens in a third tool, and billing is managed whenever there is time. This workflow is designed to stop that drift.
+Most solo operators do not have a client delivery problem. They have a **handoff problem**. Leads come in one way, proposals go out another way, delivery happens in a third tool, and billing gets handled whenever there is time. This workflow is designed to stop that drift.
 
 Use this page as the anchor model for your operations. Then implement each stage using the linked guide, comparison, and checklist pages.
 
 ## Who this workflow is for (and not for)
 
 **Best for:**
-- Freelancers and consultants running 3–20 active client engagements.
+- Freelancers and consultants running 3-20 active client engagements.
 - Operators who sell scoped projects, advisory retainers, or a mix of both.
 - Teams of one (or one plus a part-time assistant) who need consistency more than complexity.
 
@@ -30,12 +30,12 @@ Use this page as the anchor model for your operations. Then implement each stage
 
 ## The 6-stage workflow map
 
-1. **Intake and qualification** – collect required context and decide if the lead is a fit.  
-2. **Proposal and contract handoff** – confirm scope, timeline, terms, and success criteria.  
-3. **Onboarding** – align communication cadence, access, assets, and kickoff scope.  
-4. **Delivery and QA** – execute work in milestones with visible status and quality checks.  
-5. **Invoicing and payment** – issue invoice tied to milestones and follow a clear follow-up rhythm.  
-6. **Offboarding and expansion** – close cleanly, request testimonial, and identify next engagement opportunity.
+1. **Intake and qualification** - collect required context and decide if the lead is a fit.  
+2. **Proposal and contract handoff** - confirm scope, timeline, terms, and success criteria.  
+3. **Onboarding** - align communication cadence, access, assets, and kickoff scope.  
+4. **Delivery and QA** - execute work in milestones with visible status and quality checks.  
+5. **Invoicing and payment** - issue invoice tied to milestones and follow a clear follow-up rhythm.  
+6. **Offboarding and expansion** - close cleanly, request testimonial, and identify next engagement opportunity.
 
 ## Stage-by-stage operating model
 
@@ -53,6 +53,8 @@ Implementation next step: [How to Build a Client Intake and Qualification Workfl
 
 Critical handoff rule: no kickoff date is set until scope, timeline, and owner responsibilities are explicit.
 
+Implementation next step: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
+
 ### 3) Onboarding
 **Goal:** remove uncertainty in the first week of engagement.  
 **Inputs:** signed agreement, stakeholder contacts, project constraints.  
@@ -65,22 +67,28 @@ Implementation asset: [Client Onboarding Checklist for Freelancers and Consultan
 **Inputs:** project plan, client assets, milestone deadlines.  
 **Output:** accepted deliverables with documented QA pass.
 
+Implementation asset: [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/).
+
 ### 5) Invoicing and payment
 **Goal:** convert completed work to collected revenue with minimal admin overhead.  
 **Inputs:** milestone completion, invoice schedule, payment terms.  
 **Output:** paid invoice or formal follow-up sequence.
+
+Implementation asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/).
 
 ### 6) Offboarding and expansion
 **Goal:** close professionally and preserve future pipeline value.  
 **Inputs:** delivered scope, outcomes summary, client feedback.  
 **Output:** testimonial request, closeout doc, and next-step opportunity.
 
+Implementation asset: [Client Offboarding + Testimonial Request Template](/templates-checklists/client-offboarding-testimonial-template/).
+
 ## Common failure points (and practical fixes)
 
 | Failure point | Why it happens | Practical fix |
 |---|---|---|
 | Too many discovery calls with poor-fit leads | No qualification criteria | Use a go/no-go intake rubric before calendar booking |
-| Scope disputes mid-project | Sales and delivery handoff is fuzzy | Add “in-scope/out-of-scope” lines before contract signing |
+| Scope disputes mid-project | Sales and delivery handoff is fuzzy | Add "in-scope/out-of-scope" lines before contract signing |
 | Chaotic kickoff | No onboarding sequence | Use a checklist with ownership per item |
 | Late invoices | Billing tied to memory | Tie invoice trigger to milestone completion events |
 | No referrals or repeat work | Offboarding skipped | Include a fixed closeout + testimonial step |
@@ -113,3 +121,5 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 3. Decide operating system type: [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).  
 4. Execute onboarding consistently: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).  
 5. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/).
+
+If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

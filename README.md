@@ -1,30 +1,53 @@
-# Solo Workflow Systems (Hugo Foundation)
+# Solo Workflow Systems
 
-This repository now contains a minimal custom Hugo setup aligned to the Day 1–Day 5 strategy work.
+Workflow-first Hugo site for freelancers and solo service businesses. The site is intentionally positioned around client operations, stack blueprints, implementation guides, and practical assets, not generic software reviews.
 
-## Structure
+## Current state
 
-- `config.toml`: site config, menus, taxonomies, permalinks, related content settings.
-- `content/`: section indexes, trust/support pages, and sample pages for each core page type.
-- `layouts/`: lightweight templates (`baseof`, home, list, single, taxonomy) and reusable partials.
-- `archetypes/`: content-entry templates for `guide`, `workflow`, `comparison`, `template`, `glossary`, and `faq`.
-- `static/`: static assets, including default OG image and base CSS.
-- `assets/`: source CSS location for future pipeline use.
-- `data/`: reserved for future lightweight structured data.
+- Strategy, architecture, editorial model, and launch content set are in place.
+- Core launch pages, section hubs, and trust pages exist.
+- Metadata QA and at least one internal-link QA pass have already been completed.
+- Technical Hugo verification is still pending in a Hugo-capable environment.
+- A local Hugo binary may exist under `tools/hugo/`, but build verification should only be treated as complete after a real run in the target environment.
 
-## How this maps to the workflow-first model
+Current launch verdict:
+- Content/model: nearly ready
+- Technical verification: blocked until Hugo can run cleanly
+- Deployment recommendation: go once Hugo is verified
 
-- Core editorial sections are represented directly in `content/`:
-  - `client-workflow-systems`
-  - `software-stack-blueprints`
-  - `workflow-comparisons`
-  - `templates-checklists`
-  - `glossary`
-  - `faq`
-- Trust pages are included as launch placeholders: About, Contact, Editorial Policy, Privacy Policy, Terms.
-- Front matter fields in archetypes align with the editorial model (`page_type`, `search_intent`, `page_role`, `related`, etc.).
+## Project structure
 
-## Creating new content
+- `config.toml`: site configuration, permalinks, menus, taxonomies, and related content settings.
+- `content/`: homepage, section hubs, launch pages, glossary/FAQ support, and trust pages.
+- `layouts/`: Hugo templates and reusable partials.
+- `archetypes/`: content templates for workflow, guide, comparison, template, glossary, and FAQ pages.
+- `static/`: static assets and generated defaults.
+- `public/`: generated output if a build has already been run elsewhere.
+- `tools/hugo/`: vendored Hugo binaries and related files if present.
+
+## Launch content map
+
+Core sections in `content/`:
+- `client-workflow-systems`
+- `software-stack-blueprints`
+- `workflow-comparisons`
+- `templates-checklists`
+- `glossary`
+- `faq`
+
+Trust/support sections:
+- `about`
+- `contact`
+- `editorial-policy`
+- `privacy-policy`
+- `terms`
+
+Key launch docs:
+- `DAY9_LAUNCH_QA.md`
+- `DAY10_LAUNCH_PACKAGE.md`
+- `DAY11_LAUNCH_FINALIZATION.md`
+
+## Content creation
 
 Examples:
 
@@ -37,146 +60,22 @@ hugo new --kind glossary glossary/new-term.md
 hugo new --kind faq faq/new-question.md
 ```
 
-Then fill required front matter and write content sections from the brief.
+Then fill the required front matter and keep the page aligned to the workflow-first editorial model.
 
-## Local build
+## What still cannot be verified here
 
-```bash
-hugo server -D
-```
+- Final Hugo build success
+- Template/rendering correctness across the full site
+- Generated metadata and canonical output
+- Final production deploy behavior on Cloudflare
 
-For production build:
+Do not claim technical readiness until those checks are completed in a Hugo-capable environment.
 
-```bash
-hugo --minify
-```
+## Next steps in a Hugo-capable environment
 
-## Day 7 focus
-
-- Replace placeholders with real content from Day 5 briefs.
-- Add section-specific visual refinements (still lightweight).
-- Validate internal link graph and metadata completeness for all launch pages.
-
-
-## Day 7 status
-
-Implemented as real draft content:
-- `content/client-workflow-systems/sample-client-workflow.md` (workflow anchor)
-- `content/software-stack-blueprints/sample-stack-blueprint.md` (stack blueprint)
-- `content/client-workflow-systems/sample-intake-guide.md` (practical guide)
-- `content/workflow-comparisons/sample-crm-vs-pm.md` (comparison)
-- `content/templates-checklists/sample-onboarding-checklist.md` (template/checklist)
-- `content/workflow-comparisons/sample-notion-vs-clickup.md` (supporting comparison)
-- `content/faq/sample-stack-faq.md` (supporting FAQ)
-- `content/glossary/sample-workflow-definition.md` (supporting glossary)
-
-Still placeholder-level for Day 8:
-- Trust/support pages (`about`, `contact`, `editorial-policy`, `privacy-policy`, `terms`).
-- Additional launch pages from the Day 4 top-20 set.
-
-Day 8 should focus on:
-1. Proposal-to-contract handoff guide
-2. Weekly operations checklist
-3. Invoice/payment checklist
-4. Offboarding template
-5. Delivery QA checklist
-
-
-## Day 8 status
-
-Implemented second-wave real pages:
-- `content/client-workflow-systems/proposal-to-contract-handoff.md`
-- `content/templates-checklists/weekly-client-operations-checklist.md`
-- `content/templates-checklists/invoice-payment-workflow-checklist.md`
-- `content/templates-checklists/client-offboarding-testimonial-template.md`
-- `content/templates-checklists/delivery-qa-checklist-before-client-handoff.md`
-
-Also improved:
-- Section hubs (`content/_index.md`, `content/client-workflow-systems/_index.md`, `content/software-stack-blueprints/_index.md`, `content/templates-checklists/_index.md`) with start-here flows and curated reading sequences.
-- FAQ linkage with handoff and payment answers in `content/faq/sample-stack-faq.md`.
-
-Launch-readiness snapshot:
-- Strongest sections: Client Workflow Systems, Templates & Checklists.
-- Still thin: trust pages (`about`, `contact`, `editorial-policy`, `privacy-policy`, `terms`) and glossary depth.
-- Next missing launch pages: migration guide, automation basics, consultant+VA blueprint.
-
-Day 9 focus:
-1. Implement remaining high-priority blueprint/guide pages (migration + automation + consultant/VA setup).
-2. Add delivery-stage and offboarding cross-links to all relevant pages.
-3. Expand glossary and FAQ with 3–5 high-friction terms/questions.
-4. Run full Hugo build/link QA once Hugo CLI is available in environment setup.
-
-
-### Hugo tooling verification (Day 8)
-
-- Hugo was **not preinstalled** in this environment (`hugo: command not found`).
-- Installation attempts were made via:
-  - Ubuntu apt package download (`apt-get download hugo`)
-  - Direct GitHub release download (`curl` from `github.com/gohugoio/hugo/releases/...`)
-- Both methods failed with `403 Forbidden` due outbound access restrictions to package/release hosts.
-- Because Hugo could not be installed, a full build verification (`hugo --minify`) is currently blocked.
-
-To unblock build validation, provide one of the following in environment setup:
-1. Allowlist access to apt mirror and GitHub release domains.
-2. Provide a vendored binary at `tools/hugo/hugo` and run `tools/hugo/hugo version`.
-
-Current Day 8 build state:
-- Hugo version used: **N/A (blocked by environment restrictions)**.
-- Build verification: **Not runnable until Hugo binary is available**.
-
-
-## Day 9 status
-
-Environment/build verification:
-- Hugo still unavailable in this environment.
-- `hugo version` fails (`command not found`).
-- `apt-get download hugo` failed with `403 Forbidden`.
-- GitHub release download attempt failed with `403 Forbidden`.
-- Build verification remains blocked until a Hugo binary is provided by environment setup or vendored at `tools/hugo/hugo`.
-
-Day 9 content/QA work completed:
-- Added migration guide: `content/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system.md`
-- Added automation guide: `content/client-workflow-systems/workflow-automation-basics-for-solo-service-businesses.md`
-- Added consultant+VA blueprint: `content/software-stack-blueprints/consultant-va-collaboration-stack-blueprint.md`
-- Updated homepage/section hubs and FAQ routing for stronger launch pathways.
-- Added launch-threshold QA report: `DAY9_LAUNCH_QA.md`.
-
-Current launch verdict:
-- **Nearly ready (content/model), Blocked (technical verification)**.
-
-Day 10 focus:
-1. Unblock Hugo binary and run real build verification.
-2. Upgrade trust pages from placeholders to launch-quality content.
-3. Expand glossary and FAQ support depth.
-4. Perform final internal-link pathway sweep.
-
-
-## Day 10 status
-
-Final pre-launch packaging completed:
-- Added glossary support page: `content/glossary/system-of-record.md`.
-- Upgraded trust/support pages from placeholder-level to MVP-ready content:
-  - `content/about/_index.md`
-  - `content/contact/_index.md`
-  - `content/editorial-policy/_index.md`
-  - `content/privacy-policy/_index.md`
-  - `content/terms/_index.md`
-- Updated glossary hub: `content/glossary/_index.md`.
-- Added final launch package and deployment handoff runbook: `DAY10_LAUNCH_PACKAGE.md`.
-
-Technical verification status:
-- Hugo remains unavailable in this environment (`403 Forbidden` on install/download attempts).
-- Build verification remains blocked until Hugo binary is available.
-
-Final readiness recommendation:
-- **Go once Hugo verified**.
-
-Immediate next step once unblocked:
-1. Run `hugo version`
-2. Run `hugo --minify --gc`
-3. Execute runbook/checklist in `DAY10_LAUNCH_PACKAGE.md`
-
-
-Launch handoff artifacts:
-- `DAY10_LAUNCH_PACKAGE.md` (inventory, runbook, go/no-go checklist, risk register)
-- `DAY9_LAUNCH_QA.md` (pre-launch QA findings and readiness verdict)
+1. Confirm the Hugo binary that will be used for verification.
+2. Run `hugo version`.
+3. Run `hugo --minify --gc`.
+4. Review the generated `public/` output starting with homepage, section hubs, trust pages, and top launch pages.
+5. Execute the verification and deployment checklist in `DAY11_LAUNCH_FINALIZATION.md`.
+6. Deploy to Cloudflare only after the runbook checks pass.

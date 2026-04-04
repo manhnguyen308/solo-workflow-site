@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "Workflow Automation Basics for Solo Service Businesses"
 description = "A practical automation guide for solo operators who want to reduce repetitive admin without creating brittle systems."
 summary = "Automate only stable steps: use this guide to choose safe automation targets, avoid over-automation, and keep operations reliable."
@@ -13,7 +13,9 @@ related = ["/client-workflow-systems/sample-client-workflow/", "/templates-check
 featured = true
 +++
 
-Automation should remove repetitive low-risk admin—not hide process problems. This guide helps solo operators automate safely, stage by stage.
+Automation should remove repetitive low-risk admin, not hide process problems. This guide helps solo operators automate safely, stage by stage.
+
+If the manual workflow is still changing weekly, do not automate it yet. Stabilize the sequence first, then automate the repeatable parts.
 
 ## What to automate first
 
@@ -65,3 +67,7 @@ Before automating a step, confirm:
 - Workflow anchor: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
 - Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
 - Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+
+## Final rule
+
+One reliable automation is better than five brittle ones. Start with the step you repeat every week, confirm that fallback is clear, and only then expand the system.

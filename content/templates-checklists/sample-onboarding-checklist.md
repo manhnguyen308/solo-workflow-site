@@ -20,6 +20,17 @@ Use this checklist after contract signing and before delivery begins. The goal i
 Use immediately after proposal/contract handoff and before kickoff meeting.  
 Do not skip this stage because "the client already understands the project." Most avoidable delivery friction begins here.
 
+## Fast operator sequence
+
+Run the checklist in this order:
+1. confirm scope and approval ownership,
+2. collect access and assets,
+3. lock communication rules,
+4. set dates and milestone reminders,
+5. confirm invoice and change-control rules.
+
+If an item is incomplete, pause kickoff instead of carrying the ambiguity into delivery.
+
 ## Onboarding checklist (operator version)
 
 ### A) Scope and success alignment
@@ -54,6 +65,12 @@ If any answer below is "no," do not start delivery yet:
 - Does each deliverable have an owner and due date?
 - Does the client know where updates and files will appear?
 - Are payment terms and milestone triggers clear?
+
+## Immediate next action after completion
+
+- Create the first live milestone in your system of record.
+- Send the kickoff summary with owners, dates, and update cadence.
+- Queue the first billing trigger if a deposit or kickoff invoice applies.
 
 ## Use this checklist with
 

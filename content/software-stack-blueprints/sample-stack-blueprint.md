@@ -84,7 +84,7 @@ Upgrade only when one of these is true:
 - onboarding repeats identical manual admin every week,
 - invoice follow-up consumes more than 2 hours/week.
 
-If your current stack is scattered, next read: [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) (to be implemented in a later wave).
+If your current stack is scattered, use [How to Migrate from Scattered Tools to One Workflow System](/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system/) before buying more tools. Consolidation usually matters more than adding software.
 
 ## Example budget scenarios
 
@@ -103,3 +103,7 @@ Use this only if active client volume and workflow complexity justify dedicated 
 2. Choose system-of-record model via [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).  
 3. Implement intake discipline via [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).  
 4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/workflow-comparisons/sample-notion-vs-clickup/).
+
+## MVP recommendation
+
+For most launch-stage solo operators, the best default is a PM-first delivery workspace, basic invoicing, a lightweight document layer, and manual checklists around handoffs. Add more software only after one repeated bottleneck is visible for several weeks in a row.

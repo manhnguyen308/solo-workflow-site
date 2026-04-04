@@ -1,4 +1,4 @@
-+++
+﻿+++
 title = "How to Build a Client Intake and Qualification Workflow"
 description = "A practical intake workflow that helps solo operators qualify leads quickly and protect delivery capacity."
 summary = "Set up required intake fields, a fit-scoring model, and a clear go/no-go decision path in one session."
@@ -13,7 +13,7 @@ related = ["/client-workflow-systems/sample-client-workflow/", "/workflow-compar
 featured = false
 +++
 
-If every inquiry becomes a discovery call, you are not running intake—you are running reactive sales support. A good intake workflow protects your delivery calendar and prevents misaligned projects from entering your pipeline.
+If every inquiry becomes a discovery call, you are not running intake; you are running reactive sales support. A good intake workflow protects your delivery calendar and prevents misaligned projects from entering your pipeline.
 
 ## Outcome definition
 
@@ -36,7 +36,7 @@ If a field does not affect go/no-go, remove it.
 
 ## Step 2: Build qualification criteria
 
-Use a simple scoring rubric (0–2 per dimension):
+Use a simple scoring rubric (0-2 per dimension):
 
 | Dimension | 0 | 1 | 2 |
 |---|---|---|---|
@@ -46,15 +46,15 @@ Use a simple scoring rubric (0–2 per dimension):
 | Decision readiness | Research stage | Mixed signals | Ready to decide |
 
 **Rule:**
-- 0–3 = reject/nurture
-- 4–6 = review manually
-- 7–8 = book discovery
+- 0-3 = reject or nurture
+- 4-6 = review manually
+- 7-8 = book discovery
 
 ## Step 3: Add decision tree logic
 
-- If budget is below minimum and timeline is unrealistic → reject.
-- If fit is strong but timing is off → nurture.
-- If fit, budget, and readiness are aligned → discovery booking.
+- If budget is below minimum and timeline is unrealistic -> reject.
+- If fit is strong but timing is off -> nurture.
+- If fit, budget, and readiness are aligned -> discovery booking.
 
 This keeps decisions consistent even during busy weeks.
 
@@ -68,6 +68,8 @@ For discovery-qualified leads, pass these fields forward:
 - decision criteria.
 
 Do not start proposal drafting until this handoff packet exists.
+
+Next stage once a lead qualifies: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
 
 ## Common mistakes (and fixes)
 
