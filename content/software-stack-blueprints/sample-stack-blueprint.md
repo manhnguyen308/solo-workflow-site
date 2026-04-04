@@ -9,13 +9,13 @@ tags = ["stack-planning", "budget", "workflow-systems"]
 page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
-related = ["/client-workflow-systems/sample-client-workflow/", "/workflow-comparisons/sample-crm-vs-pm/", "/workflow-comparisons/sample-notion-vs-clickup/", "/client-workflow-systems/sample-intake-guide/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/"]
 featured = true
 +++
 
 Most freelancers do not fail because they chose the "wrong" tool. They fail because they buy too much software before their workflow is stable. This blueprint gives you a **minimum viable stack** for where you are now, plus clear signs for when to upgrade.
 
-If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/).
+If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Lean stack principles (non-negotiable)
 
@@ -64,7 +64,7 @@ You need coordination consistency and lower admin drag.
 | Billing | Simple invoicing with reminders | Payment delays beyond terms | Layering finance tools before process discipline |
 | Automation | Mostly manual checklists | Same action repeated weekly | Automating unstable processes |
 
-Need help with system-of-record choice? Use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+Need help with system-of-record choice? Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## What not to buy yet
 
@@ -84,7 +84,7 @@ Upgrade only when one of these is true:
 - onboarding repeats identical manual admin every week,
 - invoice follow-up consumes more than 2 hours/week.
 
-If your current stack is scattered, use [How to Migrate from Scattered Tools to One Workflow System](/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system/) before buying more tools. Consolidation usually matters more than adding software.
+If your current stack is scattered, use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) before buying more tools. Consolidation usually matters more than adding software.
 
 ## Example budget scenarios
 
@@ -100,9 +100,9 @@ Use this only if active client volume and workflow complexity justify dedicated 
 ## Implementation next steps
 
 1. Validate your stage with the workflow anchor page.  
-2. Choose system-of-record model via [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).  
-3. Implement intake discipline via [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).  
-4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/workflow-comparisons/sample-notion-vs-clickup/).
+2. Choose system-of-record model via [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).  
+3. Implement intake discipline via [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
+4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 
 ## MVP recommendation
 

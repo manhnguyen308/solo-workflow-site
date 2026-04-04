@@ -9,7 +9,7 @@ tags = ["migration", "stack-cleanup", "workflow-system"]
 page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
-related = ["/software-stack-blueprints/sample-stack-blueprint/", "/workflow-comparisons/sample-crm-vs-pm/", "/client-workflow-systems/sample-client-workflow/", "/templates-checklists/weekly-client-operations-checklist/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
@@ -42,7 +42,7 @@ Choose model before moving data:
 - PM-first,
 - Hybrid (only if complexity justifies it).
 
-Use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/) if uncertain.
+Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if uncertain.
 
 ## Step 3: Define minimum viable workflow rules
 
@@ -67,7 +67,7 @@ Document these rules before migration:
 
 ## Step 6: Stabilize with weekly operations review
 
-After migration, run [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/) for at least 4 weeks to identify gaps and fix process drift.
+After migration, run [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) for at least 4 weeks to identify gaps and fix process drift.
 
 ## Common migration mistakes
 
@@ -78,6 +78,6 @@ After migration, run [Weekly Client Operations Checklist (Solo Business)](/templ
 
 ## Related pages
 
-- Core blueprint: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- End-to-end flow: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Decision support: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+- Core blueprint: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- End-to-end flow: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Decision support: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)

@@ -9,7 +9,7 @@ tags = ["comparison", "crm", "project-management", "workflow-fit"]
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
-related = ["/software-stack-blueprints/sample-stack-blueprint/", "/client-workflow-systems/sample-client-workflow/", "/client-workflow-systems/sample-intake-guide/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/"]
 featured = false
 +++
 
@@ -24,7 +24,7 @@ You are choosing where the truth about client work lives:
 - **PM-first model** (delivery execution as the center)
 - **Hybrid model** (both, with explicit boundaries)
 
-For end-to-end process context, use the anchor page first: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/).
+For end-to-end process context, use the anchor page first: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Model 1: CRM-first
 
@@ -88,9 +88,9 @@ For end-to-end process context, use the anchor page first: [Freelance Client Wor
 
 ## Next-step implementation by model
 
-- If CRM-first: implement stricter intake rules with [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).
-- If PM-first: build delivery and onboarding consistency with [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).
-- For any model: align tool spend with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/).
+- If CRM-first: implement stricter intake rules with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
+- If PM-first: build delivery and onboarding consistency with [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+- For any model: align tool spend with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 ## Common missteps to avoid
 

@@ -9,7 +9,7 @@ tags = ["automation", "operations", "solo-business"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/client-workflow-systems/sample-client-workflow/", "/templates-checklists/weekly-client-operations-checklist/", "/software-stack-blueprints/sample-stack-blueprint/", "/faq/sample-stack-faq/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = true
 +++
 
@@ -54,7 +54,7 @@ Before automating a step, confirm:
 2. Define trigger, action, and owner.
 3. Test on one client cycle.
 4. Add fallback and error logging.
-5. Review weekly via [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/).
+5. Review weekly via [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/).
 
 ## Signs you over-automated
 
@@ -64,9 +64,9 @@ Before automating a step, confirm:
 
 ## Related pages
 
-- Workflow anchor: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+- Workflow anchor: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
 ## Final rule
 

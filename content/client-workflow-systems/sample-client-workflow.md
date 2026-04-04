@@ -9,7 +9,7 @@ tags = ["client-workflow", "operations", "service-delivery"]
 page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
-related = ["/client-workflow-systems/sample-intake-guide/", "/software-stack-blueprints/sample-stack-blueprint/", "/workflow-comparisons/sample-crm-vs-pm/", "/templates-checklists/sample-onboarding-checklist/", "/faq/sample-stack-faq/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = true
 +++
 
@@ -44,7 +44,7 @@ Use this page as the anchor model for your operations. Then implement each stage
 **Inputs:** inquiry form, referral context, initial constraints.  
 **Output:** clear outcome: reject, nurture, or schedule discovery.
 
-Implementation next step: [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).
+Implementation next step: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 
 ### 2) Proposal and contract handoff
 **Goal:** ensure sales promises match execution reality.  
@@ -53,35 +53,35 @@ Implementation next step: [How to Build a Client Intake and Qualification Workfl
 
 Critical handoff rule: no kickoff date is set until scope, timeline, and owner responsibilities are explicit.
 
-Implementation next step: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
+Implementation next step: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
 ### 3) Onboarding
 **Goal:** remove uncertainty in the first week of engagement.  
 **Inputs:** signed agreement, stakeholder contacts, project constraints.  
 **Output:** kickoff-ready project with access, comms cadence, and first milestone.
 
-Implementation asset: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).
+Implementation asset: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
 ### 4) Delivery and QA
 **Goal:** produce work predictably and reduce revision churn.  
 **Inputs:** project plan, client assets, milestone deadlines.  
 **Output:** accepted deliverables with documented QA pass.
 
-Implementation asset: [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/).
+Implementation asset: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/).
 
 ### 5) Invoicing and payment
 **Goal:** convert completed work to collected revenue with minimal admin overhead.  
 **Inputs:** milestone completion, invoice schedule, payment terms.  
 **Output:** paid invoice or formal follow-up sequence.
 
-Implementation asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/).
+Implementation asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
 
 ### 6) Offboarding and expansion
 **Goal:** close professionally and preserve future pipeline value.  
 **Inputs:** delivered scope, outcomes summary, client feedback.  
 **Output:** testimonial request, closeout doc, and next-step opportunity.
 
-Implementation asset: [Client Offboarding + Testimonial Request Template](/templates-checklists/client-offboarding-testimonial-template/).
+Implementation asset: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/).
 
 ## Common failure points (and practical fixes)
 
@@ -102,7 +102,7 @@ You do not need a large stack to run this system. Use one tool per critical cate
 - Billing and payment tracking
 - Communication hub
 
-If you are deciding between systems of record, use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/). For overall stack design, use [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/).
+If you are deciding between systems of record, use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/). For overall stack design, use [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 ## First 7-day implementation plan
 
@@ -116,10 +116,10 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 
 ## Where to go next
 
-1. Build intake logic: [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).  
-2. Choose your stack model: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/).  
-3. Decide operating system type: [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).  
-4. Execute onboarding consistently: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).  
-5. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/).
+1. Build intake logic: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
+2. Choose your stack model: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).  
+3. Decide operating system type: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).  
+4. Execute onboarding consistently: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).  
+5. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
 
 If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

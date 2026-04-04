@@ -1,10 +1,24 @@
 {{ define "main" }}
 <div class="wrap">
   <h1>{{ .Title }}</h1>
+  {{ if eq .Kind "section" }}
+    {{ with .Content }}<div>{{ . }}</div>{{ end }}
+    {{ if gt (len .Pages) 0 }}
+    <ul>
+      {{ range .Pages.ByDate.Reverse }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  {{ else }}
   <ul>
     {{ range .Data.Terms.Alphabetical }}
       <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
     {{ end }}
   </ul>
+  {{ end }}
 </div>
 {{ end }}

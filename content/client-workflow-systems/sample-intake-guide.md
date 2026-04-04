@@ -9,7 +9,7 @@ tags = ["intake", "qualification", "lead-filtering"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/client-workflow-systems/sample-client-workflow/", "/workflow-comparisons/sample-crm-vs-pm/", "/templates-checklists/sample-onboarding-checklist/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -69,7 +69,7 @@ For discovery-qualified leads, pass these fields forward:
 
 Do not start proposal drafting until this handoff packet exists.
 
-Next stage once a lead qualifies: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
+Next stage once a lead qualifies: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
 ## Common mistakes (and fixes)
 
@@ -84,9 +84,9 @@ Next stage once a lead qualifies: [Proposal-to-Contract Handoff Workflow Setup](
 
 ## Tool and system notes
 
-If your intake data lives separately from project execution, align your system-of-record strategy here: [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+If your intake data lives separately from project execution, align your system-of-record strategy here: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
-For full process context, see [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/).
+For full process context, see [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Implementation checklist (quick start)
 
@@ -95,4 +95,4 @@ For full process context, see [Freelance Client Workflow System: Inquiry to Fina
 - Create intake form with required decision fields.
 - Apply scoring rubric to 5 recent inquiries.
 - Adjust thresholds based on outcomes.
-- Connect qualified leads to onboarding path: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).
+- Connect qualified leads to onboarding path: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).

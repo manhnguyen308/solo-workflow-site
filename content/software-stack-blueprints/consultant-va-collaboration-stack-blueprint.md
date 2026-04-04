@@ -9,7 +9,7 @@ tags = ["consultant", "va", "collaboration", "stack-blueprint"]
 page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
-related = ["/software-stack-blueprints/sample-stack-blueprint/", "/client-workflow-systems/proposal-to-contract-handoff/", "/templates-checklists/weekly-client-operations-checklist/", "/workflow-comparisons/sample-crm-vs-pm/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/weekly-client-operations-checklist-solo-business/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/"]
 featured = true
 +++
 
@@ -40,7 +40,7 @@ When a consultant adds a VA, the stack does not need to become complex—but it 
 - Billing workflow tool with reminder support
 - Lightweight automation for repeatable admin
 
-Use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/) for system-of-record selection.
+Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) for system-of-record selection.
 
 ## Weekly operating cadence (consultant + VA)
 
@@ -48,7 +48,7 @@ Use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/
 - Midweek: onboarding/delivery checkpoints
 - Friday: invoice/follow-up and offboarding pipeline review
 
-Operational anchor: [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/).
+Operational anchor: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/).
 
 ## Common failure patterns
 
@@ -58,6 +58,6 @@ Operational anchor: [Weekly Client Operations Checklist (Solo Business)](/templa
 
 ## Related pages
 
-- Solo baseline stack: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- Handoff stability: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/)
-- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
+- Solo baseline stack: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Handoff stability: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)

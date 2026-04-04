@@ -9,7 +9,7 @@ tags = ["weekly-ops", "checklist", "client-management"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/client-workflow-systems/sample-client-workflow/", "/software-stack-blueprints/sample-stack-blueprint/", "/templates-checklists/delivery-qa-checklist-before-client-handoff/", "/templates-checklists/invoice-payment-workflow-checklist/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++
 
@@ -39,7 +39,7 @@ Use this once per week (same day, same time) to stabilize operations across all 
 
 ### 5) Risk and quality review (15 minutes)
 - Review recurring issues from the past week.
-- Apply [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/) before final deliveries.
+- Apply [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) before final deliveries.
 - Capture one process improvement for next week.
 
 ## Weekly closeout questions
@@ -50,9 +50,9 @@ Use this once per week (same day, same time) to stabilize operations across all 
 
 ## Use this checklist with
 
-- Workflow model: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- Billing process: [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
+- Workflow model: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Billing process: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 
 ## Weekly completion rule

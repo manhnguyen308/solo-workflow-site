@@ -9,7 +9,7 @@ tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/client-workflow-systems/sample-intake-guide/", "/templates-checklists/sample-onboarding-checklist/", "/templates-checklists/invoice-payment-workflow-checklist/", "/client-workflow-systems/sample-client-workflow/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
@@ -56,12 +56,12 @@ Your contract should align with delivery flow, not arbitrary billing dates:
 - payment terms and late-payment policy,
 - scope-change pricing rule.
 
-Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/) to standardize this step.
+Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to standardize this step.
 
 ## Step 4: Run a pre-signature friction check
 
 Ask these questions:
-1. Can both sides explain what “done” means for each milestone?
+1. Can both sides explain what "done" means for each milestone?
 2. Are out-of-scope items explicit?
 3. Is approval ownership clear?
 4. Is there a written path for change requests?
@@ -78,7 +78,7 @@ Once signed, pass this package to onboarding:
 - communication cadence,
 - invoice schedule.
 
-Then execute onboarding with: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/).
+Then execute onboarding with: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
 ## Common mistakes to avoid
 
@@ -89,9 +89,9 @@ Then execute onboarding with: [Client Onboarding Checklist for Freelancers and C
 
 ## Related pages
 
-- Intake foundation: [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/)
-- End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+- Intake foundation: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+- End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
 
 ## Handoff completion standard

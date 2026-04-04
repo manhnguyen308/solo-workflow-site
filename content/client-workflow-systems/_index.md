@@ -7,10 +7,10 @@ This section is the operational core of the site. Start here if your problem is 
 
 ## Start here
 
-1. Use [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/) to map the full client lifecycle.
-2. Tighten lead quality with [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/).
-3. Remove scope drift with [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
-4. Add automation only after the manual process is stable with [Workflow Automation Basics for Solo Service Businesses](/client-workflow-systems/workflow-automation-basics-for-solo-service-businesses/).
+1. Use [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) to map the full client lifecycle.
+2. Tighten lead quality with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
+3. Remove scope drift with [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+4. Add automation only after the manual process is stable with [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 
 ## Recommended implementation sequence
 
@@ -18,11 +18,11 @@ Intake and qualification -> proposal and contract handoff -> onboarding -> deliv
 
 ## Workflow support assets
 
-- [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/)
-- [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/)
-- [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
-- [Client Offboarding + Testimonial Request Template](/templates-checklists/client-offboarding-testimonial-template/)
+- [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
+- [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
+- [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+- [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
 
 ## If you need a tool decision next
 
-Move from process design to tool selection with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/) or, if the main question is system ownership, [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+Move from process design to tool selection with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) or, if the main question is system ownership, [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

@@ -9,7 +9,7 @@ tags = ["definition", "workflow-handoff"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
-related = ["/client-workflow-systems/sample-client-workflow/", "/templates-checklists/sample-onboarding-checklist/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -26,4 +26,4 @@ If any of these are missing, the next stage starts with ambiguity.
 
 Solo businesses often have hidden handoffs (for example, from discovery notes to proposal, or from delivery to invoicing). Even when one person owns both stages, documenting the handoff reduces mistakes and context loss.
 
-For full context, see [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/).
+For full context, see [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).

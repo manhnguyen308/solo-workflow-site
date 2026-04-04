@@ -9,7 +9,7 @@ tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/client-workflow-systems/sample-client-workflow/", "/client-workflow-systems/sample-intake-guide/", "/faq/sample-stack-faq/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = true
 +++
 
@@ -74,9 +74,9 @@ If any answer below is "no," do not start delivery yet:
 
 ## Use this checklist with
 
-- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Intake setup: [How to Build a Client Intake and Qualification Workflow](/client-workflow-systems/sample-intake-guide/)
-- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/sample-stack-faq/)
+- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Intake setup: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
 ## Common misuses to avoid
 

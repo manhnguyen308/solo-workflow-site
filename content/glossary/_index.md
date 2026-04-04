@@ -7,10 +7,10 @@ Use this glossary to clarify workflow terms while implementing the guides, compa
 
 ## Start here
 
-- [Workflow Handoff](/glossary/sample-workflow-definition/)
+- [Workflow Handoff](/glossary/workflow-handoff/)
 - [System of Record](/glossary/system-of-record/)
 
 ## If a term matters to a decision
 
-- For lifecycle design, return to [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/).
-- For stack ownership decisions, use [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+- For lifecycle design, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- For stack ownership decisions, use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

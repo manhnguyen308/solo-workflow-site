@@ -9,7 +9,7 @@ tags = ["offboarding", "testimonial", "retention", "template"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/client-workflow-systems/sample-client-workflow/", "/templates-checklists/delivery-qa-checklist-before-client-handoff/", "/templates-checklists/invoice-payment-workflow-checklist/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++
 
@@ -51,6 +51,6 @@ Use this simple request structure:
 
 ## Use this with
 
-- End-to-end system: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Final handoff quality: [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/)
-- Payment closeout discipline: [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
+- End-to-end system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Final handoff quality: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
+- Payment closeout discipline: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)

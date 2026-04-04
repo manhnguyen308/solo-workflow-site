@@ -9,7 +9,7 @@ tags = ["definition", "system-of-record", "operations"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
-related = ["/workflow-comparisons/sample-crm-vs-pm/", "/software-stack-blueprints/sample-stack-blueprint/", "/client-workflow-systems/sample-client-workflow/"]
+related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -27,6 +27,6 @@ If your status lives in multiple places (email, docs, chat, PM board), handoffs 
 
 ## Related pages
 
-- [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/)
-- [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
+- [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
+- [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)

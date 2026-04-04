@@ -9,7 +9,7 @@ tags = ["invoicing", "payments", "cash-flow", "checklist"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/client-workflow-systems/proposal-to-contract-handoff/", "/client-workflow-systems/sample-client-workflow/", "/software-stack-blueprints/sample-stack-blueprint/", "/templates-checklists/weekly-client-operations-checklist/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
@@ -22,7 +22,7 @@ Most payment issues start before the invoice is sent. Use this checklist to alig
 - Confirm accepted payment methods.
 - Confirm late-payment policy.
 
-If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff Workflow Setup](/client-workflow-systems/proposal-to-contract-handoff/).
+If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
 ## Phase 2: Before sending each invoice
 
@@ -60,6 +60,6 @@ Keep follow-up professional and structured, not emotional.
 
 ## Related implementation pages
 
-- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
-- Weekly ops routine: [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/)
-- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
+- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Weekly ops routine: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
+- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)

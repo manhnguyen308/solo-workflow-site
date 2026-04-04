@@ -16,5 +16,6 @@
 <meta name="twitter:description" content="{{ $desc }}">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
 {{ if .IsPage }}
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":{{ .Title | jsonify }},"description":{{ $desc | jsonify }},"datePublished":"{{ .Date.Format "2006-01-02" }}","author":{"@type":"Person","name":{{ .Site.Params.author | jsonify }}}}</script>
+{{ $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" $desc "datePublished" (.Date.Format "2006-01-02") "author" (dict "@type" "Person" "name" .Site.Params.author) }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 {{ end }}

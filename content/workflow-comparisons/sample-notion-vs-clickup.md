@@ -9,13 +9,13 @@ tags = ["comparison", "notion", "clickup", "delivery-workflow"]
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
-related = ["/software-stack-blueprints/sample-stack-blueprint/", "/workflow-comparisons/sample-crm-vs-pm/", "/client-workflow-systems/sample-client-workflow/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
 Notion and ClickUp can both run client delivery. The better choice depends less on features and more on how much workflow structure your operating model needs right now.
 
-This page is most useful after you have already decided that delivery execution, not lead management, should be the center of your system. If you have not made that decision yet, start with [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+This page is most useful after you have already decided that delivery execution, not lead management, should be the center of your system. If you have not made that decision yet, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## Quick context
 
@@ -73,12 +73,12 @@ Do not use this page as a general productivity-tool comparison. It is for a spec
 
 ## What each choice should lead to next
 
-- If you choose **Notion**, tighten your onboarding and delivery rules immediately with [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/) so flexibility does not turn into drift.
-- If you choose **ClickUp**, keep the rest of the stack lean with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/) so structure does not turn into over-configuration.
-- If you are still unsure, go back one level and confirm whether you should be PM-first at all via [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/).
+- If you choose **Notion**, tighten your onboarding and delivery rules immediately with [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) so flexibility does not turn into drift.
+- If you choose **ClickUp**, keep the rest of the stack lean with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) so structure does not turn into over-configuration.
+- If you are still unsure, go back one level and confirm whether you should be PM-first at all via [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## What to read next
 
-- For stack planning context: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/software-stack-blueprints/sample-stack-blueprint/)
-- For system-of-record decision first: [CRM vs Project Management Tool for Client Workflows](/workflow-comparisons/sample-crm-vs-pm/)
-- For full operating model: [Freelance Client Workflow System: Inquiry to Final Payment](/client-workflow-systems/sample-client-workflow/)
+- For stack planning context: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- For system-of-record decision first: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
+- For full operating model: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)

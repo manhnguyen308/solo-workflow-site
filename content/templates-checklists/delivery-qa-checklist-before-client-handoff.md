@@ -9,7 +9,7 @@ tags = ["qa", "delivery", "handoff", "checklist"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/templates-checklists/sample-onboarding-checklist/", "/templates-checklists/client-offboarding-testimonial-template/", "/templates-checklists/weekly-client-operations-checklist/", "/client-workflow-systems/sample-client-workflow/"]
+related = ["/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/client-offboarding--testimonial-request-template/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
@@ -53,6 +53,6 @@ Use this checklist before every delivery handoff, even for "small" updates. Most
 
 ## Related workflow pages
 
-- Onboarding quality baseline: [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/)
-- Weekly operational rhythm: [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/)
-- Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates-checklists/client-offboarding-testimonial-template/)
+- Onboarding quality baseline: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
+- Weekly operational rhythm: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
+- Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
