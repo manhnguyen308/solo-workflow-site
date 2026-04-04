@@ -18,3 +18,4 @@ This section contains workflow anchors and implementation guides for solo operat
 - [Delivery QA Checklist Before Client Handoff](/templates-checklists/delivery-qa-checklist-before-client-handoff/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
 - [Client Offboarding + Testimonial Request Template](/templates-checklists/client-offboarding-testimonial-template/)
+Start here for process-first workflow models and implementation guides.

@@ -12,3 +12,7 @@ When reporting a correction, include:
 1. page URL,
 2. the specific claim,
 3. the suggested correction and source/context.
+description = "How to send feedback and corrections."
++++
+
+For corrections, feedback, or partnerships, contact: hello@example.com.

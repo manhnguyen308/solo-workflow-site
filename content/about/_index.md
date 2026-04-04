@@ -26,3 +26,7 @@ Solo Workflow Systems exists to help freelancers, consultants, and micro-agencie
 - thin pages that cannot help a reader take action.
 
 For methodology details, see [Editorial Policy](/editorial-policy/).
+description = "Why this site exists and who it helps."
++++
+
+Solo Workflow Systems publishes workflow-first guides for freelancers and solo operators.

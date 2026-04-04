@@ -27,3 +27,4 @@ Solo Workflow Systems helps freelancers and solo operators build repeatable clie
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates-checklists/sample-onboarding-checklist/)
 - [Weekly Client Operations Checklist (Solo Business)](/templates-checklists/weekly-client-operations-checklist/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates-checklists/invoice-payment-workflow-checklist/)
+This site helps solo operators design repeatable client workflows, choose software stacks responsibly, and implement systems without overbuying tools.
