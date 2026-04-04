@@ -1,4 +1,6 @@
-baseURL = "https://example.com/"
+# Production baseURL is supplied at build time in Cloudflare:
+# hugo --minify --gc --baseURL "${SITE_URL:-$CF_PAGES_URL}"
+baseURL = "/"
 languageCode = "en-us"
 title = "Solo Workflow Systems"
 enableRobotsTXT = true

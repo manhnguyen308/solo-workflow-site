@@ -5,13 +5,17 @@ description = "How to submit feedback, corrections, and partnership inquiries."
 
 Use this page for content corrections, factual updates, and partnership requests.
 
-- Email: hello@example.com
+- Public contact inbox: published at deployment through the monitored site address used for launch
 - Subject format for corrections: `Correction: [Page Title]`
 
 When reporting a correction, include:
 1. page URL,
 2. the specific claim,
 3. the suggested correction and source/context.
+
+## Launch note
+
+This page intentionally avoids publishing a placeholder inbox. Set the real monitored launch address before public release so the live site never exposes an unmonitored contact method.
 
 ## Best use of this inbox
 

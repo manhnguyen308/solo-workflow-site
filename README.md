@@ -9,20 +9,26 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 - Metadata QA and internal-link QA have been completed in a real Hugo-capable environment.
 - Hugo build verification passed with the repo-local binary at `tools/hugo/hugo.exe`.
 - Launch-critical output issues found during Day 12 were fixed in content and templates.
-- Deployment should wait until the production domain and live contact inbox are configured.
+- Day 13 switched production URL handling to a build-time baseURL override suitable for Cloudflare deployment.
+- Deployment should wait until the real monitored public inbox is confirmed.
 
 Current launch verdict:
 - Content/model: ready
 - Technical verification: ready
-- Deployment recommendation: deploy after minor production-config fixes
+- Deployment recommendation: deploy after minor contact-config fix
 
 ## Verified Hugo environment
 
 - Binary used: `tools/hugo/hugo.exe`
 - Hugo version: `hugo v0.159.2-5f4646acaad89e1166aac118e118b0d28013f460+withdeploy windows/amd64 BuildDate=2026-04-01T12:59:20Z VendorInfo=gohugoio`
 - Global `hugo` on `PATH`: not available in this environment
-- Verified build command: `tools/hugo/hugo.exe --minify --gc`
+- Verified local build command: `tools/hugo/hugo.exe --minify --gc --baseURL <deploy-url>`
 - Build result: passed
+
+Latest verification run:
+- verification baseURL used: `https://launch-preview.pages.dev/`
+- canonical and Open Graph output followed the supplied `--baseURL` value correctly
+- contact page no longer exposes `hello@example.com`
 
 ## Day 12 fixes applied
 
@@ -36,8 +42,7 @@ Current launch verdict:
 
 ## Remaining launch blockers
 
-- `config.toml` still uses `baseURL = "https://example.com/"`, so canonical and Open Graph URLs in the generated output point to `example.com`
-- `content/contact/_index.md` still publishes `hello@example.com`, which is not a real launch-ready contact address
+- the live monitored public inbox still needs to be supplied before public release
 
 ## Project structure
 
@@ -89,7 +94,10 @@ Then fill the required front matter and keep the page aligned to the workflow-fi
 
 ## Next steps before deployment
 
-1. Replace `baseURL` in `config.toml` with the real production URL, or pass the production base URL explicitly during the Cloudflare build.
-2. Replace `hello@example.com` on the Contact page with the real monitored inbox for launch.
-3. Re-run `tools/hugo/hugo.exe --minify --gc`.
-4. Deploy to Cloudflare only after the rebuilt output shows the correct canonical URLs and contact details.
+1. Set the real monitored public inbox in `content/contact/_index.md`.
+2. In Cloudflare Pages, set `HUGO_VERSION=0.159.2`.
+3. In Cloudflare Pages, use build command `bash tools/build-cloudflare.sh`.
+4. In Cloudflare Pages, set `SITE_URL=https://your-production-domain/` if you have a custom production domain.
+5. If `SITE_URL` is not set, Cloudflare will fall back to `CF_PAGES_URL` for the build baseURL.
+6. Use output directory `public`.
+7. Re-run `tools/hugo/hugo.exe --minify --gc --baseURL <deploy-url>` locally if the final production URL or contact details change before release.
