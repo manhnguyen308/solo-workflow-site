@@ -9,12 +9,12 @@
   {{ $related = .Site.RegularPages.Related . | first 3 }}
 {{ end }}
 {{ with $related }}
-<section>
+<section class="related-panel">
   <h2>See also</h2>
-  <ul>
+  <div class="stack-list">
     {{ range . }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ partial "page-card.html" (dict "page" . "style" "compact") }}
     {{ end }}
-  </ul>
+  </div>
 </section>
 {{ end }}

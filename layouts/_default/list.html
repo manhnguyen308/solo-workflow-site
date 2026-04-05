@@ -1,16 +1,35 @@
 {{ define "main" }}
-<div class="wrap">
-  <h1>{{ .Title }}</h1>
-  {{ with .Content }}<div>{{ . }}</div>{{ end }}
+<div class="page-shell page-shell-list">
+  <section class="page-hero section-hero">
+    <div class="wrap section-hero-grid">
+      <div class="section-hero-copy">
+        <p class="eyebrow">{{ .Title }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+        {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
+      </div>
+      <aside class="section-hero-panel">
+        <p class="panel-label">Section purpose</p>
+        <p>Use this section as orientation, not passive browsing. Start with the clearest next-step page, then move into the implementation or support content that helps you act on it.</p>
+      </aside>
+    </div>
+  </section>
+
   {{ if gt (len .Pages) 0 }}
-  <ul>
-    {{ range .Pages.ByDate.Reverse }}
-    <li>
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-    </li>
-    {{ end }}
-  </ul>
+  <section class="page-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Pages in this section</p>
+        <h2>Curated reading list</h2>
+        <p>Use these pages in sequence where it helps, or jump directly to the one that matches the current bottleneck in your workflow.</p>
+      </div>
+      <div class="card-grid">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ partial "page-card.html" (dict "page" . "style" "default") }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
   {{ end }}
 </div>
 {{ end }}

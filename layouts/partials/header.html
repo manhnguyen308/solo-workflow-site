@@ -1,7 +1,10 @@
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-    <nav aria-label="Primary">
+  <div class="wrap site-header-inner">
+    <div class="brand-lockup">
+      <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+      <p class="brand-tagline">Calm workflow guidance for solo operators</p>
+    </div>
+    <nav aria-label="Primary" class="primary-nav">
       <ul class="menu">
         {{ range .Site.Menus.main }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>

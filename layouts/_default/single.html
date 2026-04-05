@@ -1,12 +1,20 @@
 {{ define "main" }}
-<article class="wrap">
-  <header>
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
-    <p><small>Type: {{ .Params.page_type }} &middot; Intent: {{ .Params.search_intent }}</small></p>
-  </header>
-  {{ .Content }}
-  {{ partial "page-type-block.html" . }}
-  {{ partial "related.html" . }}
-</article>
+<div class="page-shell page-shell-single">
+  <article class="wrap reading-layout">
+    <header class="article-header">
+      {{ with .Section }}<p class="eyebrow">{{ replace . "-" " " | title }}</p>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+      <div class="article-meta">
+        {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
+        {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+    <div class="article-body prose">
+      {{ .Content }}
+    </div>
+    {{ partial "page-type-block.html" . }}
+    {{ partial "related.html" . }}
+  </article>
+</div>
 {{ end }}

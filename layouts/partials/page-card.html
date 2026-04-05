@@ -1,0 +1,7 @@
+{{ $page := .page }}
+{{ $style := .style | default "default" }}
+<article class="page-card page-card-{{ $style }}">
+  {{ with $page.Params.page_type }}<p class="page-card-type">{{ . }}</p>{{ end }}
+  <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+  {{ with ($page.Params.summary | default $page.Params.description) }}<p>{{ . }}</p>{{ end }}
+</article>

@@ -10,6 +10,7 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 - Hugo build verification passed with the repo-local binary at `tools/hugo/hugo.exe`.
 - Launch-critical output issues found during Day 12 were fixed in content and templates.
 - Day 13 switched production URL handling to a build-time baseURL override suitable for Cloudflare deployment.
+- Day 15 substantially upgraded the visual system, homepage composition, hub layouts, and reading experience.
 - Deployment should wait until the real monitored public inbox is confirmed.
 
 Current launch verdict:
@@ -43,6 +44,44 @@ Latest verification run:
 ## Remaining launch blockers
 
 - the live monitored public inbox still needs to be supplied before public release
+
+## Day 15 design pass
+
+Main problems found:
+- the frontend looked like a near-default Hugo build with weak visual identity
+- the homepage had little composition and low perceived value
+- section hubs behaved more like archives than curated routes
+- single pages had minimal reading scaffolding and weak utility framing
+- header and footer felt functional but unfinished
+
+Design/layout improvements made:
+- replaced the minimal CSS foundation with a calmer editorial system using stronger spacing, refined type contrast, card surfaces, and clearer section rhythm
+- rebuilt the homepage around a composed hero, guided entry points, curated reading paths, and better content grouping
+- redesigned list pages into guided section hubs with hero panels and card-based content presentation
+- refined single-page layout with clearer article headers, metadata pills, better reading measure, and utility panels
+- upgraded navigation and footer structure for stronger scanning and trust support
+- restyled related content into compact cards instead of plain lists
+
+Primary files changed:
+- `static/css/main.css`
+- `layouts/index.html`
+- `layouts/_default/baseof.html`
+- `layouts/_default/list.html`
+- `layouts/_default/single.html`
+- `layouts/partials/header.html`
+- `layouts/partials/footer.html`
+- `layouts/partials/page-card.html`
+- `layouts/partials/page-type-block.html`
+- `layouts/partials/related.html`
+
+Remaining visual issues:
+- final browser-based QA on desktop and mobile is still worthwhile for spacing and rhythm validation
+- the contact page still needs the real monitored inbox before public launch
+
+Recommended Day 16 focus:
+- live browser QA on desktop and mobile
+- final trust/support page copy polish
+- replace the contact launch note with the real public inbox
 
 ## Project structure
 
