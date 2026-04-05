@@ -1,7 +1,7 @@
 # Day 13 Final Deployment Checklist
 
 - Production baseURL confirmed
-  Use `SITE_URL` for the custom production domain, or let Cloudflare fall back to `CF_PAGES_URL`
+  Use `SITE_URL=https://soloopsguide.com/`, or let Cloudflare fall back to `CF_PAGES_URL` for previews
 - Contact details confirmed
   Replace the launch note on the Contact page with the real monitored inbox before public release
 - Hugo build passed
@@ -15,4 +15,4 @@
 - Output ready
   canonical, Open Graph, and contact output verified in built HTML
 - Cloudflare settings ready
-  build command `bash tools/build-cloudflare.sh`, output directory `public`, `HUGO_VERSION=0.159.2`, and `SITE_URL` configured if using a custom domain
+  build command `bash tools/build-cloudflare.sh`, output directory `public`, `HUGO_VERSION=0.159.2`, and `SITE_URL=https://soloopsguide.com/`

@@ -26,7 +26,7 @@ Current launch verdict:
 - Build result: passed
 
 Latest verification run:
-- verification baseURL used: `https://launch-preview.pages.dev/`
+- verification baseURL used: `https://soloopsguide.com/`
 - canonical and Open Graph output followed the supplied `--baseURL` value correctly
 - contact page no longer exposes `hello@example.com`
 
@@ -97,7 +97,7 @@ Then fill the required front matter and keep the page aligned to the workflow-fi
 1. Set the real monitored public inbox in `content/contact/_index.md`.
 2. In Cloudflare Pages, set `HUGO_VERSION=0.159.2`.
 3. In Cloudflare Pages, use build command `bash tools/build-cloudflare.sh`.
-4. In Cloudflare Pages, set `SITE_URL=https://your-production-domain/` if you have a custom production domain.
+4. In Cloudflare Pages, set `SITE_URL=https://soloopsguide.com/`.
 5. If `SITE_URL` is not set, Cloudflare will fall back to `CF_PAGES_URL` for the build baseURL.
 6. Use output directory `public`.
 7. Re-run `tools/hugo/hugo.exe --minify --gc --baseURL <deploy-url>` locally if the final production URL or contact details change before release.
