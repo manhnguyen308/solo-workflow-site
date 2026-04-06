@@ -29,26 +29,42 @@
           <p class="eyebrow">Browse the section</p>
           <h2>Pages in this hub</h2>
         </div>
-        <div class="card-grid card-grid-2">
-          {{ range .Pages.ByDate.Reverse }}
-            {{ partial "page-card.html" (dict "page" . "style" "default") }}
-          {{ end }}
-        </div>
+        {{ if gt (len .Pages) 0 }}
+          <div class="card-grid card-grid-2">
+            {{ range .Pages.ByDate.Reverse }}
+              {{ partial "page-card.html" (dict "page" . "style" "default") }}
+            {{ end }}
+          </div>
+        {{ else }}
+          <div class="utility-panel">
+            <p class="utility-kicker">No pages yet</p>
+            <h2>This section does not have live content yet</h2>
+            <p>Use the homepage or another section hub to continue browsing while this area is still being built out.</p>
+          </div>
+        {{ end }}
       {{ else }}
         <div class="section-heading">
           <p class="eyebrow">Taxonomy topics</p>
           <h2>Explore connected concepts</h2>
         </div>
-        <div class="term-grid">
-          {{ range .Data.Terms.Alphabetical }}
-            <a class="term-card" href="{{ .Page.RelPermalink }}">
-              <p class="page-card-type">Topic</p>
-              <h3>{{ .Page.Title }}</h3>
-              <p>{{ .Count }} page{{ if ne .Count 1 }}s{{ end }} connected to this term.</p>
-              <span class="term-card-link">Open topic</span>
-            </a>
-          {{ end }}
-        </div>
+        {{ if gt (len .Data.Terms.Alphabetical) 0 }}
+          <div class="term-grid">
+            {{ range .Data.Terms.Alphabetical }}
+              <a class="term-card" href="{{ .Page.RelPermalink }}">
+                <p class="page-card-type">Topic</p>
+                <h3>{{ .Page.Title }}</h3>
+                <p>{{ .Count }} page{{ if ne .Count 1 }}s{{ end }} connected to this term.</p>
+                <span class="term-card-link">Open topic</span>
+              </a>
+            {{ end }}
+          </div>
+        {{ else }}
+          <div class="utility-panel">
+            <p class="utility-kicker">No topics yet</p>
+            <h2>There are no taxonomy topics to browse here yet</h2>
+            <p>Use the main content hubs to keep exploring the site.</p>
+          </div>
+        {{ end }}
       {{ end }}
     </div>
   </section>

@@ -24,11 +24,19 @@
         <p class="eyebrow">Connected pages</p>
         <h2>Browse the most relevant reading paths</h2>
       </div>
-      <div class="card-grid card-grid-2">
-        {{ range .Pages.ByDate.Reverse }}
-          {{ partial "page-card.html" (dict "page" . "style" "default") }}
-        {{ end }}
-      </div>
+      {{ if gt (len .Pages) 0 }}
+        <div class="card-grid card-grid-2">
+          {{ range .Pages.ByDate.Reverse }}
+            {{ partial "page-card.html" (dict "page" . "style" "default") }}
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="utility-panel">
+          <p class="utility-kicker">No related pages</p>
+          <h2>There is nothing filed under this topic yet</h2>
+          <p>Try the homepage or a main content hub to continue browsing.</p>
+        </div>
+      {{ end }}
     </div>
   </section>
 </div>

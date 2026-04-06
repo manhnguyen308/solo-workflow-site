@@ -23,3 +23,5 @@ Original content on this site is owned by SoloOpsGuide unless stated otherwise. 
 ## Corrections and contact
 
 For corrections or questions, use [Contact](/contact/).
+
+If no public inbox is listed there yet, that means the site has not published a monitored contact address.

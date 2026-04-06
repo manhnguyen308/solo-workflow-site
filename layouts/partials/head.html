@@ -5,6 +5,7 @@
 <title>{{ $title }}</title>
 {{ $desc := .Description | default .Summary | default .Site.Params.siteDescription }}
 <meta name="description" content="{{ $desc }}">
+<meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="{{ .Permalink }}">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
@@ -12,13 +13,18 @@
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ .Site.Params.defaultImage | absURL }}">
+<meta property="og:image:alt" content="{{ $siteTitle }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="shortcut icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} RSS" href="{{ "index.xml" | absURL }}">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
-{{ if .IsPage }}
+{{ if .IsHome }}
+{{ $schema := dict "@context" "https://schema.org" "@type" "WebSite" "name" $siteTitle "url" .Permalink "description" $desc }}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+{{ else if .IsPage }}
 {{ $schema := dict "@context" "https://schema.org" "@type" "Article" "headline" .Title "description" $desc "datePublished" (.Date.Format "2006-01-02") "author" (dict "@type" "Person" "name" .Site.Params.author) }}
 <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
 {{ end }}

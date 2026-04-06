@@ -18,6 +18,12 @@
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}
 {{ $templateCount := len (where .Site.RegularPages "Section" "templates-checklists") }}
 {{ $glossaryCount := len (where .Site.RegularPages "Section" "glossary") }}
+{{ $featureLinkLabel := "Read page" }}
+{{ with $comparisonAnchor }}
+  {{ if eq .Section "workflow-comparisons" }}{{ $featureLinkLabel = "Read comparison" }}{{ end }}
+{{ end }}
+{{ $workflowLeadLabel := "Read workflow" }}
+{{ $blueprintLeadLabel := "Open blueprint" }}
 <div class="homepage-mockup">
   <section class="homepage-hero">
     <div class="wrap homepage-hero-inner">
@@ -43,7 +49,7 @@
           <span>{{ .Params.page_type | default "Guide" | title }}</span>
           <span>{{ .Date.Format "Jan 2006" }}</span>
         </div>
-        <a class="homepage-inline-link" href="{{ .RelPermalink }}">Read guide <span aria-hidden="true">→</span></a>
+        <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $featureLinkLabel }} <span aria-hidden="true">→</span></a>
       </aside>
       {{ end }}
     </div>
@@ -167,7 +173,7 @@
             <p>{{ .Params.summary | default .Params.description }}</p>
             <div class="homepage-popular-foot">
               <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}">Read guide <span aria-hidden="true">→</span></a>
+              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $workflowLeadLabel }} <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
@@ -185,7 +191,7 @@
             <p>{{ .Params.summary | default .Params.description }}</p>
             <div class="homepage-popular-foot">
               <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}">Read guide <span aria-hidden="true">→</span></a>
+              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $blueprintLeadLabel }} <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>

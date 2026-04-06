@@ -24,3 +24,5 @@ If analytics tooling uses cookies or similar identifiers, we keep it limited to 
 ## Contact
 
 Questions about privacy can be sent via [Contact](/contact/).
+
+If a public contact inbox is not yet published, privacy questions should wait until the monitored contact method listed on the Contact page is available.

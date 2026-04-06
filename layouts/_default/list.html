@@ -1,10 +1,15 @@
 {{ define "main" }}
 {{ $featuredPages := where .Pages "Params.featured" true }}
-{{ $featuredPage := index $featuredPages 0 }}
-{{ if not $featuredPage }}
+{{ $featuredPage := false }}
+{{ if gt (len $featuredPages) 0 }}
+  {{ $featuredPage = index $featuredPages 0 }}
+{{ else if gt (len .Pages) 0 }}
   {{ $featuredPage = index (.Pages.ByDate.Reverse) 0 }}
 {{ end }}
-{{ $rest := where (.Pages.ByDate.Reverse) "RelPermalink" "ne" $featuredPage.RelPermalink }}
+{{ $rest := slice }}
+{{ if $featuredPage }}
+  {{ $rest = where (.Pages.ByDate.Reverse) "RelPermalink" "ne" $featuredPage.RelPermalink }}
+{{ end }}
 <div class="page-shell page-shell-list">
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
@@ -34,18 +39,18 @@
     </div>
   </section>
 
-  {{ with $featuredPage }}
-  <section class="page-section">
-    <div class="wrap">
-      <div class="section-heading">
-        <p class="eyebrow">Recommended entry point</p>
-        <h2>Start with the anchor page</h2>
+  {{ if $featuredPage }}
+    <section class="page-section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Recommended entry point</p>
+          <h2>Start with the anchor page</h2>
+        </div>
+        <div class="featured-grid featured-grid-single">
+          {{ partial "page-card.html" (dict "page" $featuredPage "style" "featured") }}
+        </div>
       </div>
-      <div class="featured-grid featured-grid-single">
-        {{ partial "page-card.html" (dict "page" . "style" "featured") }}
-      </div>
-    </div>
-  </section>
+    </section>
   {{ end }}
 
   {{ if gt (len $rest) 0 }}
@@ -60,6 +65,16 @@
         {{ range $rest }}
           {{ partial "page-card.html" (dict "page" . "style" "default") }}
         {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ else if eq (len .Pages) 0 }}
+  <section class="page-section">
+    <div class="wrap">
+      <div class="utility-panel">
+        <p class="utility-kicker">Nothing published yet</p>
+        <h2>This section is still being filled out</h2>
+        <p>There are no live pages in this section yet. Start from the homepage or browse another content hub for the closest related guidance.</p>
       </div>
     </div>
   </section>
