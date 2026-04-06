@@ -4,30 +4,6 @@
     var header = document.querySelector('.site-header');
     var searchForms = document.querySelectorAll('[data-site-search]');
 
-    if (!toggle || !header) {
-      searchForms.forEach(function (form) {
-        form.addEventListener('submit', function () {
-          var input = form.querySelector('input[name="q"]');
-          var domain = form.getAttribute('data-site-search');
-
-          if (!input || !domain) {
-            return;
-          }
-
-          if (input.value.indexOf('site:') === -1) {
-            input.value = 'site:' + domain + ' ' + input.value.trim();
-          }
-        });
-      });
-
-      return;
-    }
-
-    toggle.addEventListener('click', function () {
-      var isOpen = header.classList.toggle('nav-open');
-      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-
     searchForms.forEach(function (form) {
       form.addEventListener('submit', function () {
         var input = form.querySelector('input[name="q"]');
@@ -41,6 +17,15 @@
           input.value = 'site:' + domain + ' ' + input.value.trim();
         }
       });
+    });
+
+    if (!toggle || !header) {
+      return;
+    }
+
+    toggle.addEventListener('click', function () {
+      var isOpen = header.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   });
 </script>

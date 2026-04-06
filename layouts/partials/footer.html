@@ -4,7 +4,7 @@
       <a class="brand-link footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
         {{ partial "brand.html" (dict "class" "brand-footer" "title" "SoloOpsGuide" "tagline" "Workflow-first operating guidance for solo businesses") }}
       </a>
-      <p>Editorially structured guides, blueprint pages, and implementation assets for solo operators who want a calmer, more reliable client operation.</p>
+      <p>SoloOpsGuide is a content-first editorial platform for solo operators who want calmer systems, cleaner workflows, and more confident tool decisions.</p>
       <div class="footer-note">
         <span class="footer-chip">Workflow-first</span>
         <span class="footer-chip">Lean stack decisions</span>
@@ -22,21 +22,22 @@
       </nav>
     </div>
     <div class="footer-nav-block">
-      <p class="footer-heading">Company</p>
+      <p class="footer-heading">Reference</p>
       <nav aria-label="Footer">
         <ul class="footer-menu">
-          {{ range .Site.Menus.footer }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/editorial-policy/">Editorial Policy</a></li>
+          <li><a href="/about/">About</a></li>
         </ul>
       </nav>
     </div>
     <div class="footer-nav-block">
-      <p class="footer-heading">Start Here</p>
+      <p class="footer-heading">Company</p>
       <ul class="footer-menu">
-        <li><a href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/">Map the full workflow</a></li>
-        <li><a href="/guides/software-stack-blueprint-solo-freelancer-lean-budget/">Choose a lean stack</a></li>
-        <li><a href="/templates/client-onboarding-checklist-for-freelancers-and-consultants/">Operationalize onboarding</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+        <li><a href="/terms/">Terms</a></li>
       </ul>
     </div>
   </div>
