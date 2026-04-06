@@ -2,15 +2,13 @@
   <div class="wrap footer-shell">
     <div class="footer-grid">
       <div class="footer-intro">
-        <a class="brand-link footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
-          {{ partial "brand.html" (dict "class" "brand-footer" "title" "SoloOpsGuide" "tagline" "Structured workflow guidance for solo operators") }}
+        <a class="brand-link brand-link-plain footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
+          <span class="brand-plain">
+            <span class="brand-plain-name">SoloOpsGuide</span>
+          </span>
         </a>
-        <p>SoloOpsGuide is a calm, content-first reference for freelancers, consultants, and small business owners who want cleaner systems, better workflow decisions, and implementation-ready guidance.</p>
-        <div class="footer-note">
-          <span class="footer-chip">Workflow-first</span>
-          <span class="footer-chip">Scenario-based</span>
-          <span class="footer-chip">Built for implementation</span>
-        </div>
+        <p>Calm workflow guidance for solo operators, freelancers, and consultants who need practical systems without the hype.</p>
+        <p class="footer-copyright">&copy; {{ now.Format "2006" }} SoloOpsGuide. All rights reserved.</p>
       </div>
       <div class="footer-nav-block">
         <p class="footer-heading">Resources</p>
@@ -25,24 +23,26 @@
       <div class="footer-nav-block">
         <p class="footer-heading">Learn</p>
         <ul class="footer-menu">
+          <li><a href="/glossary/">Glossary</a></li>
+          <li><a href="/faq/">FAQ</a></li>
           <li><a href="/about/">About</a></li>
           <li><a href="/contact/">Contact</a></li>
-          <li><a href="/editorial-policy/">Editorial Policy</a></li>
-          <li><a href="/index.xml">RSS Feed</a></li>
         </ul>
       </div>
       <div class="footer-nav-block">
-        <p class="footer-heading">Support</p>
+        <p class="footer-heading">Legal</p>
         <ul class="footer-menu">
           <li><a href="/privacy-policy/">Privacy Policy</a></li>
           <li><a href="/terms/">Terms</a></li>
-          <li><a href="/faq/">FAQ</a></li>
+          <li><a href="/editorial-policy/">Editorial Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>Built for operators who value clarity over complexity.</p>
-      <p>&copy; {{ now.Format "2006" }} SoloOpsGuide. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="/index.xml">RSS Feed</a>
+      </div>
     </div>
   </div>
 </footer>
