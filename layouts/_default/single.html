@@ -9,7 +9,7 @@
         <div class="article-meta">
           {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
           {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}
-          <span class="meta-pill meta-pill-muted">{{ .Date.Format "Jan 2, 2006" }}</span>
+          <span class="meta-pill meta-pill-muted">Updated {{ .Date.Format "Jan 2, 2006" }}</span>
         </div>
       </div>
       <aside class="article-aside">

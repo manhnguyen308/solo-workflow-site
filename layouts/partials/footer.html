@@ -1,44 +1,48 @@
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-intro">
-      <a class="brand-link footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
-        {{ partial "brand.html" (dict "class" "brand-footer" "title" "SoloOpsGuide" "tagline" "Workflow-first operating guidance for solo businesses") }}
-      </a>
-      <p>SoloOpsGuide is a content-first editorial platform for solo operators who want calmer systems, cleaner workflows, and more confident tool decisions.</p>
-      <div class="footer-note">
-        <span class="footer-chip">Workflow-first</span>
-        <span class="footer-chip">Lean stack decisions</span>
-        <span class="footer-chip">Practical implementation</span>
+  <div class="wrap footer-shell">
+    <div class="footer-grid">
+      <div class="footer-intro">
+        <a class="brand-link footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
+          {{ partial "brand.html" (dict "class" "brand-footer" "title" "SoloOpsGuide" "tagline" "Structured workflow guidance for solo operators") }}
+        </a>
+        <p>SoloOpsGuide is a calm, content-first reference for freelancers, consultants, and small business owners who want cleaner systems, better workflow decisions, and implementation-ready guidance.</p>
+        <div class="footer-note">
+          <span class="footer-chip">Workflow-first</span>
+          <span class="footer-chip">Scenario-based</span>
+          <span class="footer-chip">Built for implementation</span>
+        </div>
+      </div>
+      <div class="footer-nav-block">
+        <p class="footer-heading">Resources</p>
+        <nav aria-label="Primary footer">
+          <ul class="footer-menu">
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-nav-block">
+        <p class="footer-heading">Learn</p>
+        <ul class="footer-menu">
+          <li><a href="/about/">About</a></li>
+          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/editorial-policy/">Editorial Policy</a></li>
+          <li><a href="/index.xml">RSS Feed</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-block">
+        <p class="footer-heading">Support</p>
+        <ul class="footer-menu">
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms</a></li>
+          <li><a href="/faq/">FAQ</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-nav-block">
-      <p class="footer-heading">Explore</p>
-      <nav aria-label="Primary footer">
-        <ul class="footer-menu">
-          {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-nav-block">
-      <p class="footer-heading">Reference</p>
-      <nav aria-label="Footer">
-        <ul class="footer-menu">
-          <li><a href="/glossary/">Glossary</a></li>
-          <li><a href="/faq/">FAQ</a></li>
-          <li><a href="/editorial-policy/">Editorial Policy</a></li>
-          <li><a href="/about/">About</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer-nav-block">
-      <p class="footer-heading">Company</p>
-      <ul class="footer-menu">
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/privacy-policy/">Privacy Policy</a></li>
-        <li><a href="/terms/">Terms</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>Built for operators who value clarity over complexity.</p>
+      <p>&copy; {{ now.Format "2006" }} SoloOpsGuide. All rights reserved.</p>
     </div>
   </div>
 </footer>
