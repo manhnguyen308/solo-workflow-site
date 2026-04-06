@@ -9,13 +9,15 @@ tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
 featured = true
 +++
 
 The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal gets signed, kickoff starts early, and scope disagreements appear in week two.
 
 This guide gives you a repeatable pre-kickoff handoff process so the contract reflects execution reality.
+
+This page is especially useful when you keep hearing some version of "we thought that was included" after the project starts. In practice, that usually means the handoff from discovery to execution was too informal.
 
 ## What this handoff must achieve
 
@@ -28,6 +30,14 @@ Before onboarding begins, your process should produce:
 
 If any of these are missing, onboarding starts with avoidable risk.
 
+## Who should use this page
+
+- Solo freelancers selling scoped project work.
+- Consultants who move from discovery calls into custom proposals.
+- Operators who already have qualified leads but still start projects with ambiguity.
+
+If you are still attracting poor-fit work, fix intake first with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
+
 ## Step 1: Convert discovery notes into a scope draft
 
 Your scope draft should include:
@@ -37,6 +47,8 @@ Your scope draft should include:
 - milestone structure.
 
 Use plain language. If the scope relies on hidden assumptions, it is not ready for proposal.
+
+One practical test: if a future assistant or collaborator could not tell what is included by reading the draft, the client probably cannot either.
 
 ## Step 2: Align scope to timeline reality
 
@@ -48,6 +60,8 @@ For each milestone, define:
 
 Avoid date promises before confirming client-side dependencies.
 
+This is where many solo operators under-price urgency. If client inputs, approvals, or asset delivery can delay the work, the timeline needs to show that dependency explicitly.
+
 ## Step 3: Define commercial terms tied to execution
 
 Your contract should align with delivery flow, not arbitrary billing dates:
@@ -57,6 +71,8 @@ Your contract should align with delivery flow, not arbitrary billing dates:
 - scope-change pricing rule.
 
 Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to standardize this step.
+
+Payment terms feel like finance admin, but they are really workflow controls. When invoice timing is disconnected from delivery stages, handoffs weaken and revenue collection becomes reactive.
 
 ## Step 4: Run a pre-signature friction check
 
@@ -68,6 +84,15 @@ Ask these questions:
 5. Is invoice timing tied to milestone reality?
 
 If any answer is unclear, revise before signing.
+
+## Handoff packet example
+
+At minimum, the internal packet you carry into onboarding should answer:
+- What exactly was sold?
+- What is explicitly excluded?
+- What must the client provide before work can move?
+- Who can approve scope, content, or deliverables?
+- Which event triggers the next invoice?
 
 ## Step 5: Handoff package to onboarding
 
@@ -87,12 +112,21 @@ Then execute onboarding with: [Client Onboarding Checklist for Freelancers and C
 - **Kickoff scheduled before approvals are mapped.**
 - **Payment terms copied from a template without delivery fit.**
 
+## When not to automate this stage yet
+
+Do not automate proposal-to-contract transitions until:
+- your scope format is stable,
+- your invoice triggers are consistent,
+- your onboarding checklist rarely changes,
+- exceptions are handled predictably by hand.
+
+If that is not true yet, keep the handoff manual and visible. Then use [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) later.
+
 ## Related pages
 
 - Intake foundation: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
 - End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
-
 
 ## Handoff completion standard
 

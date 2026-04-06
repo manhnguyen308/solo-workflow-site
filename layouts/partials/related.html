@@ -1,7 +1,15 @@
 {{ $related := slice }}
 {{ with .Params.related }}
   {{ range . }}
+    {{ $match := false }}
     {{ with $.Site.GetPage . }}
+      {{ $match = . }}
+    {{ else }}
+      {{ with (where $.Site.RegularPages "RelPermalink" "eq" .) }}
+        {{ $match = index . 0 }}
+      {{ end }}
+    {{ end }}
+    {{ with $match }}
       {{ $related = $related | append . }}
     {{ end }}
   {{ end }}

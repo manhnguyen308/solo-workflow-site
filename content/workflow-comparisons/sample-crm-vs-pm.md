@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "CRM vs Project Management Tool for Client Workflows"
 description = "Choose CRM-first, PM-first, or hybrid based on your client workflow complexity, lead volume, and handoff needs."
 summary = "This comparison helps solo operators pick the right system of record and avoid fragmented client operations."
@@ -9,7 +9,7 @@ tags = ["comparison", "crm", "project-management", "workflow-fit"]
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/glossary/system-of-record/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++
 
@@ -25,6 +25,8 @@ You are choosing where the truth about client work lives:
 - **Hybrid model** (both, with explicit boundaries)
 
 For end-to-end process context, use the anchor page first: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+
+If you need the definition behind this choice, read [System of Record](/glossary/system-of-record/) first.
 
 ## Model 1: CRM-first
 
@@ -74,17 +76,19 @@ For end-to-end process context, use the anchor page first: [Freelance Client Wor
 | Setup complexity | Medium | Low | High |
 | Best early-stage fit | If lead-heavy | If delivery-heavy | Rarely |
 
+## A practical shortcut for choosing
+
+- Choose **CRM-first** if you lose more revenue before kickoff than after kickoff.
+- Choose **PM-first** if most friction appears after the work starts.
+- Choose **Hybrid** only if both problems are persistently true and you can name the ownership boundary between the two systems.
+
+If the boundary sounds vague, hybrid is probably premature.
+
 ## Choose this if
 
 - **Choose CRM-first** if you lose deals due to weak follow-up and have a meaningful sales pipeline.
 - **Choose PM-first** if work delivery quality is your bottleneck and lead flow is manageable.
 - **Choose Hybrid** only if you can define strict ownership rules and maintain both systems consistently.
-
-## Fast decision shortcut
-
-- If more revenue is lost before kickoff than after kickoff, default CRM-first.
-- If more friction appears after kickoff than before kickoff, default PM-first.
-- If both are true and both are persistent, evaluate hybrid carefully.
 
 ## Next-step implementation by model
 

@@ -5,6 +5,15 @@ description = "End-to-end client operations workflows from intake through offboa
 
 This section is for diagnosing the client delivery path itself. Use it when work feels messy between inquiry, proposal, onboarding, delivery, billing, or offboarding, and you need to see where the sequence is failing.
 
+Most solo operators do not need more advice about "productivity." They need a cleaner operating sequence. That is what this hub covers: where a client workflow breaks, what a good handoff looks like, and which page to open next based on the stage that is slipping.
+
+## How to use this hub
+
+- Start with the full lifecycle page if you are not yet sure where the breakdown is.
+- Open the stage-specific guide only after you can name the bottleneck clearly.
+- Pull in checklists after the workflow rule is clear, not before.
+- Use comparisons and stack pages only when the real issue is tool fit rather than stage design.
+
 ## Start with the broken stage
 
 1. Start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the whole client path feels loose or reactive.
@@ -19,12 +28,25 @@ This section is for diagnosing the client delivery path itself. Use it when work
 - repeated client confusion at the same handoff point
 - attempts to solve a sequence problem with more software
 
+## Cornerstone pages in this hub
+
+- [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) is the anchor page. Use it to map the full sequence before changing tools.
+- [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) is the best page when calendar protection and lead quality are the immediate problem.
+- [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) matters when clients say yes but projects still start fuzzy.
+- [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) is useful only after the manual path is stable enough to automate safely.
+
 ## Supporting assets by stage
 
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 - [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
+
+## Suggested reading paths
+
+- For a messy client lifecycle: anchor workflow -> proposal handoff -> onboarding checklist -> invoice workflow.
+- For a lead-quality problem: intake guide -> CRM vs PM comparison -> full workflow anchor.
+- For repeated delivery friction: anchor workflow -> onboarding checklist -> delivery QA checklist -> weekly operations checklist.
 
 ## When to leave this section
 

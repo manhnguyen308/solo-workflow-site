@@ -9,7 +9,7 @@ tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = true
 +++
 
@@ -17,8 +17,19 @@ Use this checklist after contract signing and before delivery begins. The goal i
 
 ## When to use this checklist
 
-Use immediately after proposal/contract handoff and before kickoff meeting.  
+Use immediately after proposal or contract handoff and before the kickoff meeting.  
 Do not skip this stage because "the client already understands the project." Most avoidable delivery friction begins here.
+
+## What good onboarding should accomplish
+
+Good onboarding does not just welcome the client. It makes the project operationally usable by:
+- confirming what was sold,
+- making ownership visible,
+- collecting required access and assets,
+- defining communication and approval rules,
+- locking the first billing and delivery triggers.
+
+If those points are unclear, kickoff is early, not efficient.
 
 ## Fast operator sequence
 
@@ -40,7 +51,7 @@ If an item is incomplete, pause kickoff instead of carrying the ambiguity into d
 
 ### B) Access and assets
 - Request required access (accounts, files, brand resources).
-- Confirm file naming/version workflow.
+- Confirm file naming and version workflow.
 - Confirm where final deliverables will live.
 
 ### C) Communication rhythm
@@ -51,7 +62,7 @@ If an item is incomplete, pause kickoff instead of carrying the ambiguity into d
 ### D) Timeline and milestone setup
 - Confirm kickoff date and first milestone deadline.
 - Confirm dependency risks (client-provided items).
-- Add milestone reminders to your tracking system.
+- Add milestone reminders to your system of record.
 
 ### E) Commercial and admin controls
 - Confirm invoice timing and payment terms.
@@ -66,6 +77,13 @@ If any answer below is "no," do not start delivery yet:
 - Does the client know where updates and files will appear?
 - Are payment terms and milestone triggers clear?
 
+## Common onboarding misses
+
+- The contract is signed, but no one translated it into a working delivery plan.
+- Access collection happens ad hoc after work is supposed to begin.
+- Communication rules stay implicit until the first delay or missed approval.
+- Billing terms exist in the contract but are absent from the live project record.
+
 ## Immediate next action after completion
 
 - Create the first live milestone in your system of record.
@@ -76,7 +94,7 @@ If any answer below is "no," do not start delivery yet:
 
 - Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Intake setup: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
-- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
+- Contract transition: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
 
 ## Common misuses to avoid
 

@@ -5,6 +5,15 @@ description = "Scenario-based software comparisons for workflow decisions."
 
 This section is for resolving one bounded tool or system question at a time. Use it after you know the workflow pressure point and need to choose between plausible options.
 
+These pages are designed to narrow a decision, not extend browsing. If you leave a comparison page with more tabs open but no clearer operating direction, you are using the section the wrong way.
+
+## How to use this hub
+
+- Name the operational decision before you open a comparison.
+- Read the comparison for tradeoffs and failure modes, not feature-counting.
+- Follow the recommended next page immediately after you decide.
+- Avoid using comparison pages as a substitute for mapping your workflow first.
+
 ## Start with the decision you are actually making
 
 1. Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when you are deciding where active client operations should live.
@@ -15,6 +24,11 @@ This section is for resolving one bounded tool or system question at a time. Use
 - they frame the tradeoff, not just the feature list
 - they assume you already know the workflow problem underneath the choice
 - they are meant to end with a decision, not with more browsing
+
+## Cornerstone decisions covered here
+
+- [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) is the higher-level decision because it determines where your system of record should live.
+- [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center.
 
 ## Pages to read before or after a comparison
 

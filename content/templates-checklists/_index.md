@@ -5,6 +5,15 @@ description = "Execution assets to run client operations consistently."
 
 This section is for moments when the process is already understood and you need a repeatable operating asset. These pages are meant to reduce misses, not explain the whole system from scratch.
 
+Think of this hub as the execution layer of the site. If another page tells you what a good workflow should look like, the pages here help you run that workflow the same way under deadline pressure.
+
+## How to use this hub
+
+- Choose the checklist by trigger moment, not by general topic.
+- Trim each asset to match your service model after using it on a real client.
+- Attach the checklist to one recurring moment in your week or lifecycle.
+- If the checklist feels premature, go back to the workflow or blueprint page that should define the rule first.
+
 ## Pick the asset by operational trigger
 
 1. Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) immediately after contract signing.
@@ -16,11 +25,23 @@ This section is for moments when the process is already understood and you need 
 
 - [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 
+## Cornerstone assets in this hub
+
+- [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) is the strongest first asset because early delivery friction usually begins there.
+- [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) is the recurring maintenance loop that keeps the rest of the system visible.
+- [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) matters when operational slippage turns into cash-flow slippage.
+
 ## What templates should and should not do
 
 - They should reduce skipped steps in a process you already understand.
 - They should not replace workflow design or tool decisions.
 - They work best when attached to a specific trigger in your week or client lifecycle.
+
+## Suggested reading paths
+
+- For kickoff reliability: proposal handoff -> onboarding checklist -> weekly operations checklist.
+- For delivery consistency: workflow anchor -> delivery QA checklist -> offboarding template.
+- For payment control: proposal handoff -> invoice workflow -> weekly operations checklist.
 
 ## If the asset feels premature
 

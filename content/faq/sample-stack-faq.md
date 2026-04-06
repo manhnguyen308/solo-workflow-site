@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "FAQ: Setting Up a Solo Service Workflow Stack"
 description = "Answers to common setup questions for freelancers and solo operators building a workflow-first software stack."
 summary = "Short answers for recurring workflow-stack setup questions, with links to the deeper page you should open next."
@@ -9,7 +9,7 @@ tags = ["faq", "setup", "workflow-stack"]
 page_type = "faq"
 search_intent = "problem-solving"
 page_role = "support"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++
 
@@ -49,7 +49,7 @@ Migrate in phases by workflow stage, pilot with 1-2 active projects, and keep a 
 
 ## What should I automate first as a solo operator?
 
-Automate stable, repetitive admin tasks only (reminders, recurring checklists, billing nudges). Start with: [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
+Automate stable, repetitive admin tasks only, such as reminders, recurring checklists, and billing nudges. Start with: [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 
 ## Which page should I read after this FAQ?
 

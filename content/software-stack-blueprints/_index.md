@@ -5,6 +5,15 @@ description = "Lean stack planning for freelancers and solo operators."
 
 Use this section when the workflow is mostly clear but the tool stack is still awkward, bloated, or fragmented. These pages focus on stack shape, system ownership, and tradeoffs between simpler and more layered setups.
 
+This hub is for operators who already know they have an operations system to build, but do not want to overbuy software or create duplicated admin. The goal here is not app collecting. It is choosing a stack shape that matches the way the business actually runs.
+
+## How to use this hub
+
+- Start with the lean solo blueprint unless you already have a specific migration or collaboration scenario.
+- Treat every blueprint as an operating model, not a shopping list.
+- Use comparison pages when one system choice is blocking you.
+- Return to the workflow hub if the real issue turns out to be stage design rather than tool structure.
+
 ## Choose the stack problem first
 
 1. Open [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if you want the smallest viable operating stack.
@@ -18,6 +27,12 @@ Use this section when the workflow is mostly clear but the tool stack is still a
 - lower coordination overhead as client volume grows
 - cleaner transitions when a solo operator adds support capacity
 
+## Cornerstone pages in this hub
+
+- [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) is the default starting point for most readers and the clearest baseline for stack decisions.
+- [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) is the practical follow-on when the problem is fragmentation rather than greenfield setup.
+- [Software Stack Blueprint: Consultant + VA Collaboration Setup](/guides/software-stack-blueprint-consultant--va-collaboration-setup/) is the page to use when support capacity changes ownership rules and admin flow.
+
 ## Bring in decision pages when needed
 
 - If you do not know where active client truth should live, read [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
@@ -28,3 +43,9 @@ Use this section when the workflow is mostly clear but the tool stack is still a
 
 - [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+
+## Suggested reading paths
+
+- For first-stack setup: lean solo blueprint -> CRM vs PM comparison -> intake guide -> weekly operations checklist.
+- For a cleanup project: migration guide -> lean solo blueprint -> invoice workflow -> weekly operations checklist.
+- For a two-person operating model: consultant + VA blueprint -> proposal handoff -> weekly operations checklist.

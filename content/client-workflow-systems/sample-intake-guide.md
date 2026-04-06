@@ -1,4 +1,4 @@
-﻿+++
++++
 title = "How to Build a Client Intake and Qualification Workflow"
 description = "A practical intake workflow that helps solo operators qualify leads quickly and protect delivery capacity."
 summary = "Set up required intake fields, a fit-scoring model, and a clear go/no-go decision path in one session."
@@ -9,11 +9,23 @@ tags = ["intake", "qualification", "lead-filtering"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = false
 +++
 
 If every inquiry becomes a discovery call, you are not running intake; you are running reactive sales support. A good intake workflow protects your delivery calendar and prevents misaligned projects from entering your pipeline.
+
+This page is for solo operators who feel busy before work even starts. If your calendar fills with low-fit calls, proposals get drafted for weak opportunities, or delivery work keeps starting with avoidable surprises, intake is the stage to tighten first.
+
+## What a good intake workflow should accomplish
+
+A strong intake workflow does four jobs at once:
+- filters out work that should never reach discovery,
+- captures the information required for a useful sales conversation,
+- protects delivery capacity from poor-fit engagements,
+- hands the right context into proposal and contract work.
+
+If it only collects leads but does not improve decisions, it is not doing enough.
 
 ## Outcome definition
 
@@ -34,6 +46,8 @@ Collect only data you will use in a decision:
 
 If a field does not affect go/no-go, remove it.
 
+Practical rule: most solo operators ask for too much context too early. Start with the smallest set of fields that changes your decision. You can collect implementation detail later during onboarding.
+
 ## Step 2: Build qualification criteria
 
 Use a simple scoring rubric (0-2 per dimension):
@@ -50,6 +64,8 @@ Use a simple scoring rubric (0-2 per dimension):
 - 4-6 = review manually
 - 7-8 = book discovery
 
+Your score should reflect business fit, not optimism. A lead can sound promising and still be a poor operational fit because of budget, timing, or decision readiness.
+
 ## Step 3: Add decision tree logic
 
 - If budget is below minimum and timeline is unrealistic -> reject.
@@ -58,7 +74,16 @@ Use a simple scoring rubric (0-2 per dimension):
 
 This keeps decisions consistent even during busy weeks.
 
-## Step 4: Handoff to proposal/contract stage
+## Step 4: Decide where intake truth lives
+
+Before you add forms, automations, or booking links, decide where intake status should be updated:
+- If sales volume is the main complexity, a CRM-first flow may make sense.
+- If delivery workload is the main complexity, a PM-first flow can still work as long as pre-sale status is visible.
+- If you cannot explain where "qualified and ready for proposal" lives today, you do not yet have a system of record.
+
+Use [System of Record](/glossary/system-of-record/) if you need the definition, then use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) to make the actual operating decision.
+
+## Step 5: Handoff to proposal/contract stage
 
 For discovery-qualified leads, pass these fields forward:
 - core goals,
@@ -70,6 +95,14 @@ For discovery-qualified leads, pass these fields forward:
 Do not start proposal drafting until this handoff packet exists.
 
 Next stage once a lead qualifies: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+
+## Experience-based warning signs
+
+Your intake process is still weak if:
+- you regularly "make exceptions" for leads that miss the threshold,
+- discovery calls are used to gather basic qualifying information,
+- proposals include assumptions that were never captured during intake,
+- the client says yes, then onboarding reveals major missing context.
 
 ## Common mistakes (and fixes)
 
@@ -95,4 +128,11 @@ For full process context, see [Freelance Client Workflow System: Inquiry to Fina
 - Create intake form with required decision fields.
 - Apply scoring rubric to 5 recent inquiries.
 - Adjust thresholds based on outcomes.
-- Connect qualified leads to onboarding path: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+- Connect qualified leads to the proposal handoff path: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- Prepare the signed-client transition with [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+
+## What to read next
+
+- Open [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) if lead quality is improving and the next gap is scoping discipline.
+- Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if the main question is where intake status should live.
+- Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if you need the full lifecycle context around intake.
