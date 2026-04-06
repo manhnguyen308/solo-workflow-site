@@ -10,6 +10,35 @@
 {{ if $featuredPage }}
   {{ $rest = where (.Pages.ByDate.Reverse) "RelPermalink" "ne" $featuredPage.RelPermalink }}
 {{ end }}
+{{ if eq (len .Pages) 0 }}
+<div class="page-shell page-shell-single">
+  <article class="wrap article-shell">
+    <header class="article-header">
+      <div class="article-header-main">
+        <p class="eyebrow">Site page</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+      </div>
+      <aside class="article-aside">
+        <div class="article-aside-card">
+          <p class="panel-label">Use this page for</p>
+          <p>{{ .Params.summary | default .Description | default .Site.Params.siteDescription }}</p>
+        </div>
+        <div class="article-aside-card article-aside-card-soft">
+          <p class="panel-label">Site role</p>
+          <p>Support page that explains how the site works, how to evaluate the content, or how to use it responsibly.</p>
+        </div>
+      </aside>
+    </header>
+    <div class="reading-layout">
+      <div class="article-body prose">
+        {{ .Content }}
+      </div>
+      {{ partial "page-type-block.html" . }}
+    </div>
+  </article>
+</div>
+{{ else }}
 <div class="page-shell page-shell-list">
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
@@ -80,4 +109,5 @@
   </section>
   {{ end }}
 </div>
+{{ end }}
 {{ end }}

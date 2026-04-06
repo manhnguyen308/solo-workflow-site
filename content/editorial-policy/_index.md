@@ -1,35 +1,70 @@
-﻿+++
++++
 title = "Editorial Policy"
-description = "How recommendations are evaluated, updated, and disclosed on SoloOpsGuide."
+description = "How SoloOpsGuide approaches methodology, recommendations, updates, and editorial judgment."
+summary = "See how SoloOpsGuide structures recommendations, evaluates tradeoffs, frames content, and handles corrections or monetization boundaries."
+date = 2026-04-06T00:00:00Z
 +++
 
-SoloOpsGuide is workflow-first. We do not publish generic tool lists without operational context.
+SoloOpsGuide is workflow-first. It does not publish generic tool lists without operational context, and it does not treat software choices as meaningful in isolation from the workflow they are meant to support.
 
-## Editorial principles
+## Core editorial principles
 
-1. Workflow-first decision framing over tool-first promotion.
-2. Scenario-specific guidance over generic feature checklists.
-3. Clear tradeoffs and recommendation boundaries.
-4. Useful next-step links for implementation.
+1. Workflow-first framing over tool-first promotion.
+2. Scenario-based guidance over abstract "best for everyone" claims.
+3. Practical next steps over content that ends at opinion.
+4. Tradeoff awareness over one-sided recommendations.
+5. Calm, implementation-focused language over hype.
 
-## Comparison methodology
+## Content methodology
 
-Every comparison page must:
-- define decision context,
-- use explicit criteria,
-- include tradeoffs and failure modes,
-- avoid declaring a universal winner.
+The site generally works from this order:
+1. define the actual workflow or operating problem,
+2. identify the scenario or reader context,
+3. compare plausible approaches using explicit criteria,
+4. explain tradeoffs, limits, and common failure modes,
+5. route the reader to the next useful implementation page.
 
-## Source and update standards
+This approach is intentional. It helps keep content practical, narrower in scope, and more reliable for real operational use.
 
-- High-intent pages (workflow anchors, stack blueprints, key comparisons) are reviewed on a recurring cadence.
-- If a workflow decision is time-sensitive, we state the assumptions and update when they change.
+## How recommendations are framed
 
-## Monetization transparency
+SoloOpsGuide tries to make recommendations that are:
+- bounded to a use case or operating condition,
+- clear about why one option fits better,
+- explicit about what the recommendation does not cover,
+- supported by linked implementation pages where useful.
 
-- If partner or affiliate links are used, they are disclosed clearly.
-- Monetization does not override scenario-based recommendations.
+Comparison pages should end with clearer direction, not with more confusion or broader browsing.
 
-## Corrections
+## What the site avoids
 
-If you spot a factual error or unclear recommendation boundary, use the correction format on the Contact page: [Contact](/contact/).
+The editorial model intentionally avoids:
+- generic productivity language disconnected from operations,
+- feature-list content with no workflow decision underneath it,
+- trend-driven software commentary for its own sake,
+- inflated claims about efficiency, automation, or scale.
+
+## Updates and corrections
+
+SoloOpsGuide aims to keep cornerstone pages and key decision pages reasonably current, especially where changes in tools, workflow assumptions, or site structure materially affect the guidance.
+
+If a factual error, broken route, or unclear recommendation boundary is identified, the site should correct it when the issue is confirmed and materially relevant.
+
+## Monetization and independence
+
+If sponsorships, partnerships, or affiliate relationships are introduced, they should not override the site's scenario-based recommendation logic.
+
+Commercial relationships should be disclosed clearly where relevant. Editorial usefulness should remain the primary standard.
+
+## How to read the site well
+
+- Use the page that matches the actual bottleneck.
+- Do not treat narrow guidance as universal advice.
+- Prefer implementation pages when you already know the decision you need to make.
+- Use policy and support pages to understand the site's methods and limits, not as substitutes for the operational guides themselves.
+
+## Related pages
+
+- Purpose and boundaries of the site: [Content Policy](/content-policy/)
+- Site overview and intended audience: [About](/about/)
+- Contact and corrections routing: [Contact](/contact/)

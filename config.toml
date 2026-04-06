@@ -11,7 +11,7 @@ summaryLength = 28
 
 [params]
   brandName = "SoloOpsGuide"
-  siteDescription = "Workflow-first playbooks for freelancers, consultants, and solo operators."
+  siteDescription = "Workflow-first guidance for freelancers, consultants, and solo operators building calmer client operations."
   defaultImage = "/og-default.svg"
   author = "SoloOpsGuide"
 
@@ -83,10 +83,18 @@ summaryLength = 28
   url = "/editorial-policy/"
   weight = 30
 [[menu.footer]]
+  name = "Content Policy"
+  url = "/content-policy/"
+  weight = 40
+[[menu.footer]]
   name = "Privacy Policy"
   url = "/privacy-policy/"
-  weight = 40
+  weight = 50
+[[menu.footer]]
+  name = "Disclaimer"
+  url = "/disclaimer/"
+  weight = 60
 [[menu.footer]]
   name = "Terms"
   url = "/terms/"
-  weight = 50
+  weight = 70
