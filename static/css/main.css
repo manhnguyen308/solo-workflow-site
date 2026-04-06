@@ -2161,6 +2161,10 @@ body {
   align-items: center;
 }
 
+.primary-nav .menu li + li {
+  margin-top: 0;
+}
+
 .button-header {
   align-self: center;
 }
