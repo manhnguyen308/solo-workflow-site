@@ -21,8 +21,12 @@
         <nav aria-label="Primary" class="primary-nav">
           <ul class="menu" id="primary-menu">
             {{ range .Site.Menus.main }}
+            {{ if ne .Identifier "workflows" }}
+            {{ if ne .Name "Workflows" }}
             {{ $isActive := or (eq $.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $.RelPermalink .URL)) }}
             <li><a href="{{ .URL }}" {{ if $isActive }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
+            {{ end }}
+            {{ end }}
             {{ end }}
           </ul>
         </nav>
