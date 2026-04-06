@@ -10,13 +10,21 @@
       <aside class="section-hero-panel">
         <p class="panel-label">Browse by relevance</p>
         <p>Move into the page that matches your current stage of implementation rather than reading every result in order.</p>
+        <div class="section-stat">
+          <span>{{ len .Pages }}</span>
+          <p>pages connected to this topic</p>
+        </div>
       </aside>
     </div>
   </section>
 
   <section class="page-section">
     <div class="wrap">
-      <div class="card-grid">
+      <div class="section-heading">
+        <p class="eyebrow">Connected pages</p>
+        <h2>Browse the most relevant reading paths</h2>
+      </div>
+      <div class="card-grid card-grid-2">
         {{ range .Pages.ByDate.Reverse }}
           {{ partial "page-card.html" (dict "page" . "style" "default") }}
         {{ end }}

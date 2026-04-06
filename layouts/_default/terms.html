@@ -14,6 +14,10 @@
       <aside class="section-hero-panel">
         <p class="panel-label">Browse intentionally</p>
         <p>{{ if eq .Kind "section" }}Use this hub like a guided destination and start with the page that best matches your current operating problem.{{ else }}Taxonomy pages are best for discovery after you already know the kind of workflow problem you are trying to solve.{{ end }}</p>
+        <div class="section-stat">
+          <span>{{ if eq .Kind "section" }}{{ len .Pages }}{{ else }}{{ len .Data.Terms.Alphabetical }}{{ end }}</span>
+          <p>{{ if eq .Kind "section" }}pages in this section{{ else }}topics in this taxonomy{{ end }}</p>
+        </div>
       </aside>
     </div>
   </section>
@@ -21,18 +25,27 @@
   <section class="page-section">
     <div class="wrap">
       {{ if eq .Kind "section" }}
-        <div class="card-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Browse the section</p>
+          <h2>Pages in this hub</h2>
+        </div>
+        <div class="card-grid card-grid-2">
           {{ range .Pages.ByDate.Reverse }}
             {{ partial "page-card.html" (dict "page" . "style" "default") }}
           {{ end }}
         </div>
       {{ else }}
+        <div class="section-heading">
+          <p class="eyebrow">Taxonomy topics</p>
+          <h2>Explore connected concepts</h2>
+        </div>
         <div class="term-grid">
           {{ range .Data.Terms.Alphabetical }}
             <a class="term-card" href="{{ .Page.RelPermalink }}">
               <p class="page-card-type">Topic</p>
               <h3>{{ .Page.Title }}</h3>
               <p>{{ .Count }} page{{ if ne .Count 1 }}s{{ end }} connected to this term.</p>
+              <span class="term-card-link">Open topic</span>
             </a>
           {{ end }}
         </div>

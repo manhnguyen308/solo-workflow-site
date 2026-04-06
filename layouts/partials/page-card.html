@@ -14,7 +14,7 @@
     {{ with ($page.Params.summary | default $page.Params.description) }}<p class="page-card-summary">{{ . }}</p>{{ end }}
     <div class="page-card-footer">
       {{ with $page.Params.search_intent }}<span class="page-card-tag">{{ . }}</span>{{ end }}
-      <span class="page-card-link">Read guide</span>
+      <a class="page-card-link" href="{{ $page.RelPermalink }}">Read guide</a>
     </div>
   </div>
 </article>
