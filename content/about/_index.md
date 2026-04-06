@@ -1,9 +1,9 @@
 +++
 title = "About"
-description = "Why Solo Workflow Systems exists, who it serves, and how it approaches workflow-first content."
+description = "Why SoloOpsGuide exists, who it serves, and how it approaches workflow-first content."
 +++
 
-Solo Workflow Systems exists to help freelancers, consultants, and micro-agencies build operational systems that are practical, lightweight, and repeatable.
+SoloOpsGuide exists to help freelancers, consultants, and micro-agencies build operational systems that are practical, lightweight, and repeatable.
 
 ## Who this site is for
 
@@ -29,4 +29,4 @@ Solo Workflow Systems exists to help freelancers, consultants, and micro-agencie
 
 Many solo operators do not need more software opinions. They need a clearer operating model for intake, handoffs, delivery, billing, and offboarding. This site is built to reduce that ambiguity.
 
-For methodology details, see [Editorial Policy](/editorial-policy/). For launch-stage orientation, start at [Solo Workflow Systems](/).
+For methodology details, see [Editorial Policy](/editorial-policy/). For launch-stage orientation, start at [SoloOpsGuide](/).

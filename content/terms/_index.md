@@ -1,6 +1,6 @@
 ﻿+++
 title = "Terms"
-description = "Terms of use for Solo Workflow Systems."
+description = "Terms of use for SoloOpsGuide."
 +++
 
 By using this site, you agree to use the content for informational purposes and to apply your own professional judgment.
@@ -18,7 +18,7 @@ Links to external sites are provided for convenience. We are not responsible for
 
 ## Intellectual property
 
-Original content on this site is owned by Solo Workflow Systems unless stated otherwise. Do not republish full pages without permission.
+Original content on this site is owned by SoloOpsGuide unless stated otherwise. Do not republish full pages without permission.
 
 ## Corrections and contact
 

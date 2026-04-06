@@ -1,9 +1,9 @@
 +++
-title = "Solo Workflow Systems"
+title = "SoloOpsGuide"
 summary = "Practical workflow systems, stack blueprints, and implementation assets for freelancers and solo service businesses."
 +++
 
-Solo Workflow Systems helps freelancers and solo operators build repeatable client operations without bloated software stacks.
+SoloOpsGuide helps freelancers and solo operators build repeatable client operations without bloated software stacks.
 
 ## Start here (recommended reading path)
 

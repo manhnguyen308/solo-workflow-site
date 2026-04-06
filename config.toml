@@ -2,7 +2,7 @@
 # hugo --minify --gc --baseURL "${SITE_URL:-$CF_PAGES_URL}"
 baseURL = "/"
 languageCode = "en-us"
-title = "Solo Workflow Systems"
+title = "SoloOpsGuide"
 enableRobotsTXT = true
 summaryLength = 28
 
@@ -10,9 +10,10 @@ summaryLength = 28
   pagerSize = 10
 
 [params]
+  brandName = "SoloOpsGuide"
   siteDescription = "Workflow-first playbooks for freelancers, consultants, and solo operators."
   defaultImage = "/og-default.svg"
-  author = "Solo Workflow Systems"
+  author = "SoloOpsGuide"
 
 [permalinks]
   client-workflow-systems = "/workflows/:slug/"

@@ -1,6 +1,6 @@
 ﻿+++
 title = "Privacy Policy"
-description = "Privacy commitments for visitors of Solo Workflow Systems."
+description = "Privacy commitments for visitors of SoloOpsGuide."
 +++
 
 This site is designed to collect minimal data required for basic operation and analytics.

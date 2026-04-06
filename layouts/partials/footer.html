@@ -1,11 +1,18 @@
 <footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-intro">
-      <p class="eyebrow">Solo Workflow Systems</p>
-      <p>Workflow-first guides, stack blueprints, and implementation assets for freelancers and solo service businesses that want cleaner delivery operations.</p>
+      <a class="brand-link footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
+        {{ partial "brand.html" (dict "class" "brand-footer" "title" "SoloOpsGuide" "tagline" "Workflow-first operating guidance for solo businesses") }}
+      </a>
+      <p>Editorially structured guides, blueprint pages, and implementation assets for solo operators who want a calmer client operation.</p>
+      <div class="footer-note">
+        <span class="footer-chip">Workflow-first</span>
+        <span class="footer-chip">Lean stack decisions</span>
+        <span class="footer-chip">Practical implementation</span>
+      </div>
     </div>
     <div class="footer-nav-block">
-      <p class="footer-heading">Sections</p>
+      <p class="footer-heading">Explore</p>
       <nav aria-label="Primary footer">
         <ul class="footer-menu">
           {{ range .Site.Menus.main }}
@@ -15,7 +22,7 @@
       </nav>
     </div>
     <div class="footer-nav-block">
-      <p class="footer-heading">Trust</p>
+      <p class="footer-heading">Company</p>
       <nav aria-label="Footer">
         <ul class="footer-menu">
           {{ range .Site.Menus.footer }}
@@ -23,6 +30,14 @@
           {{ end }}
         </ul>
       </nav>
+    </div>
+    <div class="footer-nav-block">
+      <p class="footer-heading">Start Here</p>
+      <ul class="footer-menu">
+        <li><a href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/">Map the full workflow</a></li>
+        <li><a href="/guides/software-stack-blueprint-solo-freelancer-lean-budget/">Choose a lean stack</a></li>
+        <li><a href="/templates/client-onboarding-checklist-for-freelancers-and-consultants/">Operationalize onboarding</a></li>
+      </ul>
     </div>
   </div>
 </footer>

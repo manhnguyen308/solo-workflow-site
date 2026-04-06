@@ -10,8 +10,12 @@
 {{ end }}
 {{ with $related }}
 <section class="related-panel">
-  <h2>See also</h2>
-  <div class="stack-list">
+  <div class="section-heading section-heading-tight">
+    <p class="eyebrow">Continue the system</p>
+    <h2>Related reading</h2>
+    <p>Move to the adjacent page that helps you tighten the same workflow from another angle.</p>
+  </div>
+  <div class="related-grid">
     {{ range . }}
       {{ partial "page-card.html" (dict "page" . "style" "compact") }}
     {{ end }}

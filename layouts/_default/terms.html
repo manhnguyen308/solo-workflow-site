@@ -1,24 +1,43 @@
 {{ define "main" }}
-<div class="wrap">
-  <h1>{{ .Title }}</h1>
-  {{ if eq .Kind "section" }}
-    {{ with .Content }}<div>{{ . }}</div>{{ end }}
-    {{ if gt (len .Pages) 0 }}
-    <ul>
-      {{ range .Pages.ByDate.Reverse }}
-        <li>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-          {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
-        </li>
+<div class="page-shell page-shell-list">
+  <section class="page-hero section-hero">
+    <div class="wrap section-hero-grid">
+      <div class="section-hero-copy">
+        <p class="eyebrow">{{ if eq .Kind "section" }}Section hub{{ else }}Taxonomy{{ end }}</p>
+        <h1>{{ .Title }}</h1>
+        {{ if eq .Kind "section" }}
+          {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
+        {{ else }}
+          <p class="hero-summary">Browse terms connected to the site's workflow, stack, and implementation guidance.</p>
+        {{ end }}
+      </div>
+      <aside class="section-hero-panel">
+        <p class="panel-label">Browse intentionally</p>
+        <p>{{ if eq .Kind "section" }}Use this hub like a guided destination and start with the page that best matches your current operating problem.{{ else }}Taxonomy pages are best for discovery after you already know the kind of workflow problem you are trying to solve.{{ end }}</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="wrap">
+      {{ if eq .Kind "section" }}
+        <div class="card-grid">
+          {{ range .Pages.ByDate.Reverse }}
+            {{ partial "page-card.html" (dict "page" . "style" "default") }}
+          {{ end }}
+        </div>
+      {{ else }}
+        <div class="term-grid">
+          {{ range .Data.Terms.Alphabetical }}
+            <a class="term-card" href="{{ .Page.RelPermalink }}">
+              <p class="page-card-type">Topic</p>
+              <h3>{{ .Page.Title }}</h3>
+              <p>{{ .Count }} page{{ if ne .Count 1 }}s{{ end }} connected to this term.</p>
+            </a>
+          {{ end }}
+        </div>
       {{ end }}
-    </ul>
-    {{ end }}
-  {{ else }}
-  <ul>
-    {{ range .Data.Terms.Alphabetical }}
-      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})</li>
-    {{ end }}
-  </ul>
-  {{ end }}
+    </div>
+  </section>
 </div>
 {{ end }}

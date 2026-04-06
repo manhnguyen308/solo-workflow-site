@@ -1,7 +1,14 @@
 {{ $page := .page }}
 {{ $style := .style | default "default" }}
+{{ $sectionLabel := replace ($page.Section | default "page") "-" " " | title }}
 <article class="page-card page-card-{{ $style }}">
-  {{ with $page.Params.page_type }}<p class="page-card-type">{{ . }}</p>{{ end }}
+  <div class="page-card-top">
+    <p class="page-card-type">{{ $page.Params.page_type | default $sectionLabel }}</p>
+    {{ with $page.Params.search_intent }}<span class="page-card-tag">{{ . }}</span>{{ end }}
+  </div>
   <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
   {{ with ($page.Params.summary | default $page.Params.description) }}<p>{{ . }}</p>{{ end }}
+  <div class="page-card-footer">
+    <span class="page-card-link">Read guide</span>
+  </div>
 </article>

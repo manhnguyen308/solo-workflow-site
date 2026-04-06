@@ -3,27 +3,43 @@
 {{ $guides := first 3 (where .Site.RegularPages "Section" "software-stack-blueprints") }}
 {{ $comparisons := first 2 (where .Site.RegularPages "Section" "workflow-comparisons") }}
 {{ $templates := first 4 (where .Site.RegularPages "Section" "templates-checklists") }}
+{{ $featured := slice
+  (.Site.GetPage "/client-workflow-systems/sample-client-workflow")
+  (.Site.GetPage "/software-stack-blueprints/sample-stack-blueprint")
+  (.Site.GetPage "/workflow-comparisons/sample-crm-vs-pm")
+}}
 <div class="page-shell page-shell-home">
   <section class="home-hero">
     <div class="wrap home-hero-grid">
       <div class="home-hero-copy">
-        <p class="eyebrow">Workflow-first operating guides for solo businesses</p>
+        <p class="eyebrow">Premium editorial operating guide for solo businesses</p>
         <h1>{{ .Title }}</h1>
         <p class="hero-summary">{{ .Params.summary | default .Site.Params.siteDescription }}</p>
-        <p class="hero-support">Build a calmer client operation before you buy more tools. The site is organized around workflow stages, stack choices, and implementation assets that reduce handoff mistakes.</p>
+        <p class="hero-support">Build a calmer client operation before you buy more tools. SoloOpsGuide organizes workflow stages, stack choices, and implementation assets into a usable operating path.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/">Start with the workflow anchor</a>
           <a class="button button-secondary" href="/software-stack-blueprints/">Browse stack blueprints</a>
         </div>
+        <div class="hero-proof">
+          <span>Workflow maps</span>
+          <span>Decision pages</span>
+          <span>Execution assets</span>
+        </div>
       </div>
       <aside class="home-hero-panel">
-        <p class="panel-label">Recommended reading path</p>
-        <ol class="path-list">
-          <li><a href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/">Map the full client lifecycle</a></li>
-          <li><a href="/guides/software-stack-blueprint-solo-freelancer-lean-budget/">Choose a lean stack shape</a></li>
-          <li><a href="/workflows/how-to-build-a-client-intake-and-qualification-workflow/">Tighten intake before scaling</a></li>
-          <li><a href="/templates/client-onboarding-checklist-for-freelancers-and-consultants/">Operationalize the first week</a></li>
-        </ol>
+        <p class="panel-label">Guided journey</p>
+        <div class="journey-panel">
+          <ol class="journey-list">
+            <li><a href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/">Map the full client lifecycle</a></li>
+            <li><a href="/guides/software-stack-blueprint-solo-freelancer-lean-budget/">Choose a lean stack shape</a></li>
+            <li><a href="/workflows/how-to-build-a-client-intake-and-qualification-workflow/">Tighten intake before scaling</a></li>
+            <li><a href="/templates/client-onboarding-checklist-for-freelancers-and-consultants/">Operationalize the first week</a></li>
+          </ol>
+          <div class="journey-note">
+            <strong>Start here if the business feels busy but structurally loose.</strong>
+            <p>Read in sequence when you need operating clarity, then branch into specific decisions and checklists.</p>
+          </div>
+        </div>
       </aside>
     </div>
   </section>
@@ -32,29 +48,120 @@
     <div class="wrap">
       <div class="section-heading">
         <p class="eyebrow">Start by need</p>
-        <h2>Four ways into the site</h2>
-        <p>Each section solves a different part of the same operating problem: how to run client work with less drift, less overhead, and clearer next steps.</p>
+        <h2>Four ways into the system</h2>
+        <p>Each section solves a different layer of the same problem: how to run client work with less drift, less overhead, and clearer next steps.</p>
       </div>
       <div class="feature-grid feature-grid-4">
-        <a class="feature-card" href="/client-workflow-systems/">
+        <a class="feature-card feature-card-tall" href="/client-workflow-systems/">
           <p class="feature-kicker">Workflows</p>
           <h3>Fix the sequence first</h3>
           <p>Use workflow pages when the problem is broken handoffs, unclear ownership, or unreliable delivery flow.</p>
+          <ul class="feature-list">
+            <li>Lifecycle map</li>
+            <li>Stage-by-stage guidance</li>
+            <li>Handoff logic</li>
+          </ul>
         </a>
-        <a class="feature-card" href="/software-stack-blueprints/">
+        <a class="feature-card feature-card-tall" href="/software-stack-blueprints/">
           <p class="feature-kicker">Blueprints</p>
           <h3>Choose a lean stack</h3>
           <p>Use blueprint pages when the process is mostly clear but the tool structure still feels bloated or fragmented.</p>
+          <ul class="feature-list">
+            <li>Lean stack models</li>
+            <li>Migration guidance</li>
+            <li>System-of-record framing</li>
+          </ul>
         </a>
-        <a class="feature-card" href="/workflow-comparisons/">
+        <a class="feature-card feature-card-tall" href="/workflow-comparisons/">
           <p class="feature-kicker">Comparisons</p>
           <h3>Resolve one decision</h3>
           <p>Use comparison pages to answer a bounded system question, not to browse generic software reviews.</p>
+          <ul class="feature-list">
+            <li>Scenario-based choices</li>
+            <li>Tradeoff framing</li>
+            <li>Decision support</li>
+          </ul>
         </a>
-        <a class="feature-card" href="/templates-checklists/">
+        <a class="feature-card feature-card-tall" href="/templates-checklists/">
           <p class="feature-kicker">Templates</p>
           <h3>Implement the next step</h3>
           <p>Use the assets when you already know the workflow stage and need a practical checklist, handoff, or recurring routine.</p>
+          <ul class="feature-list">
+            <li>Checklists</li>
+            <li>Implementation assets</li>
+            <li>Recurring routines</li>
+          </ul>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="wrap workflow-explainer">
+      <div class="section-heading">
+        <p class="eyebrow">Workflow-first explanation</p>
+        <h2>Build the sequence before optimizing the stack</h2>
+        <p>SoloOpsGuide treats the workflow as the main product. Once the sequence is stable, the tool choices and templates become easier, lighter, and less expensive to maintain.</p>
+      </div>
+      <div class="workflow-rail">
+        <div class="workflow-step">
+          <span class="workflow-step-index">01</span>
+          <h3>Clarify the lifecycle</h3>
+          <p>Map the major handoffs from inquiry to payment and closeout.</p>
+        </div>
+        <div class="workflow-step">
+          <span class="workflow-step-index">02</span>
+          <h3>Choose the operating model</h3>
+          <p>Decide where truth lives and which tools earn a place in the stack.</p>
+        </div>
+        <div class="workflow-step">
+          <span class="workflow-step-index">03</span>
+          <h3>Operationalize the steps</h3>
+          <p>Use checklists and assets only after the workflow is clear enough to support them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section home-section-contrast">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Featured reading</p>
+        <h2>The clearest pages to start with</h2>
+        <p>These pages define the site's main perspective and give the fastest route to a cleaner operating system.</p>
+      </div>
+      <div class="featured-grid">
+        {{ range $featured }}
+          {{ with . }}
+            {{ partial "page-card.html" (dict "page" . "style" "featured") }}
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Curated hubs</p>
+        <h2>Browse by operating question</h2>
+        <p>These section hubs act like guided destinations rather than simple archives. Each one is shaped around a different kind of decision.</p>
+      </div>
+      <div class="hub-grid">
+        <a class="hub-card" href="/client-workflow-systems/">
+          <p class="feature-kicker">Workflow hub</p>
+          <h3>Start with process design</h3>
+          <p>Best when the core problem is sequencing, ownership, or broken handoffs.</p>
+        </a>
+        <a class="hub-card" href="/software-stack-blueprints/">
+          <p class="feature-kicker">Blueprint hub</p>
+          <h3>Move into lean stack design</h3>
+          <p>Best when the workflow is mostly clear and the software structure needs pruning.</p>
+        </a>
+        <a class="hub-card" href="/workflow-comparisons/">
+          <p class="feature-kicker">Comparison hub</p>
+          <h3>Resolve one bounded decision</h3>
+          <p>Best when you need a specific answer about tool fit, structure, or workflow ownership.</p>
         </a>
       </div>
     </div>
@@ -78,9 +185,9 @@
   <section class="home-section home-section-tint">
     <div class="wrap">
       <div class="section-heading">
-        <p class="eyebrow">Use the right page type</p>
-        <h2>Editorially structured, not blog-shaped</h2>
-        <p>The site is designed to help a solo operator move from workflow clarity to tool choice to execution without collapsing into generic review content.</p>
+        <p class="eyebrow">Useful on a real client week</p>
+        <h2>Practical pages that survive contact with reality</h2>
+        <p>These are the checklists, blueprint pages, and comparison pages that support execution once the workflow direction is clear.</p>
       </div>
       <div class="two-column-panels">
         <div class="info-panel">
@@ -107,8 +214,8 @@
     <div class="wrap">
       <div class="section-heading">
         <p class="eyebrow">Implementation assets</p>
-        <h2>Useful on a real client week</h2>
-        <p>These are the practical pages that help a workflow survive first contact with actual delivery, billing, and handoff work.</p>
+        <h2>Checklists and templates with real workflow context</h2>
+        <p>Use these when you already know the stage that needs support and want a cleaner way to execute it.</p>
       </div>
       <div class="card-grid">
         {{ range $templates }}

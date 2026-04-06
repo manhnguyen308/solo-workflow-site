@@ -1,20 +1,37 @@
 {{ define "main" }}
 <div class="page-shell page-shell-single">
-  <article class="wrap reading-layout">
+  <article class="wrap article-shell">
     <header class="article-header">
-      {{ with .Section }}<p class="eyebrow">{{ replace . "-" " " | title }}</p>{{ end }}
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.description }}<p class="hero-summary">{{ . }}</p>{{ end }}
-      <div class="article-meta">
-        {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
-        {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}
+      <div class="article-header-main">
+        {{ with .Section }}<p class="eyebrow">{{ replace . "-" " " | title }}</p>{{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+        <div class="article-meta">
+          {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
+          {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}
+          <span class="meta-pill meta-pill-muted">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
       </div>
+      <aside class="article-aside">
+        <div class="article-aside-card">
+          <p class="panel-label">Use this page for</p>
+          <p>{{ .Params.summary | default .Params.description | default .Site.Params.siteDescription }}</p>
+        </div>
+        {{ with .Params.page_type }}
+        <div class="article-aside-card article-aside-card-soft">
+          <p class="panel-label">Page type</p>
+          <p>{{ . | title }} page with operational guidance, not general blog content.</p>
+        </div>
+        {{ end }}
+      </aside>
     </header>
-    <div class="article-body prose">
-      {{ .Content }}
+    <div class="reading-layout">
+      <div class="article-body prose">
+        {{ .Content }}
+      </div>
+      {{ partial "page-type-block.html" . }}
+      {{ partial "related.html" . }}
     </div>
-    {{ partial "page-type-block.html" . }}
-    {{ partial "related.html" . }}
   </article>
 </div>
 {{ end }}

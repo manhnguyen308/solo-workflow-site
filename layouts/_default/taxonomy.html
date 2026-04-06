@@ -1,10 +1,27 @@
 {{ define "main" }}
-<div class="wrap">
-  <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+<div class="page-shell page-shell-list">
+  <section class="page-hero section-hero">
+    <div class="wrap section-hero-grid">
+      <div class="section-hero-copy">
+        <p class="eyebrow">Taxonomy</p>
+        <h1>{{ .Title }}</h1>
+        <p class="hero-summary">Pages related to this topic across workflows, blueprints, comparisons, and implementation assets.</p>
+      </div>
+      <aside class="section-hero-panel">
+        <p class="panel-label">Browse by relevance</p>
+        <p>Move into the page that matches your current stage of implementation rather than reading every result in order.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="wrap">
+      <div class="card-grid">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ partial "page-card.html" (dict "page" . "style" "default") }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
 </div>
 {{ end }}

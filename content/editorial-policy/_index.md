@@ -1,9 +1,9 @@
 ﻿+++
 title = "Editorial Policy"
-description = "How recommendations are evaluated, updated, and disclosed on Solo Workflow Systems."
+description = "How recommendations are evaluated, updated, and disclosed on SoloOpsGuide."
 +++
 
-Solo Workflow Systems is workflow-first. We do not publish generic tool lists without operational context.
+SoloOpsGuide is workflow-first. We do not publish generic tool lists without operational context.
 
 ## Editorial principles
 
