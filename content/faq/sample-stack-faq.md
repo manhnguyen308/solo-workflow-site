@@ -1,7 +1,7 @@
 ﻿+++
 title = "FAQ: Setting Up a Solo Service Workflow Stack"
 description = "Answers to common setup questions for freelancers and solo operators building a workflow-first software stack."
-summary = "Use this FAQ to solve common setup blockers and route to the right implementation pages."
+summary = "Short answers for recurring workflow-stack setup questions, with links to the deeper page you should open next."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "faq"
@@ -13,7 +13,7 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = false
 +++
 
-Use this FAQ when you need a fast answer and a clear next step. Each answer routes you to the most relevant workflow, guide, or checklist page.
+This FAQ is for fast routing, not deep explanation. Use it when you know the blocker and want the shortest path to the right detailed page.
 
 ## Should I choose tools before defining my workflow?
 
@@ -51,6 +51,10 @@ Migrate in phases by workflow stage, pilot with 1-2 active projects, and keep a 
 
 Automate stable, repetitive admin tasks only (reminders, recurring checklists, billing nudges). Start with: [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 
-## If I only read one page, which should it be?
+## Which page should I read after this FAQ?
 
-Use the workflow anchor first, then come back here for specifics: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+That depends on the kind of blockage:
+
+- If the client path itself feels unclear, open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If the issue is stack shape or tool count, open [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If the issue is where client operations should live, open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

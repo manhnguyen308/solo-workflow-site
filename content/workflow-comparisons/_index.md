@@ -3,21 +3,21 @@ title = "Workflow Comparisons"
 description = "Scenario-based software comparisons for workflow decisions."
 +++
 
-These comparisons are decision pages, not generic feature lists.
+This section is for resolving one bounded tool or system question at a time. Use it after you know the workflow pressure point and need to choose between plausible options.
 
-## Start here
+## Start with the decision you are actually making
 
-1. [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if you are deciding where the truth about client work should live.
-2. [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) if you already know you need a delivery workspace and are choosing how structured it should be.
+1. Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when you are deciding where active client operations should live.
+2. Open [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) when the open question is how structured your delivery workspace should be.
 
-## Use this section correctly
+## What makes these pages useful
 
-- Start with the workflow model first: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Then choose your stack shape: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
-- Use the comparisons to resolve a specific decision, not to browse features
+- they frame the tradeoff, not just the feature list
+- they assume you already know the workflow problem underneath the choice
+- they are meant to end with a decision, not with more browsing
 
-## Best next steps by decision type
+## Pages to read before or after a comparison
 
-- Need a system-of-record answer: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
-- Need a delivery workspace answer: [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/)
-- Need an implementation path after the decision: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
+- Start with the workflow model first if the sequence is still unclear: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Move into a blueprint if the decision changes your whole stack shape: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) when the comparison outcome needs a concrete operating next step.
