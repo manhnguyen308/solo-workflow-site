@@ -1,6 +1,20 @@
 {{ $page := .page }}
 {{ $style := .style | default "default" }}
 {{ $sectionLabel := replace ($page.Section | default "page") "-" " " | title }}
+{{ $linkLabel := "Read page" }}
+{{ if eq $page.Section "client-workflow-systems" }}
+  {{ $linkLabel = "Read workflow" }}
+{{ else if eq $page.Section "software-stack-blueprints" }}
+  {{ $linkLabel = "Open blueprint" }}
+{{ else if eq $page.Section "workflow-comparisons" }}
+  {{ $linkLabel = "Read comparison" }}
+{{ else if eq $page.Section "templates-checklists" }}
+  {{ $linkLabel = "Open template" }}
+{{ else if eq $page.Section "glossary" }}
+  {{ $linkLabel = "View term" }}
+{{ else if eq $page.Section "faq" }}
+  {{ $linkLabel = "View answer" }}
+{{ end }}
 <article class="page-card page-card-{{ $style }} page-card-theme-{{ $page.Section }}">
   <a class="page-card-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
     <span class="page-card-media-inner"></span>
@@ -14,7 +28,7 @@
     {{ with ($page.Params.summary | default $page.Params.description) }}<p class="page-card-summary">{{ . }}</p>{{ end }}
     <div class="page-card-footer">
       {{ with $page.Params.search_intent }}<span class="page-card-tag">{{ . }}</span>{{ end }}
-      <a class="page-card-link" href="{{ $page.RelPermalink }}">Read guide</a>
+      <a class="page-card-link" href="{{ $page.RelPermalink }}">{{ $linkLabel }}</a>
     </div>
   </div>
 </article>
