@@ -1,11 +1,19 @@
 {{ define "main" }}
 <div class="page-shell page-shell-single">
+  {{ $featureImage := partial "feature-image.html" . }}
   <article class="wrap article-shell">
     <header class="article-header">
       <div class="article-header-main">
         {{ with .Section }}<p class="eyebrow">{{ replace . "-" " " | title }}</p>{{ end }}
         <h1>{{ .Title }}</h1>
         {{ with .Params.description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+        {{ if .Params.feature_image }}
+          {{ with $featureImage }}
+          <div class="article-hero-media">
+            <img src="{{ .rel }}" alt="{{ .alt }}" loading="eager" fetchpriority="high" decoding="async" width="{{ .width }}" height="{{ .height }}">
+          </div>
+          {{ end }}
+        {{ end }}
         <div class="article-meta">
           {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
           {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}

@@ -1,6 +1,8 @@
 ﻿+++
 title = "Glossary"
 description = "Plain-English workflow and operations terms for solo operators making stack, handoff, and client-system decisions."
+feature_image = "/images/features/hubs/glossary.webp"
+feature_image_alt = "Editorial glossary illustration with definition cards and reference panels."
 +++
 
 Use this glossary when a term is blocking a decision. The purpose here is not to build vocabulary for its own sake, but to remove ambiguity around ownership, handoffs, records, and workflow structure.

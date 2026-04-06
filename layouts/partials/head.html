@@ -17,6 +17,7 @@
 <title>{{ $title }}</title>
 {{ $descSource := .Params.description | default .Params.summary | default .Description | default .Summary | default .Site.Params.siteDescription }}
 {{ $desc := $descSource | plainify | htmlUnescape | truncate 165 }}
+{{ $featureImage := partial "feature-image.html" . }}
 <meta name="description" content="{{ $desc }}">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="{{ .Permalink }}">
@@ -29,12 +30,13 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ .Site.Params.defaultImage | absURL }}">
-<meta property="og:image:alt" content="{{ .Title | default $siteTitle }}">
+<meta property="og:image" content="{{ with $featureImage }}{{ .src }}{{ else }}{{ .Site.Params.defaultImage | absURL }}{{ end }}">
+<meta property="og:image:alt" content="{{ with $featureImage }}{{ .alt }}{{ else }}{{ .Title | default $siteTitle }}{{ end }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ $title }}">
 <meta name="twitter:description" content="{{ $desc }}">
-<meta name="twitter:image" content="{{ .Site.Params.defaultImage | absURL }}">
+<meta name="twitter:image" content="{{ with $featureImage }}{{ .src }}{{ else }}{{ .Site.Params.defaultImage | absURL }}{{ end }}">
+<meta name="twitter:image:alt" content="{{ with $featureImage }}{{ .alt }}{{ else }}{{ .Title | default $siteTitle }}{{ end }}">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="shortcut icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} RSS" href="{{ "index.xml" | absURL }}">
@@ -49,6 +51,9 @@
     "url" .Permalink
     "description" $desc
   }}
+  {{ with $featureImage }}
+    {{ $schema = merge $schema (dict "image" .src) }}
+  {{ end }}
 {{ else if eq .Kind "section" }}
   {{ $schema = dict
     "@context" "https://schema.org"
@@ -58,6 +63,9 @@
     "description" $desc
     "isPartOf" (dict "@type" "WebSite" "name" $siteTitle "url" .Site.Home.Permalink)
   }}
+  {{ with $featureImage }}
+    {{ $schema = merge $schema (dict "image" .src) }}
+  {{ end }}
 {{ else if eq .Kind "page" }}
   {{ $pageType := "Article" }}
   {{ if eq .Params.page_type "glossary" }}
@@ -74,6 +82,9 @@
       "url" .Permalink
       "inDefinedTermSet" (dict "@type" "DefinedTermSet" "name" (printf "%s Glossary" $siteTitle) "url" (printf "%sglossary/" .Site.Home.Permalink))
     }}
+    {{ with $featureImage }}
+      {{ $schema = merge $schema (dict "image" .src) }}
+    {{ end }}
   {{ else }}
     {{ $schema = dict
       "@context" "https://schema.org"
@@ -89,6 +100,9 @@
       "publisher" (dict "@type" "Organization" "name" $siteTitle)
       "isPartOf" (dict "@type" "WebSite" "name" $siteTitle "url" .Site.Home.Permalink)
     }}
+    {{ with $featureImage }}
+      {{ $schema = merge $schema (dict "image" .src) }}
+    {{ end }}
   {{ end }}
 {{ end }}
 {{ with $schema }}

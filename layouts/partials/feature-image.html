@@ -1,0 +1,36 @@
+{{ $page := . }}
+{{ $alt := $page.Title | default $page.Site.Params.brandName }}
+{{ with $page.Params.feature_image_alt }}
+  {{ $alt = . }}
+{{ end }}
+
+{{ $source := $page.Params.feature_image }}
+{{ if not $source }}
+  {{ $source = $page.Site.Params.defaultImageSource }}
+{{ end }}
+
+{{ if $source }}
+  {{ if hasPrefix $source "/" }}
+    {{ return dict
+      "src" ($source | absURL)
+      "rel" ($source | relURL)
+      "alt" $alt
+      "width" 1600
+      "height" 900
+    }}
+  {{ else }}
+    {{ $processed := false }}
+    {{ with resources.Get $source }}
+      {{ $processed = .Fit "1600x900 webp q82" }}
+    {{ end }}
+    {{ with $processed }}
+      {{ return dict
+      "src" .Permalink
+      "rel" .RelPermalink
+      "alt" $alt
+      "width" .Width
+      "height" .Height
+    }}
+    {{ end }}
+  {{ end }}
+{{ end }}

@@ -1,6 +1,8 @@
 ﻿+++
 title = "Software Stack Blueprints"
 description = "Lean software stack blueprints for freelancers and solo operators designing calmer, lower-overhead client systems."
+feature_image = "/images/features/hubs/software-stack-blueprints.webp"
+feature_image_alt = "Editorial blueprint illustration with layered system panels and planning blocks."
 +++
 
 Use this section when the workflow is mostly clear but the tool stack is still awkward, bloated, or fragmented. These pages focus on stack shape, system ownership, and tradeoffs between simpler and more layered setups.

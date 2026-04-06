@@ -2,6 +2,8 @@
 title = "How to Migrate from Scattered Tools to One Workflow System"
 description = "A step-by-step migration guide for freelancers consolidating fragmented tools into a reliable workflow-first system."
 summary = "Use this migration playbook to audit your current stack, preserve critical data, and move to a cleaner operating system without service disruption."
+feature_image = "/images/features/blueprints/migrate-from-scattered-tools.webp"
+feature_image_alt = "Illustrated migration sequence moving scattered tool fragments into one structured operating system."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "software-stack-blueprints"

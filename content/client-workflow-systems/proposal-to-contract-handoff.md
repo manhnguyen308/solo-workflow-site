@@ -2,6 +2,8 @@
 title = "Proposal-to-Contract Handoff Workflow Setup"
 description = "A practical handoff workflow that keeps scope, timeline, and commercial terms aligned before onboarding begins."
 summary = "Use this guide to move from discovery to signed agreement without scope drift or kickoff confusion."
+feature_image = "/images/features/workflows/proposal-contract-handoff.webp"
+feature_image_alt = "Illustrated handoff scene with two workflow panels connected between proposal and contract stages."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "client-workflow-systems"

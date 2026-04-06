@@ -2,6 +2,8 @@
 title = "System of Record"
 description = "The single source of truth where active client status and operational decisions are maintained."
 summary = "A system of record reduces handoff errors by ensuring one authoritative place for client workflow state."
+feature_image = "/images/features/glossary/system-of-record.webp"
+feature_image_alt = "Illustrated definition card showing one authoritative operations record with supporting references."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "glossary"

@@ -2,6 +2,8 @@
 title = "Software Stack Blueprint: Solo Freelancer (Lean Budget)"
 description = "A staged software stack blueprint that helps solo freelancers avoid overbuying and choose tools by workflow need."
 summary = "Pick a lean stack by stage (starter, stable, scaling), use clear upgrade triggers, and avoid paying for complexity you do not need yet."
+feature_image = "/images/features/blueprints/solo-freelancer-lean-budget.webp"
+feature_image_alt = "Illustrated stack blueprint with layered system blocks for a lean solo freelancer setup."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "software-stack-blueprints"

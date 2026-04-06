@@ -2,6 +2,8 @@
 title = "Delivery QA Checklist Before Client Handoff"
 description = "A pre-handoff QA checklist to reduce revisions, prevent missing deliverables, and improve delivery confidence."
 summary = "Run this checklist before sending work to clients so handoff quality is consistent across projects."
+feature_image = "/images/features/templates/delivery-qa-checklist.webp"
+feature_image_alt = "Illustrated delivery QA checklist with handoff review steps before client submission."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "templates-checklists"

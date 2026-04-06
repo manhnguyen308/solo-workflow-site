@@ -2,6 +2,8 @@
 title = "CRM vs Project Management Tool for Client Workflows"
 description = "Choose CRM-first, PM-first, or hybrid based on your client workflow complexity, lead volume, and handoff needs."
 summary = "This comparison helps solo operators pick the right system of record and avoid fragmented client operations."
+feature_image = "/images/features/comparisons/crm-vs-project-management.webp"
+feature_image_alt = "Illustrated side-by-side comparison between CRM-first and project-management-first operating models."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "workflow-comparisons"

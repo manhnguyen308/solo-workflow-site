@@ -1,6 +1,8 @@
 ﻿+++
 title = "Client Workflow Systems"
 description = "End-to-end client operations workflows from intake through offboarding."
+feature_image = "/images/features/hubs/client-workflow-systems.webp"
+feature_image_alt = "Editorial workflow illustration showing connected stages across a client delivery system."
 +++
 
 This section is for diagnosing the client delivery path itself. Use it when work feels messy between inquiry, proposal, onboarding, delivery, billing, or offboarding, and you need to see where the sequence is failing.

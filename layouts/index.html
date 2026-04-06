@@ -4,15 +4,6 @@
 {{ $comparisonAnchor := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
 {{ $templateAnchor := .Site.GetPage "/templates-checklists/sample-onboarding-checklist" }}
 {{ $latest := first 3 (.Site.RegularPages.ByDate.Reverse) }}
-{{ $latestImages := slice
-  "https://images.unsplash.com/photo-1544654262-e295983be0f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-  "https://images.unsplash.com/photo-1728598909887-2d983a8889b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-  "https://images.unsplash.com/photo-1557928082-c17dbf42a70f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-}}
-{{ $popularImages := slice
-  "https://images.unsplash.com/photo-1758876201598-67fd2a5570ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-  "https://images.unsplash.com/photo-1765648684555-de2d0f6af467?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
-}}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}
@@ -92,8 +83,13 @@
       </div>
       <div class="homepage-editorial-grid">
         {{ range $index, $page := $latest }}
+        {{ $featureImage := partial "feature-image.html" $page }}
         <article class="homepage-editorial-card">
-          <a class="homepage-editorial-media" href="{{ $page.RelPermalink }}" style="background-image: url('{{ index $latestImages $index }}');" aria-label="{{ $page.Title }}"></a>
+          <a class="homepage-editorial-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
+            {{ with $featureImage }}
+              <img src="{{ .rel }}" alt="" loading="{{ if eq $index 0 }}eager{{ else }}lazy{{ end }}" decoding="async" width="{{ .width }}" height="{{ .height }}">
+            {{ end }}
+          </a>
           <div class="homepage-editorial-body">
             <div class="homepage-editorial-meta">
               <span>{{ $page.Params.page_type | default (replace $page.Section "-" " " | title) }}</span>
@@ -161,8 +157,13 @@
       </div>
       <div class="homepage-popular-grid">
         {{ with $workflowAnchor }}
+        {{ $featureImage := partial "feature-image.html" . }}
         <article class="homepage-popular-card">
-          <a class="homepage-popular-media" href="{{ .RelPermalink }}" style="background-image: url('{{ index $popularImages 0 }}');" aria-label="{{ .Title }}"></a>
+          <a class="homepage-popular-media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+            {{ with $featureImage }}
+              <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
+            {{ end }}
+          </a>
           <div class="homepage-popular-body">
             <div class="homepage-editorial-meta">
               <span>{{ .Params.page_type | default "Workflow" | title }}</span>
@@ -179,8 +180,13 @@
         </article>
         {{ end }}
         {{ with $blueprintAnchor }}
+        {{ $featureImage := partial "feature-image.html" . }}
         <article class="homepage-popular-card">
-          <a class="homepage-popular-media" href="{{ .RelPermalink }}" style="background-image: url('{{ index $popularImages 1 }}');" aria-label="{{ .Title }}"></a>
+          <a class="homepage-popular-media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
+            {{ with $featureImage }}
+              <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
+            {{ end }}
+          </a>
           <div class="homepage-popular-body">
             <div class="homepage-editorial-meta">
               <span>{{ .Params.page_type | default "Blueprint" | title }}</span>

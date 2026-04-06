@@ -1,6 +1,8 @@
 ﻿+++
 title = "Templates & Checklists"
 description = "Client operations templates and checklists for onboarding, delivery, invoicing, offboarding, and weekly workflow upkeep."
+feature_image = "/images/features/hubs/templates-checklists.webp"
+feature_image_alt = "Editorial checklist illustration with structured task cards for repeatable client operations."
 +++
 
 This section is for moments when the process is already understood and you need a repeatable operating asset. These pages are meant to reduce misses, not explain the whole system from scratch.

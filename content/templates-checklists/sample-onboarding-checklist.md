@@ -2,6 +2,8 @@
 title = "Client Onboarding Checklist for Freelancers and Consultants"
 description = "A practical onboarding checklist to prevent kickoff delays, scope confusion, and communication breakdowns."
 summary = "Use this checklist to run consistent onboarding in the first week of every client engagement."
+feature_image = "/images/features/templates/client-onboarding-checklist.webp"
+feature_image_alt = "Illustrated onboarding checklist with staged tasks for kickoff readiness and client setup."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "templates-checklists"

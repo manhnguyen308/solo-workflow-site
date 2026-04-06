@@ -2,6 +2,8 @@
 title = "Freelance Client Workflow System: Inquiry to Final Payment"
 description = "A practical end-to-end workflow for solo freelancers who need reliable client handoffs from lead intake to payment and offboarding."
 summary = "Use this six-stage workflow to run client work consistently, reduce missed handoffs, and tighten operations without overcomplicating your stack."
+feature_image = "/images/features/workflows/freelance-client-workflow-system.webp"
+feature_image_alt = "Illustrated workflow board showing a connected end-to-end client lifecycle from inquiry to payment."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "client-workflow-systems"

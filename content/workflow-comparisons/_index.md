@@ -1,6 +1,8 @@
 +++
 title = "Workflow Comparisons"
 description = "Scenario-based workflow software comparisons for solo operators making system-of-record, workspace, and stack decisions."
+feature_image = "/images/features/hubs/workflow-comparisons.webp"
+feature_image_alt = "Editorial comparison illustration with two contrasted decision panels for workflow tools."
 +++
 
 This section is for resolving one bounded tool or system question at a time. Use it after you know the workflow pressure point and need to choose between plausible options.

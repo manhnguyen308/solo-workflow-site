@@ -15,9 +15,14 @@
 {{ else if eq $page.Section "faq" }}
   {{ $linkLabel = "View answer" }}
 {{ end }}
+{{ $image := partial "feature-image.html" $page }}
 <article class="page-card page-card-{{ $style }} page-card-theme-{{ $page.Section }}">
   <a class="page-card-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
-    <span class="page-card-media-inner"></span>
+    {{ with $image }}
+      <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
+    {{ else }}
+      <span class="page-card-media-inner"></span>
+    {{ end }}
   </a>
   <div class="page-card-body">
     <div class="page-card-top">

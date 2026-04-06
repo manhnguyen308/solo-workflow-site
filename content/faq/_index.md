@@ -1,6 +1,8 @@
 +++
 title = "FAQ"
 description = "Short answers to common solo workflow, stack setup, intake, handoff, onboarding, billing, migration, and automation questions."
+feature_image = "/images/features/hubs/faq.webp"
+feature_image_alt = "Editorial FAQ illustration with layered answer cards for workflow setup questions."
 +++
 
 This section is for recurring setup questions that do not need a full guide. Use it when you need a fast answer, a recommendation boundary, and a clear page to open next.

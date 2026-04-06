@@ -2,6 +2,8 @@
 title = "Solo Service Workflow Stack FAQ"
 description = "Answers to common workflow-stack setup questions for freelancers and solo operators building a simpler client operations system."
 summary = "Use this FAQ to resolve common workflow-stack setup questions quickly, then move to the deeper implementation page that matches your bottleneck."
+feature_image = "/images/features/faq/solo-service-workflow-stack-faq.webp"
+feature_image_alt = "Illustrated FAQ panel stack representing common setup questions and short operational answers."
 draft = false
 date = 2026-04-02T00:00:00Z
 slug = "faq-setting-up-a-solo-service-workflow-stack"

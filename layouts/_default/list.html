@@ -39,6 +39,7 @@
 </div>
 {{ else }}
 <div class="page-shell page-shell-list">
+  {{ $featureImage := partial "feature-image.html" . }}
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
       <div class="section-hero-copy">
@@ -49,6 +50,13 @@
       </div>
       <aside class="section-hero-panel">
         <p class="panel-label">Start here</p>
+        {{ if .Params.feature_image }}
+          {{ with $featureImage }}
+          <div class="section-hero-media">
+            <img src="{{ .rel }}" alt="{{ .alt }}" loading="eager" decoding="async" width="{{ .width }}" height="{{ .height }}">
+          </div>
+          {{ end }}
+        {{ end }}
         <div class="journey-note">
           <strong>Use this hub as a curated starting point.</strong>
           <p>Start with the clearest next-step page, then move into the supporting implementation content that helps you act on it.</p>
