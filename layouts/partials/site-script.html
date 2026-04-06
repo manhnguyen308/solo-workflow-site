@@ -3,6 +3,7 @@
     var toggle = document.querySelector('[data-nav-toggle]');
     var header = document.querySelector('.site-header');
     var searchForms = document.querySelectorAll('[data-site-search]');
+    var navLinks = document.querySelectorAll('.primary-nav a');
 
     searchForms.forEach(function (form) {
       form.addEventListener('submit', function () {
@@ -23,9 +24,24 @@
       return;
     }
 
+    function closeNav() {
+      header.classList.remove('nav-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+
     toggle.addEventListener('click', function () {
       var isOpen = header.classList.toggle('nav-open');
       toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', closeNav);
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+        closeNav();
+      }
     });
   });
 </script>

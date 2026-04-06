@@ -501,7 +501,7 @@ select {
 }
 
 .text-link::after {
-  content: "→";
+  content: "\2192";
 }
 
 .home-hero-grid,
@@ -2544,6 +2544,7 @@ body {
   width: min(100%, 940px);
   background: #ffffff;
   padding: 2.2rem;
+  overflow: hidden;
 }
 
 .article-body {
@@ -2554,6 +2555,7 @@ body {
   color: #334155;
   font-size: 16.75px;
   line-height: 1.9;
+  overflow-wrap: break-word;
 }
 
 .prose h2 {
@@ -2610,6 +2612,9 @@ body {
 }
 
 .prose table {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
   border: 1px solid rgba(226, 232, 240, 1);
   border-radius: 14px;
   background: #ffffff;
@@ -2631,6 +2636,12 @@ body {
 .prose code {
   background: #f1f5f9;
   color: #0f172a;
+}
+
+.prose a,
+.page-card h3 a,
+.section-featured-link a {
+  overflow-wrap: anywhere;
 }
 
 .prose pre {

@@ -23,14 +23,14 @@
         <h1>Structured guidance for real solo operations</h1>
         <p class="homepage-hero-lead">Make better decisions about the workflows, tools, and systems that run your business. No hype. No overwhelm. Just calm, practical guidance designed for implementation.</p>
         <div class="homepage-hero-actions">
-          <a class="button button-primary" href="/client-workflow-systems/">Browse workflows <span aria-hidden="true">→</span></a>
+          <a class="button button-primary" href="/client-workflow-systems/">Browse workflows <span aria-hidden="true">&rarr;</span></a>
           <a class="button button-secondary" href="/software-stack-blueprints/">View blueprints</a>
         </div>
       </div>
       {{ with $comparisonAnchor }}
       <aside class="homepage-feature-card">
         <div class="homepage-feature-top">
-          <div class="homepage-feature-icon" aria-hidden="true">✦</div>
+          <div class="homepage-feature-icon" aria-hidden="true">&#10022;</div>
           <span class="homepage-feature-label">Featured Guide</span>
         </div>
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
@@ -40,7 +40,7 @@
           <span>{{ .Params.page_type | default "Guide" | title }}</span>
           <span>{{ .Date.Format "Jan 2006" }}</span>
         </div>
-        <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $featureLinkLabel }} <span aria-hidden="true">→</span></a>
+        <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $featureLinkLabel }} <span aria-hidden="true">&rarr;</span></a>
       </aside>
       {{ end }}
     </div>
@@ -54,17 +54,17 @@
       </div>
       <div class="homepage-feature-grid">
         <article class="homepage-value-card">
-          <div class="homepage-value-icon" aria-hidden="true">✓</div>
+          <div class="homepage-value-icon" aria-hidden="true">&#10003;</div>
           <h3>Workflow-first</h3>
           <p>We start with your actual workflow needs, not tool marketing. Learn what works before choosing what to buy.</p>
         </article>
         <article class="homepage-value-card">
-          <div class="homepage-value-icon" aria-hidden="true">◎</div>
+          <div class="homepage-value-icon" aria-hidden="true">&#9678;</div>
           <h3>Scenario-based</h3>
           <p>Recommendations tailored to your situation: volume, budget, technical comfort, and current setup.</p>
         </article>
         <article class="homepage-value-card">
-          <div class="homepage-value-icon" aria-hidden="true">≡</div>
+          <div class="homepage-value-icon" aria-hidden="true">&#8801;</div>
           <h3>Designed for implementation</h3>
           <p>Clear next steps, realistic timelines, and practical trade-offs. No fluff, no overwhelming 47-step plans.</p>
         </article>
@@ -79,7 +79,7 @@
           <h2>Recently published guides</h2>
           <p>Fresh insights and practical workflow recommendations</p>
         </div>
-        <a class="homepage-inline-link" href="#explore-by-resource">Explore by resource <span aria-hidden="true">→</span></a>
+        <a class="homepage-inline-link" href="#explore-by-resource">Explore by resource <span aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="homepage-editorial-grid">
         {{ range $index, $page := $latest }}
@@ -119,31 +119,31 @@
           {{ partial "resource-icon.html" "workflows" }}
           <h3>Workflows</h3>
           <p>Step-by-step process guides</p>
-          <span>{{ $workflowCount }} guides →</span>
+          <span>{{ $workflowCount }} guides &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-blueprints" href="/software-stack-blueprints/">
           {{ partial "resource-icon.html" "blueprints" }}
           <h3>Blueprints</h3>
           <p>Complete system designs</p>
-          <span>{{ $blueprintCount }} blueprints →</span>
+          <span>{{ $blueprintCount }} blueprints &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-comparisons" href="/workflow-comparisons/">
           {{ partial "resource-icon.html" "comparisons" }}
           <h3>Comparisons</h3>
           <p>Side-by-side tool analysis</p>
-          <span>{{ $comparisonCount }} comparisons →</span>
+          <span>{{ $comparisonCount }} comparisons &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-templates" href="/templates-checklists/">
           {{ partial "resource-icon.html" "templates" }}
           <h3>Templates</h3>
           <p>Ready-to-use documents</p>
-          <span>{{ $templateCount }} templates →</span>
+          <span>{{ $templateCount }} templates &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-glossary" href="/glossary/">
           {{ partial "resource-icon.html" "glossary" }}
           <h3>Glossary</h3>
           <p>Clear term definitions</p>
-          <span>{{ $glossaryCount }} terms →</span>
+          <span>{{ $glossaryCount }} terms &rarr;</span>
         </a>
       </div>
     </div>
@@ -174,7 +174,7 @@
             <p>{{ .Params.summary | default .Params.description }}</p>
             <div class="homepage-popular-foot">
               <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $workflowLeadLabel }} <span aria-hidden="true">→</span></a>
+              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $workflowLeadLabel }} <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </article>
@@ -197,7 +197,7 @@
             <p>{{ .Params.summary | default .Params.description }}</p>
             <div class="homepage-popular-foot">
               <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $blueprintLeadLabel }} <span aria-hidden="true">→</span></a>
+              <a class="homepage-inline-link" href="{{ .RelPermalink }}">{{ $blueprintLeadLabel }} <span aria-hidden="true">&rarr;</span></a>
             </div>
           </div>
         </article>
@@ -213,7 +213,7 @@
         <h2>Find the guide that fits your current challenge</h2>
         <p>No email required. No sign-up walls. Just clear, structured guidance you can use today.</p>
         <div class="homepage-hero-actions homepage-cta-actions">
-          <a class="button button-primary" href="/client-workflow-systems/">Browse all workflows <span aria-hidden="true">→</span></a>
+          <a class="button button-primary" href="/client-workflow-systems/">Browse all workflows <span aria-hidden="true">&rarr;</span></a>
           <a class="button button-secondary" href="#explore-by-resource">Explore by category</a>
         </div>
       </div>
