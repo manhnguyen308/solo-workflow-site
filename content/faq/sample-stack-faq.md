@@ -1,9 +1,10 @@
 +++
-title = "FAQ: Setting Up a Solo Service Workflow Stack"
-description = "Answers to common setup questions for freelancers and solo operators building a workflow-first software stack."
-summary = "Short answers for recurring workflow-stack setup questions, with links to the deeper page you should open next."
+title = "Solo Service Workflow Stack FAQ"
+description = "Answers to common workflow-stack setup questions for freelancers and solo operators building a simpler client operations system."
+summary = "Use this FAQ to resolve common workflow-stack setup questions quickly, then move to the deeper implementation page that matches your bottleneck."
 draft = false
 date = 2026-04-02T00:00:00Z
+slug = "faq-setting-up-a-solo-service-workflow-stack"
 category = "faq"
 tags = ["faq", "setup", "workflow-stack"]
 page_type = "faq"
@@ -37,7 +38,7 @@ Run a strict proposal-to-contract handoff so scope, timeline, and payment terms 
 
 ## How do I stop late-payment chaos?
 
-Use milestone-triggered invoicing and a fixed follow-up cadence: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
+Use the [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to tie invoicing to milestones and keep follow-up cadence consistent.
 
 ## What if onboarding feels repetitive?
 
@@ -49,7 +50,7 @@ Migrate in phases by workflow stage, pilot with 1-2 active projects, and keep a 
 
 ## What should I automate first as a solo operator?
 
-Automate stable, repetitive admin tasks only, such as reminders, recurring checklists, and billing nudges. Start with: [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
+Automate stable, repetitive admin tasks only, such as reminders, recurring checklists, and billing nudges. Start with [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 
 ## Which page should I read after this FAQ?
 

@@ -1,6 +1,6 @@
 +++
 title = "FAQ"
-description = "Answers to common setup and workflow questions."
+description = "Short answers to common solo workflow, stack setup, intake, handoff, onboarding, billing, migration, and automation questions."
 +++
 
 This section is for recurring setup questions that do not need a full guide. Use it when you need a fast answer, a recommendation boundary, and a clear page to open next.

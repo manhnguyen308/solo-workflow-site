@@ -1,5 +1,6 @@
 +++
 title = "SoloOpsGuide"
+description = "Workflow-first guidance for freelancers, consultants, and solo operators who want clearer client operations, better stack decisions, and more reliable delivery systems."
 summary = "Practical workflow systems, stack blueprints, and implementation assets for freelancers and solo service businesses."
 +++
 

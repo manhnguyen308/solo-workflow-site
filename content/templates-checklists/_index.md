@@ -1,6 +1,6 @@
 ﻿+++
 title = "Templates & Checklists"
-description = "Execution assets to run client operations consistently."
+description = "Client operations templates and checklists for onboarding, delivery, invoicing, offboarding, and weekly workflow upkeep."
 +++
 
 This section is for moments when the process is already understood and you need a repeatable operating asset. These pages are meant to reduce misses, not explain the whole system from scratch.

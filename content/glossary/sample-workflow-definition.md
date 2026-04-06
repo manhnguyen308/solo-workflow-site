@@ -1,7 +1,7 @@
 +++
 title = "Workflow Handoff"
-description = "A workflow handoff is the transfer of responsibility, context, and required inputs from one stage to the next."
-summary = "Clear handoffs reduce rework, missed details, and delivery delays in solo client operations."
+description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next."
+summary = "Use this definition to understand what a workflow handoff should include and why weak handoffs create rework, delays, and missed details."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "glossary"

@@ -1,9 +1,10 @@
 +++
-title = "Weekly Client Operations Checklist (Solo Business)"
-description = "A weekly operating checklist for solo service businesses to keep delivery, communication, and billing on track."
-summary = "Run this checklist once per week to prevent missed handoffs, hidden delays, and avoidable client friction."
+title = "Weekly Client Operations Checklist for Solo Service Businesses"
+description = "A weekly client operations checklist for freelancers, consultants, and solo service businesses to keep delivery, communication, and billing on track."
+summary = "Run this weekly client operations checklist to prevent missed handoffs, hidden delays, and avoidable client friction across active projects."
 draft = false
 date = 2026-04-02T00:00:00Z
+slug = "weekly-client-operations-checklist-solo-business"
 category = "templates-checklists"
 tags = ["weekly-ops", "checklist", "client-management"]
 page_type = "template"
@@ -50,9 +51,9 @@ Use this once per week (same day, same time) to stabilize operations across all 
 
 ## Use this checklist with
 
-- Workflow model: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
-- Billing process: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+- Weekly workflow model: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Lean stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Milestone billing process: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 
 ## Weekly completion rule

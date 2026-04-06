@@ -1,7 +1,7 @@
 +++
 title = "Invoice and Payment Workflow Checklist for Service Businesses"
-description = "A practical checklist for issuing invoices on time, following up consistently, and reducing payment delays."
-summary = "Use this workflow checklist to tie invoicing to milestones and prevent avoidable cash-flow friction."
+description = "A practical invoice and payment checklist for freelancers, consultants, and service businesses that need milestone-based billing and consistent follow-up."
+summary = "Use this invoice and payment workflow checklist to tie invoicing to milestones, standardize follow-up, and reduce avoidable cash-flow friction."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "templates-checklists"
@@ -60,6 +60,6 @@ Keep follow-up professional and structured, not emotional.
 
 ## Related implementation pages
 
-- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Weekly ops routine: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
-- Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- End-to-end workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Weekly operations review routine: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
+- Lean stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)

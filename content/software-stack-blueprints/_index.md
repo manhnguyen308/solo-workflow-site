@@ -1,6 +1,6 @@
 ﻿+++
 title = "Software Stack Blueprints"
-description = "Lean stack planning for freelancers and solo operators."
+description = "Lean software stack blueprints for freelancers and solo operators designing calmer, lower-overhead client systems."
 +++
 
 Use this section when the workflow is mostly clear but the tool stack is still awkward, bloated, or fragmented. These pages focus on stack shape, system ownership, and tradeoffs between simpler and more layered setups.

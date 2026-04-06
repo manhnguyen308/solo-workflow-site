@@ -1,6 +1,6 @@
 +++
 title = "Workflow Comparisons"
-description = "Scenario-based software comparisons for workflow decisions."
+description = "Scenario-based workflow software comparisons for solo operators making system-of-record, workspace, and stack decisions."
 +++
 
 This section is for resolving one bounded tool or system question at a time. Use it after you know the workflow pressure point and need to choose between plausible options.

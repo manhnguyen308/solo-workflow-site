@@ -1,6 +1,6 @@
 ﻿+++
 title = "Glossary"
-description = "Plain-English workflow and operations definitions."
+description = "Plain-English workflow and operations terms for solo operators making stack, handoff, and client-system decisions."
 +++
 
 Use this glossary when a term is blocking a decision. The purpose here is not to build vocabulary for its own sake, but to remove ambiguity around ownership, handoffs, records, and workflow structure.

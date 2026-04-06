@@ -1,7 +1,7 @@
 +++
 title = "Notion vs ClickUp for Solo Client Delivery"
-description = "A workflow-fit comparison of Notion and ClickUp for solo operators managing scoped client delivery."
-summary = "Choose based on delivery structure needs, admin overhead tolerance, and process maturity."
+description = "Compare Notion vs ClickUp for solo client delivery based on workflow structure, admin overhead, documentation fit, and process maturity."
+summary = "Use this comparison to choose between Notion and ClickUp for solo client delivery based on structure needs, admin tolerance, and workflow maturity."
 draft = false
 date = 2026-04-02T00:00:00Z
 category = "workflow-comparisons"
