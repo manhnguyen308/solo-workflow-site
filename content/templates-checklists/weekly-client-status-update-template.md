@@ -1,6 +1,6 @@
 +++
 title = "Weekly Client Status Update Template"
-description = "A practical weekly client status update template for freelancers and consultants who already have an update rhythm and need a repeatable message format."
+description = "A weekly client status update template for freelancers and consultants who already have an update rhythm and need a repeatable message format."
 summary = "Use this template to send structured weekly client updates that reduce reactive check-ins and keep next actions visible."
 feature_image = "/images/features/hubs/templates-checklists.webp"
 feature_image_alt = "Editorial checklist illustration representing a repeatable weekly client update format."

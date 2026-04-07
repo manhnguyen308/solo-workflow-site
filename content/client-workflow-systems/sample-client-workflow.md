@@ -1,7 +1,7 @@
 ﻿+++
 title = "Freelance Client Workflow System: Inquiry to Final Payment"
-description = "A practical end-to-end workflow for solo freelancers who need reliable client handoffs from lead intake to payment and offboarding."
-summary = "Use this six-stage workflow to run client work consistently, reduce missed handoffs, and tighten operations without overcomplicating your stack."
+description = "An end-to-end client workflow for freelancers and solo operators who need clearer handoffs from intake through payment and offboarding."
+summary = "Use this six-stage client workflow to tighten intake, onboarding, delivery, billing, and offboarding without adding unnecessary operational complexity."
 feature_image = "/images/features/workflows/freelance-client-workflow-system.webp"
 feature_image_alt = "Illustrated workflow board showing a connected end-to-end client lifecycle from inquiry to payment."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/"
 featured = true
 +++
 
-Most solo operators do not have a client delivery problem. They have a **handoff problem**. Leads come in one way, proposals go out another way, delivery happens in a third tool, and billing gets handled whenever there is time. This workflow is designed to stop that drift.
+Most solo operators do not have a client delivery problem. They have a **handoff problem**. Leads come in one way, proposals go out another way, delivery happens in a third tool, and billing gets handled whenever there is time. This page shows how to run the whole client path as one connected operating system instead of a series of improvised stages.
 
 Use this page as the anchor model for your operations. It is the best first page on the site when the whole client lifecycle feels messy, because it connects intake, handoff, delivery, billing, and offboarding into one operating sequence with clear next-step links.
 

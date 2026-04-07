@@ -1,7 +1,7 @@
 +++
 title = "Client Onboarding Workflow for Freelancers and Consultants"
-description = "A practical onboarding workflow for freelancers and consultants who need kickoff readiness, cleaner handoffs, and fewer delivery surprises."
-summary = "Use this guide to turn a signed project into a kickoff-ready client workflow with clear owners, dates, communication rules, and first-milestone controls."
+description = "A client onboarding workflow for freelancers and consultants who need clearer kickoff readiness, access setup, and first-milestone control."
+summary = "Use this guide to turn a signed project into a kickoff-ready client setup with clear owners, dates, communication rules, and first-step controls."
 feature_image = "/images/features/workflows/proposal-contract-handoff.webp"
 feature_image_alt = "Editorial workflow illustration representing a structured onboarding sequence between signed agreement and live delivery."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/template
 featured = false
 +++
 
-Most onboarding problems are not really kickoff problems. They are handoff problems that were never finished properly after the client said yes.
+Most onboarding problems are not really kickoff problems. They are handoff problems that were never finished properly after the client said yes. This page is about making the project operationally ready before active delivery begins.
 
 Use this workflow to turn a signed agreement into a live, usable delivery setup. The goal is not to send a welcome email. The goal is to make the project operationally ready before the first real delivery pressure hits.
 

@@ -1,7 +1,7 @@
 +++
 title = "Software Stack Blueprint: Solo Freelancer (Lean Budget)"
-description = "A staged software stack blueprint that helps solo freelancers avoid overbuying and choose tools by workflow need."
-summary = "Pick a lean stack by stage (starter, stable, scaling), use clear upgrade triggers, and avoid paying for complexity you do not need yet."
+description = "A staged software stack blueprint for solo freelancers who want the smallest reliable tool setup without overbuying."
+summary = "Pick a lean software stack by stage, use clear upgrade triggers, and avoid paying for complexity before the workflow needs it."
 feature_image = "/images/features/blueprints/solo-freelancer-lean-budget.webp"
 feature_image_alt = "Illustrated stack blueprint with layered system blocks for a lean solo freelancer setup."
 draft = false
@@ -16,7 +16,7 @@ related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "
 featured = true
 +++
 
-Most freelancers do not fail because they chose the "wrong" tool. They fail because they buy too much software before their workflow is stable. This blueprint gives you a **minimum viable stack** for where you are now, plus clear signs for when to upgrade.
+Most freelancers do not fail because they chose the "wrong" tool. They fail because they buy too much software before their workflow is stable. This blueprint gives you a **minimum viable stack** for where you are now, plus clear signs for when to upgrade without creating admin drag.
 
 If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 

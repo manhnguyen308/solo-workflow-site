@@ -1,7 +1,7 @@
 +++
 title = "Invoice and Payment Workflow Setup for Freelancers and Consultants"
-description = "A practical invoice and payment workflow for freelancers and consultants who need cleaner billing triggers, follow-up rules, and payment visibility."
-summary = "Use this guide to connect invoices to milestones, keep payment status visible, and reduce cash-flow friction without creating awkward client follow-up."
+description = "An invoice and payment workflow for freelancers and consultants who need clearer billing triggers, follow-up rules, and payment visibility after delivery."
+summary = "Use this guide to connect invoices to milestones, keep payment status visible, and reduce cash-flow friction with clearer billing operations."
 feature_image = "/images/features/templates/invoice-payment-checklist.webp"
 feature_image_alt = "Editorial workflow illustration representing milestone-based invoicing, payment follow-up, and visible billing status."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/template
 featured = false
 +++
 
-Late-payment problems rarely start on the day an invoice is due. They usually start earlier, when billing rules are disconnected from the delivery workflow.
+Late-payment problems rarely start on the day an invoice is due. They usually start earlier, when billing rules are disconnected from the delivery workflow. This page is about making billing operationally visible, not just sending invoices faster.
 
 Use this guide when the open problem is operational billing control: invoice timing is fuzzy, follow-up depends on memory, or payment status disappears from the system you check every week.
 

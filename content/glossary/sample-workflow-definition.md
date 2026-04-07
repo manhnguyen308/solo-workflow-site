@@ -1,6 +1,6 @@
 +++
 title = "Workflow Handoff"
-description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next in a client workflow."
+description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next."
 summary = "Use this definition to understand what a workflow handoff should include and why weak handoffs create rework, delays, and missed details."
 feature_image = "/images/features/glossary/workflow-handoff.webp"
 feature_image_alt = "Illustrated workflow handoff definition showing two connected responsibility panels and transfer points."

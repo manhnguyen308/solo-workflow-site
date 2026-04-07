@@ -1,7 +1,7 @@
 +++
 title = "Proposal-to-Contract Handoff Workflow Setup"
-description = "A practical handoff workflow that keeps scope, timeline, and commercial terms aligned before onboarding begins."
-summary = "Use this guide to move from discovery to signed agreement without scope drift or kickoff confusion."
+description = "A proposal-to-contract handoff workflow for freelancers and consultants who need scope, timeline, and payment terms aligned before kickoff."
+summary = "Use this guide to turn a verbal yes into a signed agreement with clearer scope, ownership, and kickoff readiness."
 feature_image = "/images/features/workflows/proposal-contract-handoff.webp"
 feature_image_alt = "Illustrated handoff scene with two workflow panels connected between proposal and contract stages."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/"
 featured = true
 +++
 
-The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal gets signed, kickoff starts early, and scope disagreements appear in week two.
+The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal gets signed, kickoff starts early, and scope disagreements appear in week two. This page is about fixing that pre-kickoff gap before it turns into delivery confusion.
 
 This guide gives you a repeatable pre-kickoff handoff process so the contract reflects execution reality.
 

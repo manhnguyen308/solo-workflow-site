@@ -1,7 +1,7 @@
 +++
 title = "Notion vs ClickUp for Solo Client Delivery"
-description = "Compare Notion vs ClickUp for solo client delivery based on workflow structure, admin overhead, documentation fit, and process maturity."
-summary = "Use this comparison to choose between Notion and ClickUp for solo client delivery based on structure needs, admin tolerance, and workflow maturity."
+description = "Compare Notion vs ClickUp for solo client delivery once you already know the delivery workspace should sit at the center of the system."
+summary = "Use this comparison to choose between Notion and ClickUp based on how much structure, admin overhead, and delivery control the workflow needs."
 feature_image = "/images/features/comparisons/notion-vs-clickup.webp"
 feature_image_alt = "Illustrated comparison board contrasting flexible documentation and structured task management for client delivery."
 draft = false
@@ -16,7 +16,7 @@ related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/co
 featured = false
 +++
 
-Notion and ClickUp can both run client delivery. The better choice depends less on features and more on how much workflow structure your operating model needs right now.
+Notion and ClickUp can both run client delivery. The better choice depends less on features and more on how much workflow structure your operating model needs right now. This is a workspace-shape decision, not a system-of-record decision.
 
 This page is most useful after you have already decided that delivery execution, not lead management, should be the center of your system. If you have not made that decision yet, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 

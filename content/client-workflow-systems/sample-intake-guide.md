@@ -1,7 +1,7 @@
 +++
 title = "How to Build a Client Intake and Qualification Workflow"
-description = "A practical intake workflow that helps solo operators qualify leads quickly and protect delivery capacity."
-summary = "Set up required intake fields, a fit-scoring model, and a clear go/no-go decision path in one session."
+description = "A practical intake and qualification workflow for solo operators who need fewer low-fit calls and stronger lead filtering before delivery starts."
+summary = "Set up intake questions, fit criteria, and a clear go or no-go decision path before discovery calls start filling the calendar."
 feature_image = "/images/features/workflows/client-intake-qualification-workflow.webp"
 feature_image_alt = "Illustrated intake workflow with qualification steps, routing logic, and decision checkpoints."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = false
 +++
 
-If every inquiry becomes a discovery call, you are not running intake; you are running reactive sales support. A good intake workflow protects your delivery calendar and prevents misaligned projects from entering your pipeline.
+If every inquiry becomes a discovery call, you are not running intake; you are running reactive sales support. A good intake workflow protects your delivery calendar, filters weak-fit leads earlier, and stops low-value work from leaking into delivery.
 
 This page is for solo operators who feel busy before work even starts. If your calendar fills with low-fit calls, proposals get drafted for weak opportunities, or delivery work keeps starting with avoidable surprises, intake is the stage to tighten first.
 

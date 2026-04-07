@@ -1,7 +1,7 @@
 +++
 title = "Milestone Delivery Workflow for Solo Service Businesses"
-description = "A practical milestone delivery workflow for solo service businesses that need clearer execution, review, and handoff control during active client work."
-summary = "Use this guide to run milestone-based delivery with clearer status, dependencies, approvals, and handoff quality from active work through client review."
+description = "A milestone delivery workflow for solo service businesses that need clearer execution control, review rules, and approval-ready handoffs during active work."
+summary = "Use this guide to run milestone-based delivery with clearer status, dependencies, QA, approvals, and client handoff control."
 feature_image = "/images/features/workflows/workflow-automation-basics.webp"
 feature_image_alt = "Editorial workflow illustration representing milestone-based delivery, status visibility, and handoff control."
 draft = false
@@ -16,7 +16,7 @@ related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultant
 featured = false
 +++
 
-Delivery usually feels chaotic for one reason: the milestone is not defined tightly enough to survive real client pressure.
+Delivery usually feels chaotic for one reason: the milestone is not defined tightly enough to survive real client pressure. This page is about controlling active delivery after kickoff, not about fixing intake or contract-stage problems.
 
 Use this workflow when work is active, client communication is already in motion, and the main problem is execution control between kickoff and approval. This page is about how to move one milestone cleanly, not how to plan the entire relationship from scratch.
 

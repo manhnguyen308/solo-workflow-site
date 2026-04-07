@@ -1,12 +1,12 @@
 +++
 title = "SoloOpsGuide"
-description = "Workflow-first guidance for freelancers and solo operators building clearer client systems, calmer stacks, and more reliable delivery."
-summary = "Practical workflow systems, stack blueprints, comparisons, and implementation assets for freelancers and solo service businesses."
+description = "Workflow systems, stack blueprints, comparisons, and templates for freelancers and solo operators building clearer client operations."
+summary = "Practical workflow guides, stack decisions, comparisons, and implementation assets for freelancers and solo service businesses."
 feature_image = "/images/features/site/soloopsguide-home.webp"
 feature_image_alt = "Editorial illustration combining a workflow sequence, checklist, and comparison board for solo operations."
 +++
 
-SoloOpsGuide helps freelancers and solo operators build repeatable client operations without bloated software stacks.
+SoloOpsGuide helps freelancers and solo operators build repeatable client operations with clearer workflows, calmer stacks, and fewer avoidable handoff problems.
 
 The site is organized around a simple editorial model: define the workflow first, choose the stack shape second, use comparisons only for bounded decisions, and use templates inside a live process rather than as standalone fixes.
 

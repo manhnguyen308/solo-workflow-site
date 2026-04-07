@@ -1,6 +1,6 @@
 +++
 title = "Client Change Request Template"
-description = "A practical change request template for freelancers and consultants who already need a clear format for scope, timing, fee, and approval decisions."
+description = "A change request template for freelancers and consultants who already need a clear format for scope, timing, fee, and approval decisions."
 summary = "Use this template to capture, assess, and reply to client change requests without hidden scope drift."
 feature_image = "/images/features/hubs/templates-checklists.webp"
 feature_image_alt = "Editorial checklist illustration representing a structured client change request form."

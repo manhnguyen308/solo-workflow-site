@@ -6,7 +6,7 @@
 {{ $isTrustSection := or (in $trustSections .Section) (in $trustSections .Type) }}
 {{ $isSupportSection := and (eq .Kind "section") $isTrustSection }}
 {{ if .IsHome }}
-  {{ $rawTitle = printf "%s | Workflow-First Guidance for Solo Operators" $siteTitle }}
+  {{ $rawTitle = printf "%s | Workflow Systems, Stack Blueprints, and Templates for Solo Operators" $siteTitle }}
 {{ else if eq .Kind "section" }}
   {{ $rawTitle = printf "%s | %s" .Title $siteTitle }}
 {{ else if eq .Kind "taxonomy" }}
