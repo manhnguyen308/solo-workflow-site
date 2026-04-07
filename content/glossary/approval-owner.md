@@ -2,6 +2,8 @@
 title = "Approval Owner"
 description = "An approval owner is the person responsible for giving the final go-ahead on deliverables, feedback, scope changes, or milestone decisions."
 summary = "Use this definition to clarify who can approve what in a workflow and why projects slow down when that role stays vague."
+feature_image = "/images/features/hubs/glossary.webp"
+feature_image_alt = "Editorial glossary illustration representing responsibility and approval ownership in a workflow."
 draft = false
 date = 2026-04-07T00:00:00Z
 category = "glossary"

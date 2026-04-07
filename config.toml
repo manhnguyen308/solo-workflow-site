@@ -5,6 +5,7 @@ languageCode = "en-us"
 title = "SoloOpsGuide"
 enableRobotsTXT = true
 summaryLength = 28
+disableKinds = ["taxonomy", "term"]
 
 [pagination]
   pagerSize = 10
@@ -24,16 +25,9 @@ summaryLength = 28
   glossary = "/glossary/:slug/"
   faq = "/faq/:slug/"
 
-[taxonomies]
-  tag = "tags"
-  page_type = "page-types"
-  search_intent = "search-intents"
-
 [outputs]
   home = ["HTML", "RSS"]
   section = ["HTML", "RSS"]
-  taxonomy = ["HTML"]
-  term = ["HTML"]
 
 [related]
   includeNewer = true

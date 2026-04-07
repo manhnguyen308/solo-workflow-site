@@ -8,4 +8,5 @@ if [ -z "$BASE_URL" ]; then
   exit 1
 fi
 
+rm -rf public
 hugo --minify --gc --baseURL "$BASE_URL"

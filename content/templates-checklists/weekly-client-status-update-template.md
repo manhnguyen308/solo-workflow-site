@@ -2,6 +2,8 @@
 title = "Weekly Client Status Update Template"
 description = "A practical weekly client status update template for freelancers and consultants who need clearer progress updates, blocker visibility, and approval prompts."
 summary = "Use this template to send structured weekly client updates that reduce reactive check-ins and keep next actions visible."
+feature_image = "/images/features/hubs/templates-checklists.webp"
+feature_image_alt = "Editorial checklist illustration representing a repeatable weekly client update format."
 draft = false
 date = 2026-04-07T00:00:00Z
 category = "templates-checklists"
