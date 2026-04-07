@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Client onboarding workflow illustration</title>
-  <desc id="desc">An editorial illustration showing handoff, kickoff preparation, and first milestone setup with labeled workflow detail.</desc>
+  <desc id="desc">An editorial illustration showing a handoff chain, kickoff packet, and first-milestone activation in a sequential onboarding layout.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#eff8f8" />
@@ -10,87 +10,46 @@
       <stop offset="0%" stop-color="#0f8b8d" />
       <stop offset="100%" stop-color="#0b6d71" />
     </linearGradient>
-    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f3d7b0" />
-      <stop offset="100%" stop-color="#c9934a" />
-    </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1270" cy="180" r="140" fill="#dff3f2" />
-  <circle cx="240" cy="735" r="175" fill="#eef4fb" />
-  <rect x="110" y="126" width="1380" height="648" rx="42" fill="#ffffff" stroke="#d6e3ea" stroke-width="4" />
+  <circle cx="1300" cy="170" r="145" fill="#dff3f2" />
+  <circle cx="240" cy="730" r="170" fill="#eef4fb" />
+  <rect x="110" y="124" width="1380" height="652" rx="42" fill="#ffffff" stroke="#d6e3ea" stroke-width="4" />
 
-  <rect x="170" y="192" width="390" height="516" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
-  <rect x="605" y="192" width="370" height="516" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
-  <rect x="1020" y="192" width="410" height="516" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
+  <text x="184" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Onboarding path</text>
+  <rect x="184" y="238" width="270" height="22" rx="11" fill="#173042" opacity=".12" />
 
-  <rect x="212" y="226" width="132" height="34" rx="17" fill="#d8f3f1" />
-  <rect x="647" y="226" width="124" height="34" rx="17" fill="#fff0db" />
-  <rect x="1062" y="226" width="158" height="34" rx="17" fill="#d8f3f1" />
-  <text x="242" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">handoff</text>
-  <text x="682" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">kickoff</text>
-  <text x="1098" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">milestone 1</text>
+  <rect x="184" y="300" width="190" height="64" rx="24" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="446" y="300" width="190" height="64" rx="24" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="708" y="300" width="190" height="64" rx="24" fill="#fff0db" />
+  <rect x="970" y="300" width="190" height="64" rx="24" fill="#d8f3f1" />
+  <rect x="1232" y="300" width="190" height="64" rx="24" fill="#102430" />
+  <text x="234" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">proposal</text>
+  <text x="499" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">access</text>
+  <text x="746" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8a5d27">kickoff</text>
+  <text x="1019" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f766e">client</text>
+  <text x="1287" y="339" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">milestone 1</text>
+  <path d="M374 332h72M636 332h72M898 332h72M1160 332h72" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
+  <path d="M426 332l-16-16m16 16l-16 16M688 332l-16-16m16 16l-16 16M950 332l-16-16m16 16l-16 16M1212 332l-16-16m16 16l-16 16" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
 
-  <text x="212" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Client brief</text>
-  <rect x="212" y="326" width="302" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="212" y="368" width="138" height="28" rx="14" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="362" y="368" width="152" height="28" rx="14" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="246" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#496071">scope</text>
-  <text x="390" y="387" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#496071">timeline</text>
-  <rect x="212" y="430" width="306" height="176" rx="24" fill="url(#teal)" opacity=".94" />
-  <text x="244" y="468" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">signed agreement</text>
-  <rect x="244" y="492" width="168" height="14" rx="7" fill="#d6faf5" opacity=".88" />
-  <rect x="244" y="524" width="132" height="14" rx="7" fill="#d6faf5" opacity=".72" />
-  <rect x="244" y="556" width="204" height="14" rx="7" fill="#d6faf5" opacity=".56" />
-  <rect x="244" y="586" width="244" height="1" fill="#d6faf5" opacity=".22" />
-  <circle cx="252" cy="620" r="8" fill="#d6faf5" />
-  <circle cx="252" cy="652" r="8" fill="#d6faf5" />
-  <text x="272" y="625" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">client</text>
-  <text x="272" y="657" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#ffffff">delivery owner</text>
+  <rect x="184" y="430" width="520" height="258" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <text x="226" y="478" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Kickoff packet</text>
+  <rect x="226" y="498" width="218" height="20" rx="10" fill="#173042" opacity=".12" />
+  <rect x="226" y="546" width="420" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="226" y="620" width="420" height="28" rx="14" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="260" y="580" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">scope, timeline, files, owner</text>
+  <text x="260" y="640" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#496071">approval owner + update rhythm</text>
 
-  <text x="647" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Kickoff checklist</text>
-  <rect x="647" y="326" width="248" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="647" y="374" width="284" height="44" rx="18" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="647" y="432" width="284" height="44" rx="18" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="647" y="490" width="284" height="44" rx="18" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="647" y="548" width="284" height="44" rx="18" fill="url(#gold)" opacity=".9" />
-  <circle cx="678" cy="396" r="10" fill="#d8f3f1" />
-  <circle cx="678" cy="454" r="10" fill="#d8f3f1" />
-  <circle cx="678" cy="512" r="10" fill="#d8f3f1" />
-  <circle cx="678" cy="570" r="10" fill="#fff6ec" />
-  <path d="M673 396l4 4 8-9" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M673 454l4 4 8-9" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M673 512l4 4 8-9" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-  <text x="702" y="401" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">access ready</text>
-  <text x="702" y="459" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">assets received</text>
-  <text x="702" y="517" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">approval owner</text>
-  <text x="702" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#82551c">invoice trigger</text>
-  <rect x="647" y="620" width="284" height="52" rx="20" fill="#102430" />
-  <text x="682" y="651" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">update rhythm</text>
-  <rect x="802" y="636" width="96" height="18" rx="9" fill="#d6faf5" opacity=".16" />
-  <text x="822" y="649" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#d6faf5">weekly</text>
-
-  <text x="1062" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Project board</text>
-  <rect x="1062" y="326" width="282" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="1062" y="374" width="328" height="54" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="1062" y="448" width="328" height="176" rx="26" fill="#102430" />
-  <text x="1098" y="407" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">Client</text>
-  <text x="1186" y="407" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">review</text>
-  <rect x="1246" y="389" width="104" height="22" rx="11" fill="#ecfdf3" />
-  <text x="1274" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#15803d">ready</text>
-  <text x="1098" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">M1 kickoff</text>
-  <rect x="1098" y="512" width="180" height="14" rx="7" fill="#d6faf5" opacity=".88" />
-  <rect x="1098" y="540" width="144" height="14" rx="7" fill="#d6faf5" opacity=".7" />
-  <rect x="1098" y="572" width="224" height="14" rx="7" fill="#d6faf5" opacity=".48" />
-  <rect x="1098" y="606" width="116" height="24" rx="12" fill="#d6faf5" opacity=".14" />
-  <text x="1126" y="623" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#d6faf5">delivery</text>
-  <rect x="1262" y="606" width="96" height="24" rx="12" fill="#fff0db" opacity=".94" />
-  <text x="1288" y="623" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a5d27">invoice</text>
-  <rect x="1062" y="646" width="328" height="26" rx="13" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1094" y="664" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#496071">Dependencies cleared</text>
-
-  <path d="M560 450h45" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M975 450h45" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-  <path d="M592 450l-16-16m16 16l-16 16" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M1007 450l-16-16m16 16l-16 16" stroke="#c9934a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="764" y="430" width="658" height="258" rx="30" fill="url(#teal)" opacity=".96" />
+  <text x="808" y="478" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">First milestone activation</text>
+  <rect x="808" y="498" width="250" height="20" rx="10" fill="#d6faf5" opacity=".2" />
+  <rect x="808" y="546" width="180" height="96" rx="22" fill="#d6faf5" opacity=".14" />
+  <rect x="1012" y="546" width="180" height="96" rx="22" fill="#d6faf5" opacity=".14" />
+  <rect x="1216" y="546" width="164" height="96" rx="22" fill="#fff0db" opacity=".9" />
+  <text x="846" y="580" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">delivery</text>
+  <text x="1052" y="580" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">review</text>
+  <text x="1252" y="580" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">invoice</text>
+  <rect x="842" y="600" width="108" height="14" rx="7" fill="#d6faf5" opacity=".8" />
+  <rect x="1048" y="600" width="108" height="14" rx="7" fill="#d6faf5" opacity=".8" />
+  <rect x="1248" y="600" width="104" height="14" rx="7" fill="#b8823f" opacity=".4" />
 </svg>

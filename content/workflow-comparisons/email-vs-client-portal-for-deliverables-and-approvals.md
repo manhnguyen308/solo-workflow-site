@@ -22,6 +22,8 @@ For many solo operators, email is still enough. The mistake is assuming that "si
 
 Use this after the system-of-record decision is already clear and the open question is specifically where review and approvals should happen during live delivery.
 
+This is a narrower downstream comparison. It is not the right page if you are still deciding where the main operating record should live.
+
 ## What you are actually deciding
 
 You are deciding where these moments should live:
@@ -34,6 +36,16 @@ You are deciding where these moments should live:
 The two main models are:
 - **Email-first:** summaries, files, and approvals mostly move through email.
 - **Client portal or workspace:** email points to a shared client-facing workspace, portal, or review area where the real record lives.
+
+## What this page is not for
+
+This comparison does not decide:
+- your overall stack shape,
+- your system of record,
+- your onboarding process,
+- your full communication workflow.
+
+If those questions are still open, go upstream first.
 
 ## Email-first
 
@@ -133,3 +145,9 @@ A portal becomes more attractive when support capacity is involved. Shared visib
 - If you stay email-first, tighten [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) so messages stay structured.
 - If you move toward a portal or workspace, make sure [System of Record](/glossary/system-of-record/) rules stay clear so the portal supports the workflow instead of duplicating it.
 - For either model, use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) before each review or approval event.
+
+## What to do next
+
+- If the broader workflow is still unclear, go upstream to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If the open issue is recurring client communication rhythm, continue to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the open issue is where active client truth should live, go upstream to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

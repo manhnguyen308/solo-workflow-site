@@ -20,6 +20,15 @@ An **approval owner** is the person who has final authority to accept, reject, o
 
 This matters because "the client will review it" is not specific enough for a working process.
 
+## Use this page for
+
+Use this definition when you need to clarify:
+- who actually decides,
+- who can comment without deciding,
+- why work keeps stalling at review points.
+
+If you are still trying to design the whole workflow, this page is too narrow to be the starting point.
+
 ## Why it matters in workflows
 
 When approval ownership is vague:
@@ -36,6 +45,15 @@ Operators often confuse "stakeholder group" with "approver."
 
 A stakeholder can review, suggest, or influence. The approval owner is the person whose answer actually moves the workflow forward.
 
+## Fast test
+
+You have a real approval owner only if you can answer all three questions:
+- Who can give the final yes, no, or revise decision?
+- At what stage do they hold that authority?
+- Where is that responsibility documented?
+
+If any answer is unclear, the workflow still has an ownership gap.
+
 ## Practical example
 
 - In onboarding, the approval owner might confirm kickoff scope and communication rules.
@@ -44,9 +62,25 @@ A stakeholder can review, suggest, or influence. The approval owner is the perso
 
 If that role changes by stage, document it clearly instead of assuming everyone knows.
 
+## What this page is not for
+
+This page defines one term. It does not replace:
+- the onboarding workflow,
+- the change-request workflow,
+- the status-update process,
+- a full responsibility matrix.
+
+Use it to remove ambiguity inside those pages, not instead of them.
+
 ## Where this matters most on the site
 
 - [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) because unclear approval ownership causes fuzzy project starts.
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) because kickoff gets risky when approvers are not named.
 - [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) because new requests need an actual decision-maker.
 - [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) because review asks should name one accountable responder.
+
+## What to do next
+
+- If the ambiguity is happening before kickoff, go to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- If the ambiguity is happening in recurring client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the ambiguity is happening during scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).

@@ -21,6 +21,18 @@ This is not just a client-facing message. It is a small decision tool that helps
 
 It works best as the execution asset for [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/), not as the full policy by itself. If scope-control rules are still unclear, this page is too early.
 
+## What this template is for and not for
+
+Use it for:
+- requests that may change scope, timing, fee, or delivery sequence,
+- written decisions that need an approval owner and a recorded outcome,
+- internal or client-facing change records that must feed back into delivery.
+
+Do not use it for:
+- minor clarifications already clearly inside scope,
+- vague brainstorming that is not yet a real request,
+- first-time scope definition before the project starts.
+
 ## What this asset should help prevent
 
 - vague agreements to new work,
@@ -35,6 +47,14 @@ It works best as the execution asset for [Change Request Workflow for Freelancer
 - when the request affects timeline, effort, or invoice timing.
 
 If the issue is really a weak original scope, revisit [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first.
+
+## Before you use it
+
+Confirm:
+- the original scope or exclusions are available to compare against,
+- the request is specific enough to assess,
+- someone can actually approve the outcome,
+- you know whether delivery or billing would change if it is accepted.
 
 ## Change request template
 
@@ -78,11 +98,28 @@ Use one short reply structure:
 
 Do not let the reply sound like a discussion that is still open if you have already made the decision.
 
+## Practical usage notes
+
+- Fill in the impact assessment before replying, not after.
+- If the outcome is "unclear," the next step is to clarify the request, not to start the work.
+- If the request is accepted, update the project record immediately so the template becomes an operational input, not just documentation.
+- If the request is declined or deferred, keep the record anyway. It prevents the same ambiguity from resurfacing later.
+
 ## Common misses or edge cases
 
 - If the client is suggesting rather than formally requesting, you may still need to log it if it could alter scope.
 - If the request is approved, update delivery and invoice records immediately instead of waiting.
 - If the request is deferred, note when it should be revisited so it does not reappear as unresolved tension later.
+
+## What this template does not decide for you
+
+This template helps you record and communicate the decision. It does not replace:
+- scope judgment,
+- pricing judgment,
+- approval ownership,
+- the broader change-control workflow.
+
+If those are still fuzzy, go back to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
 ## Completion standard
 
@@ -97,3 +134,9 @@ This template has done its job when:
 - workflow for handling the decision: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
 - contract-stage prevention: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
 - payment alignment after approval: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+
+## What to do next
+
+- If the broader decision path is still weak, go upstream to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- If repeated requests expose weak original scoping, go upstream to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- If the approved change affects payment timing, continue to [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).

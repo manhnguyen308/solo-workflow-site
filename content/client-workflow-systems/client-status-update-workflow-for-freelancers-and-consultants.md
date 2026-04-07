@@ -19,6 +19,8 @@ Most client communication problems are not caused by bad intent. They are caused
 
 A good status update workflow reduces inbound "just checking" messages, keeps approvals moving, and makes delivery feel calmer on both sides.
 
+This is a narrow operating page. It is not the broad client-lifecycle entry point. If the whole workflow is loose, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first.
+
 ## Who this guide is for
 
 - freelancers and consultants with active client work every week,
@@ -45,6 +47,8 @@ Use it when:
 - approvals are delayed because next actions are unclear,
 - work is active long enough that memory is no longer reliable,
 - you need one communication pattern that can repeat across projects.
+
+Do not use this page to solve kickoff ambiguity, scope disputes, or tool-selection questions. Those need the upstream workflow or comparison pages first.
 
 ## Basic operating model
 
@@ -76,6 +80,17 @@ Every useful status update should answer:
 
 You do not need a long report. You need a predictable decision-support format.
 
+## A practical default structure
+
+For most projects, one useful update contains:
+- what changed,
+- current status,
+- blocker or risk,
+- one client action if needed,
+- next step and timing.
+
+If the message contains more than that every week, check whether you are trying to make the status update carry too much of the workflow.
+
 ## Step 3: Name the approval owner
 
 If the update asks for feedback or approval, it should name who needs to respond.
@@ -91,6 +106,13 @@ This is where many updates fail. The message says "please review," but no one kn
 Do not make one email thread the only home for current project state.
 
 If you are deciding whether email is enough or whether a portal or workspace should carry more of the process, use [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
+
+## Practical cautions
+
+- Do not let the update become the only place where current truth lives.
+- Do not bury approvals inside a progress paragraph.
+- Do not mix a scope-change decision into the routine weekly rhythm unless you want confusion to spread.
+- Do not change cadence casually without resetting client expectations.
 
 ## Step 5: Separate updates from change requests
 
@@ -126,6 +148,12 @@ If the client asks for something that changes deliverables, timing, or fee struc
 - end-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - recurring operating rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
 - ready-to-use message structure: [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/)
+
+## What to do next
+
+- If you need the message asset, continue to [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/).
+- If the issue is where review should happen, continue to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
+- If the whole client path still feels reactive, go upstream to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Completion standard
 

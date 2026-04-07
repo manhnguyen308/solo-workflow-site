@@ -1,60 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Change request workflow illustration</title>
-  <desc id="desc">An editorial illustration showing a change request moving from request capture through impact assessment to approve, defer, reprice, or decline.</desc>
+  <desc id="desc">An editorial illustration showing a change request as a branching decision tree with impact and outcome paths.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f8fafc" />
       <stop offset="100%" stop-color="#f3f9fb" />
     </linearGradient>
-    <linearGradient id="dark" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#133149" />
-      <stop offset="100%" stop-color="#102430" />
-    </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1260" cy="190" r="150" fill="#e9f4fb" />
-  <rect x="120" y="132" width="1360" height="636" rx="42" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <rect x="190" y="212" width="360" height="476" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
-  <rect x="620" y="212" width="360" height="476" rx="30" fill="url(#dark)" />
-  <rect x="1050" y="212" width="360" height="476" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
-  <rect x="230" y="248" width="170" height="34" rx="17" fill="#d8f3f1" />
-  <text x="267" y="270" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">request</text>
-  <text x="230" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Change log</text>
-  <rect x="230" y="352" width="180" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="230" y="402" width="278" height="60" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="262" y="438" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">requested change</text>
-  <rect x="230" y="486" width="126" height="28" rx="14" fill="#fff0db" />
-  <rect x="370" y="486" width="116" height="28" rx="14" fill="#dfe9fb" />
-  <text x="261" y="505" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a5d27">scope</text>
-  <text x="403" y="505" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#36589a">timing</text>
-  <rect x="230" y="548" width="278" height="92" rx="24" fill="#102430" />
-  <text x="262" y="584" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">capture in writing</text>
-  <rect x="262" y="604" width="160" height="14" rx="7" fill="#d6faf5" opacity=".82" />
-  <text x="660" y="270" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">assess</text>
-  <text x="660" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#d6faf5">Impact review</text>
-  <rect x="660" y="352" width="170" height="20" rx="10" fill="#d6faf5" opacity=".16" />
-  <rect x="660" y="404" width="280" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <rect x="660" y="476" width="280" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <rect x="660" y="548" width="280" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <text x="694" y="437" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">delivery impact</text>
-  <text x="694" y="509" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">fee impact</text>
-  <text x="694" y="581" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">approval owner</text>
-  <text x="1090" y="270" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">decide</text>
-  <text x="1090" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Outcome</text>
-  <rect x="1090" y="352" width="128" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="1090" y="404" width="132" height="34" rx="17" fill="#ecfdf3" />
-  <rect x="1240" y="404" width="132" height="34" rx="17" fill="#fff0db" />
-  <rect x="1090" y="456" width="132" height="34" rx="17" fill="#dfe9fb" />
-  <rect x="1240" y="456" width="132" height="34" rx="17" fill="#fee2e2" />
-  <text x="1126" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#15803d">included</text>
-  <text x="1276" y="426" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#8a5d27">repriced</text>
-  <text x="1127" y="478" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#36589a">deferred</text>
-  <text x="1282" y="478" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">declined</text>
-  <rect x="1090" y="536" width="282" height="90" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1122" y="572" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">update delivery + invoice</text>
-  <rect x="1122" y="592" width="168" height="14" rx="7" fill="#173042" opacity=".12" />
-  <path d="M550 450h70" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M980 450h70" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-  <path d="M596 450l-16-16m16 16l-16 16" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M1026 450l-16-16m16 16l-16 16" stroke="#c9934a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="1280" cy="180" r="150" fill="#e9f4fb" />
+  <rect x="120" y="124" width="1360" height="652" rx="42" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+
+  <text x="188" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Change decision tree</text>
+  <rect x="188" y="238" width="250" height="22" rx="11" fill="#173042" opacity=".12" />
+
+  <rect x="620" y="204" width="360" height="118" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <text x="668" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">requested change</text>
+  <rect x="668" y="272" width="174" height="14" rx="7" fill="#173042" opacity=".12" />
+
+  <path d="M800 322v90" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
+  <path d="M800 398l-14-14m14 14l-14 14" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+  <polygon points="800,410 950,520 800,630 650,520" fill="#102430" />
+  <text x="742" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#d6faf5">scope?</text>
+  <text x="728" y="546" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">fee?</text>
+
+  <path d="M650 520H360M950 520h290M800 630v72M800 410v-12" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
+
+  <rect x="180" y="470" width="180" height="100" rx="26" fill="#ecfdf3" />
+  <rect x="1240" y="470" width="180" height="100" rx="26" fill="#fff0db" />
+  <rect x="710" y="720" width="180" height="100" rx="26" fill="#dfe9fb" />
+  <rect x="710" y="90" width="180" height="86" rx="26" fill="#fee2e2" opacity="0" />
+  <text x="231" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#15803d">included</text>
+  <text x="1284" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">repriced</text>
+  <text x="763" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#36589a">deferred</text>
+
+  <rect x="700" y="660" width="200" height="34" rx="17" fill="#fee2e2" />
+  <text x="752" y="682" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#b91c1c">decline if needed</text>
+  <rect x="710" y="780" width="180" height="18" rx="9" fill="#36589a" opacity=".18" />
+  <text x="744" y="538" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#d6faf5">approval owner</text>
 </svg>

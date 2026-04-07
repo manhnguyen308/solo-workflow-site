@@ -19,6 +19,8 @@ Scope drift usually does not start with a dramatic contract dispute. It starts w
 
 A change request workflow protects both the relationship and the system. It gives you a calm way to assess new asks without pretending every request is automatically included.
 
+This is a narrow control page for live scope changes. It is not the right first page if the broader client workflow or the original project scoping is still weak.
+
 ## When this workflow matters most
 
 Use it when:
@@ -28,6 +30,8 @@ Use it when:
 - approvals are unclear when a scope change appears.
 
 If the real problem is that the original scope was never clear, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first.
+
+Do not use this page for ordinary delivery feedback that still fits the agreed milestone. Use it only when the request may change the actual operating agreement.
 
 ## What a good change request workflow should accomplish
 
@@ -47,6 +51,19 @@ If you cannot answer those questions without a long back-and-forth, the workflow
 3. assess impact on timeline, workload, and fee,
 4. send one explicit decision: included, repriced, deferred, or declined,
 5. update the project record and billing path if the change is approved.
+
+## What counts as a real change request
+
+Usually yes:
+- a new deliverable,
+- a revision that changes effort materially,
+- a timing change that affects the existing sequence,
+- a request that alters pricing assumptions.
+
+Usually no:
+- minor clarification inside agreed scope,
+- ordinary review comments already expected in the current milestone,
+- wording or formatting adjustments already covered by the project terms.
 
 ## Step 1: Capture the request outside chat ambiguity
 
@@ -98,6 +115,8 @@ Use one of these outcomes:
 
 Avoid soft replies that sound agreeable but do not actually decide anything.
 
+If the request is not ready for a decision because the ask is vague, the next move is clarification, not silent inclusion.
+
 ## Step 6: Update delivery and billing
 
 If the change is approved:
@@ -127,6 +146,14 @@ The risk is not one small change. The risk is silently teaching the client that 
 - letting multiple stakeholders suggest changes without a named approver,
 - burying scope changes inside status updates.
 
+## What this page is not for
+
+This page helps you control live change decisions. It does not replace:
+- better proposal scoping,
+- a pricing policy,
+- a contract,
+- the template you use to document the request.
+
 ## Edge cases
 
 - If the request exposes an ambiguity in your original scope, clarify that first before discussing price.
@@ -138,6 +165,12 @@ The risk is not one small change. The risk is silently teaching the client that 
 - handoff discipline before the project starts: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
 - ready-to-use decision format: [Client Change Request Template](/templates/client-change-request-template/)
 - invoice follow-through: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+
+## What to do next
+
+- If you need the actual request format, continue to [Client Change Request Template](/templates/client-change-request-template/).
+- If repeated scope changes expose weak original boundaries, go upstream to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- If the approved change now affects billing, continue to [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
 
 ## Completion standard
 

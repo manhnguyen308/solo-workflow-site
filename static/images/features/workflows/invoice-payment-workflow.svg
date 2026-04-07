@@ -1,74 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Invoice and payment workflow illustration</title>
-  <desc id="desc">An editorial illustration showing invoice trigger rules, payment status, and reminder cadence with topic-specific detail.</desc>
+  <desc id="desc">An editorial illustration showing billing as an invoice document, reminder timeline, and payment ledger.</desc>
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f8fafc" />
       <stop offset="100%" stop-color="#eef8f7" />
     </linearGradient>
-    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f8b8d" />
-      <stop offset="100%" stop-color="#0b6d71" />
-    </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="260" cy="180" r="150" fill="#ebf5fd" />
-  <circle cx="1320" cy="700" r="170" fill="#e2f5f2" />
-  <rect x="140" y="130" width="1320" height="640" rx="42" fill="#ffffff" stroke="#d7e4eb" stroke-width="4" />
+  <circle cx="260" cy="170" r="150" fill="#ebf5fd" />
+  <circle cx="1320" cy="710" r="170" fill="#e2f5f2" />
+  <rect x="120" y="124" width="1360" height="652" rx="42" fill="#ffffff" stroke="#d7e4eb" stroke-width="4" />
 
-  <rect x="220" y="210" width="430" height="480" rx="30" fill="#f8fbfd" stroke="#dae6ed" stroke-width="3" />
-  <rect x="705" y="210" width="330" height="480" rx="30" fill="#102430" />
-  <rect x="1090" y="210" width="300" height="480" rx="30" fill="#f8fbfd" stroke="#dae6ed" stroke-width="3" />
+  <rect x="180" y="186" width="430" height="520" rx="34" fill="#f8fbfd" stroke="#dae6ed" stroke-width="3" />
+  <text x="236" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#122838">Invoice</text>
+  <rect x="236" y="270" width="154" height="20" rx="10" fill="#173042" opacity=".12" />
+  <rect x="236" y="328" width="318" height="14" rx="7" fill="#173042" opacity=".12" />
+  <rect x="236" y="364" width="270" height="14" rx="7" fill="#173042" opacity=".08" />
+  <rect x="236" y="422" width="318" height="64" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="270" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">trigger -> milestone approved</text>
+  <rect x="236" y="516" width="318" height="128" rx="24" fill="#102430" />
+  <text x="270" y="556" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#d6faf5">invoice package</text>
+  <rect x="270" y="580" width="174" height="14" rx="7" fill="#d6faf5" opacity=".86" />
+  <rect x="270" y="608" width="136" height="14" rx="7" fill="#d6faf5" opacity=".62" />
 
-  <rect x="260" y="246" width="148" height="34" rx="17" fill="#d8f3f1" />
-  <text x="294" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">trigger</text>
-  <text x="260" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Invoice rules</text>
-  <rect x="260" y="346" width="234" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="260" y="394" width="320" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="260" y="468" width="320" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="260" y="542" width="320" height="118" rx="24" fill="url(#teal)" opacity=".94" />
-  <text x="294" y="427" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">milestone approved</text>
-  <text x="294" y="501" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">final handoff sent</text>
-  <text x="294" y="576" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">invoice package</text>
-  <rect x="294" y="596" width="172" height="14" rx="7" fill="#d6faf5" opacity=".88" />
-  <rect x="294" y="624" width="130" height="14" rx="7" fill="#d6faf5" opacity=".68" />
-  <rect x="294" y="652" width="200" height="14" rx="7" fill="#d6faf5" opacity=".5" />
-  <rect x="484" y="408" width="60" height="24" rx="12" fill="#ecfdf3" />
-  <rect x="484" y="482" width="60" height="24" rx="12" fill="#fff0db" />
-  <text x="501" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">yes</text>
-  <text x="499" y="498" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#8a5d27">next</text>
+  <text x="692" y="250" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#122838">Reminder timeline</text>
+  <rect x="692" y="270" width="214" height="20" rx="10" fill="#173042" opacity=".12" />
+  <path d="M692 398h420" stroke="#d8e5ec" stroke-width="10" stroke-linecap="round" />
+  <circle cx="760" cy="398" r="26" fill="#ecfdf3" />
+  <circle cx="900" cy="398" r="26" fill="#fff0db" />
+  <circle cx="1040" cy="398" r="26" fill="#fee2e2" />
+  <text x="742" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#15803d">sent</text>
+  <text x="884" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#8a5d27">due</text>
+  <text x="1018" y="404" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#b91c1c">late</text>
+  <rect x="692" y="460" width="450" height="160" rx="28" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="728" y="498" width="184" height="30" rx="15" fill="#ecfdf3" />
+  <rect x="728" y="548" width="184" height="30" rx="15" fill="#fff0db" />
+  <rect x="728" y="598" width="184" height="30" rx="15" fill="#fee2e2" />
+  <text x="771" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#15803d">send</text>
+  <text x="760" y="568" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#8a5d27">follow up</text>
+  <text x="758" y="618" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">escalate</text>
 
-  <rect x="745" y="246" width="148" height="34" rx="17" fill="#d6faf5" opacity=".16" />
-  <text x="782" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">review</text>
-  <text x="745" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#d6faf5">Reminder cadence</text>
-  <rect x="745" y="346" width="206" height="20" rx="10" fill="#d6faf5" opacity=".16" />
-  <rect x="745" y="396" width="250" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <rect x="745" y="470" width="250" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <rect x="745" y="544" width="250" height="54" rx="20" fill="#d6faf5" opacity=".12" />
-  <circle cx="777" cy="423" r="10" fill="#d6faf5" />
-  <circle cx="777" cy="497" r="10" fill="#d6faf5" />
-  <circle cx="777" cy="571" r="10" fill="#d6faf5" />
-  <text x="804" y="428" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">due date</text>
-  <text x="804" y="502" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">follow up</text>
-  <text x="804" y="576" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">escalate</text>
-  <rect x="745" y="630" width="250" height="30" rx="15" fill="#d6faf5" opacity=".12" />
-  <text x="805" y="650" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">log payment status</text>
-
-  <rect x="1130" y="246" width="136" height="34" rx="17" fill="#fff0db" />
-  <text x="1162" y="268" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">status</text>
-  <text x="1130" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Billing board</text>
-  <rect x="1130" y="346" width="188" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="1130" y="396" width="220" height="44" rx="22" fill="#ecfdf3" />
-  <rect x="1130" y="458" width="220" height="44" rx="22" fill="#fff7ed" />
-  <rect x="1130" y="520" width="220" height="44" rx="22" fill="#fee2e2" />
-  <rect x="1130" y="592" width="220" height="56" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1190" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d">sent</text>
-  <text x="1170" y="486" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#b45309">due soon</text>
-  <text x="1172" y="548" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#b91c1c">overdue</text>
-  <text x="1162" y="625" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">paid -> next invoice</text>
-
-  <path d="M650 448h55" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M1035 448h55" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-  <path d="M688 448l-16-16m16 16l-16 16" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M1073 448l-16-16m16 16l-16 16" stroke="#c9934a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="1170" y="214" width="250" height="492" rx="30" fill="#102430" />
+  <text x="1218" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#d6faf5">Ledger</text>
+  <rect x="1218" y="286" width="110" height="18" rx="9" fill="#d6faf5" opacity=".18" />
+  <rect x="1218" y="350" width="154" height="40" rx="20" fill="#d6faf5" opacity=".14" />
+  <rect x="1218" y="408" width="154" height="40" rx="20" fill="#d6faf5" opacity=".14" />
+  <rect x="1218" y="466" width="154" height="40" rx="20" fill="#d6faf5" opacity=".14" />
+  <text x="1262" y="375" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">sent</text>
+  <text x="1248" y="433" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">due soon</text>
+  <text x="1256" y="491" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">paid</text>
 </svg>
