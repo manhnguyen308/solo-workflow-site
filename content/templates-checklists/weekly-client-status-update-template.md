@@ -17,7 +17,7 @@ featured = false
 
 Use this template when the update rhythm is already defined and you need a repeatable message structure.
 
-It works best for active projects where the client needs visibility without being overloaded by internal details.
+It works best for active projects where the client needs visibility without being overloaded by internal details. This page is most useful as the execution asset that supports [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/), not as a standalone communication fix.
 
 ## What this template should help prevent
 

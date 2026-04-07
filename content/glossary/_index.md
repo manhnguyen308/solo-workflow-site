@@ -7,7 +7,7 @@ feature_image_alt = "Editorial glossary illustration with definition cards and r
 
 Use this glossary when a term is blocking a decision. The purpose here is not to build vocabulary for its own sake, but to remove ambiguity around ownership, handoffs, records, and workflow structure.
 
-This section exists to make the rest of the site more usable. The right outcome is not "I learned a definition." The right outcome is "I can now choose the right workflow, tool model, or operating rule with less ambiguity."
+This section exists to make the rest of the site more usable. The right outcome is not "I learned a definition." The right outcome is "I can now choose the right workflow, tool model, or operating rule with less ambiguity." For early indexing, these pages work best when they support stronger workflow and blueprint pages rather than trying to compete with them.
 
 ## How to use this hub
 

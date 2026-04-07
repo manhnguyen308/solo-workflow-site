@@ -7,6 +7,8 @@ date = 2026-04-06T00:00:00Z
 
 SoloOpsGuide keeps public contact limited to messages that can be reviewed responsibly. This page explains what kinds of outreach are appropriate and what information is most useful.
 
+This is a trust-support page, not a conversion page. Its job is to make correction, issue-reporting, and appropriate business outreach clearer while keeping the main site focused on workflow guidance rather than inbox management.
+
 ## What this page is for
 
 Appropriate reasons to contact SoloOpsGuide include:
@@ -59,3 +61,4 @@ When a monitored public contact method is available, it will be added here and l
 
 - How corrections and content standards are approached: [Editorial Policy](/editorial-policy/)
 - What the site is for and who it serves: [About](/about/)
+- Content boundaries and recommendation limits: [Content Policy](/content-policy/)

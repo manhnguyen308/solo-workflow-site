@@ -7,7 +7,7 @@ feature_image_alt = "Editorial FAQ illustration with layered answer cards for wo
 
 This section is for recurring setup questions that do not need a full guide. Use it when you need a fast answer, a recommendation boundary, and a clear page to open next.
 
-This hub should feel like a routing layer, not a content dead end. The pages here are most useful when you have a specific blocker, want a short answer, and need to know which detailed page to open next.
+This hub should feel like a routing layer, not a content dead end. It exists to support early indexing and ongoing site growth by capturing narrow questions, answering them quickly, and sending readers back into the stronger workflow, blueprint, comparison, or template page that deserves the deeper attention.
 
 ## How to use this hub
 
@@ -18,6 +18,8 @@ This hub should feel like a routing layer, not a content dead end. The pages her
 ## Start with the blocker, not the whole library
 
 - [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
+
+If that page does not resolve the blocker cleanly, the right move is usually not to keep browsing FAQ content. It is to jump into the strongest related cornerstone page immediately.
 
 ## Best uses for this hub
 

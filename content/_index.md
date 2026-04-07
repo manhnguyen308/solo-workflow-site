@@ -10,6 +10,8 @@ SoloOpsGuide helps freelancers and solo operators build repeatable client operat
 
 The site is organized around a simple editorial model: define the workflow first, choose the stack shape second, use comparisons only for bounded decisions, and use templates inside a live process rather than as standalone fixes.
 
+The strongest early entry points are the workflow anchor, the lean stack blueprint, the system-of-record comparison, and the onboarding checklist. Those pages define the main path the rest of the site supports.
+
 ## Start here (recommended reading path)
 
 1. [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)

@@ -106,6 +106,8 @@ Use three backlog lanes only:
 
 ## Priority backlog
 
+Treat the `Now` lane as the next practical batch to publish before expanding breadth further.
+
 ### Now
 
 1. `Client Onboarding Workflow for Freelancers and Consultants`

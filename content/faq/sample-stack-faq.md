@@ -19,6 +19,8 @@ featured = false
 
 This FAQ is for fast routing, not deep explanation. Use it when you know the blocker and want the shortest path to the right detailed page.
 
+It is one of the strongest support pages on the site because it helps Google and readers connect narrow setup questions back to the main workflow anchor, the stack blueprint, and the key system-of-record comparison instead of treating this as a standalone answer destination.
+
 ## Should I choose tools before defining my workflow?
 
 No. Define your stage sequence and handoffs first, then pick tool categories that support that flow. Start here: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).

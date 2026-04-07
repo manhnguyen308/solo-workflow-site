@@ -15,6 +15,7 @@
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}
 {{ $templateCount := len (where .Site.RegularPages "Section" "templates-checklists") }}
 {{ $glossaryCount := len (where .Site.RegularPages "Section" "glossary") }}
+{{ $faqCount := len (where .Site.RegularPages "Section" "faq") }}
 {{ $featureLabel := "Featured resource" }}
 {{ $featureLinkLabel := "Read page" }}
 {{ with $comparisonAnchor }}
@@ -168,6 +169,12 @@
           <h3>Glossary</h3>
           <p>Clear term definitions</p>
           <span>{{ $glossaryCount }} terms &rarr;</span>
+        </a>
+        <a class="homepage-resource-card homepage-resource-card-glossary" href="/faq/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="faq">
+          {{ partial "resource-icon.html" "faq" }}
+          <h3>FAQ</h3>
+          <p>Fast answers that route you to the right page</p>
+          <span>{{ $faqCount }} answers &rarr;</span>
         </a>
       </div>
     </div>
