@@ -11,6 +11,7 @@ tags = ["definition", "system-of-record", "operations"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
+hub_priority = 1
 related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++

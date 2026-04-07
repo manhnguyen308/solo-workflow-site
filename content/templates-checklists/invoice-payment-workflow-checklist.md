@@ -11,6 +11,7 @@ tags = ["invoicing", "payments", "cash-flow", "checklist"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
+hub_priority = 3
 related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++

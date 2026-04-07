@@ -11,6 +11,7 @@ tags = ["comparison", "notion", "clickup", "delivery-workflow"]
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
+hub_priority = 2
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = false
 +++

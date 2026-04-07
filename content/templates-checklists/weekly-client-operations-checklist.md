@@ -12,6 +12,7 @@ tags = ["weekly-ops", "checklist", "client-management"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
+hub_priority = 2
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/templates/weekly-client-status-update-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++

@@ -2,6 +2,13 @@
 {{ $workflowAnchor := .Site.GetPage "/client-workflow-systems/sample-client-workflow" }}
 {{ $blueprintAnchor := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
 {{ $comparisonAnchor := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
+{{ $intakeGuide := .Site.GetPage "/client-workflow-systems/sample-intake-guide" }}
+{{ $migrationGuide := .Site.GetPage "/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system" }}
+{{ $onboardingChecklist := .Site.GetPage "/templates-checklists/sample-onboarding-checklist" }}
+{{ $aboutPage := .Site.GetPage "/about" }}
+{{ $editorialPolicyPage := .Site.GetPage "/editorial-policy" }}
+{{ $contentPolicyPage := .Site.GetPage "/content-policy" }}
+{{ $contactPage := .Site.GetPage "/contact" }}
 {{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons" "templates-checklists")) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
@@ -166,6 +173,24 @@
     </div>
   </section>
 
+  <section class="page-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Priority pages</p>
+        <h2>Start with the core pages readers and search engines should find first</h2>
+        <p>These pages carry the main site architecture: lifecycle design, stack shape, key system decisions, and the strongest implementation assets.</p>
+      </div>
+      <div class="card-grid card-grid-2">
+        {{ with $workflowAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $blueprintAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $comparisonAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $onboardingChecklist }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $intakeGuide }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $migrationGuide }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+      </div>
+    </div>
+  </section>
+
   <section class="homepage-popular">
     <div class="wrap">
       <div class="homepage-section-intro">
@@ -219,6 +244,86 @@
           </div>
         </article>
         {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Reading paths</p>
+        <h2>Follow the shortest path based on the problem you need to fix</h2>
+        <p>Each path links a hub page to the cornerstone guide and the next implementation page so the strongest clusters are easier to discover and understand.</p>
+      </div>
+      <div class="card-grid card-grid-2">
+        <article class="page-card page-card-default page-card-theme-client-workflow-systems">
+          <div class="page-card-body">
+            <div class="page-card-top">
+              <p class="page-card-type">Workflow path</p>
+              <span class="page-card-date">Priority route</span>
+            </div>
+            <h3><a href="/client-workflow-systems/">Fix the full client lifecycle first</a></h3>
+            <p>Start at the workflow hub, map the full lifecycle, then move into intake and proposal handoff before adding more templates or tools.</p>
+            <div class="page-card-footer">
+              <a class="page-card-link" href="/client-workflow-systems/">Open workflow hub</a>
+            </div>
+          </div>
+        </article>
+        <article class="page-card page-card-default page-card-theme-software-stack-blueprints">
+          <div class="page-card-body">
+            <div class="page-card-top">
+              <p class="page-card-type">Stack path</p>
+              <span class="page-card-date">Priority route</span>
+            </div>
+            <h3><a href="/software-stack-blueprints/">Choose a lean stack before expanding tools</a></h3>
+            <p>Start with the lean-budget blueprint, then move into migration or decision pages only when a real system constraint is blocking execution.</p>
+            <div class="page-card-footer">
+              <a class="page-card-link" href="/software-stack-blueprints/">Open blueprint hub</a>
+            </div>
+          </div>
+        </article>
+        <article class="page-card page-card-default page-card-theme-workflow-comparisons">
+          <div class="page-card-body">
+            <div class="page-card-top">
+              <p class="page-card-type">Decision path</p>
+              <span class="page-card-date">Priority route</span>
+            </div>
+            <h3><a href="/workflow-comparisons/">Use comparisons only for bounded system choices</a></h3>
+            <p>Resolve the system-of-record question first, then move to narrower workspace or delivery comparisons only after the workflow model is already clear.</p>
+            <div class="page-card-footer">
+              <a class="page-card-link" href="/workflow-comparisons/">Open comparison hub</a>
+            </div>
+          </div>
+        </article>
+        <article class="page-card page-card-default page-card-theme-templates-checklists">
+          <div class="page-card-body">
+            <div class="page-card-top">
+              <p class="page-card-type">Execution path</p>
+              <span class="page-card-date">Priority route</span>
+            </div>
+            <h3><a href="/templates-checklists/">Attach templates to a real workflow trigger</a></h3>
+            <p>Start with onboarding, then add the weekly operations checklist and invoice controls so the strongest asset pages reinforce the main workflow instead of floating alone.</p>
+            <div class="page-card-footer">
+              <a class="page-card-link" href="/templates-checklists/">Open templates hub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="wrap">
+      <div class="section-heading">
+        <p class="eyebrow">Trust pages</p>
+        <h2>Use the site standards and contact pages when you need boundaries or verification</h2>
+        <p>These pages clarify what the site is for, how recommendations are framed, and where corrections or editorial questions should go.</p>
+      </div>
+      <div class="card-grid card-grid-2">
+        {{ with $aboutPage }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $editorialPolicyPage }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $contentPolicyPage }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $contactPage }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
       </div>
     </div>
   </section>

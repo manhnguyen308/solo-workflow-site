@@ -11,13 +11,16 @@ tags = ["client-workflow", "operations", "service-delivery"]
 page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
+hub_priority = 1
 related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = true
 +++
 
 Most solo operators do not have a client delivery problem. They have a **handoff problem**. Leads come in one way, proposals go out another way, delivery happens in a third tool, and billing gets handled whenever there is time. This workflow is designed to stop that drift.
 
-Use this page as the anchor model for your operations. Then implement each stage using the linked guide, comparison, and checklist pages.
+Use this page as the anchor model for your operations. It is the best first page on the site when the whole client lifecycle feels messy, because it connects intake, handoff, delivery, billing, and offboarding into one operating sequence with clear next-step links.
+
+Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools.
 
 ## Who this workflow is for (and not for)
 

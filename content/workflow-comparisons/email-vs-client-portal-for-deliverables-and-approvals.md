@@ -11,6 +11,7 @@ tags = ["comparison", "client-communication", "approvals", "delivery-workflow"]
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
+hub_priority = 3
 related = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/templates/weekly-client-status-update-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/glossary/system-of-record/", "/guides/software-stack-blueprint-consultant--va-collaboration-setup/"]
 featured = false
 +++
@@ -18,6 +19,8 @@ featured = false
 This is not a software-brand comparison. It is a workflow decision about where client-facing delivery, review, and approval should happen.
 
 For many solo operators, email is still enough. The mistake is assuming that "simple" and "email-only" always mean the same thing.
+
+Use this after the system-of-record decision is already clear and the open question is specifically where review and approvals should happen during live delivery.
 
 ## What you are actually deciding
 

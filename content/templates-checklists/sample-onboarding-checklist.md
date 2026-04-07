@@ -11,11 +11,14 @@ tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
+hub_priority = 1
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++
 
 Use this checklist after contract signing and before delivery begins. The goal is simple: every client starts with the same operational baseline.
+
+This is the strongest first implementation asset on the site because it turns the abstract proposal-to-delivery handoff into a repeatable kickoff sequence with visible owners, dates, and controls.
 
 ## When to use this checklist
 

@@ -11,6 +11,7 @@ tags = ["intake", "qualification", "lead-filtering"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
+hub_priority = 2
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = false
 +++
@@ -18,6 +19,8 @@ featured = false
 If every inquiry becomes a discovery call, you are not running intake; you are running reactive sales support. A good intake workflow protects your delivery calendar and prevents misaligned projects from entering your pipeline.
 
 This page is for solo operators who feel busy before work even starts. If your calendar fills with low-fit calls, proposals get drafted for weak opportunities, or delivery work keeps starting with avoidable surprises, intake is the stage to tighten first.
+
+It also acts as the main supporting page under the full lifecycle workflow. Use it after the anchor workflow when the first bottleneck is lead quality, qualification, or deciding where intake status should live.
 
 ## What a good intake workflow should accomplish
 

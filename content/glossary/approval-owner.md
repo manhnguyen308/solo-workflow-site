@@ -11,6 +11,7 @@ tags = ["definition", "approval-owner", "workflow"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
+hub_priority = 3
 related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
 featured = false
 +++

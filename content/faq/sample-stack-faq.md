@@ -12,6 +12,7 @@ tags = ["faq", "setup", "workflow-stack"]
 page_type = "faq"
 search_intent = "problem-solving"
 page_role = "support"
+hub_priority = 1
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++

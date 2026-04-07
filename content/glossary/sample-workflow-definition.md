@@ -11,6 +11,7 @@ tags = ["definition", "workflow-handoff"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
+hub_priority = 2
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/"]
 featured = false
 +++

@@ -1,14 +1,22 @@
 {{ define "main" }}
+{{ $allPages := .Pages.ByDate.Reverse }}
+{{ $priorityPages := sort (where .Pages "Params.hub_priority" "gt" 0) "Params.hub_priority" }}
 {{ $featuredPages := where .Pages "Params.featured" true }}
 {{ $featuredPage := false }}
-{{ if gt (len $featuredPages) 0 }}
+{{ if gt (len $priorityPages) 0 }}
+  {{ $featuredPage = index $priorityPages 0 }}
+{{ else if gt (len $featuredPages) 0 }}
   {{ $featuredPage = index $featuredPages 0 }}
 {{ else if gt (len .Pages) 0 }}
-  {{ $featuredPage = index (.Pages.ByDate.Reverse) 0 }}
+  {{ $featuredPage = index $allPages 0 }}
 {{ end }}
-{{ $rest := slice }}
-{{ if $featuredPage }}
-  {{ $rest = where (.Pages.ByDate.Reverse) "RelPermalink" "ne" $featuredPage.RelPermalink }}
+{{ $rest := $allPages }}
+{{ if gt (len $priorityPages) 0 }}
+  {{ range $priorityPages }}
+    {{ $rest = where $rest "RelPermalink" "ne" .RelPermalink }}
+  {{ end }}
+{{ else if $featuredPage }}
+  {{ $rest = where $rest "RelPermalink" "ne" $featuredPage.RelPermalink }}
 {{ end }}
 {{ if eq (len .Pages) 0 }}
 <div class="page-shell page-shell-single">
@@ -67,7 +75,7 @@
         </div>
         {{ with $featuredPage }}
         <div class="section-featured-link">
-          <span>Recommended page</span>
+          <span>{{ if gt (len $priorityPages) 0 }}Priority page{{ else }}Recommended page{{ end }}</span>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </div>
         {{ end }}
@@ -75,7 +83,22 @@
     </div>
   </section>
 
-  {{ if $featuredPage }}
+  {{ if gt (len $priorityPages) 0 }}
+    <section class="page-section">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow">Priority pages</p>
+          <h2>Start with the strongest pages in this hub</h2>
+          <p>These pages carry the main lifecycle, decision, and implementation paths for this topic area. Open them before drilling into narrower supporting pages.</p>
+        </div>
+        <div class="card-grid card-grid-2">
+          {{ range $priorityPages }}
+            {{ partial "page-card.html" (dict "page" . "style" "default") }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ else if $featuredPage }}
     <section class="page-section">
       <div class="wrap">
         <div class="section-heading">
@@ -93,9 +116,9 @@
   <section class="page-section">
     <div class="wrap">
       <div class="section-heading">
-        <p class="eyebrow">Pages in this hub</p>
-        <h2>Curated reading list</h2>
-        <p>Use these pages in sequence where it helps, or jump directly to the one that matches the current bottleneck in your workflow.</p>
+        <p class="eyebrow">More pages in this hub</p>
+        <h2>{{ if gt (len $priorityPages) 0 }}Supporting pages and follow-on reading{{ else }}Curated reading list{{ end }}</h2>
+        <p>{{ if gt (len $priorityPages) 0 }}Use these pages after the priority set when you need a narrower workflow fix, implementation asset, or reference page inside the same cluster.{{ else }}Use these pages in sequence where it helps, or jump directly to the one that matches the current bottleneck in your workflow.{{ end }}</p>
       </div>
       <div class="card-grid card-grid-2">
         {{ range $rest }}

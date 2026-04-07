@@ -11,6 +11,7 @@ tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
+hub_priority = 3
 related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
@@ -20,6 +21,8 @@ The handoff between proposal and contract is where many solo operators lose cont
 This guide gives you a repeatable pre-kickoff handoff process so the contract reflects execution reality.
 
 This page is especially useful when you keep hearing some version of "we thought that was included" after the project starts. In practice, that usually means the handoff from discovery to execution was too informal.
+
+Use it after the intake workflow has already improved lead quality and before the onboarding checklist turns the signed project into a live delivery record.
 
 ## What this handoff must achieve
 

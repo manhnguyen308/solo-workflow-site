@@ -11,6 +11,7 @@ tags = ["stack-planning", "budget", "workflow-systems"]
 page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
+hub_priority = 1
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
@@ -19,7 +20,9 @@ Most freelancers do not fail because they chose the "wrong" tool. They fail beca
 
 If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
-This page is written for operators who want a stack they can actually maintain alone. The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag."
+This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?"
+
+The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag."
 
 ## Lean stack principles (non-negotiable)
 

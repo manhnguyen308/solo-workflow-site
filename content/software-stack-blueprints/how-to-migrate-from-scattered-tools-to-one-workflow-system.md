@@ -11,6 +11,7 @@ tags = ["migration", "stack-cleanup", "workflow-system"]
 page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
+hub_priority = 2
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++
@@ -18,6 +19,8 @@ featured = true
 If your client operations are spread across chat threads, spreadsheets, notes, and disconnected apps, you are paying a hidden tax in errors and context switching. This guide helps you migrate to one coherent workflow system without breaking active client work.
 
 This page is for cleanup projects, not fresh starts. If you already have live clients and too many places where status can drift, the goal is to reduce operational ambiguity without creating service disruption during the move.
+
+Use it after the lean-stack blueprint when the problem is no longer choosing a model in theory but consolidating a scattered live system into one authoritative operating path.
 
 ## Migration outcomes
 
