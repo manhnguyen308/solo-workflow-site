@@ -11,7 +11,7 @@ tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++
 
@@ -111,6 +111,7 @@ Treat onboarding as complete only when:
 - Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Intake setup: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
 - Contract transition: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- Ongoing communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 
 ## Common misuses to avoid
 

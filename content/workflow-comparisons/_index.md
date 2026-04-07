@@ -28,6 +28,7 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 
 1. Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when you are deciding where active client operations should live.
 2. Open [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) when the open question is how structured your delivery workspace should be.
+3. Open [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) when the question is where review, handoff, and approval should happen.
 
 ## What makes these pages useful
 
@@ -39,6 +40,7 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 
 - [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) is the higher-level decision because it determines where your system of record should live.
 - [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center.
+- [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) helps once the real issue is client-facing review and approval flow rather than the internal workspace itself.
 
 ## Pages to read before or after a comparison
 

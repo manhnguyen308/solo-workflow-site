@@ -11,7 +11,7 @@ tags = ["client-workflow", "operations", "service-delivery"]
 page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = true
 +++
 
@@ -64,12 +64,16 @@ Implementation next step: [Proposal-to-Contract Handoff Workflow Setup](/workflo
 
 Implementation asset: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
+Communication follow-on: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+
 ### 4) Delivery and QA
 **Goal:** produce work predictably and reduce revision churn.  
 **Inputs:** project plan, client assets, milestone deadlines.  
 **Output:** accepted deliverables with documented QA pass.
 
 Implementation asset: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/).
+
+Scope-control follow-on: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
 ### 5) Invoicing and payment
 **Goal:** convert completed work to collected revenue with minimal admin overhead.  
@@ -91,6 +95,7 @@ Implementation asset: [Client Offboarding + Testimonial Request Template](/templ
 |---|---|---|
 | Too many discovery calls with poor-fit leads | No qualification criteria | Use a go/no-go intake rubric before calendar booking |
 | Scope disputes mid-project | Sales and delivery handoff is fuzzy | Add "in-scope/out-of-scope" lines before contract signing |
+| Clients keep asking for progress in scattered channels | No defined update rhythm | Standardize updates with one cadence and one structured template |
 | Chaotic kickoff | No onboarding sequence | Use a checklist with ownership per item |
 | Late invoices | Billing tied to memory | Tie invoice trigger to milestone completion events |
 | No referrals or repeat work | Offboarding skipped | Include a fixed closeout + testimonial step |
@@ -122,6 +127,8 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 2. Choose your stack model: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).  
 3. Decide operating system type: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).  
 4. Execute onboarding consistently: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).  
-5. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
+5. Standardize client communication: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+6. Handle scope changes without drift: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+7. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
 
 If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

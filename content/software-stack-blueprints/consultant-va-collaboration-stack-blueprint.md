@@ -11,7 +11,7 @@ tags = ["consultant", "va", "collaboration", "stack-blueprint"]
 page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/weekly-client-operations-checklist-solo-business/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/comparisons/email-vs-client-portal-for-deliverables-and-approvals/", "/templates/weekly-client-operations-checklist-solo-business/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = true
 +++
 
@@ -72,6 +72,8 @@ The VA does not need access to every system on day one. They need access to the 
 - Lightweight automation for repeatable admin
 
 Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) for system-of-record selection.
+
+If the open question is not the internal system of record but the client-facing review layer, use [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
 
 ## Delegation boundaries worth writing down
 

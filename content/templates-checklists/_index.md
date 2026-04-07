@@ -19,9 +19,11 @@ Think of this hub as the execution layer of the site. If another page tells you 
 ## Pick the asset by operational trigger
 
 1. Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) immediately after contract signing.
-2. Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) right before a milestone, review, or final delivery.
-3. Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) when payment collection depends too much on memory.
-4. Use [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/) when closing a project and preserving future referral value.
+2. Use [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/) when clients need a repeatable progress update and clear next actions.
+3. Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) right before a milestone, review, or final delivery.
+4. Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) when payment collection depends too much on memory.
+5. Use [Client Change Request Template](/templates/client-change-request-template/) when a request may change scope, timing, or fee.
+6. Use [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/) when closing a project and preserving future referral value.
 
 ## Ongoing operating rhythm
 
@@ -51,8 +53,9 @@ The strongest pages in this hub usually include:
 ## Suggested reading paths
 
 - For kickoff reliability: proposal handoff -> onboarding checklist -> weekly operations checklist.
-- For delivery consistency: workflow anchor -> delivery QA checklist -> offboarding template.
+- For delivery consistency: workflow anchor -> weekly client status update template -> delivery QA checklist -> offboarding template.
 - For payment control: proposal handoff -> invoice workflow -> weekly operations checklist.
+- For scope control: proposal handoff -> client change request template -> invoice workflow.
 
 ## If the asset feels premature
 

@@ -11,7 +11,7 @@ tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
@@ -106,6 +106,8 @@ Once signed, pass this package to onboarding:
 - invoice schedule.
 
 Then execute onboarding with: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+
+If the project is likely to evolve after kickoff, define the post-signature rule now with [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
 ## Common mistakes to avoid
 

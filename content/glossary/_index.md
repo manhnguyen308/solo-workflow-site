@@ -25,11 +25,13 @@ This section exists to make the rest of the site more usable. The right outcome 
 
 - [Workflow Handoff](/glossary/workflow-handoff/)
 - [System of Record](/glossary/system-of-record/)
+- [Approval Owner](/glossary/approval-owner/)
 
 ## Terms that matter most for this site
 
 - [Workflow Handoff](/glossary/workflow-handoff/) clarifies how work should move between lifecycle stages.
 - [System of Record](/glossary/system-of-record/) clarifies where current truth should live inside the stack.
+- [Approval Owner](/glossary/approval-owner/) clarifies who can actually move a deliverable, change request, or milestone forward.
 
 ## When to leave the glossary
 

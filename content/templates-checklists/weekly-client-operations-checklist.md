@@ -12,7 +12,7 @@ tags = ["weekly-ops", "checklist", "client-management"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/templates/weekly-client-status-update-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
 featured = true
 +++
 
@@ -44,6 +44,8 @@ Ask one hard question here: is any new work about to be accepted because revenue
 - Send weekly status updates for active projects.
 - Confirm pending approvals and follow-up deadlines.
 - Log key decisions in your system of record.
+
+Use [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/) if the team needs one consistent message structure.
 
 ### 4) Billing and admin review (15 minutes)
 - Check invoices due this week.
