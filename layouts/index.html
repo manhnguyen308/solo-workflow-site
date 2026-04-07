@@ -2,16 +2,19 @@
 {{ $workflowAnchor := .Site.GetPage "/client-workflow-systems/sample-client-workflow" }}
 {{ $blueprintAnchor := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
 {{ $comparisonAnchor := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
-{{ $templateAnchor := .Site.GetPage "/templates-checklists/sample-onboarding-checklist" }}
-{{ $latest := first 3 (.Site.RegularPages.ByDate.Reverse) }}
+{{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons" "templates-checklists")) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}
 {{ $templateCount := len (where .Site.RegularPages "Section" "templates-checklists") }}
 {{ $glossaryCount := len (where .Site.RegularPages "Section" "glossary") }}
+{{ $featureLabel := "Featured resource" }}
 {{ $featureLinkLabel := "Read page" }}
 {{ with $comparisonAnchor }}
-  {{ if eq .Section "workflow-comparisons" }}{{ $featureLinkLabel = "Read comparison" }}{{ end }}
+  {{ if eq .Section "workflow-comparisons" }}
+    {{ $featureLabel = "Featured comparison" }}
+    {{ $featureLinkLabel = "Read comparison" }}
+  {{ end }}
 {{ end }}
 {{ $workflowLeadLabel := "Read workflow" }}
 {{ $blueprintLeadLabel := "Open blueprint" }}
@@ -19,7 +22,7 @@
   <section class="homepage-hero">
     <div class="wrap homepage-hero-inner">
       <div class="homepage-hero-copy">
-        <p class="homepage-pill">For Solo Operators</p>
+        <p class="homepage-pill">Workflow-First Guidance</p>
         <h1>Structured guidance for real solo operations</h1>
         <p class="homepage-hero-lead">Make better decisions about the workflows, tools, and systems that run your business. No hype. No overwhelm. Just calm, practical guidance designed for implementation.</p>
         <div class="homepage-hero-actions">
@@ -31,7 +34,7 @@
       <aside class="homepage-feature-card">
         <div class="homepage-feature-top">
           <div class="homepage-feature-icon" aria-hidden="true">&#10022;</div>
-          <span class="homepage-feature-label">Featured Guide</span>
+          <span class="homepage-feature-label">{{ $featureLabel }}</span>
         </div>
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <p>{{ .Params.summary }}</p>
@@ -76,14 +79,28 @@
     <div class="wrap">
       <div class="homepage-section-intro homepage-section-intro-split">
         <div>
-          <h2>Recently published guides</h2>
-          <p>Fresh insights and practical workflow recommendations</p>
+          <h2>Recent additions</h2>
+          <p>New workflow, blueprint, comparison, and asset pages added to the library.</p>
         </div>
         <a class="homepage-inline-link" href="#explore-by-resource">Explore by resource <span aria-hidden="true">&rarr;</span></a>
       </div>
       <div class="homepage-editorial-grid">
         {{ range $index, $page := $latest }}
         {{ $featureImage := partial "feature-image.html" $page }}
+        {{ $cardType := $page.Params.page_type | default (replace $page.Section "-" " " | title) }}
+        {{ if eq $page.Section "software-stack-blueprints" }}
+          {{ $cardType = "Blueprint" }}
+        {{ else if eq $page.Section "workflow-comparisons" }}
+          {{ $cardType = "Comparison" }}
+        {{ else if eq $page.Section "templates-checklists" }}
+          {{ $cardType = "Asset" }}
+        {{ else if eq $page.Section "glossary" }}
+          {{ $cardType = "Glossary" }}
+        {{ else if eq $page.Section "faq" }}
+          {{ $cardType = "FAQ" }}
+        {{ else }}
+          {{ $cardType = $cardType | title }}
+        {{ end }}
         <article class="homepage-editorial-card">
           <a class="homepage-editorial-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
             {{ with $featureImage }}
@@ -92,7 +109,7 @@
           </a>
           <div class="homepage-editorial-body">
             <div class="homepage-editorial-meta">
-              <span>{{ $page.Params.page_type | default (replace $page.Section "-" " " | title) }}</span>
+              <span>{{ $cardType }}</span>
               <span aria-hidden="true">&bull;</span>
               <span>{{ $page.Date.Format "Jan 2, 2006" }}</span>
             </div>
@@ -130,14 +147,14 @@
         <a class="homepage-resource-card homepage-resource-card-comparisons" href="/workflow-comparisons/">
           {{ partial "resource-icon.html" "comparisons" }}
           <h3>Comparisons</h3>
-          <p>Side-by-side tool analysis</p>
+          <p>Decision-focused workflow comparisons</p>
           <span>{{ $comparisonCount }} comparisons &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-templates" href="/templates-checklists/">
           {{ partial "resource-icon.html" "templates" }}
-          <h3>Templates</h3>
-          <p>Ready-to-use documents</p>
-          <span>{{ $templateCount }} templates &rarr;</span>
+          <h3>Templates &amp; Checklists</h3>
+          <p>Reusable assets for live client operations</p>
+          <span>{{ $templateCount }} assets &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-glossary" href="/glossary/">
           {{ partial "resource-icon.html" "glossary" }}
@@ -152,8 +169,8 @@
   <section class="homepage-popular">
     <div class="wrap">
       <div class="homepage-section-intro">
-        <h2>Popular guides</h2>
-        <p>Most-read resources from the SoloOpsGuide library</p>
+        <h2>Cornerstone resources</h2>
+        <p>Start with the anchor workflow and the baseline blueprint if you need the strongest site entry points.</p>
       </div>
       <div class="homepage-popular-grid">
         {{ with $workflowAnchor }}
@@ -166,7 +183,7 @@
           </a>
           <div class="homepage-popular-body">
             <div class="homepage-editorial-meta">
-              <span>{{ .Params.page_type | default "Workflow" | title }}</span>
+              <span>Workflow</span>
               <span aria-hidden="true">&bull;</span>
               <span>{{ .Date.Format "Jan 2, 2006" }}</span>
             </div>
@@ -189,7 +206,7 @@
           </a>
           <div class="homepage-popular-body">
             <div class="homepage-editorial-meta">
-              <span>{{ .Params.page_type | default "Blueprint" | title }}</span>
+              <span>Blueprint</span>
               <span aria-hidden="true">&bull;</span>
               <span>{{ .Date.Format "Jan 2, 2006" }}</span>
             </div>

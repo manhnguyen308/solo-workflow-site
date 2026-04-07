@@ -115,6 +115,7 @@ Key launch docs:
 - `DAY10_LAUNCH_PACKAGE.md`
 - `DAY11_LAUNCH_FINALIZATION.md`
 - `DAY12_VERIFICATION_BLOCKED.md`
+- `GO_LIVE_CHECKLIST.md`
 
 ## Content creation
 

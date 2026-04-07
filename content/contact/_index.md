@@ -5,7 +5,7 @@ summary = "Use this page to understand what kinds of messages SoloOpsGuide is op
 date = 2026-04-06T00:00:00Z
 +++
 
-SoloOpsGuide aims to keep public contact limited to messages that can be reviewed responsibly. This page explains what kinds of outreach are appropriate and what information is most useful.
+SoloOpsGuide keeps public contact limited to messages that can be reviewed responsibly. This page explains what kinds of outreach are appropriate and what information is most useful.
 
 ## What this page is for
 
@@ -51,9 +51,9 @@ Keep it specific. The most useful messages explain:
 
 ## Contact availability note
 
-A public inbox is intentionally not published until it can be actively monitored. SoloOpsGuide would rather publish no public address than list one that invites legitimate correction or partnership messages into a dead inbox.
+A public inbox is intentionally not published until it can be actively monitored. It is better to publish no public address than to invite legitimate correction or partnership messages into an inbox that is not being checked reliably.
 
-When a monitored public contact method is available, it will be added here.
+When a monitored public contact method is available, it will be added here and linked from the footer if appropriate.
 
 ## Related pages
 

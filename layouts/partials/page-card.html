@@ -1,19 +1,45 @@
 {{ $page := .page }}
 {{ $style := .style | default "default" }}
 {{ $sectionLabel := replace ($page.Section | default "page") "-" " " | title }}
+{{ $displayType := $page.Params.page_type | default $sectionLabel }}
+{{ if eq $page.Section "software-stack-blueprints" }}
+  {{ $displayType = "Blueprint" }}
+{{ else if eq $page.Section "workflow-comparisons" }}
+  {{ $displayType = "Comparison" }}
+{{ else if eq $page.Section "templates-checklists" }}
+  {{ $displayType = "Asset" }}
+{{ else if eq $page.Section "glossary" }}
+  {{ $displayType = "Glossary" }}
+{{ else if eq $page.Section "faq" }}
+  {{ $displayType = "FAQ" }}
+{{ else if eq $page.Params.page_type "workflow" }}
+  {{ $displayType = "Workflow" }}
+{{ else if eq $page.Params.page_type "guide" }}
+  {{ $displayType = "Guide" }}
+{{ else if eq $page.Params.page_type "template" }}
+  {{ $displayType = "Template" }}
+{{ else if eq $page.Params.page_type "glossary" }}
+  {{ $displayType = "Glossary" }}
+{{ else if eq $page.Params.page_type "faq" }}
+  {{ $displayType = "FAQ" }}
+{{ else }}
+  {{ $displayType = $displayType | title }}
+{{ end }}
 {{ $linkLabel := "Read page" }}
-{{ if eq $page.Section "client-workflow-systems" }}
-  {{ $linkLabel = "Read workflow" }}
-{{ else if eq $page.Section "software-stack-blueprints" }}
+{{ if eq $page.Section "software-stack-blueprints" }}
   {{ $linkLabel = "Open blueprint" }}
 {{ else if eq $page.Section "workflow-comparisons" }}
   {{ $linkLabel = "Read comparison" }}
 {{ else if eq $page.Section "templates-checklists" }}
-  {{ $linkLabel = "Open template" }}
+  {{ $linkLabel = "Open asset" }}
 {{ else if eq $page.Section "glossary" }}
   {{ $linkLabel = "View term" }}
 {{ else if eq $page.Section "faq" }}
   {{ $linkLabel = "View answer" }}
+{{ else if eq $page.Params.page_type "workflow" }}
+  {{ $linkLabel = "Read workflow" }}
+{{ else if eq $page.Params.page_type "guide" }}
+  {{ $linkLabel = "Read guide" }}
 {{ end }}
 {{ $image := partial "feature-image.html" $page }}
 <article class="page-card page-card-{{ $style }} page-card-theme-{{ $page.Section }}">
@@ -26,7 +52,7 @@
   </a>
   <div class="page-card-body">
     <div class="page-card-top">
-      <p class="page-card-type">{{ $page.Params.page_type | default $sectionLabel }}</p>
+      <p class="page-card-type">{{ $displayType }}</p>
       <span class="page-card-date">{{ $page.Date.Format "Jan 2, 2006" }}</span>
     </div>
     <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>

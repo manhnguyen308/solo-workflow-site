@@ -11,7 +11,7 @@ The site focuses on one practical problem: many solo businesses do not fail beca
 
 ## What SoloOpsGuide is
 
-SoloOpsGuide is an editorial and product-style resource built around implementation guidance for solo operations.
+SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations.
 
 It publishes:
 - workflow anchors that map the full client path,
@@ -61,7 +61,7 @@ SoloOpsGuide is intentionally not built around:
 
 ## How the site approaches trust
 
-The site aims to be useful by being specific, bounded, and transparent about what each page is for.
+The site aims to be useful by being specific, bounded, and transparent about what each page is for and what it is not meant to solve.
 
 That means:
 - recommendations are framed around scenarios, not universal winners,
