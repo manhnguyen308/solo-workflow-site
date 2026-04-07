@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Client change request template illustration</title>
+  <desc id="desc">An editorial template illustration showing a change request document with scope, timeline, fee impact, and approval fields.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#eef7fb" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1260" cy="180" r="150" fill="#eaf4fb" />
+  <rect x="250" y="120" width="840" height="660" rx="34" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+  <rect x="1110" y="212" width="250" height="390" rx="28" fill="#102430" />
+  <rect x="320" y="178" width="182" height="34" rx="17" fill="#fff0db" />
+  <text x="350" y="200" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">template</text>
+  <text x="320" y="276" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#122838">Change request</text>
+  <rect x="320" y="296" width="230" height="20" rx="10" fill="#173042" opacity=".12" />
+  <text x="320" y="362" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">Requested change</text>
+  <rect x="320" y="382" width="328" height="14" rx="7" fill="#173042" opacity=".12" />
+  <text x="320" y="444" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">Impact assessment</text>
+  <rect x="320" y="466" width="110" height="28" rx="14" fill="#fff0db" />
+  <rect x="444" y="466" width="110" height="28" rx="14" fill="#dfe9fb" />
+  <rect x="568" y="466" width="96" height="28" rx="14" fill="#fee2e2" />
+  <text x="350" y="485" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a5d27">scope</text>
+  <text x="476" y="485" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#36589a">timeline</text>
+  <text x="597" y="485" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#b91c1c">fee</text>
+  <text x="320" y="550" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">Approval owner</text>
+  <rect x="320" y="570" width="250" height="14" rx="7" fill="#173042" opacity=".08" />
+  <text x="320" y="632" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">Outcome</text>
+  <rect x="320" y="652" width="112" height="28" rx="14" fill="#ecfdf3" />
+  <rect x="446" y="652" width="112" height="28" rx="14" fill="#fff0db" />
+  <rect x="572" y="652" width="112" height="28" rx="14" fill="#dfe9fb" />
+  <text x="347" y="671" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#15803d">accept</text>
+  <text x="474" y="671" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#8a5d27">reprice</text>
+  <text x="603" y="671" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#36589a">defer</text>
+  <text x="1150" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">Decision</text>
+  <rect x="1150" y="292" width="132" height="30" rx="15" fill="#d6faf5" opacity=".12" />
+  <rect x="1150" y="338" width="132" height="30" rx="15" fill="#d6faf5" opacity=".12" />
+  <text x="1188" y="312" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">approve</text>
+  <text x="1193" y="358" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#d6faf5">update</text>
+</svg>

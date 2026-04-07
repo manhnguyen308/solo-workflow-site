@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Client status update workflow illustration</title>
+  <desc id="desc">An editorial illustration showing a weekly client update workflow with project status, blockers, approval owner, and next actions.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3faf9" />
+      <stop offset="100%" stop-color="#f8fbfd" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <circle cx="1310" cy="180" r="140" fill="#dff3f2" />
+  <rect x="126" y="130" width="1348" height="640" rx="42" fill="#ffffff" stroke="#d7e4eb" stroke-width="4" />
+  <rect x="190" y="206" width="382" height="486" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
+  <rect x="608" y="206" width="388" height="486" rx="30" fill="#102430" />
+  <rect x="1032" y="206" width="378" height="486" rx="30" fill="#f8fbfd" stroke="#dae7ef" stroke-width="3" />
+  <rect x="230" y="242" width="146" height="34" rx="17" fill="#d8f3f1" />
+  <text x="263" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">weekly</text>
+  <text x="230" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Project record</text>
+  <rect x="230" y="346" width="216" height="20" rx="10" fill="#173042" opacity=".12" />
+  <rect x="230" y="394" width="120" height="30" rx="15" fill="#ecfdf3" />
+  <rect x="364" y="394" width="128" height="30" rx="15" fill="#fff0db" />
+  <text x="266" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#15803d">on track</text>
+  <text x="398" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#8a5d27">blocked</text>
+  <rect x="230" y="456" width="300" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="230" y="530" width="300" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="230" y="604" width="300" height="58" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="264" y="490" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">milestone progress</text>
+  <text x="264" y="564" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">client blocker</text>
+  <text x="264" y="638" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">next action</text>
+  <text x="648" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">update</text>
+  <text x="648" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#d6faf5">Client update</text>
+  <rect x="648" y="346" width="170" height="20" rx="10" fill="#d6faf5" opacity=".16" />
+  <rect x="648" y="398" width="308" height="244" rx="24" fill="#d6faf5" opacity=".12" />
+  <text x="682" y="438" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">Progress</text>
+  <rect x="682" y="456" width="160" height="14" rx="7" fill="#d6faf5" opacity=".86" />
+  <rect x="682" y="488" width="126" height="14" rx="7" fill="#d6faf5" opacity=".58" />
+  <text x="682" y="534" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">Review needed</text>
+  <rect x="682" y="552" width="194" height="14" rx="7" fill="#d6faf5" opacity=".72" />
+  <text x="682" y="598" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">Next week</text>
+  <rect x="682" y="616" width="148" height="14" rx="7" fill="#d6faf5" opacity=".52" />
+  <rect x="648" y="656" width="308" height="24" rx="12" fill="#d6faf5" opacity=".12" />
+  <text x="724" y="673" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#d6faf5">send -> log back</text>
+  <text x="1072" y="264" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">review</text>
+  <text x="1072" y="326" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Response path</text>
+  <rect x="1072" y="346" width="200" height="20" rx="10" fill="#173042" opacity=".12" />
+  <rect x="1072" y="404" width="296" height="54" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="1072" y="476" width="296" height="54" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="1072" y="548" width="296" height="54" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="1104" y="438" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">approval owner</text>
+  <text x="1104" y="510" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">client action</text>
+  <text x="1104" y="582" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">update sent</text>
+  <path d="M572 458h36" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
+  <path d="M996 458h36" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
+  <path d="M594 458l-12-12m12 12l-12 12" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M1018 458l-12-12m12 12l-12 12" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
