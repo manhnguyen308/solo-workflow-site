@@ -58,6 +58,135 @@ pages = [
   "/content-policy/",
 ]
 
+[page_type_rules.hubs]
+first_fixes = [
+  "Tighten the opening framing so the hub sounds like the right cluster entry point.",
+  "Strengthen links to the top priority pages in the section.",
+  "Reduce prominence for weak support pages if they surface too early.",
+]
+
+[page_type_rules.workflows]
+first_fixes = [
+  "Tighten the first 120 words so the stage or sequence is obvious immediately.",
+  "Differentiate the page from adjacent workflow pages in the same lifecycle.",
+  "Add missing upstream and downstream links.",
+]
+
+[page_type_rules.blueprints]
+first_fixes = [
+  "Make the operating model explicit earlier.",
+  "Clarify whether the page is a baseline blueprint, decision guide, or migration page.",
+  "Add the workflow or comparison links that turn the page into action.",
+]
+
+[page_type_rules.comparisons]
+first_fixes = [
+  "State the exact decision in the title, description, and opening lines.",
+  "Differentiate higher-level decisions from downstream workspace or tool choices.",
+  "Tighten recommendation boundaries.",
+]
+
+[page_type_rules.templates]
+first_fixes = [
+  "Reinforce that the page is an execution asset, not the full workflow.",
+  "Link back to the workflow page that defines the rule.",
+  "Narrow snippet language if it sounds too broad.",
+]
+
+[page_type_rules.reference]
+first_fixes = [
+  "Keep the definition or answer plain and practical.",
+  "Route readers quickly to the stronger implementation page.",
+  "Avoid expanding into guide-like territory unless the page earns it.",
+]
+
+[playbooks]
+intro_rewrite = [
+  "State who the page is for.",
+  "State the exact problem it solves.",
+  "State where it fits in the cluster.",
+]
+
+internal_link_upgrade = [
+  "Add the page to the right hub if it matters enough.",
+  "Add one upstream cornerstone link.",
+  "Add one downstream next-step link.",
+]
+
+differentiation = [
+  "Rewrite title and description around the page's actual job.",
+  "Clarify the contrast in the opening paragraph.",
+  "Add reciprocal links that explain the relationship.",
+]
+
+thin_section_expansion = [
+  "Add one concrete section that deepens the main use case.",
+  "Add one failure-mode or edge-case section.",
+  "Avoid padding with generic advice.",
+]
+
+support_reframing = [
+  "Reframe the title or description as a support or routing asset.",
+  "Make the supporting role explicit in the opening lines.",
+  "Link back to the stronger main page.",
+]
+
+reduce_emphasis = [
+  "Remove the page from high-visibility lists if needed.",
+  "Keep it linked only where it adds support value.",
+  "Merge it if the split keeps causing confusion.",
+]
+
+[[intervention_targets]]
+path = "/faq/faq-setting-up-a-solo-service-workflow-stack/"
+reason = "support page may surface before the workflow anchor or stack blueprint"
+first_fix = "Tighten routing language and reinforce upstream links."
+
+[[intervention_targets]]
+path = "/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/"
+reason = "maintenance FAQ could blur with broader workflow pages"
+first_fix = "Keep it maintenance-focused and route drift issues back upstream."
+
+[[intervention_targets]]
+path = "/glossary/workflow-handoff/"
+reason = "definition page can blur with handoff implementation guides"
+first_fix = "Keep it definition-first and tightly linked to handoff guides."
+
+[[intervention_targets]]
+path = "/templates/weekly-client-status-update-template/"
+reason = "asset page may compete with the status-update workflow page"
+first_fix = "Reinforce that it is a reusable format, not the workflow itself."
+
+[[intervention_targets]]
+path = "/templates/client-change-request-template/"
+reason = "asset page may compete with the change-request workflow page"
+first_fix = "Keep it asset-first and move policy logic upstream."
+
+[[intervention_targets]]
+path = "/templates/delivery-qa-checklist-before-client-handoff/"
+reason = "asset page may blur with milestone-delivery workflow intent"
+first_fix = "Keep it framed as a pre-handoff checklist, not the delivery method."
+
+[[intervention_targets]]
+path = "/templates/client-offboarding--testimonial-request-template/"
+reason = "thin asset until a dedicated offboarding workflow exists"
+first_fix = "Keep it de-emphasized until the offboarding workflow is published."
+
+[[intervention_targets]]
+path = "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"
+reason = "top lifecycle page must outrank support pages for broad workflow intent"
+first_fix = "Strengthen the opening promise around the full client lifecycle if CTR is weak."
+
+[[intervention_targets]]
+path = "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"
+reason = "baseline blueprint must stay clearer than nearby decision or FAQ pages"
+first_fix = "Clarify that it is the baseline stack model, not only a cost-control page."
+
+[[intervention_targets]]
+path = "/comparisons/crm-vs-project-management-tool-for-client-workflows/"
+reason = "highest-level comparison should outrank downstream workspace comparisons"
+first_fix = "Restate the system-of-record decision earlier and more explicitly."
+
 [[risk_pages]]
 path = "/faq/"
 risk = "thin-support-hub"

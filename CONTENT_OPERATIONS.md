@@ -285,6 +285,14 @@ Before publishing, check:
 3. Does the new page link back to the strongest page in the cluster?
 4. Does at least one glossary, FAQ, template, or comparison page need updating because of it?
 
+## Priority and support page protection
+
+- Do not let a support page become easier to discover than the cornerstone page for the same problem.
+- Templates should support workflow pages, not absorb workflow intent.
+- FAQ pages should route to a stronger page, not become a softer duplicate of it.
+- Glossary pages should clarify terms, not become substitute guides.
+- If a support page begins to compete with a cornerstone page, strengthen the cornerstone page first and narrow the support page second.
+
 After every 3-5 new pages:
 
 - run an orphan audit with `rg -n "<slug-or-title-fragment>" content`

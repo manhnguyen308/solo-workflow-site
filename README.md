@@ -133,7 +133,7 @@ The repo now includes optional support for:
 
 Nothing is enabled by default. Manual setup details live in `MEASUREMENT_OPERATIONS.md`.
 
-The repo-side response framework for coverage, impressions, clicks, and weak-index follow-up lives in `SEARCH_CONSOLE_RESPONSE_LOOP.md`, with the priority and risk page sets in `data/search-console-monitoring.toml`.
+The repo-side response framework for coverage, impressions, clicks, indexing triage, and weak-page follow-up lives in `SEARCH_CONSOLE_RESPONSE_LOOP.md`, with the priority groups, page-type rules, playbooks, risk pages, and likely intervention targets in `data/search-console-monitoring.toml`.
 
 ## Content creation
 
