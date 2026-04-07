@@ -122,7 +122,7 @@ h6 {
 
 h1 {
   font-size: clamp(3rem, 6vw, 4.8rem);
-  max-width: 11ch;
+  text-wrap: balance;
 }
 
 h2 {
@@ -844,7 +844,7 @@ select {
 
 .section-hero-grid,
 .article-header {
-  grid-template-columns: minmax(0, 1.2fr) minmax(290px, 0.8fr);
+  grid-template-columns: minmax(0, 1.24fr) minmax(280px, 0.76fr);
   align-items: start;
 }
 
@@ -1358,13 +1358,13 @@ body {
 }
 
 .homepage-hero-copy h1 {
-  max-width: 10ch;
   margin-bottom: 1.5rem;
   color: #0f172a;
-  font-size: 48px;
+  font-size: clamp(3.2rem, 5.6vw, 4.5rem);
   font-weight: 700;
-  line-height: 1.15;
-  letter-spacing: -0.04em;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
 }
 
 .homepage-pill {
@@ -1936,7 +1936,7 @@ body {
   }
 
   .homepage-hero-copy h1 {
-    font-size: 38px;
+    font-size: clamp(2.6rem, 10vw, 3.5rem);
   }
 }
 
@@ -2269,10 +2269,11 @@ body {
 .section-hero-copy h1,
 .article-header-main h1 {
   color: #0f172a;
-  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-size: clamp(2.35rem, 4.2vw, 3.25rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.04em;
+  line-height: 1.1;
+  letter-spacing: -0.042em;
+  text-wrap: balance;
 }
 
 .hero-summary {
@@ -2474,7 +2475,7 @@ body {
 }
 
 .article-header {
-  grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+  grid-template-columns: minmax(0, 1.16fr) minmax(260px, 0.84fr);
   align-items: start;
 }
 
@@ -2483,18 +2484,30 @@ body {
 }
 
 .article-header-main h1 {
-  max-width: 13.5ch;
-  font-size: clamp(2.35rem, 4.2vw, 3.35rem);
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+  max-width: none;
+  font-size: clamp(2.15rem, 3.9vw, 2.95rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
   text-wrap: balance;
 }
 
 .article-header-main .hero-summary {
-  max-width: 35rem;
-  margin-top: 0.35rem;
-  font-size: 1.03rem;
-  line-height: 1.78;
+  max-width: 39rem;
+  margin-top: 0.45rem;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+body[data-page-trust="true"] .article-header-main h1,
+body[data-page-trust="true"] .section-hero-copy h1 {
+  font-size: clamp(2rem, 3.3vw, 2.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+body[data-page-trust="true"] .article-header-main .hero-summary,
+body[data-page-trust="true"] .section-hero-copy .hero-summary {
+  max-width: 37rem;
 }
 
 .section-hero-media,
@@ -2773,12 +2786,12 @@ body {
 
   .article-header-main h1,
   .section-hero-copy h1 {
-    font-size: 2.4rem;
+    font-size: clamp(2rem, 7vw, 2.35rem);
+    line-height: 1.12;
   }
 
   .article-header-main h1 {
-    max-width: 11.5ch;
-    font-size: clamp(2rem, 7vw, 2.65rem);
+    max-width: none;
   }
 
   .article-header-main .hero-summary {
