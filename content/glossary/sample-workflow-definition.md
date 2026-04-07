@@ -87,4 +87,4 @@ A clean closeout needs more than sending final files. The next stage should know
 If weak handoffs are a recurring pattern, do not just add reminders. Tighten the stage boundary itself:
 - Start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) for the full sequence.
 - Use [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) for the highest-risk transition.
-- Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) once the rule is clear and you need the execution asset.
+- Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) only after the workflow rule is already clear and you need the execution asset.

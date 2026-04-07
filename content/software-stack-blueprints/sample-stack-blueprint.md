@@ -24,7 +24,18 @@ If the open problem is not your exact stack shape yet but how to avoid premature
 
 This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?"
 
-The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag."
+The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag." The overbuying guide, migration guide, and downstream comparisons are supporting decision pages. This page remains the baseline stack model for most solo operators.
+
+## Why this page matters first
+
+Start here before narrower stack or tool-decision pages if:
+
+- you need a baseline operating model, not just a buying rule,
+- the stack feels heavier than the business stage justifies,
+- you want to know the smallest reliable setup before comparing tools,
+- other stack pages feel useful but too narrow to choose the full shape.
+
+This page should answer the broader question of what the stack should look like by stage. Other pages in this cluster should only help refine one part of that answer.
 
 ## Lean stack principles (non-negotiable)
 
@@ -39,6 +50,15 @@ The standard is not "most powerful." The standard is "clear enough to run every 
 - Client work moves through a repeatable sequence, even if the services vary.
 - You want to keep the stack lean until recurring operational pressure justifies expansion.
 - You care more about reliability than feature depth for its own sake.
+
+## What this blueprint should settle
+
+By the end of this page, you should be able to answer:
+
+- what your current stage actually needs,
+- which categories are essential right now,
+- which purchases should be delayed on purpose,
+- which downstream decision page to open next.
 
 ## Stage-based stack tiers
 
@@ -135,6 +155,7 @@ Typical fit: higher client load, more stakeholders, or more repeatable delivery 
 2. Choose system-of-record model via [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).  
 3. Implement intake discipline via [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
 4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
+5. Use [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) only if the open question is purchase timing rather than baseline stack shape.
 
 ## What to do after choosing the stack shape
 

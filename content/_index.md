@@ -10,7 +10,7 @@ SoloOpsGuide helps freelancers and solo operators build repeatable client operat
 
 The site is organized around a simple editorial model: define the workflow first, choose the stack shape second, use comparisons only for bounded decisions, and use templates inside a live process rather than as standalone fixes.
 
-The strongest early entry points are the workflow anchor, the lean stack blueprint, the system-of-record comparison, and the onboarding checklist. Those pages define the main path the rest of the site supports.
+The strongest early entry points are the workflow anchor, the lean stack blueprint, and the system-of-record comparison. Those pages define the main path the rest of the site supports. Templates, glossary entries, and FAQ pages should support that path rather than replace it.
 
 ## Start here (recommended reading path)
 
@@ -36,6 +36,8 @@ If you only read one page first, start with the workflow anchor. It defines the 
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+
+Use these after the workflow or stack model is already clear.
 
 ## How the site is structured
 

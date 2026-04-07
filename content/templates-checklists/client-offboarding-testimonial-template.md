@@ -12,12 +12,12 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/"]
-featured = true
+featured = false
 +++
 
 Offboarding is not the end of value creation. Done well, it protects reputation, improves repeatability, and increases referral potential.
 
-Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself.
+Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself. Until a dedicated offboarding workflow exists, this page should stay clearly secondary to the full lifecycle workflow.
 
 ## When to run this template
 

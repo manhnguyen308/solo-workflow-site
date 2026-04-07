@@ -92,6 +92,6 @@ Fix one pressure point, then review the adjacent stage. Most solo systems improv
 ## Which page should I open after this FAQ?
 
 - If the whole lifecycle feels loose again, open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
-- If weekly control is the issue, open [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/).
+- If weekly control is the issue, open [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/) only after the broader workflow still makes sense.
 - If the temptation is to automate too early, open [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 - If tool sprawl is the issue, open [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).

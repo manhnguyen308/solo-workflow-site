@@ -32,7 +32,7 @@ It works best for active projects where the client needs visibility without bein
 - at the same point in the week whenever possible,
 - after you review the live project record.
 
-If you still have not defined the communication rule, start with [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+If you still have not defined the communication rule, start with [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/). This page should not be your first entry point for communication strategy.
 
 ## Weekly status update template
 

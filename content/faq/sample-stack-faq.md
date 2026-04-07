@@ -19,7 +19,7 @@ featured = false
 
 This FAQ is for fast routing, not deep explanation. Use it when you know the blocker and want the shortest path to the right detailed page.
 
-It is one of the strongest support pages on the site because it helps Google and readers connect narrow setup questions back to the main workflow anchor, the stack blueprint, and the key system-of-record comparison instead of treating this as a standalone answer destination.
+It is a support page only. Its job is to route narrow setup questions back to the workflow anchor, the lean stack blueprint, and the CRM-vs-PM comparison instead of competing with them for broad intent.
 
 ## Should I choose tools before defining my workflow?
 
@@ -55,7 +55,7 @@ If payments are late because milestone completion itself is fuzzy, fix delivery 
 
 ## What if onboarding feels repetitive?
 
-That is a sign to use a checklist, not a sign to skip structure. Use: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+That is a sign to tighten the onboarding stage first, then use a checklist. Start with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) and only then use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
 ## How do I migrate without breaking active client work?
 
@@ -83,3 +83,5 @@ That depends on the kind of blockage:
 - If the issue is stack shape or tool count, open [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 - If the issue is where client operations should live, open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 - If the issue is terminology blocking the decision, open [Glossary](/glossary/) and then leave it as soon as the definition is clear.
+
+If more than one answer here feels relevant at once, stop browsing FAQ pages and go back to the full workflow anchor or lean stack blueprint.

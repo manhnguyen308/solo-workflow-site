@@ -9,6 +9,8 @@ This section is for diagnosing the client delivery path itself. Use it when work
 
 Most solo operators do not need more advice about "productivity." They need a cleaner operating sequence. That is what this hub covers: where a client workflow breaks, what a good handoff looks like, and which page to open next based on the stage that is slipping.
 
+If several parts of the lifecycle feel unclear at once, the right first page is still the anchor workflow. The stage-specific guides and templates exist to deepen one part of that broader operating model.
+
 ## How to use this hub
 
 - Start with the full lifecycle page if you are not yet sure where the breakdown is.

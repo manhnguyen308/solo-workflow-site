@@ -20,7 +20,18 @@ Most solo operators do not have a client delivery problem. They have a **handoff
 
 Use this page as the anchor model for your operations. It is the best first page on the site when the whole client lifecycle feels messy, because it connects intake, handoff, delivery, billing, and offboarding into one operating sequence with clear next-step links.
 
-Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools.
+Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools. Those supporting pages exist to deepen one stage. This page is the broader operating model that should stay at the center of the cluster.
+
+## Why this page matters first
+
+Start here before you open intake, onboarding, delivery, billing, template, glossary, or FAQ pages if:
+
+- several parts of the client lifecycle feel messy at once,
+- you are not sure which stage is actually failing,
+- tools are multiplying because the sequence itself is unclear,
+- support pages are answering pieces of the problem but not the whole operating model.
+
+The main job of this page is to show the full sequence, the boundary between stages, and the exact supporting page that belongs under each stage.
 
 ## Who this workflow is for (and not for)
 
@@ -41,6 +52,15 @@ Then implement each stage using the linked guide, comparison, and checklist page
 4. **Delivery and QA** - execute work in milestones with visible status and quality checks.  
 5. **Invoicing and payment** - issue invoice tied to milestones and follow a clear follow-up rhythm.  
 6. **Offboarding and expansion** - close cleanly, request testimonial, and identify next engagement opportunity.
+
+## What this anchor page should settle
+
+By the time you leave this page, you should be able to answer:
+
+- where the current client path is actually breaking,
+- which stage deserves attention first,
+- which support page is the correct next move,
+- which pages are supporting assets rather than the main answer.
 
 ## Stage-by-stage operating model
 
@@ -96,6 +116,8 @@ Implementation asset: [Invoice and Payment Workflow Checklist for Service Busine
 **Inputs:** delivered scope, outcomes summary, client feedback.  
 **Output:** testimonial request, closeout doc, and next-step opportunity.
 
+Until a dedicated offboarding workflow page exists, keep this stage tied to the full lifecycle here rather than treating the template as the main entry page.
+
 Implementation asset: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/).
 
 ## Common failure points (and practical fixes)
@@ -138,6 +160,6 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 4. Activate the signed project cleanly: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).  
 5. Run delivery milestone by milestone: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 6. Keep billing tied to real delivery events: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
-7. Resolve blockers quickly: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
+7. Resolve narrow blockers only after the lifecycle is clear: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
 
 If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

@@ -19,7 +19,7 @@ Use this template when a client request may change scope, timing, or fee and you
 
 This is not just a client-facing message. It is a small decision tool that helps you avoid absorbing extra work by accident.
 
-It works best as the execution asset for [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/), not as the full policy by itself.
+It works best as the execution asset for [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/), not as the full policy by itself. If scope-control rules are still unclear, this page is too early.
 
 ## What this asset should help prevent
 

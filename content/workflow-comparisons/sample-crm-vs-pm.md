@@ -22,7 +22,18 @@ If your process fails because client context gets lost between lead, delivery, a
 
 For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle.
 
-Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent.
+Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent. Pages like Notion vs ClickUp or Calendly vs built-in booking only make sense after this broader operating-system question is clear enough.
+
+## Why this page matters first
+
+Start here before workspace or tool-level comparisons if:
+
+- you still do not know where active client truth should live,
+- both sales and delivery feel messy and you are considering adding more software,
+- downstream tool comparisons feel premature because the system center is still unclear,
+- support pages are naming symptoms but not resolving the operating-model decision.
+
+This page should settle the highest-level comparison in the cluster. Other comparison pages should stay downstream from it.
 
 ## Decision context: what you are actually choosing
 
@@ -34,6 +45,15 @@ You are choosing where the truth about client work lives:
 For end-to-end process context, use the anchor page first: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 If you need the definition behind this choice, read [System of Record](/glossary/system-of-record/) first.
+
+## What this comparison should settle
+
+By the time you leave this page, you should be able to answer:
+
+- whether CRM, PM, or hybrid should hold active client truth,
+- what the main failure mode of the wrong choice would be,
+- whether a narrower comparison is actually needed next,
+- which page should turn the decision into implementation.
 
 ## Model 1: CRM-first
 
@@ -141,8 +161,10 @@ Hybrid can work, but only with a written rule such as:
 ## Next-step implementation by model
 
 - If CRM-first: implement stricter intake rules with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
-- If PM-first: build delivery and onboarding consistency with [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+- If PM-first: build delivery and onboarding consistency with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - For any model: align tool spend with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+
+If the question is still broader than tool category choice, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before opening narrower workspace comparisons.
 
 ## Edge cases that change the answer
 

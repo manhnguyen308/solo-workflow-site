@@ -12,12 +12,12 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 related = ["/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/client-offboarding--testimonial-request-template/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/"]
-featured = true
+featured = false
 +++
 
 Use this checklist before every delivery handoff, even for "small" updates. Most client frustration comes from small misses, not major failures.
 
-This page is the execution checklist for a delivery stage, not the full delivery method. If milestone ownership, approval rules, or handoff timing are still fuzzy, start with [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) first.
+This page is the execution checklist for a delivery stage, not the full delivery method. If milestone ownership, approval rules, or handoff timing are still fuzzy, start with [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) first. This page should stay downstream from that workflow guide.
 
 ## When this checklist matters most
 

@@ -9,6 +9,8 @@ Use this section when the workflow is mostly clear but the tool stack is still a
 
 This hub is for operators who already know they have an operations system to build, but do not want to overbuy software or create duplicated admin. The goal here is not app collecting. It is choosing a stack shape that matches the way the business actually runs.
 
+If the question is still "what should my baseline stack look like?", the lean solo blueprint is the main entry page. The overbuying, migration, and comparison pages should stay narrower than that baseline model.
+
 ## How to use this hub
 
 - Start with the lean solo blueprint unless you already have a specific migration or collaboration scenario.
