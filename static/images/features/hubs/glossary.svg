@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Glossary hub illustration</title>
+  <desc id="desc">An editorial illustration showing definition cards, linked terms, and reference cues for operational glossary pages.</desc>
+  <rect width="1600" height="900" fill="#f8fafc"/><circle cx="1280" cy="210" r="150" fill="#e6eef7"/>
+  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Glossary</text><rect x="188" y="226" width="154" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="188" y="300" width="360" height="350" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="592" y="300" width="698" height="350" rx="32" fill="#fff"/>
+  <text x="228" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Definition</text><rect x="228" y="386" width="250" height="14" rx="7" fill="#d8e5ec"/><rect x="228" y="424" width="210" height="14" rx="7" fill="#d8e5ec"/><circle cx="470" cy="346" r="18" fill="#dfe9fb"/>
+  <text x="632" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Operational links</text>
+  <rect x="632" y="404" width="194" height="42" rx="20" fill="#d8f3f1"/><rect x="852" y="404" width="194" height="42" rx="20" fill="#dfe9fb"/><rect x="1072" y="404" width="170" height="42" rx="20" fill="#fff0db"/>
+  <text x="687" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">system of record</text><text x="915" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">workflow handoff</text><text x="1117" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">approval owner</text>
+  <path d="M729 460v110m220-110v110" stroke="#b8c9d6" stroke-width="6" stroke-linecap="round"/><rect x="650" y="586" width="410" height="16" rx="8" fill="#d8e5ec"/><rect x="650" y="620" width="290" height="16" rx="8" fill="#d8e5ec"/>
+</svg>

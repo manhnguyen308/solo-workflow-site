@@ -1,7 +1,7 @@
 +++
 title = "FAQ"
 description = "Short routing answers for solo workflow, stack setup, onboarding, billing, migration, and automation questions."
-feature_image = "/images/features/hubs/faq.webp"
+feature_image = "/images/features/hubs/faq.svg"
 feature_image_alt = "Editorial FAQ illustration with layered answer cards for workflow setup questions."
 +++
 

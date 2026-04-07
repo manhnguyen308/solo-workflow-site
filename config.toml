@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "term"]
   brandName = "SoloOpsGuide"
   siteDescription = "Workflow-first guidance for freelancers, consultants, and solo operators building calmer client operations."
   defaultImage = "/og-default.svg"
-  defaultImageSource = "/images/features/site/soloopsguide-home.webp"
+  defaultImageSource = "/images/features/site/soloopsguide-home.svg"
   author = "SoloOpsGuide"
 
   [params.measurement]

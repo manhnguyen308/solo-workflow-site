@@ -1,7 +1,7 @@
 +++
 title = "Workflow Tool Comparisons for Solo Operators"
 description = "Scenario-based workflow software comparisons for solo operators making system-of-record, workspace, booking, and client-approval decisions."
-feature_image = "/images/features/hubs/workflow-comparisons.webp"
+feature_image = "/images/features/hubs/workflow-comparisons.svg"
 feature_image_alt = "Editorial comparison illustration with two contrasted decision panels for workflow tools."
 +++
 

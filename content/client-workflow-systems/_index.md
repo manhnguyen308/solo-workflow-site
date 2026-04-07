@@ -1,7 +1,7 @@
 ﻿+++
 title = "Client Workflow Systems for Freelancers and Solo Operators"
 description = "Stage-by-stage client workflow guides for freelancers and solo operators fixing intake, onboarding, delivery, billing, and handoff problems."
-feature_image = "/images/features/hubs/client-workflow-systems.webp"
+feature_image = "/images/features/hubs/client-workflow-systems.svg"
 feature_image_alt = "Editorial workflow illustration showing connected stages across a client delivery system."
 +++
 

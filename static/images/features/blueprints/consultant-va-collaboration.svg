@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Consultant and VA collaboration blueprint illustration</title>
+  <desc id="desc">An editorial blueprint illustration showing consultant and assistant roles, shared systems, and handoff boundaries.</desc>
+  <rect width="1600" height="900" fill="#f6fafc"/><circle cx="1290" cy="210" r="150" fill="#e5effb"/>
+  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Consultant + VA collaboration</text><rect x="188" y="226" width="320" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="188" y="302" width="430" height="360" rx="32" fill="#17355f"/><rect x="666" y="302" width="430" height="360" rx="32" fill="#0f8b8d"/><rect x="1144" y="302" width="250" height="360" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="230" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Consultant</text><text x="708" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">VA</text><text x="1184" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Shared</text>
+  <rect x="230" y="404" width="210" height="40" rx="20" fill="#dfe9fb" opacity=".95"/><rect x="230" y="462" width="210" height="40" rx="20" fill="#dfe9fb" opacity=".75"/><text x="286" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">client strategy</text><text x="297" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">approvals</text>
+  <rect x="708" y="404" width="210" height="40" rx="20" fill="#d6faf5" opacity=".2"/><rect x="708" y="462" width="210" height="40" rx="20" fill="#d6faf5" opacity=".2"/><text x="763" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">status updates</text><text x="762" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">doc prep</text>
+  <rect x="1184" y="404" width="170" height="40" rx="20" fill="#fff0db"/><rect x="1184" y="462" width="170" height="40" rx="20" fill="#d8f3f1"/><text x="1225" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">system</text><text x="1220" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">templates</text>
+  <path d="M520 424h128m48 0h128" stroke="#b8c9d6" stroke-width="8" stroke-linecap="round"/>
+</svg>

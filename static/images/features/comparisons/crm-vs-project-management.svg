@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">CRM versus project management illustration</title>
+  <desc id="desc">An editorial comparison illustration contrasting CRM-first and PM-first operating models with distinct strengths and tradeoffs.</desc>
+  <rect width="1600" height="900" fill="#f5f9fd"/><circle cx="1286" cy="210" r="150" fill="#dce9fb"/>
+  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">CRM vs PM</text><rect x="188" y="226" width="150" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="188" y="302" width="518" height="360" rx="34" fill="#17355f"/><rect x="768" y="302" width="518" height="360" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1320" y="302" width="104" height="360" rx="30" fill="#eef4fb"/>
+  <text x="232" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">CRM-first</text><text x="812" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">PM-first</text>
+  <rect x="232" y="408" width="164" height="38" rx="19" fill="#d8f3f1" opacity=".95"/><rect x="232" y="464" width="164" height="38" rx="19" fill="#d6faf5" opacity=".18"/><text x="278" y="433" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">pipeline</text><text x="286" y="489" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">follow-up</text>
+  <rect x="812" y="408" width="164" height="38" rx="19" fill="#dfe9fb"/><rect x="812" y="464" width="164" height="38" rx="19" fill="#fff0db"/><text x="860" y="433" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">milestones</text><text x="862" y="489" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">owners</text>
+  <rect x="1082" y="408" width="154" height="34" rx="17" fill="#fee2e2"/><rect x="1082" y="458" width="154" height="34" rx="17" fill="#dff7e8"/><text x="1125" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">risk</text><text x="1115" y="480" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#18794e">fit</text>
+  <path d="M1372 390v200" stroke="#b8c9d6" stroke-width="8" stroke-linecap="round"/><circle cx="1372" cy="448" r="14" fill="#d6a156"/><circle cx="1372" cy="532" r="14" fill="#0f8b8d"/>
+</svg>

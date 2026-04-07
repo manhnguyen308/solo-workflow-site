@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Solo service workflow stack FAQ illustration</title>
+  <desc id="desc">An editorial FAQ illustration showing common stack questions, short answers, and routes back to broader implementation pages.</desc>
+  <rect width="1600" height="900" fill="#f7fafc"/><circle cx="1280" cy="210" r="150" fill="#e5edf8"/>
+  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Workflow stack FAQ</text><rect x="248" y="220" width="226" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="248" y="300" width="320" height="350" rx="32" fill="#17355f"/><rect x="622" y="300" width="330" height="350" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1006" y="300" width="346" height="350" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="290" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Questions</text><text x="664" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Short answers</text><text x="1048" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Route back</text>
+  <path d="M300 414c0-18 16-32 38-32 22 0 38 12 38 30 0 12-8 21-20 28-10 6-16 12-16 22" stroke="#d6faf5" stroke-width="9" stroke-linecap="round" fill="none"/><circle cx="338" cy="520" r="7" fill="#d6faf5"/>
+  <rect x="664" y="416" width="220" height="42" rx="20" fill="#d8f3f1"/><rect x="664" y="474" width="220" height="42" rx="20" fill="#dfe9fb"/><text x="724" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">keep it lean</text><text x="726" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">map workflow first</text>
+  <rect x="1048" y="416" width="220" height="42" rx="20" fill="#fff0db"/><rect x="1048" y="474" width="220" height="42" rx="20" fill="#dff7e8"/><text x="1102" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">blueprint</text><text x="1094" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#18794e">workflow</text>
+</svg>

@@ -2,7 +2,7 @@
 title = "How to Build a Client Intake and Qualification Workflow"
 description = "A practical intake and qualification workflow for solo operators who need fewer low-fit calls and stronger lead filtering before delivery starts."
 summary = "Set up intake questions, fit criteria, and a clear go or no-go decision path before discovery calls start filling the calendar."
-feature_image = "/images/features/workflows/client-intake-qualification-workflow.webp"
+feature_image = "/images/features/workflows/client-intake-qualification-workflow.svg"
 feature_image_alt = "Illustrated intake workflow with qualification steps, routing logic, and decision checkpoints."
 draft = false
 date = 2026-04-02T00:00:00Z

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Client workflow systems hub illustration</title>
+  <desc id="desc">An editorial illustration showing the client lifecycle as connected stages from intake to payment and offboarding.</desc>
+  <rect width="1600" height="900" fill="#f5fbfb"/>
+  <circle cx="1280" cy="210" r="150" fill="#dbf4f2"/>
+  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Client workflow systems</text>
+  <rect x="188" y="226" width="300" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="188" y="310" width="170" height="66" rx="24" fill="#d8f3f1"/><rect x="400" y="310" width="170" height="66" rx="24" fill="#dfe9fb"/><rect x="612" y="310" width="170" height="66" rx="24" fill="#fff0db"/><rect x="824" y="310" width="170" height="66" rx="24" fill="#dff7e8"/><rect x="1036" y="310" width="170" height="66" rx="24" fill="#ffe8d7"/><rect x="1248" y="310" width="170" height="66" rx="24" fill="#102430"/>
+  <text x="245" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f766e">intake</text><text x="443" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#36589a">handoff</text><text x="661" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8a5d27">onboard</text><text x="878" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#18794e">deliver</text><text x="1089" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#a14d1e">invoice</text><text x="1291" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">offboard</text>
+  <path d="M358 343h42m170 0h42m170 0h42m170 0h42m170 0h42" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round"/>
+  <rect x="188" y="466" width="512" height="210" rx="30" fill="#0f8b8d"/><rect x="742" y="466" width="676" height="210" rx="30" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="230" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">Stage map</text><text x="784" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Supporting pages</text>
+  <rect x="230" y="548" width="110" height="14" rx="7" fill="#d6faf5" opacity=".8"/><rect x="230" y="578" width="200" height="14" rx="7" fill="#d6faf5" opacity=".6"/><rect x="230" y="608" width="260" height="14" rx="7" fill="#d6faf5" opacity=".45"/>
+  <rect x="784" y="548" width="180" height="42" rx="20" fill="#fff" stroke="#d8e5ec" stroke-width="3"/><rect x="982" y="548" width="180" height="42" rx="20" fill="#fff" stroke="#d8e5ec" stroke-width="3"/><rect x="1180" y="548" width="180" height="42" rx="20" fill="#fff" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="835" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">status</text><text x="1032" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">change request</text><text x="1230" y="575" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">invoice</text>
+</svg>

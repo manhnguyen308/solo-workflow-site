@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Templates and checklists hub illustration</title>
+  <desc id="desc">An editorial illustration showing structured documents, checklist rows, and reusable asset panels for implementation pages.</desc>
+  <rect width="1600" height="900" fill="#f5fbfa"/><circle cx="1300" cy="210" r="150" fill="#def5ef"/>
+  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Templates and checklists</text><rect x="188" y="226" width="326" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="188" y="298" width="420" height="392" rx="32" fill="#fff" stroke="#d8e5ec" stroke-width="3"/><rect x="654" y="298" width="626" height="392" rx="32" fill="#0f8b8d"/>
+  <text x="230" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Template doc</text><text x="696" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">Checklist flow</text>
+  <rect x="230" y="394" width="280" height="16" rx="8" fill="#d8e5ec"/><rect x="230" y="430" width="320" height="44" rx="18" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="230" y="490" width="320" height="44" rx="18" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="230" y="550" width="220" height="14" rx="7" fill="#d8e5ec"/>
+  <rect x="696" y="394" width="520" height="54" rx="22" fill="#d6faf5" opacity=".18"/><rect x="696" y="470" width="520" height="54" rx="22" fill="#d6faf5" opacity=".18"/><rect x="696" y="546" width="520" height="54" rx="22" fill="#fff0db" opacity=".92"/>
+  <circle cx="736" cy="421" r="12" fill="#d6faf5"/><circle cx="736" cy="497" r="12" fill="#d6faf5"/><circle cx="736" cy="573" r="12" fill="#8a5d27"/>
+  <text x="770" y="427" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">trigger</text><text x="770" y="503" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">owner</text><text x="770" y="579" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">complete</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Workflow handoff illustration</title>
+  <desc id="desc">An editorial glossary illustration showing one workflow stage handing required inputs to the next stage with a clear transfer point.</desc>
+  <rect width="1600" height="900" fill="#f8fafc"/><circle cx="1280" cy="210" r="150" fill="#e6eef7"/>
+  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Workflow handoff</text><rect x="248" y="220" width="214" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="248" y="320" width="370" height="310" rx="32" fill="#17355f"/><rect x="782" y="320" width="370" height="310" rx="32" fill="#0f8b8d"/><rect x="654" y="398" width="94" height="154" rx="28" fill="#fff0db"/>
+  <text x="292" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Before</text><text x="826" y="372" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">After</text><text x="680" y="454" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">handoff</text>
+  <rect x="292" y="434" width="184" height="40" rx="20" fill="#d6faf5" opacity=".18"/><rect x="292" y="492" width="184" height="40" rx="20" fill="#d6faf5" opacity=".18"/><text x="346" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">inputs</text><text x="349" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">owner</text>
+  <rect x="826" y="434" width="184" height="40" rx="20" fill="#d6faf5" opacity=".18"/><rect x="826" y="492" width="184" height="40" rx="20" fill="#fff0db" opacity=".95"/><text x="878" y="460" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">next stage</text><text x="876" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">complete</text>
+</svg>
