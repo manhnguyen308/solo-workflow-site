@@ -119,6 +119,7 @@ Key launch docs:
 - `GO_LIVE_CHECKLIST.md`
 - `MEASUREMENT_OPERATIONS.md`
 - `CONTENT_OPERATIONS.md`
+- `SEARCH_CONSOLE_RESPONSE_LOOP.md`
 
 ## Measurement and Search Console
 
@@ -131,6 +132,8 @@ The repo now includes optional support for:
 - AdSense account meta tag readiness without adding ad units
 
 Nothing is enabled by default. Manual setup details live in `MEASUREMENT_OPERATIONS.md`.
+
+The repo-side response framework for coverage, impressions, clicks, and weak-index follow-up lives in `SEARCH_CONSOLE_RESPONSE_LOOP.md`, with the priority and risk page sets in `data/search-console-monitoring.toml`.
 
 ## Content creation
 

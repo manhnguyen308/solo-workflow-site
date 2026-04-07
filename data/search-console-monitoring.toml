@@ -1,0 +1,113 @@
+[priority_groups]
+
+[priority_groups.homepage]
+label = "Homepage"
+pages = ["/"]
+
+[priority_groups.hubs]
+label = "Major hubs"
+pages = [
+  "/client-workflow-systems/",
+  "/software-stack-blueprints/",
+  "/workflow-comparisons/",
+  "/templates-checklists/",
+]
+
+[priority_groups.cornerstone_workflows]
+label = "Cornerstone workflows"
+pages = [
+  "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/",
+  "/workflows/how-to-build-a-client-intake-and-qualification-workflow/",
+  "/workflows/proposal-to-contract-handoff-workflow-setup/",
+  "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/",
+  "/workflows/milestone-delivery-workflow-for-solo-service-businesses/",
+  "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/",
+]
+
+[priority_groups.blueprints]
+label = "Best blueprints"
+pages = [
+  "/guides/software-stack-blueprint-solo-freelancer-lean-budget/",
+  "/guides/how-to-choose-a-software-stack-without-overbuying-tools/",
+  "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/",
+]
+
+[priority_groups.comparisons]
+label = "Strongest comparisons"
+pages = [
+  "/comparisons/crm-vs-project-management-tool-for-client-workflows/",
+  "/comparisons/notion-vs-clickup-for-solo-client-delivery/",
+  "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/",
+  "/comparisons/email-vs-client-portal-for-deliverables-and-approvals/",
+]
+
+[priority_groups.templates]
+label = "Highest-value templates"
+pages = [
+  "/templates/client-onboarding-checklist-for-freelancers-and-consultants/",
+  "/templates/weekly-client-operations-checklist-solo-business/",
+  "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/",
+]
+
+[priority_groups.trust]
+label = "Trust pages"
+pages = [
+  "/about/",
+  "/contact/",
+  "/editorial-policy/",
+  "/content-policy/",
+]
+
+[[risk_pages]]
+path = "/faq/"
+risk = "thin-support-hub"
+watch_for = "low impressions, weak clicks, route confusion"
+first_fix = "Improve routing copy and keep FAQ pages tied to stronger core pages."
+
+[[risk_pages]]
+path = "/glossary/"
+risk = "thin-support-hub"
+watch_for = "weak indexing or glossary pages behaving like dead ends"
+first_fix = "Expand only the terms that support current cornerstone pages and keep stronger next-step links."
+
+[[risk_pages]]
+path = "/faq/faq-setting-up-a-solo-service-workflow-stack/"
+risk = "support-page overlap"
+watch_for = "impressions without clicks or overlap with blueprint/workflow pages"
+first_fix = "Sharpen the routing language and avoid broadening it into a full guide."
+
+[[risk_pages]]
+path = "/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/"
+risk = "support-page overlap"
+watch_for = "low clicks or unclear distinction from workflow anchor"
+first_fix = "Keep it maintenance-focused and route drift issues back to core pages."
+
+[[risk_pages]]
+path = "/glossary/workflow-handoff/"
+risk = "definition-vs-guide overlap"
+watch_for = "weak clicks or overlap with handoff workflow pages"
+first_fix = "Keep the definition short, practical, and tightly linked to the actual handoff guides."
+
+[[risk_pages]]
+path = "/templates/weekly-client-status-update-template/"
+risk = "asset-vs-workflow overlap"
+watch_for = "competition with the status-update workflow page"
+first_fix = "Reinforce that it is a reusable message format, not the workflow itself."
+
+[[risk_pages]]
+path = "/templates/client-change-request-template/"
+risk = "asset-vs-workflow overlap"
+watch_for = "competition with the change-request workflow page"
+first_fix = "Keep the page focused on the fill-in asset and route policy questions to the workflow page."
+
+[[risk_pages]]
+path = "/templates/delivery-qa-checklist-before-client-handoff/"
+risk = "asset-vs-workflow overlap"
+watch_for = "competition with milestone-delivery content"
+first_fix = "Keep the page tightly framed as a pre-handoff checklist and route process questions upstream."
+
+[[risk_pages]]
+path = "/templates/client-offboarding--testimonial-request-template/"
+risk = "thin-asset"
+watch_for = "low impressions or weak indexing until offboarding guide exists"
+first_fix = "Keep links strong, but do not elevate it above stronger lifecycle pages."

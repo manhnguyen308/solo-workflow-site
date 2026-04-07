@@ -1,6 +1,6 @@
 +++
 title = "Client Offboarding + Testimonial Request Template"
-description = "An operational offboarding template to close engagements cleanly, collect feedback, and create referral-ready outcomes."
+description = "An operational offboarding template for closing engagements cleanly once delivery and billing are already clear enough to support a structured closeout."
 summary = "Use this template to run consistent offboarding, secure testimonials, and protect future expansion opportunities."
 feature_image = "/images/features/templates/client-offboarding-template.webp"
 feature_image_alt = "Illustrated offboarding template with closeout tasks and testimonial request workflow."
@@ -16,6 +16,8 @@ featured = true
 +++
 
 Offboarding is not the end of value creation. Done well, it protects reputation, improves repeatability, and increases referral potential.
+
+Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself.
 
 ## When to run this template
 

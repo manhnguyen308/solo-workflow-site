@@ -1,6 +1,6 @@
 +++
 title = "Client Change Request Template"
-description = "A practical change request template for freelancers and consultants handling scope changes, timing impact, and approval decisions."
+description = "A practical change request template for freelancers and consultants who already need a clear format for scope, timing, fee, and approval decisions."
 summary = "Use this template to capture, assess, and reply to client change requests without hidden scope drift."
 feature_image = "/images/features/hubs/templates-checklists.webp"
 feature_image_alt = "Editorial checklist illustration representing a structured client change request form."
@@ -18,6 +18,8 @@ featured = false
 Use this template when a client request may change scope, timing, or fee and you need a clear operating response.
 
 This is not just a client-facing message. It is a small decision tool that helps you avoid absorbing extra work by accident.
+
+It works best as the execution asset for [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/), not as the full policy by itself.
 
 ## What this asset should help prevent
 

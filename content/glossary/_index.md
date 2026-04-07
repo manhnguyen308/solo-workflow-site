@@ -1,6 +1,6 @@
 ﻿+++
 title = "Glossary"
-description = "Plain-English workflow and operations terms for solo operators making stack, handoff, and client-system decisions."
+description = "Plain-English workflow terms that remove ambiguity and route solo operators back to the right implementation page."
 feature_image = "/images/features/hubs/glossary.webp"
 feature_image_alt = "Editorial glossary illustration with definition cards and reference panels."
 +++

@@ -1,6 +1,6 @@
 +++
 title = "FAQ"
-description = "Short answers to common solo workflow, stack setup, intake, handoff, onboarding, billing, migration, and automation questions."
+description = "Short routing answers for solo workflow, stack setup, onboarding, billing, migration, and automation questions."
 feature_image = "/images/features/hubs/faq.webp"
 feature_image_alt = "Editorial FAQ illustration with layered answer cards for workflow setup questions."
 +++
@@ -8,6 +8,8 @@ feature_image_alt = "Editorial FAQ illustration with layered answer cards for wo
 This section is for recurring setup questions that do not need a full guide. Use it when you need a fast answer, a recommendation boundary, and a clear page to open next.
 
 This hub should feel like a routing layer, not a content dead end. It exists to support early indexing and ongoing site growth by capturing narrow questions, answering them quickly, and sending readers back into the stronger workflow, blueprint, comparison, or template page that deserves the deeper attention.
+
+Treat the pages here as support pages, not the main destination for broad workflow decisions. The main indexed pages on the site should still be the workflow anchor, key blueprints, major comparisons, and the best implementation guides.
 
 ## How to use this hub
 

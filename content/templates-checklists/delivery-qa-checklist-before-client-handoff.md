@@ -1,6 +1,6 @@
 +++
 title = "Delivery QA Checklist Before Client Handoff"
-description = "A pre-handoff QA checklist to reduce revisions, prevent missing deliverables, and improve delivery confidence."
+description = "A pre-handoff QA checklist for milestone or final delivery moments when the delivery workflow is already defined and you need a repeatable quality-control step."
 summary = "Run this checklist before sending work to clients so handoff quality is consistent across projects."
 feature_image = "/images/features/templates/delivery-qa-checklist.webp"
 feature_image_alt = "Illustrated delivery QA checklist with handoff review steps before client submission."
@@ -16,6 +16,8 @@ featured = true
 +++
 
 Use this checklist before every delivery handoff, even for "small" updates. Most client frustration comes from small misses, not major failures.
+
+This page is the execution checklist for a delivery stage, not the full delivery method. If milestone ownership, approval rules, or handoff timing are still fuzzy, start with [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) first.
 
 ## When this checklist matters most
 
@@ -79,6 +81,7 @@ This checklist is complete only when:
 
 ## Related workflow pages
 
+- Delivery workflow context: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
 - Onboarding quality baseline: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - Weekly operational rhythm: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 - Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)

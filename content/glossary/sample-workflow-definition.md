@@ -1,6 +1,6 @@
 +++
 title = "Workflow Handoff"
-description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next."
+description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next in a client workflow."
 summary = "Use this definition to understand what a workflow handoff should include and why weak handoffs create rework, delays, and missed details."
 feature_image = "/images/features/glossary/workflow-handoff.webp"
 feature_image_alt = "Illustrated workflow handoff definition showing two connected responsibility panels and transfer points."
@@ -24,6 +24,8 @@ In practical terms, a handoff is complete only when three things transfer togeth
 3. clear next owner.
 
 If any of these are missing, the next stage starts with ambiguity.
+
+This page is a reference layer, not the main answer to workflow design problems. Use it to clarify the term quickly, then move back into the workflow or handoff guide that needs the definition.
 
 ## Why this matters for solo operators
 

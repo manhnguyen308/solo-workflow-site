@@ -1,6 +1,6 @@
 +++
 title = "Reviewing and Maintaining a Solo Service Workflow System FAQ"
-description = "Answers to common maintenance questions for solo operators reviewing workflow quality, system drift, and ongoing operations control."
+description = "A maintenance-focused FAQ for solo operators reviewing workflow quality, system drift, and ongoing operations control."
 summary = "Use this FAQ to review and maintain a solo service workflow system without overreacting, over-tooling, or letting process drift build quietly."
 feature_image = "/images/features/faq/solo-service-workflow-stack-faq.webp"
 feature_image_alt = "Editorial FAQ illustration representing ongoing review, maintenance, and workflow system upkeep."
@@ -18,6 +18,8 @@ featured = false
 +++
 
 This FAQ is for ongoing system review, not first-time setup. Use it when the workflow exists, client work is active, and the question is how to keep the system reliable without reacting to every small problem by buying more software or rebuilding the whole stack.
+
+Treat this page as a maintenance routing layer, not a standalone operations manual. It should send recurring drift problems back into the stronger workflow, blueprint, and comparison pages that define the actual fixes.
 
 ## How often should I review my workflow system?
 
