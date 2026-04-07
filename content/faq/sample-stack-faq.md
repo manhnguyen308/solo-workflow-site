@@ -49,7 +49,7 @@ Run a strict proposal-to-contract handoff so scope, timeline, and payment terms 
 
 ## How do I stop late-payment chaos?
 
-Use the [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to tie invoicing to milestones and keep follow-up cadence consistent.
+Start with [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) to fix the billing rule, then use the [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to keep the follow-up cadence consistent.
 
 If payments are late because milestone completion itself is fuzzy, fix delivery completion rules before changing reminder copy or finance tools.
 

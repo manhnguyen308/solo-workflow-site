@@ -469,6 +469,23 @@ When data starts appearing, check these first:
 4. Do FAQ, glossary, and template pages show weak-index or overlap signals?
 5. Are any priority pages getting impressions but weak clicks because the title or opening promise is too soft?
 
+## First intervention checklist
+
+Use this short checklist for the first real page-level intervention cycle.
+
+1. Check whether the affected page is a cornerstone page or a support page.
+2. Check whether a stronger nearby page already owns the broader intent.
+3. Apply only one primary fix first:
+   title/description rewrite, intro rewrite, stronger internal link, support-page narrowing, or reduced emphasis.
+4. Rebuild, note the change in the repo, and wait for the next data cycle before stacking more edits.
+
+Use these quick defaults:
+
+- If a support page gets impressions before a cornerstone page: strengthen the cornerstone page first, then narrow the support page.
+- If a cornerstone page gets impressions but weak CTR: tighten title, description, and first 120 words before expanding content.
+- If a hub indexes but does not earn impressions: clarify its opening framing and strengthen links to the top priority pages in the cluster.
+- If FAQ, template, or glossary pages remain unindexed: improve links and intros only if the page has a distinct support role; otherwise leave it de-emphasized or merge later.
+
 ## Next likely wins after real data arrives
 
 - strengthen the first 120 words on any priority page with impressions but weak clicks
