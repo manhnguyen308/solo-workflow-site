@@ -17,6 +17,22 @@ disableKinds = ["taxonomy", "term"]
   defaultImageSource = "/images/features/site/soloopsguide-home.webp"
   author = "SoloOpsGuide"
 
+  [params.measurement]
+    enabled = true
+    provider = ""
+    googleAnalyticsId = ""
+    plausibleDomain = ""
+    plausibleScript = "https://plausible.io/js/script.js"
+    umamiWebsiteId = ""
+    umamiScript = ""
+
+  [params.searchConsole]
+    googleSiteVerification = ""
+
+  [params.monetization]
+    adsensePublisherId = ""
+    affiliateDisclosuresReady = false
+
 [permalinks]
   client-workflow-systems = "/workflows/:slug/"
   software-stack-blueprints = "/guides/:slug/"

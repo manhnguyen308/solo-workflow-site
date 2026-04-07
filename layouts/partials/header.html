@@ -2,7 +2,7 @@
   <div class="wrap site-header-shell">
     <div class="site-header-inner">
       {{ $workflowActive := or (eq .RelPermalink "/client-workflow-systems/") (hasPrefix .RelPermalink "/workflows/") }}
-      <a class="brand-link site-brand" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
+      <a class="brand-link site-brand" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}" data-track="brand_click" data-track-location="header" data-track-label="home">
         <span class="site-brand-icon" aria-hidden="true">
           <svg viewBox="0 0 64 64" focusable="false">
             <rect x="6" y="6" width="52" height="52" rx="16"></rect>
@@ -25,17 +25,17 @@
             {{ if ne .Identifier "workflows" }}
             {{ if ne .Name "Workflows" }}
             {{ $isActive := or (eq $.RelPermalink .URL) (and (ne .URL "/") (hasPrefix $.RelPermalink .URL)) }}
-            <li><a href="{{ .URL }}" {{ if $isActive }}aria-current="page"{{ end }}>{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}" {{ if $isActive }}aria-current="page"{{ end }} data-track="nav_click" data-track-location="header" data-track-label="{{ .Name | urlize }}">{{ .Name }}</a></li>
             {{ end }}
             {{ end }}
             {{ end }}
           </ul>
         </nav>
-        <a class="button button-primary button-header" href="/client-workflow-systems/" {{ if $workflowActive }}aria-current="page"{{ end }}>Explore workflows</a>
+        <a class="button button-primary button-header" href="/client-workflow-systems/" {{ if $workflowActive }}aria-current="page"{{ end }} data-track="cta_click" data-track-location="header" data-track-label="explore-workflows">Explore workflows</a>
       </div>
     </div>
     <div class="site-header-search">
-      <form class="site-search-form" action="https://duckduckgo.com/" method="get" data-site-search="soloopsguide.com">
+      <form class="site-search-form" action="https://duckduckgo.com/" method="get" data-site-search="soloopsguide.com" data-track="site_search" data-track-location="header" data-track-label="duckduckgo-site-search">
         <label class="sr-only" for="site-search-input">Search SoloOpsGuide</label>
         <span class="site-search-icon" aria-hidden="true"></span>
         <input id="site-search-input" name="q" type="search" placeholder="Search workflows, blueprints, comparisons, and assets..." autocomplete="off">

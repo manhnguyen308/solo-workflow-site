@@ -19,8 +19,11 @@ Use this as the final launch checklist after repo-side fixes are complete.
 ## Search and measurement
 
 - Add the site to Google Search Console and submit the production sitemap.
+- Add the Search Console verification token in `config.toml` if HTML meta verification is the chosen method.
+- Enable only one analytics provider in `config.toml` and confirm the provider-specific ID/domain/script values are correct.
 - Add analytics only if the final privacy-policy wording matches the tools being used.
 - If ads or affiliate relationships are added, update trust and policy pages before enabling them.
+- Use `MEASUREMENT_OPERATIONS.md` as the source of truth for measurement-related repo setup.
 
 ## Domain and production checks
 

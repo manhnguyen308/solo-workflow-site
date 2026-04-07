@@ -30,7 +30,7 @@ If analytics or advertising tools use cookies or similar identifiers, SoloOpsGui
 - improving content usefulness,
 - supporting reasonable site operations and monetization.
 
-If the data practices change materially, this page should be updated to reflect that change.
+If the data practices change materially, this page should be updated to reflect that change. If a specific analytics or advertising provider is enabled, this page should name that provider clearly once the setup is live.
 
 ## Third-party services
 

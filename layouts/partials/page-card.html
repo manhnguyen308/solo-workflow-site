@@ -42,8 +42,8 @@
   {{ $linkLabel = "Read guide" }}
 {{ end }}
 {{ $image := partial "feature-image.html" $page }}
-<article class="page-card page-card-{{ $style }} page-card-theme-{{ $page.Section }}">
-  <a class="page-card-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1">
+<article class="page-card page-card-{{ $style }} page-card-theme-{{ $page.Section }}" data-card-section="{{ $page.Section }}" data-card-page-type="{{ $page.Params.page_type | default $page.Section }}" data-card-page-role="{{ $page.Params.page_role | default "standard" }}">
+  <a class="page-card-media" href="{{ $page.RelPermalink }}" aria-hidden="true" tabindex="-1" data-track="card_click" data-track-location="card-media" data-track-label="{{ $page.File.TranslationBaseName | default ($page.Title | urlize) }}">
     {{ with $image }}
       <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
     {{ else }}
@@ -55,11 +55,11 @@
       <p class="page-card-type">{{ $displayType }}</p>
       <span class="page-card-date">{{ $page.Date.Format "Jan 2, 2006" }}</span>
     </div>
-    <h3><a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a></h3>
+    <h3><a href="{{ $page.RelPermalink }}" data-track="card_click" data-track-location="card-title" data-track-label="{{ $page.File.TranslationBaseName | default ($page.Title | urlize) }}">{{ $page.Title }}</a></h3>
     {{ with ($page.Params.summary | default $page.Params.description) }}<p class="page-card-summary">{{ . }}</p>{{ end }}
     <div class="page-card-footer">
       {{ with $page.Params.search_intent }}<span class="page-card-tag">{{ . }}</span>{{ end }}
-      <a class="page-card-link" href="{{ $page.RelPermalink }}">{{ $linkLabel }}</a>
+      <a class="page-card-link" href="{{ $page.RelPermalink }}" data-track="card_click" data-track-location="card-link" data-track-label="{{ $page.File.TranslationBaseName | default ($page.Title | urlize) }}">{{ $linkLabel }}</a>
     </div>
   </div>
 </article>

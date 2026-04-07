@@ -2,7 +2,9 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 {{ $siteTitle := .Site.Params.brandName | default .Site.Title }}
 {{ $rawTitle := .Title }}
-{{ $isSupportSection := and (eq .Kind "section") (eq (len .Pages) 0) }}
+{{ $trustSections := slice "about" "contact" "editorial-policy" "content-policy" "privacy-policy" "disclaimer" "terms" }}
+{{ $isTrustSection := or (in $trustSections .Section) (in $trustSections .Type) }}
+{{ $isSupportSection := and (eq .Kind "section") $isTrustSection }}
 {{ if .IsHome }}
   {{ $rawTitle = printf "%s | Workflow-First Guidance for Solo Operators" $siteTitle }}
 {{ else if eq .Kind "section" }}
@@ -19,9 +21,17 @@
 {{ $descSource := .Params.description | default .Params.summary | default .Description | default .Summary | default .Site.Params.siteDescription }}
 {{ $desc := $descSource | plainify | htmlUnescape | truncate 165 "" }}
 {{ $featureImage := partial "feature-image.html" . }}
+{{ $measurement := .Site.Params.measurement }}
+{{ $searchConsole := .Site.Params.searchConsole }}
+{{ $pageTypeMeta := .Params.page_type | default (cond .IsHome "home" (cond $isTrustSection "support-page" .Kind)) }}
+{{ $pageRoleMeta := .Params.page_role | default (cond .IsHome "homepage" (cond (and (eq .Kind "section") (not $isTrustSection)) "hub" (cond $isTrustSection "trust-page" "standard"))) }}
 <meta name="description" content="{{ $desc }}">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="{{ .Permalink }}">
+<meta name="soloopsguide:page-type" content="{{ $pageTypeMeta }}">
+<meta name="soloopsguide:page-role" content="{{ $pageRoleMeta }}">
+<meta name="soloopsguide:page-section" content="{{ .Section | default "home" }}">
+{{ with $searchConsole.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 {{ $robots := "index,follow" }}
 {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
   {{ $robots = "noindex,follow" }}
@@ -42,6 +52,22 @@
 <link rel="shortcut icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{{ $siteTitle }} RSS" href="{{ "index.xml" | absURL }}">
 <link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+{{ if and $measurement.enabled (eq $measurement.provider "google-analytics") $measurement.googleAnalyticsId }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $measurement.googleAnalyticsId }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $measurement.googleAnalyticsId }}', { 'anonymize_ip': true });
+</script>
+{{ else if and $measurement.enabled (eq $measurement.provider "plausible") $measurement.plausibleDomain }}
+<script defer data-domain="{{ $measurement.plausibleDomain }}" src="{{ $measurement.plausibleScript }}"></script>
+{{ else if and $measurement.enabled (eq $measurement.provider "umami") $measurement.umamiWebsiteId $measurement.umamiScript }}
+<script defer src="{{ $measurement.umamiScript }}" data-website-id="{{ $measurement.umamiWebsiteId }}"></script>
+{{ end }}
+{{ with .Site.Params.monetization.adsensePublisherId }}
+<meta name="google-adsense-account" content="{{ . }}">
+{{ end }}
 
 {{ $schema := dict }}
 {{ if .IsHome }}

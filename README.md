@@ -12,6 +12,7 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 - Day 13 switched production URL handling to a build-time baseURL override suitable for Cloudflare deployment.
 - Day 15 substantially upgraded the visual system, homepage composition, hub layouts, and reading experience.
 - Deployment should wait until the real monitored public inbox is confirmed.
+- Measurement and Search Console scaffolding now exists in the repo, but no third-party analytics provider is enabled by default.
 
 Current launch verdict:
 - Content/model: ready
@@ -116,6 +117,19 @@ Key launch docs:
 - `DAY11_LAUNCH_FINALIZATION.md`
 - `DAY12_VERIFICATION_BLOCKED.md`
 - `GO_LIVE_CHECKLIST.md`
+- `MEASUREMENT_OPERATIONS.md`
+
+## Measurement and Search Console
+
+The repo now includes optional support for:
+
+- Google Search Console verification meta tag
+- Google Analytics, Plausible, or Umami script injection via `config.toml`
+- stable page identity data attributes and meta tags for reporting clarity
+- lightweight CTA, nav, hub, card, and site-search tracking hooks
+- AdSense account meta tag readiness without adding ad units
+
+Nothing is enabled by default. Manual setup details live in `MEASUREMENT_OPERATIONS.md`.
 
 ## Content creation
 

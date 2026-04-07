@@ -3,7 +3,23 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="page-kind-{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}">
+{{ $trustSections := slice "about" "contact" "editorial-policy" "content-policy" "privacy-policy" "disclaimer" "terms" }}
+{{ $isTrustSection := or (in $trustSections .Section) (in $trustSections .Type) }}
+{{ $pageType := .Params.page_type | default (cond .IsHome "home" (cond $isTrustSection "support-page" .Kind)) }}
+{{ $pageRole := .Params.page_role | default (cond .IsHome "homepage" (cond (and (eq .Kind "section") (not $isTrustSection)) "hub" (cond $isTrustSection "trust-page" "standard"))) }}
+{{ $priorityFlag := cond (or .IsHome (gt (.Params.hub_priority | default 0) 0) (in (slice "workflow-anchor" "pillar" "comparison-node") $pageRole)) "true" "false" }}
+{{ $trustFlag := cond $isTrustSection "true" "false" }}
+<body
+  class="page-kind-{{ .Kind }}{{ with .Section }} section-{{ . }}{{ end }}"
+  data-page-kind="{{ .Kind }}"
+  data-page-section="{{ .Section | default "home" }}"
+  data-page-type="{{ $pageType }}"
+  data-page-role="{{ $pageRole }}"
+  data-page-priority="{{ $priorityFlag }}"
+  data-page-trust="{{ $trustFlag }}"
+  data-page-path="{{ .RelPermalink }}"
+  data-page-title="{{ .Title | default .Site.Title }}"
+>
   {{ partial "header.html" . }}
   <main class="site-main">
     {{ block "main" . }}{{ end }}

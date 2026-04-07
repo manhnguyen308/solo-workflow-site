@@ -2,7 +2,7 @@
   <div class="wrap footer-shell">
     <div class="footer-grid">
       <div class="footer-intro">
-        <a class="brand-link brand-link-plain footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}">
+        <a class="brand-link brand-link-plain footer-brand-link" href="{{ "/" | relURL }}" aria-label="{{ .Site.Title }}" data-track="brand_click" data-track-location="footer" data-track-label="home">
           <span class="brand-plain">
             <span class="brand-plain-name">SoloOpsGuide</span>
           </span>
@@ -15,7 +15,7 @@
         <nav aria-label="Primary footer">
           <ul class="footer-menu">
             {{ range .Site.Menus.main }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}" data-track="nav_click" data-track-location="footer-resources" data-track-label="{{ .Name | urlize }}">{{ .Name }}</a></li>
             {{ end }}
           </ul>
         </nav>
@@ -23,29 +23,29 @@
       <div class="footer-nav-block">
         <p class="footer-heading">Site</p>
         <ul class="footer-menu">
-          <li><a href="/about/">About</a></li>
-          <li><a href="/editorial-policy/">Editorial Policy</a></li>
-          <li><a href="/content-policy/">Content Policy</a></li>
-          <li><a href="/glossary/">Glossary</a></li>
-          <li><a href="/faq/">FAQ</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/about/" data-track="nav_click" data-track-location="footer-site" data-track-label="about">About</a></li>
+          <li><a href="/editorial-policy/" data-track="nav_click" data-track-location="footer-site" data-track-label="editorial-policy">Editorial Policy</a></li>
+          <li><a href="/content-policy/" data-track="nav_click" data-track-location="footer-site" data-track-label="content-policy">Content Policy</a></li>
+          <li><a href="/glossary/" data-track="nav_click" data-track-location="footer-site" data-track-label="glossary">Glossary</a></li>
+          <li><a href="/faq/" data-track="nav_click" data-track-location="footer-site" data-track-label="faq">FAQ</a></li>
+          <li><a href="/contact/" data-track="nav_click" data-track-location="footer-site" data-track-label="contact">Contact</a></li>
         </ul>
       </div>
       <div class="footer-nav-block">
         <p class="footer-heading">Legal</p>
         <ul class="footer-menu">
-          <li><a href="/privacy-policy/">Privacy Policy</a></li>
-          <li><a href="/disclaimer/">Disclaimer</a></li>
-          <li><a href="/terms/">Terms</a></li>
+          <li><a href="/privacy-policy/" data-track="nav_click" data-track-location="footer-legal" data-track-label="privacy-policy">Privacy Policy</a></li>
+          <li><a href="/disclaimer/" data-track="nav_click" data-track-location="footer-legal" data-track-label="disclaimer">Disclaimer</a></li>
+          <li><a href="/terms/" data-track="nav_click" data-track-location="footer-legal" data-track-label="terms">Terms</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
       <p>Built as a practical editorial resource for solo operators who value clarity over complexity.</p>
       <div class="footer-bottom-links">
-        <a href="/index.xml">RSS Feed</a>
-        <a href="/about/">About</a>
-        <a href="/editorial-policy/">Methodology</a>
+        <a href="/index.xml" data-track="nav_click" data-track-location="footer-bottom" data-track-label="rss-feed">RSS Feed</a>
+        <a href="/about/" data-track="nav_click" data-track-location="footer-bottom" data-track-label="about">About</a>
+        <a href="/editorial-policy/" data-track="nav_click" data-track-location="footer-bottom" data-track-label="methodology">Methodology</a>
       </div>
     </div>
   </div>
