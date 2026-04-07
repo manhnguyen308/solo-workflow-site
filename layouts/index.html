@@ -5,6 +5,12 @@
 {{ $intakeGuide := .Site.GetPage "/client-workflow-systems/sample-intake-guide" }}
 {{ $migrationGuide := .Site.GetPage "/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system" }}
 {{ $onboardingChecklist := .Site.GetPage "/templates-checklists/sample-onboarding-checklist" }}
+{{ $priorityWorkflowA := .Site.GetPage "/client-workflow-systems/client-onboarding-workflow-for-freelancers-and-consultants" }}
+{{ $priorityWorkflowB := .Site.GetPage "/client-workflow-systems/milestone-delivery-workflow-for-solo-service-businesses" }}
+{{ $priorityWorkflowC := .Site.GetPage "/client-workflow-systems/invoice-and-payment-workflow-setup-for-freelancers-and-consultants" }}
+{{ $priorityBlueprint := .Site.GetPage "/software-stack-blueprints/how-to-choose-a-software-stack-without-overbuying-tools" }}
+{{ $priorityComparison := .Site.GetPage "/workflow-comparisons/calendly-vs-built-in-booking-tools-for-solo-operators" }}
+{{ $priorityAsset := .Site.GetPage "/templates-checklists/weekly-client-status-update-template" }}
 {{ $aboutPage := .Site.GetPage "/about" }}
 {{ $editorialPolicyPage := .Site.GetPage "/editorial-policy" }}
 {{ $contentPolicyPage := .Site.GetPage "/content-policy" }}
@@ -185,15 +191,15 @@
       <div class="section-heading">
         <p class="eyebrow">Priority pages</p>
         <h2>Start with the core pages readers and search engines should find first</h2>
-        <p>These pages carry the main site architecture: lifecycle design, stack shape, key system decisions, and the strongest implementation assets.</p>
+        <p>These pages surface the strongest current workflow, stack, comparison, and execution content, using the latest refined feature-image set.</p>
       </div>
       <div class="card-grid card-grid-2">
-        {{ with $workflowAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $blueprintAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $comparisonAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $onboardingChecklist }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $intakeGuide }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $migrationGuide }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityWorkflowA }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityWorkflowB }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityWorkflowC }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityBlueprint }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityComparison }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityAsset }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
       </div>
     </div>
   </section>
