@@ -11,7 +11,7 @@ tags = ["migration", "stack-cleanup", "workflow-system"]
 page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
-hub_priority = 2
+hub_priority = 3
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++

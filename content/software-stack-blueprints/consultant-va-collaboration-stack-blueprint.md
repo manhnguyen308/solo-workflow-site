@@ -11,7 +11,7 @@ tags = ["consultant", "va", "collaboration", "stack-blueprint"]
 page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
-hub_priority = 3
+hub_priority = 4
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/comparisons/email-vs-client-portal-for-deliverables-and-approvals/", "/templates/weekly-client-operations-checklist-solo-business/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = true
 +++

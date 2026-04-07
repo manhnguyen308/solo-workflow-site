@@ -18,6 +18,7 @@ This hub should feel like a routing layer, not a content dead end. It exists to 
 ## Start with the blocker, not the whole library
 
 - [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
+- [FAQ: Reviewing and Maintaining a Solo Service Workflow System](/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/)
 
 If that page does not resolve the blocker cleanly, the right move is usually not to keep browsing FAQ content. It is to jump into the strongest related cornerstone page immediately.
 

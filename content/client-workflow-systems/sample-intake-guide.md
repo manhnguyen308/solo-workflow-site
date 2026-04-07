@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 2
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = false
 +++
 
@@ -122,7 +122,7 @@ Your intake process is still weak if:
 
 ## Tool and system notes
 
-If your intake data lives separately from project execution, align your system-of-record strategy here: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+If your intake data lives separately from project execution, align your system-of-record strategy here: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/). If the main intake friction is calendar control rather than qualification itself, compare [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/).
 
 For full process context, see [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 

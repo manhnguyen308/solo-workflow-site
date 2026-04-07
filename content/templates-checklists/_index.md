@@ -52,10 +52,10 @@ The strongest pages in this hub usually include:
 
 ## Suggested reading paths
 
-- For kickoff reliability: proposal handoff -> onboarding checklist -> weekly operations checklist.
-- For delivery consistency: workflow anchor -> weekly client status update template -> delivery QA checklist -> offboarding template.
-- For payment control: proposal handoff -> invoice workflow -> weekly operations checklist.
-- For scope control: proposal handoff -> client change request template -> invoice workflow.
+- For kickoff reliability: proposal handoff -> onboarding workflow -> onboarding checklist -> weekly operations checklist.
+- For delivery consistency: workflow anchor -> milestone delivery workflow -> weekly client status update template -> delivery QA checklist -> offboarding template.
+- For payment control: proposal handoff -> invoice workflow setup -> invoice workflow checklist -> weekly operations checklist.
+- For scope control: proposal handoff -> client change request template -> invoice workflow setup.
 
 ## If the asset feels premature
 

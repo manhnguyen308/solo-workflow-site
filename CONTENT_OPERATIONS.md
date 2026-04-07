@@ -106,45 +106,50 @@ Use three backlog lanes only:
 
 ## Priority backlog
 
-Treat the `Now` lane as the next practical batch to publish before expanding breadth further.
+### Completed in the latest batch
+
+1. `Client Onboarding Workflow for Freelancers and Consultants`
+2. `Milestone Delivery Workflow for Solo Service Businesses`
+3. `Invoice and Payment Workflow Setup for Freelancers and Consultants`
+4. `How to Choose a Software Stack Without Overbuying Tools`
+5. `Calendly vs Built-In Booking Tools for Solo Operators`
+6. `Reviewing and Maintaining a Solo Service Workflow System FAQ`
+
+These pages closed the largest gaps in the workflow, stack-decision, and FAQ clusters without widening the site randomly.
 
 ### Now
 
-1. `Client Onboarding Workflow for Freelancers and Consultants`
-Why: closes the gap between proposal handoff and onboarding asset pages.
+Treat this `Now` lane as the next practical batch after the current one is live and linked cleanly.
 
-2. `Milestone Delivery Workflow for Solo Service Businesses`
-Why: gives the workflow cluster a real delivery-stage page instead of relying on templates and status updates alone.
+1. `Client Offboarding Workflow and Referral Handoff`
+Why: completes the client lifecycle cluster so offboarding is no longer represented only by a template.
 
-3. `Invoice and Payment Workflow Setup for Freelancers and Consultants`
-Why: turns the invoice checklist into a stronger lifecycle subcluster.
+2. `Best Home for Billing Status: Invoicing Tool vs System of Record`
+Why: strengthens the billing decision layer that now sits between the invoice workflow guide and existing stack pages.
 
-4. `How to Choose a Software Stack Without Overbuying Tools`
-Why: strengthens the blueprint hub and gives the site a reusable stack-decision framework page.
+3. `Trello vs Asana for Lightweight Service Operations`
+Why: deepens the comparison cluster for lower-complexity operators after the booking-tool decision page.
 
-5. `Calendly vs Built-In Booking Tools for Solo Operators`
-Why: supports intake and stack clusters without widening the site too far.
+4. `Glossary: Client Dependency`
+Why: supports onboarding, delivery, and billing pages with one high-value operational term.
 
-6. `System Status Review FAQ for Solo Operators`
-Why: gives the FAQ hub a second routing page tied to an existing cornerstone workflow problem.
+5. `Glossary: Milestone Acceptance`
+Why: supports the new delivery and invoice workflow pages with a clear approval/completion concept.
+
+6. `FAQ: When Should a Solo Operator Start Automating?`
+Why: strengthens the FAQ cluster around maintenance and keeps automation questions from diffusing into other pages.
 
 ### Next
 
-1. `Client Offboarding Workflow and Referral Handoff`
-2. `Trello vs Asana for Lightweight Service Operations`
-3. `Best Home for Billing Status: Invoicing Tool vs System of Record`
-4. `Glossary: Client Dependency`
-5. `Glossary: Milestone Acceptance`
-6. `FAQ: When Should a Solo Operator Start Automating?`
-7. `Blueprint: Lean Email-First Solo Operations Stack`
-
-### Later
-
-1. `Blueprint: Retainer-Heavy Solo Service Stack`
+1. `Blueprint: Lean Email-First Solo Operations Stack`
 2. `Comparison: Stripe Invoicing vs All-in-One Client Workspace Billing`
 3. `FAQ: When Does Hybrid CRM + PM Become Worth It?`
 4. `Glossary: Delivery Blocker`
 5. `Glossary: Scope Boundary`
+
+### Later
+
+1. `Blueprint: Retainer-Heavy Solo Service Stack`
 
 ## Topic-cluster roadmap
 

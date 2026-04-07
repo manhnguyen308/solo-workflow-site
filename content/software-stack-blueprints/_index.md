@@ -26,8 +26,9 @@ This hub is for operators who already know they have an operations system to bui
 ## Choose the stack problem first
 
 1. Open [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if you want the smallest viable operating stack.
-2. Use [Software Stack Blueprint: Consultant + VA Collaboration Setup](/guides/software-stack-blueprint-consultant--va-collaboration-setup/) when delegated admin work changes where information needs to live.
-3. Read [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) if the current stack is already spread across too many tools.
+2. Read [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) if the main issue is deciding what to buy now versus what to delay.
+3. Use [Software Stack Blueprint: Consultant + VA Collaboration Setup](/guides/software-stack-blueprint-consultant--va-collaboration-setup/) when delegated admin work changes where information needs to live.
+4. Read [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) if the current stack is already spread across too many tools.
 
 ## What these blueprints optimize for
 
@@ -39,6 +40,7 @@ This hub is for operators who already know they have an operations system to bui
 ## Cornerstone pages in this hub
 
 - [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) is the default starting point for most readers and the clearest baseline for stack decisions.
+- [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) is the decision-framework page when the real problem is premature tool complexity rather than the exact tool choice.
 - [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) is the practical follow-on when the problem is fragmentation rather than greenfield setup.
 - [Software Stack Blueprint: Consultant + VA Collaboration Setup](/guides/software-stack-blueprint-consultant--va-collaboration-setup/) is the page to use when support capacity changes ownership rules and admin flow.
 
@@ -46,6 +48,7 @@ This hub is for operators who already know they have an operations system to bui
 
 - If you do not know where active client truth should live, read [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 - If you already know you are PM-first and need a delivery workspace decision, read [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
+- If the intake system feels too heavy for the call volume, read [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/).
 - If the real issue is stage quality rather than tool choice, go back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Supporting implementation assets
@@ -55,8 +58,8 @@ This hub is for operators who already know they have an operations system to bui
 
 ## Suggested reading paths
 
-- For first-stack setup: lean solo blueprint -> CRM vs PM comparison -> intake guide -> weekly operations checklist.
-- For a cleanup project: migration guide -> lean solo blueprint -> invoice workflow -> weekly operations checklist.
+- For first-stack setup: overbuying guide -> lean solo blueprint -> CRM vs PM comparison -> intake guide -> weekly operations checklist.
+- For a cleanup project: migration guide -> lean solo blueprint -> invoice workflow setup -> weekly operations checklist.
 - For a two-person operating model: consultant + VA blueprint -> proposal handoff -> weekly operations checklist.
 
 ## What a strong blueprint page should include

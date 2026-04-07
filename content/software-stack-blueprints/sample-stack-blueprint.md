@@ -12,13 +12,15 @@ page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
 hub_priority = 1
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
 Most freelancers do not fail because they chose the "wrong" tool. They fail because they buy too much software before their workflow is stable. This blueprint gives you a **minimum viable stack** for where you are now, plus clear signs for when to upgrade.
 
 If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+
+If the open problem is not your exact stack shape yet but how to avoid premature purchases, start with [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 
 This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?"
 

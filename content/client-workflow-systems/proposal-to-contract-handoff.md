@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 3
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
@@ -108,7 +108,7 @@ Once signed, pass this package to onboarding:
 - communication cadence,
 - invoice schedule.
 
-Then execute onboarding with: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+Then execute onboarding with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) and the linked [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
 If the project is likely to evolve after kickoff, define the post-signature rule now with [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 

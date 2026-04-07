@@ -21,9 +21,12 @@ Most solo operators do not need more advice about "productivity." They need a cl
 1. Start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the whole client path feels loose or reactive.
 2. Open [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) if low-fit leads are entering delivery.
 3. Use [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) if scope and kickoff details keep slipping between sales and execution.
-4. Open [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) if client communication feels reactive or progress visibility keeps slipping.
-5. Use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when scope changes keep entering delivery informally.
-6. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
+4. Open [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) if signed projects still start messy.
+5. Open [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) if active delivery feels harder to control than it should.
+6. Open [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) if billing visibility and follow-up keep slipping.
+7. Open [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) if client communication feels reactive or progress visibility keeps slipping.
+8. Use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when scope changes keep entering delivery informally.
+9. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
 
 ## What this section helps you fix
 
@@ -37,6 +40,9 @@ Most solo operators do not need more advice about "productivity." They need a cl
 - [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) is the anchor page. Use it to map the full sequence before changing tools.
 - [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) is the best page when calendar protection and lead quality are the immediate problem.
 - [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) matters when clients say yes but projects still start fuzzy.
+- [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) is the next page when the agreement is clear but kickoff readiness is not.
+- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) matters when active delivery needs stronger milestone control, QA, and approval clarity.
+- [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) is the billing-stage page when delivery is happening but cash collection still feels reactive.
 - [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) is useful only after the manual path is stable enough to automate safely.
 
 ## Supporting assets by stage
@@ -50,9 +56,9 @@ Most solo operators do not need more advice about "productivity." They need a cl
 
 ## Suggested reading paths
 
-- For a messy client lifecycle: anchor workflow -> proposal handoff -> onboarding checklist -> invoice workflow.
+- For a messy client lifecycle: anchor workflow -> proposal handoff -> onboarding workflow -> onboarding checklist -> invoice workflow setup.
 - For a lead-quality problem: intake guide -> CRM vs PM comparison -> full workflow anchor.
-- For repeated delivery friction: anchor workflow -> onboarding checklist -> status update workflow -> delivery QA checklist -> weekly operations checklist.
+- For repeated delivery friction: anchor workflow -> onboarding workflow -> milestone delivery workflow -> status update workflow -> delivery QA checklist -> weekly operations checklist.
 - For recurring scope drift: proposal handoff -> change request workflow -> client change request template -> invoice workflow.
 
 ## What strong workflow pages in this section should do
