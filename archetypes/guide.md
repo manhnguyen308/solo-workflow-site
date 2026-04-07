@@ -13,8 +13,14 @@ related = []
 featured = false
 +++
 
+## Who this page is for
+
 ## Problem
 
+## Decision criteria or constraints
+
 ## Practical setup
+
+## Common mistakes or edge cases
 
 ## Recommended next step

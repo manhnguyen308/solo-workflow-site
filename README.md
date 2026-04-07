@@ -131,6 +131,36 @@ hugo new --kind faq faq/new-question.md
 
 Then fill the required front matter and keep the page aligned to the workflow-first editorial model.
 
+## Publishing conventions
+
+Use these content patterns to keep the site easier to scale:
+
+- Workflows:
+  define the stage or full sequence, name inputs/outputs/owners, show failure points, and route to the adjacent implementation page.
+- Blueprints and guides:
+  state the operating model, decision criteria, upgrade triggers, and the conditions where the advice stops fitting.
+- Comparisons:
+  frame one bounded decision, judge options by workflow criteria, include scenarios and failure modes, and end with a clear next page.
+- Templates and checklists:
+  name the trigger moment, provide the asset, list common misses or edge cases, and define what "complete" means.
+- Glossary entries:
+  define the term plainly, explain why it matters operationally, and link directly to the page where the definition becomes useful.
+- FAQ pages:
+  answer one narrow blocker quickly, state the recommendation boundary, and route to a stronger implementation page.
+
+Front matter expectations for publishable pages:
+
+- always set `description`, `summary`, `page_type`, `search_intent`, and `page_role`
+- set `related` intentionally for cornerstone and support-routing pages
+- use `featured = true` only for genuine anchor or cornerstone pages within a hub
+- keep category aligned to the section so permalinks and related-content behavior stay predictable
+
+Internal linking conventions:
+
+- cornerstone pages should link down to supporting pages and assets
+- support pages should route back to the relevant cornerstone page
+- hub pages should explain when to start there, when to leave, and which page is the best entry point for each scenario
+
 ## Next steps before deployment
 
 1. Set the real monitored public inbox in `content/contact/_index.md`.

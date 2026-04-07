@@ -8,6 +8,8 @@ feature_image_alt = "Editorial illustration combining a workflow sequence, check
 
 SoloOpsGuide helps freelancers and solo operators build repeatable client operations without bloated software stacks.
 
+The site is organized around a simple editorial model: define the workflow first, choose the stack shape second, use comparisons only for bounded decisions, and use templates inside a live process rather than as standalone fixes.
+
 ## Start here (recommended reading path)
 
 1. [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
@@ -32,6 +34,14 @@ If you only read one page first, start with the workflow anchor. It defines the 
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+
+## How the site is structured
+
+- [Client Workflow Systems](/client-workflow-systems/) for the sequence itself.
+- [Software Stack Blueprints](/software-stack-blueprints/) for lean stack models and migration scenarios.
+- [Workflow Comparisons](/workflow-comparisons/) for bounded system decisions.
+- [Templates & Checklists](/templates-checklists/) for implementation assets.
+- [Glossary](/glossary/) and [FAQ](/faq/) for support pages that remove ambiguity and route you back into the main guides.
 
 ## Choose your starting point
 

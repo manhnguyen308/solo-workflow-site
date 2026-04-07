@@ -19,12 +19,25 @@ This hub should feel like a routing layer, not a content dead end. The pages her
 
 - [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
+## Best uses for this hub
+
+- You know the question but not the right deeper page.
+- You need a recommendation boundary before spending time on a full guide.
+- You want to confirm whether the real issue is workflow design, stack shape, or implementation detail.
+
 ## Questions this section is built to answer
 
 - tool order and stack size
 - CRM-first vs PM-first
 - intake, handoff, onboarding, and billing setup
 - migration and automation timing
+
+## Where to start by blocker type
+
+- Workflow still messy across the whole client path: go to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- Tool sprawl or overbuying pressure: go to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- System-of-record confusion: go to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- Term confusion around handoffs or records: go to [Glossary](/glossary/).
 
 ## Best next destinations after FAQ content
 
@@ -37,3 +50,10 @@ This hub should feel like a routing layer, not a content dead end. The pages her
 - [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 - [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+
+## What a good FAQ page should do here
+
+- answer one narrow question quickly,
+- name the boundary of that answer,
+- send the reader to one stronger implementation page,
+- avoid becoming a shallow substitute for the main guide.

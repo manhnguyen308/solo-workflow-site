@@ -16,6 +16,13 @@ This hub is for operators who already know they have an operations system to bui
 - Use comparison pages when one system choice is blocking you.
 - Return to the workflow hub if the real issue turns out to be stage design rather than tool structure.
 
+## What this hub should help you answer
+
+- What is the smallest stack that can run the business reliably?
+- Where should active client truth live?
+- When is extra software justified by real coordination pressure?
+- How should the stack change when a VA or migration project enters the picture?
+
 ## Choose the stack problem first
 
 1. Open [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if you want the smallest viable operating stack.
@@ -51,3 +58,10 @@ This hub is for operators who already know they have an operations system to bui
 - For first-stack setup: lean solo blueprint -> CRM vs PM comparison -> intake guide -> weekly operations checklist.
 - For a cleanup project: migration guide -> lean solo blueprint -> invoice workflow -> weekly operations checklist.
 - For a two-person operating model: consultant + VA blueprint -> proposal handoff -> weekly operations checklist.
+
+## What a strong blueprint page should include
+
+- the operating model it assumes,
+- what changes as the business grows,
+- upgrade triggers and overbuying warnings,
+- clear links to the workflow, comparison, and template pages needed to implement it.

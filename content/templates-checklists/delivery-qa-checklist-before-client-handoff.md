@@ -56,12 +56,26 @@ The more routine the handoff feels, the easier it is to skip one important detai
 - What the client should review first.
 - What response is needed and by when.
 
+## Good use cases for this page
+
+- recurring milestone deliveries,
+- final project handoffs,
+- any client-facing delivery where approval unlocks billing, closeout, or the next stage.
+
 ## The QA misses that usually cost the most
 
 - Sending the right file with the wrong version label.
 - Forgetting to mention what the client is supposed to do next.
 - Delivering in email but failing to update the live project record.
 - Finishing a milestone without triggering the invoice or closeout step it should unlock.
+
+## Completion standard
+
+This checklist is complete only when:
+- the delivered item matches the agreed scope,
+- the client knows the next expected action,
+- the project record is updated,
+- the next operational trigger is queued.
 
 ## Related workflow pages
 

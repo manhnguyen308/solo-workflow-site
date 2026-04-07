@@ -13,8 +13,18 @@ related = []
 featured = false
 +++
 
-## Workflow overview
+## Who this page is for
+
+## Problem this workflow solves
+
+## Workflow map
+
+## Inputs, outputs, and ownership
 
 ## Step-by-step sequence
+
+## Failure points and edge cases
+
+## Implementation notes
 
 ## Next pages

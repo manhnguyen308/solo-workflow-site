@@ -15,6 +15,12 @@ This section exists to make the rest of the site more usable. The right outcome 
 - Read the definition in context, then leave the glossary quickly.
 - Use the linked guide or comparison page to apply the term in a real system.
 
+## Start here by decision type
+
+- If the main question is "where should active client truth live?", start with [System of Record](/glossary/system-of-record/).
+- If the main question is "what exactly should transfer between stages?", start with [Workflow Handoff](/glossary/workflow-handoff/).
+- If the real problem is larger than a definition, jump straight to the linked workflow or comparison page instead of staying in the glossary.
+
 ## Start with the terms that affect system design
 
 - [Workflow Handoff](/glossary/workflow-handoff/)
@@ -29,3 +35,11 @@ This section exists to make the rest of the site more usable. The right outcome 
 
 - Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) when the unclear term is affecting lifecycle design.
 - Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the unclear term is changing where your system of record should live.
+- Use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the definition reveals that your tools already contain duplicated truth.
+
+## What makes a glossary page strong on this site
+
+- It should define the term in plain language.
+- It should show how the term affects a real operating decision.
+- It should name common failure modes or misunderstandings.
+- It should point directly to the next page that helps you act on the definition.

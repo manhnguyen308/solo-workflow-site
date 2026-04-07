@@ -36,6 +36,8 @@ Do not let a cleanup project damage live delivery. The items worth protecting mo
 - ownership of next actions,
 - historical context that someone will actually need.
 
+Add one more protection rule: do not migrate because the new tool looks cleaner. Migrate because you can define a clearer operating model on the other side.
+
 ## Step 1: Audit the current stack by workflow stage
 
 List tools currently used for:
@@ -49,6 +51,13 @@ List tools currently used for:
 Mark each tool as: **Keep**, **Replace**, or **Retire**.
 
 Add one more column: **What truth lives here today?** That exposes hidden system-of-record problems quickly.
+
+Also mark each tool by frequency:
+- checked daily,
+- checked weekly,
+- only needed for archive or reference.
+
+That makes it easier to separate live operating systems from historical clutter.
 
 ## Step 2: Pick the new system-of-record model
 
@@ -71,6 +80,23 @@ Document these rules before migration:
 
 These rules should be specific enough that a second person could follow them without asking where to look first.
 
+## Step 3.5: Decide what not to migrate
+
+Most cleanup projects fail because they move too much low-value history.
+
+Usually safe to archive instead of migrate:
+- old exploratory notes,
+- obsolete templates,
+- outdated task boards,
+- closed-project details that no longer affect current delivery or billing.
+
+Usually worth migrating:
+- active client records,
+- reusable templates,
+- current pipeline status,
+- invoice state,
+- current-stage notes and dependencies.
+
 ## Step 4: Migrate in phases (not all at once)
 
 - Week 1: move intake and active project status.
@@ -87,11 +113,27 @@ The sequence matters. Move the live operating state first, reusable templates se
 - Keep a rollback note for each migration step.
 - Freeze new tool additions unless they are required for the migration itself.
 
+One practical rule helps here: if a client is within a few days of a major delivery or invoice event, wait until that stage is complete before moving their record.
+
 ## Step 6: Stabilize with weekly operations review
 
 After migration, run [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) for at least 4 weeks to identify gaps and fix process drift.
 
 Only after that review cycle should you consider adding automations from [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
+
+## Migration scenarios
+
+### Scenario A: scattered solo stack with low client volume
+
+Move to the simplest viable PM-first or CRM-first setup and keep most reminders manual at first. The gain usually comes from clarity, not from integrations.
+
+### Scenario B: solo operator adding a VA
+
+Prioritize visibility and handoff clarity over historical completeness. The VA needs a usable live system more than a perfect archive.
+
+### Scenario C: already using several tools with duplicate status fields
+
+Choose one authoritative field for current status and retire the others aggressively. Leaving both active almost always recreates the same ambiguity.
 
 ## Common migration mistakes
 
@@ -99,6 +141,14 @@ Only after that review cycle should you consider adding automations from [Workfl
 - Importing low-value historical noise into the new system.
 - Changing client-facing communication channels mid-project without notice.
 - Keeping old tools active indefinitely "just in case."
+
+## Completion standard
+
+Treat the migration as successful only when:
+- one system is clearly authoritative for active status,
+- old tools are archived or retired with intention,
+- weekly review happens in the new system,
+- no active client requires checking multiple tools to answer "what happens next?"
 
 ## Related pages
 

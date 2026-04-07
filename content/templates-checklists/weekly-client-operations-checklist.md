@@ -18,12 +18,22 @@ featured = true
 
 Use this once per week (same day, same time) to stabilize operations across all active clients.
 
+This page is one of the strongest "maintenance loop" assets on the site because it helps catch workflow drift before it turns into missed deadlines, awkward client updates, or payment surprises.
+
+## When this checklist is most valuable
+
+- when active client count is high enough that memory is no longer reliable,
+- when several workflow stages are live at the same time,
+- when you have already built the process but need a weekly discipline to keep it healthy.
+
 ## Weekly checklist
 
 ### 1) Pipeline and capacity review (15 minutes)
 - Review incoming leads and qualification status.
 - Confirm which prospects need response this week.
 - Confirm available delivery capacity before committing new kickoff dates.
+
+Ask one hard question here: is any new work about to be accepted because revenue pressure is overriding delivery capacity? If yes, fix the intake or scheduling decision now instead of hoping the week absorbs it.
 
 ### 2) Delivery health review (20 minutes)
 - Check milestone status for each active project.
@@ -45,11 +55,31 @@ Use this once per week (same day, same time) to stabilize operations across all 
 - Apply [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) before final deliveries.
 - Capture one process improvement for next week.
 
+## Suggested operator rhythm
+
+- Run it at the same point every week.
+- Work from your live system of record, not from memory.
+- Finish by updating the next actions directly in the tools you actually use.
+
+If you only review problems mentally and do not update the operating system, the checklist becomes reflective rather than operational.
+
 ## Weekly closeout questions
 
 - Which client stage generated the most friction?
 - Which handoff failed and why?
 - Which repetitive task should be templated next?
+
+## Useful variations
+
+### Solo operator only
+
+Keep it lean and decision-focused. The goal is visibility, not reporting.
+
+### Consultant + VA
+
+Run the checklist together or split it clearly:
+- consultant reviews decisions, risk, and approvals,
+- VA prepares status, follow-up list, and admin exceptions.
 
 ## Use this checklist with
 

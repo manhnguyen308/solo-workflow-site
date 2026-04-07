@@ -53,12 +53,29 @@ Use this simple request structure:
 - Record one thing that worked well.
 - Record one process issue to improve before the next project.
 
+## When to delay the testimonial ask
+
+Wait if:
+- final billing is still unresolved,
+- the client has not actually received or reviewed the final assets,
+- there is visible frustration or an open issue that still needs closure.
+
+Testimonial timing should follow satisfaction, not your internal desire to close the project fast.
+
 ## Common offboarding mistakes
 
 - Requesting a testimonial before the client has fully received the final assets.
 - Closing the project in your head but not in the billing or delivery records.
 - Treating offboarding like admin cleanup instead of a reputation and retention stage.
 - Offering the next project too aggressively before confirming satisfaction with the current one.
+
+## Completion standard
+
+Offboarding is complete only when:
+- project assets and outcomes are documented,
+- payment state is clear,
+- testimonial or feedback ask is either sent or intentionally deferred,
+- one internal improvement is captured for the next engagement.
 
 ## Use this with
 

@@ -15,6 +15,12 @@ featured = false
 
 ## When to use this
 
+## What this asset should help prevent
+
 ## Checklist or template
+
+## Common misses or edge cases
+
+## Completion standard
 
 ## Related implementation guides

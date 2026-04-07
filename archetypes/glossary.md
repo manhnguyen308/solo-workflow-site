@@ -17,4 +17,8 @@ featured = false
 
 ## Why it matters in workflows
 
+## Common misunderstanding
+
+## Practical example
+
 ## Related pages

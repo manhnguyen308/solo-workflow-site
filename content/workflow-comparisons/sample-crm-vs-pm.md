@@ -19,6 +19,8 @@ This is not a "which app is best" article. It is an operating-model decision.
 
 If your process fails because client context gets lost between lead, delivery, and billing, your main issue is usually system-of-record mismatch.
 
+For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle.
+
 ## Decision context: what you are actually choosing
 
 You are choosing where the truth about client work lives:
@@ -43,6 +45,8 @@ If you need the definition behind this choice, read [System of Record](/glossary
 
 **Failure mode:** clients are won but delivery execution becomes scattered.
 
+**Good fit scenario:** you manage a steady lead pipeline, proposals sit open for a while, and missed follow-up costs more revenue than delivery slippage.
+
 ## Model 2: PM-first
 
 **Best for:**
@@ -56,6 +60,8 @@ If you need the definition behind this choice, read [System of Record](/glossary
 
 **Failure mode:** weak lead qualification and inconsistent follow-up before kickoff.
 
+**Good fit scenario:** your business is delivery-heavy, lead volume is manageable, and most operational pain shows up after the project starts.
+
 ## Model 3: Hybrid
 
 **Best for:**
@@ -67,6 +73,8 @@ If you need the definition behind this choice, read [System of Record](/glossary
 **Tradeoffs:** higher admin overhead and integration complexity.
 
 **Failure mode:** duplicated data, inconsistent ownership, and process confusion.
+
+**Good fit scenario:** you can clearly explain what changes the moment a deal closes and who maintains each system after that point.
 
 ## Criteria matrix
 
@@ -86,17 +94,58 @@ If you need the definition behind this choice, read [System of Record](/glossary
 
 If the boundary sounds vague, hybrid is probably premature.
 
+## Decision criteria that matter more than software features
+
+### Lead-to-delivery ratio
+
+If your pre-sale motion is long, active, and valuable, CRM-first usually earns its keep. If most of the work is already sold and the challenge is delivery consistency, PM-first usually wins.
+
+### Frequency of status checks
+
+Ask where you look most often during a live week:
+- pipeline follow-up and opportunity movement,
+- milestone status and delivery blockers,
+- both at meaningful volume.
+
+That answer is usually a strong clue about the record that should sit closest to your daily work.
+
+### Handoff tolerance
+
+If you hate duplicated admin and can operate well with one center of gravity, avoid hybrid until constraints force it. Hybrid is only worth the extra coordination when both halves of the business are genuinely active and complex.
+
 ## Choose this if
 
 - **Choose CRM-first** if you lose deals due to weak follow-up and have a meaningful sales pipeline.
 - **Choose PM-first** if work delivery quality is your bottleneck and lead flow is manageable.
 - **Choose Hybrid** only if you can define strict ownership rules and maintain both systems consistently.
 
+## Practical scenarios
+
+### Scenario A: solo consultant with 3-8 active clients
+
+PM-first is usually the cleaner default. Intake can be simple, and the bigger risk is missed delivery coordination once work begins.
+
+### Scenario B: consultant with long sales cycles and multiple pending opportunities
+
+CRM-first often makes more sense because weak follow-up costs more than delivery complexity.
+
+### Scenario C: consultant plus VA with active sales and active delivery
+
+Hybrid can work, but only with a written rule such as:
+- CRM owns pre-sale pipeline through signed agreement.
+- PM workspace owns onboarding, delivery, billing triggers, and active project state.
+
 ## Next-step implementation by model
 
 - If CRM-first: implement stricter intake rules with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 - If PM-first: build delivery and onboarding consistency with [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 - For any model: align tool spend with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+
+## Edge cases that change the answer
+
+- If billing and compliance needs are unusually strict, a CRM-first or hybrid setup may become more valuable earlier.
+- If you sell very few projects but each one is delivery-heavy, PM-first may still beat CRM-first even with a formal pipeline.
+- If you are already using both systems but cannot explain which one is authoritative after contract signature, stop expanding the stack and define the boundary first.
 
 ## Common missteps to avoid
 

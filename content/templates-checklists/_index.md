@@ -39,6 +39,15 @@ Think of this hub as the execution layer of the site. If another page tells you 
 - They should not replace workflow design or tool decisions.
 - They work best when attached to a specific trigger in your week or client lifecycle.
 
+## Content pattern for this section
+
+The strongest pages in this hub usually include:
+- the trigger moment,
+- the checklist or template itself,
+- common misses and edge cases,
+- a completion standard,
+- the next page to open if the process behind the asset is still weak.
+
 ## Suggested reading paths
 
 - For kickoff reliability: proposal handoff -> onboarding checklist -> weekly operations checklist.

@@ -50,6 +50,13 @@ Most solo operators do not need more advice about "productivity." They need a cl
 - For a lead-quality problem: intake guide -> CRM vs PM comparison -> full workflow anchor.
 - For repeated delivery friction: anchor workflow -> onboarding checklist -> delivery QA checklist -> weekly operations checklist.
 
+## What strong workflow pages in this section should do
+
+- define the stage or sequence clearly,
+- name inputs, outputs, and ownership,
+- show common failure points,
+- route the reader to the adjacent implementation page.
+
 ## When to leave this section
 
 Move into [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) when the sequence is mostly clear but the tooling feels heavier than it should. If the open question is where client truth should live, jump to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

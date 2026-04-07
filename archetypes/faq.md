@@ -17,4 +17,6 @@ featured = false
 
 ## Practical context
 
+## Recommendation boundary
+
 ## Related resources

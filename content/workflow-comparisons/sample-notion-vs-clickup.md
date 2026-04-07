@@ -36,6 +36,13 @@ Do not use this page as a general productivity-tool comparison. It is for a spec
 4. Template reuse and consistency
 5. Change tolerance as service scope evolves
 
+## What this comparison is really testing
+
+The real question is how much structure your workflow needs the tool to enforce for you.
+
+- If your operating rules are simple and you mainly need one place for plans, notes, and lightweight status, flexibility matters more.
+- If your workflow breaks because tasks, owners, and deadlines disappear under pressure, enforced structure matters more.
+
 ## Notion: best when flexibility is the priority
 
 **Best for:** operators who want flexible docs and lightweight project views in one place.
@@ -44,6 +51,8 @@ Do not use this page as a general productivity-tool comparison. It is for a spec
 
 **Weak points:** can become messy without strict operating rules; task-level rigor is weaker by default.
 
+**Good-fit signal:** you value connected docs, simple databases, and a workspace that can evolve with the offer.
+
 ## ClickUp: best when process control is the priority
 
 **Best for:** operators who need explicit task workflows, statuses, and repeatable execution cadence.
@@ -51,6 +60,8 @@ Do not use this page as a general productivity-tool comparison. It is for a spec
 **Strengths:** stronger task hierarchy, clearer status controls, better structure for recurring delivery.
 
 **Weak points:** setup overhead is higher; over-configuration risk for very small workloads.
+
+**Good-fit signal:** you need the workspace to force clearer statuses, ownership, and milestone tracking than you reliably maintain by hand.
 
 ## Decision guide
 
@@ -61,6 +72,20 @@ Do not use this page as a general productivity-tool comparison. It is for a spec
 | You need heavy documentation plus light task tracking | Notion |
 | You need strict operational control and accountability | ClickUp |
 
+## Scenario examples
+
+### Choose Notion more confidently when
+
+- your client work varies enough that rigid task structures keep changing,
+- documentation quality matters as much as task visibility,
+- you are willing to enforce a small set of manual operating rules yourself.
+
+### Choose ClickUp more confidently when
+
+- milestones repeat in a similar pattern across projects,
+- delayed tasks and unclear ownership are the main source of friction,
+- you want the workspace to surface status problems before a weekly review.
+
 ## The tradeoff most people miss
 
 This is usually not a software taste question. It is a workflow-discipline question.
@@ -69,6 +94,12 @@ This is usually not a software taste question. It is a workflow-discipline quest
 - Choose **ClickUp** when your main risk is execution drift and you want the system to impose more structure by default.
 
 If you choose the stricter tool before your workflow is mature enough to justify it, you may create unnecessary admin. If you choose the looser tool without operating rules, you may create hidden chaos.
+
+## A practical edge-case check
+
+- If you collaborate with a VA who handles recurring admin, ClickUp often becomes more useful because explicit ownership matters more.
+- If you are still refining your offer and client delivery shape every month, Notion often buys more breathing room.
+- If you already use one of these tools and the workflow is working, switching may be lower leverage than improving handoffs and templates inside the current tool.
 
 ## Recommendation boundaries
 

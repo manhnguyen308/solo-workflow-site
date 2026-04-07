@@ -86,11 +86,25 @@ If any answer below is "no," do not start delivery yet:
 - Communication rules stay implicit until the first delay or missed approval.
 - Billing terms exist in the contract but are absent from the live project record.
 
+## Edge cases to handle intentionally
+
+- If the client has multiple approvers, name the final approver before kickoff rather than discovering it during delivery.
+- If client assets will arrive in waves, define which missing items block work and which do not.
+- If the project starts with a workshop or strategy call, decide whether that event itself counts as kickoff or only as pre-delivery alignment.
+
 ## Immediate next action after completion
 
 - Create the first live milestone in your system of record.
 - Send the kickoff summary with owners, dates, and update cadence.
 - Queue the first billing trigger if a deposit or kickoff invoice applies.
+
+## Completion standard
+
+Treat onboarding as complete only when:
+- scope and exclusions are visible in one place,
+- first milestone and owner are active in the system,
+- communication and approval rules are explicit,
+- required access and assets are either collected or clearly flagged as blockers.
 
 ## Use this checklist with
 

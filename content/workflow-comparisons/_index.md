@@ -16,6 +16,14 @@ These pages are designed to narrow a decision, not extend browsing. If you leave
 - Follow the recommended next page immediately after you decide.
 - Avoid using comparison pages as a substitute for mapping your workflow first.
 
+## What this hub is best for
+
+- system-of-record decisions,
+- delivery workspace decisions,
+- moments when two plausible options keep pulling your workflow in different directions.
+
+If you are still asking "what is broken in my process?", this is the wrong hub to start with.
+
 ## Start with the decision you are actually making
 
 1. Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when you are deciding where active client operations should live.
@@ -37,3 +45,18 @@ These pages are designed to narrow a decision, not extend browsing. If you leave
 - Start with the workflow model first if the sequence is still unclear: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Move into a blueprint if the decision changes your whole stack shape: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 - Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) when the comparison outcome needs a concrete operating next step.
+
+## Decision pattern to follow
+
+1. Name the bottleneck in plain language.
+2. Pick the comparison that matches that bottleneck.
+3. Make the smallest decision that removes the ambiguity.
+4. Move immediately into the linked workflow, blueprint, or checklist page so the decision changes real operations.
+
+## What strong comparison pages on this site should include
+
+- a clear statement of the real decision being made,
+- decision criteria tied to workflow outcomes,
+- common failure modes and edge cases,
+- recommendation boundaries,
+- obvious next-step links after the choice is made.

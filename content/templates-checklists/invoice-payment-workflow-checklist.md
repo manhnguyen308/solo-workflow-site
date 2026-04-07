@@ -33,11 +33,15 @@ If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff 
 - Confirm invoice amount matches contract scope.
 - Confirm due date and payment instructions are present.
 
+Practical rule: if you cannot point to the event that triggered the invoice, you are already one step behind. Tie billing to a visible workflow event, not a vague sense that "it is probably time."
+
 ## Phase 3: Sending and tracking
 
 - Send invoice from one consistent system.
 - Log send date and due date immediately.
 - Add reminder dates at +3 days and +7 days after due date.
+
+If you use a separate billing app, mirror payment state back to the record you check during delivery reviews so overdue invoices do not become invisible.
 
 ## Phase 4: Follow-up rhythm
 
@@ -53,12 +57,36 @@ Keep follow-up professional and structured, not emotional.
 - Reconcile payment to milestone and project record.
 - Confirm whether next invoice trigger is scheduled.
 
+## Short reminder copy pattern
+
+Use a simple structure for payment follow-up:
+- what invoice is outstanding,
+- the original due date,
+- payment link or method,
+- request for status confirmation if payment timing changed.
+
+The goal is clarity, not pressure in the first reminder.
+
 ## Common payment workflow failures
 
 - Invoices sent without documented milestone completion.
 - Payment terms not confirmed before kickoff.
 - No reminder cadence (manual memory-based follow-up).
 - Inconsistent records between project and billing tools.
+
+## Edge cases to account for
+
+- If the client requires PO numbers or internal approval before payment, collect that before the invoice is triggered.
+- If part of the project is paused by the client, document whether billing pauses too or continues based on the contract.
+- If the client approves work informally in chat, log the approval in your system of record before invoicing.
+
+## Completion standard
+
+This checklist is complete only when:
+- invoice trigger is documented,
+- invoice status is visible,
+- follow-up dates exist,
+- the next billing event is already clear.
 
 ## Related implementation pages
 
