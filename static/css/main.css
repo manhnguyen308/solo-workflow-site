@@ -1617,7 +1617,8 @@ body {
   background: linear-gradient(180deg, #f0fdfa, #ccfbf1);
 }
 
-.homepage-resource-card-glossary .homepage-resource-icon {
+.homepage-resource-card-glossary .homepage-resource-icon,
+.homepage-resource-card-faq .homepage-resource-icon {
   color: #475569;
   background: linear-gradient(180deg, #f8fafc, #e2e8f0);
 }
