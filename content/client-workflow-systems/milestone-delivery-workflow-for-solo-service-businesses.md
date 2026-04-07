@@ -2,8 +2,8 @@
 title = "Milestone Delivery Workflow for Solo Service Businesses"
 description = "A milestone delivery workflow for solo service businesses that need clearer execution control, review rules, and approval-ready handoffs during active work."
 summary = "Use this guide to run milestone-based delivery with clearer status, dependencies, QA, approvals, and client handoff control."
-feature_image = "/images/features/workflows/workflow-automation-basics.webp"
-feature_image_alt = "Editorial workflow illustration representing milestone-based delivery, status visibility, and handoff control."
+feature_image = "/images/features/workflows/milestone-delivery-workflow.svg"
+feature_image_alt = "Editorial workflow illustration representing milestone states, QA, and approval-ready client handoff."
 draft = false
 date = 2026-04-07T00:00:00Z
 category = "client-workflow-systems"
@@ -39,6 +39,14 @@ Each milestone should make five things obvious:
 
 If those conditions are vague, the milestone becomes a bundle of tasks instead of a real control point.
 
+## What this page should settle
+
+This page should help you decide:
+- how small or large a milestone should be,
+- which status labels are useful during live work,
+- when a milestone is ready for client review,
+- what outcome closes the milestone cleanly.
+
 ## Step 1: Define the milestone as an operating unit
 
 For each milestone, name:
@@ -51,11 +59,22 @@ For each milestone, name:
 
 This should be visible in the system of record before serious execution begins.
 
+If a milestone cannot be described in one short sentence with a clear acceptance point, it is probably too broad. Split it before it starts absorbing hidden work.
+
 ## Step 2: Track progress against deliverable state, not just tasks
 
 Tasks matter, but milestone status should answer a higher-level question: is the deliverable on track, at risk, blocked, in review, or complete?
 
 That framing keeps the delivery workflow useful for client updates and billing triggers instead of turning it into an internal checklist only you understand.
+
+Useful default states for solo operators are:
+- on track,
+- at risk,
+- blocked,
+- in review,
+- approved.
+
+Anything more complex should earn its place by removing confusion, not by looking more advanced.
 
 ## Step 3: Separate execution updates from decision requests
 
@@ -81,6 +100,8 @@ Before each review or delivery event:
 
 Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) for the execution layer.
 
+The approval request itself should also be explicit. Do not send work with a vague "let me know what you think" if what you actually need is acceptance, revision notes, or a dependency decision.
+
 ## Step 5: Close the milestone with one visible outcome
 
 Every milestone should end in one of these states:
@@ -90,6 +111,15 @@ Every milestone should end in one of these states:
 - changed via scope process.
 
 Do not leave it in a fuzzy "mostly done" state. That ambiguity is where delivery drift, payment slippage, and awkward client follow-up usually begin.
+
+## Minimum milestone review checklist
+
+Before a milestone moves to client review, confirm:
+- the output is attached or linked,
+- the review question is explicit,
+- the approval owner is named,
+- any open caveat is disclosed,
+- the next billing or next-stage trigger is already known.
 
 ## Practical milestone rhythm
 
@@ -108,6 +138,18 @@ Do not leave it in a fuzzy "mostly done" state. That ambiguity is where delivery
 - QA skipped because the work "looks fine",
 - blocked work still marked as active,
 - completed work not tied to the next invoice or next milestone.
+
+## When to reset or split a milestone
+
+Reset the milestone state when:
+- new client feedback materially changes the expected output,
+- internal rework means the previous QA pass is no longer valid,
+- a missing dependency prevents the original scope from finishing cleanly.
+
+Split the milestone when:
+- one part is ready for review and another part is still exploratory,
+- the client needs to approve a subset before the rest can proceed,
+- billing is tied to one completion event but the work now contains two.
 
 ## Edge cases
 
@@ -130,3 +172,5 @@ This workflow is working when:
 - QA happens before client handoff,
 - blocked work is identified early,
 - each completed milestone creates a clean next action for billing or the next stage.
+
+If milestone control is still weak because the project never started cleanly, go back to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/). If delivery is stable and the next friction point is cash collection, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).

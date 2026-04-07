@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>FAQ on SoloOpsGuide</title><link>/faq/</link><description>Recent content in FAQ on SoloOpsGuide</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="/faq/index.xml" rel="self" type="application/rss+xml"/><item><title>Reviewing and Maintaining a Solo Service Workflow System FAQ</title><link>/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/</link><pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate><guid>/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/</guid><description>Use this FAQ to review and maintain a solo service workflow system without overreacting, over-tooling, or letting process drift build quietly.</description></item><item><title>Solo Service Workflow Stack FAQ</title><link>/faq/faq-setting-up-a-solo-service-workflow-stack/</link><pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate><guid>/faq/faq-setting-up-a-solo-service-workflow-stack/</guid><description>Use this FAQ to resolve common workflow-stack setup questions quickly, then move to the deeper implementation page that matches your bottleneck.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FAQ on SoloOpsGuide</title>
+    <link>/faq/</link>
+    <description>Recent content in FAQ on SoloOpsGuide</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/faq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Reviewing and Maintaining a Solo Service Workflow System FAQ</title>
+      <link>/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/</link>
+      <pubDate>Tue, 07 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/</guid>
+      <description>Use this FAQ to review and maintain a solo service workflow system without overreacting, over-tooling, or letting process drift build quietly.</description>
+    </item>
+    <item>
+      <title>Solo Service Workflow Stack FAQ</title>
+      <link>/faq/faq-setting-up-a-solo-service-workflow-stack/</link>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>/faq/faq-setting-up-a-solo-service-workflow-stack/</guid>
+      <description>Use this FAQ to resolve common workflow-stack setup questions quickly, then move to the deeper implementation page that matches your bottleneck.</description>
+    </item>
+  </channel>
+</rss>

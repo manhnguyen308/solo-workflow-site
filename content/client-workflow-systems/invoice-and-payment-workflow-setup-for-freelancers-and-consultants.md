@@ -2,8 +2,8 @@
 title = "Invoice and Payment Workflow Setup for Freelancers and Consultants"
 description = "An invoice and payment workflow for freelancers and consultants who need clearer billing triggers, follow-up rules, and payment visibility after delivery."
 summary = "Use this guide to connect invoices to milestones, keep payment status visible, and reduce cash-flow friction with clearer billing operations."
-feature_image = "/images/features/templates/invoice-payment-checklist.webp"
-feature_image_alt = "Editorial workflow illustration representing milestone-based invoicing, payment follow-up, and visible billing status."
+feature_image = "/images/features/workflows/invoice-payment-workflow.svg"
+feature_image_alt = "Editorial workflow illustration representing milestone billing, payment status, and reminder cadence."
 draft = false
 date = 2026-04-07T00:00:00Z
 category = "client-workflow-systems"
@@ -38,6 +38,14 @@ It should make four things visible:
 
 If the answer to any of those depends on memory, the workflow is still weak.
 
+## What this page should settle
+
+By the end of this page, you should be able to answer:
+- exactly what event triggers each invoice,
+- where you will see billing status during the week,
+- how late-payment follow-up will happen,
+- what closes the loop after payment arrives.
+
 ## Step 1: Define invoice triggers before delivery gets busy
 
 Tie billing to explicit events such as:
@@ -47,6 +55,8 @@ Tie billing to explicit events such as:
 - retainer renewal date.
 
 Do not use vague rules like "send it around then" or "invoice once the work is basically done." Those are not workflow triggers. They are reminders to improvise later.
+
+For fixed-fee projects, the cleanest triggers are usually deposit, milestone approval, and final handoff. For recurring retainers, use a named renewal date and decide in advance what happens if work is paused mid-cycle.
 
 ## Step 2: Keep billing status visible in the operating system
 
@@ -58,6 +68,8 @@ Even if you use a separate invoicing tool, the main system should still make the
 - paid.
 
 This is what keeps billing from becoming a side process that disappears during delivery pressure.
+
+If your weekly review cannot tell you which invoices are due soon or overdue, the billing layer is not really integrated yet.
 
 ## Step 3: Align invoice timing with milestone reality
 
@@ -71,6 +83,8 @@ That means:
 
 For the milestone side of the process, use [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 
+This is especially important when approval happens informally. A quick "looks good" in chat can still trigger billing, but only if you log that acceptance in the same record you trust for project status.
+
 ## Step 4: Standardize the follow-up rhythm
 
 Use a consistent cadence:
@@ -79,6 +93,14 @@ Use a consistent cadence:
 3. escalation only when contract terms support it.
 
 Consistency matters more than clever wording. The real system improvement is that payment follow-up no longer depends on memory or emotional timing.
+
+## Example reminder cadence
+
+| Timing | Tone | Goal |
+|---|---|---|
+| 1 to 3 days after due date | light reminder | confirm the invoice is in process |
+| 5 to 7 days after due date | firmer follow-up | surface blocker, procurement step, or missed invoice |
+| Later escalation under contract terms | formal boundary | protect cash flow and pause work if required |
 
 ## Step 5: Close the payment loop back into operations
 
@@ -89,6 +111,15 @@ When payment arrives:
 - remove any follow-up reminder noise from the system.
 
 This is what turns invoicing into a real workflow instead of a one-off admin task.
+
+## Minimum weekly billing review
+
+Review these items once a week:
+- invoices waiting on a trigger,
+- invoices already sent but nearing due date,
+- overdue items and latest follow-up date,
+- clients whose delivery status and billing status no longer match,
+- upcoming milestones that will create the next invoice event.
 
 ## Suggested billing workflow map
 
@@ -107,11 +138,12 @@ This is what turns invoicing into a real workflow instead of a one-off admin tas
 - follow-up is delayed because no reminder cadence exists,
 - paid invoices are not reconciled back into the main system.
 
-## Edge cases
+## Edge cases worth deciding up front
 
-- If procurement or finance approval slows payment, collect those requirements before the invoice event.
-- If the project pauses, define whether billing pauses too or whether a payment event remains valid.
-- If the client approves informally in chat, log that approval in the operating record before triggering the invoice.
+- For deposits, define whether kickoff waits for payment or just for the invoice to be sent.
+- For partial approvals, decide whether billing follows the approved portion or waits for the full milestone.
+- For paused projects, decide whether an already-earned invoice still proceeds or is deferred under a specific rule.
+- For procurement-heavy clients, collect PO, finance contact, and submission requirements before the trigger event.
 
 ## Use this workflow with
 
@@ -128,3 +160,5 @@ This workflow is working when:
 - follow-up happens on a defined rhythm,
 - paid invoices are reconciled back into the main record,
 - cash-flow control no longer depends on remembering who to chase.
+
+If the real issue is still agreement ambiguity, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). If billing is clear but the broader stack feels too heavy, continue to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).

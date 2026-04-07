@@ -1708,11 +1708,14 @@ body {
 
 .homepage-resource-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.25rem;
 }
 
 .homepage-resource-card {
+  display: grid;
+  align-content: start;
+  min-height: 100%;
   padding: 1.5rem;
   text-decoration: none;
   transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
@@ -1735,10 +1738,11 @@ body {
 .homepage-resource-card p {
   margin-bottom: 1rem;
   font-size: 13px;
-  line-height: 1.55;
+  line-height: 1.62;
 }
 
 .homepage-resource-card span:last-child {
+  margin-top: auto;
   color: #0f766e;
   font-size: 13px;
   font-weight: 500;
@@ -2484,7 +2488,7 @@ body {
 }
 
 .article-header-main h1 {
-  max-width: none;
+  max-width: 16ch;
   font-size: clamp(2.15rem, 3.9vw, 2.95rem);
   line-height: 1.1;
   letter-spacing: -0.04em;
@@ -2557,6 +2561,10 @@ body[data-page-trust="true"] .section-hero-copy .hero-summary {
 
 .article-aside-card-soft {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(248, 250, 252, 1));
+}
+
+.article-aside-card-muted {
+  background: #f8fafc;
 }
 
 .reading-layout {
