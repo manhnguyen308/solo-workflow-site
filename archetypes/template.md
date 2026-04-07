@@ -9,6 +9,7 @@ tags = []
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -24,3 +25,5 @@ featured = false
 ## Completion standard
 
 ## Related implementation guides
+
+## Internal linking plan

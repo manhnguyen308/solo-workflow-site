@@ -9,6 +9,7 @@ tags = []
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -22,3 +23,5 @@ featured = false
 ## Practical example
 
 ## Related pages
+
+## Internal linking plan

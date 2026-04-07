@@ -9,6 +9,7 @@ tags = []
 page_type = "faq"
 search_intent = "problem-solving"
 page_role = "support"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -20,3 +21,5 @@ featured = false
 ## Recommendation boundary
 
 ## Related resources
+
+## Internal linking plan

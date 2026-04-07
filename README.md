@@ -118,6 +118,7 @@ Key launch docs:
 - `DAY12_VERIFICATION_BLOCKED.md`
 - `GO_LIVE_CHECKLIST.md`
 - `MEASUREMENT_OPERATIONS.md`
+- `CONTENT_OPERATIONS.md`
 
 ## Measurement and Search Console
 
@@ -145,6 +146,8 @@ hugo new --kind faq faq/new-question.md
 ```
 
 Then fill the required front matter and keep the page aligned to the workflow-first editorial model.
+
+Ongoing publishing, backlog, refresh rules, and cluster priorities live in `CONTENT_OPERATIONS.md`.
 
 ## Publishing conventions
 

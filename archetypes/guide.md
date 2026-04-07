@@ -9,6 +9,7 @@ tags = []
 page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -24,3 +25,5 @@ featured = false
 ## Common mistakes or edge cases
 
 ## Recommended next step
+
+## Internal linking plan

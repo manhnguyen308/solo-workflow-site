@@ -9,6 +9,7 @@ tags = []
 page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -28,3 +29,5 @@ featured = false
 ## Implementation notes
 
 ## Next pages
+
+## Internal linking plan

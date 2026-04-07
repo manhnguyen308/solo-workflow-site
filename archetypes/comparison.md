@@ -9,6 +9,7 @@ tags = []
 page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
+hub_priority = 0
 related = []
 featured = false
 +++
@@ -24,3 +25,5 @@ featured = false
 ## Which option fits which workflow
 
 ## Recommended next step
+
+## Internal linking plan
