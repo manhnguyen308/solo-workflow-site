@@ -1,0 +1,90 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <path d="M86 86H1514" stroke="url(#rail)" stroke-width="2" stroke-dasharray="7 18" opacity=".32"/>
+  <path d="M158 232H1442" stroke="#D6E7F6" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+  <g opacity=".55">
+    <circle cx="224" cy="232" r="24" fill="#F7A928"/>
+    <circle cx="466" cy="232" r="24" fill="#F7A928"/>
+    <circle cx="708" cy="232" r="24" fill="#F7A928"/>
+    <circle cx="950" cy="232" r="24" fill="#F7A928"/>
+    <circle cx="1192" cy="232" r="24" fill="#F7A928"/>
+    <circle cx="1378" cy="232" r="24" fill="#F7A928"/>
+  </g>
+  <rect x="116" y="144" width="216" height="176" rx="26" fill="#F7F9FC"/>
+  <rect x="358" y="144" width="216" height="176" rx="26" fill="#F7F9FC"/>
+  <rect x="600" y="144" width="216" height="176" rx="26" fill="#F7F9FC"/>
+  <rect x="842" y="144" width="216" height="176" rx="26" fill="#F7F9FC"/>
+  <rect x="1084" y="144" width="216" height="176" rx="26" fill="#F7F9FC"/>
+  <rect x="1288" y="144" width="196" height="176" rx="26" fill="#F7F9FC"/>
+
+  <text x="152" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">closeout</text>
+  <text x="394" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">signoff</text>
+  <text x="636" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">invoice</text>
+  <text x="878" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">record</text>
+  <text x="1120" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">testimonial</text>
+  <text x="1324" y="186" fill="#0F2E4F" font-family="Georgia, serif" font-size="24">archive</text>
+
+  <rect x="152" y="214" width="140" height="16" rx="8" fill="#F7C566"/>
+  <rect x="152" y="246" width="112" height="12" rx="6" fill="#C8D5E5"/>
+  <rect x="152" y="270" width="128" height="12" rx="6" fill="#C8D5E5"/>
+
+  <rect x="394" y="214" width="86" height="36" rx="18" fill="#9EBDF2"/>
+  <rect x="492" y="214" width="42" height="36" rx="18" fill="#F7C566"/>
+  <path d="M412 274H520" stroke="#C8D5E5" stroke-width="10" stroke-linecap="round"/>
+
+  <rect x="636" y="214" width="142" height="20" rx="10" fill="#F7C566"/>
+  <rect x="636" y="248" width="92" height="44" rx="14" fill="#9EBDF2"/>
+  <rect x="734" y="248" width="44" height="44" rx="14" fill="#E1EAF4"/>
+
+  <rect x="878" y="214" width="138" height="18" rx="9" fill="#9EBDF2"/>
+  <rect x="878" y="246" width="138" height="12" rx="6" fill="#C8D5E5"/>
+  <rect x="878" y="270" width="118" height="12" rx="6" fill="#C8D5E5"/>
+  <rect x="972" y="210" width="54" height="54" rx="14" fill="#F7C566"/>
+  <path d="M986 236L998 248L1018 224" stroke="#0F2E4F" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1120" y="214" width="88" height="18" rx="9" fill="#F7C566"/>
+  <rect x="1120" y="246" width="120" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="1120" y="272" width="100" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="1236" y="214" width="28" height="72" rx="14" fill="#9EBDF2"/>
+
+  <rect x="1324" y="214" width="116" height="16" rx="8" fill="#9EBDF2"/>
+  <rect x="1324" y="246" width="92" height="12" rx="6" fill="#C8D5E5"/>
+  <rect x="1324" y="270" width="128" height="12" rx="6" fill="#C8D5E5"/>
+
+  <rect x="144" y="404" width="456" height="286" rx="30" fill="#F7F9FC" opacity=".98"/>
+  <text x="184" y="454" fill="#0F2E4F" font-family="Georgia, serif" font-size="34">final closeout record</text>
+  <rect x="184" y="486" width="168" height="18" rx="9" fill="#F7C566"/>
+  <rect x="184" y="522" width="368" height="14" rx="7" fill="#D2DCE8"/>
+  <rect x="184" y="550" width="334" height="14" rx="7" fill="#D2DCE8"/>
+  <rect x="184" y="584" width="166" height="42" rx="14" fill="#9EBDF2"/>
+  <text x="208" y="611" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="22">signoff saved</text>
+  <rect x="370" y="584" width="182" height="42" rx="14" fill="#E6EEF7"/>
+  <text x="397" y="611" fill="#46627E" font-family="Arial, sans-serif" font-size="22">billing state clear</text>
+
+  <rect x="664" y="404" width="792" height="286" rx="30" fill="#153F68" opacity=".9"/>
+  <text x="710" y="454" fill="#F8FBFF" font-family="Georgia, serif" font-size="34">archive or continuation?</text>
+  <rect x="710" y="494" width="214" height="142" rx="24" fill="#F7F9FC"/>
+  <rect x="952" y="494" width="214" height="142" rx="24" fill="#F7F9FC"/>
+  <rect x="1194" y="494" width="214" height="142" rx="24" fill="#F7F9FC"/>
+  <text x="746" y="536" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">archive</text>
+  <text x="988" y="536" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">handoff</text>
+  <text x="1230" y="536" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">next phase</text>
+  <rect x="746" y="558" width="126" height="12" rx="6" fill="#D2DCE8"/>
+  <rect x="746" y="584" width="146" height="12" rx="6" fill="#D2DCE8"/>
+  <rect x="988" y="558" width="126" height="12" rx="6" fill="#D2DCE8"/>
+  <rect x="988" y="584" width="146" height="12" rx="6" fill="#D2DCE8"/>
+  <rect x="1230" y="558" width="126" height="12" rx="6" fill="#D2DCE8"/>
+  <rect x="1230" y="584" width="146" height="12" rx="6" fill="#D2DCE8"/>
+
+  <defs>
+    <linearGradient id="bg" x1="98" y1="58" x2="1516" y2="844" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0E8C99"/>
+      <stop offset="1" stop-color="#194B78"/>
+    </linearGradient>
+    <linearGradient id="rail" x1="86" y1="86" x2="1514" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".08"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".08"/>
+    </linearGradient>
+  </defs>
+</svg>

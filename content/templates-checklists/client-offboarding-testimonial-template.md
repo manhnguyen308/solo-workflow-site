@@ -11,13 +11,13 @@ tags = ["offboarding", "testimonial", "retention", "template"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = false
 +++
 
 Offboarding is not the end of value creation. Done well, it protects reputation, improves repeatability, and increases referral potential.
 
-Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself. Until a dedicated offboarding workflow exists, this page should stay clearly secondary to the full lifecycle workflow.
+Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself. The broader operating sequence now lives on [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/), and this page should stay clearly secondary to that workflow.
 
 The practical goal is simple: close the engagement cleanly enough that the project can be referenced, billed, archived, and followed up without loose ends.
 
@@ -116,6 +116,7 @@ Offboarding is complete only when:
 ## Use this with
 
 - End-to-end system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Offboarding workflow: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 - Final handoff quality: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
 - Payment closeout discipline: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 

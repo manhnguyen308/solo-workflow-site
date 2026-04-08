@@ -21,6 +21,8 @@ Treat the pages here as support pages, not the main destination for broad workfl
 
 - [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 - [FAQ: Reviewing and Maintaining a Solo Service Workflow System](/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/)
+- [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
+- [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/)
 
 If that page does not resolve the blocker cleanly, the right move is usually not to keep browsing FAQ content. It is to jump into the strongest related cornerstone page immediately.
 
@@ -36,6 +38,8 @@ If that page does not resolve the blocker cleanly, the right move is usually not
 - CRM-first vs PM-first
 - intake, handoff, onboarding, and billing setup
 - migration and automation timing
+- stalled review and client silence
+- late inputs, missing access, and blocked dependencies
 
 ## Where to start by blocker type
 

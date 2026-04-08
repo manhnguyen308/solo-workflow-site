@@ -12,7 +12,7 @@ page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
 hub_priority = 1
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = true
 +++
 
@@ -116,7 +116,7 @@ Implementation asset: [Invoice and Payment Workflow Checklist for Service Busine
 **Inputs:** delivered scope, outcomes summary, client feedback.  
 **Output:** testimonial request, closeout doc, and next-step opportunity.
 
-Until a dedicated offboarding workflow page exists, keep this stage tied to the full lifecycle here rather than treating the template as the main entry page.
+Workflow guide: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
 
 Implementation asset: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/).
 
@@ -160,6 +160,7 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 4. Activate the signed project cleanly: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).  
 5. Run delivery milestone by milestone: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 6. Keep billing tied to real delivery events: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
-7. Resolve narrow blockers only after the lifecycle is clear: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
+7. Close the engagement cleanly: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+8. Resolve narrow blockers only after the lifecycle is clear: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
 
 If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

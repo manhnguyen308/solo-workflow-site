@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 6
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
 featured = false
 +++
 
@@ -151,6 +151,7 @@ Review these items once a week:
 - contract and commercial setup: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
 - execution asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 - weekly review rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
+- closeout after final payment state is clear: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
 ## Completion standard
 
@@ -161,4 +162,4 @@ This workflow is working when:
 - paid invoices are reconciled back into the main record,
 - cash-flow control no longer depends on remembering who to chase.
 
-If the real issue is still agreement ambiguity, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). If billing is clear but the broader stack feels too heavy, continue to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
+If the real issue is still agreement ambiguity, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). If billing is clear and the engagement is ending, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/). If billing is clear but the broader stack feels too heavy, continue to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).

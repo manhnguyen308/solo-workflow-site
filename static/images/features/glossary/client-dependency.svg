@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <rect x="160" y="176" width="510" height="548" rx="34" fill="#F7F9FC" opacity=".97"/>
+  <text x="222" y="256" fill="#0F2E4F" font-family="Georgia, serif" font-size="48">client dependency</text>
+  <rect x="222" y="304" width="202" height="24" rx="12" fill="#F7C566"/>
+  <rect x="222" y="366" width="388" height="164" rx="28" fill="#EAF1F8"/>
+  <text x="270" y="428" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="30">missing input</text>
+  <rect x="270" y="470" width="158" height="16" rx="8" fill="#9EBDF2"/>
+  <rect x="270" y="502" width="224" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="270" y="530" width="192" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="222" y="572" width="246" height="56" rx="18" fill="#153F68"/>
+  <text x="264" y="608" fill="#F7F9FC" font-family="Arial, sans-serif" font-size="26">waiting on client</text>
+
+  <path d="M718 452H906" stroke="#F7C566" stroke-width="14" stroke-linecap="round"/>
+  <path d="M878 416L932 452L878 488" stroke="#F7C566" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="980" y="228" width="458" height="212" rx="30" fill="#F7F9FC" opacity=".97"/>
+  <text x="1036" y="292" fill="#0F2E4F" font-family="Georgia, serif" font-size="36">blocked stage</text>
+  <rect x="1036" y="330" width="164" height="16" rx="8" fill="#9EBDF2"/>
+  <rect x="1036" y="364" width="324" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="1036" y="392" width="284" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="980" y="476" width="458" height="248" rx="30" fill="#173E68" opacity=".92"/>
+  <text x="1036" y="540" fill="#F7F9FC" font-family="Georgia, serif" font-size="36">timeline impact</text>
+  <rect x="1036" y="580" width="136" height="48" rx="16" fill="#F7C566"/>
+  <text x="1070" y="611" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">at risk</text>
+  <rect x="1192" y="580" width="184" height="48" rx="16" fill="#9EBDF2"/>
+  <text x="1224" y="611" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">follow-up</text>
+  <rect x="1036" y="650" width="298" height="14" rx="7" fill="#C8D5E5"/>
+  <rect x="1036" y="678" width="244" height="14" rx="7" fill="#C8D5E5"/>
+
+  <defs>
+    <linearGradient id="bg" x1="110" y1="96" x2="1492" y2="808" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F8A94"/>
+      <stop offset="1" stop-color="#1A436E"/>
+    </linearGradient>
+  </defs>
+</svg>

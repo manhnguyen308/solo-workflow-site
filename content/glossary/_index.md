@@ -20,6 +20,8 @@ This section exists to make the rest of the site more usable. The right outcome 
 - If the main question is "where should active client truth live?", start with [System of Record](/glossary/system-of-record/).
 - If the main question is "what exactly should transfer between stages?", start with [Workflow Handoff](/glossary/workflow-handoff/).
 - If the main question is "who can actually move this forward?", start with [Approval Owner](/glossary/approval-owner/).
+- If the main question is "who owns the immediate next move?", start with [Next Action Owner](/glossary/next-action-owner/).
+- If the main question is "what exactly is the client holding up?", start with [Client Dependency](/glossary/client-dependency/).
 - If the real problem is larger than a definition, jump straight to the linked workflow or comparison page instead of staying in the glossary.
 
 ## Start with the terms that affect system design
@@ -27,12 +29,16 @@ This section exists to make the rest of the site more usable. The right outcome 
 - [Workflow Handoff](/glossary/workflow-handoff/)
 - [System of Record](/glossary/system-of-record/)
 - [Approval Owner](/glossary/approval-owner/)
+- [Next Action Owner](/glossary/next-action-owner/)
+- [Client Dependency](/glossary/client-dependency/)
 
 ## Terms that matter most for this site
 
 - [Workflow Handoff](/glossary/workflow-handoff/) clarifies how work should move between lifecycle stages.
 - [System of Record](/glossary/system-of-record/) clarifies where current truth should live inside the stack.
 - [Approval Owner](/glossary/approval-owner/) clarifies who can actually move a deliverable, change request, or milestone forward.
+- [Next Action Owner](/glossary/next-action-owner/) clarifies who owns the immediate next move once a stage is active.
+- [Client Dependency](/glossary/client-dependency/) clarifies what the client still owes before a stage can move cleanly.
 
 ## When to leave the glossary
 
@@ -51,5 +57,7 @@ This section exists to make the rest of the site more usable. The right outcome 
 ## Fast routes from glossary to implementation
 
 - unclear approval path -> [Approval Owner](/glossary/approval-owner/) then [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
+- unclear immediate follow-up -> [Next Action Owner](/glossary/next-action-owner/) then [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - unclear system center -> [System of Record](/glossary/system-of-record/) then [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
 - unclear stage boundary -> [Workflow Handoff](/glossary/workflow-handoff/) then [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- unclear missing input -> [Client Dependency](/glossary/client-dependency/) then [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)

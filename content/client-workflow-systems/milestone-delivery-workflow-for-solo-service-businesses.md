@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -163,6 +163,7 @@ Split the milestone when:
 - setup before delivery: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 - communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - billing handoff: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
+- closeout after final approval: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
 ## Completion standard
 
@@ -173,4 +174,4 @@ This workflow is working when:
 - blocked work is identified early,
 - each completed milestone creates a clean next action for billing or the next stage.
 
-If milestone control is still weak because the project never started cleanly, go back to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/). If delivery is stable and the next friction point is cash collection, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+If milestone control is still weak because the project never started cleanly, go back to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/). If delivery is stable and the next friction point is cash collection, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/). If the final milestone is approved and the open question is how to close the engagement cleanly, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
