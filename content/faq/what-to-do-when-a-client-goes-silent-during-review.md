@@ -79,5 +79,6 @@ If review silence is blocking invoice or closeout, keep that dependency visible 
 ## Where to go next
 
 - If your updates are too vague to support clean follow-up, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the silence is happening during proposal review before signature, go to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the silence is happening at a milestone approval point, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If the project is near the finish line and review silence is blocking closeout, go to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).

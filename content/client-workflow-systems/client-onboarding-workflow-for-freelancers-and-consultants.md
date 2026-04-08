@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -20,7 +20,7 @@ Most onboarding problems are not really kickoff problems. They are handoff probl
 
 Use this workflow to turn a signed agreement into a live, usable delivery setup. The goal is not to send a welcome email. The goal is to make the project operationally ready before the first real delivery pressure hits.
 
-If scope, timeline, or commercial rules are still fuzzy, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. Onboarding should activate the agreement, not clarify what was sold.
+If scope, timeline, or commercial rules are still fuzzy, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the proposal is still under review or revision before signature, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) first. Onboarding should activate the agreement, not clarify what was sold.
 
 ## Who this workflow is for
 
@@ -168,6 +168,7 @@ Those are better handled by [Proposal-to-Contract Handoff Workflow Setup](/workf
 ## Use this workflow with
 
 - agreement handoff: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- proposal review before signature: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
 - execution asset: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - ongoing communication: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - next delivery stage: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)

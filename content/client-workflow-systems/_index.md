@@ -23,13 +23,14 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 1. Start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the whole client path feels loose or reactive.
 2. Open [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) if low-fit leads are entering delivery.
 3. Use [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) if scope and kickoff details keep slipping between sales and execution.
-4. Open [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) if signed projects still start messy.
-5. Open [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) if active delivery feels harder to control than it should.
-6. Open [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) if billing visibility and follow-up keep slipping.
-7. Open [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) if final signoff, closeout, testimonial timing, or archive decisions feel vague.
-8. Open [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) if client communication feels reactive or progress visibility keeps slipping.
-9. Use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when scope changes keep entering delivery informally.
-10. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
+4. Open [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) if proposal comments, revision rounds, or pre-signature approval keep drifting.
+5. Open [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) if signed projects still start messy.
+6. Open [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) if active delivery feels harder to control than it should.
+7. Open [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) if billing visibility and follow-up keep slipping.
+8. Open [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) if final signoff, closeout, testimonial timing, or archive decisions feel vague.
+9. Open [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) if client communication feels reactive or progress visibility keeps slipping.
+10. Use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when scope changes keep entering delivery informally.
+11. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
 
 ## What this section helps you fix
 
@@ -43,6 +44,7 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 - [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) is the anchor page. Use it to map the full sequence before changing tools.
 - [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) is the best page when calendar protection and lead quality are the immediate problem.
 - [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) matters when clients say yes but projects still start fuzzy.
+- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) matters when the proposal is in review, revisions keep drifting, or no one can clearly close approval before kickoff.
 - [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) is the next page when the agreement is clear but kickoff readiness is not.
 - [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) matters when active delivery needs stronger milestone control, QA, and approval clarity.
 - [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) is the billing-stage page when delivery is happening but cash collection still feels reactive.
@@ -60,7 +62,7 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 
 ## Suggested reading paths
 
-- For a messy client lifecycle: anchor workflow -> proposal handoff -> onboarding workflow -> onboarding checklist -> invoice workflow setup -> offboarding workflow.
+- For a messy client lifecycle: anchor workflow -> proposal handoff -> proposal revision and approval -> onboarding workflow -> onboarding checklist -> invoice workflow setup -> offboarding workflow.
 - For a lead-quality problem: intake guide -> CRM vs PM comparison -> full workflow anchor.
 - For repeated delivery friction: anchor workflow -> onboarding workflow -> milestone delivery workflow -> status update workflow -> delivery QA checklist -> weekly operations checklist.
 - For recurring scope drift: proposal handoff -> change request workflow -> client change request template -> invoice workflow.

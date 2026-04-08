@@ -12,13 +12,15 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 3
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
 The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal gets signed, kickoff starts early, and scope disagreements appear in week two. This page is about fixing that pre-kickoff gap before it turns into delivery confusion.
 
 This guide gives you a repeatable pre-kickoff handoff process so the contract reflects execution reality.
+
+Its job is to produce a review-ready proposal and contract package. The actual back-and-forth review loop after the package is sent belongs on [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 
 This page is especially useful when you keep hearing some version of "we thought that was included" after the project starts. In practice, that usually means the handoff from discovery to execution was too informal.
 
@@ -90,6 +92,8 @@ Ask these questions:
 
 If any answer is unclear, revise before signing.
 
+If the proposal is now entering active client review rather than internal cleanup, move into [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) instead of treating review comments as part of handoff prep forever.
+
 ## Handoff packet example
 
 At minimum, the internal packet you carry into onboarding should answer:
@@ -132,6 +136,7 @@ If that is not true yet, keep the handoff manual and visible. Then use [Workflow
 ## Related pages
 
 - Intake foundation: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+- Review loop after handoff: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
 - End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
@@ -144,3 +149,5 @@ Treat the handoff as complete only when:
 - onboarding inputs are ready before kickoff date.
 
 If one item is missing, pause kickoff and close the gap first.
+
+If the package is ready but client review is still active, the next page is [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/). If the proposal is already approved and signed, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).

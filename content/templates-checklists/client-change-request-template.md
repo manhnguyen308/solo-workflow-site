@@ -11,7 +11,7 @@ tags = ["template", "change-request", "scope-control"]
 page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
-related = ["/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/"]
+related = ["/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/"]
 featured = false
 +++
 
@@ -31,7 +31,8 @@ Use it for:
 Do not use it for:
 - minor clarifications already clearly inside scope,
 - vague brainstorming that is not yet a real request,
-- first-time scope definition before the project starts.
+- first-time scope definition before the project starts,
+- pre-signature proposal revisions still being negotiated before approval.
 
 ## What this asset should help prevent
 
@@ -46,7 +47,7 @@ Do not use it for:
 - when a revision changes the original scope materially,
 - when the request affects timeline, effort, or invoice timing.
 
-If the issue is really a weak original scope, revisit [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first.
+If the issue is really a weak original scope, revisit [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the project is still in proposal review before signature, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) instead.
 
 ## Before you use it
 
@@ -133,10 +134,12 @@ This template has done its job when:
 
 - workflow for handling the decision: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
 - contract-stage prevention: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- pre-signature review control: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
 - payment alignment after approval: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 ## What to do next
 
 - If the broader decision path is still weak, go upstream to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 - If repeated requests expose weak original scoping, go upstream to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- If the project is still pre-signature, go upstream to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the approved change affects payment timing, continue to [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).

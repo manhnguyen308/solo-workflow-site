@@ -12,7 +12,7 @@ page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 5
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
 featured = false
 +++
 
@@ -65,12 +65,14 @@ Naming the dependency early protects later stages.
 ## Where this matters most on the site
 
 - [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) because access and asset dependencies often appear in the first week.
+- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) because proposal review can stall on missing stakeholder answers, approvals, or required commercial inputs.
 - [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) because active work often stalls on approval or asset dependencies.
 - [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) because final signoff and handoff can still depend on client action.
 - [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/) when the definition is clear but the response process is not.
 
 ## Recommended next move
 
+- If the dependency is blocking proposal review or signature, go to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the dependency is blocking kickoff, go to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - If it is blocking active work, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If you need the narrow response pattern, go to [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).

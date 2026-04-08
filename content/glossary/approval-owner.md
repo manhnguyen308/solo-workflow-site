@@ -12,7 +12,7 @@ page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 3
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -67,6 +67,7 @@ If any answer is unclear, the workflow still has an ownership gap.
 ## Practical example
 
 - In onboarding, the approval owner might confirm kickoff scope and communication rules.
+- During proposal review, the approval owner might accept the reviewed proposal version or request one more revision round.
 - During delivery, the approval owner might accept a milestone or request revisions.
 - During a scope change, the approval owner might accept the repriced or deferred option.
 
@@ -92,6 +93,7 @@ Use it to remove ambiguity inside those pages, not instead of them.
 ## Where this matters most on the site
 
 - [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) because unclear approval ownership causes fuzzy project starts.
+- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) because proposal review stalls when several people comment but no one can close the decision.
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) because kickoff gets risky when approvers are not named.
 - [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) because new requests need an actual decision-maker.
 - [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) because review asks should name one accountable responder.
@@ -99,6 +101,7 @@ Use it to remove ambiguity inside those pages, not instead of them.
 ## What to do next
 
 - If the ambiguity is happening before kickoff, go to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- If the ambiguity is happening during proposal review itself, go to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the ambiguity is happening in recurring client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - If the ambiguity is happening during scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 - If the ambiguity is happening at milestone review, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
