@@ -24,6 +24,7 @@ Think of this hub as the execution layer of the site. If another page tells you 
 4. Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) when payment collection depends too much on memory.
 5. Use [Client Change Request Template](/templates/client-change-request-template/) when a request may change scope, timing, or fee.
 6. Use [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/) when closing a project and preserving future referral value.
+7. Use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) when the stack is scattered and you need to document what stays, what moves, and what gets retired before changing tools.
 
 ## Ongoing operating rhythm
 
@@ -34,6 +35,7 @@ Think of this hub as the execution layer of the site. If another page tells you 
 - [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) is the strongest first asset because early delivery friction usually begins there.
 - [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) is the recurring maintenance loop that keeps the rest of the system visible.
 - [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) matters when operational slippage turns into cash-flow slippage.
+- [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) is the execution asset for blueprint cleanup work once a stack decision has already been made.
 
 ## What templates should and should not do
 
@@ -56,6 +58,7 @@ The strongest pages in this hub usually include:
 - For delivery consistency: workflow anchor -> milestone delivery workflow -> weekly client status update template -> delivery QA checklist -> offboarding template.
 - For payment control: proposal handoff -> invoice workflow setup -> invoice workflow checklist -> weekly operations checklist.
 - For scope control: proposal handoff -> client change request template -> invoice workflow setup.
+- For stack cleanup: all-in-one vs specialized stack -> lean solo blueprint -> stack audit worksheet -> migration guide -> weekly operations checklist.
 
 ## If the asset feels premature
 

@@ -13,7 +13,7 @@ search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 2
 best_next = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
-related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -198,6 +198,7 @@ Those are downstream decisions. This page only decides the broader stack shape.
 
 - If you stay consolidated, go to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) or [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 - If you need to clean up a fragmented multi-tool setup, go to [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+- If you need to document what stays, what moves, and what gets retired before the cleanup starts, go to [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
 - If the remaining question is where active client truth should live, go to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 - If you have already decided to stay PM-first and only need the delivery workspace choice, go to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 
