@@ -13,7 +13,7 @@ search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 2
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = false
 +++
 
@@ -29,6 +29,8 @@ Use this page when:
 - you need to choose between flexibility and stricter execution control.
 
 Do not use this page when your real question is where active client truth should live at all. That is still the upstream CRM-vs-PM decision.
+
+Do not use it when the bigger question is whether the business should stay inside one main workspace or split across a specialized stack. That broader decision belongs on [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
 
 ## Quick context
 

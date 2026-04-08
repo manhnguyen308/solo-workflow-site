@@ -12,6 +12,7 @@ page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
 hub_priority = 3
+best_next = ["/templates/weekly-client-operations-checklist-solo-business/"]
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++
@@ -23,6 +24,8 @@ This page is for cleanup projects, not fresh starts. If you already have live cl
 Use it after the lean-stack blueprint when the problem is no longer choosing a model in theory but consolidating a scattered live system into one authoritative operating path.
 
 If the open question is whether the business should stay consolidated at all or intentionally split functions across a specialized stack, use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) before committing to a migration direction.
+
+This page should not replace the blueprint. It assumes the target shape is already clear enough, and its job is to help you move the live system there without damaging active work.
 
 ## Migration outcomes
 
@@ -139,6 +142,12 @@ Prioritize visibility and handoff clarity over historical completeness. The VA n
 ### Scenario C: already using several tools with duplicate status fields
 
 Choose one authoritative field for current status and retire the others aggressively. Leaving both active almost always recreates the same ambiguity.
+
+## What to do after migration
+
+- Run [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) for at least a month so the new system becomes operational instead of cosmetic.
+- Return to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if the cleanup exposed a weaker stack model than expected.
+- Use [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) only if new purchase pressure appears after consolidation.
 
 ## Common migration mistakes
 

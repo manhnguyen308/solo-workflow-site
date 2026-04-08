@@ -13,7 +13,7 @@ search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 1
 best_next = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/glossary/system-of-record/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/glossary/system-of-record/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++
 
@@ -24,6 +24,8 @@ If your process fails because client context gets lost between lead, delivery, a
 For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle.
 
 Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent. Pages like Notion vs ClickUp or Calendly vs built-in booking only make sense after this broader operating-system question is clear enough.
+
+Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons.
 
 ## Who this page is really for
 

@@ -18,6 +18,14 @@ If the question is still "what should my baseline stack look like?", the lean so
 - Use comparison pages when one system choice is blocking you.
 - Return to the workflow hub if the real issue turns out to be stage design rather than tool structure.
 
+## Comparison to blueprint path
+
+- Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the system center is still unclear.
+- Use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) when the center is clearer but stack shape still is not.
+- Move into [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) once you are ready to implement the baseline model.
+- Move into [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) when the open issue is spend discipline rather than stack shape.
+- Move into [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the model is clear but the live system is messy.
+
 ## What this hub should help you answer
 
 - What is the smallest stack that can run the business reliably?
@@ -60,8 +68,8 @@ If the question is still "what should my baseline stack look like?", the lean so
 
 ## Suggested reading paths
 
-- For first-stack setup: overbuying guide -> lean solo blueprint -> CRM vs PM comparison -> intake guide -> weekly operations checklist.
-- For a cleanup project: migration guide -> lean solo blueprint -> invoice workflow setup -> weekly operations checklist.
+- For first-stack setup: CRM vs PM comparison -> all-in-one vs specialized stack -> lean solo blueprint -> overbuying guide -> weekly operations checklist.
+- For a cleanup project: all-in-one vs specialized stack -> lean solo blueprint -> migration guide -> weekly operations checklist.
 - For a two-person operating model: consultant + VA blueprint -> proposal handoff -> weekly operations checklist.
 
 ## What a strong blueprint page should include
