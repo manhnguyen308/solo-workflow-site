@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "problem-solving"
 page_role = "supporting-guide"
 hub_priority = 3
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++
 
@@ -21,6 +21,8 @@ If your client operations are spread across chat threads, spreadsheets, notes, a
 This page is for cleanup projects, not fresh starts. If you already have live clients and too many places where status can drift, the goal is to reduce operational ambiguity without creating service disruption during the move.
 
 Use it after the lean-stack blueprint when the problem is no longer choosing a model in theory but consolidating a scattered live system into one authoritative operating path.
+
+If the open question is whether the business should stay consolidated at all or intentionally split functions across a specialized stack, use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) before committing to a migration direction.
 
 ## Migration outcomes
 

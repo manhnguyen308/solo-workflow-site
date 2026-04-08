@@ -27,14 +27,16 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 ## Start with the decision you are actually making
 
 1. Open [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when you are deciding where active client operations should live.
-2. Open [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) when the open question is how structured your delivery workspace should be.
-3. Open [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) when the question is where review, handoff, and approval should happen.
-4. Open [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) when the question is how much scheduling structure your intake process really needs.
+2. Open [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) when the open question is whether the business should stay consolidated or split functions across more tools.
+3. Open [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) when the open question is how structured your delivery workspace should be.
+4. Open [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) when the question is where review, handoff, and approval should happen.
+5. Open [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) when the question is how much scheduling structure your intake process really needs.
 
 ## Best order when the choice is still fuzzy
 
 - Start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) for the system center.
-- Move to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) only if delivery should sit at that center.
+- Move to [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) when the system center is mostly clear but the broader stack shape still is not.
+- Move to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) only if delivery should sit at that center and you still plan to stay fairly consolidated there.
 - Move to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) only if the workspace is already chosen and the open problem is review flow.
 - Move to [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) only if the intake layer needs more booking structure.
 
@@ -47,7 +49,8 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 ## Cornerstone decisions covered here
 
 - [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) is the higher-level decision because it determines where your system of record should live.
-- [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center.
+- [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) is the broader stack-shape decision once you know the system center but still need to decide whether consolidation or specialization should define the setup.
+- [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center and that a more consolidated workspace still makes sense.
 - [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) helps once the real issue is client-facing review and approval flow rather than the internal workspace itself.
 - [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) is the intake-side decision when scheduling needs structure but the stack should still stay lean.
 

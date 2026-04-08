@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "problem-solving"
 page_role = "pillar"
 hub_priority = 2
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = false
 +++
 
@@ -110,6 +110,8 @@ Typical categories to delay longest:
 - duplicate client databases,
 - collaboration features meant for a team structure you do not have yet.
 
+If the real question is whether the business should stay inside one main workspace or split functions across a more specialized stack, use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
+
 ## Step 5: Match tool depth to business stage
 
 | Stage | Better default | Avoid too early |
@@ -151,6 +153,7 @@ The real question is: does this tool reduce coordination cost enough to justify 
 ## Good pairings after this guide
 
 - Need the broader default stack shape: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- Need the broader stack-shape decision first: [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/)
 - Need a system-of-record decision: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
 - Need a booking decision: [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/)
 - Need to clean up existing sprawl: [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/)

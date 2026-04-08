@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "selection"
 page_role = "pillar"
 hub_priority = 1
-related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
@@ -112,6 +112,8 @@ A lean stack usually means:
 
 It does not mean every function must live in one app. It means ownership stays clear and duplicate admin stays low.
 
+If you are deciding whether the business should stay consolidated inside one main workspace or split functions across several tools, use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) before choosing narrower app comparisons.
+
 ## What not to buy yet
 
 Do not add tools just because they are popular in creator or freelancer circles.
@@ -156,6 +158,7 @@ Typical fit: higher client load, more stakeholders, or more repeatable delivery 
 3. Implement intake discipline via [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
 4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 5. Use [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) only if the open question is purchase timing rather than baseline stack shape.
+6. Use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) if the open question is whether the stack should stay consolidated before you optimize within it.
 
 ## What to do after choosing the stack shape
 
