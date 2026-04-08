@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
 best_next = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
-related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -112,6 +112,8 @@ Every milestone should end in one of these states:
 - changed via scope process.
 
 Do not leave it in a fuzzy "mostly done" state. That ambiguity is where delivery drift, payment slippage, and awkward client follow-up usually begin.
+
+If the real issue is the boundary between completed delivery and billing or closeout, document that gate with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
 ## Minimum milestone review checklist
 

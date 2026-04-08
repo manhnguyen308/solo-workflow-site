@@ -12,7 +12,7 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 7
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/client-offboarding--testimonial-request-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/glossary/next-action-owner/"]
+related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/client-offboarding--testimonial-request-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/glossary/next-action-owner/"]
 featured = false
 +++
 
@@ -152,6 +152,8 @@ Before marking the engagement closed, confirm:
 - final files and links are stored where they can be found later,
 - testimonial or feedback ask is sent or intentionally delayed,
 - one internal lesson is captured.
+
+If the closeout still feels vague, write the exact invoice-closed to offboarding-ready boundary with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
 ## Practical closeout sequence
 

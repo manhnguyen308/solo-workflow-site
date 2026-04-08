@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="171" y1="77" x2="1403" y2="826" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F5B6E"/>
+      <stop offset="1" stop-color="#1A406E"/>
+    </linearGradient>
+    <linearGradient id="card" x1="278" y1="131" x2="1288" y2="754" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F8FA"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <path d="M0 126C139 44 296 57 410 128C485 175 560 195 660 177C828 148 949 50 1151 82C1335 111 1452 190 1600 180V900H0V126Z" fill="#8ECBC1" fill-opacity="0.14"/>
+  <ellipse cx="1338" cy="272" rx="190" ry="126" fill="#C6D7F4" fill-opacity="0.14"/>
+
+  <rect x="270" y="118" width="1060" height="650" rx="30" fill="url(#card)"/>
+  <rect x="312" y="160" width="976" height="92" rx="22" fill="#FFFFFF"/>
+  <circle cx="352" cy="196" r="8" fill="#F29D38"/>
+  <circle cx="378" cy="196" r="8" fill="#F4C36B"/>
+  <circle cx="404" cy="196" r="8" fill="#D8E0E8"/>
+  <text x="312" y="234" fill="#123B53" font-family="Georgia, 'Times New Roman', serif" font-size="38">Handoff Boundary Worksheet</text>
+
+  <rect x="312" y="284" width="286" height="396" rx="24" fill="#FFFFFF"/>
+  <text x="340" y="326" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Transition</text>
+  <rect x="340" y="350" width="230" height="62" rx="16" fill="#EEF4F9"/>
+  <text x="362" y="387" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">proposal approved</text>
+  <path d="M430 430C430 447 430 454 430 469" stroke="#85A8E8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M414 455L430 477L446 455" stroke="#85A8E8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="340" y="492" width="230" height="62" rx="16" fill="#EEF4F9"/>
+  <text x="381" y="529" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">onboarding ready</text>
+
+  <rect x="340" y="582" width="230" height="68" rx="16" fill="#F8FAFD"/>
+  <text x="362" y="614" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="17">owner</text>
+  <rect x="452" y="596" width="96" height="26" rx="8" fill="#A6BFF0"/>
+  <text x="477" y="614" fill="#173B63" font-family="Arial, Helvetica, sans-serif" font-size="15">next move</text>
+
+  <rect x="626" y="284" width="310" height="396" rx="24" fill="#F6F8FB"/>
+  <text x="654" y="326" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Readiness gate</text>
+  <rect x="654" y="352" width="254" height="58" rx="15" fill="#FFFFFF"/>
+  <text x="678" y="387" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">required inputs</text>
+  <rect x="654" y="430" width="254" height="58" rx="15" fill="#FFFFFF"/>
+  <text x="678" y="465" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">approval / signoff</text>
+  <rect x="654" y="508" width="254" height="58" rx="15" fill="#FFFFFF"/>
+  <text x="678" y="543" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">evidence exists</text>
+  <rect x="654" y="586" width="254" height="58" rx="15" fill="#FFFFFF"/>
+  <text x="678" y="621" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">blocked state visible</text>
+
+  <rect x="964" y="284" width="324" height="396" rx="24" fill="#FFFFFF"/>
+  <text x="992" y="326" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Boundary notes</text>
+  <rect x="992" y="354" width="124" height="28" rx="9" fill="#9DD6C6"/>
+  <text x="1024" y="373" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="15">ready</text>
+  <rect x="1130" y="354" width="126" height="28" rx="9" fill="#E6B0A7"/>
+  <text x="1155" y="373" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="15">blocked</text>
+  <rect x="992" y="404" width="238" height="9" rx="4.5" fill="#D7E1EA"/>
+  <rect x="992" y="426" width="214" height="9" rx="4.5" fill="#D7E1EA"/>
+  <rect x="992" y="448" width="252" height="9" rx="4.5" fill="#D7E1EA"/>
+  <rect x="992" y="492" width="270" height="74" rx="16" fill="#F8FAFD"/>
+  <text x="1016" y="530" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">artifact links</text>
+  <text x="1016" y="556" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="16">approved record, kickoff setup</text>
+  <rect x="992" y="590" width="270" height="62" rx="16" fill="#F8FAFD"/>
+  <text x="1016" y="626" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">do not transition early</text>
+
+  <rect x="1068" y="714" width="220" height="34" rx="12" fill="#123B53"/>
+  <text x="1102" y="737" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="18">ready to move forward</text>
+</svg>

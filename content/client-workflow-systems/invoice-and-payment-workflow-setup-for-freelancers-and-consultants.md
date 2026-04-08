@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 6
 best_next = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
-related = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
+related = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
 featured = false
 +++
 
@@ -110,6 +110,8 @@ When payment arrives:
 - confirm the milestone or account status,
 - schedule the next billing event if one exists,
 - remove any follow-up reminder noise from the system.
+
+If the weak point is not reminder cadence but the readiness rule between delivery, billing, and closeout, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) to document the boundary explicitly.
 
 This is what turns invoicing into a real workflow instead of a one-off admin task.
 
