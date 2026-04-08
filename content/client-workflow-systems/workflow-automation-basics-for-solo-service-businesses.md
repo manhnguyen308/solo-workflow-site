@@ -21,6 +21,8 @@ If the manual workflow is still changing weekly, do not automate it yet. Stabili
 
 The practical mistake to avoid is simple: automating a decision that was never clear enough to make consistently by hand. When that happens, the automation looks efficient for a week and then creates cleanup work, client confusion, or silent errors.
 
+Use this page after the manual stage already works well enough to trust. If the real problem is unclear ownership, missing approval rules, or a scattered system of record, go fix that first instead of adding automations on top.
+
 ## Who this page is for
 
 - Solo operators repeating the same admin actions every week.
@@ -44,6 +46,16 @@ Bad first targets:
 
 Useful rule of thumb: automate coordination, not judgment.
 
+## What not to use this page for
+
+This page is not the right starting point when:
+- intake criteria are still changing every week,
+- proposals and contracts are still inconsistent,
+- client status updates do not yet follow one cadence,
+- invoice timing is still based on memory instead of milestone rules.
+
+In those cases, tighten the manual workflow first with the relevant stage page, then come back here.
+
 ## Automation readiness checklist
 
 Before automating a step, confirm:
@@ -53,6 +65,8 @@ Before automating a step, confirm:
 4. manual fallback exists.
 
 Add one more check: the step should have an obvious owner when the automation fails. If no one would notice a missed run quickly, the process is not ready.
+
+Practical threshold: if the same step still gets handled three different ways depending on the client, the workflow is not stable enough to automate yet.
 
 ## Automation map by workflow stage
 
@@ -71,6 +85,19 @@ Add one more check: the step should have an obvious owner when the automation fa
 - Weekly ops: recurring review tasks tied to [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/).
 - Billing: reminder sequences only after your invoice triggers are already documented in [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
 
+## First-automation shortlist by trigger
+
+Use these as the safest starting points:
+
+| Trigger | Automation | Why it is usually safe |
+|---|---|---|
+| form submitted | create lead record + tag | capture is clearer than qualification judgment |
+| kickoff confirmed | create onboarding task set | repetitive admin with a clear owner |
+| weekly review day | create recurring ops checklist | stable rhythm, easy to verify |
+| invoice due date approaching | send reminder task or draft message | billing follow-up is repeatable when rules already exist |
+
+If the trigger itself is arguable, keep the step manual.
+
 ## Implementation pattern
 
 1. Pick one repetitive task.
@@ -87,17 +114,33 @@ For each automation, write down:
 - what manual action replaces it if it fails,
 - who checks for misses during the weekly ops review.
 
+Write those four lines before you automate, not after the first miss.
+
 ## Signs you over-automated
 
 - Clients receive wrong-timing messages.
 - Team/you stop understanding process state.
 - Exceptions require more time than prior manual process.
 
+## Failure handling rules worth documenting
+
+- If the automation touches a client, verify the timing rule and fallback owner.
+- If the automation changes status, keep one place where the current truth is still visible.
+- If the automation can fail silently, add a weekly review checkpoint that catches the miss.
+- If the automation creates work for someone else, make the receiving owner explicit.
+
 ## Related pages
 
 - Workflow anchor: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 - Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
+
+## What to do next
+
+- If the stage is still unstable, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If the tool sprawl is the blocker, use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+- If billing reminders are the first safe target, pair this page with [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- If recurring client comms are the first safe target, pair it with [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 
 ## Final rule
 

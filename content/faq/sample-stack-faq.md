@@ -21,6 +21,16 @@ This FAQ is for fast routing, not deep explanation. Use it when you know the blo
 
 It is a support page only. Its job is to route narrow setup questions back to the workflow anchor, the lean stack blueprint, and the CRM-vs-PM comparison instead of competing with them for broad intent.
 
+Use it when the question is narrow enough to answer quickly. If you keep landing on several FAQ answers in one sitting, that usually means you should leave this page and return to a broader workflow or blueprint page.
+
+## What this FAQ is best for
+
+- one setup blocker at a time,
+- choosing the next page quickly,
+- clarifying whether the problem is workflow, stack shape, or tool category.
+
+It is not meant to design the whole operating system for you.
+
 ## Should I choose tools before defining my workflow?
 
 No. Define your stage sequence and handoffs first, then pick tool categories that support that flow. Start here: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
@@ -74,6 +84,10 @@ Not usually, but it can help if the term confusion is real. Read [System of Reco
 ## What if the site problem is not tool choice, but thin process discipline?
 
 Then stop comparing tools. Start with the workflow anchor, tighten one stage, and only return to stack decisions after the sequence is stable enough to support them.
+
+## What if I already have too many places tracking client status?
+
+That is usually a system-of-record problem, not a missing-tool problem. Use [System of Record](/glossary/system-of-record/) to clarify where current truth should live, then return to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if you still need to choose the operating model.
 
 ## Which page should I read after this FAQ?
 

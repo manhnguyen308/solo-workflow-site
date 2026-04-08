@@ -19,6 +19,7 @@ This section exists to make the rest of the site more usable. The right outcome 
 
 - If the main question is "where should active client truth live?", start with [System of Record](/glossary/system-of-record/).
 - If the main question is "what exactly should transfer between stages?", start with [Workflow Handoff](/glossary/workflow-handoff/).
+- If the main question is "who can actually move this forward?", start with [Approval Owner](/glossary/approval-owner/).
 - If the real problem is larger than a definition, jump straight to the linked workflow or comparison page instead of staying in the glossary.
 
 ## Start with the terms that affect system design
@@ -38,6 +39,7 @@ This section exists to make the rest of the site more usable. The right outcome 
 - Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) when the unclear term is affecting lifecycle design.
 - Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the unclear term is changing where your system of record should live.
 - Use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the definition reveals that your tools already contain duplicated truth.
+- Use [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) or [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when the real blocker is approval or communication discipline rather than vocabulary.
 
 ## What makes a glossary page strong on this site
 
@@ -45,3 +47,9 @@ This section exists to make the rest of the site more usable. The right outcome 
 - It should show how the term affects a real operating decision.
 - It should name common failure modes or misunderstandings.
 - It should point directly to the next page that helps you act on the definition.
+
+## Fast routes from glossary to implementation
+
+- unclear approval path -> [Approval Owner](/glossary/approval-owner/) then [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
+- unclear system center -> [System of Record](/glossary/system-of-record/) then [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
+- unclear stage boundary -> [Workflow Handoff](/glossary/workflow-handoff/) then [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)

@@ -19,11 +19,29 @@ Offboarding is not the end of value creation. Done well, it protects reputation,
 
 Use this as a closeout asset once the delivery and billing stages are already under control. It is not meant to carry the whole offboarding process by itself. Until a dedicated offboarding workflow exists, this page should stay clearly secondary to the full lifecycle workflow.
 
+The practical goal is simple: close the engagement cleanly enough that the project can be referenced, billed, archived, and followed up without loose ends.
+
+## What this template is for and not for
+
+Use it for:
+- closing a completed engagement,
+- capturing outcomes while they are still fresh,
+- sending a testimonial request at the right moment,
+- preserving the next-step opportunity without forcing it.
+
+Do not use it for:
+- resolving delivery disputes,
+- chasing unresolved invoices,
+- replacing a broader client-retention strategy,
+- fixing a project that never had a clean handoff in the first place.
+
 ## When to run this template
 
 Run after final deliverable acceptance and before closing project records.
 
 The key is timing. Ask for feedback and testimonials while the outcome is still fresh, but only after delivery and billing are genuinely in order.
+
+If the client still feels mid-project emotionally, even if the work is technically done, delay the testimonial ask and finish the closeout first.
 
 ## Offboarding template
 
@@ -55,6 +73,16 @@ Use this simple request structure:
 - Record one thing that worked well.
 - Record one process issue to improve before the next project.
 
+## Closeout notes worth preserving
+
+Before you archive the engagement, capture:
+- what the client valued most,
+- what slowed the project down,
+- what would need to change if the work repeated,
+- whether there is a realistic follow-on need.
+
+This keeps offboarding useful to operations instead of becoming pure admin cleanup.
+
 ## When to delay the testimonial ask
 
 Wait if:
@@ -70,6 +98,12 @@ Testimonial timing should follow satisfaction, not your internal desire to close
 - Closing the project in your head but not in the billing or delivery records.
 - Treating offboarding like admin cleanup instead of a reputation and retention stage.
 - Offering the next project too aggressively before confirming satisfaction with the current one.
+
+## Edge cases to handle intentionally
+
+- If the client was happy with the work but late on approvals, ask for feedback first and testimonial later.
+- If there is likely follow-on work, separate the closeout note from the expansion conversation so the testimonial ask does not feel transactional.
+- If outcomes are still emerging, ask for a process testimonial now and a results testimonial later.
 
 ## Completion standard
 
@@ -91,3 +125,8 @@ After offboarding:
 - archive the project cleanly,
 - note one workflow improvement for the next engagement,
 - carry recurring issues into your next [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) review.
+
+If a pattern keeps breaking during closeout, send it back upstream:
+- delivery issues -> [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+- billing issues -> [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
+- full lifecycle confusion -> [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)

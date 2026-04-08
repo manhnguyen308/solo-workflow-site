@@ -39,6 +39,16 @@ When approval ownership is vague:
 
 One approval owner does not mean only one person can comment. It means one person is accountable for the final decision.
 
+## How to document this in practice
+
+For each stage that needs approval, record:
+- the person's name or role,
+- what they are allowed to approve,
+- where they should respond,
+- what happens if they do not respond on time.
+
+That is usually enough structure for a solo operator. You do not need a full RACI chart to remove this ambiguity.
+
 ## Common misunderstanding
 
 Operators often confuse "stakeholder group" with "approver."
@@ -62,6 +72,13 @@ If any answer is unclear, the workflow still has an ownership gap.
 
 If that role changes by stage, document it clearly instead of assuming everyone knows.
 
+## Warning signs that the approval owner is still unclear
+
+- feedback arrives from multiple people but no one closes the loop,
+- "approved" appears in chat but not in the project record,
+- the next invoice or milestone waits because no final answer exists,
+- revision requests keep coming from people who were never named as the decider.
+
 ## What this page is not for
 
 This page defines one term. It does not replace:
@@ -84,3 +101,4 @@ Use it to remove ambiguity inside those pages, not instead of them.
 - If the ambiguity is happening before kickoff, go to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 - If the ambiguity is happening in recurring client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - If the ambiguity is happening during scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- If the ambiguity is happening at milestone review, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
