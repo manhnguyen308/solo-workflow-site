@@ -12,7 +12,7 @@ page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 5
-related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
 featured = false
 +++
 
@@ -29,6 +29,8 @@ When client dependencies are not explicit:
 - updates sound reactive because the true blocker was never named.
 
 The fix is not better wording alone. The fix is to record the missing input as a real dependency with an owner, due point, and consequence.
+
+If the term is clear but the actual dependency record is still weak, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) to document the item more precisely.
 
 ## What usually counts as a client dependency
 

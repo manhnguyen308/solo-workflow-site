@@ -1,0 +1,63 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="174" y1="77" x2="1406" y2="827" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#105B70"/>
+      <stop offset="1" stop-color="#1A3F6D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="282" y1="129" x2="1288" y2="753" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F8FA"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <path d="M0 123C137 42 298 58 409 129C484 178 559 195 662 179C828 152 953 60 1151 84C1333 106 1462 189 1600 178V900H0V123Z" fill="#8FCBC1" fill-opacity="0.14"/>
+  <ellipse cx="1340" cy="274" rx="194" ry="128" fill="#C7D8F5" fill-opacity="0.15"/>
+
+  <rect x="278" y="118" width="1044" height="648" rx="30" fill="url(#panel)"/>
+  <rect x="318" y="160" width="964" height="94" rx="22" fill="#FFFFFF"/>
+  <circle cx="358" cy="198" r="8" fill="#F29D38"/>
+  <circle cx="384" cy="198" r="8" fill="#F4C36B"/>
+  <circle cx="410" cy="198" r="8" fill="#D8E0E8"/>
+  <text x="318" y="235" fill="#123B53" font-family="Georgia, 'Times New Roman', serif" font-size="38">Client Input Worksheet</text>
+
+  <rect x="318" y="286" width="324" height="396" rx="24" fill="#FFFFFF"/>
+  <text x="346" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Required input</text>
+  <rect x="346" y="354" width="268" height="68" rx="16" fill="#EEF4F9"/>
+  <text x="375" y="394" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">brand assets</text>
+  <rect x="346" y="446" width="268" height="68" rx="16" fill="#EEF4F9"/>
+  <text x="375" y="486" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">approval answer</text>
+  <rect x="346" y="538" width="268" height="68" rx="16" fill="#EEF4F9"/>
+  <text x="375" y="578" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">source content</text>
+  <rect x="346" y="620" width="268" height="34" rx="12" fill="#F8FAFD"/>
+  <text x="378" y="643" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="17">due stage + format</text>
+
+  <rect x="672" y="286" width="288" height="396" rx="24" fill="#F6F8FB"/>
+  <text x="700" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Owners</text>
+  <rect x="700" y="356" width="232" height="70" rx="16" fill="#FFFFFF"/>
+  <text x="728" y="395" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">client-side owner</text>
+  <rect x="700" y="452" width="232" height="70" rx="16" fill="#FFFFFF"/>
+  <text x="736" y="491" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">your-side owner</text>
+  <rect x="700" y="548" width="232" height="96" rx="16" fill="#FFFFFF"/>
+  <text x="724" y="586" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">fallback / escalation</text>
+  <text x="724" y="614" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="16">follow up, block, split, pause</text>
+
+  <rect x="990" y="286" width="292" height="396" rx="24" fill="#FFFFFF"/>
+  <text x="1018" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Blocked work</text>
+  <rect x="1018" y="356" width="236" height="58" rx="15" fill="#E7B3A9"/>
+  <text x="1065" y="392" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="19">kickoff blocked</text>
+  <rect x="1018" y="440" width="236" height="58" rx="15" fill="#E7B3A9"/>
+  <text x="1060" y="476" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="19">delivery blocked</text>
+  <rect x="1018" y="524" width="236" height="58" rx="15" fill="#E7B3A9"/>
+  <text x="1057" y="560" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="19">closeout blocked</text>
+  <rect x="1018" y="612" width="236" height="28" rx="9" fill="#A6BFF0"/>
+  <text x="1066" y="631" fill="#173B63" font-family="Arial, Helvetica, sans-serif" font-size="15">visible dependency</text>
+
+  <path d="M642 475C652 475 655 475 672 475" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M660 459L684 475L660 491" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M960 475C970 475 973 475 990 475" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M978 459L1002 475L978 491" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="1078" y="716" width="204" height="34" rx="12" fill="#123B53"/>
+  <text x="1111" y="739" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="18">required before progress</text>
+</svg>

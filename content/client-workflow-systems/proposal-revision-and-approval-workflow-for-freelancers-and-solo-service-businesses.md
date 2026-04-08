@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
 featured = false
 +++
 
@@ -74,6 +74,8 @@ You need to know:
 - where that authority is documented.
 
 If several stakeholders are commenting, but no one can actually close the decision, the workflow is still open. Use [Approval Owner](/glossary/approval-owner/) when the decision-maker is fuzzy. Use [Client Dependency](/glossary/client-dependency/) when review is waiting on client-side input rather than your own revision work.
+
+If the missing client-side answers or materials are still too vague to track, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) before the review loop stays blocked.
 
 ## Step 3: Capture revision requests outside chat noise
 

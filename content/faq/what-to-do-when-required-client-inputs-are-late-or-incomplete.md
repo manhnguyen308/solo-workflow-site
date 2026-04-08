@@ -13,7 +13,7 @@ page_type = "faq"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 4
-related = ["/glossary/client-dependency/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/glossary/client-dependency/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
 featured = false
 +++
 
@@ -29,6 +29,8 @@ Document three things immediately:
 - what it is blocking.
 
 If you cannot name those clearly, you do not yet have a useful record of the [Client Dependency](/glossary/client-dependency/).
+
+If the dependency keeps recurring because the input was never documented tightly enough, define it first with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
 
 ## Should you work around it if you can?
 

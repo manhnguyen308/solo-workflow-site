@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
 best_next = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/"]
-related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
+related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -84,6 +84,8 @@ Collect:
 Treat missing inputs explicitly. Do not assume the kickoff call itself will magically surface every blocker in time.
 
 If a required item is missing, log it as a blocker with an owner and a due date. "Waiting on client" is not enough. Name the exact dependency and who is responsible for resolving it.
+
+If the client-side inputs themselves are still too vague to track cleanly, document them with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) before kickoff pressure rises.
 
 ## Step 3: Set communication and approval rules
 
