@@ -12,6 +12,7 @@ page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 4
+best_next = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/"]
 related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = false
 +++
@@ -19,6 +20,15 @@ featured = false
 This is not a feature-counting comparison. It is a workflow decision about how much scheduling structure your intake process actually needs.
 
 For many solo operators, built-in booking is enough. The mistake is paying for dedicated scheduling software before the intake workflow is clear enough to benefit from the extra rules. This page is about booking complexity, not about choosing the whole stack.
+
+## Who this page is really for
+
+Use this page when:
+- intake is already the right stage to tighten,
+- the open question is whether scheduling needs its own tool,
+- you are trying to avoid buying ahead of operational need.
+
+Do not use this page when qualification rules are still weak or when the larger system-of-record decision is still unresolved.
 
 ## Quick verdict
 
@@ -151,6 +161,15 @@ Choose a **Calendly-style tool** if:
 - If you stay lightweight, improve the process itself with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 - If you add a dedicated booking tool, keep the rest of the stack lean with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 - For the broader system-of-record question, return to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+
+## What this page should not decide
+
+This comparison should not decide:
+- whether the lead is qualified,
+- whether CRM or PM should anchor client truth,
+- whether the rest of the stack needs more software.
+
+Its job is narrower: decide how much booking structure the intake layer needs.
 
 ## Completion standard
 

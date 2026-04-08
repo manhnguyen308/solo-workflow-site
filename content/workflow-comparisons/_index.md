@@ -31,6 +31,13 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 3. Open [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) when the question is where review, handoff, and approval should happen.
 4. Open [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) when the question is how much scheduling structure your intake process really needs.
 
+## Best order when the choice is still fuzzy
+
+- Start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) for the system center.
+- Move to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) only if delivery should sit at that center.
+- Move to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) only if the workspace is already chosen and the open problem is review flow.
+- Move to [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) only if the intake layer needs more booking structure.
+
 ## What makes these pages useful
 
 - they frame the tradeoff, not just the feature list
@@ -43,6 +50,12 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 - [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center.
 - [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) helps once the real issue is client-facing review and approval flow rather than the internal workspace itself.
 - [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) is the intake-side decision when scheduling needs structure but the stack should still stay lean.
+
+## What this cluster should not do
+
+- It should not replace the workflow anchor.
+- It should not become generic software roundups.
+- It should not compare tools before the underlying workflow question is named.
 
 ## Pages to read before or after a comparison
 

@@ -12,6 +12,7 @@ page_type = "comparison"
 search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 3
+best_next = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
 related = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/templates/weekly-client-status-update-template/", "/templates/delivery-qa-checklist-before-client-handoff/", "/glossary/system-of-record/", "/guides/software-stack-blueprint-consultant--va-collaboration-setup/"]
 featured = false
 +++
@@ -23,6 +24,15 @@ For many solo operators, email is still enough. The mistake is assuming that "si
 Use this after the system-of-record decision is already clear and the open question is specifically where review and approvals should happen during live delivery.
 
 This is a narrower downstream comparison. It is not the right page if you are still deciding where the main operating record should live.
+
+## Who this page is really for
+
+Use this page when:
+- delivery is already active,
+- approval and handoff friction is happening during review,
+- the real question is whether email is still enough for that stage.
+
+Do not use this page to choose your primary workspace. That belongs upstream on [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## What you are actually deciding
 
@@ -140,6 +150,15 @@ A portal becomes more attractive when support capacity is involved. Shared visib
 - Choose **email-first** if the project is simple, the approver is singular, and you can keep the system of record aligned manually.
 - Choose **client portal or workspace** if approval complexity, review history, or shared visibility is becoming part of the operational problem.
 
+## What this page should not decide
+
+This comparison should not decide:
+- whether delivery should live in Notion, ClickUp, CRM, or PM,
+- whether onboarding is strong enough,
+- whether proposal approval is the real bottleneck instead of delivery approval.
+
+Its job is narrower: decide where live deliverable review and approval should happen.
+
 ## What to do after deciding
 
 - If you stay email-first, tighten [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) so messages stay structured.
@@ -150,4 +169,5 @@ A portal becomes more attractive when support capacity is involved. Shared visib
 
 - If the broader workflow is still unclear, go upstream to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 - If the open issue is recurring client communication rhythm, continue to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the open issue is approval-ready handoff quality before review, continue to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If the open issue is where active client truth should live, go upstream to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
