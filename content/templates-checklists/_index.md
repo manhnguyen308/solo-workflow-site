@@ -27,6 +27,7 @@ Think of this hub as the execution layer of the site. If another page tells you 
 7. Use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) when the stack is scattered and you need to document what stays, what moves, and what gets retired before changing tools.
 8. Use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) when the bigger issue is not tool inventory but defining exactly where live truth should sit and what should never be duplicated casually.
 9. Use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) when the rule you need is what must be true before one lifecycle stage is allowed to move into the next.
+10. Use [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) when review gets messy because too many people comment, feedback arrives through the wrong path, or approval is not closing cleanly.
 
 ## Ongoing operating rhythm
 
@@ -40,6 +41,7 @@ Think of this hub as the execution layer of the site. If another page tells you 
 - [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) is the execution asset for blueprint cleanup work once a stack decision has already been made.
 - [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) is the ownership-clarity asset once the stack shape is mostly decided but the rule boundaries are still soft.
 - [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) is the transition-rule asset for lifecycle boundaries that keep starting too early or closing too vaguely.
+- [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) is the review-routing asset for situations where comments, approvals, and revision requests are arriving from too many directions.
 
 ## What templates should and should not do
 
@@ -65,6 +67,7 @@ The strongest pages in this hub usually include:
 - For stack cleanup: all-in-one vs specialized stack -> lean solo blueprint -> stack audit worksheet -> migration guide -> weekly operations checklist.
 - For ownership clarity: CRM vs PM comparison -> lean solo blueprint -> system-of-record rules worksheet -> stack audit worksheet -> migration guide.
 - For stage-boundary clarity: proposal revision and approval -> onboarding workflow -> handoff boundary worksheet -> milestone delivery -> invoice workflow -> offboarding workflow.
+- For review control: approval owner -> proposal revision and approval -> approval and feedback routing worksheet -> milestone delivery -> client silence during review FAQ.
 
 ## If the asset feels premature
 

@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
 featured = false
 +++
 
@@ -84,6 +84,8 @@ Every revision request should answer:
 - who still needs to approve the revised version.
 
 Do not treat proposal feedback as a pile of informal comments. If the request changes scope, timing, ownership, or commercial assumptions, record it clearly before editing the proposal.
+
+If several stakeholders are involved and the routing path itself is the problem, define it first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## Step 4: Set a reasonable revision-round rule
 

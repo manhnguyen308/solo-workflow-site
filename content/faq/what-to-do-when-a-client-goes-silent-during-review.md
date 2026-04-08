@@ -13,7 +13,7 @@ page_type = "faq"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 3
-related = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/glossary/next-action-owner/"]
+related = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/glossary/next-action-owner/"]
 featured = false
 +++
 
@@ -30,6 +30,8 @@ Confirm four things before you send another message:
 - what date should trigger the next follow-up.
 
 If those are not clear, the real problem is not silence. The real problem is that the review state was never defined tightly enough.
+
+If several stakeholders are involved and the comments are not even reaching one clear approval path yet, define the routing rule first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## How long should you wait before following up?
 

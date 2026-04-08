@@ -12,7 +12,7 @@ page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 3
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -38,6 +38,8 @@ When approval ownership is vague:
 - billing and next-stage actions get delayed because acceptance was never formalized.
 
 One approval owner does not mean only one person can comment. It means one person is accountable for the final decision.
+
+If many people can comment and the routing path itself is the problem, use [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) to define how input should move before it reaches the approver.
 
 ## How to document this in practice
 

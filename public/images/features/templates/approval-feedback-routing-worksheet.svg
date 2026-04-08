@@ -1,0 +1,66 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="175" y1="75" x2="1407" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#105A6F"/>
+      <stop offset="1" stop-color="#1B3E6D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="283" y1="129" x2="1289" y2="754" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F8FA"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <path d="M0 120C140 42 300 58 410 130C486 179 558 196 660 180C828 153 956 61 1154 85C1333 107 1461 188 1600 179V900H0V120Z" fill="#8FCBC1" fill-opacity="0.14"/>
+  <ellipse cx="1344" cy="274" rx="194" ry="130" fill="#C8D7F5" fill-opacity="0.15"/>
+
+  <rect x="276" y="118" width="1048" height="648" rx="30" fill="url(#panel)"/>
+  <rect x="316" y="160" width="968" height="94" rx="22" fill="#FFFFFF"/>
+  <circle cx="356" cy="198" r="8" fill="#F29D38"/>
+  <circle cx="382" cy="198" r="8" fill="#F4C36B"/>
+  <circle cx="408" cy="198" r="8" fill="#D8E0E8"/>
+  <text x="316" y="235" fill="#123B53" font-family="Georgia, 'Times New Roman', serif" font-size="38">Approval Routing</text>
+
+  <rect x="316" y="286" width="282" height="398" rx="24" fill="#FFFFFF"/>
+  <text x="344" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Comment sources</text>
+  <rect x="344" y="354" width="226" height="56" rx="15" fill="#EEF4F9"/>
+  <text x="376" y="388" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">stakeholder A</text>
+  <rect x="344" y="430" width="226" height="56" rx="15" fill="#EEF4F9"/>
+  <text x="376" y="464" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">stakeholder B</text>
+  <rect x="344" y="506" width="226" height="56" rx="15" fill="#EEF4F9"/>
+  <text x="376" y="540" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">client lead</text>
+  <rect x="344" y="598" width="226" height="54" rx="15" fill="#F8FAFD"/>
+  <text x="370" y="631" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="17">one allowed channel</text>
+
+  <rect x="624" y="286" width="350" height="398" rx="24" fill="#F6F8FB"/>
+  <text x="652" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Consolidation path</text>
+  <rect x="652" y="356" width="294" height="72" rx="16" fill="#FFFFFF"/>
+  <text x="682" y="394" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">consolidated feedback set</text>
+  <path d="M460 410C505 410 543 410 624 410" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 394L634 410L610 426" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M460 486C507 486 548 486 624 486" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 470L634 486L610 502" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M460 562C507 562 548 562 624 562" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 546L634 562L610 578" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="652" y="454" width="294" height="70" rx="16" fill="#FFFFFF"/>
+  <text x="682" y="492" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">conflict check</text>
+  <rect x="652" y="550" width="294" height="102" rx="16" fill="#FFFFFF"/>
+  <text x="682" y="588" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">one revision brief</text>
+  <text x="682" y="616" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="16">pause if comments conflict</text>
+
+  <rect x="1000" y="286" width="284" height="398" rx="24" fill="#FFFFFF"/>
+  <text x="1028" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Final approval</text>
+  <rect x="1028" y="356" width="228" height="58" rx="15" fill="#A7BFF0"/>
+  <text x="1070" y="392" fill="#173B63" font-family="Arial, Helvetica, sans-serif" font-size="19">approval owner</text>
+  <path d="M974 382C987 382 990 382 1000 382" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M986 366L1010 382L986 398" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1028" y="444" width="228" height="60" rx="15" fill="#F8FAFD"/>
+  <text x="1064" y="480" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">approved / revise</text>
+  <rect x="1028" y="534" width="228" height="60" rx="15" fill="#F8FAFD"/>
+  <text x="1077" y="570" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">late comments</text>
+  <rect x="1028" y="620" width="228" height="28" rx="9" fill="#E6B0A7"/>
+  <text x="1068" y="639" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="15">reopen only by rule</text>
+
+  <rect x="1098" y="716" width="186" height="34" rx="12" fill="#123B53"/>
+  <text x="1128" y="739" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="18">one approval path</text>
+</svg>

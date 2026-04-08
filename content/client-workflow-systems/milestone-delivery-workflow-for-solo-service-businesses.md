@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
 best_next = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
-related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -102,6 +102,8 @@ Before each review or delivery event:
 Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) for the execution layer.
 
 The approval request itself should also be explicit. Do not send work with a vague "let me know what you think" if what you actually need is acceptance, revision notes, or a dependency decision.
+
+If review feedback is coming from several people or through several channels, lock the routing path first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## Step 5: Close the milestone with one visible outcome
 
