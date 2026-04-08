@@ -12,7 +12,8 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 2
-related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
+best_next = ["/workflows/proposal-to-contract-handoff-workflow-setup/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/faq/faq-setting-up-a-solo-service-workflow-stack/"]
 featured = false
 +++
 

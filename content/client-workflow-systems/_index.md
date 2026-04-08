@@ -65,7 +65,7 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 - For a messy client lifecycle: anchor workflow -> proposal handoff -> proposal revision and approval -> onboarding workflow -> onboarding checklist -> invoice workflow setup -> offboarding workflow.
 - For a lead-quality problem: intake guide -> CRM vs PM comparison -> full workflow anchor.
 - For repeated delivery friction: anchor workflow -> onboarding workflow -> milestone delivery workflow -> status update workflow -> delivery QA checklist -> weekly operations checklist.
-- For recurring scope drift: proposal handoff -> change request workflow -> client change request template -> invoice workflow.
+- For recurring scope drift: proposal handoff -> proposal revision and approval -> change request workflow -> client change request template -> invoice workflow.
 - For messy project closeout: milestone delivery workflow -> invoice workflow -> offboarding workflow -> offboarding template.
 
 ## What strong workflow pages in this section should do

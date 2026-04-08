@@ -12,7 +12,8 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 6
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
+best_next = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
 featured = false
 +++
 

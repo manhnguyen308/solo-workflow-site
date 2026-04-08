@@ -12,7 +12,8 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
+best_next = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/"]
+related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/glossary/approval-owner/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
 featured = false
 +++
 
@@ -51,9 +52,10 @@ After reading this guide, you should be able to answer:
 
 The sequence should look like this:
 1. intake qualifies the lead,
-2. proposal and contract handoff defines the agreement,
-3. onboarding turns the agreement into a live delivery setup,
-4. milestone delivery starts only after the setup is usable.
+2. proposal and contract handoff prepares the review-ready package,
+3. proposal revision and approval settles the version that will actually be signed,
+4. onboarding turns the signed agreement into a live delivery setup,
+5. milestone delivery starts only after the setup is usable.
 
 For the full lifecycle model, use [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 

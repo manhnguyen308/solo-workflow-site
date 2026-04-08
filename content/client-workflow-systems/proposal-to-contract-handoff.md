@@ -1,7 +1,7 @@
 +++
 title = "Proposal-to-Contract Handoff Workflow Setup"
 description = "A proposal-to-contract handoff workflow for freelancers and consultants who need scope, timeline, and payment terms aligned before kickoff."
-summary = "Use this guide to turn a verbal yes into a signed agreement with clearer scope, ownership, and kickoff readiness."
+summary = "Use this guide to turn discovery context into a review-ready proposal and contract package with clearer scope, ownership, and kickoff readiness."
 feature_image = "/images/features/workflows/proposal-contract-handoff.svg"
 feature_image_alt = "Illustrated handoff scene with two workflow panels connected between proposal and contract stages."
 draft = false
@@ -12,30 +12,31 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 3
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+best_next = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/glossary/approval-owner/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = true
 +++
 
-The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal gets signed, kickoff starts early, and scope disagreements appear in week two. This page is about fixing that pre-kickoff gap before it turns into delivery confusion.
+The handoff between proposal and contract is where many solo operators lose control of delivery quality. A vague proposal moves forward, kickoff starts early, and scope disagreements appear in week two. This page is about fixing that pre-kickoff gap before it turns into delivery confusion.
 
-This guide gives you a repeatable pre-kickoff handoff process so the contract reflects execution reality.
+This guide gives you a repeatable pre-kickoff handoff process so the proposal and contract package reflect execution reality.
 
 Its job is to produce a review-ready proposal and contract package. The actual back-and-forth review loop after the package is sent belongs on [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 
 This page is especially useful when you keep hearing some version of "we thought that was included" after the project starts. In practice, that usually means the handoff from discovery to execution was too informal.
 
-Use it after the intake workflow has already improved lead quality and before the onboarding checklist turns the signed project into a live delivery record.
+Use it after the intake workflow has already improved lead quality and before proposal review and approval turn the package into a signed project.
 
 ## What this handoff must achieve
 
-Before onboarding begins, your process should produce:
+Before proposal review begins, your process should produce:
 - one agreed scope statement,
 - one delivery timeline with milestone dates,
 - one acceptance definition for each deliverable,
 - one commercial record (fees, invoicing schedule, payment terms),
 - one change-request rule.
 
-If any of these are missing, onboarding starts with avoidable risk.
+If any of these are missing, proposal review starts with avoidable risk and onboarding inherits that ambiguity later.
 
 ## Who should use this page
 
@@ -103,9 +104,20 @@ At minimum, the internal packet you carry into onboarding should answer:
 - Who can approve scope, content, or deliverables?
 - Which event triggers the next invoice?
 
-## Step 5: Handoff package to onboarding
+## Step 5: Handoff package into review and contract
 
-Once signed, pass this package to onboarding:
+Before the package goes into live client review, make sure it already contains:
+- final scope and exclusions draft,
+- milestone timeline,
+- stakeholder/approver map,
+- communication cadence assumptions,
+- invoice schedule.
+
+Then move into [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) to control the revision loop and define what counts as final approval.
+
+## Step 6: Carry the approved package to onboarding
+
+Once approved and signed, pass this package to onboarding:
 - final scope and exclusions,
 - milestone timeline,
 - stakeholder/approver map,
@@ -143,10 +155,10 @@ If that is not true yet, keep the handoff manual and visible. Then use [Workflow
 ## Handoff completion standard
 
 Treat the handoff as complete only when:
-- contract scope and proposal scope match line-for-line,
+- the review-ready package matches the current proposal scope line-for-line,
 - milestone owners are named,
 - invoice triggers are documented,
-- onboarding inputs are ready before kickoff date.
+- onboarding inputs are ready once approval is secured.
 
 If one item is missing, pause kickoff and close the gap first.
 

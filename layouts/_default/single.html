@@ -1,13 +1,25 @@
 {{ define "main" }}
 {{ $sectionPage := .CurrentSection }}
 {{ $nextPage := false }}
-{{ with .Params.related }}
+{{ with .Params.best_next }}
   {{ range first 1 . }}
     {{ with $.Site.GetPage . }}
       {{ $nextPage = . }}
     {{ else }}
       {{ with (where $.Site.RegularPages "RelPermalink" "eq" .) }}
         {{ $nextPage = index . 0 }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ else }}
+  {{ with .Params.related }}
+    {{ range first 1 . }}
+      {{ with $.Site.GetPage . }}
+        {{ $nextPage = . }}
+      {{ else }}
+        {{ with (where $.Site.RegularPages "RelPermalink" "eq" .) }}
+          {{ $nextPage = index . 0 }}
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}

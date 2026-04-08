@@ -12,7 +12,8 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
+best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
 featured = false
 +++
 

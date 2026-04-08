@@ -12,7 +12,7 @@ page_type = "workflow"
 search_intent = "implementation"
 page_role = "workflow-anchor"
 hub_priority = 1
-related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
+related = ["/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/"]
 featured = true
 +++
 
@@ -47,7 +47,7 @@ The main job of this page is to show the full sequence, the boundary between sta
 ## The 6-stage workflow map
 
 1. **Intake and qualification** - collect required context and decide if the lead is a fit.  
-2. **Proposal and contract handoff** - confirm scope, timeline, terms, and success criteria.  
+2. **Proposal handoff, review, and approval** - confirm scope, timeline, terms, and who can actually approve the version that moves forward.  
 3. **Onboarding** - align communication cadence, access, assets, and kickoff scope.  
 4. **Delivery and QA** - execute work in milestones with visible status and quality checks.  
 5. **Invoicing and payment** - issue invoice tied to milestones and follow a clear follow-up rhythm.  
@@ -74,7 +74,7 @@ Implementation next step: [How to Build a Client Intake and Qualification Workfl
 ### 2) Proposal and contract handoff
 **Goal:** ensure sales promises match execution reality.  
 **Inputs:** qualified lead, discovery notes, draft scope.  
-**Output:** signed agreement with concrete deliverables.
+**Output:** approved proposal and signed agreement with concrete deliverables.
 
 Critical handoff rule: no kickoff date is set until scope, timeline, and owner responsibilities are explicit.
 
@@ -148,7 +148,7 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 
 - **Day 1:** map your current client path to the 6 stages above.  
 - **Day 2:** define go/no-go intake criteria and required fields.  
-- **Day 3:** standardize proposal/contract handoff checklist.  
+- **Day 3:** standardize proposal handoff plus revision-and-approval rules.  
 - **Day 4:** implement onboarding checklist and assign owners.  
 - **Day 5:** define milestone-to-invoice trigger rules.  
 - **Day 6:** add offboarding/testimonial step to close process.  
@@ -159,10 +159,11 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 1. Build intake logic: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
 2. Choose your stack model: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).  
 3. Decide operating system type: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).  
-4. Activate the signed project cleanly: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).  
-5. Run delivery milestone by milestone: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
-6. Keep billing tied to real delivery events: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
-7. Close the engagement cleanly: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
-8. Resolve narrow blockers only after the lifecycle is clear: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
+4. Control proposal review before kickoff: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).  
+5. Activate the signed project cleanly: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).  
+6. Run delivery milestone by milestone: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+7. Keep billing tied to real delivery events: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+8. Close the engagement cleanly: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+9. Resolve narrow blockers only after the lifecycle is clear: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/).
 
 If this page feels too broad, do not rewrite your whole business at once. Tighten one stage, connect it to the next stage, and keep one clear system of record throughout the client lifecycle.

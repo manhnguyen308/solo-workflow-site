@@ -12,7 +12,8 @@ page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+best_next = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
+related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
