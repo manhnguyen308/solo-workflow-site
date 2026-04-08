@@ -12,7 +12,7 @@ page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 1
-related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
+related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++
 
@@ -107,6 +107,7 @@ If those boundaries are informal, hybrid creates duplicated truth instead of bet
 - In [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/), because that page decides where the live truth should sit.
 - In [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), because stack design depends on one authoritative home for active work.
 - In [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/), because consolidation fails without a defined target.
+- In [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/), because naming the term is not enough if the ownership rule is still unwritten.
 
 ## Recommended next move
 

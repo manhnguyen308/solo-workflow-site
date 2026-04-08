@@ -14,7 +14,7 @@ search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 4
 best_next = ["/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
@@ -34,6 +34,8 @@ Use it when:
 If you still need the broader stack model first, start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 If you still have not decided whether the business should stay consolidated or split functions across a specialized stack, start with [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
+
+If the main issue is not tool inventory but unclear data ownership between systems, use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) before trying to plan the cleanup.
 
 ## What this worksheet does not decide
 

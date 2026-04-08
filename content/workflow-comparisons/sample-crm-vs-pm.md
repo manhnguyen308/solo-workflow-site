@@ -13,7 +13,7 @@ search_intent = "comparison"
 page_role = "comparison-node"
 hub_priority = 1
 best_next = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/glossary/system-of-record/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/workflows/how-to-build-a-client-intake-and-qualification-workflow/", "/glossary/system-of-record/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
 featured = false
 +++
 
@@ -176,6 +176,7 @@ Hybrid can work, but only with a written rule such as:
 - If PM-first: build delivery and onboarding consistency with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - If PM-first and the remaining question is tool shape inside delivery, continue to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 - For any model: align tool spend with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If the model is chosen but the rule boundary is still fuzzy, document it with [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 
 If the question is still broader than tool category choice, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before opening narrower workspace comparisons.
 

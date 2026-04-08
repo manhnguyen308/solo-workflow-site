@@ -13,7 +13,7 @@ search_intent = "selection"
 page_role = "pillar"
 hub_priority = 1
 best_next = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/"]
-related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
+related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/notion-vs-clickup-for-solo-client-delivery/", "/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
 
@@ -72,6 +72,7 @@ Use the next page based on the question that is still blocking setup:
 - If the stack is already too fragmented, go next to [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
 - If buying pressure is the real issue, go next to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 - If you need to document the current stack before changing anything, go next to [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
+- If the stack shape is mostly clear but ownership still feels vague, go next to [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 
 ## Stage-based stack tiers
 
@@ -176,6 +177,7 @@ Typical fit: higher client load, more stakeholders, or more repeatable delivery 
 ## What to do after choosing the stack shape
 
 - Document your [System of Record](/glossary/system-of-record/) rules clearly.
+- Use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) if the main weakness is not tool count but unclear truth ownership between systems.
 - Use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) if the current tool set is still too vague or duplicated to clean up from memory.
 - Run [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) every week for 30 days.
 - Delay any automation until the stack works manually for several cycles.

@@ -13,7 +13,7 @@ search_intent = "problem-solving"
 page_role = "supporting-guide"
 hub_priority = 3
 best_next = ["/templates/weekly-client-operations-checklist-solo-business/"]
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++
 
@@ -28,6 +28,8 @@ If the open question is whether the business should stay consolidated at all or 
 This page should not replace the blueprint. It assumes the target shape is already clear enough, and its job is to help you move the live system there without damaging active work.
 
 Before starting the move, use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) if the current tool set is still too fuzzy to audit cleanly from memory.
+
+If the tool list is clear but the ownership rules are not, use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) before moving live records.
 
 ## Migration outcomes
 
