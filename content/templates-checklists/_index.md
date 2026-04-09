@@ -29,6 +29,8 @@ Think of this hub as the execution layer of the site. If another page tells you 
 9. Use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) when the rule you need is what must be true before one lifecycle stage is allowed to move into the next.
 10. Use [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) when review gets messy because too many people comment, feedback arrives through the wrong path, or approval is not closing cleanly.
 11. Use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) when work is stalling because required client assets, answers, approvals, or materials were never defined tightly enough.
+12. Use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) when blocked work needs a formal pause, escalation, re-scope, proceed, or close-out decision instead of indefinite waiting.
+13. Use [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) when the original plan itself is no longer reliable and work needs a clean reset before it can continue.
 
 ## Ongoing operating rhythm
 
@@ -44,6 +46,8 @@ Think of this hub as the execution layer of the site. If another page tells you 
 - [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) is the transition-rule asset for lifecycle boundaries that keep starting too early or closing too vaguely.
 - [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) is the review-routing asset for situations where comments, approvals, and revision requests are arriving from too many directions.
 - [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) is the dependency-tracking asset for situations where missing client-side inputs keep blocking stage progress.
+- [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) is the operating-decision asset for blocked work that can no longer stay in limbo.
+- [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) is the recovery asset for situations where repeated delay, drift, or conflicting inputs have broken the original plan.
 
 ## What templates should and should not do
 
@@ -71,6 +75,8 @@ The strongest pages in this hub usually include:
 - For stage-boundary clarity: proposal revision and approval -> onboarding workflow -> handoff boundary worksheet -> milestone delivery -> invoice workflow -> offboarding workflow.
 - For review control: approval owner -> proposal revision and approval -> approval and feedback routing worksheet -> milestone delivery -> client silence during review FAQ.
 - For blocked client inputs: client dependency -> onboarding or delivery workflow -> client input dependency worksheet -> late/incomplete client inputs FAQ.
+- For blocked work decisions: client input dependency worksheet -> escalation and pause-state worksheet -> milestone delivery or proposal review workflow.
+- For recovery after repeated drift: escalation and pause-state worksheet -> scope reset and recovery worksheet -> change request workflow or milestone delivery workflow.
 
 ## If the asset feels premature
 

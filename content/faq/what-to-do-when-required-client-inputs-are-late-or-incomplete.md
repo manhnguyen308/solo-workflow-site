@@ -13,7 +13,7 @@ page_type = "faq"
 search_intent = "informational"
 page_role = "support"
 hub_priority = 4
-related = ["/glossary/client-dependency/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
+related = ["/glossary/client-dependency/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
 featured = false
 +++
 
@@ -31,6 +31,8 @@ Document three things immediately:
 If you cannot name those clearly, you do not yet have a useful record of the [Client Dependency](/glossary/client-dependency/).
 
 If the dependency keeps recurring because the input was never documented tightly enough, define it first with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
+
+If the dependency is now severe enough that waiting is no longer a neutral choice, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) to define the next operating state explicitly.
 
 ## Should you work around it if you can?
 

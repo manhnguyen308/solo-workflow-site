@@ -14,7 +14,7 @@ search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 8
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/"]
 featured = true
 +++
 
@@ -155,6 +155,10 @@ Define one practical response:
 - pause the transition until the item arrives.
 
 Do not improvise the fallback every time. The point is to reduce ambiguity before the delay occurs.
+
+If the fallback is no longer enough and the blocked work needs a formal pause, re-scope, proceed, or close-out decision, move next to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
+If the repeated dependency failure has already made the old plan unreliable, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) instead of trying to patch the same plan again.
 
 ## Suggested use cases
 

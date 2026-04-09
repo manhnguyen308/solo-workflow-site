@@ -14,7 +14,7 @@ search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 6
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/"]
+related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/templates/client-onboarding-checklist-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/"]
 featured = true
 +++
 
@@ -93,6 +93,10 @@ Inputs should be specific enough that a second person could verify them without 
 If readiness depends on several reviewers feeding one decision path, define that routing separately with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 If readiness depends on missing client-side materials, answers, or access, define those items separately with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
+
+If the boundary is already blocked beyond an acceptable waiting window, define the pause or escalation rule separately with [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
+If the work has already crossed that line and the original transition plan is no longer trustworthy, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
 ## Required approvals / signoff
 

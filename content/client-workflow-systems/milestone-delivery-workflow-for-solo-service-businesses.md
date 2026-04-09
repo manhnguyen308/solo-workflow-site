@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
 best_next = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
-related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
@@ -163,6 +163,10 @@ Split the milestone when:
 - If the milestone depends on client input, track that dependency visibly instead of letting it live in chat or memory.
 
 If the missing client input itself is still not documented tightly enough, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) before the work stays blocked for another cycle.
+
+If the work is already blocked badly enough that you need to choose between pause, re-scope, proceed conditionally, or closeout, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
+If the project has already drifted so far that the old milestone plan is no longer reliable, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before trying to push delivery forward again.
 
 ## Use this workflow with
 

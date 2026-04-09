@@ -11,7 +11,7 @@ tags = ["change-request", "scope-control", "workflow"]
 page_type = "guide"
 search_intent = "implementation"
 page_role = "supporting-guide"
-related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-change-request-template/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/glossary/approval-owner/"]
+related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/templates/client-change-request-template/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/glossary/approval-owner/"]
 featured = false
 +++
 
@@ -30,6 +30,8 @@ Use it when:
 - approvals are unclear when a scope change appears.
 
 If the real problem is that the original scope was never clear, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the work is still pre-signature and the proposal is under review, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) instead.
+
+If too many unofficial changes, delays, and workarounds have already broken the old plan, reset the operating baseline first with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before treating the situation like an ordinary new request.
 
 Do not use this page for ordinary delivery feedback that still fits the agreed milestone. Use it only when the request may change the actual operating agreement.
 
