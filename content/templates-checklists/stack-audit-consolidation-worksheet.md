@@ -24,6 +24,16 @@ This is an execution asset, not a strategy page. It helps you turn stack decisio
 
 Use this before migration sequencing. Once the tool inventory is visible, the next narrower question is usually ownership rules, not tool shopping.
 
+This worksheet should not be your first entry point into stack design. Use it only after the broader stack model or comparison decision is already clear enough to audit against.
+
+## What this page is for
+
+Use this page to turn an already-decided stack direction into a visible cleanup plan. It is for documenting the current operating reality before consolidation starts.
+
+## What this page is not for
+
+Do not use this worksheet as your first stack-design page, a tool-shopping shortcut, or a substitute for choosing the system center. It does not decide what the stack should be. It only shows what the current stack is doing well enough to clean it up.
+
 ## When to use this worksheet
 
 Use it when:
@@ -38,6 +48,10 @@ If you still need the broader stack model first, start with [Software Stack Blue
 If you still have not decided whether the business should stay consolidated or split functions across a specialized stack, start with [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
 
 If the main issue is not tool inventory but unclear data ownership between systems, use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) before trying to plan the cleanup.
+
+## Safest next step after this worksheet
+
+Once the current inventory is visible, move next to [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) if ownership is still fuzzy, or [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) if the cleanup sequence itself is the next blocker.
 
 ## What this worksheet does not decide
 
@@ -58,6 +72,14 @@ Those decisions belong on the blueprint, comparison, and migration pages. This a
 4. Leave clear keep / replace / retire decisions, even if some rows stay provisional for a week.
 
 Practical rule: if two tools both look like they hold current client truth, that is exactly the ambiguity this worksheet should expose.
+
+## What this worksheet assumes you already know
+
+- the likely system center,
+- whether the stack should stay more consolidated or become more specialized,
+- whether the goal is cleanup rather than broad redesign.
+
+If those decisions are still open, go back upstream before using this page.
 
 ## Stack audit worksheet
 

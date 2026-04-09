@@ -27,6 +27,22 @@ If any of these are missing, the next stage starts with ambiguity.
 
 This page is a reference layer, not the main answer to workflow design problems. Use it to clarify the term quickly, then move back into the workflow or handoff guide that needs the definition.
 
+## What this page is for
+
+Use this page when one blocking term needs a quick definition so you can return to the actual workflow problem with less ambiguity.
+
+## What this page is not for
+
+Do not use this page as a substitute for the lifecycle anchor, the proposal handoff guide, or a stage-boundary worksheet. It explains the term, not the whole operating fix.
+
+## Start here first if...
+
+- the whole lifecycle still feels messy,
+- you need to design a handoff rule rather than define the term,
+- the main problem is a broken stage transition, not vocabulary.
+
+In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/), or [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
+
 ## Why this matters for solo operators
 
 Solo businesses often have hidden handoffs, for example from discovery notes to proposal, or from delivery to invoicing. Even when one person owns both stages, documenting the handoff reduces mistakes and context loss.
@@ -88,3 +104,5 @@ If weak handoffs are a recurring pattern, do not just add reminders. Tighten the
 - Start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) for the full sequence.
 - Use [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) for the highest-risk transition.
 - Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) only after the workflow rule is already clear and you need the execution asset.
+
+If the definition is already clear, do not stay on this page. Move back to the stage or handoff that needs repair.

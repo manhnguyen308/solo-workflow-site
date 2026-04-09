@@ -22,6 +22,10 @@ Use this page as the anchor model for your operations. It is the best first page
 
 Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools. Those supporting pages exist to deepen one stage. This page is the broader operating model that should stay at the center of the cluster.
 
+## If you landed here directly
+
+Stay on this page if the problem still feels broad, several stages are failing at once, or you are not sure whether the real issue is intake, approval, delivery, billing, or handoff. Leave this page only after you can name the stage or transition that is actually creating downstream damage.
+
 ## What this page should and should not do
 
 This page should:
@@ -84,6 +88,15 @@ By the time you leave this page, you should be able to answer:
 - which stage deserves attention first,
 - which support page is the correct next move,
 - which pages are supporting assets rather than the main answer.
+
+## Safest next move from this page
+
+Use the lifecycle map to choose only one next page:
+
+- broad lifecycle still messy -> keep reading this page once end to end,
+- one stage is clearly failing -> move to that stage workflow,
+- one handoff is clearly weak -> move to the related handoff or support worksheet,
+- stack shape is the real blocker -> leave the workflow cluster for [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 ## Lifecycle handoff table
 

@@ -21,6 +21,15 @@ Use this as a closeout asset once the delivery and billing stages are already un
 
 The practical goal is simple: close the engagement cleanly enough that the project can be referenced, billed, archived, and followed up without loose ends.
 
+## What this template assumes you already know
+
+- delivery is genuinely complete,
+- billing status is already visible,
+- the closeout rule is clear,
+- you know whether the testimonial ask should happen now or be deferred.
+
+If closeout timing, signoff, or billing state is still fuzzy, go back to the offboarding or billing workflow first.
+
 ## What this template is for and not for
 
 Use it for:

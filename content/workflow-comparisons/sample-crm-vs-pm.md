@@ -27,6 +27,10 @@ Use this comparison before narrower workspace comparisons. It should settle the 
 
 Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons.
 
+## If you landed here directly
+
+This is the right page if the open problem is where active client truth should live. It is the wrong page if the system center is already settled and you only need a workspace comparison, billing-visibility rule, or implementation asset.
+
 ## What this page should not decide
 
 This page should not decide:
@@ -35,6 +39,14 @@ This page should not decide:
 - whether review, booking, or portal tooling needs separate optimization.
 
 Those are downstream questions. This page only decides where active client truth should sit.
+
+## Start somewhere else first if...
+
+- the whole lifecycle still feels messy and you cannot name where truth should live yet,
+- your main issue is broader stack shape rather than system center,
+- you are already committed to one center and only need to choose a delivery workspace.
+
+In those cases, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), or [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 
 ## Who this page is really for
 

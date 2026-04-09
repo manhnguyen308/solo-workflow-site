@@ -21,6 +21,15 @@ This page is the execution checklist for a delivery stage, not the full delivery
 
 It is most useful when the delivery method is already decided and the risk now is avoidable misses at the handoff moment.
 
+## What this checklist assumes you already know
+
+- what the milestone or delivery is supposed to include,
+- who can approve it,
+- what next action the client is expected to take,
+- whether handoff should trigger billing, revision, or closeout.
+
+If any of those are still open questions, go back to the workflow first.
+
 ## When this checklist matters most
 
 Use it before:
@@ -110,6 +119,7 @@ This checklist is complete only when:
 ## Related workflow pages
 
 - Delivery workflow context: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+- Lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Onboarding quality baseline: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
 - Weekly operational rhythm: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
 - Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)

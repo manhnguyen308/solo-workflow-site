@@ -21,6 +21,18 @@ Treat missing client inputs as a named dependency, not as background frustration
 
 This page is for the narrow question of what to do when required assets, access, approvals, or source material do not arrive on time. It does not replace the broader onboarding or delivery workflows. It exists to help you respond cleanly once the dependency is already slowing real work.
 
+## What this page is not for
+
+Do not use this FAQ to define the whole onboarding stage, redesign delivery control, or replace the broader dependency and escalation rules.
+
+## Start here first if...
+
+- the stage itself is still poorly designed,
+- the dependency record does not exist yet,
+- the work is already far enough off track that a pause or reset decision is needed.
+
+In those cases, go first to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/), or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
 ## What should you do first?
 
 Document three things immediately:

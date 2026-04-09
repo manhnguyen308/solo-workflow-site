@@ -20,6 +20,22 @@ A **next action owner** is the person responsible for the immediate step that mu
 
 This matters because many stalled projects do not fail from lack of effort. They fail because everyone can describe the general stage, but no one is explicitly accountable for the next visible move.
 
+## What this page is for
+
+Use this page to clarify one specific handoff role when stalled work keeps lacking a visible next mover.
+
+## What this page is not for
+
+Do not use this page to diagnose the whole workflow, define the approval path, or decide the broader communication system. It only explains the role that owns the immediate next move.
+
+## Start here first if...
+
+- the stage itself is still unclear,
+- the missing role is actually the final approver,
+- several people are involved and the routing path itself is weak.
+
+In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Approval Owner](/glossary/approval-owner/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+
 ## Why it matters
 
 When the next action owner is vague:
@@ -78,3 +94,5 @@ Both roles matter, but they solve different workflow problems.
 - If the missing ownership is happening in client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - If the stall is around scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 - If the stall is around final closeout, go to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+
+Once the term is clear, leave this page and fix the stage where the ownership gap is showing up.

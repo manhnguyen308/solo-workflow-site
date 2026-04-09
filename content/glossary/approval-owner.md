@@ -20,6 +20,22 @@ An **approval owner** is the person who has final authority to accept, reject, o
 
 This matters because "the client will review it" is not specific enough for a working process.
 
+## What this page is for
+
+Use this page to clarify one blocking term quickly when the real issue is uncertainty about who can actually close a decision.
+
+## What this page is not for
+
+Do not use this glossary page to design the whole review process, fix a broken workflow, or decide how several stakeholders should coordinate. It only explains one role inside those broader systems.
+
+## Start here first if...
+
+- the whole proposal or review workflow is still fuzzy,
+- several people can comment but no routing path exists,
+- the open problem is broader than one approval role.
+
+In those cases, go first to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+
 ## Use this page for
 
 Use this definition when you need to clarify:
@@ -109,3 +125,5 @@ Use it to remove ambiguity inside those pages, not instead of them.
 - If the ambiguity is happening in recurring client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - If the ambiguity is happening during scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 - If the ambiguity is happening at milestone review, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+
+If you already understand the term, leave this page and fix the stage that is actually breaking.

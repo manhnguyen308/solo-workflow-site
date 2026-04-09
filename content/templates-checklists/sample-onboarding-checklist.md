@@ -20,10 +20,38 @@ Use this checklist after contract signing and before delivery begins. The goal i
 
 This is the strongest first implementation asset on the site because it turns the abstract proposal-to-delivery handoff into a repeatable kickoff sequence with visible owners, dates, and controls.
 
+Use it after the upstream rule is already clear. If you are still deciding what should happen between proposal approval and kickoff, go back to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) or [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) first.
+
+## What this page is for
+
+Use this page to run a kickoff that is already defined well enough to execute. It is for translating an approved project into a live operating setup with visible scope, owners, dates, and communication rules.
+
+## What this page is not for
+
+Do not use this checklist to decide what the onboarding workflow should be, what the proposal actually promised, or whether kickoff should happen yet. Those are upstream workflow questions, not checklist questions.
+
+## Start here first if...
+
+- proposal review is still open or approval is still fuzzy,
+- the first milestone is not defined yet,
+- approval ownership or communication rules still need to be chosen,
+- you still need the broader sequence from handoff into kickoff.
+
+In those cases, go back to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/), or [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) before using this asset.
+
 ## When to use this checklist
 
 Use immediately after proposal or contract handoff and before the kickoff meeting.  
 Do not skip this stage because "the client already understands the project." Most avoidable delivery friction begins here.
+
+## What this checklist assumes you already know
+
+- what was sold and what is excluded,
+- who can approve work and answer project decisions,
+- which communication channel and billing rule the project will use,
+- what counts as kickoff-ready versus blocked.
+
+If those rules are not clear yet, this checklist is too early.
 
 ## What good onboarding should accomplish
 
@@ -46,6 +74,10 @@ Run the checklist in this order:
 5. confirm invoice and change-control rules.
 
 If an item is incomplete, pause kickoff instead of carrying the ambiguity into delivery.
+
+## Safest next step after this checklist
+
+If kickoff is now clean and the first milestone is live, move next to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) or [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), depending on whether the next risk is communication rhythm or delivery execution.
 
 ## Onboarding checklist (operator version)
 
@@ -114,6 +146,7 @@ Treat onboarding as complete only when:
 - Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Intake setup: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
 - Contract transition: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- Full onboarding rule: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 - Ongoing communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 
 ## Common misuses to avoid

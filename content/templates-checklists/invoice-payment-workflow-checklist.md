@@ -18,6 +18,34 @@ featured = true
 
 Most payment issues start before the invoice is sent. Use this checklist to align contract terms, milestone triggers, and follow-up cadence.
 
+This is an execution checklist, not a billing-policy guide. Use it after the invoice workflow rule is already clear. If you are still deciding when invoices should trigger, where billing status should stay visible, or how milestone completion should work, go back to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) first.
+
+## What this page is for
+
+Use this page to run a billing process that already has defined triggers, ownership, and follow-up rhythm. It is for execution consistency once the underlying billing rule is settled.
+
+## What this page is not for
+
+Do not use this checklist to decide your payment policy, redesign milestone acceptance, or choose where invoice truth should live. Those are broader workflow or stack decisions.
+
+## Start here first if...
+
+- you still debate what counts as invoice-ready,
+- delivery approval is still vague,
+- payment status disappears between tools,
+- the contract handoff still leaves billing triggers unclear.
+
+Go back first to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/), [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/), or [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+
+## What this checklist assumes you already know
+
+- what event actually triggers each invoice,
+- where payment status is authoritative,
+- who owns follow-up,
+- how billing connects back to delivery records.
+
+If those rules are still vague, this checklist is too early.
+
 ## Phase 1: Before work starts
 
 - Confirm invoice schedule in contract (deposit, milestone, final).
@@ -92,5 +120,10 @@ This checklist is complete only when:
 ## Related implementation pages
 
 - End-to-end workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Billing workflow rule: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - Weekly operations review routine: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
 - Lean stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+
+## Safest next step after this checklist
+
+If invoices are still being sent late or payment state still disappears, move back up a level and fix the billing rule in the workflow page or the billing-visibility decision page rather than running this checklist harder.

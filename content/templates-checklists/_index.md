@@ -19,6 +19,15 @@ If you are still trying to decide how the lifecycle should work, where client tr
 2. Open the one asset that matches the exact trigger moment you need to standardize.
 3. Leave this hub again as soon as that trigger is covered.
 
+## Start here only if
+
+- you can name the exact trigger moment the asset will support,
+- you already know which upstream guide set the rule behind that trigger,
+- the problem is execution consistency rather than workflow design,
+- you need one operating asset, not a broader system answer.
+
+If any of those is still unclear, this hub is too narrow for the next move.
+
 ## How to use this hub
 
 - Choose the checklist by trigger moment, not by general topic.
@@ -92,17 +101,20 @@ If you cannot tell which lane your problem belongs to yet, that usually means th
 
 ### Stack cleanup
 
+- Start upstream with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) or [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) before opening these assets.
 - [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) when the main problem is tool sprawl and unclear keep / replace / retire decisions.
 - [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) when the tool list is mostly visible but ownership rules are still weak.
 
 ### Stage and review control
 
+- Start upstream with the relevant workflow guide before opening these assets.
 - [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) when the boundary itself is weak.
 - [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) when the review path is messy.
 - [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) when the missing client-side item was never defined tightly enough.
 
 ### Blocked-work recovery
 
+- Start upstream with the active workflow stage first, then use these assets only after the blocked state is visible enough to document.
 - [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) when the work is blocked and needs a formal operating decision.
 - [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) when the old plan itself is no longer trustworthy.
 - [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/) when the reset is decided and now has to be communicated clearly.
@@ -112,6 +124,7 @@ If you cannot tell which lane your problem belongs to yet, that usually means th
 - They should reduce skipped steps in a process you already understand.
 - They should not replace workflow design or tool decisions.
 - They work best when attached to a specific trigger in your week or client lifecycle.
+- They should make the next action easier to execute, not help you guess what the rule should have been.
 
 ## Content pattern for this section
 

@@ -24,6 +24,22 @@ For solo service businesses, this should include at least:
 - current owner,
 - key dates and status.
 
+## What this page is for
+
+Use this page to clarify what "system of record" means before you make a stack or ownership decision.
+
+## What this page is not for
+
+Do not use this glossary page as the main stack-design answer, migration plan, or comparison decision. It explains the core concept, but it should send you back to the page that actually decides the model.
+
+## Start here first if...
+
+- the full lifecycle is still unclear,
+- you are deciding whether CRM-first or PM-first should hold truth,
+- the stack is already fragmented and you need a cleanup path rather than a definition.
+
+In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/), or [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+
 ## Why it matters
 
 If your status lives in multiple places, such as email, docs, chat, and a PM board, handoffs break and follow-ups are missed. A single system of record reduces ambiguity and rework.
@@ -115,3 +131,5 @@ Use this term to make one concrete decision, not just to learn the language:
 - If you are choosing the right home for active client truth, read [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 - If you already know the model but the stack is still bloated, use [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 - If truth is already fragmented across tools, follow [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+
+Once the term is clear, move into the comparison, blueprint, or migration page that actually resolves the decision.

@@ -29,6 +29,10 @@ The standard is not "most powerful." The standard is "clear enough to run every 
 
 Use this page after a comparison decision when you need to turn "I think PM-first is right" or "I should stay more consolidated" into an actual operating stack. If the open problem is still whether a purchase should happen at all, stay in the overbuying guide instead of treating this blueprint like a shopping list.
 
+## If you landed here directly
+
+This is the right page if you already know the business needs a lean operating stack and the next question is what the baseline setup should look like. It is the wrong page if you are still trying to diagnose a broad workflow problem or still comparing categories at the system-center level.
+
 ## What this page should and should not settle
 
 This page should:
@@ -52,6 +56,14 @@ Start here before narrower stack or tool-decision pages if:
 - other stack pages feel useful but too narrow to choose the full shape.
 
 This page should answer the broader question of what the stack should look like by stage. Other pages in this cluster should only help refine one part of that answer.
+
+## Start somewhere else first if...
+
+- the lifecycle itself is still unclear,
+- you still do not know whether CRM-first or PM-first should hold active truth,
+- the real question is whether to buy anything at all yet.
+
+In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/), or [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 
 ## Lean stack principles (non-negotiable)
 

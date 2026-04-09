@@ -20,6 +20,22 @@ A **client dependency** is any input, file, approval, access item, or decision t
 
 This term matters because solo operators often describe work as "blocked" without naming what exactly is missing from the client side. Once that dependency stays vague, follow-up weakens and timelines become optimistic fiction.
 
+## What this page is for
+
+Use this page to clarify what counts as a client dependency and to name the missing client-side item more precisely.
+
+## What this page is not for
+
+Do not use this page as the main answer to stalled onboarding, delayed delivery, or blocked offboarding. It explains one term inside those broader problems.
+
+## Start here first if...
+
+- the whole stage is weak rather than one dependency,
+- you need the actual response pattern rather than the definition,
+- the work is already blocked badly enough that waiting is no longer neutral.
+
+In those cases, go first to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/), or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
 ## Why it matters
 
 When client dependencies are not explicit:
@@ -80,3 +96,5 @@ Naming the dependency early protects later stages.
 - If the dependency is blocking kickoff, go to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - If it is blocking active work, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If you need the narrow response pattern, go to [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).
+
+If you already understand the term, do not stay in the glossary layer longer than needed.

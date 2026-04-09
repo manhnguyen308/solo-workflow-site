@@ -432,3 +432,177 @@ Each of the above also has dedicated feature art under `static/images/features/t
 ### Recommended next step
 
 - Do a selective individual-page first-paragraph and next-step pass on the highest-value cornerstone pages if later user behavior suggests readers still hesitate after the first click, rather than expanding the site further.
+
+## Templates/checklists hub gating and usage-path refinement pass completed on 2026-04-09
+
+### Pass goal
+
+- Reduce the chance that readers enter the templates/checklists hub too early or use a template before they understand the upstream workflow, blueprint, or comparison decision it depends on.
+
+### Files changed in this pass
+
+- `content/templates-checklists/_index.md`
+- `content/templates-checklists/sample-onboarding-checklist.md`
+- `content/templates-checklists/weekly-client-operations-checklist.md`
+- `content/templates-checklists/invoice-payment-workflow-checklist.md`
+- `content/templates-checklists/stack-audit-consolidation-worksheet.md`
+- `content/templates-checklists/system-of-record-rules-worksheet.md`
+- `content/templates-checklists/project-start-readiness-and-handoff-boundary-worksheet.md`
+- `content/templates-checklists/delivery-qa-checklist-before-client-handoff.md`
+- `content/templates-checklists/client-offboarding-testimonial-template.md`
+
+### What was done
+
+- Tightened the templates hub so it gates entry more clearly:
+  - added stronger `Start here only if...` logic,
+  - clarified the safest first path through the hub,
+  - grouped support paths more explicitly around the upstream problem they follow,
+  - added stronger warnings when the reader still cannot identify the correct lane or trigger moment.
+- Tightened the most visible template/checklist pages so they behave more clearly as downstream execution assets:
+  - onboarding checklist now states more explicitly what it assumes the reader already knows and routes more clearly back to the onboarding workflow,
+  - weekly operations checklist now states more clearly that it is for maintaining a system that already exists, not designing one,
+  - invoice/payment checklist now states more clearly that it depends on an already-defined billing rule,
+  - stack audit worksheet now states more clearly that it should not be the first stack-design page,
+  - system-of-record rules worksheet now states more clearly that it sits after the broader system-center and stack-shape decisions,
+  - handoff-boundary worksheet now states more clearly that it assumes the stage logic already exists,
+  - delivery QA checklist now states more clearly that it depends on a defined delivery and approval rule,
+  - offboarding template now states more clearly that it depends on visible delivery, billing, and closeout rules.
+
+### Build verification result
+
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Current templates-cluster judgment after this pass
+
+- The templates/checklists hub now does a better job of telling readers:
+  - when they are ready for the hub,
+  - what upstream page should come first,
+  - which asset lane they actually belong in,
+  - when they should leave the hub again.
+- The highest-visibility asset pages now make their upstream assumptions more explicit, which should reduce misuse as substitute guides.
+
+### Remaining follow-up items
+
+- The weekly operations checklist is still naturally attractive as a broad operational page, so keep watching whether readers treat it as a first-stop guide instead of a maintenance asset.
+- The onboarding checklist remains the strongest and most tempting first asset in the cluster; that is useful, but it still needs careful positioning behind the onboarding workflow.
+- Avoid adding more templates until later behavior or indexing feedback shows a real implementation gap.
+
+### Recommended next step
+
+- If templates still feel overused later, do a narrower page-level pass on the few most-clicked assets first rather than broadening the whole templates cluster again.
+
+## Single-page entry clarity and misuse-prevention pass completed on 2026-04-09
+
+### Pass goal
+
+- Restore the homepage hero H1 to a calmer, better-balanced scale.
+- Improve important single pages so direct-entry readers can understand what each page is for, what it is not for, what should come first, and what the safest next step is.
+
+### Files changed in this pass
+
+- `static/css/main.css`
+- `content/templates-checklists/sample-onboarding-checklist.md`
+- `content/templates-checklists/weekly-client-operations-checklist.md`
+- `content/templates-checklists/invoice-payment-workflow-checklist.md`
+- `content/templates-checklists/stack-audit-consolidation-worksheet.md`
+- `content/templates-checklists/system-of-record-rules-worksheet.md`
+- `content/templates-checklists/project-start-readiness-and-handoff-boundary-worksheet.md`
+- `content/client-workflow-systems/sample-client-workflow.md`
+- `content/software-stack-blueprints/sample-stack-blueprint.md`
+- `content/workflow-comparisons/sample-crm-vs-pm.md`
+
+### What was done
+
+- Restored the homepage hero title to a more restrained scale:
+  - reduced the desktop H1 clamp from the oversized setting,
+  - eased the line-height and letter-spacing slightly so the title reads strong without dominating the hero block.
+- Tightened direct-entry framing on the highest-risk single pages by adding or strengthening:
+  - what the page is for,
+  - what the page is not for,
+  - start-here-first guidance,
+  - safest next-step guidance.
+- Reinforced the difference between:
+  - anchor workflow pages,
+  - blueprint and comparison decision pages,
+  - downstream templates and worksheets.
+- Reduced the chance that direct-entry readers use templates or worksheets as substitutes for the upstream workflow, blueprint, or comparison pages they depend on.
+
+### Current judgment after this pass
+
+- The homepage hero is back to a more premium, controlled scale instead of feeling oversized.
+- The highest-risk single pages now behave more clearly as guided entry points or downstream execution assets rather than isolated pages.
+- The main remaining misuse risk is still the templates/checklists cluster, especially broad-feeling operational assets like the weekly operations checklist and onboarding checklist.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- Check the rendered homepage hero on desktop after rebuild to make sure the H1 scale now matches the earlier more restrained look.
+- Keep watching whether the weekly operations and onboarding checklist pages still attract readers before the upstream workflow pages.
+- If single-page misuse still shows up later, tighten the first two paragraphs on a few more support pages before broadening any cluster.
+
+### Recommended next step
+
+- Do a selective first-paragraph and next-step refinement pass on a few remaining support/glossary/FAQ single pages only if later behavior shows direct-entry readers are still landing too narrow too early.
+
+## FAQ and glossary single-page direct-entry refinement pass completed on 2026-04-09
+
+### Pass goal
+
+- Make glossary and FAQ single pages safer for direct-entry readers so they clarify one narrow point and then route people back to the stronger workflow, blueprint, comparison, or support page they actually need.
+
+### Files changed in this pass
+
+- `content/glossary/approval-owner.md`
+- `content/glossary/client-dependency.md`
+- `content/glossary/next-action-owner.md`
+- `content/glossary/sample-workflow-definition.md`
+- `content/glossary/system-of-record.md`
+- `content/faq/reviewing-and-maintaining-a-solo-service-workflow-system.md`
+- `content/faq/sample-stack-faq.md`
+- `content/faq/what-to-do-when-a-client-goes-silent-during-review.md`
+- `content/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete.md`
+
+### What was done
+
+- Tightened glossary single pages with clearer direct-entry framing:
+  - added or strengthened `what this page is for`,
+  - added or strengthened `what this page is not for`,
+  - added clearer `start here first if...` routing when a broader workflow, blueprint, or comparison page should come first,
+  - added stronger "leave this page once the term is clear" language.
+- Tightened FAQ single pages with clearer misuse prevention:
+  - added clearer "this is not the full guide" language,
+  - added clearer "start here first if..." guidance when the reader really needs a broader stage or stack page,
+  - preserved their usefulness as narrow response pages while reinforcing that they are routing layers rather than substitute entry pages.
+
+### Current judgment after this pass
+
+- Direct-entry FAQ and glossary pages are now more explicit about being narrow support layers.
+- The highest remaining misuse risk is still on the stack FAQ and the two more operational glossary terms (`system of record` and `client dependency`), simply because they connect to broader decisions that readers may still try to solve from one term or one FAQ answer.
+- That said, the direct-entry risk is materially lower now because those pages more clearly push readers back to the right upstream guide.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- Watch whether direct-entry readers still linger on the stack FAQ instead of moving into the lean blueprint or system-center comparison.
+- Watch whether glossary terms tied to bigger stack decisions still attract readers before the broader blueprint or comparison pages.
+- Avoid another broader direct-entry pass unless later behavior shows continued confusion.
+
+### Recommended next step
+
+- Hold off on another direct-entry refinement pass for now unless later behavior or indexing feedback shows that readers are still using glossary or FAQ single pages as first-stop pages instead of routing layers.

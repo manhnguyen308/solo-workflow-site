@@ -21,6 +21,18 @@ Treat client silence during review as a workflow state, not as a personality mys
 
 This page is for the narrow question of what to do when work has been sent, a decision is still needed, and the client has gone quiet. It is not a full communication guide. Its job is to help you respond without turning silence into hidden delay, accidental approval, or emotional guessing.
 
+## What this page is not for
+
+Do not use this FAQ to define the whole review process, fix a weak approval path from scratch, or replace the broader delivery or proposal-review workflows.
+
+## Start here first if...
+
+- the review stage itself is still undefined,
+- you still do not know who can approve the work,
+- multiple stakeholders are involved and no routing rule exists yet.
+
+In those cases, go first to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+
 ## What to do first
 
 Confirm four things before you send another message:

@@ -24,6 +24,16 @@ This is a support asset, not a lifecycle guide. Its job is to help you define wh
 
 Use this when the transition rule itself is weak. If the boundary is already clear and the real problem is one missing client-side item, move narrower to [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
 
+Do not use this worksheet to invent a lifecycle stage from scratch. Use it only after the stage workflow already exists and the open issue is boundary quality between two known stages.
+
+## What this page is for
+
+Use this page to define one exact handoff boundary after the stage logic already exists. It is for making "ready to move forward" visible enough to verify instead of debate.
+
+## What this page is not for
+
+Do not use this worksheet to map the full lifecycle, create a brand-new process, or fix a general project-management problem. It only clarifies one transition point at a time.
+
 ## When to use this worksheet
 
 Use it when:
@@ -34,6 +44,10 @@ Use it when:
 - the team uses phrases like "basically ready" or "close enough to move" too often.
 
 If you still need the broader lifecycle method first, use [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) or the specific stage workflow before using this asset.
+
+## Safest next step after this worksheet
+
+If the boundary is now clear but the project is still blocked, move narrower to [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/). If the boundary itself still feels conceptually weak, go back to the relevant workflow page rather than adding more worksheet detail.
 
 ## What this worksheet does not decide
 
@@ -54,6 +68,15 @@ Those decisions belong on the workflow, comparison, and blueprint pages. This as
 4. Write what evidence must exist before the boundary is considered passed.
 
 Practical rule: if the stage can still move forward even when nobody can show the evidence, the boundary is still weak.
+
+## What this worksheet assumes you already know
+
+- which two stages the boundary sits between,
+- what the upstream stage is supposed to produce,
+- who should own the first move after the boundary passes,
+- what should count as valid approval.
+
+If that stage logic is still fuzzy, return to the workflow page before using this asset.
 
 ## Handoff boundary worksheet
 

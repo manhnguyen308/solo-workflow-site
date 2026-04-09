@@ -1360,10 +1360,10 @@ body {
 .homepage-hero-copy h1 {
   margin-bottom: 1.5rem;
   color: #0f172a;
-  font-size: clamp(3.2rem, 5.6vw, 4.5rem);
+  font-size: clamp(2.85rem, 4.6vw, 3.9rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -0.045em;
+  line-height: 1.12;
+  letter-spacing: -0.038em;
   text-wrap: balance;
 }
 

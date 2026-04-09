@@ -21,6 +21,18 @@ This FAQ is for ongoing system review, not first-time setup. Use it when the wor
 
 Treat this page as a maintenance routing layer, not a standalone operations manual. It should send recurring drift problems back into the stronger workflow, blueprint, and comparison pages that define the actual fixes.
 
+## What this FAQ is not for
+
+Do not use this page for first-time setup, stack design, or diagnosing the full lifecycle from scratch. It is for maintenance questions after the system already exists.
+
+## Start here first if...
+
+- the operating model does not exist yet,
+- the whole lifecycle still feels messy instead of merely drifted,
+- the stack shape itself is still undecided.
+
+In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) or [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) before using this FAQ.
+
 ## When to use this FAQ
 
 Use it when:
