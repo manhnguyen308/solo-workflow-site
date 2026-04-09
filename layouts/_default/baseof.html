@@ -25,6 +25,17 @@
     {{ block "main" . }}{{ end }}
   </main>
   {{ partial "footer.html" . }}
+  <button
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    data-back-to-top
+    hidden
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 6.75 6.75 12l1.06 1.06 3.44-3.43V18h1.5V9.63l3.44 3.43L17.25 12 12 6.75Z"/>
+    </svg>
+  </button>
   {{ partial "site-script.html" . }}
 </body>
 </html>

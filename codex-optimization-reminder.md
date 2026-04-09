@@ -606,3 +606,46 @@ Each of the above also has dedicated feature art under `static/images/features/t
 ### Recommended next step
 
 - Hold off on another direct-entry refinement pass for now unless later behavior or indexing feedback shows that readers are still using glossary or FAQ single pages as first-stop pages instead of routing layers.
+
+## Site-wide back-to-top utility pass completed on 2026-04-09
+
+### Pass goal
+
+- Add a subtle site-wide back-to-top control that feels like utility UI rather than a CTA.
+
+### Files changed in this pass
+
+- `layouts/_default/baseof.html`
+- `layouts/partials/site-script.html`
+- `static/css/main.css`
+
+### What was done
+
+- Added one shared back-to-top button in the base layout so it appears across major page types.
+- Styled it as a small floating circular utility control at the bottom right:
+  - icon-only upward arrow,
+  - subdued border, shadow, and color treatment aligned with the current design system,
+  - visible but low-emphasis focus state,
+  - mobile-safe spacing from screen edges.
+- Added lightweight shared scroll logic:
+  - hidden near the top,
+  - revealed only after a reasonable scroll depth,
+  - smooth scroll back to top on click.
+- Kept the implementation maintainable by extending the existing shared site script instead of adding a new library or page-specific widget.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- Confirm the button does not visually compete with any mobile browser UI on smaller screens.
+- If needed later, tune the reveal threshold slightly based on real use, but keep it conservative.
+
+### Recommended next step
+
+- No immediate follow-up is required if the control feels appropriately subtle after visual review on desktop and mobile.
