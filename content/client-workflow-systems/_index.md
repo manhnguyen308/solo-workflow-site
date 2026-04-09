@@ -11,12 +11,37 @@ Most solo operators do not need more advice about "productivity." They need a cl
 
 If several parts of the lifecycle feel unclear at once, the right first page is still the anchor workflow. The stage-specific guides and templates exist to deepen one part of that broader operating model.
 
+If you only open one page from this hub, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). Most of the narrower workflow and support pages make more sense after that sequence is visible.
+
+## The safest first path through this hub
+
+1. Open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first if the lifecycle still feels broad or fuzzy.
+2. Move into the stage guide that matches the clearest bottleneck.
+3. Pull in templates, glossary, FAQ, or comparisons only after the stage rule itself is clear.
+
+## Use this hub as a sequence, not a library
+
+Most readers do better when they pick one of these starting questions first:
+
+- Is the whole lifecycle unclear?
+- Is one stage weak but the rest mostly works?
+- Is the stage itself clear, but the handoff into or out of it still breaks?
+
 ## How to use this hub
 
 - Start with the full lifecycle page if you are not yet sure where the breakdown is.
 - Open the stage-specific guide only after you can name the bottleneck clearly.
 - Pull in checklists after the workflow rule is clear, not before.
 - Use comparisons and stack pages only when the real issue is tool fit rather than stage design.
+
+## Fastest useful starting points
+
+- Open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if you are new to the site or the whole lifecycle feels fuzzy.
+- Open [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) if projects are sold but still start chaotically.
+- Open [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) if live execution, reviews, or approvals are where work starts to slip.
+- Open [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) if delivery is happening but cash collection and follow-up still feel reactive.
+
+If more than one of those sounds equally true, the anchor workflow is still the best first click.
 
 ## Start with the broken stage
 
@@ -67,6 +92,7 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 - For repeated delivery friction: anchor workflow -> onboarding workflow -> milestone delivery workflow -> status update workflow -> delivery QA checklist -> weekly operations checklist.
 - For recurring scope drift: proposal handoff -> proposal revision and approval -> change request workflow -> client change request template -> invoice workflow.
 - For messy project closeout: milestone delivery workflow -> invoice workflow -> offboarding workflow -> offboarding template.
+- For weak lifecycle transitions: proposal revision and approval -> onboarding workflow -> milestone delivery workflow -> invoice workflow -> offboarding workflow.
 
 ## What strong workflow pages in this section should do
 
@@ -77,4 +103,5 @@ If several parts of the lifecycle feel unclear at once, the right first page is 
 
 ## When to leave this section
 
-Move into [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) when the sequence is mostly clear but the tooling feels heavier than it should. If the open question is where client truth should live, jump to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- Move into [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) when the sequence is mostly clear but the tooling feels heavier than it should.
+- Move to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the open question is where current client truth should live rather than which stage is weak.

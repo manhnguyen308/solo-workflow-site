@@ -41,6 +41,8 @@ One approval owner does not mean only one person can comment. It means one perso
 
 If many people can comment and the routing path itself is the problem, use [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) to define how input should move before it reaches the approver.
 
+If the approval path is already clear but the plan itself now needs a revised baseline, leave this term page and move to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+
 ## How to document this in practice
 
 For each stage that needs approval, record:

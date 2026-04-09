@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 4
 best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
+related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/glossary/approval-owner/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-to-do-when-a-client-goes-silent-during-review/"]
 featured = false
 +++
 
@@ -22,6 +22,15 @@ Proposal review is where many solo operators lose control before the project eve
 This page is the workflow between proposal handoff and final approval. It is not the same as the upstream handoff page, which defines what should be in the proposal and contract package. It is also not the same as later change-request control, which applies after the proposal is approved and the project is live.
 
 Use this workflow when the open problem is proposal review itself: revisions are bouncing around, approval ownership is vague, comments are arriving from several people, or signed projects keep starting with hidden ambiguity.
+
+## What this page should not be asked to do
+
+This page should not:
+- fix a weak proposal package from scratch,
+- act like a contract or legal policy guide,
+- replace later live-project change control.
+
+If the proposal itself is still structurally weak, fix the upstream handoff page first. If the project is already signed and active, move into onboarding or change-request control instead of stretching this page beyond its stage.
 
 ## Who this workflow is for
 
@@ -100,6 +109,11 @@ Reasonable default:
 
 The practical goal is not to "win" against the client. The goal is to stop proposal review from becoming open-ended design work before the project is approved.
 
+Useful default review boundary:
+- one main round to test fit,
+- one structural follow-up round if the first round changes the offer materially,
+- a reset conversation if the review can no longer be described as ordinary revision.
+
 ## Step 5: Distinguish proposal revision from later change requests
 
 This is the most important boundary on the page.
@@ -127,6 +141,13 @@ Final approval should mean:
 Silence is not final approval unless your process explicitly says so. "Looks good" is not enough if it does not settle which version was approved.
 
 Store the approval event in the same place that will later support onboarding and billing. If approval only exists in inbox memory, the next stage will start with drift.
+
+Minimum approval record:
+- the approved version or link,
+- the approval owner,
+- the approval date,
+- the scope or pricing boundary that was accepted,
+- the next move after approval.
 
 ## Step 7: Transition from approval to contract and onboarding
 
@@ -160,6 +181,8 @@ If the review is now blocked long enough that it needs a formal operating decisi
 
 If repeated revision churn or conflicting input has broken the original review plan itself, reset the review path explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before treating the next round as normal.
 
+If the reset is already decided and stakeholders need one clear revised message, use [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
+
 ## Practical review map
 
 | Phase | Main question | Output |
@@ -178,6 +201,17 @@ If repeated revision churn or conflicting input has broken the original review p
 - proposal edits continue after the team is already preparing kickoff,
 - no one can tell whether the latest version is still under review or already approved,
 - pre-signature revisions quietly become post-signature delivery changes.
+
+## Why this stage matters more than it looks
+
+Weak proposal review does not stay inside proposal review. It leaks into:
+
+- kickoff ambiguity,
+- hidden dependency problems,
+- delivery friction that should have been resolved before signature,
+- later change-request tension that is really unresolved pre-signature review.
+
+That is why this page matters as a bridge page, not just as a pre-sale detail page.
 
 ## Use this workflow with
 

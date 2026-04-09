@@ -22,6 +22,19 @@ Use this page as the anchor model for your operations. It is the best first page
 
 Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools. Those supporting pages exist to deepen one stage. This page is the broader operating model that should stay at the center of the cluster.
 
+## What this page should and should not do
+
+This page should:
+- show the full lifecycle as one operating system,
+- help you locate the stage that is actually failing,
+- point you to the right narrower workflow, comparison, or implementation page next.
+
+This page should not:
+- replace the stage-specific guides,
+- act like a template library,
+- become a tool-buying page,
+- convince you to rewrite everything at once.
+
 ## Why this page matters first
 
 Start here before you open intake, onboarding, delivery, billing, template, glossary, or FAQ pages if:
@@ -32,6 +45,16 @@ Start here before you open intake, onboarding, delivery, billing, template, glos
 - support pages are answering pieces of the problem but not the whole operating model.
 
 The main job of this page is to show the full sequence, the boundary between stages, and the exact supporting page that belongs under each stage.
+
+## How to use this page in practice
+
+Read the lifecycle once from start to finish, then answer three questions:
+
+- Which stage is currently causing the most downstream damage?
+- Which transition between stages is still too vague?
+- Which supporting page will remove that ambiguity fastest?
+
+If you cannot answer those yet, do not jump into templates or tool comparisons. Stay here until the stage and handoff are clear enough to name.
 
 ## Who this workflow is for (and not for)
 
@@ -61,6 +84,17 @@ By the time you leave this page, you should be able to answer:
 - which stage deserves attention first,
 - which support page is the correct next move,
 - which pages are supporting assets rather than the main answer.
+
+## Lifecycle handoff table
+
+| Stage | What must become true before the next stage | What usually breaks here first |
+|---|---|---|
+| Intake | fit, scope direction, and next step are clear | low-fit leads move forward anyway |
+| Proposal review | one reviewed version and one approval path exist | revision churn and fuzzy ownership |
+| Onboarding | kickoff inputs, owners, and first milestone are visible | access, assets, and expectation gaps |
+| Delivery | milestone state, QA, and approval path are explicit | blocked work hides inside active work |
+| Billing | invoice trigger and payment follow-up are visible | completed work does not become collected revenue |
+| Offboarding | signoff, closeout record, and next-step state are explicit | projects feel finished but never really close |
 
 ## Stage-by-stage operating model
 
@@ -132,6 +166,19 @@ Implementation asset: [Client Offboarding + Testimonial Request Template](/templ
 | Chaotic kickoff | No onboarding sequence | Use a checklist with ownership per item |
 | Late invoices | Billing tied to memory | Tie invoice trigger to milestone completion events |
 | No referrals or repeat work | Offboarding skipped | Include a fixed closeout + testimonial step |
+
+## How to choose the first stage to fix
+
+Start with the earliest stage whose weakness is still creating downstream cleanup.
+
+- Fix intake first if low-fit work keeps entering the system.
+- Fix proposal review first if kickoff starts from unstable promises.
+- Fix onboarding first if signed work still starts messy.
+- Fix delivery first if active work is where chaos begins.
+- Fix billing first if work finishes but cash collection still feels reactive.
+- Fix offboarding first if finished projects keep leaking loose ends and future value.
+
+Do not start with the most annoying symptom if it is only a downstream effect of an earlier weak handoff.
 
 ## Minimum software categories by stage
 

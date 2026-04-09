@@ -22,6 +22,8 @@ Use this worksheet after the broader stack decision is mostly clear and the next
 
 This is a support asset, not a stack-design guide. Its job is to help you define where truth lives, what each tool owns, what can be mirrored safely, and where handoffs must be explicit so the system stays clean under pressure.
 
+Use this after the tool inventory is visible. If you still cannot clearly list what tools are live, start with [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) first.
+
 ## When to use this worksheet
 
 Use it when:

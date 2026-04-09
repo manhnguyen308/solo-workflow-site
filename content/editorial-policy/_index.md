@@ -1,11 +1,17 @@
 +++
 title = "Editorial Policy"
 description = "How SoloOpsGuide approaches methodology, recommendations, updates, and editorial judgment."
-summary = "See how SoloOpsGuide structures recommendations, evaluates tradeoffs, frames content, and handles corrections or monetization boundaries."
+summary = "See how SoloOpsGuide decides what to publish, how recommendations are framed, how updates and corrections are handled, and where editorial boundaries sit."
 date = 2026-04-06T00:00:00Z
 +++
 
 SoloOpsGuide is workflow-first. It does not publish generic tool lists without operational context, and it does not treat software choices as meaningful in isolation from the workflow they are meant to support.
+
+This page exists so readers can see how the site makes judgments, what kinds of content it is trying to produce, and where its recommendations should be trusted or treated as deliberately bounded.
+
+## Who this site is written for
+
+SoloOpsGuide is written for freelancers, consultants, and solo service operators who need calmer systems for intake, delivery, approvals, billing, and tool decisions. It is not trying to be a general productivity publication or a software news site.
 
 ## Core editorial principles
 
@@ -36,6 +42,8 @@ SoloOpsGuide tries to make recommendations that are:
 
 Comparison pages should end with clearer direction, not with more confusion or broader browsing.
 
+Recommendations on this site should also make clear what is not being decided. A good page helps a reader choose the next move without pretending one article can settle every adjacent system question.
+
 ## What the site avoids
 
 The editorial model intentionally avoids:
@@ -50,11 +58,22 @@ SoloOpsGuide aims to keep cornerstone pages and key decision pages reasonably cu
 
 If a factual error, broken route, or unclear recommendation boundary is identified, the site should correct it when the issue is confirmed and materially relevant.
 
+Not every page changes at the same pace. Broad workflow and blueprint pages usually matter more than narrow support pages, so the most critical updates should land there first when something materially shifts.
+
 ## Monetization and independence
 
 If sponsorships, partnerships, or affiliate relationships are introduced, they should not override the site's scenario-based recommendation logic.
 
 Commercial relationships should be disclosed clearly where relevant. Editorial usefulness should remain the primary standard.
+
+This means a page should still be willing to recommend a simpler, cheaper, or narrower setup when that is the better operational fit.
+
+## What trust should look like on this site
+
+- Strong pages should be specific about scope.
+- Support pages should route readers back to stronger guides instead of pretending to be complete.
+- Comparisons should name tradeoffs and failure modes, not just winners.
+- Trust pages should clarify standards and boundaries, not serve as filler.
 
 ## How to read the site well
 

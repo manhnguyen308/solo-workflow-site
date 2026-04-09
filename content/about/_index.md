@@ -7,7 +7,7 @@ date = 2026-04-06T00:00:00Z
 
 SoloOpsGuide is a workflow-first knowledge site for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
 
-The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a small set of priority pages, not through endless browsing.
+The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a small set of focused guides, not through endless browsing.
 
 If you are new to the site, the strongest first pages are [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), and [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 

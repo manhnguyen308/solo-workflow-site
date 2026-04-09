@@ -22,6 +22,16 @@ Use this page when the work is near completion and the open problem is how to en
 
 If the work is still under review or billing is still fuzzy, fix those stages first. Offboarding should start only when you can name what has been delivered, what the client still needs to confirm, and what payment state is expected next.
 
+## What this page should not be asked to do
+
+This page should not:
+- rescue unresolved delivery quality,
+- hide open billing ambiguity,
+- substitute for a change-request decision that never got made,
+- act like a generic testimonial prompt.
+
+Offboarding is the closeout stage of a functioning lifecycle, not a place to bury unfinished upstream work.
+
 ## Who this workflow is for
 
 - freelancers and consultants delivering scoped project work,
@@ -50,6 +60,15 @@ By the end of this page, you should be able to answer:
 - what has to be true before you ask for a testimonial,
 - how to archive the engagement without losing useful context,
 - how to distinguish true closeout from a paused or expanding engagement.
+
+## Why offboarding deserves its own workflow
+
+Projects do not leak value only during delivery. They also leak value at the end when:
+
+- signoff is implied instead of explicit,
+- closeout records are too weak to reuse later,
+- testimonial timing feels awkward because the relationship state is unclear,
+- continuation opportunities disappear because nobody names the next path.
 
 ## Where offboarding sits in the lifecycle
 
@@ -142,6 +161,11 @@ Not every "ending" is the same. Treat the engagement as one of these:
 
 That decision changes what you document, what you ask for, and what should remain active in the system of record.
 
+Practical rule:
+- archive means no more active work is expected,
+- handoff means the client now owns the next operating step,
+- continuation means the current engagement is ending but the relationship is not.
+
 ## Minimum offboarding checklist
 
 Before marking the engagement closed, confirm:
@@ -173,6 +197,16 @@ If the closeout still feels vague, write the exact invoice-closed to offboarding
 - final assets are sent but not documented,
 - a likely follow-on opportunity is left vague instead of intentionally deferred or proposed,
 - the project is archived before the useful lesson is captured.
+
+## Closeout evidence worth preserving
+
+Your closeout record should make it easy to answer later:
+
+- what was actually finished,
+- what the client accepted,
+- what remained open or deferred,
+- what made the engagement work or stall,
+- what next opportunity, if any, was identified.
 
 ## Edge cases
 

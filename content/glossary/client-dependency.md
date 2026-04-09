@@ -32,6 +32,8 @@ The fix is not better wording alone. The fix is to record the missing input as a
 
 If the term is clear but the actual dependency record is still weak, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) to document the item more precisely.
 
+If the dependency is already defined and the real question is what operating state comes next because the work is still blocked, continue to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+
 ## What usually counts as a client dependency
 
 - access to tools, files, or accounts,

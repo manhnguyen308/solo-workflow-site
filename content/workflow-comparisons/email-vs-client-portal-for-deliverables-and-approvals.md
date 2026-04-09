@@ -25,6 +25,15 @@ Use this after the system-of-record decision is already clear and the open quest
 
 This is a narrower downstream comparison. It is not the right page if you are still deciding where the main operating record should live.
 
+## What this page should settle
+
+By the time you leave this page, you should be able to answer:
+
+- whether email can still carry review and approval cleanly,
+- whether a client-facing workspace would remove real confusion or just add one more place to click,
+- what failure mode the wrong choice would create during live delivery,
+- which workflow or support page should tighten the chosen model next.
+
 ## Who this page is really for
 
 Use this page when:
@@ -131,6 +140,15 @@ It does not. A portal only helps if:
 
 If you cannot maintain those rules, email may still be the better model.
 
+## The real implementation difference
+
+The real difference is not where files sit. It is whether review routing is simple enough to survive pressure.
+
+- In an **email-first** model, you are accepting more manual discipline in exchange for lower setup overhead.
+- In a **portal-first** model, you are accepting more setup discipline in exchange for better shared visibility and approval trace.
+
+If neither model has a clear approval owner or allowed review channel, the tool choice will not rescue the workflow.
+
 ## Practical scenarios
 
 ### Solo freelancer, one decision-maker, scoped project
@@ -150,6 +168,11 @@ A portal becomes more attractive when support capacity is involved. Shared visib
 - Choose **email-first** if the project is simple, the approver is singular, and you can keep the system of record aligned manually.
 - Choose **client portal or workspace** if approval complexity, review history, or shared visibility is becoming part of the operational problem.
 
+## Failure signals to watch after the choice
+
+- Stay suspicious of **email-first** if reviewers keep replying in separate threads, approvals affect billing, or the same file gets reviewed from multiple versions.
+- Stay suspicious of a **portal-first** setup if clients still ignore it, comments arrive through email anyway, or the portal duplicates status that is already visible elsewhere.
+
 ## What this page should not decide
 
 This comparison should not decide:
@@ -164,6 +187,7 @@ Its job is narrower: decide where live deliverable review and approval should ha
 - If you stay email-first, tighten [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) so messages stay structured.
 - If you move toward a portal or workspace, make sure [System of Record](/glossary/system-of-record/) rules stay clear so the portal supports the workflow instead of duplicating it.
 - For either model, use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/) before each review or approval event.
+- If review comments or approvals already arrive from too many people or channels, document the path with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## What to do next
 

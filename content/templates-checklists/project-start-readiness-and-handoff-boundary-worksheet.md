@@ -22,6 +22,8 @@ Use this worksheet when the main problem is not the stage itself, but the bounda
 
 This is a support asset, not a lifecycle guide. Its job is to help you define what must be true before work is allowed to move forward, who owns the next move, what evidence should exist, and what should block transition if the boundary is not actually ready.
 
+Use this when the transition rule itself is weak. If the boundary is already clear and the real problem is one missing client-side item, move narrower to [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
+
 ## When to use this worksheet
 
 Use it when:

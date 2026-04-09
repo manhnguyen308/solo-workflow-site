@@ -9,12 +9,37 @@ This section is for resolving one bounded tool or system question at a time. Use
 
 These pages are designed to narrow a decision, not extend browsing. If you leave a comparison page with more tabs open but no clearer operating direction, you are using the section the wrong way.
 
+If you only open one page here, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/). Most of the other comparison pages only help after that broader decision is mostly settled.
+
+## The safest first path through this hub
+
+1. Start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if the decision still feels broad.
+2. Move to [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) only after the system center is clearer.
+3. Open narrower comparisons only when one bounded implementation choice is still blocking you.
+
+## Use this hub as a narrowing layer
+
+The comparison cluster should usually move from:
+
+- system center,
+- to stack shape,
+- to workspace, review-flow, or billing-visibility choice,
+- to implementation in a blueprint or workflow page.
+
 ## How to use this hub
 
 - Name the operational decision before you open a comparison.
 - Read the comparison for tradeoffs and failure modes, not feature-counting.
 - Follow the recommended next page immediately after you decide.
 - Avoid using comparison pages as a substitute for mapping your workflow first.
+
+## Fastest useful starting points
+
+- Start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if the system center is still unclear.
+- Move to [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) if the center is mostly clear but the broader stack shape still is not.
+- Only then move to delivery workspace, review-flow, billing-visibility, or intake comparisons if one narrower choice is still blocking implementation.
+
+If you still cannot tell which comparison fits, the problem is probably upstream of this hub and should go back to the workflow anchor or lean blueprint.
 
 ## What this hub is best for
 
@@ -30,7 +55,8 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 2. Open [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) when the open question is whether the business should stay consolidated or split functions across more tools.
 3. Open [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) when the open question is how structured your delivery workspace should be.
 4. Open [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) when the question is where review, handoff, and approval should happen.
-5. Open [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) when the question is how much scheduling structure your intake process really needs.
+5. Open [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) when the question is where live billing status should stay visible after invoices are sent.
+6. Open [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) when the question is how much scheduling structure your intake process really needs.
 
 ## Best order when the choice is still fuzzy
 
@@ -38,6 +64,7 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 - Move to [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) when the system center is mostly clear but the broader stack shape still is not.
 - Move to [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) only if delivery should sit at that center and you still plan to stay fairly consolidated there.
 - Move to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) only if the workspace is already chosen and the open problem is review flow.
+- Move to [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) only if the stack is mostly clear and the open question is where invoice state should stay visible during live work.
 - Move to [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) only if the intake layer needs more booking structure.
 
 ## What makes these pages useful
@@ -46,12 +73,19 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 - they assume you already know the workflow problem underneath the choice
 - they are meant to end with a decision, not with more browsing
 
+## Best exit routes from this hub
+
+- Move to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) once a stack or tool decision is ready to become a real operating model.
+- Move to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) once the real issue is billing operations rather than billing-tool placement.
+- Move back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the comparison question still feels too broad or fuzzy.
+
 ## Cornerstone decisions covered here
 
 - [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) is the higher-level decision because it determines where your system of record should live.
 - [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) is the broader stack-shape decision once you know the system center but still need to decide whether consolidation or specialization should define the setup.
 - [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/) is the downstream workspace decision once you already know delivery should sit at the center and that a more consolidated workspace still makes sense.
 - [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) helps once the real issue is client-facing review and approval flow rather than the internal workspace itself.
+- [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) is the billing-visibility decision once the stack is mostly set but payment state still disappears from live operations.
 - [Calendly vs Built-In Booking Tools for Solo Operators](/comparisons/calendly-vs-built-in-booking-tools-for-solo-operators/) is the intake-side decision when scheduling needs structure but the stack should still stay lean.
 
 ## What this cluster should not do
@@ -65,6 +99,7 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 - Start with the workflow model first if the sequence is still unclear: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Move into a blueprint if the decision changes your whole stack shape: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 - Use [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) when the open question is whether the stack needs another tool at all.
+- Use [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) when the open problem is not tool choice but weak billing triggers and follow-up.
 - Use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) when the comparison outcome needs a concrete operating next step.
 
 ## Decision pattern to follow

@@ -13,14 +13,16 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 9
-best_next = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/"]
-related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/faq/what-to-do-when-a-client-goes-silent-during-review/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/"]
+best_next = ["/templates/scope-reset-and-recovery-worksheet-for-solo-operators/"]
+related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/faq/what-to-do-when-a-client-goes-silent-during-review/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/"]
 featured = true
 +++
 
 Use this worksheet when blocked work has stopped being a small delay and has become an operating decision.
 
 This is a support asset, not a workflow guide. Its job is to help you define when a blocked item should stay active, when it should pause, when it should escalate, when it should be re-scoped, and when the cleanest answer is to close it out instead of letting it drift.
+
+Use this after the dependency or review path is already clear enough to name. If one formal operating decision still is not enough because the original plan itself has broken down, continue next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
 ## When to use this worksheet
 

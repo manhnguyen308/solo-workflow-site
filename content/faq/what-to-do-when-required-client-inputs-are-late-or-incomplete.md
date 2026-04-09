@@ -34,6 +34,8 @@ If the dependency keeps recurring because the input was never documented tightly
 
 If the dependency is now severe enough that waiting is no longer a neutral choice, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) to define the next operating state explicitly.
 
+If that blocked state has already made the original plan unreliable, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+
 ## Should you work around it if you can?
 
 Only if the workaround does not hide the true delay.

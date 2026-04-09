@@ -35,6 +35,8 @@ If several stakeholders are involved and the comments are not even reaching one 
 
 If the review has stayed blocked long enough that you need to choose pause, escalation, or closeout instead of sending another ordinary follow-up, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
+If the blocked review has already damaged the original plan itself and now needs a revised baseline, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+
 ## How long should you wait before following up?
 
 Use the expected review window you already set. If none exists, use a short bounded follow-up rather than waiting indefinitely.

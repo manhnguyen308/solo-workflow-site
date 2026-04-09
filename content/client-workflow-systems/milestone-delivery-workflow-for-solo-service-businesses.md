@@ -13,13 +13,23 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 5
 best_next = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/"]
-related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
+related = ["/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/templates/delivery-qa-checklist-before-client-handoff/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", "/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/", "/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/"]
 featured = false
 +++
 
 Delivery usually feels chaotic for one reason: the milestone is not defined tightly enough to survive real client pressure. This page is about controlling active delivery after kickoff, not about fixing intake or contract-stage problems.
 
 Use this workflow when work is active, client communication is already in motion, and the main problem is execution control between kickoff and approval. This page is about how to move one milestone cleanly, not how to plan the entire relationship from scratch.
+
+## What this page should not be asked to do
+
+This page should not:
+- repair a weak signed scope,
+- replace onboarding readiness,
+- absorb informal change control,
+- act like a generic project-management primer.
+
+Use it only after the project is live enough that the main problem is milestone control itself.
 
 ## Who this workflow is for
 
@@ -47,6 +57,16 @@ This page should help you decide:
 - which status labels are useful during live work,
 - when a milestone is ready for client review,
 - what outcome closes the milestone cleanly.
+
+## Why this page matters in the lifecycle
+
+Delivery is the stage where hidden ambiguity becomes visible cost.
+
+If milestone state is weak:
+- clients experience slow or confusing review cycles,
+- billing triggers slip,
+- offboarding starts from a fuzzy finish line,
+- later change requests are harder to separate from unfinished original scope.
 
 ## Step 1: Define the milestone as an operating unit
 
@@ -117,6 +137,13 @@ Do not leave it in a fuzzy "mostly done" state. That ambiguity is where delivery
 
 If the real issue is the boundary between completed delivery and billing or closeout, document that gate with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
+At close, record at least:
+- the milestone outcome,
+- the approval or revision state,
+- any dependency still open,
+- the next stage trigger,
+- the owner of the next move.
+
 ## Minimum milestone review checklist
 
 Before a milestone moves to client review, confirm:
@@ -156,6 +183,8 @@ Split the milestone when:
 - the client needs to approve a subset before the rest can proceed,
 - billing is tied to one completion event but the work now contains two.
 
+If you cannot describe the revised milestone in one clean sentence after splitting or resetting it, the problem is no longer just milestone management. It is now a scope or recovery issue.
+
 ## Edge cases
 
 - If the client reviews in several rounds, define which round counts as the actual acceptance point.
@@ -167,6 +196,8 @@ If the missing client input itself is still not documented tightly enough, use [
 If the work is already blocked badly enough that you need to choose between pause, re-scope, proceed conditionally, or closeout, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
 If the project has already drifted so far that the old milestone plan is no longer reliable, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before trying to push delivery forward again.
+
+If that reset is already defined and you need to state the revised timing or sequence clearly, send it with [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
 
 ## Use this workflow with
 

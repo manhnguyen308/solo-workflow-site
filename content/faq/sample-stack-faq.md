@@ -1,7 +1,7 @@
 +++
-title = "Solo Service Workflow Stack FAQ"
-description = "Short routing answers to common workflow-stack setup questions, with links to the stronger workflow, blueprint, and comparison pages."
-summary = "Use this FAQ to resolve common workflow-stack setup questions quickly, then move to the deeper implementation page that matches your bottleneck."
+title = "FAQ: Setting Up a Solo Service Workflow Stack"
+description = "Short routing answers for solo operators setting up a workflow stack, with clear boundaries and links to the stronger workflow, blueprint, and comparison pages."
+summary = "Use this FAQ when you have one bounded stack-setup question and need the fastest route back to the right workflow, blueprint, or comparison page."
 feature_image = "/images/features/faq/solo-service-workflow-stack-faq.svg"
 feature_image_alt = "Illustrated FAQ panel stack representing common setup questions and short operational answers."
 draft = false
@@ -23,11 +23,17 @@ It is a support page only. Its job is to route narrow setup questions back to th
 
 Use it when the question is narrow enough to answer quickly. If you keep landing on several FAQ answers in one sitting, that usually means you should leave this page and return to a broader workflow or blueprint page.
 
-## What this FAQ is best for
+## When this FAQ is worth using
 
-- one setup blocker at a time,
-- choosing the next page quickly,
-- clarifying whether the problem is workflow, stack shape, or tool category.
+- You have one bounded setup question and need the next page quickly.
+- You need a recommendation boundary before changing tools or structure.
+- You already know the blocker is about stack setup, not the whole client lifecycle.
+
+## What this FAQ should not replace
+
+- [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the whole client path still feels loose.
+- [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if you need a full stack model, not a short answer.
+- [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) if the real problem is spending boundaries rather than tool order.
 
 It is not meant to design the whole operating system for you.
 

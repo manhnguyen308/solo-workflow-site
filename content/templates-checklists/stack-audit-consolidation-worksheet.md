@@ -13,7 +13,7 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 4
-best_next = ["/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/"]
+best_next = ["/templates/system-of-record-rules-worksheet-for-solo-operators/"]
 related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/"]
 featured = true
 +++
@@ -21,6 +21,8 @@ featured = true
 Use this worksheet when the stack is already real enough that you need to document what each tool does before you change anything.
 
 This is an execution asset, not a strategy page. It helps you turn stack decisions into a visible audit so you can consolidate with less guesswork and less duplicate admin.
+
+Use this before migration sequencing. Once the tool inventory is visible, the next narrower question is usually ownership rules, not tool shopping.
 
 ## When to use this worksheet
 

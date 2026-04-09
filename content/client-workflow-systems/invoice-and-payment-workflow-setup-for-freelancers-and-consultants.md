@@ -13,7 +13,7 @@ search_intent = "implementation"
 page_role = "supporting-guide"
 hub_priority = 6
 best_next = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/"]
-related = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
+related = ["/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/templates/invoice-and-payment-workflow-checklist-for-service-businesses/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/"]
 featured = false
 +++
 
@@ -69,6 +69,8 @@ Even if you use a separate invoicing tool, the main system should still make the
 - paid.
 
 This is what keeps billing from becoming a side process that disappears during delivery pressure.
+
+If the broader boundary is still unclear, use [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) before adding more status fields.
 
 If your weekly review cannot tell you which invoices are due soon or overdue, the billing layer is not really integrated yet.
 
@@ -166,3 +168,5 @@ This workflow is working when:
 - cash-flow control no longer depends on remembering who to chase.
 
 If the real issue is still agreement ambiguity, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). If billing is clear and the engagement is ending, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/). If billing is clear but the broader stack feels too heavy, continue to [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
+
+If billing triggers are clear but billing state still disappears from live operations, continue to [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/).

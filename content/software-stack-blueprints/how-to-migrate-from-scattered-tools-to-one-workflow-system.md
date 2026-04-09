@@ -13,7 +13,7 @@ search_intent = "problem-solving"
 page_role = "supporting-guide"
 hub_priority = 3
 best_next = ["/templates/weekly-client-operations-checklist-solo-business/"]
-related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
+related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/", "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/templates/stack-audit-consolidation-worksheet-for-solo-operators/", "/templates/system-of-record-rules-worksheet-for-solo-operators/", "/templates/weekly-client-operations-checklist-solo-business/", "/workflows/workflow-automation-basics-for-solo-service-businesses/"]
 featured = true
 +++
 
@@ -91,6 +91,8 @@ Document these rules before migration:
 4. where invoice status is tracked.
 
 These rules should be specific enough that a second person could follow them without asking where to look first.
+
+If the invoice-status rule itself is still fuzzy, use [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) before moving live records.
 
 ## Step 3.5: Decide what not to migrate
 

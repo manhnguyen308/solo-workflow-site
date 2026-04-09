@@ -22,6 +22,8 @@ Use this worksheet when the work is entering review and too many people can shap
 
 This is a support asset, not a full workflow guide. Its job is to help you define how comments should arrive, who consolidates them, who gives the final answer, and what happens when feedback conflicts or shows up too late.
 
+Use this when the review path is messy, not when the main issue is simply that one required input is missing or one blocked state needs escalation.
+
 ## When to use this worksheet
 
 Use it when:
@@ -32,6 +34,8 @@ Use it when:
 - one final approval is needed before billing, handoff, or the next revision round.
 
 If the bigger problem is still stage readiness rather than review routing, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) first.
+
+If the main problem is that a specific client-side answer, file, or approval item is missing, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
 
 ## What this worksheet does not decide
 

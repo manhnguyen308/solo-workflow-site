@@ -21,6 +21,8 @@ This is not a feature-counting comparison. It is a workflow decision about how m
 
 For many solo operators, built-in booking is enough. The mistake is paying for dedicated scheduling software before the intake workflow is clear enough to benefit from the extra rules. This page is about booking complexity, not about choosing the whole stack.
 
+It is also a deliberately narrow decision. If your real issue is scattered client truth or stack sprawl, this page is downstream from those broader choices.
+
 ## Who this page is really for
 
 Use this page when:
@@ -35,6 +37,15 @@ Do not use this page when qualification rules are still weak or when the larger 
 Start with built-in booking if you have one main call type, modest inquiry volume, and a lean stack goal.
 
 Move to a Calendly-style tool when the scheduling layer itself is creating repeat admin, missed routing, or calendar protection problems often enough to justify its own maintenance.
+
+## What this page should settle
+
+By the time you leave this page, you should be able to answer:
+
+- whether scheduling is a real operational bottleneck or just a visible annoyance,
+- whether lighter built-in booking is still enough for current intake complexity,
+- what extra maintenance a dedicated scheduling layer would add,
+- which intake, stack, or buying-boundary page should come next.
 
 ## What you are actually deciding
 
@@ -107,6 +118,10 @@ If it adds another settings-heavy tool without removing a real bottleneck, it is
 
 If the real problem is weak qualification before the calendar step, neither option fixes it. The scheduling tool can support the intake workflow, but it cannot define the qualification rule for you.
 
+### Routing complexity
+
+If the business now needs multiple call types, different durations, or separate booking paths for qualified versus exploratory leads, dedicated booking becomes easier to justify. If every inquiry still funnels into one standard call, lighter tooling usually remains enough.
+
 ## Decision table
 
 | Condition | Better default |
@@ -155,6 +170,15 @@ Choose a **Calendly-style tool** if:
 - repeated calendar admin is stealing real time,
 - reminder and routing logic need to be more structured,
 - the booking layer has become part of intake quality control.
+
+## Quick failure check
+
+Your choice is probably off if:
+
+- the booking tool has more routing logic than the intake process itself,
+- calendar friction is low but qualification is still weak,
+- missed bookings are really caused by unclear offer boundaries rather than scheduling software,
+- the new tool adds another place to maintain client context without improving intake quality.
 
 ## What to do after deciding
 

@@ -13,14 +13,16 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 10
-best_next = ["/workflows/change-request-workflow-for-freelancers-and-consultants/"]
-related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/"]
+best_next = ["/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/"]
+related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/client-input-dependency-worksheet-for-solo-operators/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/"]
 featured = true
 +++
 
 Use this worksheet when the real problem is no longer one delay or one missing input. Use it when the original plan itself has stopped being reliable.
 
 This is a support asset, not a workflow guide. Its job is to help you define what has broken, what assumptions are no longer valid, what must be reconfirmed, and what has to be paused, removed, rescheduled, or re-approved before work can continue cleanly.
+
+Use this after escalation when the old plan itself is no longer trustworthy. If the reset is already defined and the next problem is explaining it clearly to the client, use [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/) next.
 
 ## When to use this worksheet
 

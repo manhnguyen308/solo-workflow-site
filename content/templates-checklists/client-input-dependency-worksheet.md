@@ -13,7 +13,7 @@ page_type = "template"
 search_intent = "implementation"
 page_role = "asset-page"
 hub_priority = 8
-best_next = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/"]
+best_next = ["/templates/escalation-and-pause-state-worksheet-for-solo-operators/"]
 related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultants/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/", "/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/", "/glossary/client-dependency/", "/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/", "/templates/escalation-and-pause-state-worksheet-for-solo-operators/", "/templates/scope-reset-and-recovery-worksheet-for-solo-operators/"]
 featured = true
 +++
@@ -21,6 +21,8 @@ featured = true
 Use this worksheet when the real problem is not just that work is blocked, but that the client-side dependency was never defined clearly enough in the first place.
 
 This is a support asset, not a workflow guide. Its job is to help you write down what input is required, who owns it, when it is due, what acceptable quality looks like, and what should happen if it does not arrive.
+
+Use this when the missing client-side item itself is still vague. If the dependency is already documented and the real problem is deciding what happens next because the work is still blocked, move to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
 ## When to use this worksheet
 
