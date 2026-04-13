@@ -7,6 +7,8 @@ date = 2026-04-06T00:00:00Z
 
 SoloOpsGuide exists to provide structured workflow guidance for solo operators. It is not designed to be a broad productivity site, a software news site, or a source of generic business motivation.
 
+This page explains the practical boundaries of the published content: what kinds of pages belong on the site, how those pages are expected to work together, and what readers should not assume the site is trying to do.
+
 ## What this content is for
 
 The content is designed to help readers:
@@ -34,6 +36,8 @@ A strong SoloOpsGuide page should help you answer at least one of these question
 
 If a page cannot improve one of those outcomes, it is not doing enough.
 
+It should also be clear what kind of page you are reading. A workflow page should diagnose or structure a sequence. A blueprint page should define a stack model. A comparison page should settle one bounded decision. A support page should remove one blocker and route back to a stronger implementation page.
+
 ## Quality expectations
 
 The site aims for content that is:
@@ -54,6 +58,8 @@ That usually means:
 
 If a potential page would end at the same decision as an existing page, the stronger default is to improve the existing page instead of publishing another near-duplicate.
 
+This is also why the site does not try to publish every possible tool query, narrow checklist, or glossary-style explainer. Coverage is meant to stay deliberate enough that the stronger pages remain visible and useful.
+
 ## Recommendation boundaries
 
 Recommendations on SoloOpsGuide are meant to be directional and operational, not absolute.
@@ -62,6 +68,8 @@ That means:
 - the best choice depends on workflow shape, client volume, budget, and coordination overhead,
 - some pages are intentionally narrow because narrow guidance is often more useful,
 - readers should use the page that matches the actual bottleneck rather than browsing pages that are adjacent but premature.
+
+If a page cannot say why one recommendation fits one operating condition better than another, it is not ready to carry a strong recommendation.
 
 ## How readers should use the site
 
@@ -79,6 +87,8 @@ The site should improve pages when:
 - a page starts competing with a stronger page instead of supporting it.
 
 The goal is not constant churn. The goal is to keep important pages clear, current enough, and well-routed.
+
+Maintenance should especially protect page purpose. If a support page starts reading like a cornerstone page, or a comparison starts acting like a general buying guide, the better fix is usually to narrow or reroute the page rather than expand it further.
 
 ## Related pages
 

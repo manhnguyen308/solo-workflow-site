@@ -139,3 +139,7 @@ Read this file first for any future Codex pass in this repo. It contains the dur
    - build result if relevant,
    - open follow-up items,
    - recommended next step.
+6. For normal repo-editing tasks, after scoped changes and verification are complete:
+   - create a git commit with a clear message,
+   - push the current branch when remotes/auth are available,
+   - if push cannot be completed, report the exact blocker rather than implying success.

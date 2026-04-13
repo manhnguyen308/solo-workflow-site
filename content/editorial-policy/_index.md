@@ -9,6 +9,8 @@ SoloOpsGuide is workflow-first. It does not publish generic tool lists without o
 
 This page exists so readers can see how the site makes judgments, what kinds of content it is trying to produce, and where its recommendations should be trusted or treated as deliberately bounded.
 
+The point is not to sound neutral about everything. The point is to make the site's judgment framework visible enough that readers can tell what is being recommended, why it is being recommended, and where that recommendation stops.
+
 ## Who this site is written for
 
 SoloOpsGuide is written for freelancers, consultants, and solo service operators who need calmer systems for intake, delivery, approvals, billing, and tool decisions. It is not trying to be a general productivity publication or a software news site.
@@ -20,6 +22,7 @@ SoloOpsGuide is written for freelancers, consultants, and solo service operators
 3. Practical next steps over content that ends at opinion.
 4. Tradeoff awareness over one-sided recommendations.
 5. Calm, implementation-focused language over hype.
+6. Clear page-role boundaries over content that tries to do everything at once.
 
 ## What workflow-first means here
 
@@ -31,6 +34,8 @@ On SoloOpsGuide, workflow-first means the site tries to answer these questions i
 4. What should the reader do next once that answer is clearer?
 
 That is different from generic software content, which often starts with product categories, features, or rankings before the operating problem is even named.
+
+It also means SoloOpsGuide will often recommend going one layer upstream before making a tool decision. If the workflow is still unclear, more tool detail is usually the wrong answer.
 
 ## Content methodology
 
@@ -45,6 +50,8 @@ This approach is intentional. It helps keep content practical, narrower in scope
 
 It also means some pages are intentionally broad and others are intentionally narrow. A workflow anchor should diagnose and map the sequence. A blueprint should define the stack model. A comparison should settle one bounded decision. A support page should remove one blocker and then route back out.
 
+Editorially, a page is stronger when it does one of those jobs clearly than when it tries to absorb adjacent jobs just to feel more comprehensive.
+
 ## How recommendations are framed
 
 SoloOpsGuide tries to make recommendations that are:
@@ -57,6 +64,8 @@ Comparison pages should end with clearer direction, not with more confusion or b
 
 Recommendations on this site should also make clear what is not being decided. A good page helps a reader choose the next move without pretending one article can settle every adjacent system question.
 
+That usually means judgment is expressed through workflow fit, coordination burden, ownership clarity, and operational tradeoffs rather than through feature-counting or prestige signals.
+
 ## Editorial boundaries
 
 SoloOpsGuide is not trying to be:
@@ -67,6 +76,8 @@ SoloOpsGuide is not trying to be:
 - a personalized consulting service delivered through articles.
 
 Those boundaries are part of the editorial model, not an omission. They keep the site narrower, more legible, and more useful for the actual audience it serves.
+
+The site is also not trying to create authority by sounding bigger than it is. Trust should come from specificity, consistency, and useful decision framing rather than institutional posturing.
 
 ## What the site avoids
 
@@ -83,6 +94,8 @@ SoloOpsGuide aims to keep cornerstone pages and key decision pages reasonably cu
 If a factual error, broken route, or unclear recommendation boundary is identified, the site should correct it when the issue is confirmed and materially relevant.
 
 Not every page changes at the same pace. Broad workflow and blueprint pages usually matter more than narrow support pages, so the most critical updates should land there first when something materially shifts.
+
+When changes are made, the preferred fix is usually to sharpen the existing page, its routing, or its boundaries before expanding the site's topic surface.
 
 ## Monetization and independence
 
@@ -108,6 +121,7 @@ If a correction affects routing, factual accuracy, or recommendation boundaries 
 - Support pages should route readers back to stronger guides instead of pretending to be complete.
 - Comparisons should name tradeoffs and failure modes, not just winners.
 - Trust pages should clarify standards and boundaries, not serve as filler.
+- Readers should be able to tell whether a page is diagnosing a problem, defining a model, settling a decision, or supporting execution.
 
 ## How to read the site well
 

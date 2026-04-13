@@ -7,13 +7,13 @@ date = 2026-04-06T00:00:00Z
 
 SoloOpsGuide is a workflow-first editorial resource for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
 
-The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a small set of focused guides, not through endless browsing, trend commentary, or software noise.
+The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, approvals, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a focused set of editorial guides, not through endless browsing, trend commentary, or software noise.
 
 If you are new to the site, the strongest first pages are [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), and [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## What SoloOpsGuide is
 
-SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations. It is intentionally narrower than a general business site and more opinionated about sequence, handoffs, and operating clarity than a typical software-content site.
+SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations. It is intentionally narrower than a general business site and more opinionated about sequence, ownership, handoffs, and operating clarity than a typical software-content site.
 
 It publishes:
 - workflow anchors that map the full client path,
@@ -29,6 +29,8 @@ This site is most useful for:
 - consultants building a cleaner delivery and admin system,
 - solo operators adding light support capacity without wanting a bloated stack,
 - small service businesses that need clearer operating rules before adding more tools.
+
+In practice, the best fit is someone whose business is already real enough to feel operational drag but still small enough that the workflow lives mostly inside one person's judgment. The site is built for readers who need stronger rules, better sequencing, and calmer tool decisions without pretending they are running a 20-person operation.
 
 It is less useful for:
 - productized businesses built around self-serve checkout,
@@ -51,6 +53,8 @@ SoloOpsGuide is designed to sit in the middle:
 - narrow enough to stay relevant to solo client operations,
 - honest about tradeoffs, boundaries, and when a page is not the right fit.
 
+The goal is not to tell every reader to use the same stack. The goal is to help a reader identify the real bottleneck, choose the right layer of decision, and move to the next useful page with less ambiguity.
+
 ## How to use the site well
 
 - Start with the workflow pages when the client path itself feels messy or reactive.
@@ -58,6 +62,8 @@ SoloOpsGuide is designed to sit in the middle:
 - Use comparisons when the open question is between two plausible systems, not when the workflow itself is still undefined.
 - Use templates and checklists after the workflow rule is clear and you need a repeatable execution asset.
 - Use glossary and FAQ pages to remove ambiguity quickly, then return to the deeper implementation page.
+
+If a page feels too narrow, the answer is usually not to browse wider. It is usually to step back to the stronger upstream workflow or blueprint page first.
 
 ## What the site is trying to avoid
 
@@ -75,7 +81,8 @@ That means:
 - recommendations are framed around scenarios, not universal winners,
 - tradeoffs and failure modes are part of the guidance,
 - implementation pages should point readers to the next useful step,
-- support and policy pages exist to explain how the content should be evaluated and used.
+- support and policy pages exist to explain how the content should be evaluated and used,
+- site-information pages are meant to clarify standards and boundaries rather than act like placeholder legal filler.
 
 Trust on SoloOpsGuide should come from page purpose, judgment clarity, and operational usefulness, not from trying to sound bigger or more certain than the site really is.
 

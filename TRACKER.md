@@ -163,3 +163,10 @@ After each future pass, add a short section with:
 - Why it was moved: to keep the root focused on the primary control files and make the repository easier to scan.
 - References updated: `README.md` now points to the moved docs under `project-docs/`, and `project-docs/GO_LIVE_CHECKLIST.md` now points to `project-docs/MEASUREMENT_OPERATIONS.md`.
 - Cleanup status: retired `codex-optimization-reminder.md` was removed because it was superseded by `AGENT.md` and `TRACKER.md` and had no active repo references; no further cleanup is needed.
+
+## Trust and quality pass - 2026-04-13
+
+- What changed: tightened the About, Contact, Content Policy, and Editorial Policy pages to make audience fit, editorial judgment, recommendation boundaries, and page-role expectations more explicit; lightly clarified the footer's lower editorial-purpose copy.
+- Why it was changed: to make the trust layer feel more intentional and complete without broadening the site or disturbing the homepage and cluster-priority structure.
+- Verification: ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the edits.
+- Follow-up: no further trust-page cleanup is needed right now; there is still no standalone `/methodology/` page, which remains acceptable unless a later pass needs a clearer split from the policy pages.
