@@ -21,11 +21,11 @@ This is not a "which app is best" article. It is an operating-model decision abo
 
 If your process fails because client context gets lost between lead, delivery, and billing, your main issue is usually system-of-record mismatch.
 
-For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle.
+For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle. Inside the comparison cluster, this is the strongest first page because it settles the broadest system-center choice before any narrower tool comparison can be trusted.
 
-Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent. Pages like Notion vs ClickUp or Calendly vs built-in booking only make sense after this broader operating-system question is clear enough.
+Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent. Pages like Notion vs ClickUp or Calendly vs built-in booking only make sense after this broader operating-system question is clear enough, and the [Workflow Tool Comparisons hub](/workflow-comparisons/) should only ever lead deeper after this page is mostly settled.
 
-Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons.
+Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons. If the lifecycle itself is still broad and fuzzy, go back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) instead of staying inside comparisons.
 
 ## If you landed here directly
 
@@ -244,6 +244,7 @@ If still unsure, start PM-first for simpler operations and add CRM depth only wh
 - If you chose **PM-first**, go to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) or [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 - If you chose **Hybrid**, go to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) before adding more tools.
 - If the model is chosen but billing visibility still feels vague, go to [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/).
+- If you want the broader comparison sequence before choosing a narrower page, go to [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/).
 
 ## Quick failure check
 

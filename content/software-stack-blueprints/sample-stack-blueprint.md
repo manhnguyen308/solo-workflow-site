@@ -23,9 +23,9 @@ If you have not mapped your workflow yet, start with the anchor system: [Freelan
 
 If the open problem is not your exact stack shape yet but how to avoid premature purchases, start with [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 
-This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?"
+This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?" If the workflow anchor is the best first broad page on the site, this is the strongest next indexing candidate for the stack cluster.
 
-The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag." The overbuying guide, migration guide, and downstream comparisons are supporting decision pages. This page remains the baseline stack model for most solo operators.
+The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag." The overbuying guide, migration guide, and downstream comparisons are supporting decision pages. This page remains the baseline stack model for most solo operators, and the [Software Stack Blueprints hub](/software-stack-blueprints/) is where the rest of the cluster should be browsed from.
 
 Use this page after a comparison decision when you need to turn "I think PM-first is right" or "I should stay more consolidated" into an actual operating stack. If the open problem is still whether a purchase should happen at all, stay in the overbuying guide instead of treating this blueprint like a shopping list.
 
@@ -110,6 +110,7 @@ Use the next page based on the question that is still blocking setup:
 - If you need to document the current stack before changing anything, go next to [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
 - If the stack shape is mostly clear but ownership still feels vague, go next to [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 - If the stack shape is clear but billing visibility still feels split between finance and operations, go next to [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/).
+- If the broad system center is still not settled, go back one step to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## Stage-based stack tiers
 
@@ -222,6 +223,8 @@ Typical fit: higher client load, more stakeholders, or more repeatable delivery 
 4. Compare delivery workspace options via [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
 5. Use [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) only if the open question is purchase timing rather than baseline stack shape.
 6. Use [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) if the open question is whether the stack should stay consolidated before you optimize within it.
+
+If you want the broader cluster path before choosing among those, go to [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/).
 
 ## What to do after choosing the stack shape
 

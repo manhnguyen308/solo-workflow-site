@@ -1,6 +1,7 @@
 +++
 title = "Workflow Tool Comparisons for Solo Operators"
 description = "Scenario-based workflow software comparisons for solo operators making system-of-record, workspace, booking, and client-approval decisions."
+summary = "Use this hub only after the workflow problem is clear and one bounded system choice is still blocking implementation."
 feature_image = "/images/features/hubs/workflow-comparisons.svg"
 feature_image_alt = "Editorial comparison illustration with two contrasted decision panels for workflow tools."
 +++
@@ -9,13 +10,13 @@ This section is for resolving one bounded tool or system question at a time. Use
 
 These pages are designed to narrow a decision, not extend browsing. If you leave a comparison page with more tabs open but no clearer operating direction, you are using the section the wrong way.
 
-If you only open one page here, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/). Most of the other comparison pages only help after that broader decision is mostly settled.
+If you only open one page here, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/). Most of the other comparison pages only help after that broader decision is mostly settled, and many readers should still come here from the workflow anchor or lean blueprint rather than from a narrow tool question.
 
 ## The safest first path through this hub
 
 1. Start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if the decision still feels broad.
 2. Move to [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) only after the system center is clearer.
-3. Open narrower comparisons only when one bounded implementation choice is still blocking you.
+3. Open narrower comparisons only when one bounded implementation choice is still blocking you, then leave the hub for the lean blueprint or the relevant workflow page.
 
 ## Use this hub as a narrowing layer
 
@@ -78,6 +79,7 @@ If you are still asking "what is broken in my process?", this is the wrong hub t
 - Move to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) once a stack or tool decision is ready to become a real operating model.
 - Move to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) once the real issue is billing operations rather than billing-tool placement.
 - Move back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the comparison question still feels too broad or fuzzy.
+- Use [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/) if the comparison is settled but the stack model itself still needs implementation.
 
 ## Cornerstone decisions covered here
 

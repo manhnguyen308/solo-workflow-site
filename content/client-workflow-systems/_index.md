@@ -1,23 +1,36 @@
 ﻿+++
 title = "Client Workflow Systems for Freelancers and Solo Operators"
-description = "Stage-by-stage client workflow guides for freelancers and solo operators fixing intake, onboarding, delivery, billing, and handoff problems."
+description = "Stage-by-stage client workflow guides for freelancers and solo operators fixing messy client handoffs from inquiry to final payment."
+summary = "Start here when the whole client lifecycle feels messy and you need to identify which stage, handoff, or approval point is actually failing."
 feature_image = "/images/features/hubs/client-workflow-systems.svg"
 feature_image_alt = "Editorial workflow illustration showing connected stages across a client delivery system."
 +++
 
-This section is for diagnosing the client delivery path itself. Use it when work feels messy between inquiry, proposal, onboarding, delivery, billing, or offboarding, and you need to see exactly where the sequence is failing.
+This hub is the main entry point for client-lifecycle problems on the site. Use it when work feels messy between inquiry, proposal, onboarding, delivery, billing, or offboarding and you need to see exactly where the sequence is failing.
 
-Most solo operators do not need more advice about "productivity." They need a cleaner operating sequence. That is what this hub covers: where a client workflow breaks, what a good handoff looks like, and which page to open next based on the stage that is slipping.
+Most solo operators do not need more advice about "productivity." They need a cleaner operating sequence. That is what this hub covers: where a client workflow breaks, what a good handoff looks like, and which workflow page should come next.
 
-If several parts of the lifecycle feel unclear at once, the right first page is still the anchor workflow. The stage-specific guides and templates exist to deepen one part of that broader operating model.
+Use this hub before stack blueprints or workflow comparisons when the underlying process is still unstable. A sequence problem should be named before a software problem is solved. If several parts of the lifecycle feel unclear at once, the right first page is still the anchor workflow.
 
 If you only open one page from this hub, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). Most of the narrower workflow and support pages make more sense after that sequence is visible.
+
+## Start here if...
+
+- projects start with unclear expectations,
+- review and approval loops keep drifting,
+- billing problems are really handoff problems upstream,
+- you are tempted to change tools before the process itself is visible.
+
+## Go somewhere else first if...
+
+- the lifecycle is already clear and the real problem is stack shape -> go to [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/),
+- the stage is clear and only one bounded system decision is left -> go to [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/).
 
 ## The safest first path through this hub
 
 1. Open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first if the lifecycle still feels broad or fuzzy.
 2. Move into the stage guide that matches the clearest bottleneck.
-3. Pull in templates, glossary, FAQ, or comparisons only after the stage rule itself is clear.
+3. Move into [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/) or [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/) only after the stage rule itself is clear and the remaining blocker is tool structure rather than stage design.
 
 ## Use this hub as a sequence, not a library
 
@@ -105,3 +118,4 @@ If more than one of those sounds equally true, the anchor workflow is still the 
 
 - Move into [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) when the sequence is mostly clear but the tooling feels heavier than it should.
 - Move to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the open question is where current client truth should live rather than which stage is weak.
+- Return to this hub after those pages only if the underlying stage sequence still feels loose.

@@ -649,3 +649,263 @@ Each of the above also has dedicated feature art under `static/images/features/t
 ### Recommended next step
 
 - No immediate follow-up is required if the control feels appropriately subtle after visual review on desktop and mobile.
+
+## Browser-level UX polish and QA pass completed on 2026-04-10
+
+### Pass goal
+
+- Catch and fix remaining real browsing issues across major page types without redesigning the site.
+
+### Files changed in this pass
+
+- `layouts/partials/site-script.html`
+- `static/css/main.css`
+
+### What was done
+
+- Ran a rendered-structure QA sweep across the homepage, major hubs, and representative single pages using the generated `public/` output.
+- Fixed a real mobile/header flow issue:
+  - the open mobile navigation now closes not only on primary-nav links, but also when the header CTA is tapped.
+- Tightened interaction and accessibility polish:
+  - added clearer shared `:focus-visible` treatment for links, buttons, inputs, cards, and utility controls,
+  - added `:focus-within` treatment for content cards so keyboard navigation feels more intentional.
+- Refined the back-to-top utility:
+  - made the reveal threshold more viewport-aware instead of one rigid scroll value,
+  - added reduced-motion handling so the control respects users who prefer less motion.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- The least-polished area left is still the density of some hub hero intros. They are not broken, but a few remain text-heavy in real browsing.
+- If a future polish pass is needed, keep it narrow and focus on spacing/rhythm trims in the densest hub hero blocks rather than broader UI changes.
+
+### Recommended next step
+
+- If more polish is needed later, do a selective hub-hero rhythm pass on the few densest section intros rather than another broad UX sweep.
+
+## Homepage and footer density-reduction pass completed on 2026-04-10
+
+### Pass goal
+
+- Reduce homepage overlap, improve first-click clarity, and clean up footer duplication without redesigning the site.
+
+### Files changed in this pass
+
+- `layouts/index.html`
+- `layouts/partials/footer.html`
+- `static/css/main.css`
+
+### What was done
+
+- Reduced homepage overlap by trimming duplicated guidance layers:
+  - removed the separate `Cornerstone resources` section,
+  - removed the separate `Reading paths` section,
+  - kept the hero, resource-type section, and one sharper `Start Here` section as the main homepage decision system.
+- Tightened homepage copy so it directs more and explains less:
+  - trimmed the `Newer guides` intro,
+  - tightened the `Explore by resource type` intro,
+  - reframed `Start Here` around broader first-click recognition instead of repeating the same onboarding logic.
+- Rebalanced the `Start Here` cards toward broad first-click pages:
+  - lean blueprint,
+  - CRM vs PM,
+  - overbuying guide,
+  - system-center/stack decision support.
+- Improved resource-type scanability:
+  - increased card spacing and padding slightly,
+  - gave the resource grid a little more breathing room so it reads less like one dense slab.
+- Strengthened the bottom CTA:
+  - replaced the generic "browse/explore" pairing with two cleaner actions,
+  - primary CTA now sends readers straight to the lifecycle guide,
+  - secondary CTA now sends readers to the blueprint layer.
+- Cleaned up footer duplication and naming:
+  - renamed the `Site` group to `About`,
+  - removed duplicated glossary/FAQ links from that column because they already exist under `Resources`,
+  - removed confusing `Methodology` naming and now labels the footer-bottom link as `Editorial Policy`,
+  - replaced duplicated `About` in the footer bottom with `Contact`.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- The homepage is materially less repetitive now, but the `Explore by resource type` section is still one of the denser visual blocks simply because it carries six choices.
+- If another homepage pass is needed later, the next likely improvement would be a very small visual-weight adjustment inside that resource grid rather than another structural rewrite.
+
+### Recommended next step
+
+- Hold here unless live browsing shows the resource-type section still feeling too dense; if so, do a tiny card-weight/spacing pass there only.
+
+## Homepage resource-type scanability refinement pass completed on 2026-04-10
+
+### Pass goal
+
+- Reduce density and cognitive load in the homepage `Explore by resource type` section without changing the broader homepage structure.
+
+### Files changed in this pass
+
+- `layouts/index.html`
+- `static/css/main.css`
+
+### What was done
+
+- Tightened the section intro so it reads faster and explains less.
+- Shortened all six resource-type card descriptions so each card reads more like a quick choice than a compact paragraph.
+- Rebalanced the resource cards visually:
+  - slightly increased grid spacing,
+  - tightened internal card rhythm,
+  - reduced paragraph weight and width,
+  - added a clearer separated count/action row at the bottom of each card.
+- Kept the same section role and six-choice structure so the homepage architecture stayed intact.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Remaining follow-up items
+
+- The resource-type row is lighter than before, but it is still naturally one of the denser homepage sections because it presents six choices at once.
+- If later live review still shows hesitation here, the next step should be another very small visual-weight adjustment inside the cards, not another homepage restructuring pass.
+
+### Recommended next step
+
+- Hold unless live browsing still shows the resource-type row dragging attention or feeling slow to scan; if that happens, do one tiny visual-weight pass on icon/copy emphasis only.
+
+## Priority-page indexing support pass completed on 2026-04-10
+
+### Pass goal
+
+- Strengthen the first small cluster of pages most likely to be indexed after the homepage:
+  - the workflow hub,
+  - the blueprint hub,
+  - the comparison hub,
+  - the workflow anchor,
+  - the lean stack blueprint,
+  - the CRM vs PM comparison.
+
+### Files changed in this pass
+
+- `content/client-workflow-systems/_index.md`
+- `content/software-stack-blueprints/_index.md`
+- `content/workflow-comparisons/_index.md`
+- `content/client-workflow-systems/sample-client-workflow.md`
+- `content/software-stack-blueprints/sample-stack-blueprint.md`
+- `content/workflow-comparisons/sample-crm-vs-pm.md`
+
+### What was done
+
+- Added `summary` front matter to the three major hubs so they read more clearly as distinct, useful entry pages.
+- Tightened the opening framing on all three hubs so each one now states its role more explicitly:
+  - workflow hub = lifecycle diagnosis and stage sequence,
+  - blueprint hub = baseline stack model and implementation path,
+  - comparison hub = bounded system-choice narrowing layer.
+- Strengthened cross-cluster routing among the three hubs so readers are pushed more clearly between:
+  - workflow first,
+  - then blueprint when stack shape matters,
+  - then comparison when one bounded system decision remains.
+- Tightened opening authority and first-screen confidence on the three cornerstone pages:
+  - the workflow anchor now reads more clearly as the strongest broad first page after the homepage,
+  - the lean stack blueprint now reads more clearly as the strongest stack-cluster entry page,
+  - CRM vs PM now reads more clearly as the highest-level comparison entry page.
+- Added or strengthened explicit next-step routing from the cornerstone pages back to the hub level where helpful, so the cluster behaves more like one coherent first-index set instead of isolated pages.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Current judgment after this pass
+
+- The workflow, blueprint, and comparison hubs now read more distinctly as index-worthy entry pages rather than only internal navigation layers.
+- The three cornerstone pages now make a stronger first-screen case for why each one exists and how it differs from the other two.
+- Internal authority flow is stronger because the homepage already points into these pages, and the pages now route more clearly among themselves instead of leaving the cluster logic implicit.
+
+### Remaining follow-up items
+
+- Watch in Search Console whether Google begins indexing the workflow hub or workflow anchor first, since those are now the strongest candidates after the homepage.
+- Watch whether the blueprint hub or lean stack blueprint still feels slightly too close conceptually once real indexing data arrives.
+- If the hubs still lag while the cornerstone pages get indexed first, consider a later pass that tightens hub first paragraphs and summaries even further without expanding the cluster.
+
+### Confirmation on sources / references rendering
+
+- No visible sources or references section was added in this pass.
+
+### Recommended next step
+
+- Wait for Search Console movement on this six-page cluster before broadening indexing work further. If one page clearly lags, do a narrower first-screen refinement pass on that page only rather than reopening the whole site.
+
+## Client-workflow crawl-priority refinement pass completed on 2026-04-13
+
+### Pass goal
+
+- Improve crawl priority, index priority, and perceived importance of the main client-workflow cluster without broadening the pass across the whole site.
+
+### Files changed in this pass
+
+- `layouts/index.html`
+- `content/client-workflow-systems/_index.md`
+- `content/client-workflow-systems/sample-client-workflow.md`
+- `content/software-stack-blueprints/_index.md`
+
+### What was done
+
+- Tightened homepage signaling so the client-workflow cluster reads more clearly as the first operational path:
+  - stronger hero lead focused on messy client operations from inquiry to final payment,
+  - hero secondary CTA now points to the workflow hub instead of the blueprint hub,
+  - workflow resource-card copy is more concrete,
+  - `Start Here` now leads with the workflow anchor and workflow hub instead of over-weighting stack/decision pages,
+  - removed duplicated comparison weighting from the homepage first-click set.
+- Strengthened the workflow hub as a standalone indexed entry page:
+  - sharper description and summary,
+  - clearer first-screen statement that this hub comes before blueprints and comparisons when the process itself is unstable,
+  - added concise `Start here if...` and `Go somewhere else first if...` guidance,
+  - clarified why workflow diagnosis comes before tool changes.
+- Strengthened the workflow anchor page:
+  - more outcome-oriented opening framing,
+  - clearer explanation that this is the first guide to use when the lifecycle still feels broad,
+  - stronger warning against jumping into tool choices too early,
+  - clearer routing back to the hub and across to stack/comparison pages only when those are truly the next blocker.
+- Added one small supporting authority link from the indexed blueprint hub back to the workflow hub when the process is still broad.
+
+### Build verification result
+
+- Exact Hugo version used:
+  - `hugo v0.128.0-e6d2712ee062321dc2fc49e963597dd5a6157660+extended windows/amd64`
+- Final verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- Final build completed successfully.
+
+### Current judgment after this pass
+
+- The homepage now pushes the workflow cluster more clearly as the first path for messy client-process problems.
+- The workflow hub now reads more like a true indexed entry hub rather than just a category page.
+- The workflow anchor now feels more like the main standalone non-homepage page on the site.
+- Blueprint/support pages still remain available, but the priority order is clearer: workflow sequence first, stack shape second, bounded system decisions after that.
+
+### Remaining follow-up items
+
+- Watch whether `/client-workflow-systems/` starts indexing before or alongside the workflow anchor after these stronger homepage and blueprint-hub signals.
+- Watch whether the homepage `Start Here` set now drives more attention into the workflow anchor/hub relative to stack pages.
+- If the workflow hub still stays discovered-not-indexed while the anchor page indexes, the next pass should tighten the workflow hub first screen again rather than widening scope.
+
+### Recommended next step
+
+- Wait for Search Console feedback on the homepage -> workflow hub -> workflow anchor path before touching other clusters. If Google still prefers support/reference pages over the workflow hub, do one more very small first-screen refinement on the workflow hub only.

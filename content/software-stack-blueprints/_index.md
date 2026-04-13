@@ -1,15 +1,16 @@
 ﻿+++
 title = "Software Stack Blueprints for Solo Operators"
 description = "Lean software stack blueprints for freelancers and solo operators choosing calmer, lower-overhead client systems without overbuying."
+summary = "Use this hub after the workflow is mostly clear and you need a calmer baseline stack model rather than another isolated tool choice."
 feature_image = "/images/features/hubs/software-stack-blueprints.svg"
 feature_image_alt = "Editorial blueprint illustration with layered system panels and planning blocks."
 +++
 
-Use this section when the workflow is mostly clear but the tool stack is still awkward, bloated, or fragmented. These pages focus on stack shape, system ownership, and tradeoffs between simpler and more layered setups.
+Use this hub when the workflow is mostly clear but the tool stack is still awkward, bloated, or fragmented. These pages focus on stack shape, system ownership, and tradeoffs between simpler and more layered setups.
 
 This hub is for operators who already know they have an operations system to build, but do not want to overbuy software or create duplicated admin. The goal here is not app collecting. It is choosing a stack shape that matches the way the business actually runs.
 
-If the question is still "what should my baseline stack look like?", the lean solo blueprint is the main entry page. The overbuying, migration, and comparison pages should stay narrower than that baseline model.
+If the question is still "what should my baseline stack look like?", the lean solo blueprint is the main entry page. If the workflow itself still feels broad, go back to [Client Workflow Systems for Freelancers and Solo Operators](/client-workflow-systems/) first. If the system center is still unclear, go to the comparison hub before you treat any blueprint like the final answer.
 
 If you only open one page from this hub, start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/). Most readers should not start with migration, collaboration, or support assets first.
 
@@ -17,7 +18,7 @@ If you only open one page from this hub, start with [Software Stack Blueprint: S
 
 1. Start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) unless the question is already narrower than the baseline model.
 2. Move into overbuying, migration, or collaboration pages only after the baseline stack shape is visible.
-3. Use templates or worksheets only after the stack decision itself is already made.
+3. Use [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/) only when one bounded decision is still unresolved, and use templates or worksheets only after the stack decision itself is already made.
 
 ## Use this hub as an implementation path
 
@@ -33,7 +34,7 @@ The blueprint cluster works best in this order:
 - Start with the lean solo blueprint unless you already have a specific migration or collaboration scenario.
 - Treat every blueprint as an operating model, not a shopping list.
 - Use comparison pages when one system choice is blocking you.
-- Return to the workflow hub if the real issue turns out to be stage design rather than tool structure.
+- Return to [Client Workflow Systems for Freelancers and Solo Operators](/client-workflow-systems/) if the real issue turns out to be stage design rather than tool structure.
 
 ## Fastest useful starting points
 
@@ -59,6 +60,7 @@ If you are torn between more than one of those, return to the lean solo blueprin
 - Where should active client truth live?
 - When is extra software justified by real coordination pressure?
 - How should the stack change when a VA or migration project enters the picture?
+- Which blueprint should come after the workflow anchor and which comparison should come before it?
 
 ## Choose the stack problem first
 

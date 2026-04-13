@@ -2,15 +2,10 @@
 {{ $workflowAnchor := .Site.GetPage "/client-workflow-systems/sample-client-workflow" }}
 {{ $blueprintAnchor := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
 {{ $comparisonAnchor := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
-{{ $intakeGuide := .Site.GetPage "/client-workflow-systems/sample-intake-guide" }}
-{{ $migrationGuide := .Site.GetPage "/software-stack-blueprints/how-to-migrate-from-scattered-tools-to-one-workflow-system" }}
-{{ $onboardingChecklist := .Site.GetPage "/templates-checklists/sample-onboarding-checklist" }}
-{{ $priorityWorkflowA := .Site.GetPage "/client-workflow-systems/client-onboarding-workflow-for-freelancers-and-consultants" }}
-{{ $priorityWorkflowB := .Site.GetPage "/client-workflow-systems/milestone-delivery-workflow-for-solo-service-businesses" }}
-{{ $priorityWorkflowC := .Site.GetPage "/workflow-comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators" }}
-{{ $priorityBlueprint := .Site.GetPage "/software-stack-blueprints/how-to-choose-a-software-stack-without-overbuying-tools" }}
-{{ $priorityComparison := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
-{{ $priorityAsset := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
+{{ $priorityBlueprint := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
+{{ $priorityWorkflowHub := .Site.GetPage "/client-workflow-systems" }}
+{{ $priorityDecisionA := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
+{{ $priorityDecisionB := .Site.GetPage "/software-stack-blueprints/how-to-choose-a-software-stack-without-overbuying-tools" }}
 {{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons" "templates-checklists")) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
@@ -34,10 +29,10 @@
       <div class="homepage-hero-copy">
         <p class="homepage-pill">Workflow-First Guidance</p>
         <h1>Find the right starting point for your solo operations</h1>
-        <p class="homepage-hero-lead">SoloOpsGuide helps freelancers and solo operators tighten client workflows, simplify tool decisions, and standardize the moments where work usually breaks. If you are not sure where to begin, start with the lifecycle guide first, then move into stack or decision pages only after the bottleneck is clearer.</p>
+        <p class="homepage-hero-lead">SoloOpsGuide helps freelancers and solo operators fix messy client operations from inquiry to final payment. If leads, kickoff, delivery, approvals, billing, or handoffs feel loose, start with the workflow systems cluster first and move into stack pages only after the broken stage is clear.</p>
         <div class="homepage-hero-actions">
           <a class="button button-primary" href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/" data-track="cta_click" data-track-location="homepage-hero" data-track-label="start-with-anchor-workflow">Start with the lifecycle guide <span aria-hidden="true">&rarr;</span></a>
-          <a class="button button-secondary" href="/software-stack-blueprints/" data-track="cta_click" data-track-location="homepage-hero" data-track-label="view-blueprints">View blueprints</a>
+          <a class="button button-secondary" href="/client-workflow-systems/" data-track="cta_click" data-track-location="homepage-hero" data-track-label="browse-workflow-systems">Browse workflow systems</a>
         </div>
       </div>
       {{ with $workflowAnchor }}
@@ -90,7 +85,7 @@
       <div class="homepage-section-intro homepage-section-intro-split">
         <div>
           <h2>Newer guides for specific bottlenecks</h2>
-          <p>These pages are most useful once the broader workflow or stack decision is already clear and you need a more specific implementation guide.</p>
+          <p>Open these after the main path is already clear and you need a narrower fix.</p>
         </div>
         <a class="homepage-inline-link" href="#explore-by-resource" data-track="cta_click" data-track-location="homepage-recent" data-track-label="explore-by-resource">Explore by resource <span aria-hidden="true">&rarr;</span></a>
       </div>
@@ -139,43 +134,43 @@
     <div class="wrap">
       <div class="homepage-section-intro homepage-section-intro-centered">
         <h2>Explore by resource type</h2>
-        <p>Choose the section that matches the decision you need to make now. If the problem still feels broad, start with workflows or blueprints before opening narrower layers.</p>
+        <p>Choose the kind of help you need. If the client process still feels messy or broad, workflows are the first stop.</p>
       </div>
       <div class="homepage-resource-grid">
         <a class="homepage-resource-card homepage-resource-card-workflows" href="/client-workflow-systems/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="workflows">
           {{ partial "resource-icon.html" "workflows" }}
           <h3>Workflows</h3>
-          <p>Start here if the whole client lifecycle feels loose or one stage keeps breaking under pressure.</p>
+          <p>Start here when leads, kickoff, delivery, billing, or handoffs keep slipping.</p>
           <span>{{ $workflowCount }} guides &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-blueprints" href="/software-stack-blueprints/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="blueprints">
           {{ partial "resource-icon.html" "blueprints" }}
           <h3>Blueprints</h3>
-          <p>Use these when the workflow is mostly clear but the tool stack still feels heavier than it should.</p>
+          <p>Use these when the workflow is clear but the stack still feels too heavy.</p>
           <span>{{ $blueprintCount }} blueprints &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-comparisons" href="/workflow-comparisons/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="comparisons">
           {{ partial "resource-icon.html" "comparisons" }}
           <h3>Comparisons</h3>
-          <p>Open these only when one bounded system or tool choice is blocking the next move.</p>
+          <p>Open these when one bounded tool or system choice is blocking the next move.</p>
           <span>{{ $comparisonCount }} comparisons &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-templates" href="/templates-checklists/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="templates">
           {{ partial "resource-icon.html" "templates" }}
           <h3>Templates &amp; Checklists</h3>
-          <p>Use these only after the workflow rule is clear and you need an asset attached to a real trigger moment.</p>
+          <p>Use these after the rule is clear and you need an asset for a real trigger moment.</p>
           <span>{{ $templateCount }} assets &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-glossary" href="/glossary/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="glossary">
           {{ partial "resource-icon.html" "glossary" }}
           <h3>Glossary</h3>
-          <p>Use this only when one unclear term is blocking a workflow or stack decision.</p>
+          <p>Use this when one unclear term is blocking a workflow or stack decision.</p>
           <span>{{ $glossaryCount }} terms &rarr;</span>
         </a>
         <a class="homepage-resource-card homepage-resource-card-faq" href="/faq/" data-track="hub_click" data-track-location="homepage-resource-grid" data-track-label="faq">
           {{ partial "resource-icon.html" "faq" }}
           <h3>FAQ</h3>
-          <p>Use this only for narrow setup questions that should send you back to a stronger guide quickly.</p>
+          <p>Use this for narrow setup questions that should send you back to a stronger guide fast.</p>
           <span>{{ $faqCount }} answers &rarr;</span>
         </a>
       </div>
@@ -186,137 +181,14 @@
     <div class="wrap">
       <div class="section-heading">
         <p class="eyebrow">Start Here</p>
-        <h2>Choose one of these first if you want the shortest path to a better system</h2>
-        <p>These are the strongest first-click pages for lifecycle clarity, stack design, and bounded tool decisions. Most readers should start with one of these before opening narrower support pages or templates.</p>
+        <h2>Start with the workflow model unless the problem is already specific</h2>
+        <p>Most readers should begin with the lifecycle guide or workflow hub first. Use stack and comparison pages after the broken stage is already visible.</p>
       </div>
       <div class="card-grid card-grid-2">
-        {{ with $priorityWorkflowA }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $priorityWorkflowB }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $priorityWorkflowC }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $workflowAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
+        {{ with $priorityWorkflowHub }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
         {{ with $priorityBlueprint }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $priorityComparison }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-        {{ with $priorityAsset }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
-      </div>
-    </div>
-  </section>
-
-  <section class="homepage-popular">
-    <div class="wrap">
-      <div class="homepage-section-intro">
-        <h2>Cornerstone resources</h2>
-        <p>These are the broadest entry pages on the site. Open them when you want the clearest model first, then use narrower guides only after the main path is visible.</p>
-      </div>
-      <div class="homepage-popular-grid">
-        {{ with $workflowAnchor }}
-        {{ $featureImage := partial "feature-image.html" . }}
-        <article class="homepage-popular-card">
-          <a class="homepage-popular-media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
-            {{ with $featureImage }}
-              <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
-            {{ end }}
-          </a>
-          <div class="homepage-popular-body">
-            <div class="homepage-editorial-meta">
-              <span>Workflow</span>
-              <span aria-hidden="true">&bull;</span>
-              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-            </div>
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Params.summary | default .Params.description }}</p>
-            <div class="homepage-popular-foot">
-              <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}" data-track="cta_click" data-track-location="homepage-cornerstone" data-track-label="{{ .File.TranslationBaseName | default (.Title | urlize) }}">{{ $workflowLeadLabel }} <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </div>
-        </article>
-        {{ end }}
-        {{ with $blueprintAnchor }}
-        {{ $featureImage := partial "feature-image.html" . }}
-        <article class="homepage-popular-card">
-          <a class="homepage-popular-media" href="{{ .RelPermalink }}" aria-hidden="true" tabindex="-1">
-            {{ with $featureImage }}
-              <img src="{{ .rel }}" alt="" loading="lazy" decoding="async" width="{{ .width }}" height="{{ .height }}">
-            {{ end }}
-          </a>
-          <div class="homepage-popular-body">
-            <div class="homepage-editorial-meta">
-              <span>Blueprint</span>
-              <span aria-hidden="true">&bull;</span>
-              <span>{{ .Date.Format "Jan 2, 2006" }}</span>
-            </div>
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Params.summary | default .Params.description }}</p>
-            <div class="homepage-popular-foot">
-              <span>Updated {{ .Date.Format "Jan 2, 2006" }}</span>
-              <a class="homepage-inline-link" href="{{ .RelPermalink }}" data-track="cta_click" data-track-location="homepage-cornerstone" data-track-label="{{ .File.TranslationBaseName | default (.Title | urlize) }}">{{ $blueprintLeadLabel }} <span aria-hidden="true">&rarr;</span></a>
-            </div>
-          </div>
-        </article>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section">
-    <div class="wrap">
-      <div class="section-heading">
-        <p class="eyebrow">Reading paths</p>
-        <h2>Follow the shortest path based on the problem you need to fix</h2>
-        <p>Each path starts with the safest first click, then moves into the next guide or asset only when that narrower page becomes useful.</p>
-      </div>
-      <div class="card-grid card-grid-2">
-        <article class="page-card page-card-default page-card-theme-client-workflow-systems">
-          <div class="page-card-body">
-            <div class="page-card-top">
-              <p class="page-card-type">Workflow path</p>
-              <span class="page-card-date">Priority route</span>
-            </div>
-            <h3><a href="/client-workflow-systems/">Fix the full client lifecycle first</a></h3>
-            <p>This is the safest first click if the problem still feels broad. Open the full lifecycle guide first, then move into the stage guide that matches the bottleneck before adding support assets.</p>
-            <div class="page-card-footer">
-              <a class="page-card-link" href="/client-workflow-systems/">Open workflow hub</a>
-            </div>
-          </div>
-        </article>
-        <article class="page-card page-card-default page-card-theme-software-stack-blueprints">
-          <div class="page-card-body">
-            <div class="page-card-top">
-              <p class="page-card-type">Stack path</p>
-              <span class="page-card-date">Priority route</span>
-            </div>
-            <h3><a href="/software-stack-blueprints/">Choose a lean stack before expanding tools</a></h3>
-            <p>Use this path once the workflow is clear enough and the main question is tool structure. Start with the lean blueprint, then move into migration, ownership, or spending-boundary pages only when one of those issues is truly blocking execution.</p>
-            <div class="page-card-footer">
-              <a class="page-card-link" href="/software-stack-blueprints/">Open blueprint hub</a>
-            </div>
-          </div>
-        </article>
-        <article class="page-card page-card-default page-card-theme-workflow-comparisons">
-          <div class="page-card-body">
-            <div class="page-card-top">
-              <p class="page-card-type">Decision path</p>
-              <span class="page-card-date">Priority route</span>
-            </div>
-            <h3><a href="/workflow-comparisons/">Use comparisons only for bounded system choices</a></h3>
-            <p>Use this path only after the workflow model is already clear enough to name the real decision. Resolve the system-center question first, then move to stack-shape, workspace, billing, or delivery comparisons.</p>
-            <div class="page-card-footer">
-              <a class="page-card-link" href="/workflow-comparisons/">Open comparison hub</a>
-            </div>
-          </div>
-        </article>
-        <article class="page-card page-card-default page-card-theme-templates-checklists">
-          <div class="page-card-body">
-            <div class="page-card-top">
-              <p class="page-card-type">Execution path</p>
-              <span class="page-card-date">Priority route</span>
-            </div>
-            <h3><a href="/templates-checklists/">Attach templates to a real workflow trigger</a></h3>
-            <p>Use templates only after a workflow or blueprint page has already defined the rule. If you cannot name the trigger moment and completion standard clearly yet, go back to the stronger guide before opening assets.</p>
-            <div class="page-card-footer">
-              <a class="page-card-link" href="/templates-checklists/">Open templates hub</a>
-            </div>
-          </div>
-        </article>
+        {{ with $comparisonAnchor }}{{ partial "page-card.html" (dict "page" . "style" "default") }}{{ end }}
       </div>
     </div>
   </section>
@@ -324,12 +196,12 @@
   <section class="homepage-cta">
     <div class="wrap">
       <div class="homepage-cta-inner">
-        <p class="homepage-pill homepage-pill-outline">Ready to get started?</p>
-        <h2>Find the guide that fits your current challenge</h2>
-        <p>No email required. No sign-up walls. Just clear, structured guidance you can use today.</p>
+        <p class="homepage-pill homepage-pill-outline">Best next move</p>
+        <h2>Fix the client workflow before you optimize the stack</h2>
+        <p>If the process still feels loose, stay in the workflow cluster first. Move into blueprints only after the operating sequence is clear enough to support tool decisions.</p>
         <div class="homepage-hero-actions homepage-cta-actions">
-          <a class="button button-primary" href="/client-workflow-systems/" data-track="cta_click" data-track-location="homepage-footer-cta" data-track-label="browse-all-workflows">Browse all workflows <span aria-hidden="true">&rarr;</span></a>
-          <a class="button button-secondary" href="#explore-by-resource" data-track="cta_click" data-track-location="homepage-footer-cta" data-track-label="explore-by-category">Explore by category</a>
+          <a class="button button-primary" href="/workflows/freelance-client-workflow-system-inquiry-to-final-payment/" data-track="cta_click" data-track-location="homepage-footer-cta" data-track-label="start-with-lifecycle-guide-footer">Start with the lifecycle guide <span aria-hidden="true">&rarr;</span></a>
+          <a class="button button-secondary" href="/software-stack-blueprints/" data-track="cta_click" data-track-location="homepage-footer-cta" data-track-label="open-blueprints-footer">Open blueprints</a>
         </div>
       </div>
     </div>
