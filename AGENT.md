@@ -1,0 +1,141 @@
+# SoloOpsGuide Agent Manual
+
+Read this file first for any future Codex pass in this repo. It contains the durable operating rules for working on `soloopsguide.com`.
+
+## Mission
+
+- Strengthen SoloOpsGuide as a workflow-first site for freelancers and solo operators.
+- Optimize for practical usefulness, clear hierarchy, and durable editorial quality.
+- Prefer stronger cornerstone pages, cleaner cluster flow, and better discoverability over random expansion.
+
+## Core principles
+
+- Workflow problems come before tool problems.
+- Blueprint pages come after the workflow model is clear.
+- Comparison pages narrow one bounded decision; they do not replace workflow or blueprint pages.
+- Support pages stay narrow and subordinate to cornerstone workflow, blueprint, and comparison pages.
+- Homepage and hubs should guide readers into the strongest first page, not merely expose content.
+
+## Quality standards
+
+- Keep public-facing copy calm, practical, structured, and trustworthy.
+- Avoid internal planning language, SEO jargon, or generic productivity advice.
+- Favor authority, clarity, differentiation, and useful next steps.
+- Make pages worth returning to, not just worth crawling.
+- Keep labels, headings, and summaries specific enough to signal real page purpose.
+
+## Scope discipline
+
+- Do not broaden a pass unless the user explicitly asks for it.
+- Do not add new pages by default.
+- Prefer strengthening strong pages over creating more narrow assets.
+- Do not redo images, layouts, or clusters that are already in good shape unless a real regression appears.
+- Preserve the current architecture and visual system.
+
+## Cluster hierarchy
+
+### Homepage
+
+- The homepage should behave like a guided entry page.
+- The safest broad first path is the client-workflow cluster.
+- Support/reference layers should never visually compete with the main operational path.
+
+### Workflow cluster
+
+- This is the primary operational cluster.
+- The anchor workflow page is the broadest first guide.
+- Stage pages deepen one stage; they should not compete with the anchor.
+
+### Blueprint cluster
+
+- Use when the workflow is mostly clear and stack shape is the blocker.
+- The lean stack blueprint is the default entry page.
+- Buying-boundary, migration, and support worksheets stay narrower than the blueprint.
+
+### Comparison cluster
+
+- Use only for one bounded decision.
+- Sequence should run from broad system-center decisions to narrower implementation choices.
+- Comparisons should end in a decision and route into blueprint or workflow implementation.
+
+### Support layer
+
+- Templates/checklists are execution assets, not first-stop guides.
+- Glossary pages clarify terms, not strategy.
+- FAQ pages answer narrow blockers and route back out quickly.
+- If a support page starts competing with a cornerstone page, strengthen the cornerstone page and narrow the support page.
+
+## Indexation and quality priorities
+
+- Treat the homepage, major hubs, and cornerstone pages as the first-index cluster.
+- Strengthen pages that deserve indexing before trying to push the whole site at once.
+- Improve first-screen clarity, page-role differentiation, and internal authority flow.
+- Avoid spammy SEO tactics, filler copy, and thin support content dressed up as a primary landing page.
+- Utility/feed pages should be intentionally handled, not accidentally exposed as priority content.
+
+## Internal linking rules
+
+- Prefer contextual links over generic related-link blocks.
+- Every meaningful new or revised page should maintain:
+  - one upstream hub path,
+  - one upstream cornerstone path,
+  - a few lateral related links where they genuinely help,
+  - one clear downstream next step.
+- Strengthen homepage -> hub -> cornerstone routing before widening support links.
+
+## Content decision rules by page type
+
+### Workflows
+
+- Explain the stage or sequence.
+- Name inputs, outputs, ownership, and common failure points.
+- Include exact next-step pages.
+
+### Blueprints
+
+- Define the operating model and what it optimizes for.
+- Make upgrade triggers and overbuying warnings explicit.
+- Route clearly into comparisons, workflows, or implementation assets.
+
+### Comparisons
+
+- Stay focused on one bounded decision.
+- Tie criteria to workflow outcomes.
+- State what the page does not decide.
+
+### Templates and checklists
+
+- Assume the workflow rule already exists.
+- State trigger moment, completion standard, and upstream page required for context.
+
+### Glossary and FAQ
+
+- Clarify one narrow blocker quickly.
+- Include one clear next page.
+
+## UX and design guardrails
+
+- Do not redesign the site unless explicitly asked.
+- Keep utility UI subtle and maintainable.
+- Preserve current spacing, typography, and visual language.
+- Fix noticeable browsing issues, not theoretical perfection.
+
+## Build and verification
+
+- Use Hugo Extended `0.128.0` as the source of truth for validation.
+- Standard verification command:
+  - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- If rendered output looks stale, rebuild before assuming the content is wrong.
+
+## How to run future passes
+
+1. Read `AGENT.md` first.
+2. Read `TRACKER.md` second for current project state.
+3. Keep the pass scoped to the user request.
+4. Prefer surgical improvements over broad rewrites.
+5. After the pass, update `TRACKER.md` with:
+   - what changed,
+   - files touched,
+   - build result if relevant,
+   - open follow-up items,
+   - recommended next step.
