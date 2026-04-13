@@ -112,14 +112,14 @@ Trust/support sections:
 - `terms`
 
 Key launch docs:
-- `DAY9_LAUNCH_QA.md`
-- `DAY10_LAUNCH_PACKAGE.md`
-- `DAY11_LAUNCH_FINALIZATION.md`
-- `DAY12_VERIFICATION_BLOCKED.md`
-- `GO_LIVE_CHECKLIST.md`
-- `MEASUREMENT_OPERATIONS.md`
-- `CONTENT_OPERATIONS.md`
-- `SEARCH_CONSOLE_RESPONSE_LOOP.md`
+- `project-docs/DAY9_LAUNCH_QA.md`
+- `project-docs/DAY10_LAUNCH_PACKAGE.md`
+- `project-docs/DAY11_LAUNCH_FINALIZATION.md`
+- `project-docs/DAY12_VERIFICATION_BLOCKED.md`
+- `project-docs/GO_LIVE_CHECKLIST.md`
+- `project-docs/MEASUREMENT_OPERATIONS.md`
+- `project-docs/CONTENT_OPERATIONS.md`
+- `project-docs/SEARCH_CONSOLE_RESPONSE_LOOP.md`
 
 ## Measurement and Search Console
 
@@ -131,9 +131,9 @@ The repo now includes optional support for:
 - lightweight CTA, nav, hub, card, and site-search tracking hooks
 - AdSense account meta tag readiness without adding ad units
 
-Nothing is enabled by default. Manual setup details live in `MEASUREMENT_OPERATIONS.md`.
+Nothing is enabled by default. Manual setup details live in `project-docs/MEASUREMENT_OPERATIONS.md`.
 
-The repo-side response framework for coverage, impressions, clicks, indexing triage, and weak-page follow-up lives in `SEARCH_CONSOLE_RESPONSE_LOOP.md`, with the priority groups, page-type rules, playbooks, risk pages, and likely intervention targets in `data/search-console-monitoring.toml`.
+The repo-side response framework for coverage, impressions, clicks, indexing triage, and weak-page follow-up lives in `project-docs/SEARCH_CONSOLE_RESPONSE_LOOP.md`, with the priority groups, page-type rules, playbooks, risk pages, and likely intervention targets in `data/search-console-monitoring.toml`.
 
 ## Content creation
 
@@ -150,7 +150,7 @@ hugo new --kind faq faq/new-question.md
 
 Then fill the required front matter and keep the page aligned to the workflow-first editorial model.
 
-Ongoing publishing, backlog, refresh rules, and cluster priorities live in `CONTENT_OPERATIONS.md`.
+Ongoing publishing, backlog, refresh rules, and cluster priorities live in `project-docs/CONTENT_OPERATIONS.md`.
 
 ## Publishing conventions
 

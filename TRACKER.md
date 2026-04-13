@@ -156,3 +156,10 @@ After each future pass, add a short section with:
 - Verification: ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the CSS change.
 - Follow-up: none.
 - Recommended next step: hold scope unless another live-browsing polish issue appears in the homepage card or footer components.
+
+## Repo docs reorganization - 2026-04-13
+
+- What moved: non-core root markdown process/reference docs were moved into `project-docs/`; `AGENT.md`, `TRACKER.md`, `README.md`, and `LICENSE` stayed at the repo root.
+- Why it was moved: to keep the root focused on the primary control files and make the repository easier to scan.
+- References updated: `README.md` now points to the moved docs under `project-docs/`, and `project-docs/GO_LIVE_CHECKLIST.md` now points to `project-docs/MEASUREMENT_OPERATIONS.md`.
+- Cleanup status: retired `codex-optimization-reminder.md` was removed because it was superseded by `AGENT.md` and `TRACKER.md` and had no active repo references; no further cleanup is needed.

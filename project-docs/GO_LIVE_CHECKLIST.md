@@ -23,7 +23,7 @@ Use this as the final launch checklist after repo-side fixes are complete.
 - Enable only one analytics provider in `config.toml` and confirm the provider-specific ID/domain/script values are correct.
 - Add analytics only if the final privacy-policy wording matches the tools being used.
 - If ads or affiliate relationships are added, update trust and policy pages before enabling them.
-- Use `MEASUREMENT_OPERATIONS.md` as the source of truth for measurement-related repo setup.
+- Use `project-docs/MEASUREMENT_OPERATIONS.md` as the source of truth for measurement-related repo setup.
 
 ## Domain and production checks
 
