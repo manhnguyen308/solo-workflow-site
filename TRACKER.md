@@ -166,7 +166,9 @@ After each future pass, add a short section with:
 
 ## Trust and quality pass - 2026-04-13
 
-- What changed: tightened the About, Contact, Content Policy, and Editorial Policy pages to make audience fit, editorial judgment, recommendation boundaries, and page-role expectations more explicit; lightly clarified the footer's lower editorial-purpose copy.
+- What changed: tightened the About, Contact, Content Policy, and Editorial Policy pages to make audience fit, editorial judgment, recommendation boundaries, and page-role expectations more explicit; lightly clarified the footer's lower editorial-purpose copy; added a minimal permanent post-task git hygiene rule to `AGENT.md`.
 - Why it was changed: to make the trust layer feel more intentional and complete without broadening the site or disturbing the homepage and cluster-priority structure.
 - Verification: ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the edits.
+- Commit message used: `Improve trust and editorial clarity on site-information pages`
+- Push result: `git push origin main` succeeded.
 - Follow-up: no further trust-page cleanup is needed right now; there is still no standalone `/methodology/` page, which remains acceptable unless a later pass needs a clearer split from the policy pages.
