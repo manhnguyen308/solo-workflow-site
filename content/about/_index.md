@@ -1,19 +1,19 @@
 +++
 title = "About"
 description = "What SoloOpsGuide is, who it serves, and how to use the site well."
-summary = "Learn what SoloOpsGuide covers, who it is built for, and how to use its workflows, blueprints, comparisons, templates, and support pages."
+summary = "Learn who SoloOpsGuide serves, what kind of editorial guidance it publishes, and how to use the site without getting pulled into the wrong layer too early."
 date = 2026-04-06T00:00:00Z
 +++
 
-SoloOpsGuide is a workflow-first knowledge site for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
+SoloOpsGuide is a workflow-first editorial resource for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
 
-The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a small set of focused guides, not through endless browsing.
+The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a small set of focused guides, not through endless browsing, trend commentary, or software noise.
 
 If you are new to the site, the strongest first pages are [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), and [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 ## What SoloOpsGuide is
 
-SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations.
+SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations. It is intentionally narrower than a general business site and more opinionated about sequence, handoffs, and operating clarity than a typical software-content site.
 
 It publishes:
 - workflow anchors that map the full client path,
@@ -34,6 +34,12 @@ It is less useful for:
 - productized businesses built around self-serve checkout,
 - larger agencies with dedicated operations, finance, and project management teams,
 - readers looking for broad software news, trend commentary, or generic productivity advice.
+
+The site is especially meant for readers who are trying to answer questions like:
+- why does client work still feel harder to run than it should,
+- which stage is actually breaking,
+- should the next improvement be process, stack shape, or one bounded tool decision,
+- which asset is useful only after the workflow rule already exists.
 
 ## What problem the site solves
 
@@ -70,6 +76,8 @@ That means:
 - tradeoffs and failure modes are part of the guidance,
 - implementation pages should point readers to the next useful step,
 - support and policy pages exist to explain how the content should be evaluated and used.
+
+Trust on SoloOpsGuide should come from page purpose, judgment clarity, and operational usefulness, not from trying to sound bigger or more certain than the site really is.
 
 ## Related pages
 

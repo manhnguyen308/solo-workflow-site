@@ -90,6 +90,12 @@ These are the main pages to watch as the next cluster after the homepage:
 - Homepage/footer density reduction
 - Homepage resource-type scanability refinement
 
+### Trust and site-information work already done
+
+- About, Contact, Content Policy, and Editorial Policy have all received a narrow trust-and-quality pass.
+- Those pages now read more clearly as maintained editorial/trust pages rather than thin placeholders.
+- Footer trust wording was lightly tightened without changing homepage or cluster-priority structure.
+
 ### Index-priority work already done
 
 - First-index priority set strengthened across the workflow, blueprint, and comparison hubs plus cornerstone pages.
@@ -115,6 +121,7 @@ These are the main pages to watch as the next cluster after the homepage:
 - The workflow hub may still be slightly weaker as a standalone indexed entry page than the workflow anchor.
 - Templates/checklists remain the easiest support layer to misuse if readers skip upstream guides.
 - Some hub hero intros may still feel slightly dense in live browsing, though they are functionally much improved.
+- There is still no standalone `/methodology/` page; editorial method is currently carried by `Editorial Policy` and `Content Policy`, which is acceptable unless a clearer separation becomes necessary later.
 
 ## Recommended next moves
 
@@ -140,3 +147,12 @@ After each future pass, add a short section with:
 - build result if relevant
 - follow-up items
 - recommended next step
+
+## UI polish pass - 2026-04-13
+
+- Files changed: `static/css/main.css`, `public/css/main.css`, `public/index.html`, `TRACKER.md`
+- What changed: removed the homepage resource-card paragraph width cap so all resource descriptions can use the full card width consistently; made the footer brand link an inline-block so its bottom margin creates clearer spacing above the intro paragraph.
+- Why: the shared resource-card paragraph `max-width` was forcing some cards, especially Comparisons, into an unnecessarily narrow text column, and the footer spacing rule was not fully applying because the brand link remained inline.
+- Verification: ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the CSS change.
+- Follow-up: none.
+- Recommended next step: hold scope unless another live-browsing polish issue appears in the homepage card or footer components.

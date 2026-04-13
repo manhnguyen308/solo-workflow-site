@@ -1032,6 +1032,7 @@ select {
 }
 
 .footer-brand-link {
+  display: inline-block;
   margin-bottom: 1rem;
 }
 
@@ -1748,7 +1749,7 @@ body {
 
 .homepage-resource-card p {
   margin-bottom: 0.95rem;
-  max-width: 24ch;
+  max-width: 100%;
   color: #526172;
   font-size: 12.75px;
   line-height: 1.56;
@@ -1830,6 +1831,7 @@ body {
 }
 
 .footer-brand-link {
+  display: inline-block;
   margin-bottom: 0.75rem;
 }
 

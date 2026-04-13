@@ -1,7 +1,7 @@
 +++
 title = "Editorial Policy"
 description = "How SoloOpsGuide approaches methodology, recommendations, updates, and editorial judgment."
-summary = "See how SoloOpsGuide decides what to publish, how recommendations are framed, how updates and corrections are handled, and where editorial boundaries sit."
+summary = "See how SoloOpsGuide decides what to publish, how workflow-first recommendations are framed, how updates and corrections are handled, and where editorial boundaries sit."
 date = 2026-04-06T00:00:00Z
 +++
 
@@ -21,6 +21,17 @@ SoloOpsGuide is written for freelancers, consultants, and solo service operators
 4. Tradeoff awareness over one-sided recommendations.
 5. Calm, implementation-focused language over hype.
 
+## What workflow-first means here
+
+On SoloOpsGuide, workflow-first means the site tries to answer these questions in order:
+
+1. What is the actual operating problem?
+2. Where in the client lifecycle is it happening?
+3. Is the next improvement a process fix, a stack-shape decision, or one bounded tool choice?
+4. What should the reader do next once that answer is clearer?
+
+That is different from generic software content, which often starts with product categories, features, or rankings before the operating problem is even named.
+
 ## Content methodology
 
 The site generally works from this order:
@@ -31,6 +42,8 @@ The site generally works from this order:
 5. route the reader to the next useful implementation page.
 
 This approach is intentional. It helps keep content practical, narrower in scope, and more reliable for real operational use.
+
+It also means some pages are intentionally broad and others are intentionally narrow. A workflow anchor should diagnose and map the sequence. A blueprint should define the stack model. A comparison should settle one bounded decision. A support page should remove one blocker and then route back out.
 
 ## How recommendations are framed
 
@@ -43,6 +56,17 @@ SoloOpsGuide tries to make recommendations that are:
 Comparison pages should end with clearer direction, not with more confusion or broader browsing.
 
 Recommendations on this site should also make clear what is not being decided. A good page helps a reader choose the next move without pretending one article can settle every adjacent system question.
+
+## Editorial boundaries
+
+SoloOpsGuide is not trying to be:
+
+- a software news publication,
+- a broad small-business advice site,
+- a replacement for legal, financial, tax, or compliance advice,
+- a personalized consulting service delivered through articles.
+
+Those boundaries are part of the editorial model, not an omission. They keep the site narrower, more legible, and more useful for the actual audience it serves.
 
 ## What the site avoids
 
@@ -67,6 +91,16 @@ If sponsorships, partnerships, or affiliate relationships are introduced, they s
 Commercial relationships should be disclosed clearly where relevant. Editorial usefulness should remain the primary standard.
 
 This means a page should still be willing to recommend a simpler, cheaper, or narrower setup when that is the better operational fit.
+
+## Updates, corrections, and maintenance priority
+
+Not every page matters equally at the same time. SoloOpsGuide should generally maintain pages in this order:
+
+1. homepage, major hubs, and cornerstone workflow/blueprint/comparison pages,
+2. high-value supporting workflow and decision pages,
+3. narrow support assets, glossary pages, and FAQ pages.
+
+If a correction affects routing, factual accuracy, or recommendation boundaries on a cornerstone page, it should be prioritized ahead of less central pages.
 
 ## What trust should look like on this site
 

@@ -1,13 +1,15 @@
 +++
 title = "Contact"
 description = "How to contact SoloOpsGuide for corrections, site issues, and appropriate editorial or business inquiries."
-summary = "Use this page to understand what kinds of messages SoloOpsGuide is open to, what information helps, and how contact will be handled when a monitored public inbox is published."
+summary = "Use this page to see what kinds of contact are appropriate, what information helps most, and how SoloOpsGuide handles corrections, site issues, and legitimate editorial outreach."
 date = 2026-04-06T00:00:00Z
 +++
 
 SoloOpsGuide keeps public contact limited to messages that can be reviewed responsibly. This page explains what kinds of outreach are appropriate and what information is most useful.
 
 This is a trust-support page, not a conversion page. Its job is to make correction, issue-reporting, and appropriate business outreach clearer while keeping the main site focused on workflow guidance rather than inbox management.
+
+If you are trying to understand the site’s standards before reaching out, [Editorial Policy](/editorial-policy/) and [Content Policy](/content-policy/) are usually the best pages to read first.
 
 ## What this page is for
 
@@ -25,6 +27,7 @@ This site is not set up for:
 - free consulting requests,
 - bulk outreach,
 - cold pitches unrelated to workflow, operations, or editorial partnerships.
+- repeated requests for personal tool recommendations without operational context.
 
 ## Best use of contact
 
@@ -56,6 +59,8 @@ Keep it specific. The most useful messages explain:
 A public inbox is intentionally not published until it can be actively monitored. It is better to publish no public address than to invite legitimate correction or partnership messages into an inbox that is not being checked reliably.
 
 When a monitored public contact method is available, it will be added here and linked from the footer if appropriate.
+
+Until then, this page exists to clarify expectations, not to pretend there is an active public inbox when there is not.
 
 ## Related pages
 

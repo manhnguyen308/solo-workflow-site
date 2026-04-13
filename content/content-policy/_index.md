@@ -1,7 +1,7 @@
 +++
 title = "Content Policy"
 description = "What SoloOpsGuide content is designed to do, where its boundaries are, and how readers should use it."
-summary = "Understand the purpose, boundaries, and quality expectations behind SoloOpsGuide so you can evaluate and apply the content appropriately."
+summary = "Understand what SoloOpsGuide content is designed to do, what it deliberately does not do, and how pages are meant to be used together."
 date = 2026-04-06T00:00:00Z
 +++
 
@@ -43,6 +43,17 @@ The site aims for content that is:
 - useful under real delivery pressure,
 - concise enough to be usable but specific enough to be credible.
 
+## How pages are selected and bounded
+
+SoloOpsGuide tries to publish pages that strengthen an existing operational cluster rather than adding loose topics for breadth.
+
+That usually means:
+- starting with workflow anchors and major hubs,
+- adding blueprint or comparison pages only when they clarify a real decision,
+- adding templates, glossary, or FAQ pages only when they clearly support a stronger upstream page.
+
+If a potential page would end at the same decision as an existing page, the stronger default is to improve the existing page instead of publishing another near-duplicate.
+
 ## Recommendation boundaries
 
 Recommendations on SoloOpsGuide are meant to be directional and operational, not absolute.
@@ -58,6 +69,16 @@ That means:
 - Use blueprint and comparison pages to make a bounded system decision.
 - Use templates to support execution after the process rule is already defined.
 - Use support pages, including FAQ and glossary entries, to remove friction quickly and then return to the implementation path.
+
+## What content maintenance should look like
+
+The site should improve pages when:
+- workflow assumptions change,
+- internal reading paths become stale,
+- newer pages materially affect an older recommendation,
+- a page starts competing with a stronger page instead of supporting it.
+
+The goal is not constant churn. The goal is to keep important pages clear, current enough, and well-routed.
 
 ## Related pages
 
