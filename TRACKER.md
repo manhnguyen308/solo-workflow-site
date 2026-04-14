@@ -378,12 +378,14 @@ After each future pass, add a short section with:
   - tightened a few generated labels to make the card text shorter and calmer at thumbnail size: `Routing rules`, `Cluster map`, `Add-ons`, `Wait`, `Nurture`, and `Lead truth stays central`
 - Which files/assets changed:
   - `tools/generate-feature-images.ps1`
+  - `tools/generate-openai-image.ps1` (already staged in the worktree as a related image-generation helper when the task commit was created; not edited during this pass)
   - `static/images/features/workflows/freelance-client-workflow-system.svg`
   - `static/images/features/hubs/client-workflow-systems.svg`
   - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
   - `static/images/features/comparisons/crm-vs-project-management.svg`
 - Source-generation files/scripts changed:
   - `tools/generate-feature-images.ps1`
+  - `tools/generate-openai-image.ps1` was added in the same commit because it was already staged before the feature-image workflow changes were committed
 - Verification completed:
   - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1 -DryRun` to confirm the script now targets both the legacy PNG outputs and the four live SVG feature assets
   - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1` successfully to regenerate the workflow-owned image sources
@@ -394,4 +396,4 @@ After each future pass, add a short section with:
 - Remaining image that may still need manual design review:
   - none found in this pass beyond the four priority images; the broader issue was workflow ownership rather than another separate CSS-only framing bug
 - Commit message used: `Regenerate feature images with clean labels`
-- Push result: pending
+- Push result: `git push origin main` succeeded
