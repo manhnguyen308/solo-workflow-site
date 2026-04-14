@@ -304,4 +304,4 @@ After each future pass, add a short section with:
   - visually inspected the refreshed blueprint and CRM comparison artwork as direct rendered SVGs and in a card-size local thumbnail grid alongside other homepage/card feature images to confirm the two target images now read more cleanly and feel more consistent with the surrounding set
   - checked the homepage, blueprint hub, and comparison hub outputs for the expected image references and confirmed no homepage sections were missing in the build output
 - Commit message used: `Refine remaining feature image artwork`
-- Push result: pending
+- Push result: `git push origin main` succeeded
