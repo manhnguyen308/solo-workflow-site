@@ -279,3 +279,5 @@ After each future pass, add a short section with:
   - confirmed the homepage, `/client-workflow-systems/`, `/software-stack-blueprints/`, `/workflow-comparisons/`, and `/workflows/freelance-client-workflow-system-inquiry-to-final-payment/` all still reference the expected refreshed feature-image filenames
   - confirmed the refreshed images now use stable `1600x900`/`16:9` SVG canvases for the key comparison and cornerstone surfaces touched in this pass, including normalizing `billing-status-home.svg` to the same frame
   - spot-checked the refreshed SVG source files for safer text placement, larger labels, cleaner panel spacing, and more consistent internal alignment than the previous versions
+- Commit message used: `Refresh feature image artwork alignment`
+- Push result: `git push origin main` succeeded
