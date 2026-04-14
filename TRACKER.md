@@ -486,4 +486,4 @@ After each future pass, add a short section with:
   - none identified as blocked or still using the old broken compositions after this full regeneration pass
 - Commit message used: `Replace feature images with aligned artwork`
 - Push result:
-  - pending
+  - `git push origin main` succeeded
