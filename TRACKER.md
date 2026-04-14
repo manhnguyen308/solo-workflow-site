@@ -364,3 +364,34 @@ After each future pass, add a short section with:
   - confirmed the expected stable feature-image references remain in generated homepage and workflow-hub output with no broken image references
 - Commit message used: `Refine feature image labels for readability`
 - Push result: `git push origin main` succeeded
+
+## Feature image generation workflow alignment - 2026-04-14
+
+- Root cause of the broken text workflow:
+  - the checked-in feature image generator was only producing a separate PNG set under `assets/images/features`, while the live site continued serving hand-maintained SVGs from `static/images/features`
+  - that meant the script was not the real source of truth for the four priority homepage/card images, so earlier text/layout fixes could drift or be reapplied manually instead of through a repeatable workflow
+  - the generator also had no SVG output path for the live assets, so text-label quality improvements in the served images were effectively outside the script pipeline
+- What changed in the generation workflow:
+  - extended `tools/generate-feature-images.ps1` so it now generates the served SVG assets for the four priority cards directly into `static/images/features/...`
+  - kept the existing PNG generation in place, preserved stable filenames, and added UTF-8/no-BOM SVG writing with consistent trailing newlines so regenerated source assets stay clean in git
+  - encoded the current priority-card compositions into the script so the workflow page, workflow hub, lean blueprint, and CRM-vs-PM comparison now have a repeatable source path instead of manual final-asset edits
+  - tightened a few generated labels to make the card text shorter and calmer at thumbnail size: `Routing rules`, `Cluster map`, `Add-ons`, `Wait`, `Nurture`, and `Lead truth stays central`
+- Which files/assets changed:
+  - `tools/generate-feature-images.ps1`
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+- Source-generation files/scripts changed:
+  - `tools/generate-feature-images.ps1`
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1 -DryRun` to confirm the script now targets both the legacy PNG outputs and the four live SVG feature assets
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1` successfully to regenerate the workflow-owned image sources
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after regeneration
+  - confirmed generated homepage and relevant page output still reference the expected stable image paths in `public/index.html`, `public/client-workflow-systems/index.html`, `public/guides/software-stack-blueprint-solo-freelancer-lean-budget/index.html`, and `public/comparisons/crm-vs-project-management-tool-for-client-workflows/index.html`
+  - confirmed no broken image references were introduced for the four priority assets and no homepage sections disappeared in the generated HTML output
+  - attempted local headless screenshot capture for desktop/mobile visual inspection, but the available Edge binary on this machine did not emit screenshot files, so final verification relied on direct SVG source review plus generated-page reference checks
+- Remaining image that may still need manual design review:
+  - none found in this pass beyond the four priority images; the broader issue was workflow ownership rather than another separate CSS-only framing bug
+- Commit message used: `Regenerate feature images with clean labels`
+- Push result: pending

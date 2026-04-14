@@ -29,7 +29,7 @@
   <path d="M902 308h24" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
   <text x="252" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Lean stack</text>
   <text x="720" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Billing</text>
-  <text x="1020" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Add later</text>
+  <text x="1020" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Add-ons</text>
 
   <rect x="170" y="410" width="712" height="324" rx="38" fill="url(#blueprint-panel)" />
   <rect x="246" y="476" width="560" height="74" rx="30" fill="#ffffff" opacity=".12" />
@@ -50,7 +50,7 @@
   <rect x="1074" y="612" width="144" height="74" rx="28" fill="#fff1db" />
   <text x="1012" y="460" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#334b5c">Upgrade path</text>
   <text x="1010" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Trigger</text>
-  <text x="1188" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Delay</text>
+  <text x="1188" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Wait</text>
   <text x="1082" y="660" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Add-ons</text>
   <path d="M1132 522h28M1232 522h28" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
   <path d="M1146 538l14-16m-14 16l14 16M1246 538l14-16m-14 16l14 16" stroke="#0f8b8d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />

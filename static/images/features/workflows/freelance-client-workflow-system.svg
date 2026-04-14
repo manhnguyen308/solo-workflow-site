@@ -58,7 +58,7 @@
   <rect x="1004" y="410" width="426" height="324" rx="38" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
   <rect x="1062" y="470" width="310" height="74" rx="28" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
   <rect x="1062" y="570" width="310" height="74" rx="28" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1092" y="455" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#334b5c">Handoff rules</text>
+  <text x="1092" y="455" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#334b5c">Routing rules</text>
   <text x="1100" y="518" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Owner before kickoff</text>
   <text x="1100" y="618" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Invoice at stage exit</text>
   <circle cx="1310" cy="507" r="14" fill="#0f8b8d" />
