@@ -197,8 +197,8 @@ After each future pass, add a short section with:
 - Current GSC interpretation:
   - the site still looks technically indexable, and this pass did not uncover a hard crawl blocker such as `noindex`, robots blocking, broken canonicals, or wrong final URLs on the priority set
   - the remaining likely issue is crawl/index prioritization rather than indexability failure; the homepage and hub signals are now cleaner and less support-heavy, which should make the intended first-index cluster easier for Google to prioritize
-- Commit message planned: `Tighten crawl signals for priority index pages`
-- Push status: pending post-commit push attempt
+- Commit message used: `Tighten crawl signals for priority index pages`
+- Push result: `git push origin main` succeeded
 - Follow-up:
   - watch whether `/client-workflow-systems/` and the workflow anchor move out of discovered-not-indexed before broadening scope again
   - if GSC still favors support pages after this pass, the next audit should stay narrow and compare internal-link prominence on already indexed support URLs versus the workflow hub and anchor
