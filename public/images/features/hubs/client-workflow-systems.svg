@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Client workflow systems hub illustration</title>
-  <desc id="desc">An editorial illustration showing the client lifecycle as connected stages, workflow routes, and supporting pages from intake to offboarding.</desc>
+  <desc id="desc">An editorial hub illustration using a single workflow spine, connected side nodes, and simple system cards for the client lifecycle cluster.</desc>
   <defs>
     <linearGradient id="hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f4fbfb" />
@@ -12,51 +12,44 @@
     </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#hub-bg)" />
-  <circle cx="1284" cy="182" r="150" fill="#dbf4f2" />
-  <circle cx="258" cy="730" r="146" fill="#e6f0fb" />
-  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Client workflow systems</text>
-  <rect x="156" y="208" width="318" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="156" y="258" width="1288" height="116" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="196" y="296" width="162" height="40" rx="20" fill="#d8f3f1" />
-  <rect x="402" y="296" width="162" height="40" rx="20" fill="#dfe9fb" />
-  <rect x="608" y="296" width="162" height="40" rx="20" fill="#fff0db" />
-  <rect x="814" y="296" width="162" height="40" rx="20" fill="#dff7e8" />
-  <rect x="1020" y="296" width="162" height="40" rx="20" fill="#ffe8d7" />
-  <rect x="1226" y="296" width="178" height="40" rx="20" fill="#102633" />
-  <text x="247" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f766e">Intake</text>
-  <text x="450" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">Handoff</text>
-  <text x="651" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Onboard</text>
-  <text x="867" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#18794e">Deliver</text>
-  <text x="1079" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#a14d1e">Invoice</text>
-  <text x="1278" y="322" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">Offboard</text>
-  <path d="M358 316h44m162 0h44m162 0h44m162 0h44m162 0h44" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <rect x="156" y="418" width="598" height="314" rx="34" fill="url(#hub-panel)" />
-  <text x="204" y="476" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#ffffff">Stage map</text>
-  <rect x="204" y="494" width="170" height="18" rx="9" fill="#d6faf5" opacity=".18" />
-  <rect x="204" y="550" width="156" height="118" rx="24" fill="#d6faf5" opacity=".14" />
-  <rect x="378" y="550" width="156" height="118" rx="24" fill="#d6faf5" opacity=".14" />
-  <rect x="552" y="550" width="156" height="118" rx="24" fill="#fff0db" opacity=".96" />
-  <text x="236" y="600" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">Entry</text>
-  <text x="412" y="600" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">Execution</text>
-  <text x="588" y="600" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Billing</text>
-  <rect x="236" y="622" width="86" height="12" rx="6" fill="#d6faf5" opacity=".82" />
-  <rect x="236" y="646" width="112" height="12" rx="6" fill="#d6faf5" opacity=".42" />
-  <rect x="412" y="622" width="106" height="12" rx="6" fill="#d6faf5" opacity=".82" />
-  <rect x="412" y="646" width="124" height="12" rx="6" fill="#d6faf5" opacity=".42" />
-  <rect x="588" y="622" width="92" height="12" rx="6" fill="#b8823f" opacity=".42" />
-  <rect x="588" y="646" width="112" height="12" rx="6" fill="#b8823f" opacity=".28" />
-  <rect x="796" y="418" width="648" height="314" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <text x="844" y="476" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Supporting pages</text>
-  <rect x="844" y="494" width="196" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="844" y="550" width="172" height="108" rx="24" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1034" y="550" width="172" height="108" rx="24" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1224" y="550" width="172" height="108" rx="24" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <text x="885" y="596" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Status</text>
-  <text x="1070" y="596" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Change request</text>
-  <text x="1273" y="596" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Invoice setup</text>
-  <rect x="882" y="620" width="92" height="12" rx="6" fill="#c9d9e4" />
-  <rect x="1070" y="620" width="108" height="12" rx="6" fill="#c9d9e4" />
-  <rect x="1262" y="620" width="96" height="12" rx="6" fill="#c9d9e4" />
-  <path d="M1016 604h18m172 0h18" stroke="#0f8b8d" stroke-width="6" stroke-linecap="round" />
+  <circle cx="1304" cy="172" r="150" fill="#dbf4f2" />
+  <circle cx="240" cy="740" r="146" fill="#e4eef9" />
+
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Workflow systems</text>
+  <rect x="170" y="200" width="270" height="18" rx="9" fill="#173042" opacity=".12" />
+
+  <rect x="170" y="248" width="1260" height="122" rx="36" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <path d="M298 309h144m92 0h144m92 0h144m92 0h144" stroke="#0f8b8d" stroke-width="12" stroke-linecap="round" />
+  <circle cx="246" cy="309" r="32" fill="#d8f3f1" />
+  <circle cx="482" cy="309" r="32" fill="#dfe9fb" />
+  <circle cx="718" cy="309" r="32" fill="#fff0db" />
+  <circle cx="954" cy="309" r="32" fill="#dff7e8" />
+  <circle cx="1190" cy="309" r="32" fill="#102633" />
+  <path d="M426 309l-16-16m16 16l-16 16M662 309l-16-16m16 16l-16 16M898 309l-16-16m16 16l-16 16M1134 309l-16-16m16 16l-16 16" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" />
+
+  <rect x="170" y="410" width="656" height="324" rx="38" fill="url(#hub-panel)" />
+  <rect x="236" y="470" width="154" height="74" rx="28" fill="#d8f3f1" />
+  <rect x="420" y="470" width="154" height="74" rx="28" fill="#dfe9fb" />
+  <rect x="604" y="470" width="154" height="74" rx="28" fill="#fff0db" />
+  <rect x="236" y="572" width="154" height="94" rx="30" fill="#ffffff" opacity=".12" />
+  <rect x="420" y="572" width="154" height="94" rx="30" fill="#ffffff" opacity=".12" />
+  <rect x="604" y="572" width="154" height="94" rx="30" fill="#ffffff" opacity=".12" />
+  <rect x="272" y="603" width="82" height="14" rx="7" fill="#d6faf5" opacity=".84" />
+  <rect x="272" y="630" width="112" height="14" rx="7" fill="#d6faf5" opacity=".44" />
+  <rect x="456" y="603" width="82" height="14" rx="7" fill="#d6faf5" opacity=".84" />
+  <rect x="456" y="630" width="112" height="14" rx="7" fill="#d6faf5" opacity=".44" />
+  <rect x="640" y="603" width="82" height="14" rx="7" fill="#d6faf5" opacity=".84" />
+  <rect x="640" y="630" width="112" height="14" rx="7" fill="#d6faf5" opacity=".44" />
+
+  <rect x="878" y="410" width="552" height="324" rx="38" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <circle cx="1154" cy="572" r="56" fill="#d8f3f1" />
+  <circle cx="1052" cy="492" r="42" fill="#dfe9fb" />
+  <circle cx="1262" cy="494" r="42" fill="#fff0db" />
+  <circle cx="1018" cy="650" r="42" fill="#ffe8d7" />
+  <circle cx="1288" cy="650" r="42" fill="#dff7e8" />
+  <path d="M1086 516l34 28M1220 520l-32 24M1054 620l44-22M1252 620l-42-22" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
+  <rect x="1070" y="558" width="168" height="28" rx="14" fill="#102633" opacity=".14" />
+  <rect x="1078" y="690" width="150" height="14" rx="7" fill="#c9d9e4" />
 </svg>

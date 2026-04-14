@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Workflow comparisons hub illustration</title>
-  <desc id="desc">An editorial illustration showing balanced option panels and decision criteria for workflow comparison pages.</desc>
+  <desc id="desc">An editorial illustration using balanced option panels and simple decision markers for comparison pages.</desc>
   <defs>
     <linearGradient id="compare-hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#fbf7f0" />
@@ -14,33 +14,42 @@
   <rect width="1600" height="900" fill="url(#compare-hub-bg)" />
   <circle cx="1290" cy="180" r="152" fill="#f6ead6" />
   <circle cx="258" cy="724" r="144" fill="#e2eef9" />
-  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Workflow comparisons</text>
-  <rect x="156" y="208" width="294" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="156" y="258" width="594" height="474" rx="36" fill="url(#compare-hub-panel)" />
-  <rect x="850" y="258" width="594" height="474" rx="36" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <text x="204" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#eef6ff">Option A</text>
-  <text x="898" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Option B</text>
-  <rect x="204" y="378" width="206" height="44" rx="22" fill="#d8f3f1" />
-  <rect x="204" y="446" width="260" height="16" rx="8" fill="#eef6ff" opacity=".72" />
-  <rect x="204" y="478" width="228" height="16" rx="8" fill="#eef6ff" opacity=".42" />
-  <rect x="204" y="534" width="222" height="112" rx="26" fill="#fff0db" opacity=".96" />
-  <text x="264" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f766e">Structure</text>
-  <text x="240" y="586" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">
-    <tspan x="240" dy="0">Tighter rules</tspan>
-    <tspan x="240" dy="22">and cleaner routing</tspan>
-  </text>
-  <rect x="898" y="378" width="206" height="44" rx="22" fill="#dfe9fb" />
-  <rect x="898" y="446" width="260" height="16" rx="8" fill="#d8e5ec" />
-  <rect x="898" y="478" width="228" height="16" rx="8" fill="#d8e5ec" />
-  <rect x="1168" y="378" width="176" height="44" rx="22" fill="#fff0db" />
-  <rect x="1168" y="446" width="176" height="44" rx="22" fill="#fee2e2" />
-  <text x="955" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">Flexibility</text>
-  <text x="1231" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Fit</text>
-  <text x="1226" y="474" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#b91c1c">Risk</text>
-  <rect x="898" y="534" width="446" height="112" rx="26" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <text x="936" y="586" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">
-    <tspan x="936" dy="0">Decision pages stay bounded</tspan>
-    <tspan x="936" dy="22">and route to the next action</tspan>
-  </text>
+
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Workflow comparisons</text>
+  <rect x="170" y="200" width="300" height="18" rx="9" fill="#173042" opacity=".12" />
+
+  <rect x="170" y="248" width="594" height="476" rx="38" fill="url(#compare-hub-panel)" />
+  <rect x="836" y="248" width="594" height="476" rx="38" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+
+  <rect x="222" y="288" width="136" height="52" rx="26" fill="#d8f3f1" />
+  <text x="262" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f766e">A</text>
+  <rect x="884" y="288" width="136" height="52" rx="26" fill="#dfe9fb" />
+  <text x="926" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">B</text>
+
+  <rect x="222" y="390" width="224" height="176" rx="32" fill="#ffffff" opacity=".12" />
+  <rect x="478" y="390" width="224" height="176" rx="32" fill="#fff1db" />
+  <rect x="266" y="432" width="126" height="16" rx="8" fill="#d6faf5" opacity=".86" />
+  <rect x="266" y="462" width="154" height="16" rx="8" fill="#d6faf5" opacity=".52" />
+  <rect x="266" y="514" width="134" height="16" rx="8" fill="#d6faf5" opacity=".28" />
+  <rect x="526" y="448" width="122" height="18" rx="9" fill="#b8823f" opacity=".48" />
+  <rect x="526" y="486" width="102" height="18" rx="9" fill="#b8823f" opacity=".28" />
+
+  <rect x="222" y="610" width="480" height="52" rx="26" fill="#ffffff" opacity=".16" />
+  <rect x="300" y="627" width="124" height="18" rx="9" fill="#d6faf5" opacity=".7" />
+  <rect x="452" y="627" width="148" height="18" rx="9" fill="#d6faf5" opacity=".36" />
+
+  <rect x="886" y="390" width="212" height="80" rx="28" fill="#dfe9fb" />
+  <rect x="886" y="492" width="212" height="80" rx="28" fill="#fff0db" />
+  <rect x="1130" y="390" width="212" height="80" rx="28" fill="#dff7e8" />
+  <rect x="1130" y="492" width="212" height="80" rx="28" fill="#fee2e2" />
+  <rect x="952" y="422" width="80" height="16" rx="8" fill="#36589a" opacity=".68" />
+  <rect x="956" y="524" width="72" height="16" rx="8" fill="#8a5d27" opacity=".56" />
+  <rect x="1196" y="422" width="80" height="16" rx="8" fill="#18794e" opacity=".6" />
+  <rect x="1200" y="524" width="72" height="16" rx="8" fill="#b91c1c" opacity=".56" />
+
+  <rect x="964" y="610" width="300" height="52" rx="26" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
+  <rect x="1030" y="627" width="84" height="18" rx="9" fill="#c9d9e4" />
+  <rect x="1138" y="627" width="84" height="18" rx="9" fill="#c9d9e4" />
 </svg>

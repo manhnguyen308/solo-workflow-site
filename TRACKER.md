@@ -305,3 +305,33 @@ After each future pass, add a short section with:
   - checked the homepage, blueprint hub, and comparison hub outputs for the expected image references and confirmed no homepage sections were missing in the build output
 - Commit message used: `Refine remaining feature image artwork`
 - Push result: `git push origin main` succeeded
+
+## Feature image simplification for card readability - 2026-04-14
+
+- What was still wrong with the previous images:
+  - the priority homepage/card images were still leaning on miniature UI text, dense labels, and tiny dashboard-style details that only worked when the art was viewed large
+  - the workflow anchor, workflow hub, lean blueprint, and CRM-vs-PM comparison were visually related but still too busy at thumbnail size, so the homepage card grid did not feel as calm or premium as it should
+  - follow-up spot checks showed the blueprint hub and comparison hub were still using the older text-heavier treatment, which made the hub sidebars feel inconsistent with the cleaner priority cards
+- What changed:
+  - rebuilt the four priority SVGs around a simpler system: larger shapes, wider safe margins, fewer internal elements, centered compositions, and almost no in-image copy beyond one short heading or comparison label where it materially helps
+  - shifted the visual language away from mini dashboards and toward abstract workflow paths, stack layers, and decision panels that still communicate the page topic without requiring tiny text to be read
+  - simplified the blueprint hub and workflow-comparisons hub artwork after spot-checking them in context so the hub surfaces do not fall back to the older dense style
+- Which files/assets changed:
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - `static/images/features/hubs/software-stack-blueprints.svg`
+  - `static/images/features/hubs/workflow-comparisons.svg`
+  - regenerated matching copies under `public/images/features/...`
+- Source-generation files/scripts changed:
+  - none
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the simplification pass
+  - visually inspected the priority images in a local card-size thumbnail grid to confirm the compositions now read through shape and flow instead of tiny labels
+  - inspected the generated homepage at desktop width and narrower/mobile width through a local static server and confirmed the simplified cards stay balanced, readable, and uncropped in live page context
+  - inspected the generated workflow hub, blueprint hub, and comparison hub and confirmed the refreshed hub artwork now aligns better with the simplified card system
+  - confirmed `public/index.html`, `public/client-workflow-systems/index.html`, `public/software-stack-blueprints/index.html`, and `public/workflow-comparisons/index.html` still reference the expected stable feature-image filenames with no broken image references
+  - confirmed no homepage sections disappeared during the build verification pass
+- Commit message used: `Simplify feature images for card readability`
+- Push result: pending
