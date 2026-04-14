@@ -1,69 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">CRM versus project management illustration</title>
-  <desc id="desc">An editorial comparison illustration using two balanced system panels for CRM-first and project-management-first operating models.</desc>
-  <defs>
-    <linearGradient id="compare-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbf7f0" />
-      <stop offset="100%" stop-color="#f1f6fb" />
-    </linearGradient>
-    <linearGradient id="crm-panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17355f" />
-      <stop offset="100%" stop-color="#214b7d" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#compare-bg)" />
-  <circle cx="1282" cy="170" r="150" fill="#f5ead8" />
-  <circle cx="258" cy="736" r="144" fill="#e4eef9" />
-
-  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-
+  <title id="title">CRM vs PM</title>
+  <desc id="desc">A SoloOpsGuide comparisons feature image with readable labels and aligned workflow blocks for crm vs pm.</desc>
+  <defs><linearGradient id="comparisons-crm-vs-project-management-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf7f0" /><stop offset="100%" stop-color="#f0f5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#comparisons-crm-vs-project-management-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
   <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">CRM vs PM</text>
-  <rect x="170" y="200" width="176" height="18" rx="9" fill="#173042" opacity=".12" />
-
-  <rect x="170" y="248" width="594" height="476" rx="38" fill="url(#crm-panel)" />
-  <rect x="836" y="248" width="594" height="476" rx="38" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-
-  <rect x="220" y="288" width="168" height="52" rx="26" fill="#d8f3f1" />
-  <text x="244" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f766e">CRM-first</text>
-  <rect x="884" y="288" width="158" height="52" rx="26" fill="#dfe9fb" />
-  <text x="910" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">PM-first</text>
-
-  <rect x="220" y="392" width="178" height="190" rx="32" fill="#ffffff" opacity=".12" />
-  <rect x="428" y="392" width="178" height="190" rx="32" fill="#ffffff" opacity=".12" />
-  <rect x="636" y="392" width="74" height="190" rx="32" fill="#fff1db" />
-  <text x="244" y="420" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#d6faf5">Pipeline</text>
-  <text x="452" y="420" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#d6faf5">Nurture</text>
-  <text x="632" y="420" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#8a5d27">Billing</text>
-  <rect x="258" y="434" width="102" height="16" rx="8" fill="#d6faf5" opacity=".86" />
-  <rect x="258" y="464" width="122" height="16" rx="8" fill="#d6faf5" opacity=".52" />
-  <rect x="258" y="516" width="96" height="16" rx="8" fill="#d6faf5" opacity=".28" />
-  <rect x="466" y="434" width="94" height="16" rx="8" fill="#d6faf5" opacity=".86" />
-  <rect x="466" y="464" width="126" height="16" rx="8" fill="#d6faf5" opacity=".52" />
-  <rect x="466" y="516" width="114" height="16" rx="8" fill="#d6faf5" opacity=".28" />
-  <circle cx="673" cy="446" r="16" fill="#102633" opacity=".18" />
-  <circle cx="673" cy="510" r="16" fill="#102633" opacity=".18" />
-  <circle cx="673" cy="574" r="16" fill="#102633" opacity=".18" />
-
-  <rect x="220" y="626" width="490" height="54" rx="27" fill="#fff1db" />
-  <text x="242" y="618" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text>
-  <rect x="294" y="644" width="150" height="18" rx="9" fill="#b8823f" opacity=".56" />
-  <rect x="470" y="644" width="112" height="18" rx="9" fill="#b8823f" opacity=".34" />
-
-  <rect x="886" y="392" width="224" height="86" rx="30" fill="#dfe9fb" />
-  <rect x="886" y="500" width="224" height="86" rx="30" fill="#dff7e8" />
-  <rect x="1140" y="392" width="224" height="86" rx="30" fill="#fff0db" />
-  <rect x="1140" y="500" width="224" height="86" rx="30" fill="#fee2e2" />
-  <text x="934" y="420" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">Milestones</text>
-  <text x="930" y="528" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#18794e">Delivery</text>
-  <text x="1200" y="420" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Owners</text>
-  <text x="1218" y="528" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#b91c1c">Risk</text>
-  <rect x="954" y="426" width="88" height="16" rx="8" fill="#36589a" opacity=".78" />
-  <rect x="952" y="534" width="92" height="16" rx="8" fill="#18794e" opacity=".68" />
-  <rect x="1210" y="426" width="84" height="16" rx="8" fill="#8a5d27" opacity=".58" />
-  <rect x="1210" y="534" width="84" height="16" rx="8" fill="#b91c1c" opacity=".58" />
-
-  <rect x="948" y="626" width="356" height="54" rx="27" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <text x="984" y="618" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Delivery truth stays central</text>
-  <rect x="1010" y="644" width="110" height="18" rx="9" fill="#c9d9e4" />
-  <rect x="1142" y="644" width="104" height="18" rx="9" fill="#c9d9e4" />
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="#17355f" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="#d8f3f1" /><rect x="908" y="334" width="180" height="52" rx="26" fill="#dfe9fb" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0f8b8d">CRM-first</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">PM-first</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="#fff1db" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="#dff7e8" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Lead truth</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Delivery truth</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="#fff1db" /><rect x="974" y="590" width="308" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
 </svg>

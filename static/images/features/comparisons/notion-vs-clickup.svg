@@ -1,12 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Notion versus ClickUp illustration</title>
-  <desc id="desc">An editorial comparison illustration contrasting a flexible document workspace with a structured task-driven delivery system.</desc>
-  <rect width="1600" height="900" fill="#f5f9fd"/><circle cx="1286" cy="210" r="150" fill="#dfe8fb"/>
-  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Notion vs ClickUp</text><rect x="188" y="226" width="234" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="188" y="302" width="518" height="360" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="768" y="302" width="518" height="360" rx="34" fill="#17355f"/>
-  <text x="232" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Notion</text><text x="812" y="354" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">ClickUp</text>
-  <rect x="232" y="400" width="250" height="16" rx="8" fill="#d8e5ec"/><rect x="232" y="438" width="220" height="16" rx="8" fill="#d8e5ec"/><rect x="232" y="488" width="170" height="38" rx="19" fill="#d8f3f1"/><text x="281" y="513" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">docs + plans</text>
-  <rect x="812" y="398" width="180" height="42" rx="20" fill="#d6faf5" opacity=".18"/><rect x="1012" y="398" width="180" height="42" rx="20" fill="#fff0db" opacity=".95"/><rect x="812" y="458" width="380" height="18" rx="9" fill="#d6faf5" opacity=".2"/><rect x="812" y="494" width="332" height="18" rx="9" fill="#d6faf5" opacity=".2"/>
-  <text x="857" y="425" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">status</text><text x="1063" y="425" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">tasks</text>
+  <title id="title">Notion vs ClickUp</title>
+  <desc id="desc">A SoloOpsGuide comparisons feature image with readable labels and aligned workflow blocks for notion vs clickup.</desc>
+  <defs><linearGradient id="comparisons-notion-vs-clickup-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf7f0" /><stop offset="100%" stop-color="#f0f5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#comparisons-notion-vs-clickup-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Notion vs ClickUp</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="#17355f" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="#d8f3f1" /><rect x="908" y="334" width="180" height="52" rx="26" fill="#dfe9fb" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0f8b8d">Docs</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">Tasks</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="#fff1db" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="#dff7e8" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Views</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Scale</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="#fff1db" /><rect x="974" y="590" width="308" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
 </svg>

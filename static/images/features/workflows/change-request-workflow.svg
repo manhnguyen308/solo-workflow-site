@@ -1,42 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Change request workflow illustration</title>
-  <desc id="desc">An editorial illustration showing a change request as a branching decision tree with impact and outcome paths.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#f3f9fb" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1280" cy="180" r="150" fill="#e9f4fb" />
-  <rect x="120" y="124" width="1360" height="652" rx="42" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-
-  <text x="188" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Change decision tree</text>
-  <rect x="188" y="238" width="250" height="22" rx="11" fill="#173042" opacity=".12" />
-
-  <rect x="620" y="204" width="360" height="118" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="668" y="248" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">requested change</text>
-  <rect x="668" y="272" width="174" height="14" rx="7" fill="#173042" opacity=".12" />
-
-  <path d="M800 322v90" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M800 398l-14-14m14 14l-14 14" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-
-  <polygon points="800,410 950,520 800,630 650,520" fill="#102430" />
-  <text x="742" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="17" font-weight="700" fill="#d6faf5">scope?</text>
-  <text x="728" y="546" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">fee?</text>
-
-  <path d="M650 520H360M950 520h290M800 630v72M800 410v-12" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-
-  <rect x="180" y="470" width="180" height="100" rx="26" fill="#ecfdf3" />
-  <rect x="1240" y="470" width="180" height="100" rx="26" fill="#fff0db" />
-  <rect x="710" y="720" width="180" height="100" rx="26" fill="#dfe9fb" />
-  <rect x="710" y="90" width="180" height="86" rx="26" fill="#fee2e2" opacity="0" />
-  <text x="231" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#15803d">included</text>
-  <text x="1284" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">repriced</text>
-  <text x="763" y="768" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#36589a">deferred</text>
-
-  <rect x="700" y="660" width="200" height="34" rx="17" fill="#fee2e2" />
-  <text x="752" y="682" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#b91c1c">decline if needed</text>
-  <rect x="710" y="780" width="180" height="18" rx="9" fill="#36589a" opacity=".18" />
-  <text x="744" y="538" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#d6faf5">approval owner</text>
+  <title id="title">Change Request Workflow</title>
+  <desc id="desc">A SoloOpsGuide workflows feature image with readable labels and aligned workflow blocks for change request workflow.</desc>
+  <defs><linearGradient id="workflows-change-request-workflow-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f4faf9" /><stop offset="100%" stop-color="#edf4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#workflows-change-request-workflow-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d7f2ef" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e4ea" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#102633">Change Request Workflow</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#102633" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e4ea" stroke-width="3" />
+  <rect x="228" y="426" width="220" height="112" rx="32" fill="#d7f2ef" /><rect x="510" y="426" width="220" height="112" rx="32" fill="#dfe9fb" /><rect x="792" y="426" width="220" height="112" rx="32" fill="#fff1db" /><rect x="1074" y="426" width="220" height="112" rx="32" fill="#dff7e8" />
+  <path d="M448 482h62m220 0h62m220 0h62" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
+  <circle cx="338" cy="384" r="18" fill="#17355f" /><circle cx="620" cy="384" r="18" fill="#17355f" opacity=".75" /><circle cx="902" cy="384" r="18" fill="#17355f" opacity=".55" /><circle cx="1184" cy="384" r="18" fill="#17355f" opacity=".35" />
+  <text x="282" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f8b8d">Request</text><text x="566" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Scope</text><text x="846" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Price</text><text x="1128" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18794e">Decision</text>
 </svg>

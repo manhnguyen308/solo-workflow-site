@@ -1,50 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Software stack blueprints hub illustration</title>
-  <desc id="desc">An editorial illustration using simple stack layers, decision nodes, and deferred add-on markers across blueprint pages.</desc>
-  <defs>
-    <linearGradient id="stack-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6fafc" />
-      <stop offset="100%" stop-color="#eef4fb" />
-    </linearGradient>
-    <linearGradient id="stack-panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17355f" />
-      <stop offset="100%" stop-color="#224f86" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#stack-bg)" />
-  <circle cx="1282" cy="186" r="150" fill="#e3eefb" />
-  <circle cx="250" cy="724" r="144" fill="#e7f4f2" />
-
-  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-
-  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Stack blueprints</text>
-  <rect x="170" y="200" width="250" height="18" rx="9" fill="#173042" opacity=".12" />
-
-  <rect x="170" y="248" width="1260" height="122" rx="36" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="228" y="277" width="164" height="62" rx="31" fill="#d8f3f1" />
-  <rect x="420" y="277" width="164" height="62" rx="31" fill="#dfe9fb" />
-  <rect x="612" y="277" width="164" height="62" rx="31" fill="#fff0db" />
-  <rect x="804" y="277" width="164" height="62" rx="31" fill="#dff7e8" />
-  <rect x="1028" y="269" width="310" height="78" rx="39" fill="#fee8e8" />
-  <path d="M392 308h28m164 0h28m164 0h28m164 0h28" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
-
-  <rect x="170" y="410" width="676" height="324" rx="38" fill="url(#stack-panel)" />
-  <rect x="244" y="472" width="528" height="62" rx="30" fill="#ffffff" opacity=".12" />
-  <rect x="244" y="562" width="214" height="92" rx="30" fill="#d8f3f1" />
-  <rect x="488" y="562" width="214" height="92" rx="30" fill="#dfe9fb" />
-  <rect x="304" y="496" width="146" height="16" rx="8" fill="#eef6ff" opacity=".86" />
-  <rect x="482" y="496" width="118" height="16" rx="8" fill="#eef6ff" opacity=".48" />
-  <rect x="286" y="600" width="130" height="18" rx="9" fill="#0f766e" opacity=".82" />
-  <rect x="530" y="600" width="130" height="18" rx="9" fill="#36589a" opacity=".82" />
-
-  <rect x="890" y="410" width="540" height="324" rx="38" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="956" y="482" width="138" height="86" rx="30" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1122" y="482" width="138" height="86" rx="30" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1038" y="608" width="138" height="72" rx="28" fill="#fff1db" />
-  <path d="M1094 526h28M1190 526h28" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M1108 542l14-16m-14 16l14 16M1204 542l14-16m-14 16l14 16" stroke="#0f8b8d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="982" y="514" width="88" height="14" rx="7" fill="#c9d9e4" />
-  <rect x="1148" y="514" width="88" height="14" rx="7" fill="#c9d9e4" />
-  <rect x="968" y="638" width="88" height="18" rx="9" fill="#fee2e2" />
-  <rect x="1158" y="638" width="88" height="18" rx="9" fill="#dff7e8" />
+  <title id="title">Stack blueprints</title>
+  <desc id="desc">A SoloOpsGuide hubs feature image with readable labels and aligned workflow blocks for stack blueprints.</desc>
+  <defs><linearGradient id="hubs-software-stack-blueprints-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fbfc" /><stop offset="100%" stop-color="#eef5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#hubs-software-stack-blueprints-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Stack blueprints</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="604" y="344" width="392" height="176" rx="36" fill="#183b63" />
+  <text x="800" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef6ff">Stack blueprints</text>
+  <rect x="316" y="308" width="212" height="86" rx="30" fill="#d8f3f1" /><rect x="1072" y="308" width="212" height="86" rx="30" fill="#dfe9fb" /><rect x="316" y="584" width="212" height="86" rx="30" fill="#fff0db" /><rect x="1072" y="584" width="212" height="86" rx="30" fill="#dff7e8" />
+  <path d="M528 351h76m468 0h76M528 627h76m468 0h76" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <text x="356" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Lean</text><text x="1118" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Collaborative</text><text x="360" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Migration</text><text x="1110" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Upgrade path</text>
 </svg>

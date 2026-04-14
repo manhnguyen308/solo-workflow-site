@@ -1,55 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Milestone delivery workflow illustration</title>
-  <desc id="desc">An editorial illustration showing milestone delivery as a board with execution lanes, QA review, and approval loop.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6fafc" />
-      <stop offset="100%" stop-color="#eef7f7" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1290" cy="180" r="150" fill="#e6f7f4" />
-  <rect x="100" y="120" width="1400" height="660" rx="42" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-
-  <text x="170" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Milestone board</text>
-  <rect x="170" y="238" width="230" height="22" rx="11" fill="#173042" opacity=".12" />
-
-  <rect x="170" y="300" width="260" height="380" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="470" y="300" width="260" height="380" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="770" y="300" width="260" height="380" rx="30" fill="#102430" />
-  <rect x="1070" y="300" width="260" height="380" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="1370" y="300" width="80" height="380" rx="30" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-
-  <text x="212" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">active</text>
-  <text x="510" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">at risk</text>
-  <text x="812" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#d6faf5">QA</text>
-  <text x="1110" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">client review</text>
-  <text x="1391" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c" transform="rotate(90 1391 346)">done</text>
-
-  <rect x="204" y="386" width="192" height="110" rx="22" fill="#d8f3f1" />
-  <rect x="204" y="520" width="192" height="110" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="234" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f766e">deliverable</text>
-  <text x="234" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">dependency</text>
-
-  <rect x="504" y="412" width="192" height="128" rx="22" fill="#fff0db" />
-  <text x="536" y="452" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8a5d27">waiting on client</text>
-  <rect x="536" y="472" width="120" height="14" rx="7" fill="#8a5d27" opacity=".18" />
-
-  <rect x="804" y="386" width="192" height="110" rx="22" fill="#d6faf5" opacity=".14" />
-  <rect x="804" y="520" width="192" height="110" rx="22" fill="#d6faf5" opacity=".14" />
-  <text x="836" y="424" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">scope check</text>
-  <text x="836" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">approval ask</text>
-
-  <rect x="1104" y="430" width="192" height="110" rx="22" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1136" y="468" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#334b5c">review needed</text>
-  <rect x="1136" y="492" width="92" height="22" rx="11" fill="#dfe9fb" />
-  <text x="1161" y="507" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="700" fill="#36589a">decision</text>
-
-  <rect x="1388" y="430" width="44" height="110" rx="18" fill="#ecfdf3" />
-  <rect x="1388" y="560" width="44" height="88" rx="18" fill="#ecfdf3" />
-
-  <path d="M430 442h40M730 476h40M1030 476h40M1330 486h58" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M457 442l-14-14m14 14l-14 14M757 476l-14-14m14 14l-14 14M1057 476l-14-14m14 14l-14 14M1360 486l-14-14m14 14l-14 14" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M1260 560c40 36 58 70 58 108" fill="none" stroke="#b8823f" stroke-width="8" stroke-linecap="round" />
-  <path d="M1320 660l-18 6m18-6l8-18" fill="none" stroke="#b8823f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <title id="title">Milestone Delivery Workflow</title>
+  <desc id="desc">A SoloOpsGuide workflows feature image with readable labels and aligned workflow blocks for milestone delivery workflow.</desc>
+  <defs><linearGradient id="workflows-milestone-delivery-workflow-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f4faf9" /><stop offset="100%" stop-color="#edf4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#workflows-milestone-delivery-workflow-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d7f2ef" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e4ea" stroke-width="4" />
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#102633">Milestone Delivery</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#102633">Workflow</text>
+  <rect x="170" y="228" width="290" height="16" rx="8" fill="#102633" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e4ea" stroke-width="3" />
+  <rect x="228" y="426" width="220" height="112" rx="32" fill="#d7f2ef" /><rect x="510" y="426" width="220" height="112" rx="32" fill="#dfe9fb" /><rect x="792" y="426" width="220" height="112" rx="32" fill="#fff1db" /><rect x="1074" y="426" width="220" height="112" rx="32" fill="#dff7e8" />
+  <path d="M448 482h62m220 0h62m220 0h62" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
+  <circle cx="338" cy="384" r="18" fill="#17355f" /><circle cx="620" cy="384" r="18" fill="#17355f" opacity=".75" /><circle cx="902" cy="384" r="18" fill="#17355f" opacity=".55" /><circle cx="1184" cy="384" r="18" fill="#17355f" opacity=".35" />
+  <text x="282" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f8b8d">Draft</text><text x="566" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Review</text><text x="846" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Approve</text><text x="1128" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18794e">Deliver</text>
 </svg>

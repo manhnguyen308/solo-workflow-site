@@ -1,29 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Approval owner illustration</title>
-  <desc id="desc">An editorial glossary illustration showing one named approval owner receiving final decision responsibility.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#eef7fb" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1280" cy="180" r="150" fill="#e8f5f3" />
-  <rect x="180" y="160" width="1240" height="580" rx="40" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <rect x="260" y="236" width="190" height="34" rx="17" fill="#d8f3f1" />
-  <text x="295" y="258" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">glossary</text>
-  <text x="260" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="28" font-weight="700" fill="#122838">Approval owner</text>
-  <rect x="260" y="354" width="220" height="20" rx="10" fill="#173042" opacity=".12" />
-  <circle cx="430" cy="520" r="86" fill="#dfe9fb" />
-  <circle cx="800" cy="520" r="98" fill="#d8f3f1" />
-  <circle cx="1170" cy="520" r="86" fill="#fff0db" />
-  <text x="398" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">team</text>
-  <text x="738" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f766e">owner</text>
-  <text x="1128" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">client</text>
-  <path d="M516 520h168" stroke="#7ea4df" stroke-width="8" stroke-linecap="round" />
-  <path d="M916 520h168" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-  <path d="M670 520l-16-16m16 16l-16 16" stroke="#7ea4df" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <path d="M930 520l16-16m-16 16l16 16" stroke="#c9934a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="720" y="612" width="160" height="34" rx="17" fill="#ecfdf3" />
-  <text x="753" y="634" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#15803d">final decision</text>
+  <title id="title">Approval Owner</title>
+  <desc id="desc">A SoloOpsGuide glossary feature image with readable labels and aligned workflow blocks for approval owner.</desc>
+  <defs><linearGradient id="glossary-approval-owner-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fafc" /><stop offset="100%" stop-color="#edf4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#glossary-approval-owner-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#dceefa" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Approval Owner</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <circle cx="410" cy="492" r="144" fill="#17355f" />
+  <text x="410" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Decision</text><text x="410" y="526" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#d9eef7">Key term</text>
+  <rect x="696" y="340" width="520" height="84" rx="30" fill="#dceefa" /><rect x="696" y="458" width="520" height="84" rx="30" fill="#dfe9fb" /><rect x="696" y="576" width="520" height="84" rx="30" fill="#fff1db" />
+  <path d="M554 492h114" stroke="#216f8a" stroke-width="10" stroke-linecap="round" />
+  <text x="742" y="392" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#216f8a">Owner</text><text x="742" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Review</text><text x="742" y="628" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Release</text>
 </svg>

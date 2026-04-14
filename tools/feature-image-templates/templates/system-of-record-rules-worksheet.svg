@@ -1,71 +1,19 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="173" y1="79" x2="1410" y2="822" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F5970"/>
-      <stop offset="1" stop-color="#1B3B6A"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="286" y1="126" x2="1287" y2="750" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7F8FA"/>
-      <stop offset="1" stop-color="#EFF3F8"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
-  <path d="M0 110C141 36 296 54 396 126C470 179 555 206 666 184C811 156 919 70 1105 89C1302 110 1450 179 1600 167V900H0V110Z" fill="#8CC8C3" fill-opacity="0.14"/>
-  <ellipse cx="1340" cy="282" rx="200" ry="129" fill="#C5D7F6" fill-opacity="0.15"/>
-
-  <rect x="260" y="116" width="1080" height="648" rx="30" fill="url(#panel)"/>
-
-  <rect x="308" y="160" width="984" height="118" rx="24" fill="#FFFFFF"/>
-  <circle cx="350" cy="198" r="8" fill="#F29D38"/>
-  <circle cx="376" cy="198" r="8" fill="#F4C36B"/>
-  <circle cx="402" cy="198" r="8" fill="#D9E0E8"/>
-  <text x="308" y="242" fill="#123B53" font-family="Georgia, 'Times New Roman', serif" font-size="40">System-of-Record Rules</text>
-  <text x="308" y="274" fill="#617A8D" font-family="Arial, Helvetica, sans-serif" font-size="22">ownership, mirrored fields, and handoff notes</text>
-
-  <rect x="308" y="310" width="612" height="404" rx="24" fill="#FFFFFF"/>
-  <text x="340" y="352" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Authoritative ownership</text>
-
-  <rect x="340" y="384" width="548" height="74" rx="16" fill="#EEF4F9"/>
-  <text x="362" y="417" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="20">Client record</text>
-  <rect x="646" y="398" width="214" height="28" rx="9" fill="#A7BFF0"/>
-  <text x="691" y="417" fill="#173B63" font-family="Arial, Helvetica, sans-serif" font-size="16">PM workspace</text>
-  <text x="362" y="444" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="17">stage, next action, owner, due date</text>
-
-  <rect x="340" y="476" width="548" height="74" rx="16" fill="#EEF4F9"/>
-  <text x="362" y="509" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="20">Proposal status</text>
-  <rect x="686" y="490" width="174" height="28" rx="9" fill="#F2D59A"/>
-  <text x="736" y="509" fill="#714A12" font-family="Arial, Helvetica, sans-serif" font-size="16">CRM</text>
-  <text x="362" y="536" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="17">revision state, approval checkpoint</text>
-
-  <rect x="340" y="568" width="548" height="114" rx="16" fill="#EEF4F9"/>
-  <text x="362" y="601" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="20">Invoice status</text>
-  <rect x="654" y="582" width="206" height="28" rx="9" fill="#9FD6C8"/>
-  <text x="702" y="601" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="16">Billing tool</text>
-  <text x="362" y="628" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="17">mirror paid / overdue only</text>
-  <text x="362" y="652" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="17">payment event detail stays single-source</text>
-
-  <rect x="952" y="310" width="340" height="188" rx="24" fill="#F6F8FB"/>
-  <text x="982" y="352" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Mirrored fields</text>
-  <rect x="982" y="382" width="118" height="28" rx="9" fill="#9FD6C8"/>
-  <text x="1009" y="401" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="16">allowed</text>
-  <rect x="982" y="424" width="220" height="9" rx="4.5" fill="#D6E0EA"/>
-  <rect x="982" y="446" width="180" height="9" rx="4.5" fill="#D6E0EA"/>
-  <rect x="982" y="468" width="206" height="9" rx="4.5" fill="#D6E0EA"/>
-
-  <rect x="952" y="526" width="340" height="188" rx="24" fill="#F6F8FB"/>
-  <text x="982" y="568" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Never duplicate casually</text>
-  <rect x="982" y="598" width="134" height="28" rx="9" fill="#E6B0A7"/>
-  <text x="1012" y="617" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="16">single-source</text>
-  <rect x="982" y="640" width="236" height="9" rx="4.5" fill="#D6E0EA"/>
-  <rect x="982" y="662" width="196" height="9" rx="4.5" fill="#D6E0EA"/>
-  <rect x="982" y="684" width="212" height="9" rx="4.5" fill="#D6E0EA"/>
-
-  <path d="M894 420C918 420 931 420 948 420" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
-  <path d="M934 404L956 420L934 436" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M894 608C918 608 931 608 948 608" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
-  <path d="M934 592L956 608L934 624" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="1140" y="734" width="152" height="34" rx="12" fill="#123B53"/>
-  <text x="1167" y="757" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="18">handoff rule</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">System Of Record Rules Worksheet</title>
+  <desc id="desc">A SoloOpsGuide templates feature image with readable labels and aligned workflow blocks for system of record rules worksheet.</desc>
+  <defs><linearGradient id="templates-system-of-record-rules-worksheet-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7faf7" /><stop offset="100%" stop-color="#eff5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#templates-system-of-record-rules-worksheet-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">System Of Record</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">Rules Worksheet</text>
+  <rect x="170" y="228" width="290" height="16" rx="8" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="250" y="302" width="364" height="384" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="650" y="302" width="700" height="384" rx="36" fill="#183b63" />
+  <rect x="292" y="350" width="280" height="18" rx="9" fill="#c9d9e4" /><rect x="292" y="392" width="250" height="18" rx="9" fill="#c9d9e4" opacity=".78" /><rect x="292" y="434" width="232" height="18" rx="9" fill="#c9d9e4" opacity=".56" /><rect x="292" y="510" width="248" height="74" rx="26" fill="#d8f3f1" />
+  <text x="338" y="556" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Source</text>
+  <rect x="714" y="356" width="246" height="72" rx="28" fill="#d8f3f1" /><rect x="1004" y="356" width="246" height="72" rx="28" fill="#dfe9fb" /><rect x="714" y="468" width="246" height="72" rx="28" fill="#fff0db" /><rect x="1004" y="468" width="246" height="72" rx="28" fill="#ecf8f2" />
+  <text x="772" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Rules</text><text x="1064" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Sync</text><text x="782" y="513" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Exceptions</text>
 </svg>

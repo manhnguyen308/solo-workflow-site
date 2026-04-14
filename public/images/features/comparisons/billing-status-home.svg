@@ -1,54 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Billing status comparison illustration</title>
-  <desc id="desc">An editorial comparison of invoice-tool visibility versus system-of-record billing visibility.</desc>
-  <defs>
-    <linearGradient id="billing-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#eef4fb" />
-    </linearGradient>
-    <linearGradient id="billing-panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f4c64" />
-      <stop offset="100%" stop-color="#113a6b" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#billing-bg)" />
-  <circle cx="1290" cy="176" r="152" fill="#dce9fb" />
-  <circle cx="256" cy="724" r="144" fill="#dff4f2" />
-  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Billing status visibility</text>
-  <rect x="156" y="208" width="286" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="156" y="258" width="594" height="474" rx="36" fill="url(#billing-panel)" />
-  <rect x="850" y="258" width="594" height="474" rx="36" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <text x="204" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#eef6ff">Invoice tool only</text>
-  <text x="898" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">System of record visible</text>
-  <rect x="204" y="378" width="184" height="42" rx="21" fill="#ffd27a" />
-  <text x="247" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#5b4520">Invoice sent</text>
-  <rect x="204" y="446" width="434" height="156" rx="28" fill="#ffffff" opacity=".98" />
-  <text x="242" y="498" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#45627a">Invoice #2047</text>
-  <rect x="242" y="526" width="220" height="12" rx="6" fill="#d6dfea" />
-  <rect x="242" y="552" width="188" height="12" rx="6" fill="#d6dfea" />
-  <rect x="242" y="578" width="116" height="12" rx="6" fill="#d6dfea" />
-  <rect x="204" y="628" width="184" height="42" rx="21" fill="#dce7f5" />
-  <text x="236" y="655" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#45627a">Payment due</text>
-  <text x="422" y="655" font-family="Arial, sans-serif" font-size="18" fill="#dce7f5">Checked only in billing app</text>
-  <rect x="898" y="378" width="176" height="42" rx="21" fill="#ffd27a" />
-  <rect x="1094" y="378" width="214" height="42" rx="21" fill="#c9d9f3" />
-  <text x="942" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#5b4520">Invoice sent</text>
-  <text x="1145" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#35536e">Ops state visible</text>
-  <rect x="898" y="446" width="176" height="184" rx="28" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1100" y="446" width="248" height="184" rx="28" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <text x="940" y="498" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#45627a">Invoice tool</text>
-  <rect x="940" y="526" width="112" height="12" rx="6" fill="#d6dfea" />
-  <rect x="940" y="552" width="94" height="12" rx="6" fill="#d6dfea" />
-  <rect x="940" y="578" width="76" height="12" rx="6" fill="#d6dfea" />
-  <text x="1140" y="498" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#45627a">Main record</text>
-  <rect x="1140" y="526" width="138" height="34" rx="17" fill="#dde7f5" />
-  <rect x="1140" y="574" width="164" height="34" rx="17" fill="#d7f0e2" />
-  <text x="1172" y="548" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#45627a">Due soon</text>
-  <text x="1168" y="596" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2f6b54">Next follow-up</text>
-  <rect x="898" y="648" width="450" height="58" rx="24" fill="#eaf1fb" />
-  <text x="936" y="675" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#4b6480">
-    <tspan x="936" dy="0">Finance keeps the detail while ops</tspan>
-    <tspan x="936" dy="20">keeps the live billing state visible</tspan>
-  </text>
+  <title id="title">Billing status home</title>
+  <desc id="desc">A SoloOpsGuide comparisons feature image with readable labels and aligned workflow blocks for billing status home.</desc>
+  <defs><linearGradient id="comparisons-billing-status-home-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf7f0" /><stop offset="100%" stop-color="#f0f5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#comparisons-billing-status-home-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Billing status home</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="#17355f" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="#d8f3f1" /><rect x="908" y="334" width="180" height="52" rx="26" fill="#dfe9fb" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0f8b8d">Status view</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">Finance</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="#fff1db" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="#dff7e8" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Aging</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Next action</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="#fff1db" /><rect x="974" y="590" width="308" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
 </svg>

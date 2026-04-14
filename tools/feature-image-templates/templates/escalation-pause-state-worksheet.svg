@@ -1,67 +1,19 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="172" y1="77" x2="1408" y2="824" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F5B6F"/>
-      <stop offset="1" stop-color="#1A406D"/>
-    </linearGradient>
-    <linearGradient id="panel" x1="283" y1="128" x2="1290" y2="753" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7F8FA"/>
-      <stop offset="1" stop-color="#EEF3F8"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
-  <path d="M0 122C141 43 296 58 406 129C483 178 559 195 660 179C829 151 948 59 1146 83C1330 105 1460 188 1600 179V900H0V122Z" fill="#8FCBC1" fill-opacity="0.14"/>
-  <ellipse cx="1340" cy="274" rx="194" ry="128" fill="#C8D8F5" fill-opacity="0.15"/>
-
-  <rect x="278" y="118" width="1046" height="648" rx="30" fill="url(#panel)"/>
-  <rect x="318" y="160" width="966" height="94" rx="22" fill="#FFFFFF"/>
-  <circle cx="358" cy="198" r="8" fill="#F29D38"/>
-  <circle cx="384" cy="198" r="8" fill="#F4C36B"/>
-  <circle cx="410" cy="198" r="8" fill="#D8E0E8"/>
-  <text x="318" y="235" fill="#123B53" font-family="Georgia, 'Times New Roman', serif" font-size="38">Escalation and Pause-State</text>
-
-  <rect x="318" y="286" width="308" height="398" rx="24" fill="#FFFFFF"/>
-  <text x="346" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Blocked work</text>
-  <rect x="346" y="354" width="252" height="66" rx="16" fill="#EEF4F9"/>
-  <text x="384" y="393" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">proposal review</text>
-  <rect x="346" y="442" width="252" height="66" rx="16" fill="#EEF4F9"/>
-  <text x="397" y="481" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">delivery</text>
-  <rect x="346" y="530" width="252" height="66" rx="16" fill="#EEF4F9"/>
-  <text x="404" y="569" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="19">closeout</text>
-  <rect x="346" y="620" width="252" height="34" rx="12" fill="#F8FAFD"/>
-  <text x="374" y="643" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="17">threshold crossed</text>
-
-  <rect x="654" y="286" width="324" height="398" rx="24" fill="#F6F8FB"/>
-  <text x="682" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Next state</text>
-  <rect x="682" y="356" width="268" height="52" rx="15" fill="#FFFFFF"/>
-  <text x="772" y="389" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">pause</text>
-  <rect x="682" y="426" width="268" height="52" rx="15" fill="#FFFFFF"/>
-  <text x="761" y="459" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">re-scope</text>
-  <rect x="682" y="496" width="268" height="52" rx="15" fill="#FFFFFF"/>
-  <text x="716" y="529" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">proceed with assumptions</text>
-  <rect x="682" y="566" width="268" height="52" rx="15" fill="#FFFFFF"/>
-  <text x="734" y="599" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">close out</text>
-  <rect x="682" y="636" width="268" height="28" rx="9" fill="#A7BFF0"/>
-  <text x="742" y="655" fill="#173B63" font-family="Arial, Helvetica, sans-serif" font-size="15">owner decides</text>
-
-  <rect x="1006" y="286" width="278" height="398" rx="24" fill="#FFFFFF"/>
-  <text x="1034" y="328" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Restart rules</text>
-  <rect x="1034" y="356" width="222" height="58" rx="15" fill="#E7B3A9"/>
-  <text x="1083" y="392" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="19">blocked</text>
-  <rect x="1034" y="438" width="222" height="58" rx="15" fill="#9FD6C8"/>
-  <text x="1083" y="474" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="19">restart</text>
-  <rect x="1034" y="520" width="222" height="86" rx="16" fill="#F8FAFD"/>
-  <text x="1060" y="559" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">dependency resolved</text>
-  <text x="1060" y="586" fill="#6B8295" font-family="Arial, Helvetica, sans-serif" font-size="16">or revised path approved</text>
-  <rect x="1034" y="628" width="222" height="28" rx="9" fill="#F2D49A"/>
-  <text x="1087" y="647" fill="#714A12" font-family="Arial, Helvetica, sans-serif" font-size="15">billing impact</text>
-
-  <path d="M626 474C636 474 639 474 654 474" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
-  <path d="M640 458L664 474L640 490" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M978 474C988 474 991 474 1006 474" stroke="#87A8E9" stroke-width="8" stroke-linecap="round"/>
-  <path d="M992 458L1016 474L992 490" stroke="#87A8E9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="1056" y="716" width="228" height="34" rx="12" fill="#123B53"/>
-  <text x="1096" y="739" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="18">formal decision point</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Escalation Pause State Worksheet</title>
+  <desc id="desc">A SoloOpsGuide templates feature image with readable labels and aligned workflow blocks for escalation pause state worksheet.</desc>
+  <defs><linearGradient id="templates-escalation-pause-state-worksheet-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7faf7" /><stop offset="100%" stop-color="#eff5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#templates-escalation-pause-state-worksheet-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">Escalation Pause</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">State Worksheet</text>
+  <rect x="170" y="228" width="290" height="16" rx="8" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="250" y="302" width="364" height="384" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="650" y="302" width="700" height="384" rx="36" fill="#183b63" />
+  <rect x="292" y="350" width="280" height="18" rx="9" fill="#c9d9e4" /><rect x="292" y="392" width="250" height="18" rx="9" fill="#c9d9e4" opacity=".78" /><rect x="292" y="434" width="232" height="18" rx="9" fill="#c9d9e4" opacity=".56" /><rect x="292" y="510" width="248" height="74" rx="26" fill="#d8f3f1" />
+  <text x="338" y="556" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Flag</text>
+  <rect x="714" y="356" width="246" height="72" rx="28" fill="#d8f3f1" /><rect x="1004" y="356" width="246" height="72" rx="28" fill="#dfe9fb" /><rect x="714" y="468" width="246" height="72" rx="28" fill="#fff0db" /><rect x="1004" y="468" width="246" height="72" rx="28" fill="#ecf8f2" />
+  <text x="772" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Pause</text><text x="1064" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Recover</text><text x="782" y="513" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Resume</text>
 </svg>

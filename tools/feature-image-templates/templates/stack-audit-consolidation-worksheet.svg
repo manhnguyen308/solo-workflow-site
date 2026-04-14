@@ -1,82 +1,19 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="bg" x1="180" y1="70" x2="1390" y2="820" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0E5A6C"/>
-      <stop offset="1" stop-color="#143F74"/>
-    </linearGradient>
-    <linearGradient id="card" x1="310" y1="126" x2="1230" y2="732" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F7F8FA"/>
-      <stop offset="1" stop-color="#EEF2F7"/>
-    </linearGradient>
-  </defs>
-
-  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
-  <path d="M0 118C129 44 249 60 352 135C429 191 489 215 580 198C707 175 793 71 1001 76C1175 80 1325 155 1600 112V900H0V118Z" fill="#8BC9C2" fill-opacity="0.14"/>
-  <path d="M1280 160C1385 114 1509 139 1600 218V675C1518 726 1440 726 1364 687C1262 635 1191 538 1186 430C1181 315 1205 213 1280 160Z" fill="#C7D6F7" fill-opacity="0.16"/>
-
-  <rect x="284" y="118" width="1032" height="628" rx="28" fill="url(#card)"/>
-  <rect x="324" y="158" width="444" height="544" rx="22" fill="#FFFFFF"/>
-  <rect x="796" y="158" width="480" height="544" rx="22" fill="#F5F7FB"/>
-
-  <circle cx="364" cy="192" r="8" fill="#F29D38"/>
-  <circle cx="390" cy="192" r="8" fill="#F4C36B"/>
-  <circle cx="416" cy="192" r="8" fill="#E1E5EB"/>
-  <text x="324" y="236" fill="#103B52" font-family="Georgia, 'Times New Roman', serif" font-size="38">Stack Audit</text>
-  <text x="324" y="274" fill="#587084" font-family="Arial, Helvetica, sans-serif" font-size="22">Current tools inventory</text>
-
-  <rect x="324" y="304" width="404" height="66" rx="14" fill="#EDF3F8"/>
-  <text x="346" y="344" fill="#1F4F69" font-family="Arial, Helvetica, sans-serif" font-size="22">System of record</text>
-  <rect x="566" y="321" width="136" height="32" rx="10" fill="#A6BFF2"/>
-  <text x="595" y="343" fill="#183961" font-family="Arial, Helvetica, sans-serif" font-size="18">PM-first</text>
-
-  <rect x="324" y="388" width="404" height="82" rx="16" fill="#F8FAFD"/>
-  <text x="346" y="422" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="21">Client workspace</text>
-  <text x="346" y="452" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="18">status, milestones, approvals</text>
-  <rect x="608" y="404" width="94" height="28" rx="9" fill="#9BD5C4"/>
-  <text x="634" y="423" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="16">Keep</text>
-
-  <rect x="324" y="486" width="404" height="82" rx="16" fill="#F8FAFD"/>
-  <text x="346" y="520" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="21">Inbox / review trail</text>
-  <text x="346" y="550" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="18">messages only, not status</text>
-  <rect x="586" y="502" width="116" height="28" rx="9" fill="#F3D39A"/>
-  <text x="603" y="521" fill="#714A12" font-family="Arial, Helvetica, sans-serif" font-size="16">Narrow role</text>
-
-  <rect x="324" y="584" width="404" height="82" rx="16" fill="#F8FAFD"/>
-  <text x="346" y="618" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="21">Old spreadsheet</text>
-  <text x="346" y="648" fill="#698095" font-family="Arial, Helvetica, sans-serif" font-size="18">duplicate pipeline, archive later</text>
-  <rect x="590" y="600" width="112" height="28" rx="9" fill="#EAB4A8"/>
-  <text x="613" y="619" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="16">Retire</text>
-
-  <text x="828" y="216" fill="#103B52" font-family="Georgia, 'Times New Roman', serif" font-size="34">Keep / Replace / Retire</text>
-  <rect x="828" y="246" width="418" height="56" rx="14" fill="#E8EEF7"/>
-  <text x="852" y="280" fill="#4C6277" font-family="Arial, Helvetica, sans-serif" font-size="20">Migration boundary notes</text>
-
-  <rect x="828" y="326" width="418" height="92" rx="18" fill="#FFFFFF"/>
-  <text x="852" y="360" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="20">Keep</text>
-  <rect x="932" y="340" width="84" height="24" rx="8" fill="#9BD5C4"/>
-  <text x="949" y="357" fill="#165548" font-family="Arial, Helvetica, sans-serif" font-size="15">stable role</text>
-  <rect x="852" y="378" width="340" height="8" rx="4" fill="#D8E1EB"/>
-  <rect x="852" y="394" width="290" height="8" rx="4" fill="#D8E1EB"/>
-
-  <rect x="828" y="438" width="418" height="92" rx="18" fill="#FFFFFF"/>
-  <text x="852" y="472" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="20">Replace</text>
-  <rect x="955" y="452" width="118" height="24" rx="8" fill="#F1D494"/>
-  <text x="977" y="469" fill="#714A12" font-family="Arial, Helvetica, sans-serif" font-size="15">better fit needed</text>
-  <rect x="852" y="490" width="326" height="8" rx="4" fill="#D8E1EB"/>
-  <rect x="852" y="506" width="276" height="8" rx="4" fill="#D8E1EB"/>
-
-  <rect x="828" y="550" width="418" height="92" rx="18" fill="#FFFFFF"/>
-  <text x="852" y="584" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="20">Retire</text>
-  <rect x="941" y="564" width="108" height="24" rx="8" fill="#EAB4A8"/>
-  <text x="964" y="581" fill="#6D2E21" font-family="Arial, Helvetica, sans-serif" font-size="15">archive only</text>
-  <rect x="852" y="602" width="330" height="8" rx="4" fill="#D8E1EB"/>
-  <rect x="852" y="618" width="250" height="8" rx="4" fill="#D8E1EB"/>
-
-  <path d="M744 430C771 430 786 430 804 430" stroke="#86A8E8" stroke-width="8" stroke-linecap="round"/>
-  <path d="M792 414L816 430L792 446" stroke="#86A8E8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M744 528C771 528 786 528 804 528" stroke="#86A8E8" stroke-width="8" stroke-linecap="round"/>
-  <path d="M792 512L816 528L792 544" stroke="#86A8E8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="1138" y="718" width="178" height="44" rx="14" fill="#103B52"/>
-  <text x="1165" y="747" fill="#F7F8FA" font-family="Arial, Helvetica, sans-serif" font-size="21">cutoff notes</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Stack Audit Consolidation Worksheet</title>
+  <desc id="desc">A SoloOpsGuide templates feature image with readable labels and aligned workflow blocks for stack audit consolidation worksheet.</desc>
+  <defs><linearGradient id="templates-stack-audit-consolidation-worksheet-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7faf7" /><stop offset="100%" stop-color="#eff5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#templates-stack-audit-consolidation-worksheet-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">Stack Audit</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#132838">Consolidation Worksheet</text>
+  <rect x="170" y="228" width="290" height="16" rx="8" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="250" y="302" width="364" height="384" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="650" y="302" width="700" height="384" rx="36" fill="#183b63" />
+  <rect x="292" y="350" width="280" height="18" rx="9" fill="#c9d9e4" /><rect x="292" y="392" width="250" height="18" rx="9" fill="#c9d9e4" opacity=".78" /><rect x="292" y="434" width="232" height="18" rx="9" fill="#c9d9e4" opacity=".56" /><rect x="292" y="510" width="248" height="74" rx="26" fill="#d8f3f1" />
+  <text x="338" y="556" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Audit</text>
+  <rect x="714" y="356" width="246" height="72" rx="28" fill="#d8f3f1" /><rect x="1004" y="356" width="246" height="72" rx="28" fill="#dfe9fb" /><rect x="714" y="468" width="246" height="72" rx="28" fill="#fff0db" /><rect x="1004" y="468" width="246" height="72" rx="28" fill="#ecf8f2" />
+  <text x="772" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Keep</text><text x="1064" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Merge</text><text x="782" y="513" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Cut</text>
 </svg>

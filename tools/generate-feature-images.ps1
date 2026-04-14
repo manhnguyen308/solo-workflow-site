@@ -465,6 +465,264 @@ function Get-FeatureSvg([string]$scene){
   }
 }
 
+function Escape-Xml {
+  param([string]$Text)
+  if($null -eq $Text){ return "" }
+  return [System.Security.SecurityElement]::Escape($Text)
+}
+
+function To-TitleWord {
+  param([string]$Word)
+  if([string]::IsNullOrWhiteSpace($Word)){ return "" }
+  $lower = $Word.ToLowerInvariant()
+  $special = @{
+    "crm" = "CRM"; "pm" = "PM"; "qa" = "QA"; "va" = "VA"; "faq" = "FAQ"; "saas" = "SaaS"; "ai" = "AI"
+  }
+  if($special.ContainsKey($lower)){ return $special[$lower] }
+  return ($lower.Substring(0,1).ToUpperInvariant() + $lower.Substring(1))
+}
+
+function Convert-SlugToTitle {
+  param([Parameter(Mandatory=$true)][string]$Slug)
+  return (($Slug.Split('-', [System.StringSplitOptions]::RemoveEmptyEntries) | ForEach-Object { To-TitleWord $_ }) -join ' ')
+}
+
+function Split-FeatureTitle {
+  param([Parameter(Mandatory=$true)][string]$Title)
+  if($Title.Length -le 24){ return @($Title) }
+  $words = $Title.Split(' ', [System.StringSplitOptions]::RemoveEmptyEntries)
+  if($words.Count -lt 2){ return @($Title) }
+  $midpoint = [Math]::Ceiling($words.Count / 2)
+  return @(
+    ($words[0..($midpoint-1)] -join ' ')
+    ($words[$midpoint..($words.Count-1)] -join ' ')
+  )
+}
+
+function Get-Theme {
+  param([string]$Kind)
+  switch($Kind){
+    "site" { @{BgA="#f6fafc";BgB="#eef4fb";Accent="#0f8b8d";AccentSoft="#d8f3f1";Navy="#17355f";Ink="#122838";Cream="#fff1db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    "hubs" { @{BgA="#f7fbfc";BgB="#eef5fb";Accent="#0f766e";AccentSoft="#d8f3f1";Navy="#183b63";Ink="#132838";Cream="#fff0db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    "workflows" { @{BgA="#f4faf9";BgB="#edf4fb";Accent="#0f8b8d";AccentSoft="#d7f2ef";Navy="#17355f";Ink="#102633";Cream="#fff1db";Stroke="#d9e4ea";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    "blueprints" { @{BgA="#f6fafc";BgB="#eef4fb";Accent="#1d7f84";AccentSoft="#d8f3f1";Navy="#17355f";Ink="#122838";Cream="#fff0db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#ecf8f2"} }
+    "comparisons" { @{BgA="#fbf7f0";BgB="#f0f5fb";Accent="#0f8b8d";AccentSoft="#d8f3f1";Navy="#17355f";Ink="#122838";Cream="#fff1db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    "templates" { @{BgA="#f7faf7";BgB="#eff5fb";Accent="#0f766e";AccentSoft="#d8f3f1";Navy="#183b63";Ink="#132838";Cream="#fff0db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#ecf8f2"} }
+    "glossary" { @{BgA="#f7fafc";BgB="#edf4fb";Accent="#216f8a";AccentSoft="#dceefa";Navy="#17355f";Ink="#132838";Cream="#fff1db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    "faq" { @{BgA="#fbf8f2";BgB="#eef4fb";Accent="#0f766e";AccentSoft="#d8f3f1";Navy="#17355f";Ink="#132838";Cream="#fff1db";Stroke="#d9e5ec";Panel="#ffffff";Soft="#dfe9fb";Good="#dff7e8"} }
+    default { Get-Theme "site" }
+  }
+}
+
+function Get-FeatureMeta {
+  param([Parameter(Mandatory=$true)][string]$RelativePath)
+  $normalized = $RelativePath.Replace('\','/')
+  $kind = ($normalized -split '/')[0]
+  $slug = [IO.Path]::GetFileNameWithoutExtension($normalized)
+  $titles = @{
+    "site/soloopsguide-home.svg" = "SoloOpsGuide"
+    "hubs/client-workflow-systems.svg" = "Workflow systems"
+    "hubs/software-stack-blueprints.svg" = "Stack blueprints"
+    "hubs/workflow-comparisons.svg" = "Workflow comparisons"
+    "hubs/templates-checklists.svg" = "Templates"
+    "hubs/glossary.svg" = "Glossary"
+    "hubs/faq.svg" = "FAQ"
+    "workflows/freelance-client-workflow-system.svg" = "Client workflow"
+    "workflows/workflow-automation-basics.svg" = "Automation basics"
+    "blueprints/solo-freelancer-lean-budget.svg" = "Lean stack"
+    "blueprints/consultant-va-collaboration.svg" = "Consultant + VA"
+    "blueprints/migrate-from-scattered-tools.svg" = "Tool migration"
+    "blueprints/software-stack-without-overbuying.svg" = "Buy less, fit better"
+    "comparisons/crm-vs-project-management.svg" = "CRM vs PM"
+    "comparisons/notion-vs-clickup.svg" = "Notion vs ClickUp"
+    "comparisons/all-in-one-vs-specialized-stack.svg" = "All-in-one vs stack"
+    "comparisons/billing-status-home.svg" = "Billing status home"
+    "comparisons/calendly-vs-built-in-booking.svg" = "Booking options"
+    "comparisons/email-vs-client-portal.svg" = "Email vs portal"
+    "templates/client-onboarding-checklist.svg" = "Onboarding checklist"
+    "templates/delivery-qa-checklist.svg" = "Delivery QA"
+    "templates/invoice-payment-checklist.svg" = "Invoice follow-up"
+    "templates/client-offboarding-template.svg" = "Offboarding"
+    "templates/weekly-client-operations.svg" = "Weekly ops"
+    "faq/solo-service-workflow-stack-faq.svg" = "Workflow stack FAQ"
+  }
+  $labels = @{
+    "site/soloopsguide-home.svg" = @("Guide", "Systems", "Templates", "Comparisons")
+    "hubs/client-workflow-systems.svg" = @("Intake", "Delivery", "Billing", "Offboarding")
+    "hubs/software-stack-blueprints.svg" = @("Lean", "Collaborative", "Migration", "Upgrade path")
+    "hubs/workflow-comparisons.svg" = @("CRM", "PM", "Booking", "Portal")
+    "hubs/templates-checklists.svg" = @("Checklist", "Routing", "Status", "Reset")
+    "hubs/glossary.svg" = @("Terms", "Roles", "Handoffs", "Definitions")
+    "hubs/faq.svg" = @("Answers", "Breakdowns", "Maintenance", "Stack fit")
+    "workflows/freelance-client-workflow-system.svg" = @("Lead", "Project", "Billing", "Close")
+    "workflows/client-intake-qualification-workflow.svg" = @("Inquiry", "Fit", "Discovery", "Decision")
+    "workflows/proposal-contract-handoff.svg" = @("Proposal", "Approval", "Contract", "Kickoff")
+    "workflows/workflow-automation-basics.svg" = @("Trigger", "Wait", "Route", "Notify")
+    "workflows/client-offboarding-workflow.svg" = @("Wrap-up", "Archive", "Billing", "Follow-up")
+    "workflows/client-onboarding-workflow.svg" = @("Kickoff", "Inputs", "Setup", "Live")
+    "workflows/client-status-update-workflow.svg" = @("Progress", "Risks", "Next step", "Send")
+    "workflows/invoice-payment-workflow.svg" = @("Invoice", "Reminder", "Resolve", "Paid")
+    "workflows/milestone-delivery-workflow.svg" = @("Draft", "Review", "Approve", "Deliver")
+    "workflows/proposal-revision-approval-workflow.svg" = @("Revise", "Review", "Approve", "Send")
+    "workflows/change-request-workflow.svg" = @("Request", "Scope", "Price", "Decision")
+    "blueprints/solo-freelancer-lean-budget.svg" = @("Core stack", "Client hub", "Billing", "Add-ons")
+    "blueprints/consultant-va-collaboration.svg" = @("Owner", "VA lane", "Shared hub", "QA")
+    "blueprints/migrate-from-scattered-tools.svg" = @("Audit", "Merge", "Move", "Stabilize")
+    "blueprints/software-stack-without-overbuying.svg" = @("Must-have", "Nice-to-have", "Delay", "Review")
+    "comparisons/crm-vs-project-management.svg" = @("CRM-first", "PM-first", "Lead truth", "Delivery truth")
+    "comparisons/notion-vs-clickup.svg" = @("Docs", "Tasks", "Views", "Scale")
+    "comparisons/all-in-one-vs-specialized-stack.svg" = @("Single app", "Specialized", "Trade-offs", "Control")
+    "comparisons/billing-status-home.svg" = @("Status view", "Finance", "Aging", "Next action")
+    "comparisons/calendly-vs-built-in-booking.svg" = @("External", "Embedded", "Routing", "Control")
+    "comparisons/email-vs-client-portal.svg" = @("Inbox", "Portal", "Search", "Visibility")
+    "templates/client-onboarding-checklist.svg" = @("Start", "Assets", "Contacts", "Confirm")
+    "templates/delivery-qa-checklist.svg" = @("Scope", "Proof", "QA", "Release")
+    "templates/invoice-payment-checklist.svg" = @("Send", "Track", "Remind", "Close")
+    "templates/client-offboarding-template.svg" = @("Wrap", "Archive", "Feedback", "Reconnect")
+    "templates/weekly-client-operations.svg" = @("Check", "Update", "Escalate", "Plan")
+    "templates/approval-feedback-routing-worksheet.svg" = @("Feedback", "Route", "Owner", "Decision")
+    "templates/client-change-request-template.svg" = @("Request", "Impact", "Approve", "Reset")
+    "templates/client-input-dependency-worksheet.svg" = @("Need", "Owner", "Due", "Nudge")
+    "templates/escalation-pause-state-worksheet.svg" = @("Flag", "Pause", "Recover", "Resume")
+    "templates/project-start-readiness-handoff-boundary-worksheet.svg" = @("Ready", "Handoff", "Owner", "Start")
+    "templates/recovery-update-revised-plan-notice-template.svg" = @("Reset", "Plan", "Update", "Next step")
+    "templates/scope-reset-recovery-worksheet.svg" = @("Scope", "Reset", "Options", "Approve")
+    "templates/stack-audit-consolidation-worksheet.svg" = @("Audit", "Keep", "Merge", "Cut")
+    "templates/system-of-record-rules-worksheet.svg" = @("Source", "Rules", "Sync", "Exceptions")
+    "templates/weekly-client-status-update-template.svg" = @("Wins", "Risks", "Next", "Share")
+    "glossary/approval-owner.svg" = @("Decision", "Owner", "Review", "Release")
+    "glossary/client-dependency.svg" = @("Dependency", "Client", "Blocker", "Nudge")
+    "glossary/next-action-owner.svg" = @("Action", "Owner", "Due", "Follow-up")
+    "glossary/system-of-record.svg" = @("Source", "Truth", "Rules", "Sync")
+    "glossary/workflow-handoff.svg" = @("Handoff", "Boundary", "Owner", "Ready")
+    "faq/client-input-delay-faq.svg" = @("Missing input", "Wait", "Escalate", "Recover")
+    "faq/client-silence-review-faq.svg" = @("Silence", "Reminder", "Deadline", "Move")
+    "faq/solo-service-workflow-stack-faq.svg" = @("Stack", "Fit", "Tools", "Ops")
+    "faq/workflow-maintenance-faq.svg" = @("Checkups", "Drift", "Refresh", "Keep")
+  }
+  $title = if($titles.ContainsKey($normalized)) { $titles[$normalized] } else { Convert-SlugToTitle $slug }
+  $labelSet = if($labels.ContainsKey($normalized)) { $labels[$normalized] } else { @($slug.Split('-', [System.StringSplitOptions]::RemoveEmptyEntries) | Select-Object -First 4 | ForEach-Object { To-TitleWord $_ }) }
+  if($labelSet.Count -lt 4){ $labelSet = @($labelSet + @("System","Flow","Owner","Status"))[0..3] }
+  @{
+    Kind = $kind
+    Path = $normalized
+    Slug = $slug
+    Title = $title
+    Labels = @($labelSet | Select-Object -First 4)
+  }
+}
+
+function New-FeatureSvg {
+  param([Parameter(Mandatory=$true)][string]$RelativePath)
+  $meta = Get-FeatureMeta $RelativePath
+  $theme = Get-Theme $meta.Kind
+  $title = Escape-Xml $meta.Title
+  $titleLines = @(Split-FeatureTitle $meta.Title | ForEach-Object { Escape-Xml $_ })
+  $desc = Escape-Xml ("A SoloOpsGuide {0} feature image with readable labels and aligned workflow blocks for {1}." -f $meta.Kind, $meta.Title.ToLowerInvariant())
+  $idBase = ($meta.Path -replace '[^a-zA-Z0-9]+','-').ToLowerInvariant()
+  $a = Escape-Xml $meta.Labels[0]
+  $b = Escape-Xml $meta.Labels[1]
+  $c = Escape-Xml $meta.Labels[2]
+  $d = Escape-Xml $meta.Labels[3]
+  $body = switch($meta.Kind){
+    "site" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <circle cx="800" cy="492" r="120" fill="$($theme.Navy)" />
+  <text x="800" y="480" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">SoloOps</text>
+  <text x="800" y="522" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Guide</text>
+  <rect x="276" y="336" width="250" height="118" rx="30" fill="$($theme.AccentSoft)" /><rect x="1074" y="336" width="250" height="118" rx="30" fill="$($theme.Soft)" /><rect x="276" y="550" width="250" height="118" rx="30" fill="$($theme.Cream)" /><rect x="1074" y="550" width="250" height="118" rx="30" fill="$($theme.Good)" />
+  <path d="M526 395h118M956 395h118M526 609h118M956 609h118" stroke="$($theme.Accent)" stroke-width="10" stroke-linecap="round" />
+  <text x="334" y="406" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="$($theme.Accent)">$a</text><text x="1136" y="406" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">$b</text><text x="336" y="620" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">$c</text><text x="1134" y="620" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18794e">$d</text>
+"@ }
+    "hubs" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="604" y="344" width="392" height="176" rx="36" fill="$($theme.Navy)" />
+  <text x="800" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef6ff">$title</text>
+  <rect x="316" y="308" width="212" height="86" rx="30" fill="$($theme.AccentSoft)" /><rect x="1072" y="308" width="212" height="86" rx="30" fill="$($theme.Soft)" /><rect x="316" y="584" width="212" height="86" rx="30" fill="$($theme.Cream)" /><rect x="1072" y="584" width="212" height="86" rx="30" fill="$($theme.Good)" />
+  <path d="M528 351h76m468 0h76M528 627h76m468 0h76" stroke="$($theme.Accent)" stroke-width="10" stroke-linecap="round" />
+  <text x="356" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="$($theme.Accent)">$a</text><text x="1118" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">$b</text><text x="360" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">$c</text><text x="1110" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">$d</text>
+"@ }
+    "workflows" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="228" y="426" width="220" height="112" rx="32" fill="$($theme.AccentSoft)" /><rect x="510" y="426" width="220" height="112" rx="32" fill="$($theme.Soft)" /><rect x="792" y="426" width="220" height="112" rx="32" fill="$($theme.Cream)" /><rect x="1074" y="426" width="220" height="112" rx="32" fill="$($theme.Good)" />
+  <path d="M448 482h62m220 0h62m220 0h62" stroke="$($theme.Accent)" stroke-width="10" stroke-linecap="round" />
+  <circle cx="338" cy="384" r="18" fill="$($theme.Navy)" /><circle cx="620" cy="384" r="18" fill="$($theme.Navy)" opacity=".75" /><circle cx="902" cy="384" r="18" fill="$($theme.Navy)" opacity=".55" /><circle cx="1184" cy="384" r="18" fill="$($theme.Navy)" opacity=".35" />
+  <text x="282" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="$($theme.Accent)">$a</text><text x="566" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">$b</text><text x="846" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">$c</text><text x="1128" y="492" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18794e">$d</text>
+"@ }
+    "blueprints" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="228" y="310" width="980" height="102" rx="34" fill="#f8fbfd" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="260" y="454" width="562" height="210" rx="36" fill="$($theme.Navy)" />
+  <rect x="856" y="454" width="486" height="210" rx="36" fill="#f8fbfd" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="284" y="332" width="204" height="58" rx="29" fill="$($theme.AccentSoft)" /><rect x="520" y="332" width="204" height="58" rx="29" fill="$($theme.Soft)" /><rect x="756" y="332" width="184" height="58" rx="29" fill="$($theme.Cream)" /><rect x="972" y="332" width="188" height="58" rx="29" fill="$($theme.Good)" />
+  <text x="330" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="$($theme.Accent)">$a</text><text x="568" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">$b</text><text x="806" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">$c</text><text x="1016" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">$d</text>
+  <text x="316" y="514" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Core stack</text><rect x="316" y="548" width="192" height="18" rx="9" fill="#eef6ff" opacity=".82" /><rect x="316" y="584" width="234" height="18" rx="9" fill="#eef6ff" opacity=".46" />
+  <text x="926" y="514" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="$($theme.Ink)">Upgrade path</text><rect x="926" y="548" width="170" height="18" rx="9" fill="#c9d9e4" /><rect x="926" y="584" width="196" height="18" rx="9" fill="#c9d9e4" opacity=".62" />
+"@ }
+    "comparisons" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="$($theme.Navy)" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="$($theme.AccentSoft)" /><rect x="908" y="334" width="180" height="52" rx="26" fill="$($theme.Soft)" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="$($theme.Accent)">$a</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">$b</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="$($theme.Cream)" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="$($theme.Good)" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">$c</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">$d</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="$($theme.Cream)" /><rect x="974" y="590" width="308" height="54" rx="27" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="$($theme.Ink)">Delivery truth stays central</text>
+"@ }
+    "templates" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="250" y="302" width="364" height="384" rx="36" fill="#f8fbfd" stroke="$($theme.Stroke)" stroke-width="3" />
+  <rect x="650" y="302" width="700" height="384" rx="36" fill="$($theme.Navy)" />
+  <rect x="292" y="350" width="280" height="18" rx="9" fill="#c9d9e4" /><rect x="292" y="392" width="250" height="18" rx="9" fill="#c9d9e4" opacity=".78" /><rect x="292" y="434" width="232" height="18" rx="9" fill="#c9d9e4" opacity=".56" /><rect x="292" y="510" width="248" height="74" rx="26" fill="$($theme.AccentSoft)" />
+  <text x="338" y="556" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="$($theme.Accent)">$a</text>
+  <rect x="714" y="356" width="246" height="72" rx="28" fill="$($theme.AccentSoft)" /><rect x="1004" y="356" width="246" height="72" rx="28" fill="$($theme.Soft)" /><rect x="714" y="468" width="246" height="72" rx="28" fill="$($theme.Cream)" /><rect x="1004" y="468" width="246" height="72" rx="28" fill="$($theme.Good)" />
+  <text x="772" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="$($theme.Accent)">$b</text><text x="1064" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">$c</text><text x="782" y="513" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">$d</text>
+"@ }
+    "glossary" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <circle cx="410" cy="492" r="144" fill="$($theme.Navy)" />
+  <text x="410" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">$a</text><text x="410" y="526" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#d9eef7">Key term</text>
+  <rect x="696" y="340" width="520" height="84" rx="30" fill="$($theme.AccentSoft)" /><rect x="696" y="458" width="520" height="84" rx="30" fill="$($theme.Soft)" /><rect x="696" y="576" width="520" height="84" rx="30" fill="$($theme.Cream)" />
+  <path d="M554 492h114" stroke="$($theme.Accent)" stroke-width="10" stroke-linecap="round" />
+  <text x="742" y="392" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="$($theme.Accent)">$b</text><text x="742" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">$c</text><text x="742" y="628" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">$d</text>
+"@ }
+    "faq" { @"
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="3" />
+  <circle cx="360" cy="414" r="92" fill="$($theme.Navy)" />
+  <text x="360" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="88" fill="#eef6ff">?</text>
+  <rect x="520" y="326" width="740" height="92" rx="32" fill="$($theme.AccentSoft)" /><rect x="520" y="454" width="740" height="92" rx="32" fill="$($theme.Soft)" /><rect x="520" y="582" width="740" height="92" rx="32" fill="$($theme.Cream)" />
+  <text x="576" y="382" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="$($theme.Accent)">$a</text><text x="576" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">$b</text><text x="576" y="638" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">$c</text>
+  <rect x="1008" y="608" width="182" height="40" rx="20" fill="$($theme.Good)" /><text x="1042" y="635" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#18794e">$d</text>
+"@ }
+  }
+  $titleMarkup = if($titleLines.Count -gt 1){
+@"
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="$($theme.Ink)">$($titleLines[0])</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="$($theme.Ink)">$($titleLines[1])</text>
+  <rect x="170" y="228" width="290" height="16" rx="8" fill="$($theme.Ink)" opacity=".10" />
+"@
+  } else {
+@"
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="$($theme.Ink)">$title</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="$($theme.Ink)" opacity=".10" />
+"@
+  }
+@"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">$title</title>
+  <desc id="desc">$desc</desc>
+  <defs><linearGradient id="${idBase}-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="$($theme.BgA)" /><stop offset="100%" stop-color="$($theme.BgB)" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#${idBase}-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="$($theme.Soft)" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="$($theme.AccentSoft)" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="$($theme.Panel)" stroke="$($theme.Stroke)" stroke-width="4" />
+$titleMarkup
+$body
+</svg>
+"@
+}
+
 $out = Join-Path $PSScriptRoot "..\\assets\\images\\features"
 $svgOut = Join-Path $PSScriptRoot "..\\static\\images\\features"
 $svgTemplateRoot = Join-Path $PSScriptRoot "feature-image-templates"
@@ -525,12 +783,14 @@ foreach($s in $specs){
 
 foreach($s in $svgSpecs){
   $path = Join-Path $svgOut $s.path
+  $templatePath = Join-Path $svgTemplateRoot $s.path
   if($DryRun){
-    Write-Output "DRY RUN: would generate $path from $($s.template)"
+    Write-Output "DRY RUN: would generate $path and refresh $templatePath"
     continue
   }
 
-  $svg = Get-Content -Path $s.template -Raw
+  $svg = New-FeatureSvg $s.path
+  Write-Utf8NoBom $templatePath $svg
   Write-Utf8NoBom $path $svg
 }
 
@@ -540,4 +800,4 @@ if($DryRun){
 }
 
 Write-Output "Generated $($specs.Count) PNG feature image sources in $out"
-Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut from $svgTemplateRoot"
+Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut and refreshed templates in $svgTemplateRoot"

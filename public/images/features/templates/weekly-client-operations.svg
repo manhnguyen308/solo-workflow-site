@@ -1,12 +1,18 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Weekly client operations checklist illustration</title>
-  <desc id="desc">An editorial checklist illustration showing the weekly review cadence, status checks, invoice checks, and client follow-up tasks.</desc>
-  <rect width="1600" height="900" fill="#f5fbfa"/><circle cx="1280" cy="210" r="150" fill="#def5ef"/>
-  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Weekly client operations</text><rect x="248" y="220" width="270" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="248" y="292" width="1104" height="110" rx="30" fill="#0f8b8d"/><text x="294" y="356" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">weekly review</text>
-  <rect x="248" y="444" width="352" height="214" rx="30" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="624" y="444" width="352" height="214" rx="30" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1000" y="444" width="352" height="214" rx="30" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
-  <text x="288" y="494" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">status</text><text x="664" y="494" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">billing</text><text x="1040" y="494" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">follow-up</text>
-  <rect x="288" y="530" width="220" height="14" rx="7" fill="#d8e5ec"/><rect x="664" y="530" width="220" height="14" rx="7" fill="#d8e5ec"/><rect x="1040" y="530" width="220" height="14" rx="7" fill="#d8e5ec"/>
-  <circle cx="310" cy="584" r="10" fill="#0f8b8d"/><circle cx="686" cy="584" r="10" fill="#d6a156"/><circle cx="1062" cy="584" r="10" fill="#36589a"/>
+  <title id="title">Weekly ops</title>
+  <desc id="desc">A SoloOpsGuide templates feature image with readable labels and aligned workflow blocks for weekly ops.</desc>
+  <defs><linearGradient id="templates-weekly-client-operations-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7faf7" /><stop offset="100%" stop-color="#eff5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#templates-weekly-client-operations-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Weekly ops</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="250" y="302" width="364" height="384" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="650" y="302" width="700" height="384" rx="36" fill="#183b63" />
+  <rect x="292" y="350" width="280" height="18" rx="9" fill="#c9d9e4" /><rect x="292" y="392" width="250" height="18" rx="9" fill="#c9d9e4" opacity=".78" /><rect x="292" y="434" width="232" height="18" rx="9" fill="#c9d9e4" opacity=".56" /><rect x="292" y="510" width="248" height="74" rx="26" fill="#d8f3f1" />
+  <text x="338" y="556" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Check</text>
+  <rect x="714" y="356" width="246" height="72" rx="28" fill="#d8f3f1" /><rect x="1004" y="356" width="246" height="72" rx="28" fill="#dfe9fb" /><rect x="714" y="468" width="246" height="72" rx="28" fill="#fff0db" /><rect x="1004" y="468" width="246" height="72" rx="28" fill="#ecf8f2" />
+  <text x="772" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Update</text><text x="1064" y="401" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Escalate</text><text x="782" y="513" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Plan</text>
 </svg>

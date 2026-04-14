@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Solo service workflow stack FAQ illustration</title>
-  <desc id="desc">An editorial FAQ illustration showing common stack questions, short answers, and routes back to broader implementation pages.</desc>
-  <rect width="1600" height="900" fill="#f7fafc"/><circle cx="1280" cy="210" r="150" fill="#e5edf8"/>
-  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Workflow stack FAQ</text><rect x="248" y="220" width="226" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="248" y="300" width="320" height="350" rx="32" fill="#17355f"/><rect x="622" y="300" width="330" height="350" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1006" y="300" width="346" height="350" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
-  <text x="290" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Questions</text><text x="664" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Short answers</text><text x="1048" y="352" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Route back</text>
-  <path d="M300 414c0-18 16-32 38-32 22 0 38 12 38 30 0 12-8 21-20 28-10 6-16 12-16 22" stroke="#d6faf5" stroke-width="9" stroke-linecap="round" fill="none"/><circle cx="338" cy="520" r="7" fill="#d6faf5"/>
-  <rect x="664" y="416" width="220" height="42" rx="20" fill="#d8f3f1"/><rect x="664" y="474" width="220" height="42" rx="20" fill="#dfe9fb"/><text x="724" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">keep it lean</text><text x="726" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">map workflow first</text>
-  <rect x="1048" y="416" width="220" height="42" rx="20" fill="#fff0db"/><rect x="1048" y="474" width="220" height="42" rx="20" fill="#dff7e8"/><text x="1102" y="442" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">blueprint</text><text x="1094" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#18794e">workflow</text>
+  <title id="title">Workflow stack FAQ</title>
+  <desc id="desc">A SoloOpsGuide faq feature image with readable labels and aligned workflow blocks for workflow stack faq.</desc>
+  <defs><linearGradient id="faq-solo-service-workflow-stack-faq-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf8f2" /><stop offset="100%" stop-color="#eef4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#faq-solo-service-workflow-stack-faq-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Workflow stack FAQ</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <circle cx="360" cy="414" r="92" fill="#17355f" />
+  <text x="360" y="430" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="88" fill="#eef6ff">?</text>
+  <rect x="520" y="326" width="740" height="92" rx="32" fill="#d8f3f1" /><rect x="520" y="454" width="740" height="92" rx="32" fill="#dfe9fb" /><rect x="520" y="582" width="740" height="92" rx="32" fill="#fff1db" />
+  <text x="576" y="382" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f766e">Stack</text><text x="576" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Fit</text><text x="576" y="638" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Tools</text>
+  <rect x="1008" y="608" width="182" height="40" rx="20" fill="#dff7e8" /><text x="1042" y="635" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#18794e">Ops</text>
 </svg>

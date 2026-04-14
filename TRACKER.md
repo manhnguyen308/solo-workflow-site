@@ -439,3 +439,51 @@ After each future pass, add a short section with:
   - optional future polish may still be worthwhile for a few lower-priority support/reference images if we want to tighten label sizing even further at card scale, but no additional image was isolated here as broken enough to block the workflow migration
 - Commit message used: `Regenerate feature images with consistent labels`
 - Push result: `git push origin main` succeeded
+
+## Live feature image artwork replacement - 2026-04-15
+
+- Why the previous workflow pass did not visibly fix the site:
+  - the earlier migration made the script/template tree the formal source of truth, but it still regenerated the same broken SVG compositions, so the live images under `static/images/features/` stayed visually inconsistent even though workflow coverage improved
+  - the issue was no longer file ownership; it was the actual artwork system: too many old scene variants, cramped labels, mixed composition patterns, and inconsistent spacing from image to image
+- Root cause of the live design problem:
+  - the live SVG set had drifted into many one-off layouts with different text density, alignment rules, and internal padding, so some cards looked acceptable while others still read like miniature UI screenshots
+  - the generator was refreshing files, but not applying one strong visual system to all 52 served images
+- What changed in the generation workflow:
+  - updated `tools/generate-feature-images.ps1` so the SVG path now renders every live feature image from shared category-based composition logic instead of copying existing SVG templates through unchanged
+  - added shared metadata, label, theme, and title-wrapping helpers so long titles now split cleanly, text stays readable, and layouts use consistent safe margins and block sizing
+  - kept the legacy PNG generation intact while making the SVG workflow the real design engine for all served feature images
+- Source templates changed:
+  - regenerated the entire `tools/feature-image-templates/` tree from the new shared renderer so the editable template source matches the live served SVGs
+- Live image assets replaced/updated:
+  - all 52 live SVG feature images under `static/images/features/...`
+  - proof of live-file replacement:
+    - `git diff --name-only -- static/images/features | Measure-Object -Line` returned `52`
+    - `git status --short -- static/images/features | Measure-Object -Line` returned `52`
+  - representative priority assets directly verified after regeneration:
+    - `static/images/features/workflows/freelance-client-workflow-system.svg`
+    - `static/images/features/hubs/client-workflow-systems.svg`
+    - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+    - `static/images/features/comparisons/crm-vs-project-management.svg`
+    - `static/images/features/templates/approval-feedback-routing-worksheet.svg` (used to confirm long-title wrapping and label spacing)
+- Design/artwork improvements applied across the set:
+  - standardized each category around a calmer editorial diagram system with larger labels, clearer blocks, stronger internal padding, and fewer micro elements
+  - kept text inside the artwork, but reduced it to short labels only and removed the cramped mini-dashboard feel from the live SVG set
+  - aligned headings, cards, comparison panels, stage blocks, and supporting rails to a more consistent grid so the homepage cards and page headers now read as one family
+  - added two-line title rendering for long template/reference names so they no longer stretch awkwardly across the top frame
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1 -DryRun`
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1` successfully
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after regeneration
+  - confirmed the built homepage still references the four priority live SVGs in `public/index.html`:
+    - `/images/features/workflows/freelance-client-workflow-system.svg`
+    - `/images/features/hubs/client-workflow-systems.svg`
+    - `/images/features/blueprints/solo-freelancer-lean-budget.svg`
+    - `/images/features/comparisons/crm-vs-project-management.svg`
+  - confirmed representative generated article/header pages still reference stable feature-image filenames with no broken image paths
+  - directly inspected representative regenerated SVG source files and verified larger font sizes, wrapped long titles where needed, shorter labels, and wider internal spacing instead of the previous cramped layouts
+  - attempted screenshot-style homepage verification, but this machine does not currently have a working lightweight local static server path for a reliable headless homepage capture; direct SVG inspection plus generated HTML reference verification was used instead of claiming a visual check that did not actually run
+- Any images still needing manual design review:
+  - none identified as blocked or still using the old broken compositions after this full regeneration pass
+- Commit message used: `Replace feature images with aligned artwork`
+- Push result:
+  - pending

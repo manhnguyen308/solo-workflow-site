@@ -1,14 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">FAQ hub illustration</title>
-  <desc id="desc">An editorial illustration showing concise answer cards, question prompts, and routing cues for support FAQ pages.</desc>
-  <rect width="1600" height="900" fill="#f7fafc"/><circle cx="1280" cy="210" r="150" fill="#e6eef7"/>
-  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">FAQ</text><rect x="188" y="226" width="112" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="188" y="308" width="350" height="322" rx="32" fill="#17355f"/><rect x="590" y="308" width="362" height="322" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1004" y="308" width="356" height="322" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
-  <text x="230" y="360" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Question</text><text x="632" y="360" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Answer</text><text x="1046" y="360" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Go next</text>
-  <path d="M230 414c0-20 18-36 42-36 23 0 40 13 40 33 0 14-8 22-22 30-12 7-18 13-18 24" stroke="#d6faf5" stroke-width="10" stroke-linecap="round" fill="none"/><circle cx="270" cy="536" r="8" fill="#d6faf5"/>
-  <rect x="632" y="404" width="220" height="16" rx="8" fill="#d8e5ec"/><rect x="632" y="438" width="254" height="16" rx="8" fill="#d8e5ec"/><rect x="632" y="492" width="210" height="40" rx="20" fill="#d8f3f1"/>
-  <text x="685" y="518" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">short answer</text>
-  <rect x="1046" y="404" width="206" height="42" rx="20" fill="#dfe9fb"/><rect x="1046" y="462" width="206" height="42" rx="20" fill="#fff0db"/>
-  <text x="1095" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">workflow page</text><text x="1098" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">blueprint page</text>
+  <title id="title">FAQ</title>
+  <desc id="desc">A SoloOpsGuide hubs feature image with readable labels and aligned workflow blocks for faq.</desc>
+  <defs><linearGradient id="hubs-faq-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fbfc" /><stop offset="100%" stop-color="#eef5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#hubs-faq-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">FAQ</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="604" y="344" width="392" height="176" rx="36" fill="#183b63" />
+  <text x="800" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef6ff">FAQ</text>
+  <rect x="316" y="308" width="212" height="86" rx="30" fill="#d8f3f1" /><rect x="1072" y="308" width="212" height="86" rx="30" fill="#dfe9fb" /><rect x="316" y="584" width="212" height="86" rx="30" fill="#fff0db" /><rect x="1072" y="584" width="212" height="86" rx="30" fill="#dff7e8" />
+  <path d="M528 351h76m468 0h76M528 627h76m468 0h76" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <text x="356" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Answers</text><text x="1118" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Breakdowns</text><text x="360" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Maintenance</text><text x="1110" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Stack fit</text>
 </svg>

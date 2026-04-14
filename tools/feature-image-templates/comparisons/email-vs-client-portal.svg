@@ -1,41 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Email versus client portal illustration</title>
-  <desc id="desc">An editorial comparison illustration showing email-first delivery on one side and a client portal review workflow on the other.</desc>
-  <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f8fafc" />
-      <stop offset="100%" stop-color="#eef8f7" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="290" cy="720" r="170" fill="#eaf4fb" />
-  <rect x="150" y="140" width="1300" height="620" rx="42" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-  <rect x="210" y="210" width="520" height="480" rx="30" fill="#102430" />
-  <rect x="870" y="210" width="520" height="480" rx="30" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="248" y="246" width="126" height="36" rx="18" fill="#d6faf5" opacity=".16" />
-  <text x="284" y="269" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#d6faf5">email</text>
-  <text x="248" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#d6faf5">Thread-based review</text>
-  <rect x="248" y="350" width="220" height="20" rx="10" fill="#d6faf5" opacity=".16" />
-  <rect x="248" y="400" width="444" height="74" rx="24" fill="#d6faf5" opacity=".12" />
-  <rect x="248" y="494" width="444" height="74" rx="24" fill="#d6faf5" opacity=".12" />
-  <rect x="248" y="588" width="444" height="74" rx="24" fill="#d6faf5" opacity=".12" />
-  <text x="280" y="434" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">deliverable sent</text>
-  <text x="280" y="528" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">approval reply</text>
-  <text x="280" y="622" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">manual logging</text>
-  <rect x="910" y="246" width="150" height="36" rx="18" fill="#d8f3f1" />
-  <text x="944" y="269" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#0f766e">portal</text>
-  <text x="910" y="332" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Shared review space</text>
-  <rect x="910" y="350" width="210" height="20" rx="10" fill="#173042" opacity=".12" />
-  <rect x="910" y="404" width="210" height="44" rx="18" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="1140" y="404" width="210" height="44" rx="18" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="910" y="466" width="440" height="146" rx="24" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="944" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">files</text>
-  <text x="1176" y="432" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">review</text>
-  <text x="944" y="504" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">client workspace</text>
-  <rect x="944" y="524" width="164" height="14" rx="7" fill="#173042" opacity=".12" />
-  <rect x="944" y="552" width="136" height="14" rx="7" fill="#173042" opacity=".08" />
-  <rect x="944" y="584" width="122" height="26" rx="13" fill="#ecfdf3" />
-  <text x="972" y="602" font-family="Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" fill="#15803d">approved</text>
-  <path d="M730 450h140" stroke="#c9934a" stroke-width="8" stroke-linecap="round" />
-  <path d="M820 450l-16-16m16 16l-16 16" stroke="#c9934a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <title id="title">Email vs portal</title>
+  <desc id="desc">A SoloOpsGuide comparisons feature image with readable labels and aligned workflow blocks for email vs portal.</desc>
+  <defs><linearGradient id="comparisons-email-vs-client-portal-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf7f0" /><stop offset="100%" stop-color="#f0f5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#comparisons-email-vs-client-portal-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Email vs portal</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="#17355f" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="#d8f3f1" /><rect x="908" y="334" width="180" height="52" rx="26" fill="#dfe9fb" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0f8b8d">Inbox</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">Portal</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="#fff1db" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="#dff7e8" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Search</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Visibility</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="#fff1db" /><rect x="974" y="590" width="308" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
 </svg>

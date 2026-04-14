@@ -1,51 +1,20 @@
-<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
-  <rect x="140" y="148" width="548" height="604" rx="34" fill="#F7F9FC" opacity=".97"/>
-  <rect x="912" y="148" width="548" height="604" rx="34" fill="#F7F9FC" opacity=".97"/>
-  <text x="198" y="228" fill="#0F2E4F" font-family="Georgia, serif" font-size="42">all-in-one</text>
-  <text x="970" y="228" fill="#0F2E4F" font-family="Georgia, serif" font-size="42">specialized stack</text>
-
-  <rect x="198" y="278" width="432" height="350" rx="28" fill="#EAF1F8"/>
-  <text x="252" y="338" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="30">one main workspace</text>
-  <rect x="252" y="384" width="142" height="46" rx="15" fill="#9EBDF2"/>
-  <text x="286" y="414" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">intake</text>
-  <rect x="414" y="384" width="142" height="46" rx="15" fill="#F7C566"/>
-  <text x="448" y="414" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">delivery</text>
-  <rect x="252" y="452" width="142" height="46" rx="15" fill="#D7E3EF"/>
-  <text x="286" y="482" fill="#46627E" font-family="Arial, sans-serif" font-size="24">notes</text>
-  <rect x="414" y="452" width="142" height="46" rx="15" fill="#D7E3EF"/>
-  <text x="450" y="482" fill="#46627E" font-family="Arial, sans-serif" font-size="24">billing</text>
-  <rect x="252" y="540" width="252" height="18" rx="9" fill="#C8D5E5"/>
-  <rect x="252" y="572" width="210" height="14" rx="7" fill="#C8D5E5"/>
-
-  <path d="M734 448H866" stroke="#F7C566" stroke-width="14" stroke-linecap="round" stroke-dasharray="10 18"/>
-  <path d="M842 412L890 448L842 484" stroke="#F7C566" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <rect x="970" y="284" width="170" height="118" rx="24" fill="#EAF1F8"/>
-  <rect x="1202" y="284" width="170" height="118" rx="24" fill="#EAF1F8"/>
-  <rect x="1086" y="444" width="170" height="118" rx="24" fill="#EAF1F8"/>
-  <rect x="970" y="604" width="170" height="118" rx="24" fill="#EAF1F8"/>
-  <rect x="1202" y="604" width="170" height="118" rx="24" fill="#EAF1F8"/>
-  <text x="1016" y="336" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">CRM</text>
-  <text x="1242" y="336" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">PM</text>
-  <text x="1124" y="496" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">docs</text>
-  <text x="1006" y="656" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">billing</text>
-  <text x="1234" y="656" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="24">booking</text>
-
-  <path d="M1140 344H1202" stroke="#7EA6E8" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1054 402V444" stroke="#7EA6E8" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1288 402V604" stroke="#7EA6E8" stroke-width="8" stroke-linecap="round"/>
-  <path d="M1140 664H1202" stroke="#7EA6E8" stroke-width="8" stroke-linecap="round"/>
-
-  <rect x="198" y="658" width="278" height="42" rx="14" fill="#173F68"/>
-  <text x="228" y="686" fill="#F7F9FC" font-family="Arial, sans-serif" font-size="22">lower maintenance, fewer handoffs</text>
-  <rect x="970" y="218" width="286" height="42" rx="14" fill="#173F68"/>
-  <text x="999" y="246" fill="#F7F9FC" font-family="Arial, sans-serif" font-size="22">deeper fit, more boundaries</text>
-
-  <defs>
-    <linearGradient id="bg" x1="102" y1="88" x2="1510" y2="814" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0F8794"/>
-      <stop offset="1" stop-color="#1C4E7C"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">All-in-one vs stack</title>
+  <desc id="desc">A SoloOpsGuide comparisons feature image with readable labels and aligned workflow blocks for all-in-one vs stack.</desc>
+  <defs><linearGradient id="comparisons-all-in-one-vs-specialized-stack-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#fbf7f0" /><stop offset="100%" stop-color="#f0f5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#comparisons-all-in-one-vs-specialized-stack-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">All-in-one vs stack</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="214" y="304" width="516" height="360" rx="36" fill="#17355f" />
+  <rect x="870" y="304" width="516" height="360" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="252" y="334" width="180" height="52" rx="26" fill="#d8f3f1" /><rect x="908" y="334" width="180" height="52" rx="26" fill="#dfe9fb" />
+  <text x="282" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#0f8b8d">Single app</text><text x="950" y="368" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#36589a">Specialized</text>
+  <rect x="252" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="476" y="438" width="192" height="86" rx="30" fill="#ffffff" opacity=".12" /><rect x="916" y="438" width="192" height="86" rx="30" fill="#fff1db" /><rect x="1140" y="438" width="192" height="86" rx="30" fill="#dff7e8" />
+  <text x="292" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Trade-offs</text><text x="514" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Routing</text><text x="958" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Control</text><text x="1176" y="490" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="318" y="590" width="308" height="54" rx="27" fill="#fff1db" /><rect x="974" y="590" width="308" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="352" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text><text x="998" y="626" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
 </svg>

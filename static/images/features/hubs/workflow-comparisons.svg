@@ -1,55 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Workflow comparisons hub illustration</title>
-  <desc id="desc">An editorial illustration using balanced option panels and simple decision markers for comparison pages.</desc>
-  <defs>
-    <linearGradient id="compare-hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbf7f0" />
-      <stop offset="100%" stop-color="#f1f6fb" />
-    </linearGradient>
-    <linearGradient id="compare-hub-panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17355f" />
-      <stop offset="100%" stop-color="#214b7d" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#compare-hub-bg)" />
-  <circle cx="1290" cy="180" r="152" fill="#f6ead6" />
-  <circle cx="258" cy="724" r="144" fill="#e2eef9" />
-
-  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
-
-  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Workflow comparisons</text>
-  <rect x="170" y="200" width="300" height="18" rx="9" fill="#173042" opacity=".12" />
-
-  <rect x="170" y="248" width="594" height="476" rx="38" fill="url(#compare-hub-panel)" />
-  <rect x="836" y="248" width="594" height="476" rx="38" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
-
-  <rect x="222" y="288" width="136" height="52" rx="26" fill="#d8f3f1" />
-  <text x="262" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f766e">A</text>
-  <rect x="884" y="288" width="136" height="52" rx="26" fill="#dfe9fb" />
-  <text x="926" y="322" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">B</text>
-
-  <rect x="222" y="390" width="224" height="176" rx="32" fill="#ffffff" opacity=".12" />
-  <rect x="478" y="390" width="224" height="176" rx="32" fill="#fff1db" />
-  <rect x="266" y="432" width="126" height="16" rx="8" fill="#d6faf5" opacity=".86" />
-  <rect x="266" y="462" width="154" height="16" rx="8" fill="#d6faf5" opacity=".52" />
-  <rect x="266" y="514" width="134" height="16" rx="8" fill="#d6faf5" opacity=".28" />
-  <rect x="526" y="448" width="122" height="18" rx="9" fill="#b8823f" opacity=".48" />
-  <rect x="526" y="486" width="102" height="18" rx="9" fill="#b8823f" opacity=".28" />
-
-  <rect x="222" y="610" width="480" height="52" rx="26" fill="#ffffff" opacity=".16" />
-  <rect x="300" y="627" width="124" height="18" rx="9" fill="#d6faf5" opacity=".7" />
-  <rect x="452" y="627" width="148" height="18" rx="9" fill="#d6faf5" opacity=".36" />
-
-  <rect x="886" y="390" width="212" height="80" rx="28" fill="#dfe9fb" />
-  <rect x="886" y="492" width="212" height="80" rx="28" fill="#fff0db" />
-  <rect x="1130" y="390" width="212" height="80" rx="28" fill="#dff7e8" />
-  <rect x="1130" y="492" width="212" height="80" rx="28" fill="#fee2e2" />
-  <rect x="952" y="422" width="80" height="16" rx="8" fill="#36589a" opacity=".68" />
-  <rect x="956" y="524" width="72" height="16" rx="8" fill="#8a5d27" opacity=".56" />
-  <rect x="1196" y="422" width="80" height="16" rx="8" fill="#18794e" opacity=".6" />
-  <rect x="1200" y="524" width="72" height="16" rx="8" fill="#b91c1c" opacity=".56" />
-
-  <rect x="964" y="610" width="300" height="52" rx="26" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
-  <rect x="1030" y="627" width="84" height="18" rx="9" fill="#c9d9e4" />
-  <rect x="1138" y="627" width="84" height="18" rx="9" fill="#c9d9e4" />
+  <title id="title">Workflow comparisons</title>
+  <desc id="desc">A SoloOpsGuide hubs feature image with readable labels and aligned workflow blocks for workflow comparisons.</desc>
+  <defs><linearGradient id="hubs-workflow-comparisons-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fbfc" /><stop offset="100%" stop-color="#eef5fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#hubs-workflow-comparisons-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Workflow comparisons</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="604" y="344" width="392" height="176" rx="36" fill="#183b63" />
+  <text x="800" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef6ff">Workflow comparisons</text>
+  <rect x="316" y="308" width="212" height="86" rx="30" fill="#d8f3f1" /><rect x="1072" y="308" width="212" height="86" rx="30" fill="#dfe9fb" /><rect x="316" y="584" width="212" height="86" rx="30" fill="#fff0db" /><rect x="1072" y="584" width="212" height="86" rx="30" fill="#dff7e8" />
+  <path d="M528 351h76m468 0h76M528 627h76m468 0h76" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+  <text x="356" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">CRM</text><text x="1118" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">PM</text><text x="360" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Booking</text><text x="1110" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Portal</text>
 </svg>

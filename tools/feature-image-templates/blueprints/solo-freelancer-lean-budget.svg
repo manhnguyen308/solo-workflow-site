@@ -1,62 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Solo freelancer lean budget blueprint illustration</title>
-  <desc id="desc">An editorial blueprint illustration using a simple stack map, upgrade path, and deferred add-on blocks for a lean solo setup.</desc>
-  <defs>
-    <linearGradient id="blueprint-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f6fafc" />
-      <stop offset="100%" stop-color="#eef4fb" />
-    </linearGradient>
-    <linearGradient id="blueprint-panel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#17355f" />
-      <stop offset="100%" stop-color="#234d82" />
-    </linearGradient>
-  </defs>
-  <rect width="1600" height="900" fill="url(#blueprint-bg)" />
-  <circle cx="1290" cy="164" r="150" fill="#e2eefb" />
-  <circle cx="286" cy="744" r="140" fill="#e8f5f2" />
-
+  <title id="title">Lean stack</title>
+  <desc id="desc">A SoloOpsGuide blueprints feature image with readable labels and aligned workflow blocks for lean stack.</desc>
+  <defs><linearGradient id="blueprints-solo-freelancer-lean-budget-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f6fafc" /><stop offset="100%" stop-color="#eef4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#blueprints-solo-freelancer-lean-budget-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
   <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
-
-  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Stack blueprint</text>
-  <rect x="170" y="200" width="232" height="18" rx="9" fill="#173042" opacity=".12" />
-
-  <rect x="170" y="248" width="1260" height="122" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="228" y="276" width="188" height="64" rx="32" fill="#d8f3f1" />
-  <rect x="454" y="276" width="188" height="64" rx="32" fill="#dfe9fb" />
-  <rect x="680" y="276" width="188" height="64" rx="32" fill="#fff0db" />
-  <rect x="946" y="268" width="356" height="80" rx="40" fill="#ecf8f2" />
-  <path d="M416 308h38m188 0h38m188 0h38" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
-  <path d="M902 308h24" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
-  <text x="252" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Lean stack</text>
-  <text x="720" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Billing</text>
-  <text x="1020" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Add-ons</text>
-
-  <rect x="170" y="410" width="712" height="324" rx="38" fill="url(#blueprint-panel)" />
-  <rect x="246" y="476" width="560" height="74" rx="30" fill="#ffffff" opacity=".12" />
-  <rect x="246" y="572" width="250" height="84" rx="30" fill="#d8f3f1" />
-  <rect x="530" y="572" width="276" height="84" rx="30" fill="#dfe9fb" />
-  <text x="276" y="462" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Core stack</text>
-  <text x="292" y="626" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#0f766e">Client hub</text>
-  <text x="584" y="626" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#36589a">Docs + notes</text>
-  <rect x="308" y="505" width="198" height="16" rx="8" fill="#eef6ff" opacity=".86" />
-  <rect x="532" y="505" width="170" height="16" rx="8" fill="#eef6ff" opacity=".48" />
-  <rect x="312" y="605" width="118" height="18" rx="9" fill="#0f766e" opacity=".88" />
-  <rect x="586" y="605" width="148" height="18" rx="9" fill="#36589a" opacity=".86" />
-  <circle cx="742" cy="614" r="18" fill="#ffffff" opacity=".48" />
-
-  <rect x="924" y="410" width="506" height="324" rx="38" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="990" y="474" width="142" height="96" rx="30" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="1160" y="474" width="142" height="96" rx="30" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="1074" y="612" width="144" height="74" rx="28" fill="#fff1db" />
-  <text x="1012" y="460" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#334b5c">Upgrade path</text>
-  <text x="1010" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Trigger</text>
-  <text x="1188" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Wait</text>
-  <text x="1082" y="660" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Add-ons</text>
-  <path d="M1132 522h28M1232 522h28" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M1146 538l14-16m-14 16l14 16M1246 538l14-16m-14 16l14 16" stroke="#0f8b8d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
-  <rect x="1018" y="506" width="88" height="14" rx="7" fill="#c9d9e4" />
-  <rect x="1188" y="506" width="88" height="14" rx="7" fill="#c9d9e4" />
-  <rect x="1110" y="642" width="72" height="14" rx="7" fill="#b8823f" opacity=".6" />
-  <rect x="990" y="642" width="86" height="18" rx="9" fill="#fee2e2" />
-  <rect x="1218" y="642" width="86" height="18" rx="9" fill="#dff7e8" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">Lean stack</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#122838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="228" y="310" width="980" height="102" rx="34" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="260" y="454" width="562" height="210" rx="36" fill="#17355f" />
+  <rect x="856" y="454" width="486" height="210" rx="36" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="284" y="332" width="204" height="58" rx="29" fill="#d8f3f1" /><rect x="520" y="332" width="204" height="58" rx="29" fill="#dfe9fb" /><rect x="756" y="332" width="184" height="58" rx="29" fill="#fff0db" /><rect x="972" y="332" width="188" height="58" rx="29" fill="#ecf8f2" />
+  <text x="330" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1d7f84">Core stack</text><text x="568" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Client hub</text><text x="806" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Billing</text><text x="1016" y="369" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Add-ons</text>
+  <text x="316" y="514" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Core stack</text><rect x="316" y="548" width="192" height="18" rx="9" fill="#eef6ff" opacity=".82" /><rect x="316" y="584" width="234" height="18" rx="9" fill="#eef6ff" opacity=".46" />
+  <text x="926" y="514" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Upgrade path</text><rect x="926" y="548" width="170" height="18" rx="9" fill="#c9d9e4" /><rect x="926" y="584" width="196" height="18" rx="9" fill="#c9d9e4" opacity=".62" />
 </svg>

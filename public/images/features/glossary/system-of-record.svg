@@ -1,12 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">System of record illustration</title>
-  <desc id="desc">An editorial glossary illustration showing one primary system connected to secondary tools and ownership rules.</desc>
-  <rect width="1600" height="900" fill="#f8fafc"/><circle cx="1286" cy="210" r="150" fill="#e6eef7"/>
-  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">System of record</text><rect x="248" y="220" width="210" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="248" y="300" width="300" height="280" rx="32" fill="#17355f"/><rect x="650" y="358" width="300" height="120" rx="30" fill="#d8f3f1"/><rect x="1052" y="300" width="240" height="280" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
-  <text x="290" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Primary</text><text x="708" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#0f766e">truth lives here</text><text x="1092" y="350" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Other tools</text>
-  <rect x="290" y="410" width="170" height="40" rx="20" fill="#d6faf5" opacity=".2"/><text x="331" y="436" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">client status</text>
-  <path d="M548 440h102m300 0h102" stroke="#b8c9d6" stroke-width="8" stroke-linecap="round"/>
-  <rect x="1092" y="410" width="120" height="36" rx="18" fill="#dfe9fb"/><rect x="1092" y="462" width="120" height="36" rx="18" fill="#fff0db"/><text x="1130" y="433" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#36589a">docs</text><text x="1122" y="485" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#8a5d27">billing</text>
+  <title id="title">System Of Record</title>
+  <desc id="desc">A SoloOpsGuide glossary feature image with readable labels and aligned workflow blocks for system of record.</desc>
+  <defs><linearGradient id="glossary-system-of-record-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fafc" /><stop offset="100%" stop-color="#edf4fb" /></linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#glossary-system-of-record-svg-bg)" />
+  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
+  <circle cx="286" cy="744" r="140" fill="#dceefa" opacity=".8" />
+  <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">System Of Record</text>
+  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
+  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <circle cx="410" cy="492" r="144" fill="#17355f" />
+  <text x="410" y="486" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Source</text><text x="410" y="526" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#d9eef7">Key term</text>
+  <rect x="696" y="340" width="520" height="84" rx="30" fill="#dceefa" /><rect x="696" y="458" width="520" height="84" rx="30" fill="#dfe9fb" /><rect x="696" y="576" width="520" height="84" rx="30" fill="#fff1db" />
+  <path d="M554 492h114" stroke="#216f8a" stroke-width="10" stroke-linecap="round" />
+  <text x="742" y="392" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#216f8a">Truth</text><text x="742" y="510" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Rules</text><text x="742" y="628" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Sync</text>
 </svg>
