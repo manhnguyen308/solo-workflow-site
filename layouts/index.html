@@ -1,9 +1,12 @@
 {{ define "main" }}
-{{ $workflowAnchor := .Site.GetPage "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/" }}
-{{ $blueprintAnchor := .Site.GetPage "/guides/software-stack-blueprint-solo-freelancer-lean-budget/" }}
-{{ $comparisonAnchor := .Site.GetPage "/comparisons/crm-vs-project-management-tool-for-client-workflows/" }}
-{{ $priorityBlueprint := .Site.GetPage "/guides/software-stack-blueprint-solo-freelancer-lean-budget/" }}
-{{ $priorityWorkflowHub := .Site.GetPage "/client-workflow-systems" }}
+{{ $workflowAnchorPages := where .Site.RegularPages "RelPermalink" "eq" "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/" }}
+{{ $blueprintAnchorPages := where .Site.RegularPages "RelPermalink" "eq" "/guides/software-stack-blueprint-solo-freelancer-lean-budget/" }}
+{{ $comparisonAnchorPages := where .Site.RegularPages "RelPermalink" "eq" "/comparisons/crm-vs-project-management-tool-for-client-workflows/" }}
+{{ $workflowAnchor := cond (gt (len $workflowAnchorPages) 0) (index $workflowAnchorPages 0) nil }}
+{{ $blueprintAnchor := cond (gt (len $blueprintAnchorPages) 0) (index $blueprintAnchorPages 0) nil }}
+{{ $comparisonAnchor := cond (gt (len $comparisonAnchorPages) 0) (index $comparisonAnchorPages 0) nil }}
+{{ $priorityBlueprint := $blueprintAnchor }}
+{{ $priorityWorkflowHub := .Site.GetPage "section" "client-workflow-systems" }}
 {{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons")) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}

@@ -225,3 +225,26 @@ After each future pass, add a short section with:
   - no feature-image asset regeneration was required in this pass because the root cause was framing inconsistency, not a broad asset-composition failure
 - Commit message used: `Polish feature image consistency`
 - Push result: `git push origin main` succeeded
+
+## Homepage regression fix after feature image pass - 2026-04-14
+
+- What was found:
+  - the homepage template still contained the expected hero, editorial, resource, and `Start Here` sections, so the missing homepage pieces were not removed from the template structure itself
+  - the actual regression was that several homepage priority-page lookups no longer resolved during homepage rendering, which caused the featured workflow card and three of the four `Start Here` cards to disappear from the built HTML
+  - the shared `16:9` feature-image framing from the earlier pass was not the direct cause of the missing homepage content; it stayed safe to preserve for cards, homepage editorial cards, hub hero media, and article headers
+- What was fixed:
+  - replaced the homepage priority-page lookups for the workflow anchor, lean blueprint, and CRM-vs-PM comparison with stable `RelPermalink`-based page resolution against `.Site.RegularPages`
+  - replaced the homepage workflow-hub lookup with explicit section resolution via `.Site.GetPage "section" "client-workflow-systems"` so the hub card resolves reliably
+  - kept the useful `16:9` image-consistency rules in place rather than reverting the broader framing pass
+- Why it was fixed:
+  - the homepage should not depend on brittle page lookups that silently fail and remove key onboarding sections from the rendered output
+  - using stable rendered-URL and section resolution restores the missing homepage content without rolling back the valid image-consistency improvements
+- Which files/assets changed:
+  - `layouts/index.html`
+  - `TRACKER.md`
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the template fix
+  - inspected generated `public/index.html` and confirmed the homepage hero feature card renders again
+  - confirmed generated homepage output still includes the editorial section, resource grid, footer CTA, and all four `Start Here` cards
+  - confirmed homepage cards continue using the shared `page-card-media` framing and the editorial cards continue using the shared `homepage-editorial-media` framing
+  - confirmed the priority workflow, blueprint, and comparison links now render on the homepage with their expected final URLs
