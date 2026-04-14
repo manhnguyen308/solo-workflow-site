@@ -487,3 +487,39 @@ After each future pass, add a short section with:
 - Commit message used: `Replace feature images with aligned artwork`
 - Push result:
   - `git push origin main` succeeded
+
+## Feature image label alignment repair - 2026-04-15
+
+- Root cause of the remaining label overlap/misalignment:
+  - the SVG workflow had drifted away from the rule in `AGENT.md`: `tools/generate-feature-images.ps1` was regenerating SVGs from shared code and then overwriting the template files, so the real editable source of truth in `tools/feature-image-templates/` was effectively bypassed
+  - that shared renderer reused the same line positions and text zones too aggressively, which is why some connectors sat in the same visual band as labels and some cards felt sparse while others felt cramped
+- What changed:
+  - restored the SVG workflow so the script now reads the checked-in template SVGs from `tools/feature-image-templates/` and regenerates the live files in `static/images/features/` from those templates instead of rewriting the templates from code
+  - fully redesigned the four priority templates with cleaner spacing, larger labels, safer title placement, and connector lines moved below label zones so text is not crossed by the flow marks
+  - kept filenames stable and left the rest of the site structure, content, and CSS untouched
+- Templates changed:
+  - `tools/feature-image-templates/workflows/freelance-client-workflow-system.svg`
+  - `tools/feature-image-templates/hubs/client-workflow-systems.svg`
+  - `tools/feature-image-templates/blueprints/solo-freelancer-lean-budget.svg`
+  - `tools/feature-image-templates/comparisons/crm-vs-project-management.svg`
+- Live image files changed:
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - regenerated matching copies under `public/images/features/...`
+  - proof of live-file change:
+    - `git diff --name-only -- static/images/features | Measure-Object -Line` returned `4`
+    - `git diff --name-only -- tools/feature-image-templates | Measure-Object -Line` returned `4`
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1` successfully
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - confirmed `public/index.html` still references the four refreshed homepage card images with stable filenames and no broken image paths
+  - confirmed representative hub/article output still references the refreshed blueprint, workflow, and comparison assets
+  - directly inspected the regenerated SVG source files and verified connector lines now sit below the main label baselines in the repaired designs rather than crossing through label text
+  - attempted file-based screenshot capture for homepage review; the page-level `file:///` render is not reliable enough for full layout validation, so final visual verification relied on the regenerated SVG sources plus generated HTML reference checks instead of overstating a broken screenshot path
+- Any remaining image needing manual redesign:
+  - none identified in this pass beyond the four priority templates repaired here
+- Commit message used: `Fix feature image label alignment`
+- Push result:
+  - pending

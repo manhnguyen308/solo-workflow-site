@@ -83,6 +83,19 @@ Read this file first for any future Codex pass in this repo. It contains the dur
   - one clear downstream next step.
 - Strengthen homepage -> hub -> cornerstone routing before widening support links.
 
+## Feature image workflow
+
+- All feature images must be created, edited, replaced, or regenerated through the repo’s feature image workflow in `tools/generate-feature-images.ps1`.
+- The source of truth for feature artwork is `tools/feature-image-templates/`.
+- Live images served from `static/images/features/` must be regenerated from those templates, not manually patched as final-only assets.
+- Feature images must keep filenames stable where possible to avoid unnecessary front matter churn.
+- Every feature image change must verify:
+  - the generation script runs successfully
+  - the affected files in `static/images/features/` actually changed
+  - the Hugo build succeeds
+  - homepage/card/page-header rendering uses the corrected images
+- Do not report success based only on template coverage or file counts. Confirm the actual rendered image quality.
+
 ## Content decision rules by page type
 
 ### Workflows

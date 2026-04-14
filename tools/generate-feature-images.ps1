@@ -783,14 +783,12 @@ foreach($s in $specs){
 
 foreach($s in $svgSpecs){
   $path = Join-Path $svgOut $s.path
-  $templatePath = Join-Path $svgTemplateRoot $s.path
   if($DryRun){
-    Write-Output "DRY RUN: would generate $path and refresh $templatePath"
+    Write-Output "DRY RUN: would generate $path from $($s.template)"
     continue
   }
 
-  $svg = New-FeatureSvg $s.path
-  Write-Utf8NoBom $templatePath $svg
+  $svg = Get-Content -Path $s.template -Raw
   Write-Utf8NoBom $path $svg
 }
 
@@ -800,4 +798,4 @@ if($DryRun){
 }
 
 Write-Output "Generated $($specs.Count) PNG feature image sources in $out"
-Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut and refreshed templates in $svgTemplateRoot"
+Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut from $svgTemplateRoot"

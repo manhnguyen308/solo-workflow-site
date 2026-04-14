@@ -1,17 +1,41 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-  <title id="title">Workflow systems</title>
-  <desc id="desc">A SoloOpsGuide hubs feature image with readable labels and aligned workflow blocks for workflow systems.</desc>
-  <defs><linearGradient id="hubs-client-workflow-systems-svg-bg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f7fbfc" /><stop offset="100%" stop-color="#eef5fb" /></linearGradient></defs>
-  <rect width="1600" height="900" fill="url(#hubs-client-workflow-systems-svg-bg)" />
-  <circle cx="1290" cy="164" r="150" fill="#dfe9fb" opacity=".6" />
-  <circle cx="286" cy="744" r="140" fill="#d8f3f1" opacity=".8" />
+  <title id="title">Client workflow systems hub</title>
+  <desc id="desc">A balanced hub diagram showing the four major client workflow stages orbiting a central workflow systems panel with readable labels and clear spacing.</desc>
+  <defs>
+    <linearGradient id="hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7fbfc" />
+      <stop offset="100%" stop-color="#eef5fb" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#hub-bg)" />
+  <circle cx="1288" cy="164" r="150" fill="#dfe9fb" opacity=".66" />
+  <circle cx="288" cy="744" r="140" fill="#d8f3f1" opacity=".82" />
+
   <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
-  <text x="170" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Workflow systems</text>
-  <rect x="170" y="200" width="250" height="18" rx="9" fill="#132838" opacity=".10" />
-  <rect x="170" y="250" width="1260" height="486" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="604" y="344" width="392" height="176" rx="36" fill="#183b63" />
-  <text x="800" y="412" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#eef6ff">Workflow systems</text>
-  <rect x="316" y="308" width="212" height="86" rx="30" fill="#d8f3f1" /><rect x="1072" y="308" width="212" height="86" rx="30" fill="#dfe9fb" /><rect x="316" y="584" width="212" height="86" rx="30" fill="#fff0db" /><rect x="1072" y="584" width="212" height="86" rx="30" fill="#dff7e8" />
-  <path d="M528 351h76m468 0h76M528 627h76m468 0h76" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
-  <text x="356" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Intake</text><text x="1118" y="360" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Delivery</text><text x="360" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Billing</text><text x="1110" y="636" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Offboarding</text>
+  <text x="170" y="182" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#132838">Workflow systems</text>
+  <rect x="170" y="198" width="246" height="18" rx="9" fill="#132838" opacity=".10" />
+
+  <rect x="170" y="246" width="1260" height="492" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+
+  <rect x="582" y="322" width="436" height="196" rx="40" fill="#183b63" />
+  <text x="800" y="396" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#eef6ff">Workflow systems</text>
+  <rect x="690" y="426" width="220" height="18" rx="9" fill="#eef6ff" opacity=".42" />
+  <rect x="714" y="462" width="172" height="18" rx="9" fill="#eef6ff" opacity=".26" />
+
+  <rect x="256" y="304" width="224" height="110" rx="32" fill="#d8f3f1" />
+  <rect x="1120" y="304" width="224" height="110" rx="32" fill="#dfe9fb" />
+  <rect x="256" y="560" width="224" height="110" rx="32" fill="#fff0db" />
+  <rect x="1120" y="560" width="224" height="110" rx="32" fill="#dff7e8" />
+
+  <path d="M480 358h74m464 0h102M480 614h74m464 0h102" stroke="#0f766e" stroke-width="10" stroke-linecap="round" />
+
+  <text x="314" y="370" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#0f766e">Intake</text>
+  <text x="1172" y="370" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#36589a">Delivery</text>
+  <text x="314" y="626" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#8a5d27">Billing</text>
+  <text x="1144" y="626" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#18794e">Offboarding</text>
+
+  <rect x="314" y="386" width="112" height="14" rx="7" fill="#0f766e" opacity=".18" />
+  <rect x="1172" y="386" width="128" height="14" rx="7" fill="#36589a" opacity=".18" />
+  <rect x="314" y="642" width="114" height="14" rx="7" fill="#8a5d27" opacity=".18" />
+  <rect x="1144" y="642" width="132" height="14" rx="7" fill="#18794e" opacity=".18" />
 </svg>
