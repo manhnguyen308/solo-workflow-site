@@ -74,9 +74,10 @@
           <p>pages in this hub</p>
         </div>
         {{ with $featuredPage }}
+        {{ $featuredTrackLabel := replaceRE "^.*/([^/]+)/?$" "$1" .RelPermalink }}
         <div class="section-featured-link">
           <span>{{ if gt (len $priorityPages) 0 }}Priority page{{ else }}Recommended page{{ end }}</span>
-          <a href="{{ .RelPermalink }}" data-track="hub_featured_click" data-track-location="section-hero" data-track-label="{{ .File.TranslationBaseName | default (.Title | urlize) }}">{{ .Title }}</a>
+          <a href="{{ .RelPermalink }}" data-track="hub_featured_click" data-track-location="section-hero" data-track-label="{{ $featuredTrackLabel }}">{{ .Title }}</a>
         </div>
         {{ end }}
       </aside>

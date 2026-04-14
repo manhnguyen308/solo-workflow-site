@@ -1,12 +1,10 @@
 {{ define "main" }}
-{{ $workflowAnchor := .Site.GetPage "/client-workflow-systems/sample-client-workflow" }}
-{{ $blueprintAnchor := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
-{{ $comparisonAnchor := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
-{{ $priorityBlueprint := .Site.GetPage "/software-stack-blueprints/sample-stack-blueprint" }}
+{{ $workflowAnchor := .Site.GetPage "/workflows/freelance-client-workflow-system-inquiry-to-final-payment/" }}
+{{ $blueprintAnchor := .Site.GetPage "/guides/software-stack-blueprint-solo-freelancer-lean-budget/" }}
+{{ $comparisonAnchor := .Site.GetPage "/comparisons/crm-vs-project-management-tool-for-client-workflows/" }}
+{{ $priorityBlueprint := .Site.GetPage "/guides/software-stack-blueprint-solo-freelancer-lean-budget/" }}
 {{ $priorityWorkflowHub := .Site.GetPage "/client-workflow-systems" }}
-{{ $priorityDecisionA := .Site.GetPage "/workflow-comparisons/sample-crm-vs-pm" }}
-{{ $priorityDecisionB := .Site.GetPage "/software-stack-blueprints/how-to-choose-a-software-stack-without-overbuying-tools" }}
-{{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons" "templates-checklists")) }}
+{{ $latest := first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons")) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}
@@ -23,6 +21,7 @@
 {{ end }}
 {{ $workflowLeadLabel := "Read workflow" }}
 {{ $blueprintLeadLabel := "Open blueprint" }}
+{{ $workflowTrackLabel := partial "track-label.html" $workflowAnchor }}
 <div class="homepage-mockup">
   <section class="homepage-hero">
     <div class="wrap homepage-hero-inner">
@@ -48,7 +47,7 @@
           <span>{{ .Params.page_type | default "Guide" | title }}</span>
           <span>{{ .Date.Format "Jan 2006" }}</span>
         </div>
-        <a class="homepage-inline-link" href="{{ .RelPermalink }}" data-track="cta_click" data-track-location="homepage-featured" data-track-label="{{ .File.TranslationBaseName | default (.Title | urlize) }}">{{ $featureLinkLabel }} <span aria-hidden="true">&rarr;</span></a>
+        <a class="homepage-inline-link" href="{{ .RelPermalink }}" data-track="cta_click" data-track-location="homepage-featured" data-track-label="{{ $workflowTrackLabel }}">{{ $featureLinkLabel }} <span aria-hidden="true">&rarr;</span></a>
       </aside>
       {{ end }}
     </div>

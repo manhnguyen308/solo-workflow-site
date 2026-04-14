@@ -172,3 +172,33 @@ After each future pass, add a short section with:
 - Commit message used: `Improve trust and editorial clarity on site-information pages`
 - Push result: `git push origin main` succeeded.
 - Follow-up: no further trust-page cleanup is needed right now; there is still no standalone `/methodology/` page, which remains acceptable unless a later pass needs a clearer split from the policy pages.
+
+## Narrow crawl and indexability audit - 2026-04-14
+
+- Files changed: `layouts/index.html`, `layouts/_default/list.html`, `layouts/partials/page-card.html`, `layouts/partials/track-label.html`, `TRACKER.md`
+- What was checked:
+  - sitemap generation and inclusion of `/client-workflow-systems/`, `/workflows/freelance-client-workflow-system-inquiry-to-final-payment/`, `/guides/software-stack-blueprint-solo-freelancer-lean-budget/`, and `/comparisons/crm-vs-project-management-tool-for-client-workflows/`
+  - generated `robots.txt`
+  - canonical and meta robots output on the workflow hub plus the three priority leaf pages
+  - homepage and hub reachability for the priority URLs
+  - old assumed slug references for `sample-client-workflow`, `sample-stack-blueprint`, and `sample-crm-vs-pm`
+  - unexpected public taxonomy/archive exposure; `public/terms/` remains the intended legal Terms page, not a taxonomy page
+- What was fixed:
+  - changed homepage priority-page lookups from old internal `sample-*` content references to the final public URLs so cornerstone links resolve from the same canonical paths Google sees
+  - narrowed the homepage "Newer guides" strip to workflow, blueprint, and comparison sections only so support assets are not promoted ahead of cornerstone operational pages in a key crawl path
+  - replaced file-name-derived tracking labels in homepage cards, hub cards, and hub featured links with final URL-derived labels so old sample slugs no longer leak into rendered public HTML
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully multiple times after edits
+  - confirmed `public/sitemap.xml` includes all four priority URLs
+  - confirmed `public/robots.txt` is `Allow: /` with the production sitemap reference
+  - confirmed canonical and meta robots on the priority hub/page outputs are canonical to their final URLs and `index,follow`
+  - confirmed homepage, workflow hub, blueprint hub, and comparison hub all link to the relevant priority pages on final URLs
+  - confirmed repo/public grep for `sample-client-workflow`, `sample-stack-blueprint`, and `sample-crm-vs-pm` no longer shows those values in rendered crawl paths or tracking labels
+- Current GSC interpretation:
+  - the site still looks technically indexable, and this pass did not uncover a hard crawl blocker such as `noindex`, robots blocking, broken canonicals, or wrong final URLs on the priority set
+  - the remaining likely issue is crawl/index prioritization rather than indexability failure; the homepage and hub signals are now cleaner and less support-heavy, which should make the intended first-index cluster easier for Google to prioritize
+- Commit message planned: `Tighten crawl signals for priority index pages`
+- Push status: pending post-commit push attempt
+- Follow-up:
+  - watch whether `/client-workflow-systems/` and the workflow anchor move out of discovered-not-indexed before broadening scope again
+  - if GSC still favors support pages after this pass, the next audit should stay narrow and compare internal-link prominence on already indexed support URLs versus the workflow hub and anchor

@@ -1,0 +1,14 @@
+{{- $page := . -}}
+{{- $label := "" -}}
+{{- with $page.RelPermalink -}}
+  {{- $label = replaceRE "^.*/([^/]+)/?$" "$1" . -}}
+{{- end -}}
+{{- if or (not $label) (eq $label "/") (eq $label "_index") -}}
+  {{- with $page.File -}}
+    {{- $label = .TranslationBaseName -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $label -}}
+  {{- $label = $page.Title | urlize -}}
+{{- end -}}
+{{- $label -}}
