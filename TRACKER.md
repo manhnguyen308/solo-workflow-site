@@ -248,3 +248,5 @@ After each future pass, add a short section with:
   - confirmed generated homepage output still includes the editorial section, resource grid, footer CTA, and all four `Start Here` cards
   - confirmed homepage cards continue using the shared `page-card-media` framing and the editorial cards continue using the shared `homepage-editorial-media` framing
   - confirmed the priority workflow, blueprint, and comparison links now render on the homepage with their expected final URLs
+- Commit message used: `Fix homepage regression from feature image framing`
+- Push result: `git push origin main` succeeded
