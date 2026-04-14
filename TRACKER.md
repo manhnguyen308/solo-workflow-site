@@ -335,3 +335,32 @@ After each future pass, add a short section with:
   - confirmed no homepage sections disappeared during the build verification pass
 - Commit message used: `Simplify feature images for card readability`
 - Push result: `git push origin main` succeeded
+
+## Feature image label readability refinement - 2026-04-14
+
+- What text/label issues were fixed:
+  - the latest simplification pass restored cleaner geometry, but some of the remaining labels were still either too generic, too few, or too small to carry the concept clearly at homepage card size
+  - stage names, block labels, and comparison labels needed to stay in the art, but they had to become shorter, larger, and more structurally aligned so they read as part of the diagram instead of leftover UI text
+- What was preserved:
+  - kept the simpler diagram system from the prior pass: calmer layouts, larger shapes, wider safe margins, stable filenames, and no CSS/layout rewiring
+  - preserved in-image text as part of the visualization instead of removing it, especially for the workflow stages, stack/upgrade cues, and the CRM-vs-PM comparison split
+- What changed:
+  - refined the four priority SVGs so each keeps one short title plus a few larger labels with more padding and cleaner alignment
+  - reduced label count where needed, enlarged the labels that matter, and kept them away from edges and crowded intersections
+  - kept the diagrams visually descriptive with workflow blocks, stage flow, comparison panels, and upgrade/handoff cues while avoiding long sentences and tiny microcopy
+- Which files/assets changed:
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - regenerated matching copies under `public/images/features/...`
+- Source-generation files/scripts changed:
+  - none
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - checked the four priority images in a local card-size preview and confirmed text is still present while reading more cleanly at thumbnail scale
+  - inspected the generated homepage visually and confirmed the labels inside the four priority images remain present and more legible in the `Start Here` card grid
+  - inspected the generated homepage at a narrower/mobile width and confirmed no homepage sections disappeared during the pass
+  - confirmed the expected stable feature-image references remain in generated homepage and workflow-hub output with no broken image references
+- Commit message used: `Refine feature image labels for readability`
+- Push result: pending

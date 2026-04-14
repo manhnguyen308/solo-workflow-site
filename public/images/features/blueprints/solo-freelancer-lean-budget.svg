@@ -27,11 +27,17 @@
   <rect x="946" y="268" width="356" height="80" rx="40" fill="#ecf8f2" />
   <path d="M416 308h38m188 0h38m188 0h38" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
   <path d="M902 308h24" stroke="#0f8b8d" stroke-width="10" stroke-linecap="round" />
+  <text x="252" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Lean stack</text>
+  <text x="720" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Billing</text>
+  <text x="1020" y="320" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Add later</text>
 
   <rect x="170" y="410" width="712" height="324" rx="38" fill="url(#blueprint-panel)" />
   <rect x="246" y="476" width="560" height="74" rx="30" fill="#ffffff" opacity=".12" />
   <rect x="246" y="572" width="250" height="84" rx="30" fill="#d8f3f1" />
   <rect x="530" y="572" width="276" height="84" rx="30" fill="#dfe9fb" />
+  <text x="276" y="462" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#eef6ff">Core stack</text>
+  <text x="292" y="626" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#0f766e">Client hub</text>
+  <text x="584" y="626" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#36589a">Docs + notes</text>
   <rect x="308" y="505" width="198" height="16" rx="8" fill="#eef6ff" opacity=".86" />
   <rect x="532" y="505" width="170" height="16" rx="8" fill="#eef6ff" opacity=".48" />
   <rect x="312" y="605" width="118" height="18" rx="9" fill="#0f766e" opacity=".88" />
@@ -42,6 +48,10 @@
   <rect x="990" y="474" width="142" height="96" rx="30" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
   <rect x="1160" y="474" width="142" height="96" rx="30" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
   <rect x="1074" y="612" width="144" height="74" rx="28" fill="#fff1db" />
+  <text x="1012" y="460" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#334b5c">Upgrade path</text>
+  <text x="1010" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Trigger</text>
+  <text x="1188" y="532" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Delay</text>
+  <text x="1082" y="660" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Add-ons</text>
   <path d="M1132 522h28M1232 522h28" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
   <path d="M1146 538l14-16m-14 16l14 16M1246 538l14-16m-14 16l14 16" stroke="#0f8b8d" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
   <rect x="1018" y="506" width="88" height="14" rx="7" fill="#c9d9e4" />
