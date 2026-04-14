@@ -162,6 +162,16 @@ function Write-Utf8NoBom([string]$Path,[string]$Content){
   [System.IO.File]::WriteAllText($Path,$Content,$encoding)
 }
 
+function Get-RelativePathCompat([string]$BasePath,[string]$ChildPath){
+  $base = (Resolve-Path $BasePath).Path.TrimEnd('\','/')
+  $child = (Resolve-Path $ChildPath).Path
+  if($child.StartsWith($base,[System.StringComparison]::OrdinalIgnoreCase)){
+    return $child.Substring($base.Length).TrimStart('\','/')
+  }
+
+  throw "Unable to compute relative path for $ChildPath from $BasePath"
+}
+
 function Get-FeatureSvg([string]$scene){
   switch($scene){
     "workflow-lifecycle-svg" {
@@ -457,6 +467,7 @@ function Get-FeatureSvg([string]$scene){
 
 $out = Join-Path $PSScriptRoot "..\\assets\\images\\features"
 $svgOut = Join-Path $PSScriptRoot "..\\static\\images\\features"
+$svgTemplateRoot = Join-Path $PSScriptRoot "feature-image-templates"
 $specs = @(
   @{path="site/soloopsguide-home.png";palette="site";scene="home"},
   @{path="hubs/client-workflow-systems.png";palette="workflow";scene="hub-workflows"},
@@ -484,12 +495,18 @@ $specs = @(
   @{path="faq/solo-service-workflow-stack-faq.png";palette="support";scene="faq"}
 )
 
-$svgSpecs = @(
-  @{path="workflows/freelance-client-workflow-system.svg";scene="workflow-lifecycle-svg"},
-  @{path="hubs/client-workflow-systems.svg";scene="hub-workflows-svg"},
-  @{path="blueprints/solo-freelancer-lean-budget.svg";scene="blueprint-lean-svg"},
-  @{path="comparisons/crm-vs-project-management.svg";scene="comparison-crm-pm-svg"}
-)
+if(-not (Test-Path $svgTemplateRoot)){
+  throw "SVG template root not found: $svgTemplateRoot"
+}
+
+$svgSpecs = Get-ChildItem -Path $svgTemplateRoot -Recurse -File -Filter *.svg |
+  Sort-Object FullName |
+  ForEach-Object {
+    @{
+      template = $_.FullName
+      path = Get-RelativePathCompat $svgTemplateRoot $_.FullName
+    }
+  }
 
 foreach($s in $specs){
   $path=Join-Path $out $s.path
@@ -509,11 +526,11 @@ foreach($s in $specs){
 foreach($s in $svgSpecs){
   $path = Join-Path $svgOut $s.path
   if($DryRun){
-    Write-Output "DRY RUN: would generate $path"
+    Write-Output "DRY RUN: would generate $path from $($s.template)"
     continue
   }
 
-  $svg = Get-FeatureSvg $s.scene
+  $svg = Get-Content -Path $s.template -Raw
   Write-Utf8NoBom $path $svg
 }
 
@@ -523,4 +540,4 @@ if($DryRun){
 }
 
 Write-Output "Generated $($specs.Count) PNG feature image sources in $out"
-Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut"
+Write-Output "Generated $($svgSpecs.Count) SVG feature image sources in $svgOut from $svgTemplateRoot"

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Delivery QA checklist illustration</title>
+  <desc id="desc">An editorial checklist illustration showing QA checks, handoff review, and approval-ready delivery items.</desc>
+  <rect width="1600" height="900" fill="#f5fbfa"/><circle cx="1280" cy="210" r="150" fill="#def5ef"/>
+  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Delivery QA checklist</text><rect x="248" y="220" width="230" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="248" y="292" width="460" height="392" rx="32" fill="#0f8b8d"/><rect x="752" y="292" width="600" height="392" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="290" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">QA pass</text><text x="794" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Handoff package</text>
+  <circle cx="318" cy="414" r="12" fill="#d6faf5"/><circle cx="318" cy="482" r="12" fill="#d6faf5"/><circle cx="318" cy="550" r="12" fill="#fff0db"/>
+  <text x="352" y="420" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">review links</text><text x="352" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#d6faf5">test files</text><text x="352" y="556" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8a5d27">final notes</text>
+  <rect x="794" y="402" width="472" height="56" rx="22" fill="#fff" stroke="#d8e5ec" stroke-width="3"/><rect x="794" y="476" width="472" height="56" rx="22" fill="#fff" stroke="#d8e5ec" stroke-width="3"/><text x="840" y="436" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">deliverable + approval owner</text><text x="840" y="510" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">review window + next action</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Client offboarding template illustration</title>
+  <desc id="desc">An editorial template illustration showing closeout steps, testimonial request timing, and a clean project wrap-up document.</desc>
+  <rect width="1600" height="900" fill="#f5fbfa"/><circle cx="1288" cy="210" r="150" fill="#def5ef"/>
+  <rect x="188" y="120" width="1224" height="660" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="248" y="202" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Client offboarding</text><rect x="248" y="220" width="220" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="248" y="292" width="440" height="392" rx="32" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="736" y="292" width="616" height="392" rx="32" fill="#0f8b8d"/>
+  <text x="290" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Closeout note</text><text x="778" y="344" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#fff">Final steps</text>
+  <rect x="290" y="394" width="316" height="16" rx="8" fill="#d8e5ec"/><rect x="290" y="428" width="280" height="16" rx="8" fill="#d8e5ec"/><rect x="290" y="474" width="180" height="40" rx="20" fill="#fff0db"/><text x="336" y="500" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">summary</text>
+  <rect x="778" y="394" width="250" height="44" rx="22" fill="#d6faf5" opacity=".18"/><rect x="778" y="456" width="250" height="44" rx="22" fill="#d6faf5" opacity=".18"/><rect x="778" y="518" width="250" height="44" rx="22" fill="#fff0db" opacity=".95"/>
+  <text x="830" y="422" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">handoff files</text><text x="828" y="484" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#d6faf5">final invoice</text><text x="809" y="546" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">testimonial ask</text>
+</svg>

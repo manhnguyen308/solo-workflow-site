@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Client offboarding workflow illustration</title>
+  <desc id="desc">An editorial workflow illustration showing closeout, signoff, invoice state, testimonial timing, and archive decisions at the end of an engagement.</desc>
+  <defs>
+    <linearGradient id="offboard-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4fbfb" />
+      <stop offset="100%" stop-color="#eef4fb" />
+    </linearGradient>
+    <linearGradient id="offboard-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e8c99" />
+      <stop offset="100%" stop-color="#194b78" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#offboard-bg)" />
+  <circle cx="1288" cy="172" r="150" fill="#dcf2f2" />
+  <circle cx="252" cy="730" r="146" fill="#e4eef9" />
+  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Client offboarding workflow</text>
+  <rect x="156" y="208" width="292" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="156" y="258" width="1288" height="122" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <path d="M218 322H1382" stroke="#d6e7f6" stroke-width="8" stroke-linecap="round" />
+  <circle cx="250" cy="322" r="18" fill="#f7a928" />
+  <circle cx="478" cy="322" r="18" fill="#f7a928" />
+  <circle cx="706" cy="322" r="18" fill="#f7a928" />
+  <circle cx="934" cy="322" r="18" fill="#f7a928" />
+  <circle cx="1162" cy="322" r="18" fill="#f7a928" />
+  <circle cx="1360" cy="322" r="18" fill="#f7a928" />
+  <text x="206" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Closeout</text>
+  <text x="432" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Signoff</text>
+  <text x="665" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Invoice</text>
+  <text x="894" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Record</text>
+  <text x="1100" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Testimonial</text>
+  <text x="1308" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Archive</text>
+  <rect x="156" y="420" width="462" height="312" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <text x="204" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Final closeout record</text>
+  <rect x="204" y="496" width="172" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="204" y="552" width="372" height="16" rx="8" fill="#d2dce8" />
+  <rect x="204" y="584" width="338" height="16" rx="8" fill="#d2dce8" />
+  <rect x="204" y="632" width="160" height="48" rx="24" fill="#9ebdf2" />
+  <rect x="382" y="632" width="194" height="48" rx="24" fill="#e6eef7" />
+  <text x="244" y="661" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Signoff saved</text>
+  <text x="420" y="661" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Billing state clear</text>
+  <rect x="650" y="420" width="794" height="312" rx="34" fill="url(#offboard-panel)" />
+  <text x="700" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f8fbff">Archive or continuation?</text>
+  <rect x="700" y="496" width="220" height="18" rx="9" fill="#f8fbff" opacity=".18" />
+  <rect x="700" y="552" width="214" height="122" rx="26" fill="#f7f9fc" />
+  <rect x="940" y="552" width="214" height="122" rx="26" fill="#f7f9fc" />
+  <rect x="1180" y="552" width="214" height="122" rx="26" fill="#f7f9fc" />
+  <text x="768" y="602" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Archive</text>
+  <text x="996" y="602" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Handoff</text>
+  <text x="1230" y="602" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Next phase</text>
+  <rect x="748" y="626" width="118" height="12" rx="6" fill="#d2dce8" />
+  <rect x="988" y="626" width="118" height="12" rx="6" fill="#d2dce8" />
+  <rect x="1228" y="626" width="118" height="12" rx="6" fill="#d2dce8" />
+</svg>

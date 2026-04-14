@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Proposal revision and approval workflow illustration</title>
+  <desc id="desc">An editorial workflow illustration showing review, revision, approval, and contract handoff with clear ownership and approved-version controls.</desc>
+  <defs>
+    <linearGradient id="proposal-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f4fbfb" />
+      <stop offset="100%" stop-color="#eef4fb" />
+    </linearGradient>
+    <linearGradient id="proposal-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#117f93" />
+      <stop offset="100%" stop-color="#1d517f" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#proposal-bg)" />
+  <circle cx="1292" cy="170" r="150" fill="#dcf2f2" />
+  <circle cx="258" cy="730" r="146" fill="#e3eef9" />
+  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Proposal review to approval</text>
+  <rect x="156" y="208" width="300" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="156" y="258" width="1288" height="122" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <path d="M218 322H1382" stroke="#bfd2e5" stroke-width="8" stroke-linecap="round" />
+  <circle cx="274" cy="322" r="18" fill="#f7a928" />
+  <circle cx="528" cy="322" r="18" fill="#f7a928" />
+  <circle cx="782" cy="322" r="18" fill="#f7a928" />
+  <circle cx="1036" cy="322" r="18" fill="#f7a928" />
+  <circle cx="1290" cy="322" r="18" fill="#f7a928" />
+  <text x="232" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Review</text>
+  <text x="468" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Comments</text>
+  <text x="734" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Revise</text>
+  <text x="986" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Approve</text>
+  <text x="1234" y="358" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#46627e">Contract</text>
+  <rect x="156" y="420" width="432" height="312" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <text x="204" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Revision rounds</text>
+  <rect x="204" y="496" width="166" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="204" y="552" width="162" height="48" rx="24" fill="#9ebdf2" />
+  <rect x="204" y="618" width="162" height="48" rx="24" fill="#f7c566" />
+  <text x="252" y="582" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Round 1</text>
+  <text x="252" y="648" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Round 2</text>
+  <path d="M392 642c48 0 72-30 72-78" stroke="#7ea6e8" stroke-width="8" stroke-linecap="round" />
+  <path d="M454 552l14 18 16-18" stroke="#7ea6e8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  <rect x="620" y="420" width="386" height="312" rx="34" fill="url(#proposal-panel)" />
+  <text x="668" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#f7f9fc">Owner clarity</text>
+  <rect x="668" y="496" width="184" height="18" rx="9" fill="#f7f9fc" opacity=".16" />
+  <rect x="668" y="552" width="290" height="56" rx="26" fill="#f7f9fc" />
+  <rect x="668" y="626" width="252" height="56" rx="26" fill="#f7c566" />
+  <text x="720" y="586" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Next action owner</text>
+  <text x="726" y="660" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f2e4f">Approval owner</text>
+  <rect x="1038" y="420" width="406" height="312" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <text x="1086" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Approved version</text>
+  <rect x="1086" y="496" width="192" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="1086" y="552" width="270" height="14" rx="7" fill="#c8d5e5" />
+  <rect x="1086" y="582" width="238" height="14" rx="7" fill="#c8d5e5" />
+  <rect x="1086" y="632" width="186" height="52" rx="24" fill="#153f68" />
+  <text x="1132" y="664" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#f7f9fc">Onboarding handoff</text>
+</svg>

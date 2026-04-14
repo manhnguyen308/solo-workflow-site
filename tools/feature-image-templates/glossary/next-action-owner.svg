@@ -1,0 +1,28 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <rect x="180" y="192" width="1240" height="516" rx="36" fill="#F7F9FC" opacity=".97"/>
+  <text x="246" y="286" fill="#0F2E4F" font-family="Georgia, serif" font-size="52">one visible next step</text>
+  <rect x="246" y="334" width="286" height="26" rx="13" fill="#F7C566"/>
+  <rect x="246" y="394" width="344" height="180" rx="28" fill="#EAF1F8"/>
+  <text x="286" y="450" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="28">next action</text>
+  <rect x="286" y="486" width="212" height="18" rx="9" fill="#9EBDF2"/>
+  <rect x="286" y="522" width="244" height="14" rx="7" fill="#C7D3E2"/>
+  <rect x="286" y="550" width="196" height="14" rx="7" fill="#C7D3E2"/>
+  <path d="M624 484H802" stroke="#7EA6E8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M778 454L830 484L778 514" stroke="#7EA6E8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="860" y="382" width="462" height="212" rx="30" fill="#133F69"/>
+  <text x="912" y="448" fill="#F7F9FC" font-family="Georgia, serif" font-size="38">owner named</text>
+  <rect x="912" y="486" width="168" height="54" rx="18" fill="#F7C566"/>
+  <text x="948" y="520" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="26">client</text>
+  <rect x="1096" y="486" width="168" height="54" rx="18" fill="#9EBDF2"/>
+  <text x="1130" y="520" fill="#0F2E4F" font-family="Arial, sans-serif" font-size="26">operator</text>
+  <rect x="246" y="626" width="1076" height="36" rx="18" fill="#D8E3EF"/>
+  <circle cx="302" cy="644" r="10" fill="#F7A928"/>
+  <text x="330" y="652" fill="#46627E" font-family="Arial, sans-serif" font-size="24">without a named owner, the stage is active but nothing moves</text>
+  <defs>
+    <linearGradient id="bg" x1="116" y1="92" x2="1508" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#215D89"/>
+      <stop offset="1" stop-color="#117C8F"/>
+    </linearGradient>
+  </defs>
+</svg>

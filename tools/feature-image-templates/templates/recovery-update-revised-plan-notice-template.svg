@@ -1,0 +1,54 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="184" y1="84" x2="1406" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#14536A"/>
+      <stop offset="1" stop-color="#234470"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="286" y1="130" x2="1296" y2="758" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#EEF3F8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)"/>
+  <path d="M0 128C148 54 302 70 420 138C499 184 575 199 676 182C850 154 972 62 1156 86C1328 108 1466 190 1600 184V900H0V128Z" fill="#9CD1C4" fill-opacity="0.14"/>
+  <ellipse cx="1316" cy="270" rx="206" ry="134" fill="#C8D8F5" fill-opacity="0.15"/>
+
+  <rect x="270" y="118" width="1060" height="664" rx="30" fill="url(#panel)"/>
+  <rect x="314" y="158" width="972" height="98" rx="22" fill="#FFFFFF"/>
+  <circle cx="356" cy="196" r="8" fill="#F29D38"/>
+  <circle cx="382" cy="196" r="8" fill="#F4C36B"/>
+  <circle cx="408" cy="196" r="8" fill="#D8E0E8"/>
+  <text x="314" y="234" fill="#173E59" font-family="Georgia, 'Times New Roman', serif" font-size="35">Recovery Update Notice</text>
+
+  <rect x="314" y="286" width="420" height="430" rx="24" fill="#FFFFFF"/>
+  <text x="346" y="326" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Message structure</text>
+  <rect x="346" y="352" width="356" height="58" rx="15" fill="#EEF4F9"/>
+  <text x="383" y="387" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">what changed</text>
+  <rect x="346" y="428" width="356" height="58" rx="15" fill="#EEF4F9"/>
+  <text x="389" y="463" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">no longer valid</text>
+  <rect x="346" y="504" width="356" height="58" rx="15" fill="#EEF4F9"/>
+  <text x="392" y="539" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">revised plan</text>
+  <rect x="346" y="580" width="356" height="58" rx="15" fill="#EEF4F9"/>
+  <text x="381" y="615" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">needed confirmation</text>
+  <rect x="346" y="656" width="218" height="28" rx="10" fill="#D6ECDB"/>
+  <text x="366" y="675" fill="#4C6E52" font-family="Arial, Helvetica, sans-serif" font-size="15">restart condition visible</text>
+
+  <rect x="766" y="286" width="520" height="430" rx="24" fill="#F6F8FB"/>
+  <text x="798" y="326" fill="#173E59" font-family="Arial, Helvetica, sans-serif" font-size="24">Revised plan note</text>
+  <rect x="798" y="352" width="456" height="56" rx="16" fill="#FFFFFF"/>
+  <text x="828" y="386" fill="#365E80" font-family="Arial, Helvetica, sans-serif" font-size="18">subject: revised plan for milestone 2</text>
+  <rect x="798" y="430" width="456" height="116" rx="18" fill="#FFFFFF"/>
+  <text x="826" y="466" fill="#204D67" font-family="Arial, Helvetica, sans-serif" font-size="18">old review path retired</text>
+  <text x="826" y="494" fill="#6C8090" font-family="Arial, Helvetica, sans-serif" font-size="16">new sequence: assets -> review owner -> approval</text>
+  <text x="826" y="522" fill="#6C8090" font-family="Arial, Helvetica, sans-serif" font-size="16">reply needed: confirm revised scope by Friday</text>
+  <rect x="798" y="570" width="210" height="44" rx="14" fill="#DBEAF8"/>
+  <text x="834" y="598" fill="#365E80" font-family="Arial, Helvetica, sans-serif" font-size="17">revised timing</text>
+  <rect x="1026" y="570" width="228" height="44" rx="14" fill="#F7D5CF"/>
+  <text x="1060" y="598" fill="#8B4A43" font-family="Arial, Helvetica, sans-serif" font-size="17">old plan retired</text>
+  <rect x="798" y="638" width="280" height="30" rx="10" fill="#D6ECDB"/>
+  <text x="822" y="658" fill="#4C6E52" font-family="Arial, Helvetica, sans-serif" font-size="15">resume once approval is explicit</text>
+
+  <path d="M702 505H766" stroke="#6FA5D7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M754 489L780 505L754 521" stroke="#6FA5D7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

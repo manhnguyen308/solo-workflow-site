@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SoloOpsGuide home illustration</title>
+  <desc id="desc">An editorial illustration showing workflow, blueprint, comparison, and checklist panels arranged as a connected operating system.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6fbfb"/>
+      <stop offset="100%" stop-color="#eef5fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1290" cy="200" r="150" fill="#dff4f2"/>
+  <circle cx="260" cy="720" r="140" fill="#e5effb"/>
+  <rect x="132" y="122" width="1336" height="656" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
+  <text x="192" y="206" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Core operating system</text>
+  <rect x="192" y="224" width="270" height="20" rx="10" fill="#173042" opacity=".12"/>
+  <rect x="192" y="286" width="280" height="170" rx="28" fill="#102430"/>
+  <rect x="510" y="286" width="382" height="170" rx="28" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <rect x="930" y="286" width="338" height="170" rx="28" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <rect x="1118" y="510" width="150" height="170" rx="26" fill="#fff0db"/>
+  <rect x="192" y="510" width="420" height="170" rx="28" fill="#0f8b8d"/>
+  <rect x="650" y="510" width="430" height="170" rx="28" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/>
+  <text x="230" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#d6faf5">workflow</text>
+  <text x="548" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">blueprint</text>
+  <text x="968" y="334" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">compare</text>
+  <text x="231" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#fff">implementation</text>
+  <text x="688" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700" fill="#122838">checklist</text>
+  <text x="1148" y="558" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">faq</text>
+  <rect x="230" y="366" width="84" height="12" rx="6" fill="#d6faf5" opacity=".85"/>
+  <rect x="338" y="366" width="84" height="12" rx="6" fill="#d6faf5" opacity=".55"/>
+  <path d="M284 396h138" stroke="#d6faf5" stroke-width="8" stroke-linecap="round" opacity=".55"/>
+  <path d="M546 368h118m20 0h118m20 0h32" stroke="#d8e5ec" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="572" cy="412" r="12" fill="#0f8b8d"/><circle cx="680" cy="412" r="12" fill="#7ea4df"/><circle cx="788" cy="412" r="12" fill="#d6a156"/>
+  <rect x="968" y="364" width="118" height="34" rx="17" fill="#d8f3f1"/><rect x="1102" y="364" width="118" height="34" rx="17" fill="#dfe9fb"/>
+  <text x="1002" y="386" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#0f766e">option a</text>
+  <text x="1138" y="386" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#36589a">option b</text>
+  <rect x="230" y="590" width="138" height="24" rx="12" fill="#d6faf5" opacity=".25"/><rect x="230" y="626" width="226" height="14" rx="7" fill="#d6faf5" opacity=".75"/>
+  <rect x="688" y="590" width="340" height="42" rx="20" fill="#fff" stroke="#d8e5ec" stroke-width="3"/>
+  <rect x="688" y="646" width="214" height="12" rx="6" fill="#d8e5ec"/>
+  <path d="M1270 360v118m-70 52H612m0 0l18-18m-18 18l18 18" stroke="#9bb4c7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
