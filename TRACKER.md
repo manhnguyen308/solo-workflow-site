@@ -281,3 +281,27 @@ After each future pass, add a short section with:
   - spot-checked the refreshed SVG source files for safer text placement, larger labels, cleaner panel spacing, and more consistent internal alignment than the previous versions
 - Commit message used: `Refresh feature image artwork alignment`
 - Push result: `git push origin main` succeeded
+
+## Remaining feature image artwork refinement - 2026-04-14
+
+- What was still visually wrong:
+  - the lean blueprint image still had a cramped small-text feel at card size, especially in the operating-rule area and the denser right-side support panels
+  - the CRM-vs-PM comparison image still felt uneven because the left panel carried most of the visual weight while the right panel looked airier and less structured
+  - both images still had a few labels and blocks that read more like miniature UI fragments than calm card-scale editorial diagrams
+- What changed:
+  - rebuilt the `solo-freelancer-lean-budget.svg` composition with larger internal safe margins, a clearer stage strip, a simpler baseline stack block, and shorter higher-contrast rule text
+  - rebalanced `crm-vs-project-management.svg` so both halves share more even panel geometry, stronger label sizing, and more consistent callout weight at thumbnail size
+  - kept the existing filenames and feature-image references stable so no front matter, slug, metadata, or layout updates were required
+- Which files/assets changed:
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - regenerated matching copies under `public/images/features/blueprints/solo-freelancer-lean-budget.svg` and `public/images/features/comparisons/crm-vs-project-management.svg`
+- Source-generation files/scripts changed:
+  - none
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - confirmed generated homepage and hub/list output still reference the stable blueprint and CRM comparison asset paths with no broken image references in `public/`
+  - visually inspected the refreshed blueprint and CRM comparison artwork as direct rendered SVGs and in a card-size local thumbnail grid alongside other homepage/card feature images to confirm the two target images now read more cleanly and feel more consistent with the surrounding set
+  - checked the homepage, blueprint hub, and comparison hub outputs for the expected image references and confirmed no homepage sections were missing in the build output
+- Commit message used: `Refine remaining feature image artwork`
+- Push result: pending
