@@ -1,14 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Workflow comparisons hub illustration</title>
-  <desc id="desc">An editorial illustration showing contrasted option panels and decision criteria for workflow comparison pages.</desc>
-  <rect width="1600" height="900" fill="#f5f9fd"/><circle cx="1290" cy="210" r="150" fill="#dce9fb"/>
-  <rect x="126" y="126" width="1348" height="648" rx="42" fill="#fff" stroke="#d8e5ec" stroke-width="4"/>
-  <text x="188" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Workflow comparisons</text><rect x="188" y="226" width="280" height="20" rx="10" fill="#173042" opacity=".12"/>
-  <rect x="188" y="290" width="508" height="400" rx="34" fill="#17355f"/><rect x="780" y="290" width="508" height="400" rx="34" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3"/><rect x="1318" y="290" width="84" height="400" rx="30" fill="#eef4fb"/>
-  <text x="232" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#eef6ff">Option A</text><text x="824" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Option B</text>
-  <rect x="232" y="392" width="190" height="40" rx="20" fill="#d8f3f1" opacity=".95"/><rect x="232" y="448" width="226" height="14" rx="7" fill="#eef6ff" opacity=".7"/><rect x="232" y="478" width="190" height="14" rx="7" fill="#eef6ff" opacity=".45"/>
-  <rect x="824" y="392" width="190" height="40" rx="20" fill="#dfe9fb"/><rect x="824" y="448" width="226" height="14" rx="7" fill="#d8e5ec"/><rect x="824" y="478" width="190" height="14" rx="7" fill="#d8e5ec"/>
-  <text x="286" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">structure</text><text x="888" y="418" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">flexibility</text>
-  <rect x="1100" y="392" width="126" height="34" rx="17" fill="#fff0db"/><rect x="1100" y="444" width="126" height="34" rx="17" fill="#fee2e2"/><text x="1137" y="414" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#8a5d27">fit</text><text x="1130" y="466" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">risk</text>
-  <path d="M1358 382v216" stroke="#b8c9d6" stroke-width="8" stroke-linecap="round"/><circle cx="1358" cy="450" r="14" fill="#0f8b8d"/><circle cx="1358" cy="540" r="14" fill="#d6a156"/>
+  <desc id="desc">An editorial illustration showing balanced option panels and decision criteria for workflow comparison pages.</desc>
+  <defs>
+    <linearGradient id="compare-hub-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbf7f0" />
+      <stop offset="100%" stop-color="#f1f6fb" />
+    </linearGradient>
+    <linearGradient id="compare-hub-panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17355f" />
+      <stop offset="100%" stop-color="#214b7d" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#compare-hub-bg)" />
+  <circle cx="1290" cy="180" r="152" fill="#f6ead6" />
+  <circle cx="258" cy="724" r="144" fill="#e2eef9" />
+  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d8e5ec" stroke-width="4" />
+  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Workflow comparisons</text>
+  <rect x="156" y="208" width="294" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="156" y="258" width="594" height="474" rx="36" fill="url(#compare-hub-panel)" />
+  <rect x="850" y="258" width="594" height="474" rx="36" fill="#f8fbfd" stroke="#d8e5ec" stroke-width="3" />
+  <text x="204" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#eef6ff">Option A</text>
+  <text x="898" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#122838">Option B</text>
+  <rect x="204" y="378" width="206" height="44" rx="22" fill="#d8f3f1" />
+  <rect x="204" y="446" width="260" height="16" rx="8" fill="#eef6ff" opacity=".72" />
+  <rect x="204" y="478" width="228" height="16" rx="8" fill="#eef6ff" opacity=".42" />
+  <rect x="204" y="534" width="222" height="112" rx="26" fill="#fff0db" opacity=".96" />
+  <text x="264" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f766e">Structure</text>
+  <text x="240" y="586" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#8a5d27">
+    <tspan x="240" dy="0">Tighter rules</tspan>
+    <tspan x="240" dy="22">and cleaner routing</tspan>
+  </text>
+  <rect x="898" y="378" width="206" height="44" rx="22" fill="#dfe9fb" />
+  <rect x="898" y="446" width="260" height="16" rx="8" fill="#d8e5ec" />
+  <rect x="898" y="478" width="228" height="16" rx="8" fill="#d8e5ec" />
+  <rect x="1168" y="378" width="176" height="44" rx="22" fill="#fff0db" />
+  <rect x="1168" y="446" width="176" height="44" rx="22" fill="#fee2e2" />
+  <text x="955" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">Flexibility</text>
+  <text x="1231" y="406" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Fit</text>
+  <text x="1226" y="474" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#b91c1c">Risk</text>
+  <rect x="898" y="534" width="446" height="112" rx="26" fill="#ffffff" stroke="#d8e5ec" stroke-width="3" />
+  <text x="936" y="586" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">
+    <tspan x="936" dy="0">Decision pages stay bounded</tspan>
+    <tspan x="936" dy="22">and route to the next action</tspan>
+  </text>
 </svg>

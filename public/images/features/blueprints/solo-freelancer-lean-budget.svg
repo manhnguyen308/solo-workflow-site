@@ -2,68 +2,61 @@
   <title id="title">Solo freelancer lean budget blueprint illustration</title>
   <desc id="desc">An editorial blueprint illustration showing a lean stack map, stage-based layers, upgrade triggers, and overbuying boundaries for a solo freelancer setup.</desc>
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="blueprint-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f6fafc" />
-      <stop offset="100%" stop-color="#edf4fb" />
+      <stop offset="100%" stop-color="#eef4fb" />
     </linearGradient>
-    <linearGradient id="navy" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="blueprint-panel" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#17355f" />
       <stop offset="100%" stop-color="#224f86" />
     </linearGradient>
   </defs>
-  <rect width="1600" height="900" fill="url(#bg)" />
-  <circle cx="1286" cy="196" r="154" fill="#e2eefb" />
-  <circle cx="278" cy="712" r="144" fill="#e9f6f3" />
-
-  <rect x="120" y="118" width="1360" height="664" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
-
-  <text x="186" y="208" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700" fill="#122838">Lean stack blueprint</text>
-  <rect x="186" y="226" width="238" height="20" rx="10" fill="#173042" opacity=".12" />
-
-  <rect x="186" y="284" width="1228" height="110" rx="32" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="226" y="328" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">stage</text>
-  <rect x="332" y="308" width="214" height="52" rx="26" fill="#d8f3f1" />
-  <rect x="576" y="308" width="214" height="52" rx="26" fill="#dfe9fb" />
-  <rect x="820" y="308" width="214" height="52" rx="26" fill="#fff0db" />
-  <rect x="1064" y="308" width="314" height="52" rx="26" fill="#ecfdf3" />
-  <text x="395" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0f766e">starter</text>
-  <text x="639" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#36589a">stable</text>
-  <text x="886" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#8a5d27">growing</text>
-  <text x="1160" y="340" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#18794e">upgrade only when pressure repeats</text>
-
-  <rect x="186" y="438" width="480" height="268" rx="32" fill="url(#navy)" />
-  <text x="230" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" fill="#eef6ff">Minimum reliable stack</text>
-  <rect x="230" y="506" width="216" height="18" rx="9" fill="#eef6ff" opacity=".16" />
-  <rect x="230" y="548" width="196" height="38" rx="19" fill="#d8f3f1" />
-  <rect x="446" y="548" width="156" height="38" rx="19" fill="#dfe9fb" />
-  <rect x="230" y="604" width="176" height="38" rx="19" fill="#fff0db" />
-  <rect x="426" y="604" width="176" height="38" rx="19" fill="#dff7e8" />
-  <text x="279" y="572" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#0f766e">client system</text>
-  <text x="492" y="572" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#36589a">docs</text>
-  <text x="276" y="628" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#8a5d27">invoice</text>
-  <text x="484" y="628" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#18794e">schedule</text>
-  <rect x="230" y="662" width="236" height="12" rx="6" fill="#eef6ff" opacity=".55" />
-  <rect x="230" y="684" width="184" height="12" rx="6" fill="#eef6ff" opacity=".36" />
-
-  <rect x="706" y="438" width="318" height="268" rx="32" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="746" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Upgrade triggers</text>
-  <rect x="746" y="506" width="154" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="746" y="550" width="236" height="46" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="746" y="610" width="236" height="46" rx="20" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="780" y="579" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">handoffs hidden weekly</text>
-  <text x="780" y="639" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">manual step repeats daily</text>
-  <circle cx="950" cy="573" r="10" fill="#0f8b8d" />
-  <circle cx="950" cy="633" r="10" fill="#0f8b8d" />
-
-  <rect x="1064" y="438" width="350" height="268" rx="32" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1104" y="488" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Do not buy yet</text>
-  <rect x="1104" y="506" width="136" height="18" rx="9" fill="#173042" opacity=".12" />
-  <rect x="1104" y="548" width="154" height="34" rx="17" fill="#fee2e2" />
-  <rect x="1274" y="548" width="92" height="34" rx="17" fill="#fee2e2" />
-  <rect x="1104" y="600" width="262" height="42" rx="21" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="1140" y="571" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">duplicate tools</text>
-  <text x="1299" y="571" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#b91c1c">ops suite</text>
-  <text x="1138" y="626" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="700" fill="#334b5c">extra software before repeat need</text>
-  <path d="M1188 660h110" stroke="#d9e5ec" stroke-width="6" stroke-linecap="round" />
-  <path d="M1312 660l-14-14m14 14l-14 14" stroke="#d9e5ec" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  <rect width="1600" height="900" fill="url(#blueprint-bg)" />
+  <circle cx="1284" cy="172" r="154" fill="#e2eefb" />
+  <circle cx="274" cy="724" r="146" fill="#e9f6f3" />
+  <rect x="96" y="96" width="1408" height="708" rx="44" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
+  <text x="156" y="190" font-family="Georgia, 'Times New Roman', serif" font-size="38" fill="#122838">Lean stack blueprint</text>
+  <rect x="156" y="208" width="252" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="156" y="258" width="1288" height="122" rx="34" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <text x="196" y="312" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Business stage</text>
+  <rect x="352" y="296" width="188" height="42" rx="21" fill="#d8f3f1" />
+  <rect x="572" y="296" width="188" height="42" rx="21" fill="#dfe9fb" />
+  <rect x="792" y="296" width="188" height="42" rx="21" fill="#fff0db" />
+  <rect x="1012" y="296" width="352" height="42" rx="21" fill="#ecfdf3" />
+  <text x="416" y="323" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f766e">Starter</text>
+  <text x="638" y="323" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">Stable</text>
+  <text x="855" y="323" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Growing</text>
+  <text x="1098" y="323" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#18794e">Upgrade only when pressure repeats</text>
+  <rect x="156" y="420" width="540" height="312" rx="34" fill="url(#blueprint-panel)" />
+  <text x="204" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#eef6ff">Minimum reliable stack</text>
+  <rect x="204" y="496" width="226" height="18" rx="9" fill="#eef6ff" opacity=".16" />
+  <rect x="204" y="552" width="168" height="46" rx="23" fill="#d8f3f1" />
+  <rect x="392" y="552" width="132" height="46" rx="23" fill="#dfe9fb" />
+  <rect x="204" y="616" width="150" height="46" rx="23" fill="#fff0db" />
+  <rect x="374" y="616" width="150" height="46" rx="23" fill="#dff7e8" />
+  <text x="243" y="581" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#0f766e">Client system</text>
+  <text x="430" y="581" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#36589a">Docs</text>
+  <text x="251" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#8a5d27">Invoice</text>
+  <text x="420" y="645" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#18794e">Schedule</text>
+  <rect x="730" y="420" width="318" height="312" rx="34" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <text x="774" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="32" fill="#122838">Upgrade triggers</text>
+  <rect x="774" y="496" width="166" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="774" y="552" width="230" height="54" rx="24" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="774" y="624" width="230" height="54" rx="24" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <circle cx="962" cy="579" r="11" fill="#0f8b8d" />
+  <circle cx="962" cy="651" r="11" fill="#0f8b8d" />
+  <text x="806" y="585" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Hidden handoffs every week</text>
+  <text x="806" y="657" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#334b5c">Manual steps repeating daily</text>
+  <rect x="1082" y="420" width="362" height="312" rx="34" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <text x="1128" y="478" font-family="Georgia, 'Times New Roman', serif" font-size="32" fill="#122838">Delay until needed</text>
+  <rect x="1128" y="496" width="154" height="18" rx="9" fill="#173042" opacity=".12" />
+  <rect x="1128" y="552" width="164" height="38" rx="19" fill="#fee2e2" />
+  <rect x="1310" y="552" width="94" height="38" rx="19" fill="#fee2e2" />
+  <text x="1162" y="577" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#b91c1c">Duplicate tools</text>
+  <text x="1333" y="577" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#b91c1c">Ops suite</text>
+  <rect x="1128" y="614" width="276" height="64" rx="26" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <text x="1160" y="642" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#334b5c">
+    <tspan x="1160" dy="0">Extra software waits for</tspan>
+    <tspan x="1160" dy="20">repeat operational pressure</tspan>
+  </text>
 </svg>

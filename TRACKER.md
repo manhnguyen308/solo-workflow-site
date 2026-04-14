@@ -250,3 +250,32 @@ After each future pass, add a short section with:
   - confirmed the priority workflow, blueprint, and comparison links now render on the homepage with their expected final URLs
 - Commit message used: `Fix homepage regression from feature image framing`
 - Push result: `git push origin main` succeeded
+
+## Feature image artwork alignment refresh - 2026-04-14
+
+- What changed:
+  - replaced the source SVG artwork for the workflow cornerstone, workflow hub, lean blueprint, blueprint hub, CRM-vs-PM comparison, comparison hub, billing-status comparison, proposal revision/approval workflow, and client offboarding workflow
+  - kept the existing filenames and feature-image references stable so no front matter, layout, or CSS rewiring was needed
+  - kept the refresh at the asset level only; no shared framing CSS was changed in this pass
+- Why it was changed:
+  - the earlier framing pass fixed inconsistent crop behavior, but several key images still had uneven internal composition, cramped text blocks, inconsistent safe margins, and mixed visual density inside the artwork itself
+  - these refreshed SVGs now share a tighter visual system: `16:9` canvas, consistent outer margins, larger labels, fewer micro-elements, and more balanced card/panel geometry that should read more cleanly in homepage cards, hub cards, and page headers
+- Which files/assets changed:
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/hubs/software-stack-blueprints.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - `static/images/features/hubs/workflow-comparisons.svg`
+  - `static/images/features/comparisons/billing-status-home.svg`
+  - `static/images/features/workflows/proposal-revision-approval-workflow.svg`
+  - `static/images/features/workflows/client-offboarding-workflow.svg`
+  - regenerated matching copies under `public/images/features/...`
+- Source-generation files/scripts changed:
+  - none; the local image-generation scripts were reviewed but left untouched for this pass
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the SVG refresh
+  - confirmed generated homepage output still includes the hero feature card, editorial cards, resource grid, `Start Here` cards, and footer CTA with no recurrence of the earlier homepage regression
+  - confirmed the homepage, `/client-workflow-systems/`, `/software-stack-blueprints/`, `/workflow-comparisons/`, and `/workflows/freelance-client-workflow-system-inquiry-to-final-payment/` all still reference the expected refreshed feature-image filenames
+  - confirmed the refreshed images now use stable `1600x900`/`16:9` SVG canvases for the key comparison and cornerstone surfaces touched in this pass, including normalizing `billing-status-home.svg` to the same frame
+  - spot-checked the refreshed SVG source files for safer text placement, larger labels, cleaner panel spacing, and more consistent internal alignment than the previous versions
