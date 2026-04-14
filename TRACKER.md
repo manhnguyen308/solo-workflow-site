@@ -438,4 +438,4 @@ After each future pass, add a short section with:
   - no blocking regressions surfaced in this pass
   - optional future polish may still be worthwhile for a few lower-priority support/reference images if we want to tighten label sizing even further at card scale, but no additional image was isolated here as broken enough to block the workflow migration
 - Commit message used: `Regenerate feature images with consistent labels`
-- Push result: pending
+- Push result: `git push origin main` succeeded
