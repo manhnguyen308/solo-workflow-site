@@ -223,5 +223,5 @@ After each future pass, add a short section with:
   - confirmed card, hub, and article feature images continue to reference valid `/images/features/...` assets with no broken references
   - spot-checked tracked feature-image file sizes and confirmed they remain reasonable for the existing web assets
   - no feature-image asset regeneration was required in this pass because the root cause was framing inconsistency, not a broad asset-composition failure
-- Commit message used: pending
-- Push result: pending
+- Commit message used: `Polish feature image consistency`
+- Push result: `git push origin main` succeeded
