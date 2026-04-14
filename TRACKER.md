@@ -202,3 +202,26 @@ After each future pass, add a short section with:
 - Follow-up:
   - watch whether `/client-workflow-systems/` and the workflow anchor move out of discovered-not-indexed before broadening scope again
   - if GSC still favors support pages after this pass, the next audit should stay narrow and compare internal-link prominence on already indexed support URLs versus the workflow hub and anchor
+
+## Feature image consistency pass - 2026-04-14
+
+- What was fixed:
+  - normalized the shared feature-image display surfaces to the native `16:9` artwork ratio across cards, homepage editorial cards, hub hero images, and article/page header images
+  - removed the remaining mixed-ratio framing that had been cropping the same feature image differently in different contexts
+  - added `display: block` to shared feature-image elements so card and header images render without inline-image baseline gaps
+- Why it was fixed:
+  - the visual inconsistency was coming primarily from template/CSS framing rather than from broken image assets; the site was showing the same `1600x900` feature artwork inside several conflicting wrapper ratios such as `16:10`, `16:8`, and `16:8.8`
+  - that mismatch made text blocks, diagrams, and internal spacing look randomly scaled or cramped even when the source illustration itself was reasonably aligned
+- Which files/assets changed:
+  - `static/css/main.css`
+  - `public/css/main.css`
+  - regenerated `public/` HTML affected by the shared image CSS
+  - `TRACKER.md`
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - inspected generated homepage output, the `/client-workflow-systems/` hub output, and the workflow anchor output to confirm the shared feature-image wrappers now use consistent framing
+  - confirmed card, hub, and article feature images continue to reference valid `/images/features/...` assets with no broken references
+  - spot-checked tracked feature-image file sizes and confirmed they remain reasonable for the existing web assets
+  - no feature-image asset regeneration was required in this pass because the root cause was framing inconsistency, not a broad asset-composition failure
+- Commit message used: pending
+- Push result: pending
