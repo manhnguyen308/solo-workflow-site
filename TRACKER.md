@@ -562,3 +562,42 @@ After each future pass, add a short section with:
   - hold scope unless another live card-size visual issue appears in the homepage `Start Here` grid
 - Recommended next step:
   - let the new editorial image system settle unless a later pass needs equally strong redesign work for non-homepage feature images
+
+## Image-model feature image workflow setup - 2026-04-15
+
+- Why this pass was needed:
+  - the homepage priority images have now failed enough SVG/layout review passes that the problem is no longer small alignment cleanup; the repo needed a first-class image-model workflow under `tools/` so the four homepage cards can move away from brittle text-and-diagram art
+  - the permanent feature-image rule in `AGENT.md` was outdated because it only allowed the old SVG/template path and did not reflect the new requirement to prefer image-model generation when scripted diagrams keep failing visual review
+- What changed:
+  - replaced `tools/generate-openai-image.ps1` with a manifest-driven image-model workflow that reads prompt entries, supports `-DryRun` and optional `-Id` filtering, calls the OpenAI image API, and writes final center-cropped `1600x900` PNG assets into `static/images/features/...`
+  - added `tools/feature-image-prompts/homepage-feature-images.json` as the tracked prompt source for the four homepage priority images
+  - updated `layouts/partials/feature-image.html` so feature-image rendering can prefer a generated raster sibling such as `.png` when one exists, while leaving existing `.svg` references untouched until real raster outputs are present
+  - updated `AGENT.md` so the durable repo rule now points to the official image workflow under `tools/`, allows image-model generation when SVG repeatedly fails review, and requires visual verification instead of file-count-only success claims
+- Exact prompts created:
+  - `freelance-client-workflow-system`: premium editorial SaaS-style illustration representing inquiry -> scope -> delivery -> payment with four large connected zones, calm digital workspace context, and no labels or tiny UI text
+  - `client-workflow-systems-hub`: premium editorial workflow-systems illustration with one central operating system and four surrounding modules implying intake, delivery, billing, and offboarding through shape and composition rather than text
+  - `software-stack-blueprint`: premium editorial illustration for a lean tool stack using a small number of layered core-system surfaces plus clearly secondary add-ons later
+  - `crm-vs-project-management`: premium editorial comparison illustration with a balanced split between client record ownership and project execution flow, using objects and panels instead of labels
+  - full prompt text is tracked in `tools/feature-image-prompts/homepage-feature-images.json`
+- What blocked live image replacement:
+  - API/auth was partially available because `OPENAI_API_KEY` was set, but the first live generation call failed immediately with OpenAI API error `billing_hard_limit_reached`
+  - because generation failed before the first image completed, no new `.png` feature files were created and the four homepage priority assets were not replaced in this pass
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-openai-image.ps1 -DryRun` successfully and confirmed the four intended output targets in `static/images/features/...`
+  - attempted the real generation run with `powershell -ExecutionPolicy Bypass -File tools/generate-openai-image.ps1`; the run failed on the first image because the OpenAI account for this environment has hit a billing hard limit
+  - confirmed the four intended output PNG files do not exist after the failed run, so no fake asset replacement occurred
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the workflow/tooling changes
+  - confirmed the generated homepage and representative workflow/hub/blueprint/comparison pages still reference the existing stable `.svg` feature-image paths, so no broken image references were introduced
+  - captured a rendered homepage screenshot through a temporary local HTTP listener and verified the homepage still renders with all major sections visible; the old SVG card style is still present because the new raster assets could not be generated yet
+- Files changed:
+  - `AGENT.md`
+  - `tools/generate-openai-image.ps1`
+  - `tools/feature-image-prompts/homepage-feature-images.json`
+  - `layouts/partials/feature-image.html`
+- Commit message used: `Add image model workflow for feature images`
+- Push result:
+  - pending
+- Manual action required:
+  - restore OpenAI image-generation billing for the configured API key, then rerun `powershell -ExecutionPolicy Bypass -File tools/generate-openai-image.ps1`
+- Recommended next step:
+  - once billing is restored, rerun the new workflow, inspect the generated homepage visually, and only then allow the four homepage cards to switch from the current SVG artwork to the new raster assets

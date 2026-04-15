@@ -11,9 +11,18 @@
 
 {{ if $source }}
   {{ if hasPrefix $source "/" }}
+    {{ $page.Scratch.Set "feature_image_rel" $source }}
+    {{ $staticPath := printf "static%s" $source }}
+    {{ range slice ".png" ".jpg" ".jpeg" }}
+      {{ $candidate := replaceRE "\\.[^.]+$" . $staticPath }}
+      {{ if fileExists $candidate }}
+        {{ $page.Scratch.Set "feature_image_rel" (replaceRE "\\.[^.]+$" . $source) }}
+        {{ break }}
+      {{ end }}
+    {{ end }}
     {{ return dict
-      "src" ($source | absURL)
-      "rel" ($source | relURL)
+      "src" (($page.Scratch.Get "feature_image_rel") | absURL)
+      "rel" (($page.Scratch.Get "feature_image_rel") | relURL)
       "alt" $alt
       "width" 1600
       "height" 900

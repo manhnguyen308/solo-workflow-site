@@ -85,16 +85,18 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 
 ## Feature image workflow
 
-- All feature images must be created, edited, replaced, or regenerated through the repo’s feature image workflow in `tools/generate-feature-images.ps1`.
-- The source of truth for feature artwork is `tools/feature-image-templates/`.
-- Live images served from `static/images/features/` must be regenerated from those templates, not manually patched as final-only assets.
+- All feature images must be created, edited, replaced, or regenerated through the repo's official image workflow under `tools/`.
+- SVG/scripted diagrams may be used only when they pass visual review and remain the strongest option for the page.
+- Image-model generation is allowed and preferred when SVG or scripted diagrams repeatedly fail quality review.
+- Live images served from `static/images/features/` are the final project-owned assets and must be generated there through the approved workflow rather than patched as ad hoc final-only files.
 - Feature images must keep filenames stable where possible to avoid unnecessary front matter churn.
 - Every feature image change must verify:
-  - the generation script runs successfully
+  - the relevant generation script runs successfully when API/auth access is available
   - the affected files in `static/images/features/` actually changed
   - the Hugo build succeeds
   - homepage/card/page-header rendering uses the corrected images
-- Do not report success based only on template coverage or file counts. Confirm the actual rendered image quality.
+  - the rendered images pass visual review at homepage/card/page-header size
+- Do not report success based only on template coverage, script execution, or file counts. Confirm the actual rendered image quality.
 
 ## Content decision rules by page type
 
