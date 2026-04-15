@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">Software stack blueprint for a solo freelancer on a lean budget</title>
-  <desc id="desc">A stack blueprint illustration using a clear top lane, a large core stack panel, and a calmer upgrade path panel with readable labels and generous spacing.</desc>
+  <desc id="desc">A calm stacked-card blueprint showing a simple core stack with a clear supporting column for client hub, billing, and add-ons later.</desc>
   <defs>
     <linearGradient id="blueprint-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#f6fafc" />
@@ -8,44 +8,31 @@
     </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#blueprint-bg)" />
-  <circle cx="1292" cy="166" r="150" fill="#dfe9fb" opacity=".66" />
-  <circle cx="284" cy="742" r="138" fill="#d8f3f1" opacity=".84" />
+  <circle cx="1288" cy="166" r="148" fill="#dfe9fb" opacity=".66" />
+  <circle cx="278" cy="740" r="140" fill="#d8f3f1" opacity=".82" />
 
   <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
-  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#122838">Lean stack blueprint</text>
-  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#122838">for solo operators</text>
-  <rect x="170" y="228" width="300" height="16" rx="8" fill="#122838" opacity=".10" />
+  <text x="170" y="170" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#122838">Software stack</text>
+  <text x="170" y="214" font-family="Georgia, 'Times New Roman', serif" font-size="40" fill="#122838">blueprint</text>
+  <rect x="170" y="228" width="232" height="16" rx="8" fill="#122838" opacity=".10" />
 
-  <rect x="170" y="258" width="1260" height="472" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="220" y="300" width="1160" height="92" rx="32" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="2" />
-  <rect x="260" y="323" width="220" height="46" rx="23" fill="#d8f3f1" />
-  <rect x="520" y="323" width="214" height="46" rx="23" fill="#dfe9fb" />
-  <rect x="774" y="323" width="174" height="46" rx="23" fill="#fff0db" />
-  <rect x="988" y="323" width="242" height="46" rx="23" fill="#ecf8f2" />
-  <text x="316" y="353" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1d7f84">Core stack</text>
-  <text x="572" y="353" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">Client hub</text>
-  <text x="828" y="353" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Billing</text>
-  <text x="1040" y="353" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#18794e">Add-ons later</text>
+  <rect x="170" y="252" width="1260" height="468" rx="42" fill="#f9fbfd" stroke="#d9e5ec" stroke-width="3" />
 
-  <rect x="220" y="430" width="610" height="254" rx="38" fill="#17355f" />
-  <text x="286" y="498" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#eef6ff">Core stack</text>
-  <rect x="286" y="526" width="208" height="18" rx="9" fill="#eef6ff" opacity=".42" />
+  <rect x="230" y="314" width="600" height="344" rx="40" fill="#17355f" />
+  <text x="294" y="402" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#eef6ff">Core stack</text>
+  <rect x="294" y="434" width="214" height="18" rx="9" fill="#eef6ff" opacity=".42" />
 
-  <rect x="286" y="566" width="220" height="74" rx="28" fill="#d8f3f1" />
-  <rect x="534" y="566" width="232" height="74" rx="28" fill="#dfe9fb" />
-  <text x="332" y="613" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#0f766e">Client hub</text>
-  <text x="584" y="613" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#36589a">Docs + notes</text>
+  <rect x="294" y="500" width="210" height="88" rx="30" fill="#d8f3f1" />
+  <rect x="530" y="500" width="236" height="88" rx="30" fill="#dfe9fb" />
+  <text x="346" y="554" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#0f766e">Client hub</text>
+  <text x="584" y="554" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#36589a">Billing</text>
 
-  <rect x="868" y="430" width="512" height="254" rx="38" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
-  <text x="934" y="498" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#122838">Upgrade path</text>
-  <rect x="934" y="526" width="194" height="18" rx="9" fill="#c9d9e4" />
+  <rect x="880" y="314" width="490" height="148" rx="34" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="880" y="492" width="490" height="166" rx="34" fill="#fff1db" />
 
-  <rect x="934" y="566" width="126" height="74" rx="28" fill="#ffffff" stroke="#d9e5ec" stroke-width="2" />
-  <rect x="1086" y="566" width="126" height="74" rx="28" fill="#ffffff" stroke="#d9e5ec" stroke-width="2" />
-  <rect x="1238" y="566" width="100" height="74" rx="28" fill="#fff0db" />
-  <path d="M1060 603h26m126 0h24" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M1048 592l12 11-12 11M1200 592l12 11-12 11" fill="none" stroke="#0f8b8d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-  <text x="964" y="612" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Trigger</text>
-  <text x="1118" y="612" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#334b5c">Wait</text>
-  <text x="1260" y="612" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Add-ons</text>
+  <text x="944" y="404" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#36589a">Automation</text>
+  <rect x="944" y="420" width="154" height="14" rx="7" fill="#36589a" opacity=".18" />
+
+  <text x="944" y="586" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#8a5d27">Add-ons later</text>
+  <rect x="944" y="602" width="184" height="14" rx="7" fill="#8a5d27" opacity=".18" />
 </svg>

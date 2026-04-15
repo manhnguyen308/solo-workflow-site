@@ -523,3 +523,42 @@ After each future pass, add a short section with:
 - Commit message used: `Fix feature image label alignment`
 - Push result:
   - `git push origin main` succeeded
+
+## Homepage feature image redesign - 2026-04-15
+
+- What was wrong with the previous designs:
+  - the four homepage priority images were still built around the same weak composition pattern as the earlier failed attempts: small floating pills, decorative connector lines, sparse center-weighted layouts, and labels that looked more like leftover UI fragments than intentional editorial diagrams
+  - repeated readability fixes had made the files technically cleaner, but they did not solve the real design problem: the compositions still felt patched, amateur, and too dependent on awkward lines and tiny supporting marks to explain the concept
+  - at homepage card size, the old images still read like mini dashboards instead of premium, calm workflow graphics
+- What changed:
+  - fully replaced the source template artwork for the four homepage priority images under `tools/feature-image-templates/` instead of adjusting the prior layouts again
+  - regenerated the live served SVGs under `static/images/features/` through `tools/generate-feature-images.ps1` and rebuilt the site so the homepage now uses the new template-driven compositions with stable filenames
+- New layout approach used for each image:
+  - `Freelance Client Workflow System`: rebuilt as a simple horizontal process map with four large stage cards and connector arrows kept in their own center lane so no line crosses label text
+  - `Client Workflow Systems hub`: rebuilt as a clean system-map board with one dark left anchor panel and four aligned stage cards on the right, using short horizontal rails instead of floating connector marks
+  - `Software Stack Blueprint`: rebuilt as calm stacked cards with one dominant core-stack panel and a tidy support column for automation and add-ons later, removing the old busy mini-lane treatment
+  - `CRM vs Project Management comparison`: rebuilt as a minimal two-column comparison board with balanced left/right panels and four large labels instead of mixed pills, arrows, and uneven internal weight
+- Files changed:
+  - `tools/feature-image-templates/workflows/freelance-client-workflow-system.svg`
+  - `tools/feature-image-templates/hubs/client-workflow-systems.svg`
+  - `tools/feature-image-templates/blueprints/solo-freelancer-lean-budget.svg`
+  - `tools/feature-image-templates/comparisons/crm-vs-project-management.svg`
+  - `static/images/features/workflows/freelance-client-workflow-system.svg`
+  - `static/images/features/hubs/client-workflow-systems.svg`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.svg`
+  - `static/images/features/comparisons/crm-vs-project-management.svg`
+  - regenerated matching copies under `public/images/features/...`
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-feature-images.ps1` successfully
+  - confirmed the live files under `static/images/features/` changed for all four homepage priority assets after regeneration
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - confirmed generated homepage and representative workflow/hub/blueprint/comparison pages still reference the stable feature-image filenames with no broken image references
+  - captured and reviewed rendered homepage screenshots through a temporary local PowerShell HTTP listener plus Edge headless screenshot output, then checked the `Start Here` card grid visually
+  - confirmed the four homepage images now read cleanly at card size, keep larger readable labels, use more balanced spacing, avoid awkward connector lines, and no homepage section disappeared during the build/render pass
+- Commit message used: `Redesign homepage feature images`
+- Push result:
+  - pending
+- Follow-up:
+  - hold scope unless another live card-size visual issue appears in the homepage `Start Here` grid
+- Recommended next step:
+  - let the new editorial image system settle unless a later pass needs equally strong redesign work for non-homepage feature images

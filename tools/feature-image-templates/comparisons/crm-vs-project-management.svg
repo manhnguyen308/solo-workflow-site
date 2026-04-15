@@ -1,44 +1,38 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
   <title id="title">CRM versus project management comparison</title>
-  <desc id="desc">A premium comparison diagram with two balanced panels, readable labels, and connector lines placed away from text to compare CRM-first and project-management-first workflows.</desc>
+  <desc id="desc">A balanced comparison board with two clear columns, readable labels, and simple separation between CRM-first and project-management-first operating models.</desc>
   <defs>
     <linearGradient id="compare-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbf7f0" />
-      <stop offset="100%" stop-color="#f0f5fb" />
+      <stop offset="0%" stop-color="#faf7f0" />
+      <stop offset="100%" stop-color="#eef4fb" />
     </linearGradient>
   </defs>
   <rect width="1600" height="900" fill="url(#compare-bg)" />
-  <circle cx="1284" cy="170" r="150" fill="#dfe9fb" opacity=".62" />
-  <circle cx="262" cy="736" r="144" fill="#d8f3f1" opacity=".82" />
+  <circle cx="1288" cy="168" r="148" fill="#dfe9fb" opacity=".62" />
+  <circle cx="270" cy="738" r="142" fill="#d8f3f1" opacity=".82" />
 
   <rect x="108" y="92" width="1384" height="716" rx="46" fill="#ffffff" stroke="#d9e5ec" stroke-width="4" />
-  <text x="170" y="182" font-family="Georgia, 'Times New Roman', serif" font-size="42" fill="#122838">CRM vs PM</text>
+  <text x="170" y="182" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#122838">CRM vs PM</text>
   <rect x="170" y="198" width="190" height="18" rx="9" fill="#122838" opacity=".10" />
 
-  <rect x="170" y="246" width="1260" height="492" rx="42" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <rect x="214" y="296" width="520" height="368" rx="38" fill="#17355f" />
-  <rect x="866" y="296" width="520" height="368" rx="38" fill="#f8fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <rect x="170" y="252" width="1260" height="468" rx="42" fill="#f9fbfd" stroke="#d9e5ec" stroke-width="3" />
+  <line x1="800" y1="314" x2="800" y2="658" stroke="#d9e4ea" stroke-width="4" />
 
-  <rect x="252" y="328" width="184" height="52" rx="26" fill="#d8f3f1" />
-  <rect x="904" y="328" width="176" height="52" rx="26" fill="#dfe9fb" />
-  <text x="286" y="362" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f8b8d">CRM-first</text>
-  <text x="946" y="362" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">PM-first</text>
+  <rect x="230" y="314" width="510" height="344" rx="40" fill="#17355f" />
+  <rect x="860" y="314" width="510" height="344" rx="40" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
 
-  <rect x="252" y="430" width="194" height="88" rx="30" fill="#ffffff" opacity=".12" />
-  <rect x="476" y="430" width="194" height="88" rx="30" fill="#ffffff" opacity=".12" />
-  <rect x="904" y="430" width="194" height="88" rx="30" fill="#fff1db" />
-  <rect x="1128" y="430" width="194" height="88" rx="30" fill="#dff7e8" />
+  <rect x="272" y="348" width="176" height="52" rx="26" fill="#d8f3f1" />
+  <rect x="902" y="348" width="160" height="52" rx="26" fill="#dfe9fb" />
+  <text x="308" y="382" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f8b8d">CRM-first</text>
+  <text x="942" y="382" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#36589a">PM-first</text>
 
-  <text x="292" y="484" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Lead truth</text>
-  <text x="520" y="484" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#eef6ff">Nurture</text>
-  <text x="944" y="484" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#8a5d27">Delivery truth</text>
-  <text x="1176" y="484" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18794e">Owners</text>
+  <rect x="294" y="452" width="382" height="84" rx="30" fill="#ffffff" opacity=".12" />
+  <rect x="294" y="556" width="382" height="84" rx="30" fill="#fff1db" />
+  <rect x="924" y="452" width="382" height="84" rx="30" fill="#fff1db" />
+  <rect x="924" y="556" width="382" height="84" rx="30" fill="#dff7e8" />
 
-  <path d="M446 544h30m194 0h30m428 0h30" stroke="#0f8b8d" stroke-width="8" stroke-linecap="round" />
-  <path d="M434 534l12 10-12 10M658 534l12 10-12 10M1116 534l12 10-12 10" fill="none" stroke="#0f8b8d" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-
-  <rect x="286" y="584" width="360" height="54" rx="27" fill="#fff1db" />
-  <rect x="954" y="584" width="392" height="54" rx="27" fill="#ffffff" stroke="#d9e5ec" stroke-width="3" />
-  <text x="326" y="619" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#8a5d27">Lead truth stays central</text>
-  <text x="992" y="619" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#122838">Delivery truth stays central</text>
+  <text x="342" y="505" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#eef6ff">Lead record</text>
+  <text x="342" y="609" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#8a5d27">Follow-up</text>
+  <text x="972" y="505" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#8a5d27">Project record</text>
+  <text x="972" y="609" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#18794e">Delivery</text>
 </svg>
