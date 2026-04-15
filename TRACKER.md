@@ -640,3 +640,46 @@ After each future pass, add a short section with:
   - if the user wants actual replacement PNGs, they still need to install and run either Automatic1111 with API enabled or ComfyUI locally, set the desired checkpoint/profile in `tools/feature-image-local-config.json`, and rerun the local script
 - Recommended next step:
   - once a local backend is running, generate at least the four homepage images, visually review the outputs at homepage card size, and only keep any replacements that are genuinely stronger than the current SVGs
+
+## Single-image local backend test pass - 2026-04-15
+
+- What was checked:
+  - the current local image workflow files under `tools/`, including the main script, tracked backend config, prompt manifest, and local workflow README
+  - the Hugo-side preference logic in `layouts/partials/feature-image.html` to confirm the site will switch from `.svg` to `.png` automatically when a real generated raster sibling exists
+  - local backend reachability for both configured profiles:
+    - Automatic1111 at `http://127.0.0.1:7860`
+    - ComfyUI at `http://127.0.0.1:8188`
+- What changed:
+  - added an explicit `-TestBackend` mode to `tools/generate-local-feature-images.ps1` so one image or one profile can be connectivity-checked before running generation
+  - improved generation-time failure messages so the script now reports the backend type, endpoint URL, and the exact startup action needed when the local backend is unavailable
+  - updated `tools/README-feature-images.md` to document the backend connectivity test step before attempting generation
+- Files changed:
+  - `tools/generate-local-feature-images.ps1`
+  - `tools/README-feature-images.md`
+  - `TRACKER.md`
+- Intended active backend:
+  - the tracked default profile still points to Automatic1111 (`homepage-a1111`) as the preferred Windows local backend
+  - ComfyUI remains supported as the alternate profile
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system -DryRun` successfully
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system -TestBackend`; it failed cleanly because `http://127.0.0.1:7860` was unreachable
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system -Profile homepage-comfyui -TestBackend`; it failed cleanly because `http://127.0.0.1:8188` was unreachable
+  - checked local machine state and found no listening ports on `7860` or `8188`, and no obvious local WebUI/Comfy process to reuse
+  - attempted the real one-image generation with `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system`; it failed honestly with:
+    - `automatic1111 backend at http://127.0.0.1:7860 is not reachable. Start Automatic1111 / Stable Diffusion WebUI with API enabled, for example: webui-user.bat --api`
+  - confirmed `static/images/features/workflows/freelance-client-workflow-system.png` does not exist after the failed run, so no fake output was created and no live file was replaced
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the workflow improvements
+  - confirmed the generated homepage and workflow anchor outputs still reference `/images/features/workflows/freelance-client-workflow-system.svg`, which is correct because no real `.png` replacement exists yet
+  - confirmed no homepage sections disappeared and no broken image references were introduced in the built output
+- Exact blocker:
+  - no reachable local image backend is running in this environment; both configured endpoints refuse connection, so one real generated homepage image could not be produced here
+- Manual local step still required:
+  - start Automatic1111 with API enabled, for example `webui-user.bat --api`, or start ComfyUI on the configured endpoint, then rerun:
+    - `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system -TestBackend`
+    - `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system`
+- Commit message used:
+  - `Finish local feature image test workflow`
+- Push result:
+  - pending at tracker-write time; update after commit/push completes
+- Recommended next step:
+  - once one backend passes `-TestBackend`, generate only `freelance-client-workflow-system`, rebuild Hugo, and verify the homepage flips from the current `.svg` to the new `.png` before generating anything else

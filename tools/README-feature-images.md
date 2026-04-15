@@ -25,6 +25,14 @@ The tracked default profile is `homepage-a1111` because Automatic1111 is the cle
 powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -All -DryRun
 ```
 
+### Test backend connectivity first
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 `
+  -Id freelance-client-workflow-system `
+  -TestBackend
+```
+
 ### Generate one image
 
 ```powershell
@@ -62,6 +70,7 @@ What the script does:
 - keeps stable output filenames defined in the manifest
 
 If the backend is not installed or not running, the script fails clearly and does not pretend an image was generated.
+The connectivity test reports the exact endpoint that failed so you can fix the local backend before attempting generation.
 
 ## Backend setup notes
 

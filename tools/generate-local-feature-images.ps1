@@ -7,6 +7,7 @@ param(
   [string]$EndpointUrl,
   [string]$Profile,
   [string]$ModelCheckpoint,
+  [switch]$TestBackend,
   [switch]$DryRun
 )
 
@@ -335,6 +336,59 @@ function Test-GeneratedImage([string]$PathValue, [int]$ExpectedWidth, [int]$Expe
   }
 }
 
+function Get-BackendHealth($Request) {
+  $result = [ordered]@{
+    backend_type = $Request.backend_type
+    endpoint_url = $Request.endpoint_url
+    ok = $false
+    detail = $null
+  }
+
+  try {
+    switch ($Request.backend_type) {
+      "automatic1111" {
+        $response = Invoke-RestMethod -Method Get -Uri ($Request.endpoint_url + "/sdapi/v1/options") -TimeoutSec 5
+        $checkpoint = Get-JsonValue $response "sd_model_checkpoint" $null
+        $result.ok = $true
+        $result.detail = if ($checkpoint) { "reachable; current checkpoint: $checkpoint" } else { "reachable" }
+      }
+      "comfyui" {
+        $response = Invoke-RestMethod -Method Get -Uri ($Request.endpoint_url + "/system_stats") -TimeoutSec 5
+        $deviceCount = @(Get-JsonValue $response "devices" @()).Count
+        $result.ok = $true
+        $result.detail = if ($deviceCount -gt 0) { "reachable; devices reported: $deviceCount" } else { "reachable" }
+      }
+      default {
+        throw "Unsupported backend_type '$($Request.backend_type)'."
+      }
+    }
+  }
+  catch {
+    $result.detail = $_.Exception.Message
+  }
+
+  return [pscustomobject]$result
+}
+
+function Assert-BackendReachable($Request) {
+  $health = Get-BackendHealth $Request
+  if (-not $health.ok) {
+    $guidance = switch ($Request.backend_type) {
+      "automatic1111" { "Start Automatic1111 / Stable Diffusion WebUI with API enabled, for example: webui-user.bat --api" }
+      "comfyui" { "Start the ComfyUI server and confirm the HTTP API is listening on the configured endpoint." }
+      default { "Start the configured local backend and confirm the endpoint is correct." }
+    }
+
+    throw ("{0} backend at {1} is not reachable. {2} Exact error: {3}" -f `
+      $Request.backend_type, `
+      $Request.endpoint_url, `
+      $guidance, `
+      $health.detail)
+  }
+
+  return $health
+}
+
 function Invoke-A1111Generation($Request) {
   $body = @{
     prompt = $Request.prompt
@@ -478,6 +532,26 @@ if ($DryRun) {
   exit 0
 }
 
+if ($TestBackend) {
+  foreach ($request in $requests) {
+    $profileLabel = if ($request.profile) { $request.profile } else { "<none>" }
+    Write-Status ("Testing backend for [{0}] backend={1} profile={2} endpoint={3}" -f $request.id, $request.backend_type, $profileLabel, $request.endpoint_url)
+    $health = Get-BackendHealth $request
+    if ($health.ok) {
+      Write-Status ("BACKEND OK [{0}] {1}" -f $request.id, $health.detail)
+    }
+    else {
+      Write-Status ("BACKEND FAILED [{0}] {1}" -f $request.id, $health.detail)
+    }
+  }
+
+  if ((@($requests | ForEach-Object { (Get-BackendHealth $_).ok }) -contains $false)) {
+    throw "One or more backend connectivity tests failed."
+  }
+
+  exit 0
+}
+
 $failures = New-Object System.Collections.Generic.List[string]
 $generated = New-Object System.Collections.Generic.List[string]
 
@@ -485,6 +559,8 @@ foreach ($request in $requests) {
   $tempFile = Join-Path (Split-Path -Parent $request.output_path) (([System.IO.Path]::GetFileNameWithoutExtension($request.output_path)) + ".tmp." + [guid]::NewGuid().ToString("N") + ".png")
   try {
     Write-Status ("Generating [{0}] via {1} -> {2}" -f $request.id, $request.backend_type, $request.output_path)
+    $health = Assert-BackendReachable $request
+    Write-Status ("Backend ready [{0}] {1}" -f $request.id, $health.detail)
     $bytes = Invoke-BackendGeneration $request
     Convert-ToTargetPng -Bytes $bytes -OutputPath $tempFile -Width $request.target_width -Height $request.target_height -CropMode $request.crop_mode
     if (-not (Test-GeneratedImage -PathValue $tempFile -ExpectedWidth $request.target_width -ExpectedHeight $request.target_height)) {
