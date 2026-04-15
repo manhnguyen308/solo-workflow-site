@@ -748,6 +748,6 @@ After each future pass, add a short section with:
 - Commit message used:
   - `Add reusable code-generated feature image workflow`
 - Push result:
-  - pending at tracker-write time; update after commit/push completes
+  - commit `bd18a1e` pushed successfully with `git push origin main`
 - Recommended next step:
   - extend the new `tools/feature-images/feature_images/data/` config set gradually, activate additional images through `data/feature_image_raster_preferences.json` only after visual review, and keep custom generators rare
