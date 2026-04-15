@@ -596,7 +596,7 @@ After each future pass, add a short section with:
   - `layouts/partials/feature-image.html`
 - Commit message used: `Add image model workflow for feature images`
 - Push result:
-  - pending
+  - commit `00eef6b` pushed successfully with `git push origin main`
 - Manual action required:
   - restore OpenAI image-generation billing for the configured API key, then rerun `powershell -ExecutionPolicy Bypass -File tools/generate-openai-image.ps1`
 - Recommended next step:
