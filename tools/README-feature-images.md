@@ -2,6 +2,24 @@
 
 SoloOpsGuide keeps its official feature-image workflows under `tools/`.
 
+## Preferred code-generated workflow
+
+Use the reusable Python workflow in `tools/feature-images/` when you want maintainable, code-generated editorial feature images with shared helpers, reusable layouts, and per-image config files.
+
+Main docs:
+
+- `tools/feature-images/README.md`
+
+Example commands:
+
+```powershell
+C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_one.py --id freelance-client-workflow-system
+C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_many.py --category workflows
+C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_all.py
+```
+
+Only reviewed generated raster outputs should be switched on in the site. Hugo activation for those reviewed files is controlled through `data/feature_image_raster_preferences.json`.
+
 ## Preferred local raster workflow
 
 Use `tools/generate-local-feature-images.ps1` when you want to generate homepage or article feature images locally without any API key or billing dependency.

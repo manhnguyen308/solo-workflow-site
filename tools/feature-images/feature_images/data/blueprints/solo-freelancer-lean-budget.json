@@ -1,0 +1,23 @@
+{
+  "id": "solo-freelancer-lean-budget",
+  "category": "blueprints",
+  "layout": "stack_blueprint",
+  "palette": "blueprint",
+  "output_path": "static/images/features/blueprints/solo-freelancer-lean-budget.webp",
+  "eyebrow": "Lean stack",
+  "title": "Software Stack Blueprint",
+  "subtitle": "A simple core stack first, with automation and add-ons layered only when the workflow needs them.",
+  "stack_layers": [
+      { "title": "Core system", "detail": "Daily home for live client truth." },
+      { "title": "Workflow support", "detail": "Status and communication around the core." },
+      { "title": "Add later", "detail": "Only add specialty tools after the rule is stable." }
+  ],
+  "side_panel": {
+    "title": "Upgrade triggers",
+    "items": [
+      { "label": "Automation", "note": "After the repeatable rule is clear." },
+      { "label": "Reporting", "note": "When clients need weekly visibility." },
+      { "label": "Add-ons", "note": "When the workflow pressure is real." }
+    ]
+  }
+}

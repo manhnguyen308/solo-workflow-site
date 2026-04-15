@@ -13,7 +13,15 @@
   {{ if hasPrefix $source "/" }}
     {{ $page.Scratch.Set "feature_image_rel" $source }}
     {{ $staticPath := printf "static%s" $source }}
-    {{ range slice ".png" ".jpg" ".jpeg" }}
+    {{ $preferRaster := false }}
+    {{ with site.Data.feature_image_raster_preferences }}
+      {{ $preferRaster = in .prefer_raster $source }}
+    {{ end }}
+    {{ $extensions := slice ".png" ".jpg" ".jpeg" }}
+    {{ if $preferRaster }}
+      {{ $extensions = slice ".webp" ".png" ".jpg" ".jpeg" }}
+    {{ end }}
+    {{ range $extensions }}
       {{ $candidate := replaceRE "\\.[^.]+$" . $staticPath }}
       {{ if fileExists $candidate }}
         {{ $page.Scratch.Set "feature_image_rel" (replaceRE "\\.[^.]+$" . $source) }}

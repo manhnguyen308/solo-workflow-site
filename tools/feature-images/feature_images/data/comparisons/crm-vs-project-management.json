@@ -1,0 +1,32 @@
+{
+  "id": "crm-vs-project-management",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/crm-vs-project-management.webp",
+  "eyebrow": "System-center decision",
+  "title": "CRM vs Project Management",
+  "subtitle": "Choose whether client history or delivery execution should sit at the center of daily operations.",
+  "left": {
+    "kicker": "CRM-first",
+    "title": "Relationship truth",
+    "items": [
+      { "label": "Lead context", "note": "sales history" },
+      { "label": "Pipeline memory", "note": "future work" },
+      { "label": "Client record", "note": "ownership" }
+    ]
+  },
+  "right": {
+    "kicker": "PM-first",
+    "title": "Delivery truth",
+    "items": [
+      { "label": "Active milestones", "note": "execution" },
+      { "label": "Task state", "note": "handoffs" },
+      { "label": "Review flow", "note": "delivery" }
+    ]
+  },
+  "decision": {
+    "title": "Practical lens",
+    "body": "Choose the side where daily operational truth needs to live."
+  }
+}

@@ -683,3 +683,71 @@ After each future pass, add a short section with:
   - commit `05e4e58` pushed successfully with `git push origin main`
 - Recommended next step:
   - once one backend passes `-TestBackend`, generate only `freelance-client-workflow-system`, rebuild Hugo, and verify the homepage flips from the current `.svg` to the new `.png` before generating anything else
+
+## Reusable code-generated feature image workflow - 2026-04-15
+
+- What workflow was added or changed:
+  - added a reusable Python-based feature-image system under `tools/feature-images/` with shared helpers, reusable templates, per-image JSON configs, and simple one-image, batch, and full-regeneration entrypoints
+  - kept the existing SVG files as stable fallbacks while migrating a small production-safe sample set of homepage priority images to code-generated `webp`
+  - added a minimal Hugo preference gate through `data/feature_image_raster_preferences.json` so only reviewed generated raster outputs are activated instead of turning on every legacy sidecar image at once
+  - kept the local backend workflow under `tools/` available for model-generated work, but introduced the new Python workflow as the maintainable code-generated path for editorial diagram images
+- Dependency detection / installation:
+  - checked the preferred Python path first: `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe`
+  - confirmed Python was already usable: `Python 3.12.10`
+  - confirmed Pillow was already installed from that Python: `12.2.0`
+  - no installation commands were needed because the required dependencies were already available
+- Files created or updated:
+  - created `tools/feature-images/README.md`
+  - created `tools/feature-images/requirements.txt`
+  - created entrypoints:
+    - `tools/feature-images/generate_one.py`
+    - `tools/feature-images/generate_many.py`
+    - `tools/feature-images/generate_all.py`
+  - created shared modules under `tools/feature-images/feature_images/`:
+    - `palette.py`
+    - `fonts.py`
+    - `canvas.py`
+    - `drawing.py`
+    - `exporter.py`
+    - `validation.py`
+    - `specs.py`
+    - `cli.py`
+  - created reusable templates under `tools/feature-images/feature_images/templates/`:
+    - `workflow_map.py`
+    - `hub_overview.py`
+    - `stack_blueprint.py`
+    - `comparison_split.py`
+    - `timeline_cover.py`
+  - created per-image JSON configs under `tools/feature-images/feature_images/data/` for:
+    - `workflows/freelance-client-workflow-system`
+    - `hubs/client-workflow-systems`
+    - `blueprints/solo-freelancer-lean-budget`
+    - `comparisons/crm-vs-project-management`
+  - created `tools/feature-images/custom/README.md` to document the custom-generator escape hatch
+  - updated `tools/README-feature-images.md`
+  - updated `layouts/partials/feature-image.html`
+  - added `data/feature_image_raster_preferences.json`
+  - generated sample outputs in `static/images/features/...` and regenerated matching built assets under `public/images/features/...`
+- Sample migrated images completed:
+  - `static/images/features/workflows/freelance-client-workflow-system.webp`
+  - `static/images/features/hubs/client-workflow-systems.webp`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.webp`
+  - `static/images/features/comparisons/crm-vs-project-management.webp`
+- Verification completed:
+  - ran one-image generation:
+    - `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_one.py --id freelance-client-workflow-system`
+  - ran batch generation by category:
+    - `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_many.py --category workflows`
+  - ran full regeneration:
+    - `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_all.py`
+  - confirmed the four migrated sample outputs exist, are valid `1600x900` `webp` files, and have stable SEO-friendly filenames
+  - directly reviewed representative generated outputs visually from the local filesystem to confirm the sample set renders as intentional code-generated editorial graphics rather than broken placeholder files
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the integration changes
+  - confirmed the built homepage, workflow anchor, blueprint page, comparison page, and workflow hub now reference the migrated sample `webp` files
+  - confirmed the homepage still includes the expected major sections including the `Start Here` grid and the resource-card block, with no section disappearance introduced by the feature-image changes
+- Commit message used:
+  - `Add reusable code-generated feature image workflow`
+- Push result:
+  - pending at tracker-write time; update after commit/push completes
+- Recommended next step:
+  - extend the new `tools/feature-images/feature_images/data/` config set gradually, activate additional images through `data/feature_image_raster_preferences.json` only after visual review, and keep custom generators rare

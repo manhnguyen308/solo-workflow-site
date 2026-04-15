@@ -1,0 +1,24 @@
+{
+  "id": "freelance-client-workflow-system",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/freelance-client-workflow-system.webp",
+  "eyebrow": "Client workflow",
+  "title": "Freelance Client Workflow System",
+  "subtitle": "Inquiry to final payment with clear stage ownership and visible handoffs.",
+  "items": [
+    { "kicker": "Stage 1", "label": "Inquiry", "detail": "Capture fit and next action." },
+    { "kicker": "Stage 2", "label": "Scope", "detail": "Lock the brief and kickoff boundary." },
+    { "kicker": "Stage 3", "label": "Deliver", "detail": "Run milestones with QA." },
+    { "kicker": "Stage 4", "label": "Payment", "detail": "Close billing and next steps." }
+  ],
+  "supporting_note": {
+    "title": "Operating rule",
+    "body": "Each stage ends with a named owner and one clear next move."
+  },
+  "signal_note": {
+    "title": "What this image should imply",
+    "body": "Calm structure and fewer dropped handoffs across the lifecycle."
+  }
+}

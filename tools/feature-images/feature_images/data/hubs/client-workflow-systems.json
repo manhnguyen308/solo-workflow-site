@@ -1,0 +1,20 @@
+{
+  "id": "client-workflow-systems",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "hub",
+  "output_path": "static/images/features/hubs/client-workflow-systems.webp",
+  "eyebrow": "Workflow hub",
+  "title": "Client Workflow Systems",
+  "subtitle": "One operating center connected to the core stages that keep client work moving.",
+  "anchor": {
+    "title": "One connected system",
+    "body": "Keep intake, delivery, billing, and closeout aligned in one operating system."
+  },
+  "modules": [
+    { "kicker": "Hub", "title": "Intake", "detail": "Fit checks before work starts." },
+    { "kicker": "Hub", "title": "Delivery", "detail": "Milestones, QA, and updates." },
+    { "kicker": "Hub", "title": "Billing", "detail": "Invoice timing tied to progress." },
+    { "kicker": "Hub", "title": "Closeout", "detail": "Offboarding and follow-through." }
+  ]
+}
