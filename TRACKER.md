@@ -598,6 +598,45 @@ After each future pass, add a short section with:
 - Push result:
   - commit `00eef6b` pushed successfully with `git push origin main`
 - Manual action required:
-  - restore OpenAI image-generation billing for the configured API key, then rerun `powershell -ExecutionPolicy Bypass -File tools/generate-openai-image.ps1`
+  - this OpenAI-specific follow-up has now been superseded by the local no-API workflow added later on 2026-04-15
 - Recommended next step:
-  - once billing is restored, rerun the new workflow, inspect the generated homepage visually, and only then allow the four homepage cards to switch from the current SVG artwork to the new raster assets
+  - use the local backend workflow under `tools/generate-local-feature-images.ps1` instead of reviving the OpenAI billing path
+
+## Local no-API feature image workflow replacement - 2026-04-15
+
+- What was found:
+  - the tracked raster feature-image path still depended on `tools/generate-openai-image.ps1`, which meant the repo's preferred image-model workflow could fail for billing or API-key reasons instead of running fully on the user's own machine
+  - Hugo-side image preference logic was already in a good place because `layouts/partials/feature-image.html` can prefer a generated raster sibling such as `.png` when it exists, so the real gap was the generation pipeline rather than the site templates
+  - no local Automatic1111 or ComfyUI endpoint was available in this environment at verification time, so live generation could not be claimed honestly here
+- What changed:
+  - added `tools/generate-local-feature-images.ps1` as the new manifest-driven local raster workflow with support for `-All`, `-Id`, `-DryRun`, backend/profile selection, local endpoint overrides, safe temp writes, and final center-crop/resize to `1600x900`
+  - added `tools/feature-image-local-config.json` with tracked local backend profiles for `homepage-a1111` and `homepage-comfyui`
+  - added `tools/feature-image-backends/comfyui-feature-image-workflow.json` as the starter ComfyUI API workflow template and `tools/README-feature-images.md` with local setup and run instructions
+  - updated `tools/feature-image-prompts/homepage-feature-images.json` to act as the tracked local manifest for the four homepage priority images with stable output paths under `static/images/features/`
+  - deprecated `tools/generate-openai-image.ps1` into a pointer shim so the repo no longer depends on OpenAI API auth as the active feature-image path
+  - updated `AGENT.md` and `tools/feature-image-templates/README.md` so the permanent repo guidance now prefers the local no-API workflow while keeping the existing SVG/template workflow available under `tools/`
+- Files changed:
+  - `AGENT.md`
+  - `tools/generate-local-feature-images.ps1`
+  - `tools/feature-image-local-config.json`
+  - `tools/feature-image-backends/comfyui-feature-image-workflow.json`
+  - `tools/feature-image-prompts/homepage-feature-images.json`
+  - `tools/README-feature-images.md`
+  - `tools/feature-image-templates/README.md`
+  - `tools/generate-openai-image.ps1`
+- Verification completed:
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -All -DryRun` successfully and confirmed all four homepage image IDs resolve to stable output paths in `static/images/features/...`
+  - ran `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system -DryRun` successfully and confirmed single-image manifest targeting works
+  - probed `http://127.0.0.1:7860/sdapi/v1/options` and `http://127.0.0.1:8188/system_stats`; both endpoints were unreachable in this environment, so no local backend was available for real generation
+  - attempted one truthful real run with `powershell -ExecutionPolicy Bypass -File tools/generate-local-feature-images.ps1 -Id freelance-client-workflow-system`; it failed cleanly with `Unable to connect to the remote server`, produced `0` generated images, and did not replace any live asset
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the workflow replacement
+- Old OpenAI tooling status:
+  - deprecated cleanly in favor of the local workflow; the old entrypoint now exists only as a short shim that directs future runs to `tools/generate-local-feature-images.ps1`
+- Commit message used:
+  - `Add local feature image generation workflow`
+- Push result:
+  - implementation commit `80fa879` pushed successfully with `git push origin main`
+- Follow-up:
+  - if the user wants actual replacement PNGs, they still need to install and run either Automatic1111 with API enabled or ComfyUI locally, set the desired checkpoint/profile in `tools/feature-image-local-config.json`, and rerun the local script
+- Recommended next step:
+  - once a local backend is running, generate at least the four homepage images, visually review the outputs at homepage card size, and only keep any replacements that are genuinely stronger than the current SVGs
