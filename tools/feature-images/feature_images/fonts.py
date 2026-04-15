@@ -18,6 +18,7 @@ def get_font_set() -> dict[str, ImageFont.FreeTypeFont | ImageFont.ImageFont]:
     return {
         "eyebrow": _load_font(["arialbd.ttf", "segoeuib.ttf"], 24),
         "title": _load_font(["georgiab.ttf", "arialbd.ttf"], 54),
+        "panel_title": _load_font(["georgiab.ttf", "arialbd.ttf"], 40),
         "subtitle": _load_font(["arial.ttf", "segoeui.ttf"], 28),
         "card_title": _load_font(["arialbd.ttf", "segoeuib.ttf"], 28),
         "card_body": _load_font(["arial.ttf", "segoeui.ttf"], 23),

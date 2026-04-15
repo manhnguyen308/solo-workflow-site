@@ -10,14 +10,14 @@
   "stack_layers": [
       { "title": "Core system", "detail": "Daily home for live client truth." },
       { "title": "Workflow support", "detail": "Status and communication around the core." },
-      { "title": "Add later", "detail": "Only add specialty tools after the rule is stable." }
+      { "title": "Add later", "detail": "Specialty tools come later." }
   ],
   "side_panel": {
     "title": "Upgrade triggers",
     "items": [
-      { "label": "Automation", "note": "After the repeatable rule is clear." },
-      { "label": "Reporting", "note": "When clients need weekly visibility." },
-      { "label": "Add-ons", "note": "When the workflow pressure is real." }
+      { "label": "Automation", "note": "Add it after the repeatable rule is clear." },
+      { "label": "Reporting", "note": "Use it when clients need weekly visibility." },
+      { "label": "Add-ons", "note": "Add them only when workflow pressure is real." }
     ]
   }
 }

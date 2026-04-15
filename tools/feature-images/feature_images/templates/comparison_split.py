@@ -10,8 +10,8 @@ def render_comparison_split(spec, context):
     draw.text((150, 208), spec["title"], font=fonts["title"], fill=palette["ink"])
     helpers["draw_text_block"](draw, spec["subtitle"], fonts["subtitle"], palette["muted"], (150, 282, 760, 72), 8, report, "comparison subtitle", max_lines=2)
 
-    left_box = (150, 392, 732, 748)
-    right_box = (868, 392, 1450, 748)
+    left_box = (150, 392, 722, 736)
+    right_box = (878, 392, 1450, 736)
     helpers["rounded_box"](draw, left_box, fill="#fbf6ee", outline=palette["stroke"], width=2, radius=34)
     helpers["rounded_box"](draw, right_box, fill="#f4f8fd", outline=palette["stroke"], width=2, radius=34)
 
@@ -20,14 +20,14 @@ def render_comparison_split(spec, context):
         (right_box, spec["right"], palette["secondary"], palette["secondary_soft"], palette["secondary"]),
     ):
         helpers["pill"](draw, (box[0] + 30, box[1] + 26, box[0] + 210, box[1] + 66), pill_fill, side["kicker"], fonts["small"], pill_text)
-        draw.text((box[0] + 30, box[1] + 96), side["title"], font=fonts["card_title"], fill=palette["ink"])
+        draw.text((box[0] + 30, box[1] + 94), side["title"], font=fonts["panel_title"], fill=palette["ink"])
         for index, item in enumerate(side["items"]):
-            y = box[1] + 156 + (index * 80)
-            helpers["rounded_box"](draw, (box[0] + 30, y, box[2] - 30, y + 58), fill="#ffffff", outline=palette["stroke"], width=2, radius=22)
-            draw.text((box[0] + 54, y + 15), item["label"], font=fonts["pill"], fill=palette["ink"])
-            draw.text((box[2] - 210, y + 16), item["note"], font=fonts["small"], fill=palette["muted"])
+            y = box[1] + 154 + (index * 72)
+            helpers["rounded_box"](draw, (box[0] + 30, y, box[2] - 30, y + 54), fill="#ffffff", outline=palette["stroke"], width=2, radius=22)
+            draw.text((box[0] + 54, y + 16), item["label"], font=fonts["pill"], fill=palette["ink"])
+            helpers["pill"](draw, (box[2] - 182, y + 9, box[2] - 32, y + 45), pill_fill, item["note"], fonts["small"], pill_text)
 
-    decision_box = (454, 674, 1146, 758)
+    decision_box = (344, 754, 1256, 800)
     helpers["rounded_box"](draw, decision_box, fill=palette["frame"], outline=palette["stroke"], width=2, radius=28)
-    draw.text((486, 700), spec["decision"]["title"], font=fonts["pill"], fill=palette["ink"])
-    helpers["draw_text_block"](draw, spec["decision"]["body"], fonts["small"], palette["muted"], (700, 692, 404, 44), 4, report, "comparison decision", max_lines=2)
+    draw.text((382, 768), spec["decision"]["title"], font=fonts["pill"], fill=palette["ink"])
+    helpers["draw_text_block"](draw, spec["decision"]["body"], fonts["small"], palette["muted"], (580, 760, 620, 24), 4, report, "comparison decision", max_lines=1)

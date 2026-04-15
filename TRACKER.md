@@ -751,3 +751,50 @@ After each future pass, add a short section with:
   - commit `bd18a1e` pushed successfully with `git push origin main`
 - Recommended next step:
   - extend the new `tools/feature-images/feature_images/data/` config set gradually, activate additional images through `data/feature_image_raster_preferences.json` only after visual review, and keep custom generators rare
+
+## Four priority homepage feature image polish pass - 2026-04-16
+
+- What was changed:
+  - tightened the shared code-generated templates used by the four homepage priority images instead of introducing one-off manual asset edits
+  - improved the workflow-map composition with cleaner connector framing, wider card spacing, and steadier note-box placement
+  - improved the hub-overview composition by wrapping the anchor title safely, softening the connector structure, and giving the stage cards more room
+  - improved the stack-blueprint composition by giving the stack tiers and trigger cards more breathing room and trimming the densest copy
+  - improved the comparison-split composition by preventing the decision strip from colliding with the lower comparison rows and turning the small side notes into clearer pills
+- Shared helpers/templates updated:
+  - `tools/feature-images/feature_images/fonts.py`
+  - `tools/feature-images/feature_images/templates/workflow_map.py`
+  - `tools/feature-images/feature_images/templates/hub_overview.py`
+  - `tools/feature-images/feature_images/templates/stack_blueprint.py`
+  - `tools/feature-images/feature_images/templates/comparison_split.py`
+- Per-image configs updated:
+  - `tools/feature-images/feature_images/data/hubs/client-workflow-systems.json`
+  - `tools/feature-images/feature_images/data/blueprints/solo-freelancer-lean-budget.json`
+  - `tools/feature-images/feature_images/data/comparisons/crm-vs-project-management.json`
+- Which of the 4 images were fixed:
+  - `freelance-client-workflow-system`
+  - `client-workflow-systems-hub` via `client-workflow-systems`
+  - `software-stack-blueprint` via `solo-freelancer-lean-budget`
+  - `crm-vs-project-management`
+- Custom exception images introduced:
+  - none; all four stayed on the shared reusable workflow
+- Files regenerated:
+  - `static/images/features/workflows/freelance-client-workflow-system.webp`
+  - `static/images/features/hubs/client-workflow-systems.webp`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.webp`
+  - `static/images/features/comparisons/crm-vs-project-management.webp`
+  - matching built copies under `public/images/features/...`
+- Verification completed:
+  - confirmed Python remained available at `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe`
+  - regenerated only the four priority images with `tools/feature-images/generate_one.py --id ...`
+  - visually reviewed all four generated `webp` outputs directly from the filesystem after regeneration and refined the weaker blueprint/comparison compositions again before closing the pass
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - confirmed the built homepage references the four regenerated raster assets:
+    - `/images/features/workflows/freelance-client-workflow-system.webp`
+    - `/images/features/hubs/client-workflow-systems.webp`
+    - `/images/features/blueprints/solo-freelancer-lean-budget.webp`
+    - `/images/features/comparisons/crm-vs-project-management.webp`
+  - confirmed the built homepage still includes the `Start Here` section and the surrounding homepage sections with no broken image references introduced
+- Commit message used:
+  - `Improve four priority homepage feature images`
+- Push result:
+  - pending until the immediate post-push tracker follow-up commit records the actual `git push origin main` result
