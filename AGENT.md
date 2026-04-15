@@ -87,11 +87,12 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 
 - All feature images must be created, edited, replaced, or regenerated through the repo's official image workflow under `tools/`.
 - SVG/scripted diagrams may be used only when they pass visual review and remain the strongest option for the page.
-- Image-model generation is allowed and preferred when SVG or scripted diagrams repeatedly fail quality review.
+- Local image-model generation is allowed and preferred when SVG or scripted diagrams repeatedly fail quality review.
+- The preferred no-API raster path is the local backend workflow under `tools/` using a user-run Windows endpoint such as Automatic1111 or ComfyUI; do not make OpenAI API or API-key billing a required step.
 - Live images served from `static/images/features/` are the final project-owned assets and must be generated there through the approved workflow rather than patched as ad hoc final-only files.
 - Feature images must keep filenames stable where possible to avoid unnecessary front matter churn.
 - Every feature image change must verify:
-  - the relevant generation script runs successfully when API/auth access is available
+  - the relevant generation script runs successfully when the required local backend is actually available
   - the affected files in `static/images/features/` actually changed
   - the Hugo build succeeds
   - homepage/card/page-header rendering uses the corrected images
