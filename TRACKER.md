@@ -798,3 +798,20 @@ After each future pass, add a short section with:
   - `Improve four priority homepage feature images`
 - Push result:
   - implementation commit `3e73070` pushed successfully with `git push origin main`
+
+## AGENT guidance merge pass - 2026-04-16
+
+- What changed:
+  - merged the durable operating guidance from the external `CLAUDE.md` source into `AGENT.md` without adding a separate generic instruction block
+  - strengthened `AGENT.md` around explicit assumptions/uncertainty handling, simplicity-first execution, surgical edits, and goal-driven verification
+- Files changed:
+  - `AGENT.md`
+  - `TRACKER.md`
+- Verification completed:
+  - reviewed the exact external source file at `https://github.com/forrestchang/andrej-karpathy-skills/blob/main/CLAUDE.md` and used the raw GitHub content to avoid HTML noise
+  - confirmed `AGENT.md` still reads as one coherent SoloOpsGuide operating manual
+  - confirmed no major duplication was introduced and repo-specific workflow/image/git rules still remain the controlling guidance
+- Commit message used:
+  - `Merge external CLAUDE guidance into AGENT`
+- Push result:
+  - pending until the immediate post-push tracker follow-up commit records the actual `git push origin main` result

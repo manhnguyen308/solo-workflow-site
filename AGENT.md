@@ -31,6 +31,9 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 - Prefer strengthening strong pages over creating more narrow assets.
 - Do not redo images, layouts, or clusters that are already in good shape unless a real regression appears.
 - Preserve the current architecture and visual system.
+- Prefer the simplest change that directly solves the user's request.
+- Do not add speculative flexibility, abstractions, or extra features that were not asked for.
+- Every changed line should trace directly to the requested outcome.
 
 ## Cluster hierarchy
 
@@ -142,20 +145,30 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 - Standard verification command:
   - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
 - If rendered output looks stale, rebuild before assuming the content is wrong.
+- Define the success check for the pass before or during implementation so verification is concrete rather than implied.
+- Prefer verification that proves the requested outcome directly, not just that files changed.
 
 ## How to run future passes
 
 1. Read `AGENT.md` first.
 2. Read `TRACKER.md` second for current project state.
-3. Keep the pass scoped to the user request.
-4. Prefer surgical improvements over broad rewrites.
-5. After the pass, update `TRACKER.md` with:
+3. Think before coding:
+   - state the key assumptions you are making,
+   - surface uncertainty or competing interpretations before implementation when they matter,
+   - prefer the simplest viable path and say so if a heavier approach is unnecessary.
+4. Keep the pass scoped to the user request.
+5. Prefer surgical improvements over broad rewrites.
+   - do not refactor adjacent code, comments, or formatting unless the task requires it,
+   - match the existing repo style,
+   - remove only unused code created by your own changes unless the user explicitly asks for broader cleanup.
+6. For multi-step tasks, define the goal and the check that will prove each meaningful step is complete.
+7. After the pass, update `TRACKER.md` with:
    - what changed,
    - files touched,
    - build result if relevant,
    - open follow-up items,
    - recommended next step.
-6. For normal repo-editing tasks, after scoped changes and verification are complete:
+8. For normal repo-editing tasks, after scoped changes and verification are complete:
    - create a git commit with a clear message,
    - push the current branch when remotes/auth are available,
    - if push cannot be completed, report the exact blocker rather than implying success.
