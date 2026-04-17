@@ -144,6 +144,7 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 - Use Hugo Extended `0.128.0` as the source of truth for validation.
 - Standard verification command:
   - `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/`
+- `public/` is generated build output and should not be committed in normal passes. Cloudflare Pages builds from source with `bash tools/build-cloudflare.sh` and writes the deploy artifact to `public/` during the build.
 - If rendered output looks stale, rebuild before assuming the content is wrong.
 - Define the success check for the pass before or during implementation so verification is concrete rather than implied.
 - Prefer verification that proves the requested outcome directly, not just that files changed.

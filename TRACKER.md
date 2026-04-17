@@ -897,3 +897,39 @@ After each future pass, add a short section with:
   - `Remove unapproved orphaned WebP feature images`
 - Push result:
   - `git push origin main` succeeded
+
+## Public build output policy pass - 2026-04-17
+
+- Deployment path evidence found:
+  - `README.md` explicitly directs deployment through Cloudflare Pages with build command `bash tools/build-cloudflare.sh`, `SITE_URL`, and output directory `public`
+  - `tools/build-cloudflare.sh` deletes `public/` and rebuilds it from source with Hugo using `SITE_URL` or `CF_PAGES_URL`
+  - `config.toml` states that production `baseURL` is supplied at build time in Cloudflare instead of being fixed in source
+  - `project-docs/DAY13_DEPLOYMENT_CHECKLIST.md` and `project-docs/GO_LIVE_CHECKLIST.md` both describe Cloudflare Pages source-build deployment using `public` as the build output directory
+- Decision made about `public/`:
+  - `public/` should not remain tracked in git for this repo
+  - the repo clearly deploys as a Cloudflare Pages source-build site, so `public/` is generated output rather than deployment source of truth
+- What changed:
+  - added `.gitignore` with a `public/` ignore rule
+  - updated `AGENT.md` so future passes know `public/` is generated output and should not be committed in normal repo work
+  - updated `README.md` to clarify that `public/` is local verification output and Cloudflare Pages builds it from source
+  - removed tracked `public/` files from git using the index-only method `git rm -r --cached public` so the files stay available locally but stop being committed
+- Whether `public/` remains tracked:
+  - no; `git ls-files public` now returns `0`
+  - local `public/` output still exists after a rebuild, but it is now ignored/generated rather than tracked source
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the policy cleanup
+  - confirmed `public/` was regenerated locally after the build and source files outside the policy/docs changes were left intact
+  - confirmed `.gitignore` matches generated output with `git check-ignore -v public/index.html` and `git check-ignore -v public/images/features/workflows/freelance-client-workflow-system.webp`
+  - confirmed `git status` no longer shows fresh generated `public/` noise beyond the intentional staged removal of tracked `public/` files for this one-time cleanup commit
+- Files changed:
+  - `.gitignore`
+  - `AGENT.md`
+  - `README.md`
+  - `TRACKER.md`
+  - tracked `public/` files removed from the git index
+- Recommended next step:
+  - keep validating local Hugo output in `public/` during verification, but do not commit `public/` again unless the deployment model itself changes
+- Commit message used:
+  - `Clarify public build output policy`
+- Push result:
+  - `git push origin main` succeeded

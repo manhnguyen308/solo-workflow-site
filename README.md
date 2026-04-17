@@ -91,7 +91,7 @@ Recommended Day 16 focus:
 - `layouts/`: Hugo templates and reusable partials.
 - `archetypes/`: content templates for workflow, guide, comparison, template, glossary, and FAQ pages.
 - `static/`: static assets and generated defaults.
-- `public/`: generated output from the latest verified build.
+- `public/`: generated Hugo output for local verification; ignored in git because Cloudflare Pages builds from source and uses `public` as the build output directory.
 - `tools/hugo/`: vendored Hugo binaries and related files.
 
 ## Launch content map
