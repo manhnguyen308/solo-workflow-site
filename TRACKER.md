@@ -65,7 +65,7 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
-- 2026-04-17 operating rhythm docs: added the Claude Code daily rhythm and Codex weekly/monthly review rhythm to `AGENT.md` and recorded it in the live workflow summary here; docs-only change, no Hugo build required.
+- 2026-04-17 operating rhythm docs: added the Claude Code daily rhythm and Codex weekly/monthly review rhythm to `AGENT.md` and recorded it in the live workflow summary here; verified only `AGENT.md` and `TRACKER.md` changed; no Hugo build required; commit `99e701d` (`Document Claude and Codex operating rhythm`) pushed successfully.
 - 2026-04-17 local cache ignore cleanup: updated `.gitignore` to ignore Python cache files and `.claude/settings.local.json`; removed generated `__pycache__` directories from the worktree; no Hugo build required for this cleanup.
 - 2026-04-17 tracker cleanup: reorganized `TRACKER.md` into a live working tracker and moved older detailed history into [project-docs/TRACKER-ARCHIVE.md](project-docs/TRACKER-ARCHIVE.md); docs-only change, no Hugo build required.
 - 2026-04-17 slug and BOM stability: added explicit slugs to the workflow anchor, intake guide, lean blueprint, and CRM-vs-PM comparison while preserving current public URLs; removed the UTF-8 BOM from the workflow anchor source (`f254c19`).
