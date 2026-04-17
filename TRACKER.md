@@ -991,4 +991,4 @@ After each future pass, add a short section with:
   - confirmed `public/` is gitignored and untracked
   - all 4 WebPs regenerated cleanly with no validation warnings
 - Commit message used: `Refine four homepage feature images`
-- Push result: TBD
+- Push result: `git push origin main` succeeded (commit `4a28c41`)
