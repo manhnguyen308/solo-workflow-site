@@ -1,5 +1,6 @@
-﻿+++
++++
 title = "Freelance Client Workflow System: Inquiry to Final Payment"
+slug = "freelance-client-workflow-system-inquiry-to-final-payment"
 description = "An end-to-end client workflow for freelancers and solo operators who need clearer handoffs from intake through payment and offboarding."
 summary = "Map the full client lifecycle, find where handoffs break, and tighten intake, onboarding, delivery, billing, and offboarding without adding tool sprawl."
 feature_image = "/images/features/workflows/freelance-client-workflow-system.svg"

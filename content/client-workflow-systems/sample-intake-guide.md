@@ -1,5 +1,6 @@
 +++
 title = "How to Build a Client Intake and Qualification Workflow"
+slug = "how-to-build-a-client-intake-and-qualification-workflow"
 description = "A practical intake and qualification workflow for solo operators who need fewer low-fit calls and stronger lead filtering before delivery starts."
 summary = "Set up intake questions, fit criteria, and a clear go or no-go decision path before discovery calls start filling the calendar."
 feature_image = "/images/features/workflows/client-intake-qualification-workflow.svg"

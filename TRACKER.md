@@ -815,3 +815,34 @@ After each future pass, add a short section with:
   - `Merge external CLAUDE guidance into AGENT`
 - Push result:
   - implementation commit `95eb0c0` pushed successfully with `git push origin main`
+
+## Stable sample slug pass - 2026-04-17
+
+- Files changed:
+  - `content/client-workflow-systems/sample-client-workflow.md`
+  - `content/client-workflow-systems/sample-intake-guide.md`
+  - `content/software-stack-blueprints/sample-stack-blueprint.md`
+  - `content/workflow-comparisons/sample-crm-vs-pm.md`
+  - `TRACKER.md`
+- What was fixed:
+  - added explicit `slug` front matter to the workflow anchor page while preserving its existing built URL: `/workflows/freelance-client-workflow-system-inquiry-to-final-payment/`
+  - added explicit `slug` front matter to the intake guide, lean blueprint, and CRM-vs-PM comparison while preserving their existing built URLs
+  - removed the UTF-8 BOM from `content/client-workflow-systems/sample-client-workflow.md`
+- What was intentionally deferred:
+  - left `content/workflow-comparisons/sample-notion-vs-clickup.md`, `content/templates-checklists/sample-onboarding-checklist.md`, and `content/glossary/sample-workflow-definition.md` untouched in this pass because they were lower-priority than the workflow anchor, intake guide, blueprint, and CRM-vs-PM pages
+  - left the larger review items alone as requested: duplicated page classification logic, `public/` deployment strategy decisions, orphaned `webp` cleanup, PowerShell generator rewrites, and broad SEO/content changes
+  - `content/faq/sample-stack-faq.md` already had an explicit `slug`, so no change was needed
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the content changes
+  - confirmed with `tools/hugo/v0.128.0/hugo.exe list all` that the touched sample pages still resolve to the exact same permalinks as before:
+    - `/workflows/freelance-client-workflow-system-inquiry-to-final-payment/`
+    - `/workflows/how-to-build-a-client-intake-and-qualification-workflow/`
+    - `/guides/software-stack-blueprint-solo-freelancer-lean-budget/`
+    - `/comparisons/crm-vs-project-management-tool-for-client-workflows/`
+  - confirmed the built anchor workflow output still exists at `public/workflows/freelance-client-workflow-system-inquiry-to-final-payment/index.html`
+  - confirmed the anchor workflow source file no longer has a BOM
+  - confirmed no front matter parse issue or Hugo build regression occurred in this pass
+- Commit message used:
+  - `Stabilize sample content slugs and remove BOM`
+- Push result:
+  - `git push origin main` succeeded

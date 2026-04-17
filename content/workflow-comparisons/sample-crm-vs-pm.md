@@ -1,5 +1,6 @@
 +++
 title = "CRM vs Project Management Tool for Client Workflows"
+slug = "crm-vs-project-management-tool-for-client-workflows"
 description = "Choose CRM-first, PM-first, or hybrid based on where client truth should live across lead management, delivery, and follow-up."
 summary = "Use this comparison to decide where active client operations should live so the rest of the stack stays coherent."
 feature_image = "/images/features/comparisons/crm-vs-project-management.svg"

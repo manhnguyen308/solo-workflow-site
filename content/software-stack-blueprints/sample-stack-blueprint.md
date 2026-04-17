@@ -1,5 +1,6 @@
 +++
 title = "Software Stack Blueprint: Solo Freelancer (Lean Budget)"
+slug = "software-stack-blueprint-solo-freelancer-lean-budget"
 description = "A staged software stack blueprint for solo freelancers who want the smallest reliable tool setup without overbuying."
 summary = "Pick a lean software stack by stage, use clear upgrade triggers, and avoid paying for complexity before the workflow needs it."
 feature_image = "/images/features/blueprints/solo-freelancer-lean-budget.svg"
