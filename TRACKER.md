@@ -846,3 +846,54 @@ After each future pass, add a short section with:
   - `Stabilize sample content slugs and remove BOM`
 - Push result:
   - `git push origin main` succeeded
+
+## Orphan WebP cleanup pass - 2026-04-17
+
+- Files changed:
+  - removed orphaned source WebPs under `static/images/features/`
+  - removed matching stale built WebPs under `public/images/features/`
+  - `TRACKER.md`
+- Which WebP files were removed:
+  - `static/images/features/blueprints/consultant-va-collaboration.webp`
+  - `static/images/features/blueprints/migrate-from-scattered-tools.webp`
+  - `static/images/features/comparisons/notion-vs-clickup.webp`
+  - `static/images/features/faq/solo-service-workflow-stack-faq.webp`
+  - `static/images/features/glossary/system-of-record.webp`
+  - `static/images/features/glossary/workflow-handoff.webp`
+  - `static/images/features/hubs/faq.webp`
+  - `static/images/features/hubs/glossary.webp`
+  - `static/images/features/hubs/software-stack-blueprints.webp`
+  - `static/images/features/hubs/templates-checklists.webp`
+  - `static/images/features/hubs/workflow-comparisons.webp`
+  - `static/images/features/site/soloopsguide-home.webp`
+  - `static/images/features/templates/client-offboarding-template.webp`
+  - `static/images/features/templates/client-onboarding-checklist.webp`
+  - `static/images/features/templates/delivery-qa-checklist.webp`
+  - `static/images/features/templates/invoice-payment-checklist.webp`
+  - `static/images/features/templates/weekly-client-operations.webp`
+  - `static/images/features/workflows/client-intake-qualification-workflow.webp`
+  - `static/images/features/workflows/proposal-contract-handoff.webp`
+  - `static/images/features/workflows/workflow-automation-basics.webp`
+  - matching built copies were also removed under `public/images/features/` for the same 20 filenames
+- Why they were removed:
+  - they were not part of the approved raster gate in `data/feature_image_raster_preferences.json`
+  - repo-wide search outside `public/` and `static/images/features/` showed no direct references to those orphan WebPs
+  - matching SVG fallbacks remained in place for every removed source image, so removing the orphan WebPs did not remove the site's fallback artwork
+- Which files were intentionally kept:
+  - kept `static/images/features/workflows/freelance-client-workflow-system.webp` and `public/images/features/workflows/freelance-client-workflow-system.webp` because the workflow anchor is explicitly approved through the raster preference gate and still used by the site
+  - kept `static/images/features/hubs/client-workflow-systems.webp` and `public/images/features/hubs/client-workflow-systems.webp` because the workflow hub is explicitly approved through the raster preference gate and still used by the site
+  - kept `static/images/features/blueprints/solo-freelancer-lean-budget.webp` and `public/images/features/blueprints/solo-freelancer-lean-budget.webp` because the lean blueprint is explicitly approved through the raster preference gate and still used by the site
+  - kept `static/images/features/comparisons/crm-vs-project-management.webp` and `public/images/features/comparisons/crm-vs-project-management.webp` because the CRM-vs-PM comparison is explicitly approved through the raster preference gate and still used by the site
+- `feature_image_raster_preferences.json` status:
+  - unchanged; it already matched the approved four-image raster set
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully after the cleanup
+  - confirmed only the four approved WebPs remain under both `static/images/features/` and `public/images/features/`
+  - confirmed repo search no longer finds references to the deleted orphan WebPs outside the deleted paths themselves
+  - confirmed the deleted WebPs' SVG fallbacks still exist under `static/images/features/`
+  - confirmed the homepage, workflow hub, blueprint hub, comparison hub, and workflow anchor still build with approved WebP references where expected
+  - confirmed removed workflow/hub cards now fall back cleanly to their SVG feature images instead of broken raster references
+- Commit message used:
+  - `Remove unapproved orphaned WebP feature images`
+- Push result:
+  - `git push origin main` succeeded
