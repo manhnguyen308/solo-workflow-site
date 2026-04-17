@@ -933,3 +933,33 @@ After each future pass, add a short section with:
   - `Clarify public build output policy`
 - Push result:
   - `git push origin main` succeeded
+
+## Four approved feature image regeneration pass - 2026-04-17
+
+- Tool/workflow used:
+  - Python 3.12 + Pillow via `tools/feature-images/generate_one.py` (the official Python/WebP workflow)
+- Images regenerated:
+  - `static/images/features/workflows/freelance-client-workflow-system.webp`
+  - `static/images/features/hubs/client-workflow-systems.webp`
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.webp`
+  - `static/images/features/comparisons/crm-vs-project-management.webp`
+- Source changes made before regeneration:
+  - `tools/feature-images/feature_images/data/workflows/freelance-client-workflow-system.json`: fixed `signal_note.title` from internal planning text ("What this image should imply") to user-facing copy ("Lifecycle view"); fixed `signal_note.body` to proper editorial label
+  - `tools/feature-images/feature_images/templates/comparison_split.py`: fixed item row spacing from `index * 72` to `index * 64` to prevent 8px overflow past panel boundary; added center visual separator (two short vertical rule segments + "vs" pill badge) in the 156px gap between left and right panels
+  - `tools/feature-images/feature_images/templates/workflow_map.py`: shifted note boxes from y=654–760 to y=664–778 for 10px more breathing room from the card panel above; updated all interior text positions accordingly; text bounds tightened to fit new height
+- Which webps actually changed vs stayed identical:
+  - `freelance-client-workflow-system.webp`: changed (signal_note content + note box position shifted)
+  - `crm-vs-project-management.webp`: changed (item spacing fix + center divider added)
+  - `client-workflow-systems.webp`: regenerated, identical output (hub_overview template and JSON unchanged — already correct)
+  - `solo-freelancer-lean-budget.webp`: regenerated, identical output (stack_blueprint template and JSON unchanged — already correct)
+- No orphan WebPs were created. Still exactly 4 WebPs in `static/images/features/`.
+- SVG fallbacks confirmed present for all 4 images.
+- Verification completed:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully (75 pages, no errors)
+  - confirmed `public/` is gitignored and clean
+  - confirmed homepage references all 4 webp assets: `freelance-client-workflow-system.webp`, `client-workflow-systems.webp`, `solo-freelancer-lean-budget.webp`, `crm-vs-project-management.webp`
+  - confirmed no homepage sections disappeared and no broken image references in the build output
+- Commit message used:
+  - `Regenerate four approved feature images`
+- Push result:
+  - see below
