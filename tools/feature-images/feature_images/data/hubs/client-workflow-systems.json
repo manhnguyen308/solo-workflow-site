@@ -9,12 +9,12 @@
   "subtitle": "One operating center connected to the core stages that keep client work moving.",
   "anchor": {
     "title": "One connected system",
-    "body": "Keep intake, delivery, billing, and closeout aligned instead of scattered."
+    "body": "Intake, delivery, billing, and closeout in one flow."
   },
   "modules": [
-    { "kicker": "Stage", "title": "Intake", "detail": "Fit checks before work starts." },
-    { "kicker": "Stage", "title": "Delivery", "detail": "Milestones, QA, and updates." },
-    { "kicker": "Stage", "title": "Billing", "detail": "Invoice timing tied to progress." },
-    { "kicker": "Stage", "title": "Closeout", "detail": "Offboarding and follow-through." }
+    { "kicker": "Stage", "title": "Intake", "detail": "Fit check at the start." },
+    { "kicker": "Stage", "title": "Delivery", "detail": "Milestones and updates." },
+    { "kicker": "Stage", "title": "Billing", "detail": "Progress-tied invoicing." },
+    { "kicker": "Stage", "title": "Closeout", "detail": "Clean offboarding." }
   ]
 }

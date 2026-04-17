@@ -11,9 +11,8 @@
     "kicker": "CRM-first",
     "title": "Relationship truth",
     "items": [
-      { "label": "Lead context", "note": "sales history" },
-      { "label": "Pipeline memory", "note": "future work" },
-      { "label": "Client record", "note": "ownership" }
+      { "label": "Client record", "note": "ownership" },
+      { "label": "Pipeline memory", "note": "future work" }
     ]
   },
   "right": {
@@ -21,7 +20,6 @@
     "title": "Delivery truth",
     "items": [
       { "label": "Active milestones", "note": "execution" },
-      { "label": "Task state", "note": "handoffs" },
       { "label": "Review flow", "note": "delivery" }
     ]
   },

@@ -963,3 +963,32 @@ After each future pass, add a short section with:
   - `Regenerate four approved feature images`
 - Push result:
   - `git push origin main` succeeded (commit `f9fffa1`)
+
+## Refine four homepage feature images - 2026-04-17
+
+- Motivation: all 4 approved WebP images still read as dense mini-dashboards at card size — stage labels too small, anchor block too visually dominant, stack bars too heavy, comparison panels too crowded
+- Files changed:
+  - `tools/feature-images/feature_images/templates/workflow_map.py`: removed card detail text, enlarged stage labels to `panel_title` (40px bold), increased card dimensions (274×210, gap 38), recentered cards in panel, moved note boxes to y=660–782
+  - `tools/feature-images/feature_images/templates/hub_overview.py`: changed anchor box fill from solid dark navy (`secondary`) to pale blue (`secondary_soft`) with navy border; updated interior text from white to `ink`/`muted`; keeps connector lines intact
+  - `tools/feature-images/feature_images/templates/stack_blueprint.py`: replaced solid dark bar fills with soft palette fills (accent_soft/secondary_soft/warm_soft) and colored borders (width=3); updated text from white to `ink`/`muted`; increased right-side trigger card spacing from 84 to 90px
+  - `tools/feature-images/feature_images/templates/comparison_split.py`: updated for 2 items per side — larger cards (height 70, spacing 92), labels upgraded from `pill` (22px) to `card_title` (28px bold), items start lower at y+170 for more panel title breathing room
+  - `tools/feature-images/feature_images/data/comparisons/crm-vs-project-management.json`: reduced from 3 items per side to 2 (kept "Client record"/"Pipeline memory" on left; "Active milestones"/"Review flow" on right)
+  - `tools/feature-images/feature_images/data/hubs/client-workflow-systems.json`: shortened anchor body and module detail text to fit cleaner in lighter anchor box
+  - `tools/feature-images/feature_images/data/workflows/freelance-client-workflow-system.json`: shortened signal_note body for cleaner fit in new note box height
+  - `static/images/features/workflows/freelance-client-workflow-system.webp`: regenerated
+  - `static/images/features/hubs/client-workflow-systems.webp`: regenerated
+  - `static/images/features/blueprints/solo-freelancer-lean-budget.webp`: regenerated
+  - `static/images/features/comparisons/crm-vs-project-management.webp`: regenerated
+- Issue-by-issue summary:
+  - Workflow: 4 stage cards now show large 40px stage names only (no small detail text); clean connector flow; note boxes have more vertical breathing room
+  - Hub: left anchor block is now pale blue instead of dark navy, removing the heavy visual imbalance; text is readable dark ink; connector lines unchanged
+  - Blueprint: 3 stack bars now use soft light fills with colored borders instead of solid dark fills; text is dark/readable; trigger cards have slightly more spacing
+  - Comparison: panels now show 2 large-label rows each instead of 3 small ones; 28px bold labels; "vs" divider retained
+- No orphan WebPs were created. Exactly 4 WebPs in `static/images/features/`.
+- SVG fallbacks confirmed present for all 4 images.
+- Verification:
+  - ran `tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/` successfully
+  - confirmed `public/` is gitignored and untracked
+  - all 4 WebPs regenerated cleanly with no validation warnings
+- Commit message used: `Refine four homepage feature images`
+- Push result: TBD

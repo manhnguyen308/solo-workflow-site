@@ -22,10 +22,10 @@ def render_comparison_split(spec, context):
         helpers["pill"](draw, (box[0] + 30, box[1] + 26, box[0] + 210, box[1] + 66), pill_fill, side["kicker"], fonts["small"], pill_text)
         draw.text((box[0] + 30, box[1] + 94), side["title"], font=fonts["panel_title"], fill=palette["ink"])
         for index, item in enumerate(side["items"]):
-            y = box[1] + 154 + (index * 64)
-            helpers["rounded_box"](draw, (box[0] + 30, y, box[2] - 30, y + 54), fill="#ffffff", outline=palette["stroke"], width=2, radius=22)
-            draw.text((box[0] + 54, y + 16), item["label"], font=fonts["pill"], fill=palette["ink"])
-            helpers["pill"](draw, (box[2] - 182, y + 9, box[2] - 32, y + 45), pill_fill, item["note"], fonts["small"], pill_text)
+            y = box[1] + 170 + (index * 92)
+            helpers["rounded_box"](draw, (box[0] + 30, y, box[2] - 30, y + 70), fill="#ffffff", outline=palette["stroke"], width=2, radius=22)
+            draw.text((box[0] + 54, y + 19), item["label"], font=fonts["card_title"], fill=palette["ink"])
+            helpers["pill"](draw, (box[2] - 182, y + 14, box[2] - 32, y + 56), pill_fill, item["note"], fonts["small"], pill_text)
 
     draw.line((800, 416, 800, 540), fill=palette["stroke"], width=3)
     draw.line((800, 608, 800, 716), fill=palette["stroke"], width=3)

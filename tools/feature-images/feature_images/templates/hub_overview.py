@@ -11,10 +11,10 @@ def render_hub_overview(spec, context):
     helpers["draw_text_block"](draw, spec["subtitle"], fonts["subtitle"], palette["muted"], (150, 282, 760, 72), 8, report, "hub subtitle", max_lines=2)
 
     anchor_box = (150, 392, 630, 748)
-    helpers["rounded_box"](draw, anchor_box, fill=palette["secondary"], outline=palette["secondary"], width=2, radius=36)
-    helpers["pill"](draw, (190, 430, 374, 470), "#43679b", "Operating center", fonts["small"], "#eef6ff")
-    helpers["draw_text_block"](draw, spec["anchor"]["title"], fonts["panel_title"], "#eef6ff", (190, 500, 330, 110), 10, report, "hub anchor title", max_lines=2)
-    helpers["draw_text_block"](draw, spec["anchor"]["body"], fonts["card_body"], "#d8e6f7", (190, 626, 360, 82), 8, report, "hub anchor body", max_lines=3)
+    helpers["rounded_box"](draw, anchor_box, fill=palette["secondary_soft"], outline=palette["secondary"], width=2, radius=36)
+    helpers["pill"](draw, (190, 430, 374, 470), palette["secondary"], "Operating center", fonts["small"], "#eef6ff")
+    helpers["draw_text_block"](draw, spec["anchor"]["title"], fonts["panel_title"], palette["ink"], (190, 500, 330, 110), 10, report, "hub anchor title", max_lines=2)
+    helpers["draw_text_block"](draw, spec["anchor"]["body"], fonts["card_body"], palette["muted"], (190, 626, 360, 82), 8, report, "hub anchor body", max_lines=3)
 
     modules = spec["modules"]
     module_boxes = [
