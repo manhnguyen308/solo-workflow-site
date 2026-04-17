@@ -41,6 +41,7 @@
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:image" content="{{ with $featureImage }}{{ .src }}{{ else }}{{ .Site.Params.defaultImage | absURL }}{{ end }}">
 <meta property="og:image:alt" content="{{ with $featureImage }}{{ .alt }}{{ else }}{{ .Title | default $siteTitle }}{{ end }}">
 <meta name="twitter:card" content="summary_large_image">
@@ -75,6 +76,7 @@
     "@context" "https://schema.org"
     "@type" "WebSite"
     "name" $siteTitle
+    "alternateName" "Solo Ops Guide"
     "url" .Permalink
     "description" $desc
   }}

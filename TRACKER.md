@@ -65,6 +65,7 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
+- 2026-04-18 site name signals: added `og:site_name` (was absent) and `alternateName: "Solo Ops Guide"` to the `WebSite` JSON-LD in `layouts/partials/head.html`; homepage `WebSite` schema already had `name: "SoloOpsGuide"` and homepage title already led with the brand name — no conflicts; Hugo build clean; verified `og:site_name`, `WebSite` JSON-LD with both name and alternateName, and homepage title in `public/index.html`; commit `Strengthen homepage site name signals` pushed successfully.
 - 2026-04-17 operating rhythm docs: added the Claude Code daily rhythm and Codex weekly/monthly review rhythm to `AGENT.md` and recorded it in the live workflow summary here; verified only `AGENT.md` and `TRACKER.md` changed; no Hugo build required; commit `99e701d` (`Document Claude and Codex operating rhythm`) pushed successfully.
 - 2026-04-17 local cache ignore cleanup: updated `.gitignore` to ignore Python cache files and `.claude/settings.local.json`; removed generated `__pycache__` directories from the worktree; no Hugo build required for this cleanup.
 - 2026-04-17 tracker cleanup: reorganized `TRACKER.md` into a live working tracker and moved older detailed history into [project-docs/TRACKER-ARCHIVE.md](project-docs/TRACKER-ARCHIVE.md); docs-only change, no Hugo build required.
