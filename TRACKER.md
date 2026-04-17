@@ -64,6 +64,7 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
+- 2026-04-17 local cache ignore cleanup: updated `.gitignore` to ignore Python cache files and `.claude/settings.local.json`; removed generated `__pycache__` directories from the worktree; no Hugo build required for this cleanup.
 - 2026-04-17 tracker cleanup: reorganized `TRACKER.md` into a live working tracker and moved older detailed history into [project-docs/TRACKER-ARCHIVE.md](project-docs/TRACKER-ARCHIVE.md); docs-only change, no Hugo build required.
 - 2026-04-17 slug and BOM stability: added explicit slugs to the workflow anchor, intake guide, lean blueprint, and CRM-vs-PM comparison while preserving current public URLs; removed the UTF-8 BOM from the workflow anchor source (`f254c19`).
 - 2026-04-17 image cleanup: removed 20 unapproved orphan WebPs, leaving exactly 4 approved WebPs plus SVG fallbacks (`f3e935d`).

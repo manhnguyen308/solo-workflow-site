@@ -1,2 +1,9 @@
 # Generated Hugo build output; Cloudflare Pages builds this from source.
 /public/
+
+# Local Python cache / bytecode output.
+__pycache__/
+*.py[cod]
+
+# Local tool settings.
+.claude/settings.local.json
