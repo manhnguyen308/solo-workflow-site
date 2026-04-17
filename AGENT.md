@@ -149,6 +149,13 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 - Define the success check for the pass before or during implementation so verification is concrete rather than implied.
 - Prefer verification that proves the requested outcome directly, not just that files changed.
 
+## Operating rhythm
+
+- Daily: Claude Code is the default content/improvement agent. Use it to create or improve content, run the build, update `TRACKER.md` or the relevant progress log, and do light QA.
+- Weekly: Codex is the default review/fix agent. Use it to review Claude Code's recent work and fix duplicated UI, broken layout, weak SEO, thin content, internal-link gaps, affiliate issues, and AdSense risks.
+- Monthly: Codex should run a deeper audit across category pages, homepage, older posts, monetization, affiliate disclosures, site speed, indexing, and low-value content risk.
+- Default cadence: weekly Codex review is the sweet spot. Use daily Codex review only during heavy build weeks or before AdSense submission.
+
 ## How to run future passes
 
 1. Read `AGENT.md` first.

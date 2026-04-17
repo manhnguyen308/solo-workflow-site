@@ -13,6 +13,7 @@ Read this after `AGENT.md`. This is the live project tracker for current state, 
 - Current feature-image status: exactly 4 approved WebPs remain active, SVG fallbacks remain in place, the Python/Pillow workflow exists under `tools/feature-images/`, and future image polish should stay review-gated.
 - Current build/deploy status: Cloudflare Pages builds from source, and `public/` is generated output that should remain ignored and untracked.
 - Current repo workflow: read `AGENT.md`, read `TRACKER.md`, make a scoped change, update `TRACKER.md`, then commit and push if successful.
+- Current operating rhythm: Claude Code is the daily content/improvement tool; Codex is the default weekly review/fix tool and the monthly deeper audit tool; daily Codex use is reserved for heavy build weeks or pre-AdSense submission.
 - Repo organization decision still in force: `AGENT.md`, `TRACKER.md`, `README.md`, and `LICENSE` stay at the repo root; non-core process/reference markdown lives under `project-docs/`.
 
 ## Active priorities
@@ -64,6 +65,7 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
+- 2026-04-17 operating rhythm docs: added the Claude Code daily rhythm and Codex weekly/monthly review rhythm to `AGENT.md` and recorded it in the live workflow summary here; docs-only change, no Hugo build required.
 - 2026-04-17 local cache ignore cleanup: updated `.gitignore` to ignore Python cache files and `.claude/settings.local.json`; removed generated `__pycache__` directories from the worktree; no Hugo build required for this cleanup.
 - 2026-04-17 tracker cleanup: reorganized `TRACKER.md` into a live working tracker and moved older detailed history into [project-docs/TRACKER-ARCHIVE.md](project-docs/TRACKER-ARCHIVE.md); docs-only change, no Hugo build required.
 - 2026-04-17 slug and BOM stability: added explicit slugs to the workflow anchor, intake guide, lean blueprint, and CRM-vs-PM comparison while preserving current public URLs; removed the UTF-8 BOM from the workflow anchor source (`f254c19`).
