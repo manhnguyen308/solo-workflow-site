@@ -29,10 +29,20 @@ def render_hub_overview(spec, context):
         draw.text((box[0] + 24, box[1] + 86), module["title"], font=fonts["card_title"], fill=palette["ink"])
         helpers["draw_text_block"](draw, module["detail"], fonts["card_body"], palette["muted"], (box[0] + 24, box[1] + 126, 280, 64), 6, report, f"hub module {module['title']}", max_lines=2)
 
-    connector_x1 = 630
-    connector_x2 = 676
-    draw.line((connector_x1, 570, connector_x2, 570), fill=palette["accent"], width=6)
-    draw.line((connector_x2, 476, connector_x2, 664), fill=palette["accent"], width=6)
-    draw.ellipse((connector_x2 - 12, 558, connector_x2 + 12, 582), fill=palette["accent"])
-    for y, x in ((476, 708), (476, 1090), (664, 708), (664, 1090)):
-        draw.line((connector_x2, y, x, y), fill=palette["accent"], width=6)
+    # Left-gap connectors: anchor box → left-column (middle) modules
+    # trunk_x is in the gap between anchor right (630) and left-column left (708)
+    trunk_x = 676
+    top_cy = 476    # centre y of top-row module boxes: (392+560)//2
+    bottom_cy = 664 # centre y of bottom-row module boxes: (580+748)//2
+    anchor_cy = 570 # centre y of anchor box: (392+748)//2
+
+    draw.line((630, anchor_cy, trunk_x, anchor_cy), fill=palette["accent"], width=6)
+    draw.line((trunk_x, top_cy, trunk_x, bottom_cy), fill=palette["accent"], width=6)
+    draw.ellipse((trunk_x - 12, anchor_cy - 12, trunk_x + 12, anchor_cy + 12), fill=palette["accent"])
+    draw.line((trunk_x, top_cy, 708, top_cy), fill=palette["accent"], width=6)
+    draw.line((trunk_x, bottom_cy, 708, bottom_cy), fill=palette["accent"], width=6)
+
+    # Right-gap connectors: left-column (middle) modules → right-column modules
+    # Left-column right edge: 1048; right-column left edge: 1090
+    draw.line((1048, top_cy, 1090, top_cy), fill=palette["accent"], width=6)
+    draw.line((1048, bottom_cy, 1090, bottom_cy), fill=palette["accent"], width=6)
