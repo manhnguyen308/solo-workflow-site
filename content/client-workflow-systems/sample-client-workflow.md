@@ -188,12 +188,12 @@ Implementation asset: [Client Offboarding + Testimonial Request Template](/templ
 
 Start with the earliest stage whose weakness is still creating downstream cleanup.
 
-- Fix intake first if low-fit work keeps entering the system.
-- Fix proposal review first if kickoff starts from unstable promises.
-- Fix onboarding first if signed work still starts messy.
-- Fix delivery first if active work is where chaos begins.
-- Fix billing first if work finishes but cash collection still feels reactive.
-- Fix offboarding first if finished projects keep leaking loose ends and future value.
+- Fix intake first if low-fit work keeps entering the system. Use the [intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
+- Fix proposal review first if kickoff starts from unstable promises. Use the [proposal-to-contract handoff guide](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- Fix onboarding first if signed work still starts messy. Use the [client onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
+- Fix delivery first if active work is where chaos begins. Use the [milestone delivery workflow](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+- Fix billing first if work finishes but cash collection still feels reactive. Use the [invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- Fix offboarding first if finished projects keep leaking loose ends and future value. Use the [client offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
 
 Do not start with the most annoying symptom if it is only a downstream effect of an earlier weak handoff.
 
