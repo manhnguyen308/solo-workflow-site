@@ -26,35 +26,12 @@ If you only open one page from this hub, start with [Freelance Client Workflow S
 - the lifecycle is already clear and the real problem is stack shape -> go to [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/),
 - the stage is clear and only one bounded system decision is left -> go to [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/).
 
-## The safest first path through this hub
-
-1. Open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first if the lifecycle still feels broad or fuzzy.
-2. Move into the stage guide that matches the clearest bottleneck.
-3. Move into [Software Stack Blueprints for Solo Operators](/software-stack-blueprints/) or [Workflow Tool Comparisons for Solo Operators](/workflow-comparisons/) only after the stage rule itself is clear and the remaining blocker is tool structure rather than stage design.
-
-## Use this hub as a sequence, not a library
-
-Most readers do better when they pick one of these starting questions first:
-
-- Is the whole lifecycle unclear?
-- Is one stage weak but the rest mostly works?
-- Is the stage itself clear, but the handoff into or out of it still breaks?
-
 ## How to use this hub
 
 - Start with the full lifecycle page if you are not yet sure where the breakdown is.
 - Open the stage-specific guide only after you can name the bottleneck clearly.
 - Pull in checklists after the workflow rule is clear, not before.
 - Use comparisons and stack pages only when the real issue is tool fit rather than stage design.
-
-## Fastest useful starting points
-
-- Open [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if you are new to the site or the whole lifecycle feels fuzzy.
-- Open [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) if projects are sold but still start chaotically.
-- Open [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) if live execution, reviews, or approvals are where work starts to slip.
-- Open [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) if delivery is happening but cash collection and follow-up still feel reactive.
-
-If more than one of those sounds equally true, the anchor workflow is still the best first click.
 
 ## Start with the broken stage
 
