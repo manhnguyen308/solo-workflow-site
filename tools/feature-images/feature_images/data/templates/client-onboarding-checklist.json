@@ -1,0 +1,20 @@
+{
+  "id": "client-onboarding-checklist",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/client-onboarding-checklist.webp",
+  "eyebrow": "Onboarding asset",
+  "title": "Client Onboarding Checklist",
+  "subtitle": "First-week setup and confirmation before delivery begins.",
+  "trigger": {
+    "label": "After contract signing",
+    "note": "Before the first deliverable"
+  },
+  "steps": [
+    { "label": "Access and tools confirmed", "tag": "Day 1" },
+    { "label": "Kickoff agenda set", "tag": "Day 1" },
+    { "label": "Owner per item named", "tag": "Day 2" },
+    { "label": "First milestone agreed", "tag": "Day 3" }
+  ]
+}

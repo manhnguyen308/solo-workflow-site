@@ -1,0 +1,20 @@
+{
+  "id": "client-silence-review-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "comparison",
+  "output_path": "static/images/features/faq/client-silence-review-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "Client Goes Silent FAQ",
+  "subtitle": "Follow-up pattern when a client stops responding during a review or approval stage.",
+  "problem": {
+    "label": "No response in review",
+    "condition": "Approval stalled without explanation"
+  },
+  "routes": [
+    { "label": "Is silence approval?", "note": "Check first" },
+    { "label": "Reminder timing", "note": "When and tone" },
+    { "label": "Set a close date", "note": "Hard deadline" },
+    { "label": "Advance with caveat", "note": "How to move" }
+  ]
+}

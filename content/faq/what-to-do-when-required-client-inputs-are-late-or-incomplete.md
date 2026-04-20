@@ -2,7 +2,7 @@
 title = "FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?"
 description = "A narrow workflow FAQ for solo operators who need a practical response when required client assets, approvals, access, or decisions do not arrive on time."
 summary = "Use this page when work is stalled by missing client inputs and you need a clear response pattern instead of vague waiting."
-feature_image = "/images/features/faq/client-input-delay-faq.svg"
+feature_image = "/images/features/faq/client-input-delay-faq.webp"
 feature_image_alt = "Editorial FAQ illustration showing a workflow stage delayed by missing client inputs, with timeline and dependency markers."
 draft = false
 date = 2026-04-08T00:00:00Z

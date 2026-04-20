@@ -1,0 +1,20 @@
+{
+  "id": "stack-audit-consolidation-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "blueprint",
+  "output_path": "static/images/features/templates/stack-audit-consolidation-worksheet.webp",
+  "eyebrow": "Audit asset",
+  "title": "Stack Audit Worksheet",
+  "subtitle": "Keep, cut, or merge tools against real workflow requirements.",
+  "trigger": {
+    "label": "Quarterly review",
+    "note": "When the stack feels heavy or redundant"
+  },
+  "steps": [
+    { "label": "Inventory all active tools", "tag": "Audit" },
+    { "label": "Map each tool to a workflow gap", "tag": "Test" },
+    { "label": "Flag overlap and true gaps", "tag": "Review" },
+    { "label": "Decide keep, cut, or merge", "tag": "Decide" }
+  ]
+}

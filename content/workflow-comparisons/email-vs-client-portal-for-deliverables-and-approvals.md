@@ -2,7 +2,7 @@
 title = "Email vs Client Portal for Deliverables and Approvals"
 description = "Choose between email-first delivery and a client portal or workspace based on approval complexity, visibility needs, and workflow overhead."
 summary = "This comparison helps solo operators decide whether email is enough for deliverables and approvals or whether a portal-style client workspace is justified."
-feature_image = "/images/features/comparisons/email-vs-client-portal.svg"
+feature_image = "/images/features/comparisons/email-vs-client-portal.webp"
 feature_image_alt = "Editorial comparison illustration representing email-first delivery versus a client portal workflow for reviews and approvals."
 draft = false
 date = 2026-04-07T00:00:00Z

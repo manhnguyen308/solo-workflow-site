@@ -1,0 +1,20 @@
+{
+  "id": "workflow-comparisons",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "comparison",
+  "output_path": "static/images/features/hubs/workflow-comparisons.webp",
+  "eyebrow": "Comparison hub",
+  "title": "Workflow Tool Comparisons",
+  "subtitle": "One bounded decision at a time. Use after the workflow model is clear.",
+  "anchor": {
+    "title": "System-center first",
+    "body": "Decide where operational truth lives before choosing the tools that surround it."
+  },
+  "modules": [
+    { "kicker": "Compare", "title": "CRM vs PM", "detail": "Where client truth lives." },
+    { "kicker": "Compare", "title": "Notion vs ClickUp", "detail": "Docs vs execution routing." },
+    { "kicker": "Compare", "title": "Booking tools", "detail": "Dedicated vs built-in intake." },
+    { "kicker": "Compare", "title": "Billing home", "detail": "Invoice vs system of record." }
+  ]
+}

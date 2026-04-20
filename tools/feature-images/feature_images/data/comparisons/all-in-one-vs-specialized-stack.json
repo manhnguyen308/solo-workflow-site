@@ -1,0 +1,30 @@
+{
+  "id": "all-in-one-vs-specialized-stack",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/all-in-one-vs-specialized-stack.webp",
+  "eyebrow": "Stack shape",
+  "title": "All-in-One vs Specialized Stack",
+  "subtitle": "Single unified platform vs best-fit tools for each workflow function.",
+  "left": {
+    "kicker": "All-in-one",
+    "title": "Single platform",
+    "items": [
+      { "label": "One login", "note": "low admin overhead" },
+      { "label": "Built-in sync", "note": "no integration gaps" }
+    ]
+  },
+  "right": {
+    "kicker": "Specialized",
+    "title": "Best-fit tools",
+    "items": [
+      { "label": "Role-fit tools", "note": "each function" },
+      { "label": "Integration risk", "note": "sync overhead" }
+    ]
+  },
+  "decision": {
+    "title": "Choose by complexity",
+    "body": "All-in-one first. Specialize only when complexity demands it."
+  }
+}

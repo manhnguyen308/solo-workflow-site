@@ -1,0 +1,17 @@
+{
+  "id": "workflow-handoff",
+  "category": "glossary",
+  "layout": "concept_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/glossary/workflow-handoff.webp",
+  "eyebrow": "Definition",
+  "title": "Workflow Handoff",
+  "subtitle": "The stage boundary where ownership and next action must be explicit before work advances.",
+  "concept": "Stage boundary",
+  "attributes": [
+    { "label": "Named owner", "note": "Who holds responsibility next." },
+    { "label": "Required inputs", "note": "What must be ready to proceed." },
+    { "label": "Ready signal", "note": "Condition that allows advance." },
+    { "label": "Next action", "note": "First move in the following stage." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "solo-service-workflow-stack-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "comparison",
+  "output_path": "static/images/features/faq/solo-service-workflow-stack-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "Workflow Stack Setup",
+  "subtitle": "Fast routing for tool-choice and stack-setup questions.",
+  "problem": {
+    "label": "Stack setup question",
+    "condition": "Tool fit feels unclear before the workflow is stable"
+  },
+  "routes": [
+    { "label": "Stack shape decision", "note": "Blueprint page" },
+    { "label": "Tool fit comparison", "note": "Comparison page" },
+    { "label": "Workflow before tools", "note": "Workflow anchor" },
+    { "label": "Ops system first", "note": "Hub page" }
+  ]
+}

@@ -2,7 +2,7 @@
 title = "Software Stack Blueprint: Consultant + VA Collaboration Setup"
 description = "A lean software stack blueprint for consultants working with a virtual assistant while maintaining clear client workflow ownership."
 summary = "Design a two-person stack with role boundaries, handoff clarity, and minimal admin overhead."
-feature_image = "/images/features/blueprints/consultant-va-collaboration.svg"
+feature_image = "/images/features/blueprints/consultant-va-collaboration.webp"
 feature_image_alt = "Illustrated two-person stack blueprint showing adjacent consultant and assistant operating panels."
 draft = false
 date = 2026-04-02T00:00:00Z

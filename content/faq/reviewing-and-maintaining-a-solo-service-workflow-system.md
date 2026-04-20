@@ -2,7 +2,7 @@
 title = "Reviewing and Maintaining a Solo Service Workflow System FAQ"
 description = "A maintenance-focused FAQ for solo operators reviewing workflow drift, recurring friction, and when to return to a stronger core page."
 summary = "Use this FAQ to review and maintain a solo service workflow system without overreacting, over-tooling, or letting process drift build quietly."
-feature_image = "/images/features/faq/workflow-maintenance-faq.svg"
+feature_image = "/images/features/faq/workflow-maintenance-faq.webp"
 feature_image_alt = "Editorial FAQ illustration representing recurring review questions, weekly checks, and workflow maintenance."
 draft = false
 date = 2026-04-07T00:00:00Z

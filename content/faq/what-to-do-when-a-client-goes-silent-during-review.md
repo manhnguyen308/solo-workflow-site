@@ -2,7 +2,7 @@
 title = "FAQ: What Should I Do When a Client Goes Silent During Review?"
 description = "A narrow workflow FAQ for solo operators who need a clean response when client review goes quiet and final decisions stop moving."
 summary = "Use this page when a client stops responding during review and you need a practical follow-up pattern without confusing silence with approval."
-feature_image = "/images/features/faq/client-silence-review-faq.svg"
+feature_image = "/images/features/faq/client-silence-review-faq.webp"
 feature_image_alt = "Editorial FAQ illustration showing a review stage paused by client silence, with follow-up and next-step prompts."
 draft = false
 date = 2026-04-08T00:00:00Z

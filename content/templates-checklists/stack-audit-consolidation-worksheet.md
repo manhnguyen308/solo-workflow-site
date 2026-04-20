@@ -2,7 +2,7 @@
 title = "Stack Audit / Consolidation Worksheet for Solo Operators"
 description = "A practical stack audit worksheet for solo operators who need to document system-of-record rules, keep/replace/retire decisions, and migration boundaries before consolidating tools."
 summary = "Use this worksheet to inventory your current tools, define where client truth should live, and decide what stays, what moves, and what gets retired."
-feature_image = "/images/features/templates/stack-audit-consolidation-worksheet.svg"
+feature_image = "/images/features/templates/stack-audit-consolidation-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing a stack audit table, keep-replace-retire decisions, and migration boundary notes."
 draft = false
 date = 2026-04-08T00:00:00Z

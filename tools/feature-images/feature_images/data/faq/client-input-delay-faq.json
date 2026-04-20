@@ -1,0 +1,20 @@
+{
+  "id": "client-input-delay-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "comparison",
+  "output_path": "static/images/features/faq/client-input-delay-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "Client Input Delay FAQ",
+  "subtitle": "Response pattern when required client inputs are late or incomplete.",
+  "problem": {
+    "label": "Required input missing",
+    "condition": "Work stalled waiting on a client-owned asset or decision"
+  },
+  "routes": [
+    { "label": "What exactly is needed?", "note": "Name the gap" },
+    { "label": "Hard deadline set", "note": "Wait with limit" },
+    { "label": "Scope impact stated", "note": "Escalate clearly" },
+    { "label": "Recovery plan ready", "note": "Restart path" }
+  ]
+}

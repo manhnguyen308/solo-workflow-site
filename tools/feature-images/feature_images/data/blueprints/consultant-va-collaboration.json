@@ -1,0 +1,23 @@
+{
+  "id": "consultant-va-collaboration",
+  "category": "blueprints",
+  "layout": "stack_blueprint",
+  "palette": "blueprint",
+  "output_path": "static/images/features/blueprints/consultant-va-collaboration.webp",
+  "eyebrow": "Two-person stack",
+  "title": "Consultant + VA Setup",
+  "subtitle": "Lean two-person operating model with clear role ownership and handoff boundaries.",
+  "stack_layers": [
+    { "title": "Consultant lead", "detail": "Owns client truth and approval decisions." },
+    { "title": "VA execution", "detail": "Runs defined task categories within scope." },
+    { "title": "Shared visibility", "detail": "One tool both can read at handoff." }
+  ],
+  "side_panel": {
+    "title": "Role rules",
+    "items": [
+      { "label": "Ownership", "note": "Lead sets scope. VA executes within it." },
+      { "label": "Handoff trigger", "note": "Explicit before VA action begins." },
+      { "label": "Escalation", "note": "VA escalates before acting outside scope." }
+    ]
+  }
+}

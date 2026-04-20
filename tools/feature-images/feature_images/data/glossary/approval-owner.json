@@ -1,0 +1,17 @@
+{
+  "id": "approval-owner",
+  "category": "glossary",
+  "layout": "concept_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/glossary/approval-owner.webp",
+  "eyebrow": "Definition",
+  "title": "Approval Owner",
+  "subtitle": "The named person who can close a review stage and authorize the next one to begin.",
+  "concept": "Decision holder",
+  "attributes": [
+    { "label": "Named role", "note": "Explicit, not assumed." },
+    { "label": "Review scope", "note": "What they are authorized to approve." },
+    { "label": "Release trigger", "note": "What act advances the stage." },
+    { "label": "Escalation path", "note": "Who steps in when unavailable." }
+  ]
+}

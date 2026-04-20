@@ -1,0 +1,30 @@
+{
+  "id": "billing-status-home",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/billing-status-home.webp",
+  "eyebrow": "Billing visibility",
+  "title": "Best Home for Billing Status",
+  "subtitle": "Decide whether invoice state lives in the invoicing tool or your system of record.",
+  "left": {
+    "kicker": "Invoice tool",
+    "title": "Finance-first view",
+    "items": [
+      { "label": "Payment aging", "note": "overdue tracking" },
+      { "label": "Follow-up logic", "note": "reminders" }
+    ]
+  },
+  "right": {
+    "kicker": "System of record",
+    "title": "Operational view",
+    "items": [
+      { "label": "Milestone link", "note": "project context" },
+      { "label": "Live status", "note": "active visibility" }
+    ]
+  },
+  "decision": {
+    "title": "Keep one home",
+    "body": "One home only. Duplication causes follow-up to slip."
+  }
+}

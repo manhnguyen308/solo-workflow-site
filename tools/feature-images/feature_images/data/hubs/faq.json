@@ -1,0 +1,20 @@
+{
+  "id": "faq",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "workflow",
+  "output_path": "static/images/features/hubs/faq.webp",
+  "eyebrow": "FAQ hub",
+  "title": "Workflow Operations FAQ",
+  "subtitle": "Short routing answers. Each FAQ points back to the right workflow, blueprint, or comparison page.",
+  "anchor": {
+    "title": "Fast routing first",
+    "body": "These FAQs answer one bounded question and route out to the correct detailed page quickly."
+  },
+  "modules": [
+    { "kicker": "FAQ", "title": "Stack setup", "detail": "Tool choice questions." },
+    { "kicker": "FAQ", "title": "Maintenance", "detail": "When and how to review." },
+    { "kicker": "FAQ", "title": "Client silence", "detail": "Follow-up and escalation." },
+    { "kicker": "FAQ", "title": "Missing input", "detail": "Stalled work recovery." }
+  ]
+}

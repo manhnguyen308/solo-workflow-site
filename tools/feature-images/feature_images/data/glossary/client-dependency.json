@@ -1,0 +1,17 @@
+{
+  "id": "client-dependency",
+  "category": "glossary",
+  "layout": "concept_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/glossary/client-dependency.webp",
+  "eyebrow": "Definition",
+  "title": "Client Dependency",
+  "subtitle": "A required client input that must arrive before the next stage of work can advance.",
+  "concept": "Required input",
+  "attributes": [
+    { "label": "What is needed", "note": "Asset, decision, or access." },
+    { "label": "Named owner", "note": "Specific client contact responsible." },
+    { "label": "Due date", "note": "When needed to avoid delivery slip." },
+    { "label": "Stall risk", "note": "Impact if late or incomplete." }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "invoice-payment-checklist",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/invoice-payment-checklist.webp",
+  "eyebrow": "Billing asset",
+  "title": "Invoice and Payment Checklist",
+  "subtitle": "Follow-up rhythm to convert completed work to collected revenue.",
+  "trigger": {
+    "label": "On milestone completion",
+    "note": "Tied to a delivery event"
+  },
+  "steps": [
+    { "label": "Issue invoice on trigger", "tag": "Send" },
+    { "label": "Confirm receipt", "tag": "Track" },
+    { "label": "Follow up at 3 and 7 days", "tag": "Remind" },
+    { "label": "Mark paid or escalate", "tag": "Close" }
+  ]
+}

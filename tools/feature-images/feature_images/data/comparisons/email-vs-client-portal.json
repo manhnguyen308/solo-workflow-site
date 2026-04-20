@@ -1,0 +1,30 @@
+{
+  "id": "email-vs-client-portal",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/email-vs-client-portal.webp",
+  "eyebrow": "Approval channel",
+  "title": "Email vs Client Portal",
+  "subtitle": "Direct inbox delivery vs a dedicated approval and visibility workspace for client deliverables.",
+  "left": {
+    "kicker": "Email-first",
+    "title": "Direct and light",
+    "items": [
+      { "label": "Low friction", "note": "no login required" },
+      { "label": "Thread history", "note": "audit trail" }
+    ]
+  },
+  "right": {
+    "kicker": "Portal-first",
+    "title": "Visibility and approval",
+    "items": [
+      { "label": "Deliverable home", "note": "central workspace" },
+      { "label": "Approval state", "note": "explicit and tracked" }
+    ]
+  },
+  "decision": {
+    "title": "Use portal when",
+    "body": "Approval state must be tracked separately from inbox thread history."
+  }
+}

@@ -2,7 +2,7 @@
 title = "Software Stack Blueprints for Solo Operators"
 description = "Lean software stack blueprints for freelancers and solo operators choosing calmer, lower-overhead client systems without overbuying."
 summary = "Use this hub after the workflow is mostly clear and you need a calmer baseline stack model rather than another isolated tool choice."
-feature_image = "/images/features/hubs/software-stack-blueprints.svg"
+feature_image = "/images/features/hubs/software-stack-blueprints.webp"
 feature_image_alt = "Editorial blueprint illustration with layered system panels and planning blocks."
 +++
 

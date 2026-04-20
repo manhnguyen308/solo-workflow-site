@@ -2,7 +2,7 @@
 title = "Client Workflow Systems for Freelancers and Solo Operators"
 description = "Stage-by-stage client workflow guides for freelancers and solo operators fixing messy client handoffs from inquiry to final payment."
 summary = "Start here when the whole client lifecycle feels messy and you need to identify which stage, handoff, or approval point is actually failing."
-feature_image = "/images/features/hubs/client-workflow-systems.svg"
+feature_image = "/images/features/hubs/client-workflow-systems.webp"
 feature_image_alt = "Editorial workflow illustration showing connected stages across a client delivery system."
 +++
 

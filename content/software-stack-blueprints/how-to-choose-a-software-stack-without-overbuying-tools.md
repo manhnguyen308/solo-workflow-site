@@ -2,7 +2,7 @@
 title = "How to Choose a Software Stack Without Overbuying Tools"
 description = "A software stack decision guide for solo operators who need to decide what to buy now, what to delay, and what not to add yet."
 summary = "Use this guide to choose tools by workflow need, delay premature purchases, and avoid paying for extra software before it earns its place."
-feature_image = "/images/features/blueprints/software-stack-without-overbuying.svg"
+feature_image = "/images/features/blueprints/software-stack-without-overbuying.webp"
 feature_image_alt = "Editorial blueprint illustration representing staged tool choices, buying boundaries, and delayed purchases."
 draft = false
 date = 2026-04-07T00:00:00Z

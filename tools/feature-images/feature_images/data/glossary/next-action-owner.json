@@ -1,0 +1,17 @@
+{
+  "id": "next-action-owner",
+  "category": "glossary",
+  "layout": "concept_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/glossary/next-action-owner.webp",
+  "eyebrow": "Definition",
+  "title": "Next Action Owner",
+  "subtitle": "The person who owns the very next move, identified before any handoff completes.",
+  "concept": "Move owner",
+  "attributes": [
+    { "label": "One person", "note": "Not a group, not a role label." },
+    { "label": "Due date", "note": "When the action must be complete." },
+    { "label": "Scope", "note": "What they own and what they do not." },
+    { "label": "Follow-up", "note": "How to escalate if the action stalls." }
+  ]
+}

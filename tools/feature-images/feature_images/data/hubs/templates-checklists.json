@@ -1,0 +1,20 @@
+{
+  "id": "templates-checklists",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "workflow",
+  "output_path": "static/images/features/hubs/templates-checklists.webp",
+  "eyebrow": "Asset hub",
+  "title": "Templates and Checklists",
+  "subtitle": "Use after the workflow rule is clear. Each asset covers one execution moment.",
+  "anchor": {
+    "title": "Use after the rule",
+    "body": "Templates run best after the workflow and handoff logic is already settled."
+  },
+  "modules": [
+    { "kicker": "Asset", "title": "Onboarding", "detail": "Kickoff setup and confirmation." },
+    { "kicker": "Asset", "title": "Weekly ops", "detail": "Review and escalation rhythm." },
+    { "kicker": "Asset", "title": "Invoice", "detail": "Billing follow-up cycle." },
+    { "kicker": "Asset", "title": "Stack audit", "detail": "Keep, cut, or merge tools." }
+  ]
+}

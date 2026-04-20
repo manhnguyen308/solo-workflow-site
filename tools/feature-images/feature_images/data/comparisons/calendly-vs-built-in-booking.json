@@ -1,0 +1,30 @@
+{
+  "id": "calendly-vs-built-in-booking",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/calendly-vs-built-in-booking.webp",
+  "eyebrow": "Intake routing",
+  "title": "Calendly vs Built-In Booking",
+  "subtitle": "Dedicated intake scheduling vs lighter built-in booking for solo operator lead flow.",
+  "left": {
+    "kicker": "Dedicated tool",
+    "title": "External booking",
+    "items": [
+      { "label": "Intake form", "note": "pre-qualify leads" },
+      { "label": "Buffer rules", "note": "schedule control" }
+    ]
+  },
+  "right": {
+    "kicker": "Built-in",
+    "title": "Embedded scheduling",
+    "items": [
+      { "label": "Fewer logins", "note": "simpler ops" },
+      { "label": "Unified inbox", "note": "one context" }
+    ]
+  },
+  "decision": {
+    "title": "Use dedicated when",
+    "body": "Pre-qualification logic is too complex for native calendar scheduling."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "system-of-record",
+  "category": "glossary",
+  "layout": "concept_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/glossary/system-of-record.webp",
+  "eyebrow": "Definition",
+  "title": "System of Record",
+  "subtitle": "One authoritative source for active client status and operational decisions.",
+  "concept": "Source of truth",
+  "attributes": [
+    { "label": "Single home", "note": "One place per data type, no duplicates." },
+    { "label": "Write rules", "note": "Who updates it and when." },
+    { "label": "Sync policy", "note": "How it stays current across the team." },
+    { "label": "Handoff use", "note": "Referenced at every stage transition." }
+  ]
+}

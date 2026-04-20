@@ -1,0 +1,23 @@
+{
+  "id": "software-stack-without-overbuying",
+  "category": "blueprints",
+  "layout": "stack_blueprint",
+  "palette": "blueprint",
+  "output_path": "static/images/features/blueprints/software-stack-without-overbuying.webp",
+  "eyebrow": "Buying decision",
+  "title": "Choose Without Overbuying",
+  "subtitle": "Add tools only when a workflow gap is already named and the manual path is stable.",
+  "stack_layers": [
+    { "title": "Require first", "detail": "Name the gap before choosing a tool." },
+    { "title": "One tool per function", "detail": "No duplicate systems of record." },
+    { "title": "Delay specialty tools", "detail": "Automation after the manual path works." }
+  ],
+  "side_panel": {
+    "title": "Buying tests",
+    "items": [
+      { "label": "Real gap", "note": "Does a workflow step break without it?" },
+      { "label": "One home", "note": "Will this create a second source of truth?" },
+      { "label": "Must-have", "note": "Would you notice if it disappeared?" }
+    ]
+  }
+}

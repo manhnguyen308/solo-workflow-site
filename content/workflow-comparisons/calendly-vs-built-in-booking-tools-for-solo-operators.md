@@ -2,7 +2,7 @@
 title = "Calendly vs Built-In Booking Tools for Solo Operators"
 description = "Choose between Calendly-style scheduling tools and built-in booking options based on intake complexity, call volume, and stack overhead."
 summary = "Use this comparison to decide when a dedicated booking tool is justified and when lighter built-in scheduling is enough for low-complexity intake."
-feature_image = "/images/features/comparisons/calendly-vs-built-in-booking.svg"
+feature_image = "/images/features/comparisons/calendly-vs-built-in-booking.webp"
 feature_image_alt = "Editorial comparison illustration representing a dedicated scheduling tool versus a lighter built-in booking setup."
 draft = false
 date = 2026-04-07T00:00:00Z

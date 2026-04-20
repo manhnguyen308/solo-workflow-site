@@ -2,7 +2,7 @@
 title = "Best Home for Billing Status: Invoicing Tool vs System of Record"
 description = "Decide whether billing status should live only inside the invoicing tool or stay visible in the main system of record too."
 summary = "Use this comparison to decide how invoice state should stay visible during live operations without duplicating truth or losing billing follow-up."
-feature_image = "/images/features/comparisons/billing-status-home.svg"
+feature_image = "/images/features/comparisons/billing-status-home.webp"
 feature_image_alt = "Editorial comparison illustration contrasting invoice-tool status with billing visibility inside a main operating record."
 draft = false
 date = 2026-04-09T00:00:00Z

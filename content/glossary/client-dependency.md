@@ -2,7 +2,7 @@
 title = "Client Dependency"
 description = "A client dependency is any input, approval, asset, or decision the client must provide before a workflow stage can move forward."
 summary = "Use this definition to clarify what counts as a client dependency and why delayed inputs or approvals quietly stall delivery, billing, and closeout."
-feature_image = "/images/features/glossary/client-dependency.svg"
+feature_image = "/images/features/glossary/client-dependency.webp"
 feature_image_alt = "Editorial glossary illustration representing a workflow stage blocked by a required client input or approval."
 draft = false
 date = 2026-04-08T00:00:00Z

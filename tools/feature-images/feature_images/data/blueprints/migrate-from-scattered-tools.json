@@ -1,0 +1,23 @@
+{
+  "id": "migrate-from-scattered-tools",
+  "category": "blueprints",
+  "layout": "stack_blueprint",
+  "palette": "blueprint",
+  "output_path": "static/images/features/blueprints/migrate-from-scattered-tools.webp",
+  "eyebrow": "Migration path",
+  "title": "Migrate From Scattered Tools",
+  "subtitle": "Move from overlapping systems to one clean operating center without rebuilding everything.",
+  "stack_layers": [
+    { "title": "Audit current state", "detail": "Map where client truth lives right now." },
+    { "title": "Pick one center", "detail": "One home for the most active operational data." },
+    { "title": "Retire overlap", "detail": "Stop writing to duplicated tools first." }
+  ],
+  "side_panel": {
+    "title": "Migration rules",
+    "items": [
+      { "label": "Center first", "note": "Stabilize main system before retiring others." },
+      { "label": "Clean at migration", "note": "Do not lift and shift messy data." },
+      { "label": "One phase", "note": "Finish one tool move before the next." }
+    ]
+  }
+}

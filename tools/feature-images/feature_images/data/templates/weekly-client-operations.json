@@ -1,0 +1,20 @@
+{
+  "id": "weekly-client-operations",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/weekly-client-operations.webp",
+  "eyebrow": "Weekly asset",
+  "title": "Weekly Operations Checklist",
+  "subtitle": "Recurring review and escalation rhythm for active client engagements.",
+  "trigger": {
+    "label": "Every Monday",
+    "note": "Before client-facing work begins"
+  },
+  "steps": [
+    { "label": "Review status per project", "tag": "Check" },
+    { "label": "Flag stalled or at-risk items", "tag": "Escalate" },
+    { "label": "Update delivery state", "tag": "Update" },
+    { "label": "Set next-week plan", "tag": "Plan" }
+  ]
+}

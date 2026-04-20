@@ -1,0 +1,20 @@
+{
+  "id": "workflow-maintenance-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "comparison",
+  "output_path": "static/images/features/faq/workflow-maintenance-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "Workflow Maintenance FAQ",
+  "subtitle": "When and how to review a solo service workflow without overreacting or over-tooling.",
+  "problem": {
+    "label": "Process drift detected",
+    "condition": "Recurring friction in the same stage or handoff"
+  },
+  "routes": [
+    { "label": "Review rhythm", "note": "When to check" },
+    { "label": "Drift signals", "note": "What to watch for" },
+    { "label": "Refresh trigger", "note": "When to update" },
+    { "label": "What to keep", "note": "Stable vs stale" }
+  ]
+}

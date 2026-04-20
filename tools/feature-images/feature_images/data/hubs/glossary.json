@@ -1,0 +1,20 @@
+{
+  "id": "glossary",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "workflow",
+  "output_path": "static/images/features/hubs/glossary.webp",
+  "eyebrow": "Glossary hub",
+  "title": "Workflow Operations Glossary",
+  "subtitle": "Precise term definitions that clarify handoffs, ownership, and stage boundaries.",
+  "anchor": {
+    "title": "Clear terms first",
+    "body": "Each definition links to the workflow or blueprint page where the concept matters most."
+  },
+  "modules": [
+    { "kicker": "Term", "title": "System of record", "detail": "One authoritative source." },
+    { "kicker": "Term", "title": "Workflow handoff", "detail": "Owner and next action." },
+    { "kicker": "Term", "title": "Approval owner", "detail": "Who can close the stage." },
+    { "kicker": "Term", "title": "Client dependency", "detail": "Required input at risk." }
+  ]
+}

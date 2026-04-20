@@ -2,7 +2,7 @@
 title = "Notion vs ClickUp for Solo Client Delivery"
 description = "Compare Notion vs ClickUp for solo client delivery once you already know the delivery workspace should sit at the center of the system."
 summary = "Use this comparison to choose between Notion and ClickUp based on how much structure, admin overhead, and delivery control the workflow needs."
-feature_image = "/images/features/comparisons/notion-vs-clickup.svg"
+feature_image = "/images/features/comparisons/notion-vs-clickup.webp"
 feature_image_alt = "Illustrated comparison board contrasting flexible documentation and structured task management for client delivery."
 draft = false
 date = 2026-04-02T00:00:00Z

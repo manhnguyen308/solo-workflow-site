@@ -1,0 +1,30 @@
+{
+  "id": "notion-vs-clickup",
+  "category": "comparisons",
+  "layout": "comparison_split",
+  "palette": "comparison",
+  "output_path": "static/images/features/comparisons/notion-vs-clickup.webp",
+  "eyebrow": "Delivery workspace",
+  "title": "Notion vs ClickUp",
+  "subtitle": "Docs and structure vs task sequencing and execution routing for client delivery.",
+  "left": {
+    "kicker": "Notion-first",
+    "title": "Docs and structure",
+    "items": [
+      { "label": "Flexible docs", "note": "build it yourself" },
+      { "label": "Client views", "note": "sharing and pages" }
+    ]
+  },
+  "right": {
+    "kicker": "ClickUp-first",
+    "title": "Execution routing",
+    "items": [
+      { "label": "Task dependencies", "note": "sequencing" },
+      { "label": "Status routing", "note": "delivery state" }
+    ]
+  },
+  "decision": {
+    "title": "Pick by model",
+    "body": "Notion for docs-heavy delivery. ClickUp for task-sequenced delivery."
+  }
+}

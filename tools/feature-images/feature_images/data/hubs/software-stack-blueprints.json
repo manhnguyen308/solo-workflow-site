@@ -1,0 +1,20 @@
+{
+  "id": "software-stack-blueprints",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "blueprint",
+  "output_path": "static/images/features/hubs/software-stack-blueprints.webp",
+  "eyebrow": "Blueprint hub",
+  "title": "Software Stack Blueprints",
+  "subtitle": "Buy less, fit better. Match each tool to a real workflow requirement before adding it.",
+  "anchor": {
+    "title": "Buy less, fit better",
+    "body": "One core system first. Add tools only after the workflow is stable and the gap is real."
+  },
+  "modules": [
+    { "kicker": "Blueprint", "title": "Lean stack", "detail": "Core system with upgrade rules." },
+    { "kicker": "Blueprint", "title": "VA setup", "detail": "Two-person roles and handoffs." },
+    { "kicker": "Blueprint", "title": "Overbuying", "detail": "How to avoid tool sprawl." },
+    { "kicker": "Blueprint", "title": "Migration", "detail": "Move from scattered to one." }
+  ]
+}

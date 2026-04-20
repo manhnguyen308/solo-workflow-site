@@ -2,7 +2,7 @@
 title = "Weekly Client Operations Checklist for Solo Service Businesses"
 description = "A weekly client operations checklist for freelancers, consultants, and solo service businesses to keep delivery, communication, and billing on track."
 summary = "Run this weekly client operations checklist to prevent missed handoffs, hidden delays, and avoidable client friction across active projects."
-feature_image = "/images/features/templates/weekly-client-operations.svg"
+feature_image = "/images/features/templates/weekly-client-operations.webp"
 feature_image_alt = "Illustrated weekly operations checklist with recurring review steps across active client work."
 draft = false
 date = 2026-04-02T00:00:00Z

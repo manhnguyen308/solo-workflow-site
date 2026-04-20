@@ -1,7 +1,7 @@
 ﻿+++
 title = "Client Workflow Templates & Checklists"
 description = "Client workflow templates and checklists for onboarding, delivery, invoicing, offboarding, and weekly operations once the process is already defined."
-feature_image = "/images/features/hubs/templates-checklists.svg"
+feature_image = "/images/features/hubs/templates-checklists.webp"
 feature_image_alt = "Editorial checklist illustration with structured task cards for repeatable client operations."
 +++
 

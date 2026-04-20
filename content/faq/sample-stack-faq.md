@@ -2,7 +2,7 @@
 title = "FAQ: Setting Up a Solo Service Workflow Stack"
 description = "Short routing answers for solo operators setting up a workflow stack, with clear boundaries and links to the stronger workflow, blueprint, and comparison pages."
 summary = "Use this FAQ when you have one bounded stack-setup question and need the fastest route back to the right workflow, blueprint, or comparison page."
-feature_image = "/images/features/faq/solo-service-workflow-stack-faq.svg"
+feature_image = "/images/features/faq/solo-service-workflow-stack-faq.webp"
 feature_image_alt = "Illustrated FAQ panel stack representing common setup questions and short operational answers."
 draft = false
 date = 2026-04-02T00:00:00Z

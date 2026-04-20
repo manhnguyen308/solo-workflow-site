@@ -2,7 +2,7 @@
 title = "Next Action Owner"
 description = "A next action owner is the person responsible for the immediate visible step that moves a workflow forward."
 summary = "Use this definition to clarify who owns the next move in a workflow and why stalled handoffs usually reflect missing next-action ownership."
-feature_image = "/images/features/glossary/next-action-owner.svg"
+feature_image = "/images/features/glossary/next-action-owner.webp"
 feature_image_alt = "Editorial glossary illustration representing one named owner responsible for the next visible step in a workflow."
 draft = false
 date = 2026-04-08T00:00:00Z
