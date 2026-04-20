@@ -211,11 +211,11 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 ## First 7-day implementation plan
 
 - **Day 1:** map your current client path to the 6 stages above.  
-- **Day 2:** define go/no-go intake criteria and required fields.  
-- **Day 3:** standardize proposal handoff plus revision-and-approval rules.  
-- **Day 4:** implement onboarding checklist and assign owners.  
-- **Day 5:** define milestone-to-invoice trigger rules.  
-- **Day 6:** add offboarding/testimonial step to close process.  
+- **Day 2:** define go/no-go intake criteria and required fields. Use the [intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).  
+- **Day 3:** standardize [proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/) plus revision-and-approval rules.  
+- **Day 4:** implement the [onboarding checklist](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) and assign owners.  
+- **Day 5:** define milestone-to-invoice trigger rules. Use the [invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).  
+- **Day 6:** add the [offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) and testimonial step to the close process.  
 - **Day 7:** review one live client and patch gaps.
 
 ## Where to go next
