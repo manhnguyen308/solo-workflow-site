@@ -19,15 +19,13 @@ featured = true
 
 If your client work feels messier than it should, the problem is usually not effort. It is the operating sequence between inquiry, proposal, kickoff, delivery, billing, and closeout. This guide shows how to run that full path as one connected system instead of a series of improvised stages.
 
-Use this page as the anchor model for your operations. It is the best first guide on the site when the client lifecycle feels broad, reactive, or hard to diagnose, because it shows the whole sequence before you start fixing one stage in isolation.
+Use this page as the anchor for your client operations. It is the right starting point when the lifecycle feels broad, reactive, or hard to diagnose — because it shows the whole sequence before you fix one stage in isolation. Once you can name the stage that is actually breaking, the linked stage guides, comparisons, and templates exist to deepen that one area.
 
-Then implement each stage using the linked guide, comparison, and checklist pages instead of trying to patch isolated symptoms in different tools. Those supporting pages exist to deepen one stage. This page is the broader operating model that should stay at the center of the cluster, and the [Client Workflow Systems hub](/client-workflow-systems/) is the best companion page when you want to browse the rest of the lifecycle in the right order.
+Before changing tools, use this page first. The real blocker is almost always a broken handoff, a fuzzy approval point, or a stage that generates downstream cleanup. Tool decisions only get cleaner after that sequence is visible. If you are comparing systems of record, that decision belongs after this diagnosis — not before it.
 
-If you are deciding whether to change software, do not start there. First use this page to locate the broken handoff, the weak approval point, or the stage that is creating the most downstream cleanup. Tool decisions only get cleaner after that sequence is visible.
+## When this page is the right starting point
 
-## If you landed here directly
-
-Stay on this page if the problem still feels broad, several stages are failing at once, or you are not sure whether the real issue is intake, approval, delivery, billing, or handoff. Leave this page only after you can name the stage or transition that is actually creating downstream damage.
+Stay here if the problem feels broad, several stages are failing at once, or you cannot yet name whether the real issue is intake, approval, delivery, billing, or handoff. Leave this page only after you can name the specific stage or transition causing the most downstream damage — then go directly to that stage guide. If you are already close to a diagnosis, skip ahead to [How to choose the first stage to fix](#how-to-choose-the-first-stage-to-fix).
 
 ## What this page should and should not do
 
