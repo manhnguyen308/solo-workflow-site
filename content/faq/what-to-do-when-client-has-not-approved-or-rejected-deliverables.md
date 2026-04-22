@@ -2,7 +2,7 @@
 title = "FAQ: What Should I Do When a Client Has Not Clearly Approved or Rejected Deliverables?"
 description = "A narrow workflow FAQ for solo operators who know the approval is still pending and need a clear operational sequence: when to follow up, when to hold, and when the stage must not move forward."
 summary = "Use this page when deliverables have been sent, the stage is confirmed still open, and you need a practical decision on whether to wait, follow up, or escalate before billing or the next stage starts."
-feature_image = "/images/features/faq/pending-approval-decision-faq.svg"
+feature_image = "/images/features/faq/pending-approval-decision-faq.webp"
 feature_image_alt = "Editorial FAQ illustration showing a deliverable stage held open while an approval decision is still pending."
 draft = false
 date = 2026-04-22T00:00:00Z
