@@ -22,13 +22,11 @@ This is not a "which app is best" article. It is an operating-model decision abo
 
 If your process fails because client context gets lost between lead, delivery, and billing, your main issue is usually system-of-record mismatch.
 
-For most solo operators, this is one of the highest-leverage decisions on the site because it affects where handoffs, updates, and next actions are maintained across the whole lifecycle. Inside the comparison cluster, this is the strongest first page because it settles the broadest system-center choice before any narrower tool comparison can be trusted.
-
-Use this comparison before narrower workspace comparisons. It should settle the higher-level question of where active client truth lives so the rest of the stack can stay coherent. Pages like Notion vs ClickUp or Calendly vs built-in booking only make sense after this broader operating-system question is clear enough, and the [Workflow Tool Comparisons hub](/workflow-comparisons/) should only ever lead deeper after this page is mostly settled.
+This decision shapes where handoffs, updates, and next actions are maintained across the whole lifecycle. Narrower tool comparisons — workspace, booking, billing visibility — only make sense once this system-center choice is clear.
 
 Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons. If the lifecycle itself is still broad and fuzzy, go back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) instead of staying inside comparisons.
 
-## If you landed here directly
+## When this page is the right starting point
 
 This is the right page if the open problem is where active client truth should live. It is the wrong page if the system center is already settled and you only need a workspace comparison, billing-visibility rule, or implementation asset.
 
@@ -47,7 +45,7 @@ Those are downstream questions. This page only decides where active client truth
 - your main issue is broader stack shape rather than system center,
 - you are already committed to one center and only need to choose a delivery workspace.
 
-In those cases, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), or [Notion vs ClickUp for Solo Client Delivery](/comparisons/notion-vs-clickup-for-solo-client-delivery/).
+In those cases, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the lifecycle is still unclear, or [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if the system center is already settled and stack shape is the remaining question.
 
 ## Who this page is really for
 
