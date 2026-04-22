@@ -123,6 +123,8 @@ Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checkli
 
 The approval request itself should also be explicit. Do not send work with a vague "let me know what you think" if what you actually need is acceptance, revision notes, or a dependency decision.
 
+If the client responds with positive language but no explicit decision, the review is still open. Use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) to confirm whether a response actually closed the milestone or only acknowledged the work.
+
 If review feedback is coming from several people or through several channels, lock the routing path first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## Step 5: Close the milestone with one visible outcome
@@ -133,7 +135,7 @@ Every milestone should end in one of these states:
 - blocked by dependency,
 - changed via scope process.
 
-Do not leave it in a fuzzy "mostly done" state. That ambiguity is where delivery drift, payment slippage, and awkward client follow-up usually begin.
+Do not leave it in a fuzzy "mostly done" state. Positive client feedback and formal approval are not the same milestone outcome — the stage is only closed when the named [approval owner](/glossary/approval-owner/) gives an explicit decision through the agreed channel. That ambiguity is where delivery drift, payment slippage, and awkward client follow-up usually begin.
 
 If the real issue is the boundary between completed delivery and billing or closeout, document that gate with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
