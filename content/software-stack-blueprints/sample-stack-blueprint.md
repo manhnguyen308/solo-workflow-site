@@ -18,21 +18,15 @@ related = ["/guides/how-to-choose-a-software-stack-without-overbuying-tools/", "
 featured = true
 +++
 
-Most freelancers do not fail because they chose the "wrong" tool. They fail because they buy too much software before their workflow is stable. This blueprint gives you a **minimum viable stack** for where you are now, plus clear signs for when to upgrade without creating admin drag.
+Most freelancers do not fail because they chose the wrong tool. They fail because they buy too much software before their workflow is stable. This blueprint is for solo operators who want to run the **minimum viable stack** for their current business stage — clear enough to maintain alone, lean enough to upgrade only when the workflow actually demands it.
 
-If you have not mapped your workflow yet, start with the anchor system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+The standard here is not most powerful. It is clear enough to run every week without hidden coordination cost. "Lean budget" in this context means the minimum number of paid tool categories, chosen only after a real workflow bottleneck makes the need visible: one place for active client status, one billing path, and enough structure to catch handoff gaps — not every category a modern tool list might suggest.
 
-If the open problem is not your exact stack shape yet but how to avoid premature purchases, start with [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
+Use this page after you have diagnosed the client lifecycle and resolved the system-center question. If the workflow itself is still unclear, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first. If the question is still whether CRM-first or PM-first should hold active client truth, go to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before returning here. This page turns an already-understood stack direction into an actual operating model.
 
-This page is written for operators who want a stack they can actually maintain alone. It is the default blueprint entry point on the site because it gives the clearest answer to "what is the smallest reliable setup I can run without overbuying?" If the workflow anchor is the best first broad page on the site, this is the strongest next indexing candidate for the stack cluster.
+## When this page is the right starting point
 
-The standard is not "most powerful." The standard is "clear enough to run every week without hidden admin drag." The overbuying guide, migration guide, and downstream comparisons are supporting decision pages. This page remains the baseline stack model for most solo operators, and the [Software Stack Blueprints hub](/software-stack-blueprints/) is where the rest of the cluster should be browsed from.
-
-Use this page after a comparison decision when you need to turn "I think PM-first is right" or "I should stay more consolidated" into an actual operating stack. If the open problem is still whether a purchase should happen at all, stay in the overbuying guide instead of treating this blueprint like a shopping list.
-
-## If you landed here directly
-
-This is the right page if you already know the business needs a lean operating stack and the next question is what the baseline setup should look like. It is the wrong page if you are still trying to diagnose a broad workflow problem or still comparing categories at the system-center level.
+Stay here if you already know the business needs a lean operating stack and the next question is what the baseline setup should look like. Leave if you are still diagnosing a broad workflow problem or still resolving which category should hold system-of-record status.
 
 ## What this page should and should not settle
 
