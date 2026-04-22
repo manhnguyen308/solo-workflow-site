@@ -1,0 +1,20 @@
+{
+  "id": "scope-reset-recovery-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/scope-reset-recovery-worksheet.webp",
+  "eyebrow": "Recovery asset",
+  "title": "Scope Reset Worksheet",
+  "subtitle": "Document what broke, what assumptions are void, and what must restart cleanly.",
+  "trigger": {
+    "label": "When the original plan fails",
+    "note": "After escalation threshold is reached"
+  },
+  "steps": [
+    { "label": "Define what broke or stalled", "tag": "Audit" },
+    { "label": "List void assumptions", "tag": "Void" },
+    { "label": "Reconfirm scope and timing", "tag": "Reset" },
+    { "label": "Set restart conditions", "tag": "Gate" }
+  ]
+}

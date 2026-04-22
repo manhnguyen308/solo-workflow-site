@@ -2,7 +2,7 @@
 title = "System-of-Record Rules Worksheet for Solo Operators"
 description = "A practical worksheet for solo operators who need to define where client truth lives, what each tool owns, and how handoffs between systems should work without duplicating active status casually."
 summary = "Use this worksheet to document system-of-record rules, define ownership by data type, and reduce duplicated truth across a solo operating stack."
-feature_image = "/images/features/templates/system-of-record-rules-worksheet.svg"
+feature_image = "/images/features/templates/system-of-record-rules-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing system-of-record ownership lanes, mirrored data rules, and handoff notes between tools."
 draft = false
 date = 2026-04-08T00:00:00Z

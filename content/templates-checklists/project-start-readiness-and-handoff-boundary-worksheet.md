@@ -2,7 +2,7 @@
 title = "Project Start Readiness and Handoff Boundary Worksheet for Solo Operators"
 description = "A practical worksheet for solo operators who need to define readiness conditions, required inputs, approval rules, and next-action ownership before work moves cleanly from one client stage into the next."
 summary = "Use this worksheet to document what must be true before a stage transition is allowed to happen, what blocks it, and what evidence should exist at the handoff boundary."
-feature_image = "/images/features/templates/project-start-readiness-handoff-boundary-worksheet.svg"
+feature_image = "/images/features/templates/project-start-readiness-handoff-boundary-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing stage-boundary checks, readiness gates, owner markers, and handoff evidence requirements."
 draft = false
 date = 2026-04-08T00:00:00Z

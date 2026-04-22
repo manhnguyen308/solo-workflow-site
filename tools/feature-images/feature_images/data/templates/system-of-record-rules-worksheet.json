@@ -1,0 +1,20 @@
+{
+  "id": "system-of-record-rules-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "blueprint",
+  "output_path": "static/images/features/templates/system-of-record-rules-worksheet.webp",
+  "eyebrow": "Stack asset",
+  "title": "System-of-Record Rules",
+  "subtitle": "Define where truth lives, what each tool owns, and how handoffs stay clean.",
+  "trigger": {
+    "label": "When ownership is unclear",
+    "note": "After the stack inventory is visible"
+  },
+  "steps": [
+    { "label": "List active tools and data types", "tag": "Inventory" },
+    { "label": "Assign ownership by data type", "tag": "Own" },
+    { "label": "Define mirror rules for sync", "tag": "Mirror" },
+    { "label": "Document handoff boundaries", "tag": "Handoff" }
+  ]
+}

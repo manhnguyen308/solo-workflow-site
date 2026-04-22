@@ -2,7 +2,7 @@
 title = "Scope Reset and Recovery Worksheet for Solo Operators"
 description = "A practical worksheet for solo operators who need to define a clean reset when the original plan has broken down because of delays, conflicting inputs, dependency failure, or accumulated scope drift."
 summary = "Use this worksheet to document what is no longer valid in the original plan, what must be reconfirmed, and what has to change before work can restart cleanly."
-feature_image = "/images/features/templates/scope-reset-recovery-worksheet.svg"
+feature_image = "/images/features/templates/scope-reset-recovery-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing broken plan markers, reset decisions, scope recovery lanes, and restart conditions."
 draft = false
 date = 2026-04-08T00:00:00Z

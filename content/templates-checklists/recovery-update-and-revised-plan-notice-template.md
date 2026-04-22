@@ -2,7 +2,7 @@
 title = "Recovery Update and Revised Plan Notice Template for Solo Operators"
 description = "A practical communication template for solo operators who need to explain a formal reset, revised plan, or new operating baseline clearly after the original path is no longer reliable."
 summary = "Use this template to explain what changed, what is no longer valid, what the revised path is, and what confirmation is required before work resumes."
-feature_image = "/images/features/templates/recovery-update-revised-plan-notice-template.svg"
+feature_image = "/images/features/templates/recovery-update-revised-plan-notice-template.webp"
 feature_image_alt = "Editorial template illustration showing a revised plan notice, reset summary, restart conditions, and confirmation request."
 draft = false
 date = 2026-04-08T00:00:00Z

@@ -2,7 +2,7 @@
 title = "Delivery QA Checklist Before Client Handoff"
 description = "A pre-handoff QA checklist for milestone or final delivery moments when the delivery workflow is already defined and you need a repeatable quality-control step."
 summary = "Run this checklist before sending work to clients so handoff quality is consistent across projects."
-feature_image = "/images/features/templates/delivery-qa-checklist.svg"
+feature_image = "/images/features/templates/delivery-qa-checklist.webp"
 feature_image_alt = "Illustrated delivery QA checklist with handoff review steps before client submission."
 draft = false
 date = 2026-04-02T00:00:00Z

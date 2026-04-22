@@ -2,7 +2,7 @@
 title = "Weekly Client Status Update Template"
 description = "A weekly client status update template for freelancers and consultants who already have an update rhythm and need a repeatable message format."
 summary = "Use this template to send structured weekly client updates that reduce reactive check-ins and keep next actions visible."
-feature_image = "/images/features/templates/weekly-client-status-update-template.svg"
+feature_image = "/images/features/templates/weekly-client-status-update-template.webp"
 feature_image_alt = "Editorial template illustration representing a repeatable weekly client status update document."
 draft = false
 date = 2026-04-07T00:00:00Z

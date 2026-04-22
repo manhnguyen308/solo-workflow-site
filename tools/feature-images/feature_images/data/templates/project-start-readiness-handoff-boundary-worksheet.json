@@ -1,0 +1,20 @@
+{
+  "id": "project-start-readiness-handoff-boundary-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/project-start-readiness-handoff-boundary-worksheet.webp",
+  "eyebrow": "Readiness asset",
+  "title": "Stage Readiness and Handoff",
+  "subtitle": "Define what must be true before a stage transition is allowed to proceed.",
+  "trigger": {
+    "label": "At every stage boundary",
+    "note": "Before work moves to the next stage"
+  },
+  "steps": [
+    { "label": "List readiness conditions", "tag": "Gate" },
+    { "label": "Name the transition owner", "tag": "Own" },
+    { "label": "Document evidence required", "tag": "Prove" },
+    { "label": "State what blocks transition", "tag": "Block" }
+  ]
+}

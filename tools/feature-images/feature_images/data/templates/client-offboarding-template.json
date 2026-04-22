@@ -1,0 +1,20 @@
+{
+  "id": "client-offboarding-template",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/client-offboarding-template.webp",
+  "eyebrow": "Closeout asset",
+  "title": "Offboarding + Testimonial",
+  "subtitle": "Close the engagement cleanly and request testimonials at the right moment.",
+  "trigger": {
+    "label": "After final delivery",
+    "note": "When billing is already resolved"
+  },
+  "steps": [
+    { "label": "Confirm closeout checklist", "tag": "Close" },
+    { "label": "Package final files and links", "tag": "Archive" },
+    { "label": "Request testimonial if timing fits", "tag": "Ask" },
+    { "label": "Define next step or continuation", "tag": "Next" }
+  ]
+}

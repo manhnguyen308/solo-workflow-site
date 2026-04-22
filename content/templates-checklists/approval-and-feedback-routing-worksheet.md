@@ -2,7 +2,7 @@
 title = "Approval and Feedback Routing Worksheet for Multi-Stakeholder Review"
 description = "A practical worksheet for solo operators who need to define who can comment, who consolidates feedback, who gives final approval, and how review input should move without creating contradictory direction."
 summary = "Use this worksheet to document how review comments are collected, routed, consolidated, and approved when several stakeholders are involved."
-feature_image = "/images/features/templates/approval-feedback-routing-worksheet.svg"
+feature_image = "/images/features/templates/approval-feedback-routing-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing review channels, feedback routing, comment consolidation, and one final approval path."
 draft = false
 date = 2026-04-08T00:00:00Z

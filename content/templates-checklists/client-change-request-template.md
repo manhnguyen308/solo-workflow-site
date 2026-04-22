@@ -2,7 +2,7 @@
 title = "Client Change Request Template"
 description = "A change request template for freelancers and consultants who already need a clear format for scope, timing, fee, and approval decisions."
 summary = "Use this template to capture, assess, and reply to client change requests without hidden scope drift."
-feature_image = "/images/features/templates/client-change-request-template.svg"
+feature_image = "/images/features/templates/client-change-request-template.webp"
 feature_image_alt = "Editorial template illustration representing a structured client change request form with scope and fee decisions."
 draft = false
 date = 2026-04-07T00:00:00Z

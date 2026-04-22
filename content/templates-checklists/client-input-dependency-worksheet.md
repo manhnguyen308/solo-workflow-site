@@ -2,7 +2,7 @@
 title = "Client Input Dependency Worksheet for Solo Operators"
 description = "A practical worksheet for solo operators who need to define required client inputs, owners, due stages, quality expectations, and fallback paths so work does not stall on vague or missing dependencies."
 summary = "Use this worksheet to document what you need from the client, who owns it, when it is due, what it should look like, and what happens if it does not arrive."
-feature_image = "/images/features/templates/client-input-dependency-worksheet.svg"
+feature_image = "/images/features/templates/client-input-dependency-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing client input items, owner columns, due-stage markers, and blocked-work notes."
 draft = false
 date = 2026-04-08T00:00:00Z

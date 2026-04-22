@@ -2,7 +2,7 @@
 title = "Escalation and Pause-State Worksheet for Solo Operators"
 description = "A practical worksheet for solo operators who need to define what should happen when blocked work can no longer remain in vague limbo and requires a clear operating decision."
 summary = "Use this worksheet to decide when blocked work should pause, escalate, be re-scoped, proceed with assumptions, wait, or close out."
-feature_image = "/images/features/templates/escalation-pause-state-worksheet.svg"
+feature_image = "/images/features/templates/escalation-pause-state-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing blocked work, escalation thresholds, pause-state decisions, and restart conditions."
 draft = false
 date = 2026-04-08T00:00:00Z

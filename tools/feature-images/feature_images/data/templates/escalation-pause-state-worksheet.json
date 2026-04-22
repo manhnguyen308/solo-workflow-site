@@ -1,0 +1,20 @@
+{
+  "id": "escalation-pause-state-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/escalation-pause-state-worksheet.webp",
+  "eyebrow": "Escalation asset",
+  "title": "Escalation and Pause-State",
+  "subtitle": "Decide when blocked work should pause, escalate, re-scope, or close out.",
+  "trigger": {
+    "label": "Work is formally blocked",
+    "note": "After standard follow-up has failed"
+  },
+  "steps": [
+    { "label": "Name the block and its age", "tag": "Define" },
+    { "label": "Choose: pause, escalate, or close", "tag": "Decide" },
+    { "label": "Record restart conditions", "tag": "Gate" },
+    { "label": "Communicate decision to client", "tag": "Notify" }
+  ]
+}

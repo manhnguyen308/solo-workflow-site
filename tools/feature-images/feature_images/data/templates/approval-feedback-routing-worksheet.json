@@ -1,0 +1,20 @@
+{
+  "id": "approval-feedback-routing-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/approval-feedback-routing-worksheet.webp",
+  "eyebrow": "Review asset",
+  "title": "Approval & Feedback Routing",
+  "subtitle": "Define who comments, who consolidates, and who gives the final sign-off.",
+  "trigger": {
+    "label": "Multi-stakeholder review",
+    "note": "When feedback channels need structure"
+  },
+  "steps": [
+    { "label": "List all reviewer roles", "tag": "Roles" },
+    { "label": "Define consolidation owner", "tag": "Route" },
+    { "label": "Block contradictory feedback", "tag": "Gate" },
+    { "label": "Name final approval owner", "tag": "Approve" }
+  ]
+}

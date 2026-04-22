@@ -1,0 +1,20 @@
+{
+  "id": "client-input-dependency-worksheet",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/client-input-dependency-worksheet.webp",
+  "eyebrow": "Dependency asset",
+  "title": "Client Input Dependency",
+  "subtitle": "Document what you need, who owns it, and what happens if it arrives late.",
+  "trigger": {
+    "label": "Before work begins",
+    "note": "When client inputs are required to proceed"
+  },
+  "steps": [
+    { "label": "Name each required input", "tag": "List" },
+    { "label": "Assign owner and due stage", "tag": "Own" },
+    { "label": "Define acceptable quality", "tag": "Standard" },
+    { "label": "Document fallback if late", "tag": "Fallback" }
+  ]
+}

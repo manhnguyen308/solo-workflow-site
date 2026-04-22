@@ -1,0 +1,20 @@
+{
+  "id": "delivery-qa-checklist",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/delivery-qa-checklist.webp",
+  "eyebrow": "QA asset",
+  "title": "Delivery QA Checklist",
+  "subtitle": "Run before every handoff so avoidable misses do not reach the client.",
+  "trigger": {
+    "label": "Before every handoff",
+    "note": "Even for small milestone updates"
+  },
+  "steps": [
+    { "label": "Confirm deliverable is complete", "tag": "Check" },
+    { "label": "Verify format and access", "tag": "Format" },
+    { "label": "Name the approval owner", "tag": "Owner" },
+    { "label": "Document next expected action", "tag": "Next" }
+  ]
+}

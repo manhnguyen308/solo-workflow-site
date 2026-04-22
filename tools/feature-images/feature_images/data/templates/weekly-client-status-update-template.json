@@ -1,0 +1,20 @@
+{
+  "id": "weekly-client-status-update-template",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/weekly-client-status-update-template.webp",
+  "eyebrow": "Update asset",
+  "title": "Weekly Status Update",
+  "subtitle": "Send structured weekly updates that keep next actions visible to the client.",
+  "trigger": {
+    "label": "Every active project week",
+    "note": "Part of an agreed update rhythm"
+  },
+  "steps": [
+    { "label": "Summarize progress this week", "tag": "Status" },
+    { "label": "Name any open blockers", "tag": "Block" },
+    { "label": "Confirm the upcoming next step", "tag": "Next" },
+    { "label": "Request any pending decision", "tag": "Ask" }
+  ]
+}

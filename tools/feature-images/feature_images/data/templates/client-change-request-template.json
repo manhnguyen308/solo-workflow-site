@@ -1,0 +1,20 @@
+{
+  "id": "client-change-request-template",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/client-change-request-template.webp",
+  "eyebrow": "Scope asset",
+  "title": "Change Request Template",
+  "subtitle": "Assess scope, timing, and fee before absorbing any new client request.",
+  "trigger": {
+    "label": "When client adds scope",
+    "note": "Before agreeing to new work"
+  },
+  "steps": [
+    { "label": "Describe the requested change", "tag": "Capture" },
+    { "label": "Assess: scope, time, and fee", "tag": "Assess" },
+    { "label": "Decide: approve, decline, price", "tag": "Decide" },
+    { "label": "Get written client confirmation", "tag": "Confirm" }
+  ]
+}

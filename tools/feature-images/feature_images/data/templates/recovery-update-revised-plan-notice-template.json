@@ -1,0 +1,20 @@
+{
+  "id": "recovery-update-revised-plan-notice-template",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/recovery-update-revised-plan-notice-template.webp",
+  "eyebrow": "Recovery asset",
+  "title": "Recovery Update Notice",
+  "subtitle": "Explain what changed, what is no longer valid, and what confirmation is needed.",
+  "trigger": {
+    "label": "After reset is decided",
+    "note": "Before work can resume"
+  },
+  "steps": [
+    { "label": "State what changed and why", "tag": "Reset" },
+    { "label": "List what is no longer valid", "tag": "Void" },
+    { "label": "Describe the revised path", "tag": "Plan" },
+    { "label": "Request client confirmation", "tag": "Confirm" }
+  ]
+}

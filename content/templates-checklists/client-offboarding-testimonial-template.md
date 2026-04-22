@@ -2,7 +2,7 @@
 title = "Client Offboarding + Testimonial Request Template"
 description = "An operational offboarding template for closing engagements cleanly once delivery and billing are already clear enough to support a structured closeout."
 summary = "Use this template to run consistent offboarding, secure testimonials, and protect future expansion opportunities."
-feature_image = "/images/features/templates/client-offboarding-template.svg"
+feature_image = "/images/features/templates/client-offboarding-template.webp"
 feature_image_alt = "Illustrated offboarding template with closeout tasks and testimonial request workflow."
 draft = false
 date = 2026-04-02T00:00:00Z
