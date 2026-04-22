@@ -153,6 +153,8 @@ Implementation asset: [Delivery QA Checklist Before Client Handoff](/templates/d
 
 Scope-control follow-on: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
+Approval-check follow-on: [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
+
 ### 5) Invoicing and payment
 **Goal:** convert completed work to collected revenue with minimal admin overhead.  
 **Inputs:** milestone completion, invoice schedule, payment terms.  
@@ -161,6 +163,8 @@ Scope-control follow-on: [Change Request Workflow for Freelancers and Consultant
 Workflow guide: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 
 Implementation asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
+
+Approval-ambiguity follow-on: [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
 
 ### 6) Offboarding and expansion
 **Goal:** close professionally and preserve future pipeline value.  
