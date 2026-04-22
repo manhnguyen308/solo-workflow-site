@@ -86,7 +86,7 @@ That means:
 
 For the milestone side of the process, use [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 
-This is especially important when approval happens informally. A quick "looks good" in chat can still trigger billing, but only if you log that acceptance in the same record you trust for project status.
+This is especially important when feedback arrives informally. A "looks good" in chat is not a billing trigger — it is an acknowledgment, not an approval. Billing should not start until the named approval owner gives an explicit decision through the agreed channel and it is logged in the project record. If you are unsure whether a client response actually closed the milestone, use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) before issuing the invoice.
 
 ## Step 4: Standardize the follow-up rhythm
 
