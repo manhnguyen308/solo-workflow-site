@@ -110,6 +110,8 @@ Instead, define what counts as closeout:
 
 If the client response is needed, name the approval question directly and identify one [Next Action Owner](/glossary/next-action-owner/). If that owner is still unclear, the project can stall at the finish line.
 
+If a response has arrived but feels informal or ambiguous — positive but not explicitly accepting — use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) to confirm whether the signoff is actually complete before moving into billing closure or archiving.
+
 ## Step 3: Close billing and scope cleanly
 
 Offboarding should not pretend billing is complete if it is not.
