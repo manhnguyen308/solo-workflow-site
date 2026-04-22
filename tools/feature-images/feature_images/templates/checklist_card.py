@@ -14,8 +14,8 @@ def render_checklist_card(spec, context):
     trigger_box = (150, 390, 500, 780)
     helpers["rounded_box"](draw, trigger_box, fill=palette["secondary_soft"], outline=palette["secondary"], width=2, radius=28)
     helpers["pill"](draw, (178, 420, 472, 462), palette["secondary"], "When to run", fonts["small"], "#eef6ff")
-    draw.text((178, 498), spec["trigger"]["label"], font=fonts["card_title"], fill=palette["ink"])
-    helpers["draw_text_block"](draw, spec["trigger"]["note"], fonts["card_body"], palette["muted"], (178, 554, 298, 72), 6, report, "checklist trigger note", max_lines=3)
+    helpers["draw_text_block"](draw, spec["trigger"]["label"], fonts["card_title"], palette["ink"], (178, 490, 294, 80), 8, report, "checklist trigger label", max_lines=2)
+    helpers["draw_text_block"](draw, spec["trigger"]["note"], fonts["card_body"], palette["muted"], (178, 578, 298, 80), 6, report, "checklist trigger note", max_lines=3)
 
     # Right steps area — 4 task rows
     draw.text((540, 402), "Steps", font=fonts["panel_title"], fill=palette["ink"])
@@ -25,5 +25,5 @@ def render_checklist_card(spec, context):
         y = 456 + (index * 82)
         row_box = (540, y, 1450, y + 66)
         helpers["rounded_box"](draw, row_box, fill=row_fills[index % 4], outline=palette["stroke"], width=2, radius=20)
-        draw.text((568, y + 18), step["label"], font=fonts["card_title"], fill=palette["ink"])
+        helpers["draw_text_block"](draw, step["label"], fonts["card_title"], palette["ink"], (568, y + 16, 680, 50), 6, report, f"checklist step {index}", max_lines=1)
         helpers["pill"](draw, (1278, y + 12, 1422, y + 54), palette["frame"], step["tag"], fonts["small"], palette["muted"])
