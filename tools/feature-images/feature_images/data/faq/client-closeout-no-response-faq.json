@@ -1,0 +1,20 @@
+{
+  "id": "client-closeout-no-response-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/faq/client-closeout-no-response-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "Closeout Non-Response",
+  "subtitle": "What to do when final work is done but the client has not confirmed the project is formally closed.",
+  "problem": {
+    "label": "No closeout confirmation",
+    "condition": "Deliverables accepted, billing resolved, but engagement close not acknowledged"
+  },
+  "routes": [
+    { "label": "Send structured closeout message", "note": "One clear ask" },
+    { "label": "Wait the set review window", "note": "Name the deadline" },
+    { "label": "Follow up once more", "note": "Name what is open" },
+    { "label": "Apply functional close", "note": "After 2 attempts" }
+  ]
+}
