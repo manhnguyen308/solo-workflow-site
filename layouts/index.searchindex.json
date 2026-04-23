@@ -1,0 +1,13 @@
+{{- $excluded := slice "search" -}}
+{{- $pages := slice -}}
+{{- range .Site.Pages -}}
+  {{- if and (in (slice "page" "section") .Kind) (ne (.Params.draft | default false) true) (not (in $excluded .Section)) (ne .Permalink $.Site.Home.Permalink) -}}
+    {{- $pages = $pages | append . -}}
+  {{- end -}}
+{{- end -}}
+[
+{{- range $i, $p := $pages -}}
+{{- if $i }},{{ end }}
+{"url":{{ $p.RelPermalink | jsonify }},"title":{{ $p.Title | jsonify }},"section":{{ $p.Section | jsonify }},"kind":{{ $p.Kind | jsonify }},"type":{{ ($p.Params.page_type | default $p.Section) | jsonify }},"role":{{ ($p.Params.page_role | default "") | jsonify }},"description":{{ ($p.Params.description | default "" | plainify | htmlUnescape) | jsonify }},"summary":{{ ($p.Params.summary | default "" | plainify | htmlUnescape) | jsonify }},"tags":{{ ($p.Params.tags | default (slice)) | jsonify }},"category":{{ ($p.Params.category | default "") | jsonify }},"excerpt":{{ ($p.Plain | plainify | htmlUnescape | truncate 360 "") | jsonify }}}
+{{- end }}
+]

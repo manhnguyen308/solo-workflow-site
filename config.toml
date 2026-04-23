@@ -42,8 +42,15 @@ disableKinds = ["taxonomy", "term"]
   faq = "/faq/:slug/"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "SearchIndex"]
   section = ["HTML", "RSS"]
+
+[outputFormats]
+  [outputFormats.SearchIndex]
+    mediaType = "application/json"
+    baseName = "search-index"
+    isPlainText = true
+    notAlternative = true
 
 [related]
   includeNewer = true

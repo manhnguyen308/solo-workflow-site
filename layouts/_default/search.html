@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="page-shell page-shell-search">
+  <section class="page-hero section-hero">
+    <div class="wrap">
+      <div class="section-hero-copy">
+        <p class="eyebrow">Internal search</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+        {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
+        <form class="search-page-form" role="search" data-search-form autocomplete="off">
+          <label class="sr-only" for="search-page-input">Search SoloOpsGuide</label>
+          <span class="site-search-icon" aria-hidden="true"></span>
+          <input id="search-page-input" type="search" name="q" placeholder="Try: approval, billing, onboarding, handoff, closeout, client silence..." autocomplete="off" autofocus>
+          <button type="submit">Search</button>
+        </form>
+        <div class="search-filters" data-search-filters role="group" aria-label="Filter by section">
+          <button type="button" data-filter="all" class="search-filter is-active">All</button>
+          <button type="button" data-filter="client-workflow-systems" class="search-filter">Workflows</button>
+          <button type="button" data-filter="software-stack-blueprints" class="search-filter">Blueprints</button>
+          <button type="button" data-filter="workflow-comparisons" class="search-filter">Comparisons</button>
+          <button type="button" data-filter="templates-checklists" class="search-filter">Templates</button>
+          <button type="button" data-filter="glossary" class="search-filter">Glossary</button>
+          <button type="button" data-filter="faq" class="search-filter">FAQ</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="page-section">
+    <div class="wrap">
+      <p class="search-status" data-search-status role="status" aria-live="polite">Type a keyword above to search across SoloOpsGuide.</p>
+      <ol class="search-results" data-search-results></ol>
+    </div>
+  </section>
+</div>
+<script>window.SoloOpsGuideSearch = { indexUrl: {{ "search-index.json" | relURL | jsonify }} };</script>
+<script src="{{ "js/search.js" | relURL }}" defer></script>
+{{ end }}
