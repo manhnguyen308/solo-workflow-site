@@ -40,8 +40,10 @@ If you catch yourself comparing several FAQ answers before taking action, that i
 
 - Open [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/) when the main question is stack order or tool sprawl.
 - Open [FAQ: Reviewing and Maintaining a Solo Service Workflow System](/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/) when the system exists but needs ongoing cleanup and review discipline.
-- Open [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/) when approval or feedback is stalled.
+- Open [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/) when approval or feedback is stalled mid-project.
 - Open [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/) when delivery is blocked by missing client-side inputs.
+- Open [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) when a client response has arrived but is not clearly a formal approval.
+- Open [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/) when all deliverables are accepted and billing is settled, but the client has not acknowledged the formal project end.
 
 If those all sound plausible at once, this hub is still too narrow and you should return to a cornerstone page.
 
@@ -51,6 +53,8 @@ If those all sound plausible at once, this hub is still too narrow and you shoul
 - [FAQ: Reviewing and Maintaining a Solo Service Workflow System](/faq/faq-reviewing-and-maintaining-a-solo-service-workflow-system/)
 - [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 - [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/)
+- [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
+- [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/)
 
 If that page does not resolve the blocker cleanly, the right move is usually not to keep browsing FAQ content. It is to jump into the strongest related cornerstone page immediately.
 
@@ -68,6 +72,8 @@ If that page does not resolve the blocker cleanly, the right move is usually not
 - migration and automation timing
 - stalled review and client silence
 - late inputs, missing access, and blocked dependencies
+- approval clarity before billing or the next stage starts
+- final project closeout non-response after all work is accepted
 
 ## Where to start by blocker type
 
