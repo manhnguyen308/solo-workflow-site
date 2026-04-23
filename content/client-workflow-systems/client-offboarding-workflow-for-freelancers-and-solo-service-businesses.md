@@ -234,4 +234,4 @@ This workflow is working when:
 - testimonial or feedback timing feels intentional,
 - the engagement ends with either a clean archive or a clear next-step path.
 
-If the broader lifecycle still feels loose, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If closeout keeps stalling because clients disappear at review points, continue to [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+If the broader lifecycle still feels loose, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If final approval and billing are already settled but the client does not acknowledge the formal project end, continue to [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/).
