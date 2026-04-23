@@ -175,6 +175,8 @@ Workflow guide: [Client Offboarding Workflow for Freelancers and Solo Service Bu
 
 Implementation asset: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/).
 
+Closeout non-response follow-on: [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/)
+
 ## Common failure points (and practical fixes)
 
 | Failure point | Why it happens | Practical fix |
