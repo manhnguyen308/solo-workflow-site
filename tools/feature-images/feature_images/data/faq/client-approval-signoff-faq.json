@@ -1,0 +1,20 @@
+{
+  "id": "client-approval-signoff-faq",
+  "category": "faq",
+  "layout": "faq_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/faq/client-approval-signoff-faq.webp",
+  "eyebrow": "FAQ",
+  "title": "What Counts as Approval?",
+  "subtitle": "How to confirm a client response actually closed the milestone before billing or the next stage starts.",
+  "problem": {
+    "label": "Informal response only",
+    "condition": "Response received but milestone close not explicitly confirmed"
+  },
+  "routes": [
+    { "label": "Check named approval owner", "note": "Right person?" },
+    { "label": "Confirm channel and format", "note": "Agreed path?" },
+    { "label": "Log the decision explicitly", "note": "Record it" },
+    { "label": "Hold billing until confirmed", "note": "No invoice yet" }
+  ]
+}

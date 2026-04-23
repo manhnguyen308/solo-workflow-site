@@ -2,7 +2,7 @@
 title = "FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?"
 description = "A narrow workflow FAQ for solo operators who need to know what approval actually means operationally, what does not count, and when billing or the next stage can safely start."
 summary = "Use this page when you are unsure whether a client response actually approved the work or only acknowledged it."
-feature_image = "/images/features/faq/client-approval-signoff-faq.svg"
+feature_image = "/images/features/faq/client-approval-signoff-faq.webp"
 feature_image_alt = "Editorial FAQ illustration showing the difference between informal acknowledgment and formal approval at a milestone handoff."
 draft = false
 date = 2026-04-22T00:00:00Z
