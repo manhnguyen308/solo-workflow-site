@@ -125,6 +125,72 @@
       syncBackToTop();
     }
 
+    var articleActions = document.querySelector('[data-article-actions]');
+    if (articleActions) {
+      var articleBody = articleActions.closest('.article-body');
+      var copyButton = articleActions.querySelector('[data-action="copy"]');
+      var printButton = articleActions.querySelector('[data-action="print"]');
+
+      function articlePlainText() {
+        if (!articleBody) return '';
+        var clone = articleBody.cloneNode(true);
+        var strip = clone.querySelector('[data-article-actions]');
+        if (strip) strip.parentNode.removeChild(strip);
+        var text = clone.innerText || clone.textContent || '';
+        return text.replace(/\n{3,}/g, '\n\n').trim();
+      }
+
+      function flashCopied(button) {
+        var label = button.querySelector('[data-default-label]');
+        var feedback = button.querySelector('.article-action-feedback');
+        if (!label || !feedback) return;
+        label.hidden = true;
+        feedback.hidden = false;
+        button.classList.add('is-copied');
+        window.setTimeout(function () {
+          label.hidden = false;
+          feedback.hidden = true;
+          button.classList.remove('is-copied');
+        }, 1800);
+      }
+
+      function fallbackCopy(text) {
+        var temp = document.createElement('textarea');
+        temp.value = text;
+        temp.setAttribute('readonly', '');
+        temp.style.position = 'absolute';
+        temp.style.left = '-9999px';
+        document.body.appendChild(temp);
+        temp.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+        document.body.removeChild(temp);
+        return ok;
+      }
+
+      if (copyButton) {
+        copyButton.addEventListener('click', function () {
+          var text = articlePlainText();
+          if (!text) return;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () {
+              flashCopied(copyButton);
+            }).catch(function () {
+              if (fallbackCopy(text)) flashCopied(copyButton);
+            });
+          } else if (fallbackCopy(text)) {
+            flashCopied(copyButton);
+          }
+        });
+      }
+
+      if (printButton) {
+        printButton.addEventListener('click', function () {
+          window.print();
+        });
+      }
+    }
+
     if (!toggle || !header) {
       return;
     }

@@ -72,6 +72,17 @@
     </header>
     <div class="reading-layout">
       <div class="article-body prose">
+        {{ if eq .Section "templates-checklists" }}
+        <div class="article-actions" data-article-actions aria-label="Asset actions" data-no-print>
+          <button type="button" class="article-action" data-action="copy" data-track="asset_action" data-track-location="template-actions" data-track-label="copy">
+            <span class="article-action-label" data-default-label>Copy as plain text</span>
+            <span class="article-action-feedback" aria-hidden="true" hidden>Copied</span>
+          </button>
+          <button type="button" class="article-action" data-action="print" data-track="asset_action" data-track-location="template-actions" data-track-label="print">
+            <span class="article-action-label">Print or save as PDF</span>
+          </button>
+        </div>
+        {{ end }}
         {{ .Content }}
       </div>
       {{ partial "page-type-block.html" . }}
