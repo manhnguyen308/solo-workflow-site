@@ -1,0 +1,20 @@
+{
+  "id": "problem-to-page-guide",
+  "category": "hubs",
+  "layout": "hub_overview",
+  "palette": "workflow",
+  "output_path": "static/images/features/hubs/problem-to-page-guide.webp",
+  "eyebrow": "Navigation guide",
+  "title": "Problem to Page",
+  "subtitle": "Match the symptom you are stuck on to the best page to read first, instead of guessing between hubs.",
+  "anchor": {
+    "title": "Name the blocker first",
+    "body": "Describe the operational symptom in one line, then route into the cluster that owns that decision."
+  },
+  "modules": [
+    { "kicker": "Workflow", "title": "Messy process", "detail": "Loose lifecycle, unclear stage ownership." },
+    { "kicker": "Comparison", "title": "Tool choice", "detail": "One bounded tool decision is blocking you." },
+    { "kicker": "Blueprint", "title": "Heavy stack", "detail": "Workflow clear, setup still awkward." },
+    { "kicker": "Support", "title": "Narrow blocker", "detail": "Approval, billing, closeout, silence." }
+  ]
+}
