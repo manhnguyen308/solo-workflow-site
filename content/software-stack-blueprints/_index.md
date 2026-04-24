@@ -10,7 +10,7 @@ Use this hub when the workflow is mostly clear but the tool stack is still awkwa
 
 This hub is for operators who already know they have an operations system to build, but do not want to overbuy software or create duplicated admin. The goal here is not app collecting. It is choosing a stack shape that matches the way the business actually runs.
 
-If the question is still "what should my baseline stack look like?", the lean solo blueprint is the main entry page. If the workflow itself still feels broad, go back to [Client Workflow Systems for Freelancers and Solo Operators](/client-workflow-systems/) first. If the system center is still unclear, go to the comparison hub before you treat any blueprint like the final answer.
+If the question is still "what should my baseline stack look like?", the lean solo blueprint is the main entry page. If the workflow itself still feels broad, go back to [Client Workflow Systems for Freelancers and Solo Operators](/client-workflow-systems/) first. If the system center is still unclear, resolve [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before you treat any blueprint like the final answer.
 
 If you only open one page from this hub, start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/). Most readers should not start with migration, collaboration, or support assets first.
 
