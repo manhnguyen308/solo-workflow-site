@@ -17,6 +17,8 @@
   var SYNONYMS = {
     approval: ['approve', 'approved', 'approves', 'signoff', 'sign-off', 'acceptance', 'accept', 'approver'],
     billing: ['invoice', 'invoicing', 'payment', 'pay', 'bill', 'billable'],
+    overdue: ['late', 'billing', 'invoice', 'invoicing', 'payment', 'due'],
+    late: ['overdue', 'billing', 'invoice', 'invoicing', 'payment'],
     onboarding: ['onboard', 'kickoff', 'kick-off', 'intake', 'start', 'beginning'],
     offboarding: ['offboard', 'wrap-up', 'wrapup', 'closeout', 'close-out', 'closing', 'end', 'ending', 'final'],
     closeout: ['close-out', 'offboarding', 'offboard', 'wrap', 'wrap-up', 'final', 'ending'],
@@ -35,8 +37,18 @@
     glossary: ['definition', 'term'],
     faq: ['question', 'questions'],
     proposal: ['contract', 'proposals'],
-    client: ['customer']
+    client: ['customer'],
+    respond: ['responds', 'responded', 'responding', 'response', 'reply', 'replies', 'replied', 'answer', 'answered', 'acknowledge', 'acknowledged', 'silence', 'silent', 'unresponsive', 'no-response'],
+    response: ['respond', 'responds', 'responded', 'responding', 'reply', 'replies', 'replied', 'answer', 'answered', 'acknowledgment', 'acknowledgement', 'silence', 'silent', 'unresponsive', 'no-response'],
+    responding: ['respond', 'response', 'reply', 'replied', 'answer', 'answered', 'silence', 'silent', 'unresponsive', 'no-response'],
+    reply: ['response', 'respond', 'responding', 'replies', 'replied', 'answer', 'answered', 'acknowledge', 'acknowledgment', 'silence', 'silent', 'unresponsive', 'no-response'],
+    unanswered: ['no-response', 'unresponsive', 'silent', 'silence', 'respond', 'reply']
   };
+
+  var STOP_WORDS = {};
+  'a an and are as at be before after can could did do does for from how if in is it me my need needs no not of on or our should that the this to us we what when where which who why won wont would your'
+    .split(' ')
+    .forEach(function (word) { STOP_WORDS[word] = true; });
 
   function expand(token) {
     var out = [token];
@@ -45,7 +57,9 @@
   }
 
   function tokenize(q) {
-    return q.toLowerCase().split(/[^a-z0-9]+/).filter(function (t) { return t.length > 1; });
+    return q.toLowerCase().split(/[^a-z0-9]+/).filter(function (t) {
+      return t.length > 1 && !STOP_WORDS[t];
+    });
   }
 
   function normalize(s) {
