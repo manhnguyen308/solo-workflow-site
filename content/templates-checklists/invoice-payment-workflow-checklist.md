@@ -28,7 +28,7 @@ Use this page to run a billing process that already has defined triggers, owners
 
 Do not use this checklist to decide your payment policy, redesign milestone acceptance, or choose where invoice truth should live. Those are broader workflow or stack decisions.
 
-## Start here first if...
+## Start upstream first if...
 
 - you still debate what counts as invoice-ready,
 - delivery approval is still vague,

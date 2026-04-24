@@ -25,7 +25,7 @@ This page is for the narrow question of what to do when required assets, access,
 
 Do not use this FAQ to define the whole onboarding stage, redesign delivery control, or replace the broader dependency and escalation rules.
 
-## Start here first if...
+## Start upstream first if...
 
 - the stage itself is still poorly designed,
 - the dependency record does not exist yet,

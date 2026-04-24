@@ -25,7 +25,7 @@ This page is for the narrow question of what to do when work has been sent, a de
 
 Do not use this FAQ to define the whole review process, fix a weak approval path from scratch, or replace the broader delivery or proposal-review workflows.
 
-## Start here first if...
+## Start upstream first if...
 
 - the review stage itself is still undefined,
 - you still do not know who can approve the work,

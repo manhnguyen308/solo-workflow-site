@@ -23,7 +23,7 @@ It is a support page only. Its job is to route narrow setup questions back to th
 
 Use it when the question is narrow enough to answer quickly. If you keep landing on several FAQ answers in one sitting, that usually means you should leave this page and return to a broader workflow or blueprint page.
 
-## Start here first if...
+## Start upstream first if...
 
 - the client lifecycle still feels broad and messy,
 - you need a full stack model rather than a short answer,

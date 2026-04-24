@@ -30,7 +30,7 @@ Use this page to run a kickoff that is already defined well enough to execute. I
 
 Do not use this checklist to decide what the onboarding workflow should be, what the proposal actually promised, or whether kickoff should happen yet. Those are upstream workflow questions, not checklist questions.
 
-## Start here first if...
+## Start upstream first if...
 
 - proposal review is still open or approval is still fuzzy,
 - the first milestone is not defined yet,

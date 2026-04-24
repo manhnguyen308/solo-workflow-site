@@ -25,7 +25,7 @@ Treat this page as a maintenance routing layer, not a standalone operations manu
 
 Do not use this page for first-time setup, stack design, or diagnosing the full lifecycle from scratch. It is for maintenance questions after the system already exists.
 
-## Start here first if...
+## Start upstream first if...
 
 - the operating model does not exist yet,
 - the whole lifecycle still feels messy instead of merely drifted,

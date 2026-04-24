@@ -31,7 +31,7 @@ Use this page to maintain a workflow that already exists. It is for recurring re
 
 Do not use this checklist to figure out your lifecycle stages, system center, billing rule, or communication structure for the first time. If those rules are still moving, this page will create the appearance of control without fixing the missing design underneath.
 
-## Start here first if...
+## Start upstream first if...
 
 - you still do not know where client truth lives,
 - weekly review keeps surfacing the same stage failure,
