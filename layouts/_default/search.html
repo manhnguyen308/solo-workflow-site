@@ -32,6 +32,6 @@
     </div>
   </section>
 </div>
-<script>window.SoloOpsGuideSearch = { indexUrl: {{ "search-index.json" | relURL | jsonify }} };</script>
+<script>window.SoloOpsGuideSearch = { indexUrl: "{{ "search-index.json" | relURL }}" };</script>
 <script src="{{ "js/search.js" | relURL }}" defer></script>
 {{ end }}
