@@ -124,7 +124,7 @@ Use this page when:
 - you want a set of assets that work together rather than picking one at a time,
 - you are moving from workflow design into execution and need the matching asset group.
 
-If you have not yet read the upstream page for your stage, this page is too narrow. Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) or the [Templates and Checklists hub](/templates-checklists/) first.
+If you have not yet read the upstream page for your stage, this page is too narrow. Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) first; use the [Templates and Checklists hub](/templates-checklists/) only after the trigger moment is already clear.
 
 ## If only one asset fits
 
