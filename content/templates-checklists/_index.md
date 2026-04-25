@@ -26,7 +26,7 @@ If you are still trying to decide how the lifecycle should work, where client tr
 - the problem is execution consistency rather than workflow design,
 - you need one operating asset, not a broader system answer.
 
-If any of those is still unclear, this hub is too narrow for the next move.
+If any of those is still unclear, this hub is too narrow for the next move. Use the [Problem-to-Page Guide](/problem-to-page-guide/) to match your symptom to the right page before returning here.
 
 ## How to use this hub
 
