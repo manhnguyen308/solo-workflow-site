@@ -1,0 +1,20 @@
+{
+  "id": "workflow-starter-pack",
+  "category": "templates",
+  "layout": "hub_overview",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/workflow-starter-pack.webp",
+  "eyebrow": "Asset bundles",
+  "title": "Workflow Starter Pack",
+  "subtitle": "Four groups of templates and checklists that work together for one lifecycle stage, not as isolated pages.",
+  "anchor": {
+    "title": "Start with the workflow rule",
+    "body": "Open a bundle only after the rule behind it is already clear. Bundles are execution aids, not workflow design."
+  },
+  "modules": [
+    { "kicker": "Lifecycle", "title": "Starter pack", "detail": "Onboarding, ops, status, billing." },
+    { "kicker": "Delivery", "title": "Approval bundle", "detail": "QA, routing, change request." },
+    { "kicker": "Closeout", "title": "Billing bundle", "detail": "Invoicing and offboarding." },
+    { "kicker": "Stack", "title": "Cleanup bundle", "detail": "Audit and system-of-record rules." }
+  ]
+}

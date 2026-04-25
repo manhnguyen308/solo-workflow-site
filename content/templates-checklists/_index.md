@@ -48,6 +48,8 @@ If any of those is still unclear, this hub is too narrow for the next move. Use 
 - Use [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) if the main need is one recurring review habit that keeps the rest of the system visible.
 - Use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) only when a blueprint or migration page has already made stack cleanup the next real move.
 
+If you want to use a group of assets together for one lifecycle stage rather than picking individually, see the [Workflow Starter Pack](/templates/workflow-starter-pack/).
+
 If none of those feels obviously right, this hub is probably not the best first stop yet.
 
 ## Use the support layer in order
