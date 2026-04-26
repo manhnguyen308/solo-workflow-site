@@ -1,0 +1,20 @@
+{
+  "id": "stack-decision-readiness-checklist",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "blueprint",
+  "output_path": "static/images/features/templates/stack-decision-readiness-checklist.webp",
+  "eyebrow": "Readiness checklist",
+  "title": "Stack Decision Ready?",
+  "subtitle": "Confirm workflow clarity before choosing or changing tools.",
+  "trigger": {
+    "label": "Before choosing or changing tools",
+    "note": "Workflow must be clear before stack selection"
+  },
+  "steps": [
+    { "label": "Client lifecycle stages named and ordered?", "tag": "Workflow" },
+    { "label": "System-of-record owner known per role?", "tag": "Ownership" },
+    { "label": "CRM vs PM role already decided?", "tag": "System" },
+    { "label": "Budget and migration risk acceptable?", "tag": "Stack" }
+  ]
+}

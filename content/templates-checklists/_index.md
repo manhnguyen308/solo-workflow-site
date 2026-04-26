@@ -56,6 +56,8 @@ If you want a quick read on whether the whole client workflow is healthy, fragil
 
 If you need to confirm that a specific project is ready for approval, invoicing, payment tracking, or closeout before moving forward, use the [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/).
 
+If you are about to compare tools or change your stack and want to confirm the workflow is clear enough to make that decision, use the [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/) before opening any comparison or blueprint page.
+
 If none of those feels obviously right, this hub is probably not the best first stop yet.
 
 ## Use the support layer in order

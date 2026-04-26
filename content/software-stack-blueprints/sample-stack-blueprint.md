@@ -106,6 +106,7 @@ Use the next page based on the question that is still blocking setup:
 - If the stack shape is mostly clear but ownership still feels vague, go next to [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 - If the stack shape is clear but billing visibility still feels split between finance and operations, go next to [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/).
 - If the broad system center is still not settled, go back one step to [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- If you are not yet sure whether the workflow is clear enough to choose tools at all, check the [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/) before comparing options.
 
 ## Stage-based stack tiers
 

@@ -31,7 +31,7 @@ This roadmap tracks the next recommended improvements to SoloOpsGuide's content,
 
 ### 2. Client Workflow Health Check
 
-**Status:** Not started.
+**Status:** Done. Page at `/templates/client-workflow-health-check/`.
 
 **Purpose:** A short scorecard-style page that helps readers identify whether their client workflow is healthy, fragile, or breaking — based on observable signals like client confusion, billing slippage, and repeated approval ambiguity.
 
@@ -43,7 +43,7 @@ This roadmap tracks the next recommended improvements to SoloOpsGuide's content,
 
 ### 3. Approval and Billing Readiness Checklist
 
-**Status:** Not started.
+**Status:** Done. Page at `/templates/approval-billing-readiness-checklist/`.
 
 **Purpose:** A focused checklist for confirming whether a project is ready for the next stage — covering approval, invoice, payment tracking, and closeout readiness.
 
@@ -55,7 +55,7 @@ This roadmap tracks the next recommended improvements to SoloOpsGuide's content,
 
 ### 4. Stack Decision Readiness Checklist
 
-**Status:** Not started.
+**Status:** Done. Page at `/templates/stack-decision-readiness-checklist/`.
 
 **Purpose:** Helps readers determine whether they are ready to choose tools or still need to clarify workflow first. Routes premature tool shoppers back upstream.
 
