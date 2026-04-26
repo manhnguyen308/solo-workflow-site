@@ -207,6 +207,7 @@ If that reset is already defined and you need to state the revised timing or seq
 - setup before delivery: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 - communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - billing handoff: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
+- approval and billing gate: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
 - closeout after final approval: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
 ## Completion standard

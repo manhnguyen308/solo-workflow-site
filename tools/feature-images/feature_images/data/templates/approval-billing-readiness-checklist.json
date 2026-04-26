@@ -1,0 +1,20 @@
+{
+  "id": "approval-billing-readiness-checklist",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/approval-billing-readiness-checklist.webp",
+  "eyebrow": "Readiness checklist",
+  "title": "Approval & Billing Ready",
+  "subtitle": "Confirm every condition before approval, invoicing, or closing a project.",
+  "trigger": {
+    "label": "Before billing or closing a project",
+    "note": "After delivery — before invoice or closeout"
+  },
+  "steps": [
+    { "label": "Deliverables sent through agreed channel?", "tag": "Delivery" },
+    { "label": "Approval owner confirmed and responded?", "tag": "Approval" },
+    { "label": "Invoice trigger and payment home set?", "tag": "Billing" },
+    { "label": "All milestones closed and handoff done?", "tag": "Closeout" }
+  ]
+}

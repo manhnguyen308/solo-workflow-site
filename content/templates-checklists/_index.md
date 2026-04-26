@@ -54,6 +54,8 @@ If you cannot yet name which category of problem you have — workflow sequence,
 
 If you want a quick read on whether the whole client workflow is healthy, fragile, or breaking — and which stage to fix first — use the [Client Workflow Health Check](/templates/client-workflow-health-check/).
 
+If you need to confirm that a specific project is ready for approval, invoicing, payment tracking, or closeout before moving forward, use the [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/).
+
 If none of those feels obviously right, this hub is probably not the best first stop yet.
 
 ## Use the support layer in order
