@@ -82,6 +82,7 @@ If your problem is broader than one symptom — "my whole client process feels l
 | Problem | What it really is | Read first | Next if needed |
 | --- | --- | --- | --- |
 | Something feels broken but I cannot name which part of the workflow | Problem-category triage | [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) | [Freelance Client Workflow System anchor](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) |
+| I want a quick read on how healthy the overall client workflow is | Overall workflow fitness check | [Client Workflow Health Check](/templates/client-workflow-health-check/) | [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) |
 | I need a worksheet or checklist for a specific moment | Execution asset lookup | [Templates and Checklists hub](/templates-checklists/) | [Freelance Client Workflow System anchor](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) |
 | I want a group of assets that work together for one lifecycle stage | Bundle implementation | [Workflow Starter Pack](/templates/workflow-starter-pack/) | [Templates and Checklists hub](/templates-checklists/) |
 | One term is unclear and that is the only blocker | Definition lookup | [Glossary](/glossary/) | [FAQ hub](/faq/) |

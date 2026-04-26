@@ -52,6 +52,8 @@ If you want to use a group of assets together for one lifecycle stage rather tha
 
 If you cannot yet name which category of problem you have — workflow sequence, approval, billing, or stack — use the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to identify the right lane before opening any asset here.
 
+If you want a quick read on whether the whole client workflow is healthy, fragile, or breaking — and which stage to fix first — use the [Client Workflow Health Check](/templates/client-workflow-health-check/).
+
 If none of those feels obviously right, this hub is probably not the best first stop yet.
 
 ## Use the support layer in order

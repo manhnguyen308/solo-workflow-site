@@ -1,0 +1,20 @@
+{
+  "id": "client-workflow-health-check",
+  "category": "templates",
+  "layout": "checklist_card",
+  "palette": "workflow",
+  "output_path": "static/images/features/templates/client-workflow-health-check.webp",
+  "eyebrow": "Health check",
+  "title": "Workflow Health Check",
+  "subtitle": "Score eight lifecycle areas to find the weakest stage and fix it first.",
+  "trigger": {
+    "label": "When the workflow runs but keeps creating friction",
+    "note": "Before changing tools or buying new software"
+  },
+  "steps": [
+    { "label": "Inquiry, proposal, and onboarding clear?", "tag": "Entry" },
+    { "label": "Delivery and approvals closing cleanly?", "tag": "Delivery" },
+    { "label": "Billing triggers and tracking reliable?", "tag": "Billing" },
+    { "label": "One system of record for client truth?", "tag": "Stack" }
+  ]
+}
