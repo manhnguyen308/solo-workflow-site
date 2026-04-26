@@ -184,3 +184,17 @@ Read this file first for any future Codex pass in this repo. It contains the dur
    - create a git commit with a clear message,
    - push the current branch when remotes/auth are available,
    - if push cannot be completed, report the exact blocker rather than implying success.
+
+## When to read what
+
+Read `AGENT.md` + `TRACKER.md` before every task. Add these for specific work types:
+
+| Task type | Add to reading list |
+| --- | --- |
+| New page or content work | `project-docs/CONTENT_OPERATIONS.md` |
+| Feature image work | `project-docs/FEATURE-IMAGE-GUIDELINES.md` |
+| New roadmap feature | `project-docs/NEW_FEATURES_ROADMAP.md` |
+| Internal search work | `project-docs/INTERNAL_SEARCH_ROADMAP.md` |
+| GSC / SEO response | `project-docs/SEARCH_CONSOLE_RESPONSE_LOOP.md` |
+| Build or deploy troubleshooting | `project-docs/BUILD-VALIDATION.md` |
+| Historical context only | `project-docs/TRACKER-ARCHIVE.md` or `project-docs/archive/` |
