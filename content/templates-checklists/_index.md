@@ -50,6 +50,8 @@ If any of those is still unclear, this hub is too narrow for the next move. Use 
 
 If you want to use a group of assets together for one lifecycle stage rather than picking individually, see the [Workflow Starter Pack](/templates/workflow-starter-pack/).
 
+If you cannot yet name which category of problem you have — workflow sequence, approval, billing, or stack — use the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to identify the right lane before opening any asset here.
+
 If none of those feels obviously right, this hub is probably not the best first stop yet.
 
 ## Use the support layer in order
