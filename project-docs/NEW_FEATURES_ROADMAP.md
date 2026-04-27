@@ -67,7 +67,7 @@ This roadmap tracks the next recommended improvements to SoloOpsGuide's content,
 
 ### 5. Internal Search Improvement Pass
 
-**Status:** Deferred.
+**Status:** Done. Synonym map expanded in `static/js/search.js`.
 
 **Purpose:** Improve synonym coverage, stop-word handling, and result routing for new pages added after the initial search implementation.
 
