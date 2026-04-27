@@ -48,17 +48,15 @@ If any of those is still unclear, this hub is too narrow for the next move. Use 
 - Use [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) if the main need is one recurring review habit that keeps the rest of the system visible.
 - Use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) only when a blueprint or migration page has already made stack cleanup the next real move.
 
-If you want to use a group of assets together for one lifecycle stage rather than picking individually, see the [Workflow Starter Pack](/templates/workflow-starter-pack/).
+If you are not sure which starting asset to open, use this guide:
 
-If you cannot yet name which category of problem you have — workflow sequence, approval, billing, or stack — use the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to identify the right lane before opening any asset here.
+- **Cannot name the failing stage** — [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/): identifies the broken workflow category before opening any other asset.
+- **Want a whole-workflow score** — [Client Workflow Health Check](/templates/client-workflow-health-check/): shows whether the workflow is healthy, fragile, or breaking and which stage to fix first.
+- **Near approval, invoice, payment, or closeout** — [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/): confirms the project is ready before moving the stage forward.
+- **About to choose or change tools** — [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/): confirms the workflow is clear enough to make a tool decision before opening any comparison or blueprint.
+- **Workflow mostly clear, want grouped execution assets** — [Workflow Starter Pack](/templates/workflow-starter-pack/): bundles assets by lifecycle stage so you do not have to pick individually.
 
-If you want a quick read on whether the whole client workflow is healthy, fragile, or breaking — and which stage to fix first — use the [Client Workflow Health Check](/templates/client-workflow-health-check/).
-
-If you need to confirm that a specific project is ready for approval, invoicing, payment tracking, or closeout before moving forward, use the [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/).
-
-If you are about to compare tools or change your stack and want to confirm the workflow is clear enough to make that decision, use the [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/) before opening any comparison or blueprint page.
-
-If none of those feels obviously right, this hub is probably not the best first stop yet.
+If none of those fits yet, return to [Client Workflow Systems](/client-workflow-systems/) or use the [Problem-to-Page Guide](/problem-to-page-guide/).
 
 ## Use the support layer in order
 

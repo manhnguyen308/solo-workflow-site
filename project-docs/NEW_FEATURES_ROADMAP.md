@@ -79,6 +79,8 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 2.3 — Templates Hub Decision Strip
 
+**Status: Done.**
+
 **Purpose:** Add or refine a compact decision strip to help readers choose between the diagnostic checklist, health check, readiness checklists, and starter bundles.
 
 **Constraints:**
@@ -274,15 +276,15 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ## 8. First recommended next task
 
-**Phase 2, Task 2.3 — Templates Hub Decision Strip**
+**Phase 2, Task 2.4 — Problem-to-Page Guide Routing Review**
 
-Tasks 2.1 and 2.2 are complete. The next task is to add or refine a compact decision strip on the templates hub to help readers choose between the diagnostic checklist, health check, readiness checklists, and starter bundles. Only proceed if a routing gap is genuinely confirmed after reviewing the hub.
+Tasks 2.1, 2.2, and 2.3 are complete. The next task is to verify that the Problem-to-Page Guide still routes to the best exact pages after Phase 1 additions. Review only; make at most one small fix if a routing issue is found.
 
 **Implementation scope when ready:**
-- Read `content/templates-checklists/_index.md` first screen.
-- Add a small decision strip if a routing gap exists.
-- Do not make templates the main strategy layer.
-- No broad page rewrite, no URL changes.
+- Read `content/problem-to-page-guide.md`.
+- Check all routing rows against current live pages.
+- Fix at most one gap if found.
+- No broad rewrite, no URL changes.
 - Update `TRACKER.md` and commit.
 
 ---
