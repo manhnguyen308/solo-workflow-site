@@ -27,6 +27,8 @@ Before changing tools, use this page first. The real blocker is almost always a 
 
 Stay here if the problem feels broad, several stages are failing at once, or you cannot yet name whether the real issue is intake, approval, delivery, billing, or handoff. Leave this page only after you can name the specific stage or transition causing the most downstream damage — then go directly to that stage guide. If you are already close to a diagnosis, skip ahead to [How to choose the first stage to fix](#how-to-choose-the-first-stage-to-fix).
 
+If naming the stage is the blocker, the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) can help you triage which category is failing before you choose a stage guide. The [Client Workflow Health Check](/templates/client-workflow-health-check/) is useful if you want to score each area of the lifecycle before diving into one.
+
 ## What this page should and should not do
 
 This page should:
@@ -95,6 +97,8 @@ By the time you leave this page, you should be able to answer:
 Use the lifecycle map to choose only one next page:
 
 - broad lifecycle still messy -> keep reading this page once end to end,
+- cannot yet name which stage is failing -> use [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to triage the category before choosing a stage guide,
+- want to score all areas of the workflow first -> use [Client Workflow Health Check](/templates/client-workflow-health-check/) to find the weakest stage,
 - one stage is clearly failing -> move to that stage workflow,
 - one handoff is clearly weak -> move to the related handoff or support worksheet,
 - stack shape is the real blocker -> leave the workflow cluster for [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/),

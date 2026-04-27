@@ -64,6 +64,8 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 2.2 — Workflow Anchor First-Screen Refresh
 
+**Status: Done.**
+
 **Purpose:** Clarify the main workflow anchor's first screen so it remains the strongest canonical path for lifecycle sequence problems.
 
 **Constraints:**
@@ -272,15 +274,15 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ## 8. First recommended next task
 
-**Phase 2, Task 2.2 — Workflow Anchor First-Screen Refresh**
+**Phase 2, Task 2.3 — Templates Hub Decision Strip**
 
-Task 2.1 (Workflow Hub First-Screen Refinement) is complete. The next task is a small first-screen clarity pass on the main workflow anchor to confirm it remains the strongest canonical path for lifecycle sequence problems.
+Tasks 2.1 and 2.2 are complete. The next task is to add or refine a compact decision strip on the templates hub to help readers choose between the diagnostic checklist, health check, readiness checklists, and starter bundles. Only proceed if a routing gap is genuinely confirmed after reviewing the hub.
 
 **Implementation scope when ready:**
-- Read the workflow anchor first screen.
-- Tighten intro copy or page-positioning only.
-- No URL changes, no redesign, no new sections.
-- Do not make support assets look primary.
+- Read `content/templates-checklists/_index.md` first screen.
+- Add a small decision strip if a routing gap exists.
+- Do not make templates the main strategy layer.
+- No broad page rewrite, no URL changes.
 - Update `TRACKER.md` and commit.
 
 ---
