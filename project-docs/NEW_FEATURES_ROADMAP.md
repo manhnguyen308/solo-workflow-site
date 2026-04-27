@@ -50,6 +50,8 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 2.1 — Workflow Hub First-Screen Refinement
 
+**Status: Done.**
+
 **Purpose:** Improve the first screen of `/client-workflow-systems/` so readers and Google immediately understand this is the main upstream workflow path.
 
 **Constraints:**
@@ -270,16 +272,15 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ## 8. First recommended next task
 
-**Phase 2, Task 2.1 — Workflow Hub First-Screen Refinement**
+**Phase 2, Task 2.2 — Workflow Anchor First-Screen Refresh**
 
-The workflow hub (`/client-workflow-systems/`) is the most important upstream entry point. A small first-screen refinement is the right next move before adding more pages, UI features, or new phases.
-
-This roadmap update does not implement it. It only identifies it as the next recommended task.
+Task 2.1 (Workflow Hub First-Screen Refinement) is complete. The next task is a small first-screen clarity pass on the main workflow anchor to confirm it remains the strongest canonical path for lifecycle sequence problems.
 
 **Implementation scope when ready:**
-- Read `/client-workflow-systems/` first screen.
-- Tighten intro copy, routing copy, or page-positioning only.
+- Read the workflow anchor first screen.
+- Tighten intro copy or page-positioning only.
 - No URL changes, no redesign, no new sections.
+- Do not make support assets look primary.
 - Update `TRACKER.md` and commit.
 
 ---

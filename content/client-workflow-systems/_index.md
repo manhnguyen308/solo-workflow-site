@@ -6,7 +6,7 @@ feature_image = "/images/features/hubs/client-workflow-systems.webp"
 feature_image_alt = "Editorial workflow illustration showing connected stages across a client delivery system."
 +++
 
-This hub is the main entry point for client-lifecycle problems on the site. Use it when work feels messy between inquiry, proposal, onboarding, delivery, billing, or offboarding and you need to see exactly where the sequence is failing.
+This is the main upstream starting point for client workflow problems on SoloOpsGuide — built for freelancers and solo service operators whose client process feels scattered, unclear, or inconsistent. Use it when the sequence between inquiry, proposal, onboarding, delivery, approval, billing, or closeout feels broken and you need to find exactly where.
 
 Most solo operators do not need more advice about "productivity." They need a cleaner operating sequence. That is what this hub covers: where a client workflow breaks, what a good handoff looks like, and which workflow page should come next.
 
@@ -16,10 +16,15 @@ If you only open one page from this hub, start with [Freelance Client Workflow S
 
 ## Start here if...
 
-- projects start with unclear expectations,
+- you cannot name which stage of the client process is actually failing,
+- projects start with unclear scope, inputs, or expectations,
+- clients keep asking what happens next and there is no clear answer,
 - review and approval loops keep drifting,
 - billing problems are really handoff problems upstream,
+- work keeps starting before scope, approval, or billing rules are confirmed,
 - you are tempted to change tools before the process itself is visible.
+
+If you cannot name the specific problem, open the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to identify which lifecycle stage is failing. Use the [Client Workflow Health Check](/templates/client-workflow-health-check/) to score the overall workflow and find the weakest area. If you have a specific symptom, the [Problem-to-Page Guide](/problem-to-page-guide/) routes directly to the best page for it. Templates and the [Workflow Starter Pack](/templates/workflow-starter-pack/) work best after the underlying process is mostly clear.
 
 ## Go somewhere else first if...
 

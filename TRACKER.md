@@ -67,6 +67,8 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
+- 2026-04-27 Phase 2 Task 2.1 — Workflow Hub First-Screen Refinement: reviewed `content/client-workflow-systems/_index.md` against five first-screen checks (first-screen clarity, search clarity, workflow-first hierarchy, routing balance, low-value risk); three gaps identified: (1) intro did not name freelancers/solo operators or frame the page as the upstream starting point; (2) "Start here if..." missing trigger scenarios for readers who cannot name the failing stage, for unclear scope/inputs, and for work starting before approval is confirmed; (3) no routing path to the Phase 1 diagnostic assets for unclear readers; surgical changes made: (a) first paragraph rewritten to name audience and upstream framing; (b) two new bullets added to "Start here if..."; (c) one routing block added (four links: Workflow Diagnostic Checklist, Client Workflow Health Check, Problem-to-Page Guide, Workflow Starter Pack — subordinated with "only after the underlying process is mostly clear"); all four internal links verified against generated public paths; workflow-first hierarchy preserved — diagnostic/health-check assets subordinate to the anchor workflow; no URL changes, no new pages, no redesign; roadmap updated: Task 2.1 marked Done, recommended next task updated to Task 2.2; validation: `git diff --check` clean; Hugo build: system Hugo v0.123.7, 86 pages, no errors; `public/` untracked; files changed: `content/client-workflow-systems/_index.md`, `project-docs/NEW_FEATURES_ROADMAP.md`, `TRACKER.md`.
+
 - 2026-04-27 five-phase feature roadmap created: `project-docs/NEW_FEATURES_ROADMAP.md` expanded from a single Phase 1 queue into a full 5-phase roadmap; Phase 1 confirmed complete (all 6 features done); Phase 2 added (4 routing and first-screen clarity tasks); Phase 3 added (4 search, discovery, and reader-path UX tasks); Phase 4 added (4 workflow-stage support improvement tasks); Phase 5 added (4 measurement, pruning, and monetization readiness tasks); first recommended next task set as Phase 2 Task 2.1 — Workflow Hub First-Screen Refinement; deferred ideas section added; implementation and validation rules consolidated; no public content changed, no URLs changed, no features implemented; validation: `git diff --check` clean; Hugo build not required (docs-only change); files changed: `project-docs/NEW_FEATURES_ROADMAP.md`, `TRACKER.md`.
 
 
@@ -110,7 +112,7 @@ Priority URLs to monitor:
 
 ## Next recommended actions
 
-- Next roadmap task: Phase 2, Task 2.1 — Workflow Hub First-Screen Refinement (`/client-workflow-systems/`). Small copy or routing clarity pass only; no URL changes, no redesign, no new sections.
+- Next roadmap task: Phase 2, Task 2.2 — Workflow Anchor First-Screen Refresh (`/workflows/freelance-client-workflow-system-inquiry-to-final-payment/`). Small copy or routing clarity pass only; no URL changes, no redesign, no new sections. Confirm it remains the strongest canonical path for lifecycle sequence problems and does not make support assets look primary.
 - Continue waiting for GSC movement on the workflow hub and anchor before making broader SEO or architecture changes.
 - If support pages continue to outrank cornerstone paths, audit homepage-to-workflow routing before widening support links further.
 - If feature-image work resumes, keep the raster gate at the current four approved pages unless a new output set passes visual review.
