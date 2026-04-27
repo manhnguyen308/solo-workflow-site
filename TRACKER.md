@@ -67,6 +67,10 @@ Priority URLs to monitor:
 
 ## Recent completed passes
 
+- 2026-04-27 five-phase feature roadmap created: `project-docs/NEW_FEATURES_ROADMAP.md` expanded from a single Phase 1 queue into a full 5-phase roadmap; Phase 1 confirmed complete (all 6 features done); Phase 2 added (4 routing and first-screen clarity tasks); Phase 3 added (4 search, discovery, and reader-path UX tasks); Phase 4 added (4 workflow-stage support improvement tasks); Phase 5 added (4 measurement, pruning, and monetization readiness tasks); first recommended next task set as Phase 2 Task 2.1 — Workflow Hub First-Screen Refinement; deferred ideas section added; implementation and validation rules consolidated; no public content changed, no URLs changed, no features implemented; validation: `git diff --check` clean; Hugo build not required (docs-only change); files changed: `project-docs/NEW_FEATURES_ROADMAP.md`, `TRACKER.md`.
+
+
+
 - 2026-04-27 roadmap feature #6 — Template Bundle Refinement Pass: reviewed `content/templates-checklists/_index.md`, `content/templates-checklists/workflow-starter-pack.md`, and all four new checklist pages (workflow-diagnostic-checklist, client-workflow-health-check, approval-billing-readiness-checklist, stack-decision-readiness-checklist); asset roles confirmed distinct and clear; workflow-first hierarchy confirmed intact across all pages; hub routing confirmed complete — all four new pages referenced from _index.md; naming consistent throughout; three routing gaps found in the Workflow Starter Pack: (1) "not sure which bundle" routing sent readers to Problem-to-Page Guide only — Workflow Diagnostic Checklist is the more precise pre-qualification tool and was added as the first routing suggestion; (2) Bundle 3 (Billing and Closeout) had no reference to the Approval and Billing Readiness Checklist — one supporting reading line added as a pre-check before billing/closeout assets; (3) Bundle 4 (Stack Cleanup) had no reference to the Stack Decision Readiness Checklist — one supporting reading line added as a pre-check before stack audit work; no new pages created, no URLs changed, no mass edits; internal links in all three additions verified against existing slugs; validation: `git diff --check` clean; Hugo build: system Hugo v0.123.7, 86 pages, no errors; `public/` untracked; files changed: `content/templates-checklists/workflow-starter-pack.md`, `project-docs/NEW_FEATURES_ROADMAP.md`, `TRACKER.md`.
 
 
@@ -106,11 +110,11 @@ Priority URLs to monitor:
 
 ## Next recommended actions
 
-- Wait for more GSC movement before making broader SEO or architecture changes.
-- If the workflow hub still lags, do one very small first-screen refinement on `/client-workflow-systems/` only.
-- If support pages continue to outrank cornerstone paths, audit homepage-to-workflow routing and a few already indexed support pages for stronger contextual links back into the workflow cluster.
+- Next roadmap task: Phase 2, Task 2.1 — Workflow Hub First-Screen Refinement (`/client-workflow-systems/`). Small copy or routing clarity pass only; no URL changes, no redesign, no new sections.
+- Continue waiting for GSC movement on the workflow hub and anchor before making broader SEO or architecture changes.
+- If support pages continue to outrank cornerstone paths, audit homepage-to-workflow routing before widening support links further.
 - If feature-image work resumes, keep the raster gate at the current four approved pages unless a new output set passes visual review.
-- Next roadmap feature: Client Workflow Health Check (feature #2 in `project-docs/NEW_FEATURES_ROADMAP.md`). Hold until GSC signals settle from recent CRM vs PM and diagnostic checklist passes.
+- See `project-docs/NEW_FEATURES_ROADMAP.md` for the full 5-phase roadmap and phase-by-phase signal dependencies.
 
 ## Historical archive / compressed log
 
