@@ -79,7 +79,7 @@ This roadmap tracks the next recommended improvements to SoloOpsGuide's content,
 
 ### 6. Template Bundle Refinement Pass
 
-**Status:** Deferred.
+**Status:** Done. Starter Pack updated with routing additions for new checklist pages.
 
 **Purpose:** Improve bundle grouping, copy, and routing around the Workflow Starter Pack if GSC or reader behavior shows confusion about bundle entry points.
 

@@ -20,7 +20,7 @@ This page groups the most useful templates and checklists into four practical bu
 
 These are execution aids, not workflow design tools. Every bundle assumes the upstream workflow rule already exists. If the rule is still unclear, go back to the workflow, blueprint, or comparison page that defines it before opening any asset here.
 
-If you are not sure which bundle fits your current situation, use the [Problem-to-Page Guide](/problem-to-page-guide/) to map your symptom first.
+If you are not sure which bundle fits your current situation, use the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) to name the problem category first, then return here once the lane is clear. Or use the [Problem-to-Page Guide](/problem-to-page-guide/) to match a specific symptom to the right page.
 
 ## Start upstream first if...
 
@@ -88,7 +88,9 @@ This bundle pairs the billing checklist (which standardizes the invoicing proces
 
 2. [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/) — use when closing a project to confirm final signoff, collect testimonial, and protect future referral value; use after billing is settled, not before.
 
-**Supporting reading:** [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/) — read this if deliverables are accepted and billing is resolved but the client has not acknowledged the formal project end.
+**Supporting reading:**
+- [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/) — run this before issuing an invoice or moving to closeout to confirm every readiness condition is met; use it as a pre-check before the assets in this bundle, not as a replacement for them.
+- [FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/) — read this if deliverables are accepted and billing is resolved but the client has not acknowledged the formal project end.
 
 **Use sequence:** invoice checklist at each billing trigger → offboarding template once the final payment is confirmed → closeout FAQ if the client goes quiet before formal acknowledgment.
 
@@ -109,6 +111,7 @@ This bundle covers inventory and keep/replace/retire decisions (stack audit work
 2. [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) — use when the tool list is mostly visible but ownership rules are still soft; defines where live truth should sit and what should never be duplicated casually.
 
 **Supporting reading:**
+- [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/) — run this before starting any stack cleanup to confirm the workflow is clear enough to make tool decisions; if more than a few items are unchecked, the process needs clarifying before the audit begins.
 - [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) — read this first to confirm the stack shape decision before auditing the current setup.
 - [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) — read this if the main risk is adding tools before the need is visible rather than cleaning up existing ones.
 
