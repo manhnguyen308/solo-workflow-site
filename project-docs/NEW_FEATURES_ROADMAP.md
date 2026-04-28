@@ -134,11 +134,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 3.2 — Phase 2 Internal Search Ranking Pass
 
-**Status: Reviewed — verification pass only. Deeper ranking refinement remains data-dependent.**
+**Status: Done — one chip-query synonym fix. Deeper ranking refinement remains data-dependent.**
 
 **Purpose:** Refine ranking rules after new feature pages have been tested through natural queries.
 
-**Verification result:** All chip queries and priority test queries route correctly by code analysis. No broken routes found. No search behavior data available. No code changes made.
+**Verification result:** One broken chip query was found and fixed: `choose CRM or project tool` returned zero results because `choose` did not expand back to decision-intent terms. Added a narrow `choose` synonym mapping in `static/js/search.js`; no scoring weights changed. No broader search behavior data was available.
 
 **Constraints:**
 - No search rebuild.

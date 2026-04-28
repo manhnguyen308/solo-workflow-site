@@ -40,6 +40,7 @@
     score: ['scorecard', 'scoring', 'health', 'assessment', 'audit'],
     diagnostic: ['diagnose', 'diagnosis', 'diagnoses', 'triage'],
     decision: ['decide', 'deciding', 'selection', 'choose', 'choosing'],
+    choose: ['decision', 'decide', 'deciding', 'selection', 'choosing'],
     readiness: ['ready', 'prepared', 'gate'],
     glossary: ['definition', 'term'],
     faq: ['question', 'questions'],
