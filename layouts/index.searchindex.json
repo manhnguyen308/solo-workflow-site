@@ -1,7 +1,8 @@
 {{- $excluded := slice "search" -}}
+{{- $excludedUrls := slice "/search/" -}}
 {{- $pages := slice -}}
 {{- range .Site.Pages -}}
-  {{- if and (in (slice "page" "section") .Kind) (ne (.Params.draft | default false) true) (not (in $excluded .Section)) (ne .Permalink $.Site.Home.Permalink) -}}
+  {{- if and (in (slice "page" "section") .Kind) (ne (.Params.draft | default false) true) (not (in $excluded .Section)) (not (in $excludedUrls .RelPermalink)) (ne .Permalink $.Site.Home.Permalink) -}}
     {{- $pages = $pages | append . -}}
   {{- end -}}
 {{- end -}}
