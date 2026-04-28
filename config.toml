@@ -1,7 +1,7 @@
 # Production baseURL is supplied at build time in Cloudflare:
 # hugo --minify --gc --baseURL "${SITE_URL:-$CF_PAGES_URL}"
 baseURL = "/"
-languageCode = "en-us"
+locale = "en-US"
 title = "SoloOpsGuide"
 enableRobotsTXT = true
 summaryLength = 28

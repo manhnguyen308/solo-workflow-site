@@ -14,7 +14,7 @@
     {{ $page.Scratch.Set "feature_image_rel" $source }}
     {{ $staticPath := printf "static%s" $source }}
     {{ $preferRaster := false }}
-    {{ with site.Data.feature_image_raster_preferences }}
+    {{ with hugo.Data.feature_image_raster_preferences }}
       {{ $preferRaster = in .prefer_raster $source }}
     {{ end }}
     {{ $extensions := slice ".png" ".jpg" ".jpeg" }}

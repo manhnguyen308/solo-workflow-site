@@ -5,20 +5,18 @@ Read this when troubleshooting builds, validating changes, or checking Cloudflar
 ## Standard build command
 
 ```
-tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/
+hugo --gc --minify --baseURL https://soloopsguide.com/
 ```
+
+Target version: Hugo Extended `0.160.1`.
 
 ## Environment note (Linux)
 
-`tools/hugo/v0.128.0/hugo.exe` is a Windows PE32+ binary. It cannot execute on native Linux and returns:
+The system-installed Hugo (`snap:0.160.1`) is the current build tool on Linux.
 
-```
-Exec format error (os error 8)
-```
+The legacy vendored binary `tools/hugo/v0.128.0/hugo.exe` is a Windows PE32+ binary. It cannot execute on native Linux and is no longer the source of truth. Use the system Hugo.
 
-When this happens: report the exact blocker, do not claim the build passed. Note it in TRACKER.md as "Hugo build: Windows PE binary on Linux, cannot execute." Mark the change as pure markdown/static-asset risk if no template, layout, config, or JS was changed.
-
-If a system-installed Hugo is available: try `hugo --gc --minify --baseURL https://soloopsguide.com/` first.
+If a system Hugo is not available: report the exact blocker. Mark the change as pure markdown/static-asset risk if no template, layout, config, or JS was changed.
 
 ## When a build IS required
 
@@ -38,7 +36,7 @@ If a system-installed Hugo is available: try `hugo --gc --minify --baseURL https
 
 - Cloudflare builds from source using `bash tools/build-cloudflare.sh`.
 - `public/` is generated output and must NOT be committed. `.gitignore` explicitly ignores `/public/`.
-- Build environment variables: `HUGO_VERSION=0.159.2`, `SITE_URL=https://soloopsguide.com/`.
+- Build environment variables: `HUGO_VERSION=0.160.1`, `SITE_URL=https://soloopsguide.com/`.
 - If `SITE_URL` is not set, Cloudflare falls back to `CF_PAGES_URL`.
 
 ## Post-build validation checklist
