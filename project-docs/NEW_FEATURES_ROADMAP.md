@@ -111,9 +111,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 3.1 — Search Query Chips / Suggested Searches
 
+**Status: Done.**
+
 **Purpose:** Add a small set of suggested search prompts near the internal search entry or results page.
 
-**Suggested chips:**
+**Implemented chips:**
 - client won't respond
 - approval before invoice
 - choose CRM or project tool

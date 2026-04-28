@@ -3091,6 +3091,39 @@ body[data-page-trust="true"] .section-hero-copy .hero-summary {
   color: #ffffff;
   border-color: var(--brand);
 }
+.search-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+.search-chips-label {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+.search-chip {
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  border: 1px dashed rgba(13, 148, 136, 0.45);
+  background: rgba(13, 148, 136, 0.04);
+  font-size: 0.82rem;
+  color: #0f766e;
+  cursor: pointer;
+  transition: background-color 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+  line-height: 1.4;
+}
+.search-chip:hover {
+  background: rgba(13, 148, 136, 0.1);
+  border-color: rgba(13, 148, 136, 0.7);
+  color: #0d4f4a;
+}
+.search-chip:focus-visible {
+  outline: 2px solid rgba(13, 148, 136, 0.6);
+  outline-offset: 2px;
+}
 .search-status {
   color: #475569;
   font-size: 0.95rem;

@@ -270,6 +270,17 @@
     });
   }
 
+  var chipsEl = document.querySelector('[data-search-chips]');
+  if (chipsEl) {
+    chipsEl.addEventListener('click', function (e) {
+      var btn = e.target.closest('[data-chip-query]');
+      if (!btn) return;
+      input.value = btn.getAttribute('data-chip-query');
+      input.dispatchEvent(new Event('input'));
+      input.focus();
+    });
+  }
+
   // Initial state from URL
   try {
     var params = new URLSearchParams(window.location.search);

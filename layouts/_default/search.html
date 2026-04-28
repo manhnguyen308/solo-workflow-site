@@ -13,6 +13,15 @@
           <input id="search-page-input" type="search" name="q" placeholder="Try: approval, billing, onboarding, handoff, closeout, client silence..." autocomplete="off" autofocus>
           <button type="submit">Search</button>
         </form>
+        <div class="search-chips" data-search-chips aria-label="Suggested searches">
+          <span class="search-chips-label" aria-hidden="true">Try:</span>
+          <button type="button" class="search-chip" data-chip-query="client won't respond">client won't respond</button>
+          <button type="button" class="search-chip" data-chip-query="approval before invoice">approval before invoice</button>
+          <button type="button" class="search-chip" data-chip-query="choose CRM or project tool">choose CRM or project tool</button>
+          <button type="button" class="search-chip" data-chip-query="workflow health check">workflow health check</button>
+          <button type="button" class="search-chip" data-chip-query="billing status">billing status</button>
+          <button type="button" class="search-chip" data-chip-query="stack decision">stack decision</button>
+        </div>
         <div class="search-filters" data-search-filters role="group" aria-label="Filter by section">
           <button type="button" data-filter="all" class="search-filter is-active">All</button>
           <button type="button" data-filter="client-workflow-systems" class="search-filter">Workflows</button>
