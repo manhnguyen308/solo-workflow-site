@@ -159,8 +159,12 @@ If no category clearly wins, or if more than three categories each have multiple
 
 Adding tools before the workflow is clear typically adds maintenance cost without fixing the underlying process gap. Resolve the category first, then let the right page guide the tool or template decision.
 
-## Use this checklist with
+## Reading sequence from here
 
-- [Problem-to-Page Guide](/problem-to-page-guide/) — for matching a named symptom to the exact best page
-- [Workflow Starter Pack](/templates/workflow-starter-pack/) — for bundled execution assets by lifecycle stage
+This checklist is the diagnose step. Use the routing table above to identify the category, then follow the path that matches your result.
+
+- **Before this checklist:** If the whole lifecycle feels unclear rather than one stage, start at [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before running this diagnostic.
+- **After a clear single category:** Open the first page named in the routing table above and work from there.
+- **After an unclear or multi-category result:** Use the [Client Workflow Health Check](/templates/client-workflow-health-check/) to score all eight workflow areas and identify which stage is weakest before committing to a specific workflow page.
+- **Once the category and stage are confirmed:** Use the [Workflow Starter Pack](/templates/workflow-starter-pack/) to open the matched set of execution assets for that stage.
 - [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) — for diagnosing which stage in the lifecycle is weakest

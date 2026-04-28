@@ -151,7 +151,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 3.3 — Reader Path Footer Pilot
 
+**Status: Done.**
+
 **Purpose:** Test a small reader-path block on one section or one template group showing the intended reading sequence: start upstream → diagnose → choose asset → execute next step.
+
+**Pilot result:** Templates/checklists hub and Workflow Starter Pack reviewed — both have strong existing routing; no gap. One genuine gap found in the Workflow Diagnostic Checklist: the "Use this checklist with" section (two companion links, no sequential context, missing the Health Check for multi-category results). Replaced with a compact four-step "Reading sequence from here" block in `content/templates-checklists/workflow-diagnostic-checklist.md`: (1) upstream first if whole lifecycle unclear, (2) single-category result → routing table, (3) multi-category/unclear result → Health Check, (4) category confirmed → Workflow Starter Pack.
 
 **Constraints:**
 - Pilot only — one section or group.
