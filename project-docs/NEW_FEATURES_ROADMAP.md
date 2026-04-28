@@ -134,14 +134,18 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 3.2 — Phase 2 Internal Search Ranking Pass
 
+**Status: Reviewed — verification pass only. Deeper ranking refinement remains data-dependent.**
+
 **Purpose:** Refine ranking rules after new feature pages have been tested through natural queries.
+
+**Verification result:** All chip queries and priority test queries route correctly by code analysis. No broken routes found. No search behavior data available. No code changes made.
 
 **Constraints:**
 - No search rebuild.
 - Small synonym or weight changes only.
 - Use observed query behavior where available.
 
-**Signal dependency:** Wait for real search behavior data. Do not run speculatively.
+**Signal dependency:** Wait for real search behavior data. Do not run speculatively. Reopen this task when GSC search query data or site analytics show recurring zero-result or mis-routed queries.
 
 ---
 
