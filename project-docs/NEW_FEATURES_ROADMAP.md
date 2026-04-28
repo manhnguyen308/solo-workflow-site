@@ -93,6 +93,8 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 2.4 — Problem-to-Page Guide Routing Review
 
+**Status: Done.**
+
 **Purpose:** Verify that the guide still routes to the best exact pages after Phase 1 additions.
 
 **Constraints:**
@@ -276,16 +278,9 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ## 8. First recommended next task
 
-**Phase 2, Task 2.4 — Problem-to-Page Guide Routing Review**
+**Phase 3, Task 3.1 — Search Query Chips / Suggested Searches**
 
-Tasks 2.1, 2.2, and 2.3 are complete. The next task is to verify that the Problem-to-Page Guide still routes to the best exact pages after Phase 1 additions. Review only; make at most one small fix if a routing issue is found.
-
-**Implementation scope when ready:**
-- Read `content/problem-to-page-guide.md`.
-- Check all routing rows against current live pages.
-- Fix at most one gap if found.
-- No broad rewrite, no URL changes.
-- Update `TRACKER.md` and commit.
+Phase 2 is complete. The next task is to add a small set of suggested search prompts near the internal search entry or results page. Proceed after confirming search behavior and deciding which chips matter most based on current usage patterns.
 
 ---
 

@@ -47,6 +47,7 @@ If your problem is broader than one symptom — "my whole client process feels l
 | Informal "looks good" keeps triggering invoices early | Billing-trigger drift | [FAQ: What Counts as Client Approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) |
 | Billing status lives in the wrong tool | System-of-record drift | [Best Home for Billing Status](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) | [System-of-Record Rules Worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/) |
 | Invoice follow-up is inconsistent | Missing billing cadence | [Invoice and Payment Workflow Checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) |
+| I need to verify all approval, billing, and closeout items before moving forward | Stage-transition readiness check | [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/) | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) |
 
 ## Onboarding, intake, and kickoff problems
 
