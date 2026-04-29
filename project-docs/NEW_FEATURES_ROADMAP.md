@@ -168,7 +168,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 3.4 — Search Console Response Checklist
 
+**Status: Done.**
+
 **Purpose:** Create or refine a lightweight documentation checklist for responding to GSC signals without over-editing pages.
+
+**Result:** `project-docs/SEARCH_CONSOLE_RESPONSE_LOOP.md` refined — three sections added: (1) Quick decision guide (when to act, when not to act, allowed response types in priority order); (2) Current watch list with active pages and query clusters from live GSC data and action thresholds; (3) GSC signal tracker entry template for consistent TRACKER.md entries. No public content changed.
 
 **Constraints:**
 - Repo documentation only unless a specific GSC signal exists.

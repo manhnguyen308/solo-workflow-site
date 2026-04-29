@@ -2,6 +2,40 @@
 
 Use this document after sitemap submission to move SoloOpsGuide from launch mode into measured iteration mode. The goal is not to react to every metric swing. The goal is to protect the pages that matter most, identify weak-index risks early, and apply the smallest useful fix first.
 
+## Quick decision guide
+
+### When to act
+
+Act when one of these is true:
+
+- A query has meaningful impressions and average position roughly 15–40.
+- A page has impressions but zero clicks and the snippet or first-screen intent is weak.
+- A query clearly maps to an existing page but the routing or snippet is misleading.
+- GSC reveals a content gap — record it as a roadmap note; do not build immediately.
+
+### When not to act
+
+Do not act when:
+
+- Impressions are too low (under roughly 20) to draw conclusions.
+- Average position is too low (50+) to attribute CTR problems to the snippet.
+- A page was recently edited and needs recrawl time (2–4 weeks minimum).
+- The query does not match the site's workflow-first purpose.
+- The proposed response would require a broad rewrite or a new cluster.
+
+### Allowed response types, in priority order
+
+1. Fix broken or misleading routing first.
+2. Improve exact page alignment second.
+3. Improve first-screen clarity third.
+4. Refine title, meta description, or snippet fourth.
+5. Record a roadmap note for a future content gap fifth.
+6. Write a no-change monitoring entry when signals are unclear.
+
+Keep each response to one page or one query cluster. Do not stack edits before the next data cycle. Do not keyword-stuff GSC query phrases into page copy.
+
+---
+
 ## Triage cases
 
 Use these as the first-pass diagnosis buckets when real Search Console data arrives.
@@ -163,6 +197,33 @@ Current highest-risk paths:
 - `/templates/client-change-request-template/`
 - `/templates/delivery-qa-checklist-before-client-handoff/`
 - `/templates/client-offboarding--testimonial-request-template/`
+
+## Current watch list
+
+Active pages and query clusters based on available GSC data. Update this section when new signal arrives.
+
+### Pages: high impressions, zero or weak clicks
+
+- `/templates-checklists/` — high impressions, 0 clicks; review first-screen snippet framing before editing.
+- `/comparisons/crm-vs-project-management-tool-for-client-workflows/` — monitor CTR after recent description edits; no further edit until recrawl.
+- `/workflow-comparisons/` — hub-level impressions; confirm it routes cleanly to the strongest comparison.
+- `/client-workflow-systems/` — priority hub; confirm indexing and click trajectory before any edits.
+
+### Query clusters to watch
+
+- `pricing handoff checklist` / `auditable scoping template` — no existing page targets this exact cluster; record as a potential future content gap; do not build until impressions reach 50+ or clicks confirm intent.
+- `crm vs project management` — maps to existing comparison page; monitor CTR after recent edits.
+- `workflow checklist` — maps to templates hub and diagnostic checklist; monitor first-screen framing.
+
+### Threshold for action on current watch items
+
+Do not edit until one of these is true:
+
+- `/templates-checklists/` holds 0 clicks for 4+ weeks with 100+ impressions.
+- The `pricing handoff checklist` cluster reaches 50+ impressions — record a roadmap note at that point.
+- The CRM vs PM comparison drops below 1% CTR on 100+ impressions after recrawl.
+
+---
 
 ## Page-type response rules
 
@@ -417,6 +478,26 @@ These are the most likely early intervention pages based on the current structur
   First likely fix if weaker than the overbuying page: clarify that it is the baseline stack model, not just a tool-spend warning.
 - `/comparisons/crm-vs-project-management-tool-for-client-workflows/`
   First likely fix if a downstream comparison outranks it: restate the system-of-record decision more aggressively in the opening lines.
+
+## GSC signal tracker entry template
+
+Copy this block into `TRACKER.md` for each GSC response entry:
+
+```
+Date:
+Query or page:
+Clicks:
+Impressions:
+CTR:
+Average position:
+Suspected issue:
+Action taken:
+Next watch item:
+```
+
+Keep the entry concise. One suspected issue and one action per entry. If no action was taken, write "No action — monitoring" in the action field.
+
+---
 
 ## Weekly review loop
 
