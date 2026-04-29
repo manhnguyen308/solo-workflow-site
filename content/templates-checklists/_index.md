@@ -145,10 +145,10 @@ The strongest pages in this hub usually include:
 
 ## Suggested reading paths
 
-- For kickoff reliability: proposal handoff -> onboarding workflow -> onboarding checklist -> weekly operations checklist.
+- For kickoff reliability: [proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/) -> onboarding workflow -> onboarding checklist -> weekly operations checklist.
 - For delivery consistency: workflow anchor -> milestone delivery workflow -> weekly client status update template -> delivery QA checklist -> offboarding template.
-- For payment control: proposal handoff -> invoice workflow setup -> invoice workflow checklist -> weekly operations checklist.
-- For scope control: proposal handoff -> client change request template -> invoice workflow setup.
+- For payment control: [proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/) -> invoice workflow setup -> invoice workflow checklist -> weekly operations checklist.
+- For scope control: [proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/) -> client change request template -> invoice workflow setup.
 - For stack cleanup: all-in-one vs specialized stack -> lean solo blueprint -> stack audit worksheet -> migration guide -> weekly operations checklist.
 - For ownership clarity: CRM vs PM comparison -> lean solo blueprint -> system-of-record rules worksheet -> stack audit worksheet -> migration guide.
 - For stage-boundary clarity: proposal revision and approval -> onboarding workflow -> handoff boundary worksheet -> milestone delivery -> invoice workflow -> offboarding workflow.
