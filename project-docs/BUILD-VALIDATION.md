@@ -12,7 +12,7 @@ Target version: Hugo Extended `0.160.1`.
 
 ## Environment note (Linux)
 
-The system-installed Hugo (`snap:0.160.1`) is the current build tool on Linux.
+Cloudflare Pages should remain pinned to `HUGO_VERSION=0.160.1`. Local Snap installs may drift, so always run `hugo version` and report the exact version used for validation.
 
 The legacy vendored binary `tools/hugo/v0.128.0/hugo.exe` is a Windows PE32+ binary. It cannot execute on native Linux and is no longer the source of truth. Use the system Hugo.
 

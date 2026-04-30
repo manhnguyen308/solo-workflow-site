@@ -143,7 +143,7 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 
 - Use Hugo Extended `0.160.1` as the source of truth for validation.
 - Standard verification command: `hugo --gc --minify --baseURL https://soloopsguide.com/`
-- The system-installed Hugo (`snap:0.160.1`) is the current build tool on Linux. The legacy vendored binary `tools/hugo/v0.128.0/hugo.exe` is a Windows PE32+ binary and is no longer the source of truth.
+- Cloudflare Pages should remain pinned to `HUGO_VERSION=0.160.1`. Local Snap installs may drift, so always report the exact `hugo version` used for validation. The legacy vendored binary `tools/hugo/v0.128.0/hugo.exe` is a Windows PE32+ binary and is no longer the source of truth.
 - See `project-docs/BUILD-VALIDATION.md` for full build/deploy details.
 - `public/` is generated build output and should not be committed in normal passes. Cloudflare Pages builds from source with `bash tools/build-cloudflare.sh` and writes the deploy artifact to `public/` during the build.
 - If rendered output looks stale, rebuild before assuming the content is wrong.

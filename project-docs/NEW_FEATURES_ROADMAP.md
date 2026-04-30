@@ -121,7 +121,7 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 - choose CRM or project tool
 - workflow health check
 - billing status
-- stack decision
+- stack readiness
 
 **Constraints:**
 - Do not rebuild search.

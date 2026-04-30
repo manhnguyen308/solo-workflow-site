@@ -167,4 +167,3 @@ This checklist is the diagnose step. Use the routing table above to identify the
 - **After a clear single category:** Open the first page named in the routing table above and work from there.
 - **After an unclear or multi-category result:** Use the [Client Workflow Health Check](/templates/client-workflow-health-check/) to score all eight workflow areas and identify which stage is weakest before committing to a specific workflow page.
 - **Once the category and stage are confirmed:** Use the [Workflow Starter Pack](/templates/workflow-starter-pack/) to open the matched set of execution assets for that stage.
-- [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) — for diagnosing which stage in the lifecycle is weakest
