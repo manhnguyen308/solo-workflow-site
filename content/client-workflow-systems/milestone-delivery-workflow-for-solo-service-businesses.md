@@ -204,6 +204,7 @@ If that reset is already defined and you need to state the revised timing or seq
 ## Use this workflow with
 
 - lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- unclear problem category: [Workflow Diagnostic Checklist for Solo Operators](/templates/workflow-diagnostic-checklist/)
 - setup before delivery: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 - communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - billing handoff: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
