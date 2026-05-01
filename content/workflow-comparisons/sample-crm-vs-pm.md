@@ -26,6 +26,8 @@ This decision shapes where handoffs, updates, and next actions are maintained ac
 
 Once that operating-model choice is clear, the next job is usually to implement the stack shape with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), not to keep browsing tool-level comparisons. If the lifecycle itself is still broad and fuzzy, go back to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) instead of staying inside comparisons.
 
+If you are close to choosing tools but still need to verify that lifecycle stages, ownership rules, approval triggers, and billing visibility are clear enough, use the [Stack Decision Readiness Checklist for Solo Operators](/templates/stack-decision-readiness-checklist/) before committing to a CRM-first, PM-first, or hybrid model.
+
 ## When this page is the right starting point
 
 This is the right page if the open problem is where active client truth should live. It is the wrong page if the system center is already settled and you only need a workspace comparison, billing-visibility rule, or implementation asset.

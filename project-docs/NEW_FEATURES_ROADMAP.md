@@ -238,7 +238,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 4.4 — Stack and System-of-Record Support Pass
 
+**Status: Done.**
+
 **Purpose:** Review the lean stack blueprint, CRM vs PM page, and stack readiness checklist relationship for routing clarity.
+
+**Result:** Stack/system-of-record routing reviewed. The lean stack blueprint and stack readiness checklist already routed clearly into each other and the CRM vs PM comparison. One small support route was added from the CRM vs PM comparison to the Stack Decision Readiness Checklist for readers who are close to choosing tools but still need to verify lifecycle stages, ownership rules, approval triggers, and billing visibility before committing to CRM-first, PM-first, or hybrid.
 
 **Constraints:**
 - Targeted routing review only.
