@@ -88,6 +88,8 @@ For the milestone side of the process, use [Milestone Delivery Workflow for Solo
 
 This is especially important when feedback arrives informally. A "looks good" in chat is not a billing trigger — it is an acknowledgment, not an approval. Billing should not start until the named approval owner gives an explicit decision through the agreed channel and it is logged in the project record. If you are unsure whether a client response actually closed the milestone, use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) before issuing the invoice.
 
+If the approval signal, invoice details, or payment-status handoff need one final check before you move the project forward, use the [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/) before sending the invoice.
+
 ## Step 4: Standardize the follow-up rhythm
 
 Use a consistent cadence:
@@ -154,6 +156,7 @@ Review these items once a week:
 
 - full lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - contract and commercial setup: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- pre-invoice readiness gate: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
 - execution asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 - weekly review rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
 - closeout after final payment state is clear: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)

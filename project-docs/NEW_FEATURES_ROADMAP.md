@@ -205,7 +205,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 4.2 — Invoice and Payment Support Pass
 
+**Status: Done.**
+
 **Purpose:** Review the invoice and payment workflow and confirm it routes naturally to the billing readiness checklist, billing-status comparison, and closeout guidance.
+
+**Result:** Invoice and payment routing reviewed. The page already routed naturally to the billing-status comparison and closeout workflow, and already avoided billing-before-approval language through the approval FAQ and milestone-delivery context. One small support route was added for the missing pre-invoice gate: Approval and Billing Readiness Checklist.
 
 **Constraints:**
 - One focused page review.
