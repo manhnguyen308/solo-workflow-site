@@ -124,6 +124,8 @@ Before you move into testimonial or referral language, confirm:
 
 Practical rule: closeout language should match the billing reality. If payment is still open, the project may be near completion, but it is not fully closed yet.
 
+If final approval, invoice status, or closeout readiness is still uncertain, use the [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/) before treating the engagement as ready for testimonial, referral, or archive steps.
+
 ## Step 4: Package the closeout record
 
 Create one clean closeout record that captures:
