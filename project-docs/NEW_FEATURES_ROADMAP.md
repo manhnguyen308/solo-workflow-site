@@ -258,7 +258,11 @@ All six Phase 1 features are done. No Phase 1 feature should be rebuilt or revis
 
 ### Task 5.1 — GSC Signal Response Pass
 
+**Status: Done.**
+
 **Purpose:** Review GSC data and choose one page or query for a small targeted edit.
+
+**Result:** Responded to `/templates-checklists/` GSC signal: 141 impressions, 0 clicks, with the pricing handoff checklist / auditable scoping template query cluster at 88 combined impressions from the top two queries. The templates hub already linked proposal handoff in suggested reading paths from an earlier GSC pass, so this pass made one remaining first-screen chooser improvement: added a pricing/scope/proposal-handoff route that sends readers upstream to Proposal-to-Contract Handoff Workflow Setup first, then to the Project Start Readiness and Handoff Boundary Worksheet only after the handoff rule is defined. No exact "auditable scoping template" page was created.
 
 **Constraints:**
 - One query or one page only per pass.

@@ -52,6 +52,7 @@ If you are not sure which starting asset to open, use this guide:
 
 - **Cannot name the failing stage** — [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/): identifies the broken workflow category before opening any other asset.
 - **Want a whole-workflow score** — [Client Workflow Health Check](/templates/client-workflow-health-check/): shows whether the workflow is healthy, fragile, or breaking and which stage to fix first.
+- **Pricing, scope, or proposal handoff feels unclear** — start upstream with [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/), then use the [Project Start Readiness and Handoff Boundary Worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) only after the handoff rule itself is defined.
 - **Near approval, invoice, payment, or closeout** — [Approval and Billing Readiness Checklist](/templates/approval-billing-readiness-checklist/): confirms the project is ready before moving the stage forward.
 - **About to choose or change tools** — [Stack Decision Readiness Checklist](/templates/stack-decision-readiness-checklist/): confirms the workflow is clear enough to make a tool decision before opening any comparison or blueprint.
 - **Workflow mostly clear, want grouped execution assets** — [Workflow Starter Pack](/templates/workflow-starter-pack/): bundles assets by lifecycle stage so you do not have to pick individually.
