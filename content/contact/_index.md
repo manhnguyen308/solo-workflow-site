@@ -2,7 +2,7 @@
 title = "Contact"
 description = "How to contact SoloOpsGuide for corrections, site issues, and appropriate editorial or business inquiries."
 summary = "Use this page to see what kinds of contact are appropriate, what information helps most, and how SoloOpsGuide handles corrections, site issues, and legitimate editorial outreach."
-date = 2026-04-06T00:00:00Z
+date = 2026-04-06T01:00:00Z
 +++
 
 SoloOpsGuide keeps public contact limited to messages that can be reviewed responsibly. This page explains what kinds of outreach are appropriate and what information is most useful.
