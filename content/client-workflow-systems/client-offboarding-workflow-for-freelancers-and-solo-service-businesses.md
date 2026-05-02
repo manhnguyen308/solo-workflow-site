@@ -2,7 +2,7 @@
 title = "Client Offboarding Workflow for Freelancers and Solo Service Businesses"
 description = "A structured offboarding workflow for solo service businesses that need cleaner closeout timing, final signoff, invoice closure, documentation capture, and future-opportunity handling."
 summary = "Use this workflow to close engagements cleanly, secure final signoff, finish billing, capture outcomes, request testimonials at the right time, and archive the project without loose ends."
-feature_image = "/images/features/workflows/client-offboarding-workflow.svg"
+feature_image = "/images/features/workflows/client-offboarding-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing closeout steps, signoff, invoice closure, archival, and testimonial timing."
 draft = false
 date = 2026-04-08T00:00:00Z

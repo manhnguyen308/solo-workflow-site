@@ -1,0 +1,24 @@
+{
+  "id": "milestone-delivery-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/milestone-delivery-workflow.webp",
+  "eyebrow": "Delivery workflow",
+  "title": "Milestone Delivery Workflow",
+  "subtitle": "Prepare, deliver, QA, and confirm approval before advancing stage or invoicing.",
+  "items": [
+    { "kicker": "Stage 1", "label": "Prepare", "detail": "Milestone scope confirmed." },
+    { "kicker": "Stage 2", "label": "Deliver", "detail": "Work handed to client." },
+    { "kicker": "Stage 3", "label": "QA", "detail": "Review and issue resolution." },
+    { "kicker": "Stage 4", "label": "Approved", "detail": "Explicit sign-off received." }
+  ],
+  "supporting_note": {
+    "title": "Billing gate",
+    "body": "No invoice until explicit approval, not assumed from delivery alone."
+  },
+  "signal_note": {
+    "title": "Stage ownership",
+    "body": "Named owner and decision at each stage boundary."
+  }
+}

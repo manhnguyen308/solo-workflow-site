@@ -1,0 +1,24 @@
+{
+  "id": "client-offboarding-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/client-offboarding-workflow.webp",
+  "eyebrow": "Offboarding workflow",
+  "title": "Client Offboarding Workflow",
+  "subtitle": "Final delivery, billing closure, archive, and continuation options at engagement end.",
+  "items": [
+    { "kicker": "Stage 1", "label": "Closeout", "detail": "Final handoff confirmed." },
+    { "kicker": "Stage 2", "label": "Billing", "detail": "Invoice and payment closed." },
+    { "kicker": "Stage 3", "label": "Archive", "detail": "Work and records stored." },
+    { "kicker": "Stage 4", "label": "Complete", "detail": "Formal close, continuation noted." }
+  ],
+  "supporting_note": {
+    "title": "Formal close rule",
+    "body": "Engagement closed on confirmation, not assumed from silence."
+  },
+  "signal_note": {
+    "title": "Exit options",
+    "body": "Archive and continuation paths named at engagement end."
+  }
+}

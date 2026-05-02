@@ -2,7 +2,7 @@
 title = "Client Onboarding Workflow for Freelancers and Consultants"
 description = "A client onboarding workflow for freelancers and consultants who need clearer kickoff readiness, access setup, and first-milestone control."
 summary = "Use this guide to turn a signed project into a kickoff-ready client setup with clear owners, dates, communication rules, and first-milestone controls."
-feature_image = "/images/features/workflows/client-onboarding-workflow.svg"
+feature_image = "/images/features/workflows/client-onboarding-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing agreement handoff, kickoff readiness, and first milestone setup."
 draft = false
 date = 2026-03-28T00:00:00Z

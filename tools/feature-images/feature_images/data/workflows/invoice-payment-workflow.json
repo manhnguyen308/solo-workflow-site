@@ -1,0 +1,24 @@
+{
+  "id": "invoice-payment-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/invoice-payment-workflow.webp",
+  "eyebrow": "Billing workflow",
+  "title": "Invoice and Payment Workflow",
+  "subtitle": "Approval gate to invoice, follow-up, and closed billing with visible payment status.",
+  "items": [
+    { "kicker": "Stage 1", "label": "Approval", "detail": "Explicit sign-off confirmed." },
+    { "kicker": "Stage 2", "label": "Invoice", "detail": "Sent to correct contact." },
+    { "kicker": "Stage 3", "label": "Follow-up", "detail": "Reminder cadence if needed." },
+    { "kicker": "Stage 4", "label": "Closed", "detail": "Payment confirmed, stage complete." }
+  ],
+  "supporting_note": {
+    "title": "Invoice rule",
+    "body": "Invoice sent only after explicit approval, never on delivery alone."
+  },
+  "signal_note": {
+    "title": "Status tracking",
+    "body": "Track payment status per invoice, not per milestone."
+  }
+}

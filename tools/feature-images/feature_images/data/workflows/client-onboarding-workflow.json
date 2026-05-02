@@ -1,0 +1,24 @@
+{
+  "id": "client-onboarding-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/client-onboarding-workflow.webp",
+  "eyebrow": "Onboarding workflow",
+  "title": "Client Onboarding Workflow",
+  "subtitle": "Agreement to first delivery with confirmed access, kickoff, and milestone setup.",
+  "items": [
+    { "kicker": "Stage 1", "label": "Agreement", "detail": "Contract signed, scope confirmed." },
+    { "kicker": "Stage 2", "label": "Kickoff", "detail": "Agenda set, owners named." },
+    { "kicker": "Stage 3", "label": "Setup", "detail": "Access, tools, first milestone." },
+    { "kicker": "Stage 4", "label": "Active", "detail": "Delivery begins, owner confirmed." }
+  ],
+  "supporting_note": {
+    "title": "Gate rule",
+    "body": "All setup confirmed before the first deliverable begins."
+  },
+  "signal_note": {
+    "title": "Handoff boundary",
+    "body": "Proposal to active delivery in one confirmed sequence."
+  }
+}

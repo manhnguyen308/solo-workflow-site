@@ -2,7 +2,7 @@
 title = "Milestone Delivery Workflow for Solo Service Businesses"
 description = "A milestone delivery workflow for solo service businesses that need clearer execution control, review rules, and approval-ready handoffs during active work."
 summary = "Use this guide to run milestone-based delivery with clearer status, dependencies, QA, approvals, and client handoff control."
-feature_image = "/images/features/workflows/milestone-delivery-workflow.svg"
+feature_image = "/images/features/workflows/milestone-delivery-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing milestone states, QA, and approval-ready client handoff."
 draft = false
 date = 2026-03-31T00:00:00Z
