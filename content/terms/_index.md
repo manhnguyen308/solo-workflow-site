@@ -2,7 +2,7 @@
 title = "Terms"
 description = "Basic terms for using SoloOpsGuide content and site materials."
 summary = "These terms explain how SoloOpsGuide content may be used, what responsibilities remain with the reader, and how external links or site changes should be understood."
-date = 2026-04-06T06:00:00Z
+date = 2026-03-26T00:00:00Z
 +++
 
 By using SoloOpsGuide, you agree to use the site for informational purposes and to apply your own judgment when acting on its content.

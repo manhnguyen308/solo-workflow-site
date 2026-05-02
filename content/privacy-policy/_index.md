@@ -2,7 +2,7 @@
 title = "Privacy Policy"
 description = "A concise explanation of what SoloOpsGuide may collect, what it does not collect unnecessarily, and how visitor data is handled."
 summary = "SoloOpsGuide aims to collect minimal data for basic site operation, analytics, security, and future contact handling where relevant."
-date = 2026-04-06T05:00:00Z
+date = 2026-03-25T00:00:00Z
 +++
 
 SoloOpsGuide aims to collect as little personal data as reasonably possible for a public editorial site.

@@ -2,7 +2,7 @@
 title = "About"
 description = "What SoloOpsGuide is, who it serves, and how to use the site well."
 summary = "Learn who SoloOpsGuide serves, what kind of editorial guidance it publishes, and how to use the site without getting pulled into the wrong layer too early."
-date = 2026-04-06T00:00:00Z
+date = 2026-03-20T00:00:00Z
 +++
 
 SoloOpsGuide is a workflow-first editorial resource for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
