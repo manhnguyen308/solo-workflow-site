@@ -8,13 +8,13 @@
   "title": "Workflow Health Check",
   "subtitle": "Score eight lifecycle areas to find the weakest stage and fix it first.",
   "trigger": {
-    "label": "When the workflow runs but keeps creating friction",
-    "note": "Before changing tools or buying new software"
+    "label": "Workflow runs but keeps creating friction",
+    "note": "Before changing tools or buying software"
   },
   "steps": [
-    { "label": "Inquiry, proposal, and onboarding clear?", "tag": "Entry" },
-    { "label": "Delivery and approvals closing cleanly?", "tag": "Delivery" },
-    { "label": "Billing triggers and tracking reliable?", "tag": "Billing" },
-    { "label": "One system of record for client truth?", "tag": "Stack" }
+    { "label": "Inquiry and onboarding clear?", "tag": "Entry" },
+    { "label": "Delivery and approvals on track?", "tag": "Delivery" },
+    { "label": "Billing triggers reliable?", "tag": "Billing" },
+    { "label": "One system of record?", "tag": "Stack" }
   ]
 }

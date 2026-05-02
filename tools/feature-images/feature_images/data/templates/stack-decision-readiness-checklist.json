@@ -8,13 +8,13 @@
   "title": "Stack Decision Ready?",
   "subtitle": "Confirm workflow clarity before choosing or changing tools.",
   "trigger": {
-    "label": "Before choosing or changing tools",
-    "note": "Workflow must be clear before stack selection"
+    "label": "Before choosing or switching tools",
+    "note": "Workflow clarity required before stack selection"
   },
   "steps": [
-    { "label": "Client lifecycle stages named and ordered?", "tag": "Workflow" },
-    { "label": "System-of-record owner known per role?", "tag": "Ownership" },
-    { "label": "CRM vs PM role already decided?", "tag": "System" },
-    { "label": "Budget and migration risk acceptable?", "tag": "Stack" }
+    { "label": "Lifecycle stages named and ordered?", "tag": "Workflow" },
+    { "label": "System-of-record owner known?", "tag": "Ownership" },
+    { "label": "CRM vs PM role decided?", "tag": "System" },
+    { "label": "Budget and migration risk clear?", "tag": "Stack" }
   ]
 }

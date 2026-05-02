@@ -12,9 +12,9 @@
     "note": "After delivery — before invoice or closeout"
   },
   "steps": [
-    { "label": "Deliverables sent through agreed channel?", "tag": "Delivery" },
-    { "label": "Approval owner confirmed and responded?", "tag": "Approval" },
-    { "label": "Invoice trigger and payment home set?", "tag": "Billing" },
-    { "label": "All milestones closed and handoff done?", "tag": "Closeout" }
+    { "label": "Deliverables sent and confirmed?", "tag": "Delivery" },
+    { "label": "Approval owner responded?", "tag": "Approval" },
+    { "label": "Invoice trigger and payment set?", "tag": "Billing" },
+    { "label": "Milestones closed, handoff done?", "tag": "Closeout" }
   ]
 }

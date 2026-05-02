@@ -8,13 +8,13 @@
   "title": "Workflow Diagnostic",
   "subtitle": "Name the problem category before opening workflow, blueprint, or template pages.",
   "trigger": {
-    "label": "When something is broken but you can't name it yet",
-    "note": "Before browsing workflows, tools, or templates"
+    "label": "Something is broken — can't name it yet",
+    "note": "Before opening any workflow or template"
   },
   "steps": [
-    { "label": "Workflow sequence out of order?", "tag": "Sequence" },
+    { "label": "Sequence out of order?", "tag": "Sequence" },
     { "label": "Approval or delivery unclear?", "tag": "Approval" },
-    { "label": "Billing timing or location off?", "tag": "Billing" },
-    { "label": "Wrong tool holding client truth?", "tag": "Stack" }
+    { "label": "Billing timing off?", "tag": "Billing" },
+    { "label": "Wrong tool holds client data?", "tag": "Stack" }
   ]
 }
