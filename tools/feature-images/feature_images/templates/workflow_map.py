@@ -40,7 +40,7 @@ def render_workflow_map(spec, context):
         box = (x, top_y, x + card_width, top_y + card_height)
         fill = [palette["accent_soft"], palette["secondary_soft"], palette["warm_soft"], palette["good_soft"]][index % 4]
         helpers["rounded_box"](draw, box, fill=fill, outline=palette["stroke"], width=2, radius=28)
-        helpers["pill"](draw, (x + 24, top_y + 24, x + 148, top_y + 68), palette["frame"], item["kicker"], fonts["small"], palette["muted"])
+        helpers["pill"](draw, (x + 24, top_y + 24, x + 148, top_y + 68), palette["frame"], item["kicker"], fonts["pill"], palette["muted"])
         draw.text((x + 28, top_y + 88), item["label"], font=fonts["panel_title"], fill=palette["ink"])
         if index < len(items) - 1:
             draw.line((x + card_width, connector_y, x + card_width + gap, connector_y), fill=palette["accent"], width=8)

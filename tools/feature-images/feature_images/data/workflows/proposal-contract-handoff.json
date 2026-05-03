@@ -1,0 +1,24 @@
+{
+  "id": "proposal-contract-handoff",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/proposal-contract-handoff.webp",
+  "eyebrow": "Handoff workflow",
+  "title": "Proposal-to-Contract Handoff",
+  "subtitle": "Move from proposal review to signed contract and confirmed kickoff with clear ownership at each stage.",
+  "items": [
+    { "kicker": "Step 1", "label": "Draft", "detail": "Scope, terms, and delivery timeline." },
+    { "kicker": "Step 2", "label": "Review", "detail": "Client review with revision limit." },
+    { "kicker": "Step 3", "label": "Sign", "detail": "Contract signed before setup begins." },
+    { "kicker": "Step 4", "label": "Kickoff", "detail": "Confirm start conditions and owner." }
+  ],
+  "supporting_note": {
+    "title": "Handoff rule",
+    "body": "Contract signed before any project setup begins."
+  },
+  "signal_note": {
+    "title": "Stage boundary",
+    "body": "Proposal to active delivery in one confirmed sequence."
+  }
+}

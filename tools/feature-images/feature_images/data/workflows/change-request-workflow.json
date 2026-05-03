@@ -1,0 +1,24 @@
+{
+  "id": "change-request-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/change-request-workflow.webp",
+  "eyebrow": "Scope workflow",
+  "title": "Change Request Workflow",
+  "subtitle": "Assess scope changes for impact before approval so no change work begins without a documented decision.",
+  "items": [
+    { "kicker": "Step 1", "label": "Request", "detail": "Log the change and submitter." },
+    { "kicker": "Step 2", "label": "Assess", "detail": "Impact on scope, time, and cost." },
+    { "kicker": "Step 3", "label": "Decide", "detail": "Approve, defer, or decline." },
+    { "kicker": "Step 4", "label": "Update", "detail": "Log decision and adjust brief." }
+  ],
+  "supporting_note": {
+    "title": "Scope gate",
+    "body": "No change work begins before impact is assessed and approved."
+  },
+  "signal_note": {
+    "title": "Decision record",
+    "body": "Change decisions logged per engagement."
+  }
+}

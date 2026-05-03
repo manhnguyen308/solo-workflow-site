@@ -9,7 +9,7 @@
   "subtitle": "Four groups of templates and checklists that work together for one lifecycle stage, not as isolated pages.",
   "anchor": {
     "title": "Start with the workflow rule",
-    "body": "Open a bundle only after the rule behind it is already clear. Bundles are execution aids, not workflow design."
+    "body": "Start with the workflow rule. Bundles are execution aids, not workflow design."
   },
   "modules": [
     { "kicker": "Lifecycle", "title": "Starter pack", "detail": "Onboarding, ops, status, billing." },

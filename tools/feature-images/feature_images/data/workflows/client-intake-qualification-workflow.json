@@ -1,0 +1,24 @@
+{
+  "id": "client-intake-qualification-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/client-intake-qualification-workflow.webp",
+  "eyebrow": "Intake workflow",
+  "title": "Client Intake and Qualification",
+  "subtitle": "Filter leads before scope begins with a structured intake sequence and a clear fit decision.",
+  "items": [
+    { "kicker": "Step 1", "label": "Inquiry", "detail": "Capture lead and next action." },
+    { "kicker": "Step 2", "label": "Qualify", "detail": "Apply fit criteria before discovery." },
+    { "kicker": "Step 3", "label": "Scope", "detail": "Brief confirmed leads only." },
+    { "kicker": "Step 4", "label": "Route", "detail": "Proceed, hold, or decline." }
+  ],
+  "supporting_note": {
+    "title": "Fit gate",
+    "body": "Unqualified leads exit before scope work begins."
+  },
+  "signal_note": {
+    "title": "Routing logic",
+    "body": "Qualify first so scope starts only on confirmed fits."
+  }
+}

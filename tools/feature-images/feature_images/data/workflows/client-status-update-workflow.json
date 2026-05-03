@@ -1,0 +1,24 @@
+{
+  "id": "client-status-update-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/client-status-update-workflow.webp",
+  "eyebrow": "Update workflow",
+  "title": "Client Status Update Workflow",
+  "subtitle": "Send structured progress updates on a fixed schedule so clients always know current status and next action.",
+  "items": [
+    { "kicker": "Step 1", "label": "Trigger", "detail": "Fixed schedule, not ad hoc." },
+    { "kicker": "Step 2", "label": "Draft", "detail": "Progress, blockers, next action." },
+    { "kicker": "Step 3", "label": "Send", "detail": "Deliver to the right recipient." },
+    { "kicker": "Step 4", "label": "Confirm", "detail": "Log receipt and any follow-up." }
+  ],
+  "supporting_note": {
+    "title": "Update rule",
+    "body": "Status sent on schedule, not only when problems arise."
+  },
+  "signal_note": {
+    "title": "Visibility signal",
+    "body": "Client always knows current progress and next action."
+  }
+}

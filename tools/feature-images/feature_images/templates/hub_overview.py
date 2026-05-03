@@ -12,7 +12,7 @@ def render_hub_overview(spec, context):
 
     anchor_box = (150, 392, 630, 748)
     helpers["rounded_box"](draw, anchor_box, fill=palette["secondary_soft"], outline=palette["secondary"], width=2, radius=36)
-    helpers["pill"](draw, (190, 430, 374, 470), palette["secondary"], "Operating center", fonts["small"], "#eef6ff")
+    helpers["pill"](draw, (190, 430, 374, 470), palette["secondary"], "Operating center", fonts["pill"], "#eef6ff")
     helpers["draw_text_block"](draw, spec["anchor"]["title"], fonts["panel_title"], palette["ink"], (190, 500, 330, 110), 10, report, "hub anchor title", max_lines=2)
     helpers["draw_text_block"](draw, spec["anchor"]["body"], fonts["card_body"], palette["muted"], (190, 626, 360, 82), 8, report, "hub anchor body", max_lines=3)
 
@@ -25,7 +25,7 @@ def render_hub_overview(spec, context):
     ]
     for box, module in zip(module_boxes, modules):
         helpers["rounded_box"](draw, box, fill="#f8fbfd", outline=palette["stroke"], width=2, radius=28)
-        helpers["pill"](draw, (box[0] + 24, box[1] + 22, box[0] + 156, box[1] + 60), palette["accent_soft"], module["kicker"], fonts["small"], palette["accent"])
+        helpers["pill"](draw, (box[0] + 24, box[1] + 22, box[0] + 156, box[1] + 60), palette["accent_soft"], module["kicker"], fonts["pill"], palette["accent"])
         draw.text((box[0] + 24, box[1] + 86), module["title"], font=fonts["card_title"], fill=palette["ink"])
         helpers["draw_text_block"](draw, module["detail"], fonts["card_body"], palette["muted"], (box[0] + 24, box[1] + 126, 280, 64), 6, report, f"hub module {module['title']}", max_lines=2)
 

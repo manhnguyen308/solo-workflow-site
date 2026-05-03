@@ -2,7 +2,7 @@
 title = "Change Request Workflow for Freelancers and Consultants"
 description = "A practical change request workflow that helps solo operators handle scope changes without hidden rework, awkward approvals, or billing drift."
 summary = "Use this guide to route scope changes clearly, protect delivery flow, and decide when a request should be accepted, repriced, deferred, or declined."
-feature_image = "/images/features/workflows/change-request-workflow.svg"
+feature_image = "/images/features/workflows/change-request-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing controlled scope changes, impact assessment, and approval decisions."
 draft = false
 date = 2026-03-27T00:00:00Z

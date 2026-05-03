@@ -2,7 +2,7 @@
 title = "Workflow Automation Basics for Solo Service Businesses"
 description = "A practical automation guide for solo operators who want to reduce repetitive admin without creating brittle systems."
 summary = "Automate only stable steps: use this guide to choose safe automation targets, avoid over-automation, and keep operations reliable."
-feature_image = "/images/features/workflows/workflow-automation-basics.svg"
+feature_image = "/images/features/workflows/workflow-automation-basics.webp"
 feature_image_alt = "Illustrated automation workflow with modular steps and connected repeatable tasks."
 draft = false
 date = 2026-03-06T00:00:00Z

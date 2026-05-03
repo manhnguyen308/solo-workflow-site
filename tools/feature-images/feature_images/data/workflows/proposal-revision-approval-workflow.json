@@ -1,0 +1,24 @@
+{
+  "id": "proposal-revision-approval-workflow",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/proposal-revision-approval-workflow.webp",
+  "eyebrow": "Approval workflow",
+  "title": "Proposal Revision and Approval",
+  "subtitle": "Control proposal review rounds with a revision limit, a named approval owner, and a clean contract transition.",
+  "items": [
+    { "kicker": "Step 1", "label": "Submit", "detail": "Send proposal with revision cap." },
+    { "kicker": "Step 2", "label": "Revise", "detail": "Track changes against scope." },
+    { "kicker": "Step 3", "label": "Approve", "detail": "Named owner confirms final version." },
+    { "kicker": "Step 4", "label": "Close", "detail": "Move to contract with no open items." }
+  ],
+  "supporting_note": {
+    "title": "Revision limit",
+    "body": "Revisions capped and tracked before the approval gate."
+  },
+  "signal_note": {
+    "title": "Approval path",
+    "body": "Named approval owner at each revision round."
+  }
+}

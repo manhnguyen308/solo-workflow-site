@@ -1,0 +1,24 @@
+{
+  "id": "workflow-automation-basics",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/workflow-automation-basics.webp",
+  "eyebrow": "Automation guide",
+  "title": "Workflow Automation Basics",
+  "subtitle": "Map and stabilize a manual workflow before automating so repetitive steps reduce without creating brittle systems.",
+  "items": [
+    { "kicker": "Step 1", "label": "Identify", "detail": "Find stable repetitive tasks." },
+    { "kicker": "Step 2", "label": "Map", "detail": "Document the manual workflow." },
+    { "kicker": "Step 3", "label": "Automate", "detail": "Apply tools to stable steps only." },
+    { "kicker": "Step 4", "label": "Review", "detail": "Confirm reliability and adjust." }
+  ],
+  "supporting_note": {
+    "title": "Manual-first rule",
+    "body": "Map and stabilize a workflow manually before automating it."
+  },
+  "signal_note": {
+    "title": "Automation scope",
+    "body": "Automate repetitive steps that do not require judgment."
+  }
+}
