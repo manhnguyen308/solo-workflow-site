@@ -57,7 +57,7 @@ Tie billing to explicit events such as:
 
 Do not use vague rules like "send it around then" or "invoice once the work is basically done." Those are not workflow triggers. They are reminders to improvise later.
 
-For fixed-fee projects, the cleanest triggers are usually deposit, milestone approval, and final handoff. For recurring retainers, use a named renewal date and decide in advance what happens if work is paused mid-cycle.
+For fixed-fee projects, the cleanest triggers are usually deposit, milestone approval, and final handoff. If that last trigger is fuzzy because files, documentation, access, or ownership have not actually transferred yet, use [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/) before treating the final invoice event as complete. For recurring retainers, use a named renewal date and decide in advance what happens if work is paused mid-cycle.
 
 ## Step 2: Keep billing status visible in the operating system
 
@@ -156,6 +156,7 @@ Review these items once a week:
 
 - full lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - contract and commercial setup: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- final handoff trigger: [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)
 - pre-invoice readiness gate: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
 - execution asset: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 - weekly review rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)

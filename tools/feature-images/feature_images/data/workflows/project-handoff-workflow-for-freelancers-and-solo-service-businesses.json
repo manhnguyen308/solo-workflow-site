@@ -1,0 +1,24 @@
+{
+  "id": "project-handoff-workflow-for-freelancers-and-solo-service-businesses",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses.webp",
+  "eyebrow": "Handoff workflow",
+  "title": "Project Handoff Workflow",
+  "subtitle": "Transfer finished work with approval status, ownership, billing, and closeout steps clear.",
+  "items": [
+    { "kicker": "Step 1", "label": "Package", "detail": "Files, links, docs, and access." },
+    { "kicker": "Step 2", "label": "Approve", "detail": "Decision state made explicit." },
+    { "kicker": "Step 3", "label": "Bill", "detail": "Final invoice trigger confirmed." },
+    { "kicker": "Step 4", "label": "Close", "detail": "Owner and closeout path named." }
+  ],
+  "supporting_note": {
+    "title": "Transfer rule",
+    "body": "No closeout until files, access, documentation, and ownership are clear."
+  },
+  "signal_note": {
+    "title": "Handoff record",
+    "body": "Final package, approval status, billing trigger, and next owner logged."
+  }
+}

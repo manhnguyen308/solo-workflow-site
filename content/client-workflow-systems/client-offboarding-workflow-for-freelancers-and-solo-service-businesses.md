@@ -81,7 +81,8 @@ That means:
 - no unresolved scope dispute is hiding inside ordinary follow-up.
 
 For the upstream stages, use:
-- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) for the final handoff itself,
+- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) for final delivery control,
+- [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/) for transferring final files, access, documentation, approval status, and next-step ownership,
 - [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) for billing control,
 - [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) if the client is still trying to reshape the project.
 
@@ -223,6 +224,7 @@ Your closeout record should make it easy to answer later:
 
 - lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - final delivery control: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+- project handoff before closeout: [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)
 - billing closure: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - closeout asset: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
 - handoff discipline: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
