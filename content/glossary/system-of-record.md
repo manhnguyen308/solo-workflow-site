@@ -1,6 +1,6 @@
 +++
 title = "System of Record"
-description = "The single source of truth where active client status and operational decisions are maintained."
+description = "Define a system of record for solo client work: the single source of truth for active status, next actions, ownership, and operating decisions."
 summary = "A system of record reduces handoff errors by ensuring one authoritative place for client workflow state."
 feature_image = "/images/features/glossary/system-of-record.webp"
 feature_image_alt = "Illustrated definition card showing one authoritative operations record with supporting references."

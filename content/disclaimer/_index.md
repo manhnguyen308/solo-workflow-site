@@ -1,6 +1,6 @@
 +++
 title = "Disclaimer"
-description = "Important boundaries around how SoloOpsGuide content should be interpreted and used."
+description = "Important boundaries for using SoloOpsGuide content, including limits around professional advice, outcomes, recommendations, and external tools."
 summary = "SoloOpsGuide provides informational workflow guidance, not legal, financial, or professional advice, and readers remain responsible for implementation decisions."
 date = 2026-03-23T00:00:00Z
 +++

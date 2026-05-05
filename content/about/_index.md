@@ -1,6 +1,6 @@
 +++
 title = "About"
-description = "What SoloOpsGuide is, who it serves, and how to use the site well."
+description = "Learn what SoloOpsGuide publishes, who it serves, and how freelancers and solo operators should use its workflow-first guidance."
 summary = "Learn who SoloOpsGuide serves, what kind of editorial guidance it publishes, and how to use the site without getting pulled into the wrong layer too early."
 date = 2026-03-20T00:00:00Z
 +++

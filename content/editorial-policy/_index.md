@@ -1,6 +1,6 @@
 +++
 title = "Editorial Policy"
-description = "How SoloOpsGuide approaches methodology, recommendations, updates, and editorial judgment."
+description = "How SoloOpsGuide approaches methodology, workflow-first recommendations, editorial judgment, updates, corrections, and monetization boundaries."
 summary = "See how SoloOpsGuide decides what to publish, how workflow-first recommendations are framed, how updates and corrections are handled, and where editorial boundaries sit."
 date = 2026-03-24T00:00:00Z
 +++

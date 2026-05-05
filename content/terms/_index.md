@@ -1,6 +1,6 @@
 +++
 title = "Terms"
-description = "Basic terms for using SoloOpsGuide content and site materials."
+description = "Basic terms for using SoloOpsGuide content, including reader responsibility, content reuse limits, external links, and site changes."
 summary = "These terms explain how SoloOpsGuide content may be used, what responsibilities remain with the reader, and how external links or site changes should be understood."
 date = 2026-03-26T00:00:00Z
 +++
