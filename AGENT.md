@@ -161,23 +161,26 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 
 1. Read `AGENT.md` first.
 2. Read `TRACKER.md` second for current project state.
-3. Think before coding:
+3. Read `.claude/skills/soloopsguide-agent/SKILL.md` for the reusable repo workflow.
+4. Think before coding:
    - state the key assumptions you are making,
    - surface uncertainty or competing interpretations before implementation when they matter,
    - prefer the simplest viable path and say so if a heavier approach is unnecessary.
-4. Keep the pass scoped to the user request.
-5. Prefer surgical improvements over broad rewrites.
+5. Plan first for tasks touching 3+ files, unfamiliar systems, layouts, image generators, indexing, build behavior, or anything that could widen beyond the request. Small typo, metadata, or one-file fixes do not need a full plan.
+6. Keep the pass scoped to the user request and finish one task before starting another.
+7. Prefer surgical improvements over broad rewrites.
    - do not refactor adjacent code, comments, or formatting unless the task requires it,
    - match the existing repo style,
    - remove only unused code created by your own changes unless the user explicitly asks for broader cleanup.
-6. For multi-step tasks, define the goal and the check that will prove each meaningful step is complete.
-7. After the pass, update `TRACKER.md` with:
+8. For multi-step tasks, define the goal and the check that will prove each meaningful step is complete.
+9. Before committing, run the required validation, then read the diff for unintended scope, URL, generated-output, or public-content changes.
+10. After the pass, update `TRACKER.md` with:
    - what changed,
    - files touched,
    - build result if relevant,
    - open follow-up items,
    - recommended next step.
-8. For normal repo-editing tasks, after scoped changes and verification are complete:
+11. For normal repo-editing tasks, after scoped changes and verification are complete:
    - create a git commit with a clear message,
    - push the current branch when remotes/auth are available,
    - if push cannot be completed, report the exact blocker rather than implying success.

@@ -57,6 +57,8 @@ Use these source-of-truth docs when relevant:
 
 ## Workflow Decision Rules
 
+- For tasks touching 3+ files, unfamiliar systems, layouts, image generators, indexing, build behavior, or broad refactors, inspect first and state a short plan before editing.
+- For small typo, metadata, or tightly scoped one-file fixes, a full plan is not required.
 - If the task is a roadmap feature, read the roadmap, confirm the next open scoped item, and complete only that item.
 - If a task is already complete, summarize the status and move only to the next clearly defined safe item.
 - If the task is GSC/SEO, act on one page or one query cluster only.
@@ -66,6 +68,13 @@ Use these source-of-truth docs when relevant:
 - If JavaScript changes, run `node --check static/js/search.js`.
 - If the build fails, report the exact blocker and do not imply success.
 
+## Context and Task Hygiene
+
+- Complete one task at a time; do not mix content creation, GSC response, image work, layout refactors, and documentation cleanup unless explicitly requested.
+- After a scoped task is complete, update `TRACKER.md`, commit, and push before starting unrelated work.
+- Keep command output short and relevant; prefer summaries over dumping long logs into the working context.
+- If context gets noisy or the task changes shape, pause, restate the current goal, and continue from the smallest reliable next step.
+
 ## Safe Change Rules
 
 - Keep changes scoped, surgical, and directly tied to the request.
@@ -73,6 +82,13 @@ Use these source-of-truth docs when relevant:
 - Avoid broad redesigns, mass content edits, global link passes, and speculative abstractions.
 - Do not edit generated output, especially `public/`.
 - Stage and commit only intended files.
+
+## Targeted Exploration Rules
+
+- Start from `AGENT.md`, `TRACKER.md`, this skill, and task-specific docs from the active read list.
+- Use targeted file reads and exact-term grep against relevant files only.
+- Avoid broad repo scans, archive reads, generated output scans, and unrelated content exploration unless the current evidence requires them.
+- Use source-of-truth docs and existing local patterns before inventing a new workflow or abstraction.
 
 ## Content Rules
 
@@ -110,7 +126,33 @@ Use these source-of-truth docs when relevant:
 - Current local builds have passed with Hugo v0.161.1+extended; Cloudflare remains documented as pinned to Hugo 0.160.1.
 - Confirm `public/` remains ignored/untracked and do not commit generated output.
 - Verify changed internal links resolve.
+- Read the diff before committing and check for unintended scope, URL, public-content, generated-output, or formatting churn.
+- Do not claim completion if required validation was skipped without a clear reason.
 - Documentation-only changes normally do not require a Hugo build unless a source file changed by accident or repo instructions for the task require it.
+
+## Failure Recovery
+
+- If the same fix fails twice, stop and reassess instead of continuing the correction loop.
+- Summarize what failed, reread the relevant source-of-truth docs or files, and make a smaller plan.
+- Prefer one focused verification that proves the next hypothesis over repeated broad retries.
+
+## Parallel and Isolated Work
+
+- Use isolated sessions or worktrees only for clearly separate tasks that can be validated independently.
+- Do not run parallel edits against the same files or overlapping ownership areas.
+- Keep the main branch clean; validate and push one scoped change before starting unrelated parallel work.
+
+## Prompt Quality for Repo Tasks
+
+Good task requests for this repo should name:
+
+- outcome and scope,
+- files or docs to read first,
+- allowed and disallowed changes,
+- validation commands and quality checks,
+- tracker update expectations,
+- commit and push expectations,
+- requested deliverable format.
 
 ## Tracker Updates
 
