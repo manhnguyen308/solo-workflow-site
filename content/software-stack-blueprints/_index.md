@@ -98,9 +98,14 @@ If you are torn between more than one of those, return to the lean solo blueprin
 
 ## Suggested reading paths
 
+Pick the path that matches the operational problem you are trying to fix first.
+
 {{< reading-path label="For first-stack setup" steps="[CRM vs PM](/comparisons/crm-vs-project-management-tool-for-client-workflows/)|[All-in-one vs specialized](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/)|[Lean solo blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)|[Overbuying guide](/guides/how-to-choose-a-software-stack-without-overbuying-tools/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For a cleanup project" steps="[All-in-one vs specialized](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/)|[Lean solo blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)|[Migration guide](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For a two-person operating model" steps="[Consultant + VA blueprint](/guides/software-stack-blueprint-consultant--va-collaboration-setup/)|[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For ownership cleanup" steps="[Lean solo blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)|[System-of-record rules](/templates/system-of-record-rules-worksheet-for-solo-operators/)|[Stack audit worksheet](/templates/stack-audit-consolidation-worksheet-for-solo-operators/)|[Migration guide](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/)" >}}
 
 ## What a strong blueprint page should include

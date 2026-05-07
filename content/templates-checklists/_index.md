@@ -146,17 +146,30 @@ The strongest pages in this hub usually include:
 
 ## Suggested reading paths
 
+Pick the path that matches the operational problem you are trying to fix first.
+
 {{< reading-path label="For kickoff reliability" steps="[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Onboarding checklist](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For delivery consistency" steps="[Anchor workflow](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Weekly status update](/templates/weekly-client-status-update-template/)|[Delivery QA checklist](/templates/delivery-qa-checklist-before-client-handoff/)|[Project handoff](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)|[Offboarding template](/templates/client-offboarding--testimonial-request-template/)" >}}
+
 {{< reading-path label="For payment control" steps="[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)|[Invoice checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For scope control" steps="[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Change request template](/templates/client-change-request-template/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)" >}}
+
 {{< reading-path label="For stack cleanup" steps="[All-in-one vs specialized](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/)|[Lean solo blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)|[Stack audit worksheet](/templates/stack-audit-consolidation-worksheet-for-solo-operators/)|[Migration guide](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For ownership clarity" steps="[CRM vs PM](/comparisons/crm-vs-project-management-tool-for-client-workflows/)|[Lean solo blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)|[System-of-record rules](/templates/system-of-record-rules-worksheet-for-solo-operators/)|[Stack audit worksheet](/templates/stack-audit-consolidation-worksheet-for-solo-operators/)|[Migration guide](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/)" >}}
+
 {{< reading-path label="For stage-boundary clarity" steps="[Revision and approval](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Handoff boundary worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Project handoff](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)|[Offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)" >}}
+
 {{< reading-path label="For review control" steps="[Approval owner](/glossary/approval-owner/)|[Revision and approval](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)|[Approval routing worksheet](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Client silence FAQ](/faq/what-to-do-when-a-client-goes-silent-during-review/)" >}}
+
 {{< reading-path label="For blocked client inputs" steps="[Client dependency](/glossary/client-dependency/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Input dependency worksheet](/templates/client-input-dependency-worksheet-for-solo-operators/)|[Late inputs FAQ](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/)" >}}
+
 {{< reading-path label="For blocked work decisions" steps="[Input dependency worksheet](/templates/client-input-dependency-worksheet-for-solo-operators/)|[Escalation worksheet](/templates/escalation-and-pause-state-worksheet-for-solo-operators/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)" >}}
+
 {{< reading-path label="For recovery after repeated drift" steps="[Escalation worksheet](/templates/escalation-and-pause-state-worksheet-for-solo-operators/)|[Scope reset worksheet](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/)|[Change request workflow](/workflows/change-request-workflow-for-freelancers-and-consultants/)" >}}
+
 {{< reading-path label="For reset communication" steps="[Scope reset worksheet](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/)|[Recovery update template](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/)|[Change request workflow](/workflows/change-request-workflow-for-freelancers-and-consultants/)" >}}
 
 ## If the asset feels premature

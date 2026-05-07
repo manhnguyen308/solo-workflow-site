@@ -2,19 +2,32 @@
 {{- $steps_raw := .Get "steps" -}}
 {{- $steps := split $steps_raw "|" -}}
 {{- $link_re := `^\[([^\]]+)\]\(([^)]+)\)$` -}}
-<div class="reading-path">
-  <span class="reading-path-label">{{ $label }}</span>
-  <div class="reading-path-steps">
+{{- $count := len $steps }}
+<article class="reading-path" aria-labelledby="reading-path-{{ anchorize $label }}">
+  <div class="reading-path-header">
+    <h3 class="reading-path-label" id="reading-path-{{ anchorize $label }}">{{ $label }}</h3>
+    <span class="reading-path-count">{{ $count }} steps</span>
+  </div>
+  <ol class="reading-path-steps">
     {{- range $i, $step := $steps -}}
       {{- $step = strings.TrimSpace $step -}}
-      {{- if $i }}<span class="step-sep" aria-hidden="true">›</span>{{ end -}}
       {{- $m := findRESubmatch $link_re $step -}}
-      {{- if $m -}}
-        {{- $match := index $m 0 -}}
-        <a href="{{ index $match 2 }}" class="step-chip">{{ index $match 1 }}</a>
-      {{- else -}}
-        <span class="step-chip">{{ $step }}</span>
-      {{- end -}}
+      <li class="reading-path-step">
+        <span class="reading-path-number" aria-hidden="true">{{ add $i 1 }}</span>
+        <div class="reading-path-step-card">
+          {{- if $m -}}
+            {{- $match := index $m 0 -}}
+            <a href="{{ index $match 2 }}" class="reading-path-step-link">{{ index $match 1 }}</a>
+          {{- else -}}
+            <span class="reading-path-step-text">{{ $step }}</span>
+          {{- end -}}
+          {{- if eq $i 0 -}}
+            <span class="reading-path-endpoint">Start</span>
+          {{- else if eq (add $i 1) $count -}}
+            <span class="reading-path-endpoint">Finish</span>
+          {{- end -}}
+        </div>
+      </li>
     {{- end }}
-  </div>
-</div>
+  </ol>
+</article>

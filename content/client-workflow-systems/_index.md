@@ -84,11 +84,18 @@ If you cannot name the specific problem, open the [Workflow Diagnostic Checklist
 
 ## Suggested reading paths
 
+Pick the path that matches the operational problem you are trying to fix first.
+
 {{< reading-path label="For a messy client lifecycle" steps="[Anchor workflow](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)|[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Revision and approval](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Onboarding checklist](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)|[Offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)" >}}
+
 {{< reading-path label="For a lead-quality problem" steps="[Intake guide](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)|[CRM vs PM](/comparisons/crm-vs-project-management-tool-for-client-workflows/)|[Anchor workflow](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)" >}}
+
 {{< reading-path label="For repeated delivery friction" steps="[Anchor workflow](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Status updates](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)|[Delivery QA checklist](/templates/delivery-qa-checklist-before-client-handoff/)|[Weekly operations](/templates/weekly-client-operations-checklist-solo-business/)" >}}
+
 {{< reading-path label="For recurring scope drift" steps="[Proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/)|[Revision and approval](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)|[Change request workflow](/workflows/change-request-workflow-for-freelancers-and-consultants/)|[Change request template](/templates/client-change-request-template/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)" >}}
+
 {{< reading-path label="For messy project closeout" steps="[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Project handoff](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)|[Offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)|[Offboarding template](/templates/client-offboarding--testimonial-request-template/)" >}}
+
 {{< reading-path label="For weak lifecycle transitions" steps="[Revision and approval](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)|[Onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)|[Milestone delivery](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)|[Project handoff](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)|[Invoice workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)|[Offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)" >}}
 
 ## What strong workflow pages in this section should do
