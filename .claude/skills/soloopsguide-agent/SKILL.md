@@ -133,6 +133,7 @@ Use these source-of-truth docs when relevant:
 ## Failure Recovery
 
 - If the same fix fails twice, stop and reassess instead of continuing the correction loop.
+- Before the next attempt, state explicitly why the current approach is not working; do not retry on the same hypothesis.
 - Summarize what failed, reread the relevant source-of-truth docs or files, and make a smaller plan.
 - Prefer one focused verification that proves the next hypothesis over repeated broad retries.
 
@@ -153,6 +154,8 @@ Good task requests for this repo should name:
 - tracker update expectations,
 - commit and push expectations,
 - requested deliverable format.
+
+Phrase the outcome as the desired result, not a list of implementation steps; let the agent choose the surgical path within the stated scope and constraints.
 
 ## Tracker Updates
 
