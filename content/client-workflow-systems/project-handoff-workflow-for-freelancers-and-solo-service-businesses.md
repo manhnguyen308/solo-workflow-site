@@ -333,6 +333,7 @@ If any item is missing, the project may still be deliverable-ready, but it is no
 - lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - upstream delivery control: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
 - pre-send execution asset: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
+- decisions to attach at handoff: [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/)
 - approval and invoice gate: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
 - final billing control: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - project closeout after transfer: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)

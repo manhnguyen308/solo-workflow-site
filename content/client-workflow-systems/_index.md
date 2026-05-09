@@ -51,7 +51,8 @@ If you cannot name the specific problem, open the [Workflow Diagnostic Checklist
 9. Open [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) if final signoff, closeout, testimonial timing, or archive decisions feel vague.
 10. Open [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) if client communication feels reactive or progress visibility keeps slipping.
 11. Use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when scope changes keep entering delivery informally.
-12. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
+12. Use [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/) when approvals, scope changes, or billing rules keep getting relitigated weeks later.
+13. Read [Workflow Automation Basics for Solo Service Businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/) only after the manual handoff is already reliable.
 
 ## What this section helps you fix
 

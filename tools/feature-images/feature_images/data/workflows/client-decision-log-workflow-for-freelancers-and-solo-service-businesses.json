@@ -1,0 +1,24 @@
+{
+  "id": "client-decision-log-workflow-for-freelancers-and-solo-service-businesses",
+  "category": "workflows",
+  "layout": "workflow_map",
+  "palette": "workflow",
+  "output_path": "static/images/features/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses.webp",
+  "eyebrow": "Decision log workflow",
+  "title": "Client Decision Log Workflow",
+  "subtitle": "Capture, confirm, store, and reference client decisions before scope or billing disputes appear.",
+  "items": [
+    { "kicker": "Step 1", "label": "Capture", "detail": "Log decisions the same day." },
+    { "kicker": "Step 2", "label": "Confirm", "detail": "Get a client reply in writing." },
+    { "kicker": "Step 3", "label": "Store", "detail": "One place, not duplicated." },
+    { "kicker": "Step 4", "label": "Archive", "detail": "Close the log at offboarding." }
+  ],
+  "supporting_note": {
+    "title": "Log rule",
+    "body": "Each entry names date, decision, owner, source, and impact in one short row."
+  },
+  "signal_note": {
+    "title": "Decision record",
+    "body": "Approval, scope, and billing decisions readable in one place at handoff."
+  }
+}

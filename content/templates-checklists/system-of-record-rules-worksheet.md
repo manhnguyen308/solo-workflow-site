@@ -186,6 +186,7 @@ Example: "When proposal is approved, copy approved scope summary and kickoff dat
 - If ownership is now clearer but the stack is still bloated, use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
 - If the rules are clear and the problem is moving the live system safely, continue to [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
 - If the broader stack model still feels weak, return to [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If decisions about scope, approval, and billing keep getting relitigated even with clear ownership rules, run the [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/).
 
 ## Completion standard
 

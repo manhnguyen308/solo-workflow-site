@@ -168,6 +168,7 @@ This page helps you control live change decisions. It does not replace:
 
 - handoff discipline before the project starts: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
 - ready-to-use decision format: [Client Change Request Template](/templates/client-change-request-template/)
+- cross-stage decision record: [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/)
 - invoice follow-through: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 ## What to do next
