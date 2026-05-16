@@ -1,6 +1,6 @@
 ﻿+++
-title = "Client Workflow Templates & Checklists"
-description = "Client workflow templates and checklists for onboarding, delivery, invoicing, offboarding, and weekly operations once the process is already defined."
+title = "Client Workflow Templates & Checklists for Freelancers and Solo Operators"
+description = "Workflow checklists and templates for solo operators covering onboarding, scope and handoff, delivery, review routing, invoicing, and weekly operations."
 feature_image = "/images/features/hubs/templates-checklists.webp"
 feature_image_alt = "Editorial checklist illustration with structured task cards for repeatable client operations."
 +++
