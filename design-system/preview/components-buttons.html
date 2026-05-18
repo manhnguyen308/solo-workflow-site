@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI","Avenir Next","Helvetica Neue",Arial,sans-serif; background: #fafbfc; padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.meta { font-size: 11px; color: #94a3b8; width: 100%; letter-spacing: 0.04em; margin-bottom: -2px; }
+.divider { width: 100%; height: 1px; background: #e2e8f0; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px; border: 1px solid transparent; border-radius: 12px; font-size: 15px; font-weight: 500; line-height: 1; cursor: pointer; text-decoration: none; gap: 6px; }
+.btn-primary { background: #0d9488; color: #fff; box-shadow: 0 14px 28px rgba(15,139,141,0.16); }
+.btn-primary:hover { background: #0f766e; }
+.btn-secondary { background: #f1f5f9; color: #334155; }
+.btn-secondary:hover { background: #e2e8f0; }
+.btn-sm { min-height: 36px; padding: 0 14px; font-size: 14px; border-radius: 10px; }
+.btn-icon { background: transparent; border-color: #e2e8f0; color: #334155; min-height: 36px; padding: 0 12px; border-radius: 8px; font-size: 13px; font-weight: 500; }
+.btn-icon:hover { border-color: #0f766e; color: #0f766e; }
+.btn-disabled { background: #f1f5f9; color: #94a3b8; cursor: not-allowed; }
+</style></head>
+<body>
+  <div class="row"><div class="meta">Primary — teal, shadow, weight 500</div>
+    <a class="btn btn-primary" href="#">Start with the lifecycle guide →</a>
+    <a class="btn btn-primary btn-sm" href="#">Explore workflows</a>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Secondary — slate bg, no shadow</div>
+    <a class="btn btn-secondary" href="#">Browse workflow systems</a>
+    <a class="btn btn-secondary btn-sm" href="#">Open blueprints</a>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Article actions — border, hover teal</div>
+    <button class="btn btn-icon">Copy as plain text</button>
+    <button class="btn btn-icon">Print or save as PDF</button>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Disabled state</div>
+    <button class="btn btn-primary btn-disabled" disabled>Unavailable</button>
+  </div>
+</body></html>

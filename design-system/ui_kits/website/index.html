@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloOpsGuide — UI Kit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #fafbfc;
+    color: #334155;
+    font-family: "Source Sans 3","Helvetica Neue",Arial,sans-serif;
+    line-height: 1.6;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: #0b6d71; text-underline-offset: 0.18em; }
+  p, ul, ol { margin: 0 0 1.2rem; }
+  ul, ol { padding-left: 1.25rem; }
+  li + li { margin-top: 0.45rem; }
+  nav li + li { margin-top: 0; }
+  nav ul { padding-left: 0; }
+  h1,h2,h3,h4,h5,h6 {
+    margin: 0 0 1rem;
+    color: #0f172a;
+    font-family: "Source Sans 3","Helvetica Neue",Arial,sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+  }
+
+  /* ─── Mobile nav (matches production .site-header / .nav-open / data-nav-toggle / .header-actions) ─── */
+  /* Desktop: hide the toggle, show header-actions inline. The header-actions row is laid out by inline styles above. */
+  .site-header .nav-toggle { display: none; }
+
+  @media (max-width: 820px) {
+    /* Wrap the top row so the brand + toggle sit on line 1 and header-actions can drop below */
+    .site-header .header-top { flex-wrap: wrap !important; gap: 0.75rem !important; }
+
+    /* Toggle button visible at mobile widths */
+    .site-header .nav-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.75rem;
+      height: 2.75rem;
+      padding: 0;
+      border: 1px solid rgba(226,232,240,1);
+      border-radius: 10px;
+      background: #ffffff;
+      color: #0f172a;
+      cursor: pointer;
+      flex-shrink: 0;
+      font-family: inherit;
+    }
+    .site-header .nav-toggle:hover { background: #f8fafc; }
+    .site-header .nav-toggle:focus-visible { outline: 2px solid #0d9488; outline-offset: 2px; }
+    .site-header .nav-toggle .bars,
+    .site-header .nav-toggle .bars::before,
+    .site-header .nav-toggle .bars::after {
+      display: block;
+      width: 18px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 2px;
+      transition: transform 160ms ease, opacity 160ms ease;
+    }
+    .site-header .nav-toggle .bars { position: relative; }
+    .site-header .nav-toggle .bars::before { content: ""; position: absolute; left: 0; top: -6px; }
+    .site-header .nav-toggle .bars::after  { content: ""; position: absolute; left: 0; top:  6px; }
+    .site-header.nav-open .nav-toggle .bars { background: transparent; }
+    .site-header.nav-open .nav-toggle .bars::before { transform: translateY(6px) rotate(45deg); }
+    .site-header.nav-open .nav-toggle .bars::after  { transform: translateY(-6px) rotate(-45deg); }
+
+    /* Brand: drop the tagline at mobile so the row stays compact */
+    .site-header .brand-tagline { display: none !important; }
+
+    /* Closed state: collapse the nav + CTA group */
+    .site-header .header-actions {
+      display: none !important;
+      flex: 1 1 100% !important;
+      width: 100%;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 0.25rem !important;
+      padding-bottom: 0.75rem;
+    }
+    .site-header.nav-open .header-actions { display: flex !important; }
+
+    /* Stacked nav links */
+    .site-header.nav-open .header-actions nav { flex: 1 1 auto !important; width: 100%; }
+    .site-header.nav-open .header-actions nav ul {
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 0 !important;
+      width: 100%;
+    }
+    .site-header.nav-open .header-actions nav li { width: 100%; }
+    .site-header.nav-open .header-actions nav a {
+      width: 100%;
+      height: 2.75rem !important;
+      padding: 0 0.85rem !important;
+      border-radius: 8px;
+    }
+
+    /* CTA stays present but does NOT dominate: full-width, calmer height, separated from links by a hairline */
+    .site-header.nav-open .header-actions .header-cta {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0.5rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(226,232,240,1);
+      border-radius: 10px 10px 10px 10px;
+      background: transparent !important;
+      color: #0d9488 !important;
+      box-shadow: none;
+    }
+    .site-header.nav-open .header-actions .header-cta::after { content: " →"; }
+
+    /* Search bar: keep visible at mobile widths, just snug */
+    .site-header .header-search { padding-bottom: 0.9rem; }
+    .site-header .header-search input { height: 2.75rem !important; }
+  }
+
+  /* Prevent any rogue horizontal overflow at narrow widths */
+  html, body { max-width: 100%; overflow-x: hidden; }
+</style>
+</head>
+<body>
+<script type="text/babel" src="glossary-faq-search-pages.jsx"></script>
+<script type="text/babel" src="comparison-blueprint-pages.jsx"></script>
+<script type="text/babel" src="trust-page.jsx"></script>
+<script type="text/babel" src="not-found-page.jsx"></script>
+<script type="text/babel" src="taxonomy-page.jsx"></script>
+<script type="text/babel" src="tags-index-page.jsx"></script>
+<script type="text/babel">
+
+/* ─── Shared font stacks ─── */
+const FONT_UI    = '"Source Sans 3","Helvetica Neue",Arial,sans-serif';
+const FONT_PROSE = '"Lora",Georgia,"Times New Roman",serif';
+
+/* ─── Resource icons ─── */
+const RESOURCE_ICONS = {
+  workflows: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 6h11M9 12h11M9 18h11"/><circle cx="4" cy="6" r="1.5"/><circle cx="4" cy="12" r="1.5"/><circle cx="4" cy="18" r="1.5"/>
+    </svg>
+  ),
+  blueprints: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 12h8M12 8v8"/>
+    </svg>
+  ),
+  comparisons: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 6H3v12h5M16 6h5v12h-5"/><line x1="12" y1="3" x2="12" y2="21"/>
+    </svg>
+  ),
+  templates: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12h6M9 16h4"/>
+    </svg>
+  ),
+  glossary: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+    </svg>
+  ),
+  faq: (
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="9"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><circle cx="12" cy="17" r="0.5" fill="currentColor"/>
+    </svg>
+  ),
+};
+
+const RESOURCE_CARDS = [
+  { key:"workflows",   label:"Workflows",              desc:"Start here when leads, kickoff, delivery, billing, or handoffs keep slipping.", count:12, color:"#0f8b8d", bg:"linear-gradient(180deg,#f0fdfa,#dff7f5)" },
+  { key:"blueprints",  label:"Blueprints",             desc:"Use these when the workflow is clear but the stack still feels too heavy.",       count:8,  color:"#24518b", bg:"linear-gradient(180deg,#eff6ff,#dbeafe)" },
+  { key:"comparisons", label:"Comparisons",            desc:"Open these when one bounded tool or system choice is blocking the next move.",    count:6,  color:"#9a6b33", bg:"linear-gradient(180deg,#fff7ed,#ffedd5)" },
+  { key:"templates",   label:"Templates & Checklists", desc:"Use these after the rule is clear and you need an asset for a real trigger.",     count:9,  color:"#0f766e", bg:"linear-gradient(180deg,#f0fdfa,#ccfbf1)" },
+  { key:"glossary",    label:"Glossary",               desc:"Use this when one unclear term is blocking a workflow or stack decision.",         count:24, color:"#475569", bg:"linear-gradient(180deg,#f8fafc,#e2e8f0)" },
+  { key:"faq",         label:"FAQ",                    desc:"Use this for narrow setup questions that send you back to a stronger guide fast.", count:18, color:"#475569", bg:"linear-gradient(180deg,#f8fafc,#e2e8f0)" },
+];
+
+const CHOOSER_CARDS = [
+  { situation:"My client process feels loose or messy",                  dest:"Start with the lifecycle workflow" },
+  { situation:"I know the stage, but a tool choice is blocking me",      dest:"Open the CRM vs PM comparison" },
+  { situation:"The workflow is clear but my stack feels heavy",          dest:"Open the lean stack blueprint" },
+  { situation:"I need an execution asset for a specific trigger moment", dest:"Browse templates and checklists" },
+  { situation:"I have a narrow blocker (billing, silence, closeout)",    dest:"Open the FAQ hub" },
+  { situation:"One term is unclear and that is the only blocker",        dest:"Open the glossary" },
+];
+
+const SAMPLE_CARDS = [
+  { title:"Freelance Client Workflow System: Inquiry to Final Payment", summary:"End-to-end operating sequence from first contact to project close.", type:"workflow",    tag:"How-to",       date:"Jan 2, 2025" },
+  { title:"How to Build a Client Intake and Qualification Workflow",    summary:"Standardize the intake stage to filter better-fit clients earlier.",  type:"workflow",    tag:"How-to",       date:"Dec 15, 2024" },
+  { title:"Software Stack Blueprint: Solo Freelancer (Lean Budget)",    summary:"A lean tool model for solo operators with clear stack boundaries.",     type:"blueprint",   tag:"Decision guide",date:"Nov 14, 2024" },
+  { title:"CRM vs Project Management Tool for Client Workflows",        summary:"One bounded decision — which system should anchor client operations.", type:"comparison",  tag:"Tool decision", date:"Oct 5, 2024" },
+  { title:"Client Onboarding Checklist for Freelancers",                summary:"An execution checklist for the kickoff trigger moment.",                type:"template",    tag:"Checklist",    date:"Sep 18, 2024" },
+  { title:"Notion vs ClickUp for Solo Client Delivery",                 summary:"A bounded comparison between two common project management tools.",     type:"comparison",  tag:"Tool decision", date:"Aug 22, 2024" },
+];
+
+/* ─── Page card themes ─── */
+const CARD_THEMES = {
+  workflow:   { media:"linear-gradient(135deg,rgba(15,139,141,0.26),rgba(8,92,110,0.78))",    typeColor:"#0f766e",  linkLabel:"Read workflow" },
+  blueprint:  { media:"linear-gradient(135deg,rgba(31,112,149,0.22),rgba(17,38,52,0.78))",   typeColor:"#1d6fa4",  linkLabel:"Open blueprint" },
+  comparison: { media:"linear-gradient(135deg,rgba(184,130,63,0.26),rgba(104,78,54,0.72))",  typeColor:"#9a6b33",  linkLabel:"Read comparison" },
+  template:   { media:"linear-gradient(135deg,rgba(15,139,141,0.18),rgba(184,130,63,0.42))", typeColor:"#0f766e",  linkLabel:"Open asset" },
+  glossary:   { media:"linear-gradient(135deg,rgba(65,87,106,0.2),rgba(17,38,52,0.68))",     typeColor:"#475569",  linkLabel:"View term" },
+  faq:        { media:"linear-gradient(135deg,rgba(65,87,106,0.2),rgba(17,38,52,0.68))",     typeColor:"#475569",  linkLabel:"View answer" },
+};
+
+/* ─── PageCard ─── */
+function PageCard({ title, summary, type="workflow", tag, date="Jan 2, 2025", featured=false, onClick }) {
+  const [hov, setHov] = React.useState(false);
+  const theme = CARD_THEMES[type] || CARD_THEMES.workflow;
+  const typeLabel = type.charAt(0).toUpperCase() + type.slice(1);
+  return (
+    <article onClick={onClick}
+      onMouseEnter={() => setHov(true)} onMouseLeave={() => setHov(false)}
+      style={{
+        overflow:"hidden", borderRadius:"16px", background:"#f8fafc", cursor:onClick?"pointer":"default", display:"grid",
+        border:`1px solid ${hov?"rgba(203,213,225,1)":"rgba(226,232,240,1)"}`,
+        boxShadow: hov?"0 10px 24px rgba(15,23,42,0.08)":"0 1px 2px rgba(15,23,42,0.04)",
+        transform: hov?"translateY(-1px)":"translateY(0)",
+        transition:"transform 180ms ease,box-shadow 180ms ease,border-color 180ms ease",
+        fontFamily: FONT_UI,
+      }}>
+      <div style={{ aspectRatio:"16/9", background:theme.media }}></div>
+      <div style={{ display:"grid", gap:"0.85rem", padding: featured?"1.75rem":"1.5rem" }}>
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+          <span style={{ fontSize:"11px", fontWeight:700, letterSpacing:"0.06em", textTransform:"uppercase", color:theme.typeColor }}>{typeLabel}</span>
+          <span style={{ fontSize:"13px", color:"#64748b" }}>{date}</span>
+        </div>
+        <h3 style={{ margin:0, fontSize:featured?"22px":"18px", fontWeight:600, lineHeight:1.3, letterSpacing:"-0.02em", color:"#0f172a", fontFamily:FONT_UI }}>{title}</h3>
+        {summary && <p style={{ margin:0, fontSize:"14px", lineHeight:1.65, color:"#475569" }}>{summary}</p>}
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+          {tag && <span style={{ display:"inline-flex", alignItems:"center", padding:"0.22rem 0.55rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"999px", background:"#fff", color:"#475569", fontSize:"12px", fontWeight:600 }}>{tag}</span>}
+          <span style={{ marginLeft:"auto", fontSize:"14px", fontWeight:500, color:"#0f766e" }}>{theme.linkLabel}</span>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+/* ─── Header ─── */
+function Header({ activePage="" }) {
+  const [navOpen, setNavOpen] = React.useState(false);
+
+  // Close nav on resize up to desktop, and on Escape
+  React.useEffect(() => {
+    const onResize = () => { if (window.innerWidth > 820) setNavOpen(false); };
+    const onKey = (e) => { if (e.key === "Escape") setNavOpen(false); };
+    window.addEventListener("resize", onResize);
+    window.addEventListener("keydown", onKey);
+    return () => { window.removeEventListener("resize", onResize); window.removeEventListener("keydown", onKey); };
+  }, []);
+
+  const navLinks = [
+    { name:"Blueprints",  url:"/software-stack-blueprints/" },
+    { name:"Comparisons", url:"/workflow-comparisons/" },
+    { name:"Templates",   url:"/templates-checklists/" },
+    { name:"Glossary",    url:"/glossary/" },
+    { name:"FAQ",         url:"/faq/" },
+  ];
+  return (
+    <header className={"site-header" + (navOpen ? " nav-open" : "")} style={{ background:"#fff", borderBottom:"1px solid rgba(226,232,240,0.8)", position:"sticky", top:"40px", zIndex:40, fontFamily:FONT_UI }}>
+      <div style={{ width:"min(1280px,calc(100vw - 2rem))", margin:"0 auto", padding:"0 2rem" }}>
+        {/* Brand + nav + CTA row */}
+        <div className="header-top" style={{ display:"flex", alignItems:"center", gap:"2rem", padding:"1.1rem 0" }}>
+          {/* Brand */}
+          <a href="/" style={{ display:"inline-flex", alignItems:"center", gap:"0.9rem", textDecoration:"none", flexShrink:0 }}>
+            <span style={{
+              display:"inline-flex", alignItems:"center", justifyContent:"center",
+              width:"2.75rem", height:"2.75rem", borderRadius:"14px", flexShrink:0,
+              background:"linear-gradient(145deg,#0f8b8d,#0b6d71)",
+              boxShadow:"inset 0 1px 0 rgba(255,255,255,0.3),0 8px 20px rgba(15,23,42,0.08)",
+            }}>
+              <svg viewBox="0 0 64 64" width="24" height="24" fill="none" stroke="#f8fafc" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="6" y="6" width="52" height="52" rx="16"></rect>
+                <path d="M20 23h24M20 32h18M20 41h24"></path>
+                <path d="M42 20l6 6-6 6"></path>
+              </svg>
+            </span>
+            <span style={{ display:"flex", flexDirection:"column", justifyContent:"center" }}>
+              <span style={{ color:"#0f172a", fontSize:"21px", fontWeight:600, lineHeight:1.15, letterSpacing:"-0.02em", fontFamily:FONT_UI }}>SoloOpsGuide</span>
+              <span className="brand-tagline" style={{ color:"#64748b", fontSize:"12.5px", lineHeight:1.35, marginTop:"1px", fontFamily:FONT_UI }}>Workflow-first guidance for solo operators</span>
+            </span>
+          </a>
+
+          {/* Mobile-only nav toggle (matches production data-nav-toggle pattern) */}
+          <button
+            type="button"
+            className="nav-toggle"
+            data-nav-toggle
+            aria-expanded={navOpen}
+            aria-controls="site-nav"
+            aria-label={navOpen ? "Close menu" : "Open menu"}
+            onClick={() => setNavOpen(v => !v)}
+            style={{ marginLeft:"auto" }}
+          >
+            <span className="bars" aria-hidden="true"></span>
+          </button>
+
+          {/* Nav + CTA group — matches production .header-actions */}
+          <div id="site-nav" className="header-actions" style={{ display:"flex", alignItems:"center", gap:"2rem", flex:"1 1 auto" }}>
+            <nav style={{ flex:"1 1 auto" }} aria-label="Primary">
+              <ul style={{ display:"flex", alignItems:"center", gap:"0", listStyle:"none", margin:0, padding:0, lineHeight:"normal" }}>
+
+                {navLinks.map(link => {
+                  const isActive = activePage === link.url;
+                  return (
+                    <li key={link.name} style={{ display:"flex", alignItems:"center" }}>
+                      <a href={link.url} aria-current={isActive ? "page" : undefined} style={{
+                        display:"inline-flex", alignItems:"center", height:"2.5rem",
+                        padding:"0 0.85rem", borderRadius:"8px",
+                        fontSize:"15px", fontWeight: isActive ? 600 : 400,
+                        color: isActive ? "#0f172a" : "#334155",
+                        textDecoration:"none", whiteSpace:"nowrap",
+                        background: isActive ? "rgba(15,139,141,0.07)" : "transparent",
+                        transition:"color 150ms ease,background 150ms ease",
+                        fontFamily:FONT_UI,
+                      }}>{link.name}</a>
+                    </li>
+                  );
+                })}
+              </ul>
+            </nav>
+
+            {/* CTA — links to workflow hub, matches real site header */}
+            <a className="header-cta" href="/client-workflow-systems/" style={{
+              display:"inline-flex", alignItems:"center", height:"2.5rem",
+              padding:"0 1.2rem", borderRadius:"10px", flexShrink:0,
+              background:"#0d9488", color:"#fff",
+              fontSize:"15px", fontWeight:500, textDecoration:"none",
+              whiteSpace:"nowrap", fontFamily:FONT_UI,
+              transition:"background 150ms ease",
+            }}>Explore workflows</a>
+          </div>
+        </div>
+
+        {/* Search bar */}
+        <div className="header-search" style={{ paddingBottom:"1.1rem" }}>
+          <div style={{ position:"relative", maxWidth:"580px" }}>
+            <span style={{ position:"absolute", left:"14px", top:"50%", transform:"translateY(-50%)", width:"16px", height:"16px", border:"2px solid #94a3b8", borderRadius:"50%", pointerEvents:"none" }}>
+              <span style={{ position:"absolute", right:"-5px", bottom:"-5px", width:"6px", height:"2px", background:"#94a3b8", borderRadius:"999px", transform:"rotate(45deg)", display:"block" }}></span>
+            </span>
+            <input type="search" placeholder="Search workflows, blueprints, comparisons, and assets..." aria-label="Search" style={{
+              width:"100%", height:"3rem", padding:"0 1rem 0 2.75rem",
+              border:"1px solid rgba(226,232,240,1)", borderRadius:"10px",
+              background:"#f8fafc", color:"#334155", fontSize:"15px",
+              fontFamily:FONT_UI, outline:"none",
+            }} />
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+}
+
+/* ─── Footer ─── */
+function Footer() {
+  const resources = [
+    { name:"Workflows", url:"/workflows/" }, { name:"Blueprints", url:"/guides/" },
+    { name:"Comparisons", url:"/comparisons/" }, { name:"Templates", url:"/templates/" },
+    { name:"Glossary", url:"/glossary/" }, { name:"FAQ", url:"/faq/" },
+  ];
+  const about = [
+    { name:"About", url:"/about/" }, { name:"Contact", url:"/contact/" },
+    { name:"Editorial Policy", url:"/editorial-policy/" }, { name:"Content Policy", url:"/content-policy/" },
+  ];
+  const legal = [
+    { name:"Privacy Policy", url:"/privacy-policy/" },
+    { name:"Disclaimer", url:"/disclaimer/" }, { name:"Terms", url:"/terms/" },
+  ];
+  const col = { listStyle:"none", margin:0, padding:0, display:"flex", flexDirection:"column", gap:"0.65rem" };
+  const lnk = { color:"rgba(226,234,239,0.72)", textDecoration:"none", fontSize:"14px", fontFamily:FONT_UI };
+  const hd  = { color:"#fff", fontSize:"14px", fontWeight:600, marginBottom:"0.4rem", fontFamily:FONT_UI };
+  return (
+    <footer style={{ background:"#0f172a", color:"#94a3b8", fontFamily:FONT_UI }}>
+      <div style={{ width:"min(1280px,calc(100vw - 2rem))", margin:"0 auto", padding:"4rem 2rem 2rem" }}>
+        <div style={{ display:"grid", gridTemplateColumns:"2fr 1fr 1fr 1fr", gap:"3rem", marginBottom:"3rem" }}>
+          <div>
+            <a href="/" style={{ display:"inline-block", marginBottom:"0.75rem", textDecoration:"none" }}>
+              <span style={{ color:"#fff", fontSize:"20px", fontWeight:600, letterSpacing:"-0.02em", fontFamily:FONT_UI }}>SoloOpsGuide</span>
+            </a>
+            <p style={{ color:"rgba(226,234,239,0.72)", fontSize:"14px", lineHeight:1.7, maxWidth:"280px", margin:"0 0 1rem" }}>
+              Workflow-first editorial guidance for freelancers, consultants, and solo operators who want clearer client operations.
+            </p>
+            <p style={{ color:"#64748b", fontSize:"13px", margin:0 }}>© {new Date().getFullYear()} SoloOpsGuide. All rights reserved.</p>
+          </div>
+          <div><p style={hd}>Resources</p><ul style={col}>{resources.map(l=><li key={l.name}><a href={l.url} style={lnk}>{l.name}</a></li>)}</ul></div>
+          <div><p style={hd}>About</p><ul style={col}>{about.map(l=><li key={l.name}><a href={l.url} style={lnk}>{l.name}</a></li>)}</ul></div>
+          <div><p style={hd}>Legal</p><ul style={col}>{legal.map(l=><li key={l.name}><a href={l.url} style={lnk}>{l.name}</a></li>)}</ul></div>
+        </div>
+        <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", paddingTop:"2rem", borderTop:"1px solid rgba(30,41,59,1)", flexWrap:"wrap", gap:"1rem" }}>
+          <p style={{ color:"#64748b", fontSize:"13px", margin:0, maxWidth:"540px" }}>Built as an independent editorial resource for solo operators who value clarity, boundaries, and useful judgment over complexity.</p>
+          <div style={{ display:"flex", gap:"1.5rem" }}>
+            {[{n:"RSS Feed",u:"/index.xml"},{n:"Contact",u:"/contact/"},{n:"Editorial Policy",u:"/editorial-policy/"}].map(l=>(
+              <a key={l.n} href={l.u} style={{ color:"#64748b", fontSize:"13px", textDecoration:"none", fontFamily:FONT_UI }}>{l.n}</a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+/* ─── Nav tabs ─── */
+function NavTabs({ screen, onNavigate }) {
+  const tabs = [
+    { id:"home",          label:"Homepage" },
+    { id:"hub",           label:"Hub page" },
+    { id:"article",       label:"Article page" },
+    { id:"template",      label:"Template page" },
+    { id:"comparison",    label:"Comparison page" },
+    { id:"blueprint",     label:"Blueprint page" },
+    { id:"glossary-hub",  label:"Glossary hub" },
+    { id:"glossary-term", label:"Term page" },
+    { id:"faq-hub",       label:"FAQ hub" },
+    { id:"faq-article",   label:"FAQ article" },
+    { id:"taxonomy",      label:"Tag listing" },
+    { id:"tags-index",    label:"Tags index" },
+    { id:"search",        label:"Search page" },
+    { id:"trust",         label:"Trust / About" },
+    { id:"not-found",     label:"404 page" },
+  ];
+  return (
+    <div style={{ position:"sticky", top:0, zIndex:100, background:"#0f172a", borderBottom:"1px solid rgba(255,255,255,0.08)", display:"flex", gap:0, overflowX:"auto", padding:"0 1rem", fontFamily:FONT_UI }}>
+      {tabs.map(t => (
+        <button key={t.id} onClick={() => onNavigate(t.id)} style={{
+          minHeight:"40px", padding:"0 1.1rem", border:"none", background:"transparent",
+          color: screen===t.id?"#5eead4":"rgba(226,234,239,0.6)",
+          borderBottom: screen===t.id?"2px solid #5eead4":"2px solid transparent",
+          fontSize:"13px", fontWeight: screen===t.id?600:400, fontFamily:FONT_UI,
+          cursor:"pointer", whiteSpace:"nowrap", transition:"color 150ms ease",
+        }}>{t.label}</button>
+      ))}
+      <span style={{ marginLeft:"auto", display:"flex", alignItems:"center", padding:"0 0.5rem", fontSize:"11px", color:"rgba(226,234,239,0.35)", fontWeight:500, letterSpacing:"0.05em", fontFamily:FONT_UI }}>SoloOpsGuide UI Kit · Source Sans 3 + Lora</span>
+    </div>
+  );
+}
+
+/* ─── Helpers ─── */
+const wrap = { width:"min(1280px,calc(100vw - 2rem))", margin:"0 auto", padding:"0 2rem" };
+
+function Eyebrow({ children, style }) {
+  return <p style={{ fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.16em", textTransform:"uppercase", color:"#b8823f", margin:"0 0 0.85rem", fontFamily:FONT_UI, ...style }}>{children}</p>;
+}
+
+function Pill({ children, variant="teal" }) {
+  const variants = {
+    teal:    { background:"#ccfbf1", color:"#0f766e" },
+    slate:   { background:"#f1f5f9", color:"#64748b" },
+    outline: { background:"#fff", border:"1px solid #99f6e4", color:"#0f766e" },
+    amber:   { background:"#fff3e3", color:"#926227" },
+  };
+  return (
+    <span style={{ display:"inline-flex", alignItems:"center", padding:"0.28rem 0.65rem", borderRadius:"999px", fontSize:"12px", fontWeight:600, letterSpacing:"0.06em", textTransform:"uppercase", fontFamily:FONT_UI, ...variants[variant] }}>{children}</span>
+  );
+}
+
+function Btn({ children, primary=true, onClick }) {
+  const [hov, setHov] = React.useState(false);
+  return (
+    <button onClick={onClick} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)} style={{
+      display:"inline-flex", alignItems:"center", minHeight:"48px", padding:"0 1.5rem",
+      borderRadius:"12px", border:"none", fontSize:"16px", fontWeight:500, cursor:"pointer",
+      fontFamily:FONT_UI,
+      background: primary ? (hov?"#0f766e":"#0d9488") : (hov?"#e2e8f0":"#f1f5f9"),
+      color: primary ? "#fff" : "#334155",
+      transition:"background 150ms ease",
+    }}>{children}</button>
+  );
+}
+
+/* ─────────────────────────
+   HOMEPAGE
+   ───────────────────────── */
+function HomePage({ onNavigate }) {
+  return (
+    <div style={{ background:"#fafbfc", fontFamily:FONT_UI }}>
+
+      {/* Hero */}
+      <section style={{ background:"#fff", borderBottom:"1px solid rgba(226,232,240,0.8)" }}>
+        <div style={{ ...wrap, display:"grid", gridTemplateColumns:"minmax(0,1fr) minmax(0,0.93fr)", gap:"4rem", alignItems:"center", padding:"5rem 2rem" }}>
+          <div>
+            <Pill variant="teal">Workflow-First Guidance</Pill>
+            <h1 style={{ fontSize:"clamp(2.4rem,4.5vw,3.4rem)", fontWeight:700, lineHeight:1.1, letterSpacing:"-0.03em", margin:"1rem 0 1.25rem", textWrap:"balance", fontFamily:FONT_UI }}>
+              Find the right starting point for your solo operations
+            </h1>
+            <p style={{ fontSize:"18px", lineHeight:1.72, color:"#475569", maxWidth:"34rem", marginBottom:"2rem", fontFamily:FONT_UI }}>
+              SoloOpsGuide helps freelancers and solo operators fix messy client operations from inquiry to final payment. Fix the workflow first, then the stack.
+            </p>
+            <div style={{ display:"flex", gap:"1rem", flexWrap:"wrap" }}>
+              <Btn primary onClick={()=>onNavigate("article")}>Start with the lifecycle guide →</Btn>
+              <Btn primary={false} onClick={()=>onNavigate("hub")}>Browse workflow systems</Btn>
+            </div>
+          </div>
+
+          {/* Feature card */}
+          <aside style={{ padding:"2rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"#f8fafc", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+            <div style={{ display:"flex", alignItems:"center", gap:"0.5rem", marginBottom:"1rem" }}>
+              <span style={{ display:"inline-flex", alignItems:"center", justifyContent:"center", width:"2rem", height:"2rem", borderRadius:"10px", background:"#fef3c7", color:"#d97706", fontSize:"14px" }}>✦</span>
+              <span style={{ color:"#b45309", fontSize:"12px", fontWeight:700, letterSpacing:"0.06em", textTransform:"uppercase", fontFamily:FONT_UI }}>Best starting guide</span>
+            </div>
+            <h2 style={{ fontSize:"20px", fontWeight:600, lineHeight:1.28, letterSpacing:"-0.02em", marginBottom:"0.75rem", color:"#0f172a", fontFamily:FONT_UI }}>
+              <a href="#" onClick={e=>{e.preventDefault();onNavigate("article");}} style={{ color:"#0f172a", textDecoration:"none" }}>Freelance Client Workflow System: Inquiry to Final Payment</a>
+            </h2>
+            <p style={{ fontSize:"15px", lineHeight:1.65, color:"#475569", marginBottom:"1.5rem", fontFamily:FONT_UI }}>The end-to-end operating sequence for solo operators — from first inquiry through final payment and project close.</p>
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"0.5rem", marginBottom:"1.5rem" }}>
+              {["Client Workflow Systems","Workflow","Jan 2025"].map(t=>(
+                <span key={t} style={{ padding:"0.25rem 0.75rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"999px", background:"#fff", color:"#475569", fontSize:"13px", fontFamily:FONT_UI }}>{t}</span>
+              ))}
+            </div>
+            <a href="#" onClick={e=>{e.preventDefault();onNavigate("article");}} style={{ display:"inline-flex", alignItems:"center", gap:"0.4rem", color:"#0f766e", fontSize:"15px", fontWeight:500, textDecoration:"none", fontFamily:FONT_UI }}>Read workflow →</a>
+          </aside>
+        </div>
+      </section>
+
+      {/* Chooser */}
+      <section style={{ padding:"4rem 0 3.5rem", background:"linear-gradient(180deg,#f8fafc,#fff)" }}>
+        <div style={wrap}>
+          <div style={{ maxWidth:"600px", margin:"0 auto 2rem", textAlign:"center" }}>
+            <Eyebrow style={{ justifyContent:"center", display:"block" }}>Choose Your Next Step</Eyebrow>
+            <h2 style={{ fontSize:"32px", fontWeight:600, letterSpacing:"-0.03em", marginBottom:"0.75rem", fontFamily:FONT_UI }}>Pick the path that matches your situation</h2>
+            <p style={{ color:"#475569", fontSize:"16px", fontFamily:FONT_UI }}>Match your problem to the right cluster. Workflow pages come before stack or tool pages.</p>
+          </div>
+          <ul style={{ display:"grid", gridTemplateColumns:"repeat(3,minmax(0,1fr))", gap:"1rem", listStyle:"none", margin:0, padding:0 }}>
+            {CHOOSER_CARDS.map((c,i)=><ChooserCard key={i} {...c} onNavigate={onNavigate} />)}
+          </ul>
+        </div>
+      </section>
+
+      {/* Value props */}
+      <section style={{ padding:"5rem 0", background:"#fff", borderTop:"1px solid rgba(226,232,240,0.8)" }}>
+        <div style={wrap}>
+          <div style={{ maxWidth:"600px", margin:"0 auto 3rem", textAlign:"center" }}>
+            <h2 style={{ fontSize:"34px", fontWeight:600, letterSpacing:"-0.03em", marginBottom:"0.75rem", fontFamily:FONT_UI }}>Guidance designed for action</h2>
+            <p style={{ color:"#475569", fontSize:"16px", fontFamily:FONT_UI }}>Every guide is built around real scenarios and implementation needs, not feature lists.</p>
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,minmax(0,1fr))", gap:"1.5rem" }}>
+            {[
+              { icon:"✓", title:"Workflow-first",              desc:"We start with your actual workflow needs, not tool marketing. Learn what works before choosing what to buy." },
+              { icon:"◎", title:"Scenario-based",              desc:"Recommendations tailored to your situation: volume, budget, technical comfort, and current setup." },
+              { icon:"≡", title:"Designed for implementation", desc:"Clear next steps, realistic timelines, and practical trade-offs. No fluff, no overwhelming plans." },
+            ].map(v=>(
+              <article key={v.title} style={{ padding:"2rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"#fff", boxShadow:"0 1px 2px rgba(15,23,42,0.04)", fontFamily:FONT_UI }}>
+                <div style={{ display:"inline-flex", alignItems:"center", justifyContent:"center", width:"3rem", height:"3rem", borderRadius:"12px", background:"#ccfbf1", color:"#0d9488", fontSize:"22px", marginBottom:"1.25rem" }}>{v.icon}</div>
+                <h3 style={{ fontSize:"20px", fontWeight:600, letterSpacing:"-0.02em", marginBottom:"0.75rem", fontFamily:FONT_UI }}>{v.title}</h3>
+                <p style={{ fontSize:"15px", lineHeight:1.65, color:"#475569", margin:0 }}>{v.desc}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Recent */}
+      <section style={{ padding:"5rem 0", borderTop:"1px solid rgba(226,232,240,0.8)", borderBottom:"1px solid rgba(226,232,240,0.8)", background:"#fff" }}>
+        <div style={wrap}>
+          <div style={{ display:"flex", alignItems:"flex-end", justifyContent:"space-between", marginBottom:"2.5rem", flexWrap:"wrap", gap:"1rem" }}>
+            <div>
+              <h2 style={{ fontSize:"30px", fontWeight:600, letterSpacing:"-0.03em", marginBottom:"0.4rem", fontFamily:FONT_UI }}>Newer guides for specific bottlenecks</h2>
+              <p style={{ color:"#475569", fontSize:"16px", margin:0, fontFamily:FONT_UI }}>Open these after the main path is clear and you need a narrower fix.</p>
+            </div>
+            <a href="#" style={{ display:"inline-flex", alignItems:"center", gap:"0.4rem", color:"#0f766e", fontSize:"15px", fontWeight:500, textDecoration:"none", fontFamily:FONT_UI }}>Explore by resource →</a>
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,minmax(0,1fr))", gap:"1.5rem" }}>
+            {SAMPLE_CARDS.slice(0,3).map((c,i)=><PageCard key={i} {...c} onClick={()=>onNavigate(c.type==="template"?"template":"article")} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* Resource hub */}
+      <section style={{ padding:"5rem 0" }}>
+        <div style={wrap}>
+          <div style={{ maxWidth:"600px", margin:"0 auto 3rem", textAlign:"center" }}>
+            <h2 style={{ fontSize:"34px", fontWeight:600, letterSpacing:"-0.03em", marginBottom:"0.75rem", fontFamily:FONT_UI }}>Explore by resource type</h2>
+            <p style={{ color:"#475569", fontSize:"16px", fontFamily:FONT_UI }}>Choose the kind of help you need. Workflows are the first stop when the client process still feels broad.</p>
+          </div>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(3,minmax(0,1fr))", gap:"1.65rem" }}>
+            {RESOURCE_CARDS.map(r=><ResourceCard key={r.key} iconKey={r.key} label={r.label} desc={r.desc} count={r.count} color={r.color} bg={r.bg} onNavigate={onNavigate} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section style={{ padding:"6rem 0", background:"linear-gradient(135deg,#f8fafc 0%,rgba(204,251,241,0.45) 100%)" }}>
+        <div style={wrap}>
+          <div style={{ maxWidth:"620px", margin:"0 auto", textAlign:"center" }}>
+            <Pill variant="outline">Best Next Move</Pill>
+            <h2 style={{ fontSize:"38px", fontWeight:700, letterSpacing:"-0.03em", lineHeight:1.12, margin:"1rem 0 1rem", fontFamily:FONT_UI }}>Fix the client workflow before you optimize the stack</h2>
+            <p style={{ fontSize:"17px", lineHeight:1.68, color:"#475569", marginBottom:"2rem", fontFamily:FONT_UI }}>If the process still feels loose, stay in the workflow cluster first. Move into blueprints only after the operating sequence is clear.</p>
+            <div style={{ display:"flex", gap:"1rem", justifyContent:"center", flexWrap:"wrap" }}>
+              <Btn primary onClick={()=>onNavigate("article")}>Start with the lifecycle guide →</Btn>
+              <Btn primary={false} onClick={()=>onNavigate("hub")}>Open blueprints</Btn>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function ChooserCard({ situation, dest, onNavigate }) {
+  const [hov, setHov] = React.useState(false);
+  return (
+    <li>
+      <button onClick={()=>onNavigate("hub")} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}
+        style={{ display:"flex", flexDirection:"column", gap:"0.55rem", width:"100%", textAlign:"left",
+          padding:"1.1rem 1.2rem", border:`1px solid ${hov?"#0f766e":"rgba(226,232,240,1)"}`,
+          borderRadius:"12px", background:"#fff", cursor:"pointer", fontFamily:FONT_UI,
+          boxShadow:hov?"0 4px 14px rgba(15,118,110,0.1)":"0 1px 2px rgba(15,23,42,0.04)",
+          transform:hov?"translateY(-1px)":"none", transition:"all 150ms ease",
+        }}>
+        <span style={{ fontSize:"15px", fontWeight:600, lineHeight:1.4, letterSpacing:"-0.01em", color:"#0f172a" }}>{situation}</span>
+        <span style={{ marginTop:"auto", fontSize:"13px", fontWeight:500, color:"#0f766e" }}>{dest} →</span>
+      </button>
+    </li>
+  );
+}
+
+function ResourceCard({ iconKey, label, desc, count, color, bg, onNavigate }) {
+  const [hov, setHov] = React.useState(false);
+  return (
+    <button onClick={()=>onNavigate("hub")} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)}
+      style={{ display:"grid", gridTemplateRows:"auto auto 1fr auto", gap:"0.18rem", textAlign:"left",
+        padding:"1.55rem 1.5rem 1.45rem", borderRadius:"16px", background:"#fff", cursor:"pointer", fontFamily:FONT_UI,
+        border:`1px solid ${hov?"#99f6e4":"rgba(226,232,240,1)"}`,
+        boxShadow:hov?"0 10px 24px rgba(15,23,42,0.08)":"0 1px 2px rgba(15,23,42,0.05)",
+        transform:hov?"translateY(-1px)":"none", transition:"all 160ms ease",
+      }}>
+      <div style={{ display:"inline-flex", alignItems:"center", justifyContent:"center", width:"3.25rem", height:"3.25rem", borderRadius:"12px", border:"1px solid rgba(226,232,240,1)", background:bg, color, boxShadow:"inset 0 1px 0 rgba(255,255,255,0.9)", marginBottom:"0.85rem" }}>
+        {RESOURCE_ICONS[iconKey] || RESOURCE_ICONS.workflows}
+      </div>
+      <h3 style={{ fontSize:"17px", fontWeight:600, letterSpacing:"-0.02em", color:"#0f172a", margin:"0 0 0.4rem", fontFamily:FONT_UI }}>{label}</h3>
+      <p style={{ fontSize:"12.75px", lineHeight:1.56, color:"#526172", margin:"0 0 0.95rem" }}>{desc}</p>
+      <span style={{ paddingTop:"0.9rem", borderTop:"1px solid rgba(226,232,240,0.9)", color:"#0f766e", fontSize:"12.5px", fontWeight:600 }}>{count} guides →</span>
+    </button>
+  );
+}
+
+/* ─────────────────────────
+   READING PATH (inline shortcode render)
+   ───────────────────────── */
+function ReadingPathSimple({ label, steps }) {
+  return (
+    <article style={{ marginBottom:"1.25rem", padding:"1.1rem 1.25rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"12px", background:"#fafbfc", fontFamily:FONT_UI }}>
+      <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between", marginBottom:"0.75rem" }}>
+        <h3 style={{ fontSize:"14px", fontWeight:600, color:"#0f172a", margin:0, letterSpacing:"-0.01em" }}>{label}</h3>
+        <span style={{ fontSize:"12px", color:"#64748b" }}>{steps.length} steps</span>
+      </div>
+      <ol style={{ listStyle:"none", margin:0, padding:0, display:"flex", flexDirection:"column", gap:"0.38rem" }}>
+        {steps.map((step, i) => (
+          <li key={i} style={{ display:"flex", alignItems:"center", gap:"0.65rem" }}>
+            <span style={{ display:"inline-flex", alignItems:"center", justifyContent:"center", width:"20px", height:"20px", borderRadius:"50%", background:"rgba(15,139,141,0.1)", color:"#0f766e", fontSize:"11px", fontWeight:700, flexShrink:0 }}>{i+1}</span>
+            <span style={{ flex:1, fontSize:"13.5px", color: i===0||i===steps.length-1 ? "#0f172a" : "#475569", fontWeight: i===0||i===steps.length-1 ? 500 : 400 }}>{step}</span>
+            {i===0 && <span style={{ fontSize:"10px", fontWeight:700, color:"#0f8b8d", textTransform:"uppercase", letterSpacing:"0.08em", flexShrink:0 }}>Start</span>}
+            {i===steps.length-1 && <span style={{ fontSize:"10px", fontWeight:700, color:"#926227", textTransform:"uppercase", letterSpacing:"0.08em", flexShrink:0 }}>Finish</span>}
+          </li>
+        ))}
+      </ol>
+    </article>
+  );
+}
+
+/* ─── Page-type utility panel (mirrors real page-type-block partial) ─── */
+function UtilityPanel({ type = "workflow" }) {
+  const UPanel = window.UtilityPanel;
+  return UPanel ? <UPanel type={type} /> : null;
+}
+
+/* ─────────────────────────
+   HUB PAGE
+   ───────────────────────── */
+function HubPage({ onNavigate }) {
+  const HUB_READING_PATHS = [
+    { label:"For a messy client lifecycle",    steps:["Anchor workflow","Proposal handoff","Onboarding workflow","Onboarding checklist","Invoice workflow","Offboarding workflow"] },
+    { label:"For repeated delivery friction",  steps:["Anchor workflow","Onboarding workflow","Milestone delivery","Status updates","Delivery QA checklist","Weekly operations"] },
+    { label:"For messy project closeout",      steps:["Milestone delivery","Project handoff","Invoice workflow","Offboarding workflow","Offboarding template"] },
+  ];
+  return (
+    <div style={{ background:"#fafbfc", fontFamily:FONT_UI }}>
+      <div style={{ ...wrap, padding:"2.5rem 2rem 5rem" }}>
+
+        {/* Section hero — 2-col grid matching real list.html section-hero-grid */}
+        <div style={{ display:"grid", gridTemplateColumns:"minmax(0,1.24fr) minmax(260px,0.76fr)", gap:"1.5rem", marginBottom:"2.5rem" }}>
+
+          {/* Left: copy + reading paths (rendered from _index.md .Content) */}
+          <div style={{ padding:"2rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.98))", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+            <Eyebrow>Section hub</Eyebrow>
+            <h1 style={{ fontSize:"clamp(1.9rem,3.8vw,2.8rem)", fontWeight:700, letterSpacing:"-0.04em", lineHeight:1.1, marginBottom:"0.75rem", textWrap:"balance", fontFamily:FONT_UI }}>Client Workflow Systems for Freelancers and Solo Operators</h1>
+            <p style={{ fontSize:"17px", lineHeight:1.72, color:"#475569", maxWidth:"38rem", margin:"0 0 0.85rem", fontFamily:FONT_UI }}>Stage-by-stage workflow guides for freelancers fixing messy client handoffs from inquiry to final payment. Start here when the lifecycle feels broad, reactive, or hard to diagnose.</p>
+            <p style={{ fontSize:"15px", lineHeight:1.65, color:"#475569", margin:"0 0 1.5rem", fontFamily:FONT_UI }}>Use this hub before stack blueprints or comparisons when the underlying process is still unstable. If only one page, start with the anchor workflow.</p>
+
+            {/* Suggested reading paths — rendered from {{&lt; reading-path &gt;}} shortcodes in _index.md */}
+            <p style={{ fontSize:"0.75rem", fontWeight:700, letterSpacing:"0.14em", textTransform:"uppercase", color:"#b8823f", margin:"0 0 0.85rem", fontFamily:FONT_UI }}>Suggested reading paths</p>
+            {HUB_READING_PATHS.map((rp,i)=><ReadingPathSimple key={i} label={rp.label} steps={rp.steps} />)}
+          </div>
+
+          {/* Right: journey-note + stat + featured link (mirrors real section-hero-panel) */}
+          <aside style={{ display:"grid", gap:"1rem", alignContent:"start" }}>
+            <p style={{ fontSize:"11px", fontWeight:700, letterSpacing:"0.1em", textTransform:"uppercase", color:"#64748b", margin:"0 0 0.1rem", fontFamily:FONT_UI }}>Start here</p>
+            <div style={{ padding:"1rem 1.05rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"14px", background:"#f8fafc", fontSize:"14px", lineHeight:1.65, color:"#334155", fontFamily:FONT_UI }}>
+              <strong style={{ display:"block", marginBottom:"0.4rem", color:"#0f172a" }}>Use this hub as a curated starting point.</strong>
+              Start with the clearest next-step page, then move into supporting implementation content that helps you act on it.
+            </div>
+            <div style={{ padding:"1rem 1.05rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"14px", background:"#f8fafc" }}>
+              <span style={{ display:"block", fontSize:"2rem", fontWeight:700, color:"#0f172a", lineHeight:1, fontFamily:FONT_UI }}>12</span>
+              <p style={{ fontSize:"14px", color:"#475569", margin:"0.2rem 0 0", fontFamily:FONT_UI }}>pages in this hub</p>
+            </div>
+            <div style={{ padding:"1rem 1.05rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"14px", background:"#fff" }}>
+              <p style={{ fontSize:"11px", fontWeight:700, letterSpacing:"0.1em", textTransform:"uppercase", color:"#64748b", margin:"0 0 0.4rem", fontFamily:FONT_UI }}>Priority page</p>
+              <a href="#" onClick={e=>{e.preventDefault();onNavigate("article");}} style={{ fontSize:"14px", fontWeight:600, color:"#0f172a", textDecoration:"none", fontFamily:FONT_UI }}>Freelance Client Workflow System: Inquiry to Final Payment →</a>
+            </div>
+            <div style={{ padding:"1.25rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"14px", background:"#fff", fontSize:"14px", fontFamily:FONT_UI }}>
+              <p style={{ fontSize:"11px", fontWeight:700, letterSpacing:"0.12em", textTransform:"uppercase", color:"#0f766e", margin:"0 0 0.5rem" }}>Use this hub when</p>
+              <p style={{ color:"#475569", margin:0, lineHeight:1.65 }}>Leads, kickoff, delivery, billing, or handoffs feel loose. Start with the anchor workflow, then use stage pages to tighten the broken part.</p>
+            </div>
+          </aside>
+        </div>
+
+        {/* Priority pages section */}
+        <div style={{ marginBottom:"2.5rem" }}>
+          <p style={{ fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.16em", textTransform:"uppercase", color:"#b8823f", margin:"0 0 0.4rem", fontFamily:FONT_UI }}>Priority pages</p>
+          <h2 style={{ fontSize:"28px", fontWeight:600, letterSpacing:"-0.04em", marginBottom:"0.4rem", color:"#0f172a", fontFamily:FONT_UI }}>Start with the strongest pages in this hub</h2>
+          <p style={{ color:"#475569", fontSize:"16px", margin:"0 0 1.5rem", fontFamily:FONT_UI }}>These pages carry the main lifecycle, decision, and implementation paths. Open them before drilling into narrower supporting pages.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(2,minmax(0,1fr))", gap:"1.5rem" }}>
+            {SAMPLE_CARDS.slice(0,2).map((c,i)=><PageCard key={i} {...c} onClick={()=>onNavigate("article")} />)}
+          </div>
+        </div>
+
+        {/* Supporting pages section */}
+        <div>
+          <p style={{ fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.16em", textTransform:"uppercase", color:"#b8823f", margin:"0 0 0.4rem", fontFamily:FONT_UI }}>More pages in this hub</p>
+          <h2 style={{ fontSize:"28px", fontWeight:600, letterSpacing:"-0.04em", marginBottom:"0.4rem", color:"#0f172a", fontFamily:FONT_UI }}>Supporting pages and follow-on reading</h2>
+          <p style={{ color:"#475569", fontSize:"16px", margin:"0 0 1.5rem", fontFamily:FONT_UI }}>Use these after the priority set when you need a narrower workflow fix, implementation asset, or reference page inside the same cluster.</p>
+          <div style={{ display:"grid", gridTemplateColumns:"repeat(2,minmax(0,1fr))", gap:"1.5rem" }}>
+            {SAMPLE_CARDS.slice(2).map((c,i)=><PageCard key={i} {...c} onClick={()=>onNavigate(c.type==="template"?"template":"article")} />)}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+/* ─── Article aside tag chip (navigational topic link, not CTA) ─── */
+function ArticleTagChip({ slug, label }) {
+  const [hov, setHov] = React.useState(false);
+  return (
+    <a href={`/tags/${slug}/`} onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)} style={{
+      display:"inline-flex", alignItems:"center",
+      height:"24px", padding:"0 0.55rem",
+      borderRadius:"999px",
+      border:`1px solid ${hov ? "#0f8b8d" : "rgba(226,232,240,1)"}`,
+      background: hov ? "#ccfbf1" : "#f8fafc",
+      color: hov ? "#0f766e" : "#475569",
+      fontSize:"12px", fontWeight:500,
+      textDecoration:"none", whiteSpace:"nowrap",
+      transition:"all 150ms ease", fontFamily:FONT_UI,
+    }}>#{label}</a>
+  );
+}
+
+/* ─────────────────────────
+   ARTICLE PAGE
+   ───────────────────────── */
+function ArticlePage({ onNavigate, isTemplate=false }) {
+  return (
+    <div style={{ background:"#fafbfc", fontFamily:FONT_UI }}>
+      <div style={{ ...wrap, padding:"2rem 2rem 5rem" }}>
+        <div style={{ display:"grid", gridTemplateColumns:"minmax(0,1.16fr) minmax(260px,0.84fr)", gap:"1.75rem", marginBottom:"1.75rem" }}>
+          {/* Main header */}
+          <div style={{ padding:"2.2rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"linear-gradient(180deg,rgba(255,255,255,0.98),rgba(248,250,252,0.98))", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+            <Eyebrow>Client Workflow Systems</Eyebrow>
+            <h1 style={{ fontSize:"clamp(1.8rem,3.5vw,2.6rem)", fontWeight:700, letterSpacing:"-0.03em", lineHeight:1.1, textWrap:"balance", maxWidth:"16ch", marginBottom:"0.6rem", fontFamily:FONT_UI }}>
+              {isTemplate ? "Client Onboarding Checklist for Freelancers" : "Freelance Client Workflow System: Inquiry to Final Payment"}
+            </h1>
+            <p style={{ fontSize:"17px", lineHeight:1.72, color:"#475569", maxWidth:"38rem", margin:"0 0 1.25rem", fontFamily:FONT_UI }}>
+              {isTemplate
+                ? "A trigger-moment checklist for the kickoff stage. Use this after signing but before first delivery."
+                : "A structured operating sequence that covers the full client lifecycle from first inquiry through delivery, approval, billing, and project close."}
+            </p>
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"0.5rem", marginBottom:"1.25rem" }}>
+              <Pill variant="teal">{isTemplate?"Asset":"Workflow"}</Pill>
+              <Pill variant="teal">{isTemplate?"Checklist":"How-to"}</Pill>
+              <Pill variant="slate">Updated Jan 2, 2025</Pill>
+            </div>
+            <div style={{ aspectRatio:"16/9", borderRadius:"12px", background: isTemplate ? "linear-gradient(135deg,rgba(15,139,141,0.18),rgba(184,130,63,0.42))" : "linear-gradient(135deg,rgba(15,139,141,0.26),rgba(8,92,110,0.78))", overflow:"hidden" }}></div>
+          </div>
+
+          {/* Aside */}
+          <aside style={{ display:"grid", gap:"1rem", alignContent:"start" }}>
+            {[
+              { label:"Use this page for", body: isTemplate ? "Running the kickoff stage cleanly after a client has signed. Use this checklist as an execution asset, not as a pre-sale tool." : "Building a repeatable client lifecycle from inquiry to project close. Use as the primary framework before going into stage-specific or stack pages." },
+              { label:"Section hub", body: isTemplate ? "Use the Templates & Checklists hub if you need the broader execution-asset library." : "Use the Client Workflow Systems hub if you need the broader cluster view before going narrower." },
+              { label:"Tags", tags: isTemplate
+                ? [
+                    { slug:"onboarding",      label:"onboarding"      },
+                    { slug:"kickoff",         label:"kickoff"         },
+                    { slug:"client-approval", label:"client-approval" },
+                  ]
+                : [
+                    { slug:"client-workflow", label:"client-workflow" },
+                    { slug:"intake",          label:"intake"          },
+                    { slug:"billing",         label:"billing"         },
+                  ]
+              },
+              { label:"Best next move", body: isTemplate ? "After this checklist, open the milestone delivery workflow to set up review and approval inside the same engagement." : "After this page, open the lean stack blueprint to match a tool model to your operating sequence.", soft:true },
+              { label:"Page type", body: isTemplate ? "Execution asset (checklist) tied to a trigger moment, not general blog content." : "Workflow page with operational guidance, not general blog content.", muted:true },
+            ].map(a=>(
+              <div key={a.label} style={{ padding:"1.5rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:a.soft?"linear-gradient(180deg,rgba(255,255,255,1),rgba(248,250,252,1))":a.muted?"#f8fafc":"#fff", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+                <p style={{ fontSize:"11px", fontWeight:700, letterSpacing:"0.12em", textTransform:"uppercase", color:"#0f766e", margin:"0 0 0.6rem", fontFamily:FONT_UI }}>{a.label}</p>
+                {a.tags ? (
+                  <ul style={{ listStyle:"none", margin:0, padding:0, display:"flex", flexWrap:"wrap", gap:"0.4rem" }}>
+                    {a.tags.map(t=><li key={t.slug} style={{ margin:0 }}><ArticleTagChip slug={t.slug} label={t.label} /></li>)}
+                  </ul>
+                ) : (
+                  <p style={{ fontSize:"14px", lineHeight:1.65, color:"#475569", margin:0, fontFamily:FONT_UI }}>{a.body}</p>
+                )}
+              </div>
+            ))}
+          </aside>
+        </div>
+
+        {/* Reading layout */}
+        <div style={{ width:"min(100%,940px)", padding:"2.2rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"#fff", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+          {isTemplate && (
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"0.5rem", marginBottom:"1.75rem", padding:"0.75rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"12px", background:"#f8fafc" }}>
+              {["Copy as plain text","Print or save as PDF"].map(action=>(
+                <button key={action} style={{ display:"inline-flex", alignItems:"center", gap:"0.4rem", padding:"0.5rem 0.9rem", border:"1px solid rgba(203,213,225,1)", borderRadius:"8px", background:"#fff", color:"#0f172a", fontSize:"14px", fontWeight:500, cursor:"pointer", fontFamily:FONT_UI }}>{action}</button>
+              ))}
+            </div>
+          )}
+          <div style={{ maxWidth:"720px" }}>
+            <h2 style={{ fontSize:"27px", fontWeight:600, letterSpacing:"-0.02em", lineHeight:1.22, marginBottom:"1.1rem", color:"#0f172a", fontFamily:FONT_UI }}>
+              {isTemplate ? "How to use this checklist" : "What this workflow covers"}
+            </h2>
+            <p style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", marginBottom:"1.35rem" }}>
+              {isTemplate
+                ? "This checklist is a trigger-moment asset. It assumes the client has signed and the engagement is confirmed. Use it to run the kickoff stage cleanly — not as a pre-sale tool."
+                : "The freelance client lifecycle has six stages: inquiry, intake, proposal, kickoff, delivery, and close. Each stage has a clear entry point, a set of decisions, and a defined output that hands off to the next stage."}
+            </p>
+            <p style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", marginBottom:"1.35rem" }}>
+              {isTemplate
+                ? "Run through each item in order before your first delivery or kickoff call. Items marked as required should not be skipped — they protect both you and the client."
+                : "Most solo operators skip the intake and proposal stages, which creates handoff problems later. The goal of this system is to standardize each stage so nothing important falls through — not to automate everything or buy expensive tools."}
+            </p>
+            {isTemplate ? (
+              <>
+                <h3 style={{ fontSize:"21px", fontWeight:600, letterSpacing:"-0.02em", lineHeight:1.28, marginTop:"2rem", marginBottom:"0.9rem", color:"#0f172a", fontFamily:FONT_UI }}>Before the kickoff call</h3>
+                <ul style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", paddingLeft:"1.5rem", marginBottom:"1.35rem" }}>
+                  <li>Send the signed contract to the client for their records</li>
+                  <li>Confirm the kickoff date, time, and video link in writing</li>
+                  <li>Share the project brief or scope document</li>
+                  <li>Confirm the payment schedule and first invoice date</li>
+                  <li>Set up the client folder in your project management tool</li>
+                </ul>
+                <h3 style={{ fontSize:"21px", fontWeight:600, letterSpacing:"-0.02em", lineHeight:1.28, marginTop:"2rem", marginBottom:"0.9rem", color:"#0f172a", fontFamily:FONT_UI }}>During the kickoff call</h3>
+                <ul style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", paddingLeft:"1.5rem", marginBottom:"1.35rem" }}>
+                  <li>Review scope, deliverables, and timeline together</li>
+                  <li>Confirm approval process and turnaround expectations</li>
+                  <li>Agree on communication channel and response time</li>
+                  <li>Clarify revision rounds included in scope</li>
+                </ul>
+              </>
+            ) : (
+              <>
+                <h3 style={{ fontSize:"21px", fontWeight:600, letterSpacing:"-0.02em", lineHeight:1.28, marginTop:"2rem", marginBottom:"0.9rem", color:"#0f172a", fontFamily:FONT_UI }}>Stage 1 — Inquiry</h3>
+                <p style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", marginBottom:"1.35rem" }}>
+                  The inquiry stage begins when a prospective client first contacts you. The output is a qualified lead who moves to intake or is politely declined. Most solo operators do not have a written inquiry response, which means quality varies by mood and busyness.
+                </p>
+                <ul style={{ fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, color:"#334155", paddingLeft:"1.5rem", marginBottom:"1.35rem" }}>
+                  <li>Respond within one business day</li>
+                  <li>Use a short qualification filter (3–4 questions)</li>
+                  <li>Decide: move to intake, defer, or decline</li>
+                </ul>
+                <blockquote style={{ borderLeft:"4px solid rgba(20,184,166,0.22)", padding:"0.35rem 0 0.35rem 1rem", color:"#475569", fontFamily:FONT_PROSE, fontSize:"16.75px", lineHeight:1.9, marginBottom:"1.35rem", fontStyle:"italic" }}>
+                  The point of the inquiry stage is not to sell harder. It is to filter better.
+                </blockquote>
+              </>
+            )}
+
+            {/* Related + utility panel */}
+            <UtilityPanel type={isTemplate ? "template" : "workflow"} />
+            <div style={{ marginTop:"2rem", padding:"1.5rem", border:"1px solid rgba(226,232,240,1)", borderRadius:"16px", background:"#fff", boxShadow:"0 1px 2px rgba(15,23,42,0.04)" }}>
+              <p style={{ fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.16em", textTransform:"uppercase", color:"#b8823f", margin:"0 0 0.4rem", fontFamily:FONT_UI }}>Continue the system</p>
+              <h2 style={{ fontSize:"22px", fontWeight:600, letterSpacing:"-0.02em", margin:"0 0 0.25rem", fontFamily:FONT_UI, lineHeight:1.2 }}>Related reading</h2>
+              <p style={{ color:"#64748b", fontSize:"14px", marginBottom:"1.25rem", fontFamily:FONT_UI }}>Move to the adjacent page that helps you tighten the same workflow from another angle.</p>
+              <div style={{ display:"grid", gridTemplateColumns:"repeat(3,minmax(0,1fr))", gap:"1rem" }}>
+                {SAMPLE_CARDS.slice(0,3).map((c,i)=><PageCard key={i} {...c} onClick={()=>onNavigate("article")} />)}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ─────────────────────────
+   APP
+   ───────────────────────── */
+function App() {
+  const [screen, setScreen] = React.useState("home");
+
+  /* Cross-file screen components — resolved at render time after all scripts have run */
+  const GlossaryHubScreen  = window.GlossaryHubPage;
+  const GlossaryTermScreen = window.GlossaryTermPage;
+  const FaqHubScreen       = window.FaqHubPage;
+  const FaqArticleScreen   = window.FaqArticlePage;
+  const SearchScreen       = window.SearchPage;
+  const ComparisonScreen   = window.ComparisonPage;
+  const BlueprintScreen    = window.BlueprintPage;
+  const TrustScreen        = window.TrustPage;
+  const NotFoundScreen     = window.NotFoundPage;
+  const TaxonomyScreen     = window.TaxonomyPage;
+  const TagsIndexScreen    = window.TagsIndexPage;
+
+  const content = {
+    home:          <HomePage onNavigate={setScreen} />,
+    hub:           <HubPage onNavigate={setScreen} />,
+    article:       <ArticlePage onNavigate={setScreen} isTemplate={false} />,
+    template:      <ArticlePage onNavigate={setScreen} isTemplate={true} />,
+    comparison:    ComparisonScreen   ? <ComparisonScreen   onNavigate={setScreen} /> : null,
+    blueprint:     BlueprintScreen    ? <BlueprintScreen    onNavigate={setScreen} /> : null,
+    "glossary-hub":  GlossaryHubScreen  ? <GlossaryHubScreen  onNavigate={setScreen} /> : null,
+    "glossary-term": GlossaryTermScreen ? <GlossaryTermScreen onNavigate={setScreen} /> : null,
+    "faq-hub":       FaqHubScreen       ? <FaqHubScreen       onNavigate={setScreen} /> : null,
+    "faq-article":   FaqArticleScreen   ? <FaqArticleScreen   onNavigate={setScreen} /> : null,
+    "search":        SearchScreen       ? <SearchScreen       onNavigate={setScreen} /> : null,
+    "trust":         TrustScreen        ? <TrustScreen        onNavigate={setScreen} /> : null,
+    "not-found":     NotFoundScreen     ? <NotFoundScreen     onNavigate={setScreen} /> : null,
+    "taxonomy":      TaxonomyScreen     ? <TaxonomyScreen     onNavigate={setScreen} /> : null,
+    "tags-index":    TagsIndexScreen    ? <TagsIndexScreen    onNavigate={setScreen} /> : null,
+  };
+  return (
+    <div>
+      <NavTabs screen={screen} onNavigate={setScreen} />
+      <Header activePage={screen==="hub" ? "/client-workflow-systems/" : screen==="blueprint" ? "/software-stack-blueprints/" : screen==="comparison" ? "/workflow-comparisons/" : screen==="glossary-hub"||screen==="glossary-term" ? "/glossary/" : screen==="faq-hub"||screen==="faq-article" ? "/faq/" : ""} />
+      <main>{content[screen] || content.home}</main>
+      <Footer />
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<App />);
+</script>
+<div id="root"></div>
+</body>
+</html>

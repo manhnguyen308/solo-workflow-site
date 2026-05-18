@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading Paths — SoloOpsGuide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+  html{font-size:16px;}
+  body{
+    font-family:"Source Sans 3","Helvetica Neue",Arial,sans-serif;
+    background:#f1f5f9;
+    color:#334155;
+    line-height:1.6;
+    min-height:100vh;
+    padding:2.5rem 1.5rem 6rem;
+  }
+  button{font-family:inherit;cursor:pointer;}
+  /* Hide scrollbar on step track */
+  .steps-track-scroll{overflow-x:auto;scrollbar-width:none;}
+  .steps-track-scroll::-webkit-scrollbar{display:none;}
+</style>
+</head>
+<body>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+
+/* ─── Font stack ─── */
+const F = '"Source Sans 3","Helvetica Neue",Arial,sans-serif';
+
+/* ─── Design tokens ─── */
+const C = {
+  ink:       "#0f172a",
+  ink2:      "#334155",
+  muted:     "#64748b",
+  border:    "rgba(226,232,240,1)",
+  borderHov: "rgba(203,213,225,1)",
+  bg:        "#fafbfc",
+  bgSoft:    "#f8fafc",
+  card:      "#ffffff",
+  brand:     "#0f8b8d",
+  brandDp:   "#0f766e",
+  amber:     "#b8823f",
+  amberSf:   "#fff3e3",
+  amberDk:   "#926227",
+};
+
+/* ─── Page type metadata ─── */
+const TYPE_CFG = {
+  workflow:   { label:"Workflow",   bg:"rgba(15,139,141,0.1)",  fg:"#0f766e" },
+  template:   { label:"Asset",      bg:"rgba(15,118,110,0.1)",  fg:"#0f766e" },
+  blueprint:  { label:"Blueprint",  bg:"rgba(29,111,164,0.1)",  fg:"#1d6fa4" },
+  comparison: { label:"Comparison", bg:"rgba(154,107,51,0.1)",  fg:"#9a6b33" },
+  faq:        { label:"FAQ",        bg:"rgba(71,85,105,0.1)",   fg:"#475569" },
+  glossary:   { label:"Glossary",   bg:"rgba(71,85,105,0.1)",   fg:"#475569" },
+};
+
+/* ─── Reading path data ─── */
+const PATHS = [
+  {
+    id: "kickoff",
+    goal: "For Kickoff Reliability",
+    desc: "Fix loose handoffs between proposal acceptance and first delivery.",
+    time: "~15 min",
+    accent: "#0f8b8d",
+    accentBg: "rgba(15,139,141,0.05)",
+    steps: [
+      { title: "Proposal handoff",     type: "workflow", desc: "Standardize the transition from accepted proposal to signed contract — what gets sent, in what order, by when." },
+      { title: "Onboarding workflow",  type: "workflow", desc: "Define the kickoff sequence from contract to first delivery. What the client receives and when." },
+      { title: "Onboarding checklist", type: "template", desc: "A trigger-moment checklist for running the kickoff call cleanly, without forgetting access or scope details." },
+      { title: "Weekly operations",    type: "template", desc: "A repeatable structure for keeping the engagement on track after kickoff completes." },
+    ],
+  },
+  {
+    id: "delivery",
+    goal: "For Delivery Consistency",
+    desc: "Build reliable delivery milestones from kickoff through final client handoff.",
+    time: "~24 min",
+    accent: "#1d6fa4",
+    accentBg: "rgba(29,111,164,0.05)",
+    steps: [
+      { title: "Anchor workflow",       type: "workflow", desc: "Understand the full client lifecycle before narrowing to the delivery stage specifically." },
+      { title: "Milestone delivery",    type: "workflow", desc: "Set and communicate delivery milestones so approvals do not stall unexpectedly mid-project." },
+      { title: "Weekly status update",  type: "template", desc: "A short repeatable update format for keeping active engagements visible to both sides." },
+      { title: "Delivery QA checklist", type: "template", desc: "Check deliverables against scope before sending. Catches gaps before the client does." },
+      { title: "Project handoff",       type: "workflow", desc: "Run a clean close-out — assets, access, final approval, and invoice — in one sequence." },
+      { title: "Offboarding template",  type: "template", desc: "Standardize the close-out message and post-project follow-up to end on a strong note." },
+    ],
+  },
+  {
+    id: "billing",
+    goal: "For Billing Clarity",
+    desc: "Close payment gaps from first invoice through final receipt and project close.",
+    time: "~20 min",
+    accent: "#b8823f",
+    accentBg: "rgba(184,130,63,0.05)",
+    steps: [
+      { title: "Anchor workflow",       type: "workflow",  desc: "Understand the full client lifecycle first, including where billing gaps most often appear." },
+      { title: "Invoice workflow",      type: "workflow",  desc: "Define your invoicing trigger, format, delivery method, and follow-up rules in one place." },
+      { title: "Invoice checklist",     type: "template",  desc: "A trigger-moment asset for sending clean, professional invoices without errors or omissions." },
+      { title: "Late payment FAQ",      type: "faq",       desc: "Handle payment delays and client silence without damaging the relationship or the project." },
+      { title: "Project close workflow",type: "workflow",  desc: "Close the engagement cleanly once final payment is confirmed and all deliverables are accepted." },
+    ],
+  },
+];
+
+/* ─── Helpers ─── */
+function hexToRgb(hex) {
+  return [
+    parseInt(hex.slice(1,3),16),
+    parseInt(hex.slice(3,5),16),
+    parseInt(hex.slice(5,7),16),
+  ].join(",");
+}
+
+/* ─── TypePill ─── */
+function TypePill({ type, size = "sm" }) {
+  const cfg = TYPE_CFG[type] || TYPE_CFG.workflow;
+  const pad = size === "sm" ? "0.12rem 0.46rem" : "0.2rem 0.6rem";
+  const fs  = size === "sm" ? "10px" : "11px";
+  return (
+    <span style={{
+      display:"inline-flex", alignItems:"center",
+      padding:pad, borderRadius:"999px",
+      fontSize:fs, fontWeight:700, letterSpacing:"0.06em", textTransform:"uppercase",
+      fontFamily:F, background:cfg.bg, color:cfg.fg, whiteSpace:"nowrap",
+      lineHeight:1.4,
+    }}>{cfg.label}</span>
+  );
+}
+
+/* ─── Track step card ─── */
+function TrackStep({ step, index, total, showDesc, accent }) {
+  const [hov, setHov] = React.useState(false);
+  const isFirst = index === 0;
+  const isLast  = index === total - 1;
+  const rgb = hexToRgb(accent);
+
+  const borderColor = isFirst
+    ? `rgba(${rgb},0.30)`
+    : isLast  ? "rgba(184,130,63,0.24)"
+    : hov     ? `rgba(${rgb},0.22)` : C.border;
+
+  const bg = isFirst
+    ? `linear-gradient(155deg,rgba(${rgb},0.08) 0%,rgba(255,255,255,1) 55%)`
+    : isLast  ? "linear-gradient(155deg,rgba(255,243,227,0.52) 0%,rgba(255,255,255,1) 55%)"
+    : hov     ? C.card : C.bgSoft;
+
+  const numBg  = isLast ? "rgba(184,130,63,0.14)" : `rgba(${rgb},0.12)`;
+  const numClr = isLast ? C.amberDk : accent;
+
+  return (
+    <div
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        width:"178px", flexShrink:0,
+        padding:showDesc ? "0.9rem 1rem 0.85rem" : "0.72rem 1rem",
+        border:`1px solid ${borderColor}`,
+        borderRadius:"14px", background:bg,
+        boxShadow:hov ? "0 8px 22px rgba(15,23,42,0.09)" : "0 1px 2px rgba(15,23,42,0.04)",
+        transform:hov ? "translateY(-2px)" : "translateY(0)",
+        transition:"all 160ms ease",
+        cursor:"pointer", display:"flex", flexDirection:"column", gap:"0.48rem",
+      }}
+    >
+      {/* Row 1: number + type pill */}
+      <div style={{ display:"flex", alignItems:"center", justifyContent:"space-between" }}>
+        <div style={{
+          display:"inline-flex", alignItems:"center", justifyContent:"center",
+          width:"22px", height:"22px", borderRadius:"50%", flexShrink:0,
+          fontSize:"11px", fontWeight:700, fontFamily:F,
+          background:numBg, color:numClr,
+        }}>{index + 1}</div>
+        <TypePill type={step.type} />
+      </div>
+
+      {/* Title */}
+      <div style={{
+        fontSize:"13.5px", fontWeight:600, lineHeight:1.35,
+        color:C.ink, letterSpacing:"-0.01em", fontFamily:F,
+      }}>{step.title}</div>
+
+      {/* Description */}
+      {showDesc && (
+        <div style={{ fontSize:"11.5px", lineHeight:1.55, color:C.muted, fontFamily:F }}>
+          {step.desc}
+        </div>
+      )}
+
+      {/* Begin strip — first step only */}
+      {isFirst && (
+        <div style={{
+          marginTop:"0.4rem", paddingTop:"0.55rem",
+          borderTop:`1px solid rgba(${rgb},0.14)`,
+          display:"flex", alignItems:"center", gap:"0.35rem",
+        }}>
+          <svg width="8" height="8" viewBox="0 0 8 8"><circle cx="4" cy="4" r="3.5" fill={accent}/></svg>
+          <span style={{ fontSize:"10px", fontWeight:700, color:accent, letterSpacing:"0.08em", textTransform:"uppercase", fontFamily:F }}>Begin here</span>
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ─── Track connector arrow ─── */
+function TrackConnector() {
+  return (
+    <div style={{
+      display:"flex", alignItems:"center", justifyContent:"center",
+      width:"30px", flexShrink:0, alignSelf:"stretch",
+    }}>
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M5 3.5L8.5 7L5 10.5" stroke="#94a3b8" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </div>
+  );
+}
+
+/* ─── List step row ─── */
+function ListStep({ step, index, total, showDesc, accent }) {
+  const [hov, setHov] = React.useState(false);
+  const isFirst = index === 0;
+  const isLast  = index === total - 1;
+  const rgb = hexToRgb(accent);
+
+  return (
+    <div style={{ display:"flex", alignItems:"stretch", gap:0 }}>
+      {/* Timeline spine — position:relative so circle can be abs-centered */}
+      <div style={{ position:"relative", flexShrink:0, width:"38px" }}>
+        {/* Number circle — vertically centered against the content card */}
+        <div style={{
+          position:"absolute", top:"50%", left:"50%",
+          transform:"translate(-50%,-50%)",
+          display:"flex", alignItems:"center", justifyContent:"center",
+          width:"28px", height:"28px", borderRadius:"50%", zIndex:1,
+          fontSize:"12px", fontWeight:700, fontFamily:F,
+          background: isLast ? "rgba(184,130,63,0.14)" : `rgba(${rgb},0.12)`,
+          color: isLast ? C.amberDk : accent,
+          boxShadow:`0 0 0 4px ${isLast ? "rgba(184,130,63,0.07)" : `rgba(${rgb},0.07)`}`,
+        }}>{index + 1}</div>
+        {/* Connector line from below circle to bottom of row gap */}
+        {!isLast && (
+          <div style={{
+            position:"absolute",
+            top:"calc(50% + 14px)",
+            bottom:"-10px",
+            left:"50%", transform:"translateX(-50%)",
+            width:"1px", background:C.border,
+          }}></div>
+        )}
+      </div>
+
+      {/* Content row */}
+      <div
+        onMouseEnter={() => setHov(true)}
+        onMouseLeave={() => setHov(false)}
+        style={{
+          flex:1, marginLeft:"10px",
+          marginBottom: isLast ? 0 : "10px",
+          padding: showDesc ? "0.75rem 1rem 0.8rem" : "0.65rem 1rem",
+          border:`1px solid ${hov ? `rgba(${rgb},0.26)` : C.border}`,
+          borderRadius:"12px",
+          background:hov ? C.card : C.bgSoft,
+          boxShadow:hov ? "0 6px 18px rgba(15,23,42,0.07)" : "0 1px 2px rgba(15,23,42,0.04)",
+          transition:"all 160ms ease",
+          cursor:"pointer",
+        }}
+      >
+        <div style={{ display:"flex", alignItems:"center", gap:"0.6rem", flexWrap:"wrap" }}>
+          <TypePill type={step.type} size="md" />
+          <span style={{ fontSize:"14.5px", fontWeight:600, color:C.ink, letterSpacing:"-0.01em", fontFamily:F }}>
+            {step.title}
+          </span>
+          {isFirst && (
+            <span style={{ fontSize:"10px", fontWeight:700, color:accent, letterSpacing:"0.08em", textTransform:"uppercase", fontFamily:F }}>
+              — Begin
+            </span>
+          )}
+          {isLast && (
+            <span style={{ fontSize:"10px", fontWeight:700, color:C.amberDk, letterSpacing:"0.08em", textTransform:"uppercase", fontFamily:F }}>
+              — Finish
+            </span>
+          )}
+        </div>
+        {showDesc && (
+          <p style={{ margin:"0.3rem 0 0", fontSize:"13px", lineHeight:1.58, color:C.muted, fontFamily:F }}>
+            {step.desc}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Begin button ─── */
+function BeginBtn({ accent }) {
+  const [hov, setHov] = React.useState(false);
+  const rgb = hexToRgb(accent);
+  return (
+    <button
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        display:"inline-flex", alignItems:"center", gap:"0.3rem",
+        height:"34px", padding:"0 1rem",
+        borderRadius:"8px", border:"none",
+        background:hov ? `rgba(${rgb},0.88)` : accent,
+        color:"#ffffff",
+        fontSize:"13.5px", fontWeight:500, fontFamily:F,
+        whiteSpace:"nowrap", transition:"background 150ms ease",
+      }}
+    >
+      Begin path <span style={{ opacity:0.85 }}>→</span>
+    </button>
+  );
+}
+
+/* ─── Path card ─── */
+function PathCard({ path, layout, showDesc, accentMode }) {
+  const showBorder = accentMode === "border" || accentMode === "both";
+  const showHdBg   = accentMode === "header" || accentMode === "both";
+
+  return (
+    <div style={{
+      border:`1px solid ${C.border}`,
+      borderLeft:`${showBorder ? "3px" : "1px"} solid ${showBorder ? path.accent : C.border}`,
+      borderRadius:"20px",
+      background:C.card,
+      boxShadow:"0 1px 4px rgba(15,23,42,0.05)",
+      overflow:"hidden",
+    }}>
+
+      {/* ── Path header ── */}
+      <div style={{
+        display:"flex", alignItems:"flex-start", justifyContent:"space-between",
+        flexWrap:"wrap", gap:"1rem",
+        padding:"1.3rem 1.5rem 1.15rem",
+        borderBottom:`1px solid ${C.border}`,
+        background:showHdBg ? path.accentBg : "transparent",
+      }}>
+        <div>
+          <p style={{
+            fontSize:"11px", fontWeight:700, letterSpacing:"0.15em", textTransform:"uppercase",
+            color:path.accent, margin:"0 0 0.28rem", fontFamily:F,
+          }}>{path.goal}</p>
+          <p style={{ fontSize:"14px", color:C.muted, margin:0, maxWidth:"440px", fontFamily:F, lineHeight:1.55 }}>
+            {path.desc}
+          </p>
+        </div>
+        <div style={{ display:"flex", alignItems:"center", gap:"0.5rem", flexShrink:0, flexWrap:"wrap" }}>
+          <span style={{
+            display:"inline-flex", alignItems:"center",
+            padding:"0.25rem 0.65rem", borderRadius:"999px",
+            background:C.amberSf, color:C.amberDk,
+            fontSize:"12px", fontWeight:600, fontFamily:F,
+          }}>{path.steps.length} steps</span>
+          <span style={{
+            display:"inline-flex", alignItems:"center",
+            padding:"0.25rem 0.65rem", borderRadius:"999px",
+            background:"#f1f5f9", color:C.muted,
+            fontSize:"12px", fontWeight:600, fontFamily:F,
+          }}>{path.time}</span>
+          <BeginBtn accent={path.accent} />
+        </div>
+      </div>
+
+      {/* ── Step body ── */}
+      <div style={{ padding: layout === "track" ? "1.2rem 1.5rem 1.35rem" : "1.2rem 1.5rem 1.15rem" }}>
+        {layout === "track" ? (
+          <div className="steps-track-scroll">
+            <div style={{ display:"flex", alignItems:"flex-start", gap:0, minWidth:"max-content" }}>
+              {path.steps.map((step, i) => (
+                <React.Fragment key={i}>
+                  <TrackStep step={step} index={i} total={path.steps.length} showDesc={showDesc} accent={path.accent} />
+                  {i < path.steps.length - 1 && <TrackConnector />}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div>
+            {path.steps.map((step, i) => (
+              <ListStep key={i} step={step} index={i} total={path.steps.length} showDesc={showDesc} accent={path.accent} />
+            ))}
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Layout toggle ─── */
+function LayoutToggle({ value, onChange }) {
+  return (
+    <div style={{
+      display:"inline-flex", background:C.bgSoft,
+      border:`1px solid ${C.border}`, borderRadius:"10px", padding:"2px", gap:"2px",
+    }}>
+      {[
+        { id:"track", icon:"⋯", label:"Track" },
+        { id:"list",  icon:"≡", label:"List"  },
+      ].map(o => (
+        <button key={o.id} onClick={() => onChange(o.id)} style={{
+          display:"inline-flex", alignItems:"center", gap:"0.35rem",
+          height:"30px", padding:"0 0.85rem",
+          borderRadius:"8px", border:"none",
+          background:value===o.id ? C.card : "transparent",
+          boxShadow:value===o.id ? "0 1px 3px rgba(15,23,42,0.08)" : "none",
+          color:value===o.id ? C.ink : C.muted,
+          fontSize:"13px", fontWeight:value===o.id?600:400, fontFamily:F,
+          transition:"all 150ms ease",
+        }}>
+          <span style={{ fontSize:"14px", lineHeight:1 }}>{o.icon}</span>
+          {o.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+/* ─── Tweak defaults ─── */
+const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+  "layout": "track",
+  "showDesc": true,
+  "accentMode": "border"
+}/*EDITMODE-END*/;
+
+/* ─── App ─── */
+function App() {
+  const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+  return (
+    <div style={{ maxWidth:"1180px", margin:"0 auto" }}>
+
+      {/* Section header */}
+      <div style={{
+        display:"flex", alignItems:"flex-end", justifyContent:"space-between",
+        flexWrap:"wrap", gap:"1rem", marginBottom:"1.5rem",
+      }}>
+        <div>
+          <p style={{ fontSize:"0.78rem", fontWeight:700, letterSpacing:"0.16em", textTransform:"uppercase", color:C.amber, margin:"0 0 0.4rem", fontFamily:F }}>
+            Suggested Reading Paths
+          </p>
+          <h2 style={{ fontSize:"27px", fontWeight:700, letterSpacing:"-0.03em", color:C.ink, margin:"0 0 0.3rem", fontFamily:F }}>
+            Pick the path that matches your problem
+          </h2>
+          <p style={{ fontSize:"15px", color:C.muted, margin:0, fontFamily:F }}>
+            Each path runs in sequence — open step 1 and follow the arrows through to the end.
+          </p>
+        </div>
+        <LayoutToggle value={t.layout} onChange={v => setTweak("layout", v)} />
+      </div>
+
+      {/* Path cards */}
+      <div style={{ display:"flex", flexDirection:"column", gap:"1.25rem" }}>
+        {PATHS.map(path => (
+          <PathCard
+            key={path.id}
+            path={path}
+            layout={t.layout}
+            showDesc={t.showDesc}
+            accentMode={t.accentMode}
+          />
+        ))}
+      </div>
+
+      {/* Tweaks panel */}
+      <TweaksPanel>
+        <TweakSection label="Layout" />
+        <TweakRadio
+          label="View"
+          value={t.layout}
+          options={["track","list"]}
+          onChange={v => setTweak("layout", v)}
+        />
+        <TweakSection label="Content" />
+        <TweakToggle
+          label="Show step descriptions"
+          value={t.showDesc}
+          onChange={v => setTweak("showDesc", v)}
+        />
+        <TweakSection label="Path style" />
+        <TweakRadio
+          label="Accent"
+          value={t.accentMode}
+          options={["border","header","both"]}
+          onChange={v => setTweak("accentMode", v)}
+        />
+      </TweaksPanel>
+
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+<div id="root"></div>
+</body>
+</html>

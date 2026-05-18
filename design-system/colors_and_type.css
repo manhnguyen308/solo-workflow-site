@@ -1,0 +1,414 @@
+/**
+ * SoloOpsGuide Design System — Colors & Typography
+ * Source: static/css/main.css + designs/src/styles/theme.css
+ * Stack: Hugo / plain CSS (no preprocessor)
+ *
+ * Usage: Import this file in any design prototype or UI kit.
+ * The production site uses these values directly in static/css/main.css.
+ */
+
+/* ─────────────────────────────────────────────
+   BASE COLOR TOKENS
+   ───────────────────────────────────────────── */
+:root {
+  /* Backgrounds */
+  --color-bg:             #fafbfc;       /* Page background (near-white, cool) */
+  --color-bg-soft:        #eef3f6;       /* Slightly deeper bg tint */
+  --color-surface:        #ffffff;       /* Card / panel surface */
+  --color-surface-soft:   #fbfcfd;       /* Softer card surface */
+  --color-surface-tint:   #f2f7f8;       /* Teal-tinted surface */
+  --color-surface-strong: #112634;       /* Dark panel surface */
+  --color-surface-dark:   #0f1c28;       /* Footer / very dark */
+
+  /* Text */
+  --color-ink:            #173042;       /* Body text (primary) */
+  --color-ink-alt:        #0f172a;       /* Slightly bluer near-black (design pass) */
+  --color-ink-soft:       #41576a;       /* Secondary text */
+  --color-ink-mid:        #334155;       /* Mid-dark (prose body) */
+  --color-muted:          #64788a;       /* Tertiary / metadata */
+  --color-muted-light:    #94a3b8;       /* Placeholder text, disabled */
+  --color-muted-mid:      #475569;       /* Body secondary (design pass) */
+
+  /* Borders */
+  --color-line:           rgba(23, 48, 66, 0.10);   /* Default border */
+  --color-line-strong:    rgba(23, 48, 66, 0.16);   /* Stronger border */
+  --color-border:         rgba(226, 232, 240, 1);   /* Design-pass border (slate-200) */
+
+  /* Brand — Teal */
+  --color-brand:          #0f8b8d;       /* Primary teal */
+  --color-brand-strong:   #0b6d71;       /* Dark teal (links, active) */
+  --color-brand-alt:      #0d9488;       /* Design-pass teal (slightly more saturated) */
+  --color-brand-deep:     #0f766e;       /* Deep teal (hover states) */
+  --color-brand-soft:     #e7f6f6;       /* Teal tint background */
+  --color-brand-mint:     #ccfbf1;       /* Light mint tint (design pass) */
+  --color-brand-hover:    #99f6e4;       /* Border on card hover */
+
+  /* Accent — Amber */
+  --color-accent:         #b8823f;       /* Amber (eyebrows, warm labels) */
+  --color-accent-strong:  #926227;       /* Darker amber */
+  --color-accent-bright:  #d97706;       /* Bright amber (design pass) */
+  --color-accent-dark:    #b45309;       /* Dark amber label */
+  --color-accent-soft:    #fff3e3;       /* Amber tint background */
+  --color-accent-light:   #fef3c7;       /* Light amber tint */
+
+  /* Footer */
+  --color-footer-bg:      #0f172a;       /* Footer dark navy */
+  --color-footer-text:    #94a3b8;       /* Footer body text */
+  --color-footer-link:    rgba(226, 234, 239, 0.72);  /* Footer link */
+  --color-footer-hover:   #5eead4;       /* Footer link hover (teal-300) */
+  --color-footer-heading: #ffffff;       /* Footer section headings */
+}
+
+
+/* ─────────────────────────────────────────────
+   SEMANTIC COLOR TOKENS
+   ───────────────────────────────────────────── */
+:root {
+  /* Text roles */
+  --fg1:                  var(--color-ink-alt);       /* Primary heading / UI text */
+  --fg2:                  var(--color-ink-mid);       /* Prose body text */
+  --fg3:                  var(--color-muted-mid);     /* Secondary / supporting text */
+  --fg4:                  var(--color-muted);         /* Metadata, dates, counts */
+  --fg-placeholder:       var(--color-muted-light);   /* Inputs, empty states */
+
+  /* Surface roles */
+  --surface-page:         var(--color-bg);            /* Page canvas */
+  --surface-card:         var(--color-surface);       /* Default card */
+  --surface-card-soft:    var(--color-surface-soft);  /* Soft card variant */
+  --surface-feature:      linear-gradient(180deg, rgba(255,243,227,0.9), rgba(255,255,255,0.95)); /* Amber hero card */
+  --surface-support:      linear-gradient(180deg, rgba(242,247,248,0.96), rgba(255,255,255,0.95)); /* Teal-tint support card */
+  --surface-cta:          linear-gradient(135deg, #f8fafc 0%, rgba(204,251,241,0.45) 100%); /* CTA section */
+
+  /* Interactive */
+  --link:                 var(--color-brand-strong);
+  --link-hover:           var(--color-brand);
+  --focus-ring:           rgba(15, 139, 141, 0.20);
+
+  /* Brand usage */
+  --brand-primary:        var(--color-brand-alt);     /* Buttons, CTAs */
+  --brand-primary-hover:  var(--color-brand-deep);
+  --brand-label:          var(--color-brand-deep);    /* Card type labels */
+  --eyebrow:              var(--color-accent);         /* Section eyebrows */
+
+  /* Border roles */
+  --border-default:       var(--color-border);
+  --border-subtle:        var(--color-line);
+  --border-strong:        var(--color-line-strong);
+}
+
+
+/* ─────────────────────────────────────────────
+   TYPOGRAPHY — FONT FAMILIES
+   ───────────────────────────────────────────── */
+
+/**
+ * CHOSEN DIRECTION: Source Sans 3 (UI) + Lora (prose)
+ *
+ * Rationale:
+ * Source Sans 3 was designed explicitly for UI and editorial interfaces.
+ * It is open, legible at small sizes (metadata, nav, tables), sturdy at
+ * large sizes (headings), and has none of the SaaS-dashboard associations
+ * that Inter carries. It is not neutral to the point of blandness (cf.
+ * Public Sans) and not too geometric/friendly (cf. DM Sans). It reads
+ * like a well-edited publication — exactly right for an operating manual.
+ *
+ * Lora is a contemporary serif designed for screen reading. It works well
+ * at 16–18px body sizes with generous leading, holds authority in long-form
+ * guides and checklist prose, and creates clear differentiation from the
+ * UI chrome — signalling "you are reading now" vs. "you are navigating."
+ * This two-family split is justified because SoloOpsGuide has genuinely
+ * distinct reading contexts: navigation/metadata vs. long-form article prose.
+ *
+ * Why not the alternatives:
+ * - Inter: accurate but wrong tone — feels like a SaaS tool, not a guide
+ * - DM Sans: too rounded/casual for a credibility-focused editorial brand
+ * - IBM Plex Sans: structured but cold; less readable at body prose sizes
+ * - Public Sans: government-utilitarian, no warmth or editorial character
+ * - Source Sans 3 alone: workable, but prose readability improves with Lora
+ *
+ * Production weights to load:
+ * Source Sans 3: 400, 500, 600, 700 (wght axis: 300–900 via variable font)
+ * Lora:          400, 400i, 600      (covers prose body + blockquotes + bold)
+ *
+ * Google Fonts import (production):
+ * @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+ *
+ * Performance note:
+ * Both families are available as variable fonts on Google Fonts — one request
+ * each. Use display=swap. Total transfer ~28–35KB gzipped for both. For Hugo,
+ * self-host via google-webfonts-helper to avoid cross-origin latency and
+ * satisfy stricter privacy policies (GDPR). Preload the Source Sans 3 woff2
+ * in <head> as it's render-blocking for above-fold text.
+ *
+ * Fallback stacks:
+ * Source Sans 3 → "Helvetica Neue", Arial, sans-serif
+ * Lora          → Georgia, "Times New Roman", serif
+ */
+
+:root {
+  --font-sans:     "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-serif:    "Lora", Georgia, "Times New Roman", serif;
+  --font-mono:     "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* Semantic aliases */
+  --font-ui:       var(--font-sans);    /* All UI chrome: nav, headings, buttons, labels, metadata */
+  --font-body:     var(--font-serif);   /* Long-form prose: article body, checklist content */
+  --font-code:     var(--font-mono);    /* Code blocks, inline code */
+}
+
+
+/* ─────────────────────────────────────────────
+   TYPOGRAPHY — TYPE SCALE
+   ───────────────────────────────────────────── */
+:root {
+  /* Display / Heading sizes (fluid) */
+  --text-h1:        clamp(3rem, 6vw, 4.8rem);           /* Page hero title */
+  --text-h1-inner:  clamp(2.35rem, 4.2vw, 3.25rem);    /* Section hero / article title */
+  --text-h1-trust:  clamp(2rem, 3.3vw, 2.6rem);        /* Trust/editorial page title */
+  --text-h2:        clamp(2rem, 3.5vw, 3rem);           /* Section headings */
+  --text-h2-card:   2rem;                                /* Card h2 (hero feature) */
+  --text-h2-section: 32px;                               /* Section intro h2 */
+  --text-h3:        clamp(1.25rem, 2vw, 1.6rem);        /* Card titles */
+  --text-h3-card:   20px;                                /* Page card h3 */
+  --text-h3-featured: 24px;                              /* Featured card h3 */
+
+  /* Body sizes */
+  --text-base:      16px;                                /* Default UI body */
+  --text-prose:     16.75px;                             /* Article prose */
+  --text-lead:      18px;                                /* Hero lead paragraph */
+  --text-small:     0.92rem;                             /* Small text, meta */
+  --text-xs:        0.78rem;                             /* Eyebrow / kicker labels */
+  --text-meta:      0.88rem;                             /* Dates, counts */
+  --text-caption:   13px;                                /* Captions, footer links */
+  --text-badge:     0.76rem;                             /* Pills, badges */
+
+  /* Line heights */
+  --leading-display: 1.06;                               /* Large headings */
+  --leading-heading: 1.2;                                /* Medium headings */
+  --leading-body:    1.9;                                 /* Prose reading */
+  --leading-ui:      1.6;                                 /* UI / interface text */
+  --leading-tight:   1.35;                               /* Taglines, compact */
+
+  /* Letter spacing */
+  --tracking-tight:  -0.04em;                            /* Headings */
+  --tracking-tighter: -0.042em;                          /* Page hero titles */
+  --tracking-eyebrow: 0.16em;                            /* Eyebrow / ALL CAPS labels */
+  --tracking-badge:   0.08em;                            /* Badge labels */
+  --tracking-nav:     0;                                  /* Navigation */
+
+  /* Font weights */
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-extrabold: 800;
+}
+
+
+/* ─────────────────────────────────────────────
+   SPACING SYSTEM
+   ───────────────────────────────────────────── */
+:root {
+  /* Layout containers */
+  --wrap:           1180px;    /* Max site width */
+  --wrap-alt:       1280px;    /* Design-pass max width */
+  --measure:        760px;     /* Article/reading column */
+  --article-body:   720px;     /* Prose content max width */
+
+  /* Spacing scale (4px base) */
+  --space-1:   0.25rem;   /*  4px */
+  --space-2:   0.5rem;    /*  8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+
+  /* Component padding */
+  --pad-card:        1.25rem;     /* Default card padding */
+  --pad-card-lg:     2.2rem;      /* Reading layout padding */
+  --pad-section:     5rem;        /* Major section vertical padding */
+  --pad-hero:        clamp(1.6rem, 3vw, 2.6rem);  /* Hero panel padding */
+}
+
+
+/* ─────────────────────────────────────────────
+   BORDER RADIUS SYSTEM
+   ───────────────────────────────────────────── */
+:root {
+  --radius-full:  999px;   /* Fully rounded — pills, badges */
+  --radius-xl:    28px;    /* Large panels */
+  --radius-lg:    24px;    /* Hero panels, large cards */
+  --radius-md:    18px;    /* Medium components, tables */
+  --radius-sm:    14px;    /* Inputs, small cards, buttons */
+  --radius-xs:    10px;    /* Compact buttons (design pass) */
+  --radius-icon:  16px;    /* Brand icon, value icons */
+  --radius-badge: 8px;     /* Article action buttons */
+}
+
+
+/* ─────────────────────────────────────────────
+   SHADOW SYSTEM
+   ───────────────────────────────────────────── */
+:root {
+  --shadow-xs:    0 1px 2px rgba(15, 23, 42, 0.04);     /* Cards (design pass) — barely visible */
+  --shadow-sm:    0 14px 34px rgba(17, 38, 52, 0.07);   /* Standard card shadow */
+  --shadow-md:    0 24px 60px rgba(17, 38, 52, 0.09);   /* Hero / large card shadow */
+  --shadow-hover: 0 10px 24px rgba(15, 23, 42, 0.08);   /* Card hover state */
+  --shadow-brand: 0 14px 28px rgba(15, 139, 141, 0.16); /* Brand button shadow */
+  --shadow-focus: 0 0 0 4px rgba(20, 184, 166, 0.08);   /* Input focus ring */
+  --shadow-icon:  0 10px 24px rgba(15, 23, 42, 0.08), inset 0 1px 0 rgba(255,255,255,0.30); /* Brand icon */
+}
+
+
+/* ─────────────────────────────────────────────
+   TRANSITIONS
+   ───────────────────────────────────────────── */
+:root {
+  --transition-fast:    160ms ease;   /* Default: color, border, bg, transform, shadow */
+  --transition-medium:  180ms ease;   /* Cards */
+  --transition-slow:    300ms ease;   /* Used sparingly */
+}
+
+
+/* ─────────────────────────────────────────────
+   SEMANTIC ELEMENT STYLES
+   (for use in design prototypes)
+   ───────────────────────────────────────────── */
+
+/* --- Google Fonts import (for design prototypes) --- */
+/* In production Hugo: self-host via google-webfonts-helper instead */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* --- Page canvas --- */
+body {
+  background: var(--color-bg);
+  color: var(--fg2);
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  line-height: var(--leading-ui);
+}
+
+/* --- Headings (sans-serif) --- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-ui);
+  color: var(--fg1);
+  margin: 0 0 1rem;
+  letter-spacing: var(--tracking-tight);
+  line-height: var(--leading-display);
+  text-wrap: balance;
+}
+h1 { font-size: var(--text-h1); font-weight: var(--weight-bold); }
+h2 { font-size: var(--text-h2); font-weight: var(--weight-bold); }
+h3 { font-size: var(--text-h3); font-weight: var(--weight-semibold); }
+
+/* --- Prose (serif) --- */
+.prose {
+  font-family: var(--font-body);
+  font-size: var(--text-prose);
+  line-height: var(--leading-body);
+  color: var(--fg2);
+}
+.prose h2, .prose h3 {
+  font-family: var(--font-ui);
+  color: var(--fg1);
+}
+
+/* --- Eyebrow / kicker labels --- */
+.eyebrow {
+  font-family: var(--font-ui);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+  color: var(--eyebrow);
+  margin: 0 0 0.85rem;
+}
+
+/* --- Pills / badges --- */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.72rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-ui);
+  font-size: var(--text-badge);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-badge);
+  text-transform: uppercase;
+}
+.pill-brand {
+  background: var(--color-brand-mint);
+  color: var(--color-brand-deep);
+}
+.pill-muted {
+  background: #f1f5f9;
+  color: var(--fg4);
+}
+.pill-amber {
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+}
+
+/* --- Links --- */
+a {
+  color: var(--link);
+  text-decoration-color: rgba(11, 109, 113, 0.26);
+  text-underline-offset: 0.18em;
+  transition: color var(--transition-fast);
+}
+a:hover { color: var(--link-hover); }
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0.875rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background var(--transition-fast), color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+.btn-primary {
+  background: var(--brand-primary);
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background: var(--brand-primary-hover);
+  color: #ffffff;
+}
+.btn-secondary {
+  background: #f1f5f9;
+  border-color: transparent;
+  color: var(--fg2);
+}
+.btn-secondary:hover {
+  background: #e2e8f0;
+}
+
+/* --- Cards --- */
+.card {
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  background: var(--surface-card);
+  box-shadow: var(--shadow-xs);
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium), border-color var(--transition-medium);
+}
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-hover);
+  border-color: rgba(203, 213, 225, 1);
+}

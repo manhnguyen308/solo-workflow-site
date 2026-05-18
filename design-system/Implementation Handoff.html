@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>SoloOpsGuide — Implementation Handoff</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" />
+<style>
+  :root {
+    --bg: #f6f8fb;
+    --bg-soft: #eef3f6;
+    --surface: #ffffff;
+    --surface-soft: #fbfcfd;
+    --surface-tint: #f2f7f8;
+    --surface-strong: #112634;
+    --surface-dark: #0f1c28;
+    --ink: #173042;
+    --ink-soft: #41576a;
+    --muted: #64788a;
+    --line: rgba(23,48,66,0.10);
+    --line-strong: rgba(23,48,66,0.16);
+    --brand: #0f8b8d;
+    --brand-strong: #0b6d71;
+    --brand-soft: #e7f6f6;
+    --accent: #b8823f;
+    --accent-strong: #926227;
+    --accent-soft: #fff3e3;
+    --radius-xl: 24px;
+    --radius-lg: 18px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+    --wrap: 1080px;
+    --measure: 720px;
+    --font-ui: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+    --font-body: "Lora", Georgia, "Times New Roman", serif;
+    --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background:
+      radial-gradient(circle at top left, rgba(15,139,141,0.06), transparent 32%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--font-ui);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: var(--brand-strong); text-decoration-color: rgba(11,109,113,0.35); text-underline-offset: 0.18em; transition: color 160ms ease; }
+  a:hover { color: var(--brand); }
+
+  /* ── Site header ───────────────────────────────────────────────── */
+  .site-header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    position: sticky; top: 0; z-index: 30;
+    backdrop-filter: blur(16px);
+  }
+  .site-header .wrap {
+    max-width: var(--wrap);
+    margin: 0 auto;
+    padding: 0.95rem clamp(1rem, 3vw, 1.75rem);
+    display: flex; align-items: center; gap: 1rem;
+  }
+  .brand {
+    display: inline-flex; align-items: center; gap: 0.65rem;
+    text-decoration: none; color: var(--ink);
+  }
+  .brand-mark {
+    width: 34px; height: 34px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--brand) 0%, var(--brand-strong) 100%);
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 10px rgba(15,139,141,0.18);
+  }
+  .brand-mark svg { display:block; }
+  .brand-name {
+    font-family: var(--font-ui); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .brand-sub {
+    display: block; font-size: 0.72rem; color: var(--muted); font-weight: 500; letter-spacing: 0.01em; margin-top: 1px;
+  }
+  .header-meta {
+    margin-left: auto; display: flex; align-items: center; gap: 1rem;
+    font-size: 0.82rem; color: var(--muted);
+  }
+  .header-meta .pill {
+    background: var(--brand-soft); color: var(--brand-strong);
+    padding: 0.28rem 0.7rem; border-radius: 999px; font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+  @media (max-width: 640px) { .header-meta .label { display: none; } }
+
+  /* ── Hero ──────────────────────────────────────────────────────── */
+  .hero { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(2rem, 4vw, 3rem); }
+  .hero .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 clamp(1rem, 3vw, 1.75rem); }
+  .eyebrow {
+    font-family: var(--font-ui);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    font-size: 0.78rem;
+    color: var(--accent-strong);
+  }
+  h1.hero-title {
+    font-family: var(--font-ui);
+    font-weight: 700;
+    font-size: clamp(2.1rem, 4.2vw, 3.1rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    margin: 0.75rem 0 1rem;
+    max-width: 22ch;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+  .hero-lead {
+    font-family: var(--font-ui);
+    font-size: 1.125rem;
+    line-height: 1.65;
+    color: var(--ink-soft);
+    max-width: 64ch;
+    margin: 0;
+  }
+  .meta-row {
+    margin-top: 1.5rem;
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .meta-row span + span::before {
+    content: "·"; margin-right: 1.25rem; color: var(--line-strong);
+  }
+
+  /* ── TOC ───────────────────────────────────────────────────────── */
+  .toc-wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 clamp(1rem, 3vw, 1.75rem) 2rem; }
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem clamp(1.25rem, 2.5vw, 1.75rem);
+    box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+  }
+  .toc-kicker {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 0.85rem;
+  }
+  .toc ol {
+    list-style: none; padding: 0; margin: 0;
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.45rem 1.5rem;
+    counter-reset: toc;
+  }
+  .toc li {
+    counter-increment: toc;
+    font-size: 0.95rem;
+  }
+  .toc li::before {
+    content: counter(toc, decimal-leading-zero);
+    font-variant-numeric: tabular-nums;
+    color: var(--brand);
+    font-weight: 700;
+    margin-right: 0.5rem;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  .toc a { color: var(--ink); text-decoration: none; }
+  .toc a:hover { color: var(--brand-strong); text-decoration: underline; }
+  @media (max-width: 820px) { .toc ol { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 520px) { .toc ol { grid-template-columns: 1fr; } }
+
+  /* ── Article body ──────────────────────────────────────────────── */
+  main { padding-bottom: 4rem; }
+  .section {
+    max-width: var(--wrap);
+    margin: 0 auto clamp(2.5rem, 5vw, 3.5rem);
+    padding: 0 clamp(1rem, 3vw, 1.75rem);
+  }
+  .section-head {
+    display: flex; align-items: baseline; gap: 1rem;
+    margin: 0 0 1.25rem;
+    padding-bottom: 0.9rem;
+    border-bottom: 1px solid var(--line);
+  }
+  .section-num {
+    font-family: var(--font-ui);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: var(--brand);
+    text-transform: uppercase;
+    flex: none;
+    padding-top: 0.5rem;
+  }
+  h2.section-title {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: clamp(1.5rem, 2.6vw, 1.95rem);
+    line-height: 1.12;
+    letter-spacing: -0.025em;
+    margin: 0;
+    color: var(--ink);
+    text-wrap: balance;
+  }
+
+  .prose { font-family: var(--font-body); font-size: 1.04rem; line-height: 1.85; color: var(--ink); max-width: var(--measure); }
+  .prose p { margin: 0 0 1rem; }
+  .prose strong { font-weight: 600; }
+
+  h3.sub {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 1.12rem;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    color: var(--ink);
+    margin: 1.75rem 0 0.6rem;
+  }
+  h4.subsub {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.01em;
+    color: var(--ink-soft);
+    text-transform: uppercase;
+    margin: 1.25rem 0 0.4rem;
+  }
+
+  /* Cards / blocks */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.4rem;
+    box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+  }
+  .card + .card { margin-top: 0.85rem; }
+
+  /* Path / file table */
+  .file-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.5rem 0 0.5rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    font-size: 0.95rem;
+  }
+  .file-table th, .file-table td {
+    text-align: left;
+    padding: 0.7rem 0.95rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .file-table tr:last-child td { border-bottom: 0; }
+  .file-table th {
+    font-family: var(--font-ui);
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface-soft);
+  }
+  .file-table td code, .file-table th code, code.path {
+    font-family: var(--font-mono);
+    font-size: 0.88em;
+    background: var(--surface-tint);
+    border: 1px solid var(--line);
+    padding: 0.08rem 0.45rem;
+    border-radius: 6px;
+    color: var(--brand-strong);
+    white-space: nowrap;
+  }
+  .file-table td:first-child { width: 38%; }
+  @media (max-width: 640px) { .file-table td:first-child { width: auto; } .file-table td code { white-space: normal; word-break: break-word; } }
+
+  /* Lists */
+  .editorial-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: grid;
+    gap: 0.55rem;
+  }
+  .editorial-list li {
+    position: relative;
+    padding-left: 1.4rem;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .editorial-list li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0.62em;
+    width: 6px; height: 6px;
+    border-radius: 999px;
+    background: var(--brand);
+  }
+  .editorial-list.checklist li::before {
+    content: "✓";
+    background: none;
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 0.95rem;
+    top: 0; left: 0;
+    width: auto; height: auto;
+  }
+  .editorial-list.dont li::before {
+    content: "—";
+    background: none;
+    color: var(--accent-strong);
+    font-weight: 700;
+    top: 0; left: 0;
+    width: auto; height: auto;
+  }
+
+  /* Ordered steps */
+  ol.steps {
+    list-style: none; counter-reset: step; padding: 0; margin: 0.5rem 0 0;
+    display: grid; gap: 0.6rem;
+  }
+  ol.steps > li {
+    counter-increment: step;
+    position: relative;
+    padding: 0.75rem 1rem 0.75rem 3rem;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
+    line-height: 1.55;
+  }
+  ol.steps > li::before {
+    content: counter(step, decimal-leading-zero);
+    position: absolute;
+    left: 0.85rem; top: 0.75rem;
+    font-family: var(--font-ui);
+    font-variant-numeric: tabular-nums;
+    color: var(--brand);
+    font-weight: 700;
+    font-size: 0.82rem;
+    letter-spacing: 0.04em;
+  }
+  ol.steps strong { display: block; font-weight: 600; color: var(--ink); margin-bottom: 0.1rem; }
+  ol.steps .step-meta { color: var(--muted); font-size: 0.88rem; }
+
+  /* Two-col block */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+  .two-col .card h4.subsub { margin-top: 0; }
+
+  /* Callout */
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: linear-gradient(180deg, rgba(255,243,227,0.55), rgba(255,255,255,0.6));
+    padding: 1rem 1.15rem;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin: 1rem 0 0;
+  }
+  .callout .label {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--accent-strong);
+  }
+  .callout p { margin: 0.35rem 0 0; color: var(--ink-soft); }
+
+  /* Code block */
+  pre.commit {
+    background: var(--surface-strong);
+    color: #e2eef2;
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.25rem;
+    overflow-x: auto;
+    font-family: var(--font-mono);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    margin: 0.75rem 0 0;
+    border: 1px solid #0b1a26;
+  }
+  pre.commit .subj { color: #ffffff; font-weight: 600; }
+  pre.commit .body { color: #b5c4cf; }
+
+  /* Pills */
+  .pill {
+    display: inline-block;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: var(--brand-soft);
+    color: var(--brand-strong);
+    border: 1px solid rgba(15,139,141,0.18);
+  }
+  .pill.amber {
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    border-color: rgba(184,130,63,0.22);
+  }
+  .pill.neutral {
+    background: var(--surface-tint);
+    color: var(--ink-soft);
+    border-color: var(--line);
+  }
+
+  /* Footer note */
+  footer.handoff-foot {
+    background: var(--surface-dark);
+    color: #b5c4cf;
+    margin-top: 2rem;
+    padding: 2.5rem 0;
+  }
+  footer.handoff-foot .wrap {
+    max-width: var(--wrap); margin: 0 auto;
+    padding: 0 clamp(1rem, 3vw, 1.75rem);
+    display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+  }
+  footer.handoff-foot strong { color: #fff; font-weight: 600; }
+  footer.handoff-foot .small { font-size: 0.85rem; color: #8ea0ab; max-width: 48ch; line-height: 1.6; }
+
+  /* Print */
+  @media print {
+    body { background: #fff; }
+    .site-header, footer.handoff-foot { position: static; box-shadow: none; }
+    .toc, .card, .file-table, ol.steps > li, pre.commit, .callout { break-inside: avoid; }
+    .section { page-break-inside: avoid; }
+    a { color: var(--ink); text-decoration: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="SoloOpsGuide design system">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="7" x2="19" y2="7"></line>
+          <line x1="5" y1="12" x2="15" y2="12"></line>
+          <line x1="5" y1="17" x2="13" y2="17"></line>
+          <path d="M15 17 l4 0 m-2 -2 l2 2 l-2 2"></path>
+        </svg>
+      </span>
+      <span>
+        <span class="brand-name">SoloOpsGuide</span>
+        <span class="brand-sub">Design system · production handoff</span>
+      </span>
+    </a>
+    <div class="header-meta">
+      <span class="pill">v1.0 · Final</span>
+      <span class="label">May 2026</span>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Implementation Handoff</span>
+    <h1 class="hero-title">Apply the SoloOpsGuide UI kit to the production Hugo site.</h1>
+    <p class="hero-lead">A scoped plan for moving the completed editorial UI kit into <code class="path">solo-workflow-site</code>. Preserves URLs, slugs, front matter, sitemap behavior, and existing content. Maps every UI-kit screen and component to the Hugo files most likely to change, in the order they should change.</p>
+    <div class="meta-row">
+      <span>For: Claude Code · production repo</span>
+      <span>Scope: redesign + layout fidelity</span>
+      <span>Status: ready to start</span>
+    </div>
+  </div>
+</section>
+
+<div class="toc-wrap">
+  <nav class="toc" aria-label="Contents">
+    <p class="toc-kicker">Contents</p>
+    <ol>
+      <li><a href="#s1">Source UI-kit files</a></li>
+      <li><a href="#s2">Production Hugo files</a></li>
+      <li><a href="#s3">Implementation order</a></li>
+      <li><a href="#s4">Production constraints</a></li>
+      <li><a href="#s5">Typography decision</a></li>
+      <li><a href="#s6">Patterns to preserve</a></li>
+      <li><a href="#s7">Validation checklist</a></li>
+      <li><a href="#s8">Known caveats</a></li>
+      <li><a href="#s9">Commit message</a></li>
+    </ol>
+  </nav>
+</div>
+
+<main>
+
+<!-- ───────── 1 ───────── -->
+<section class="section" id="s1">
+  <header class="section-head">
+    <span class="section-num">Section 01</span>
+    <h2 class="section-title">Source UI-kit files to reference</h2>
+  </header>
+  <div class="prose">
+    <p>These are the canonical sources of design intent. Read them before opening any production template. They contain colors, type, spacing, voice rules, and every layout pattern represented in the kit.</p>
+  </div>
+
+  <h3 class="sub">Design system manifest</h3>
+  <table class="file-table">
+    <thead><tr><th>File</th><th>What it contains</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">README.md</code></td><td>Brand voice, color tokens, typography decision, radius/shadow scale, page-type theme map, iconography rules, header behavior (desktop + mobile), file index.</td></tr>
+      <tr><td><code class="path">SKILL.md</code></td><td>Skill definition — entry point an agent uses to load this design system.</td></tr>
+      <tr><td><code class="path">colors_and_type.css</code></td><td>CSS custom properties for the full token set. The canonical reference for any token value used in production CSS.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Token & component previews</h3>
+  <table class="file-table">
+    <thead><tr><th>File</th><th>What it contains</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">preview/colors-brand.html</code></td><td>Brand teal + amber accent swatches with exact hex/oklch values.</td></tr>
+      <tr><td><code class="path">preview/colors-neutral.html</code></td><td>Ink, ink-soft, muted, surface, line tokens.</td></tr>
+      <tr><td><code class="path">preview/colors-semantic.html</code></td><td>Semantic mapping (page bg, surface, brand, accent, line, etc.).</td></tr>
+      <tr><td><code class="path">preview/type-display.html</code></td><td>H1–H3 display specimens at production sizes.</td></tr>
+      <tr><td><code class="path">preview/type-body.html</code></td><td>Prose body (Lora) at the article measure.</td></tr>
+      <tr><td><code class="path">preview/type-ui.html</code></td><td>UI labels, eyebrows, pills, metadata.</td></tr>
+      <tr><td><code class="path">preview/spacing-tokens.html</code></td><td>Spacing scale, radius, shadow tokens.</td></tr>
+      <tr><td><code class="path">preview/components-buttons.html</code></td><td>Primary, secondary, ghost, link button variants and states.</td></tr>
+      <tr><td><code class="path">preview/components-cards.html</code></td><td>PageCard variants for every page-type theme.</td></tr>
+      <tr><td><code class="path">preview/components-nav.html</code></td><td>Desktop header — final composition.</td></tr>
+      <tr><td><code class="path">preview/components-nav-mobile.html</code></td><td>Mobile header: <strong>closed and open</strong> states side-by-side at 375×.</td></tr>
+      <tr><td><code class="path">preview/components-badges.html</code></td><td>Pills, badges, tag chips.</td></tr>
+      <tr><td><code class="path">preview/brand-logo.html</code></td><td>Logomark SVG + brand lockup.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">UI-kit website (high-fidelity prototype)</h3>
+  <table class="file-table">
+    <thead><tr><th>File</th><th>What it covers</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">ui_kits/website/index.html</code></td><td>Main prototype — homepage, hub, article, template; header, footer, NavTabs, PageCard, Pill/Eyebrow/Btn atoms.</td></tr>
+      <tr><td><code class="path">ui_kits/website/Header.jsx</code></td><td>Site header — desktop + mobile open/closed states, ARIA, toggle behavior.</td></tr>
+      <tr><td><code class="path">ui_kits/website/Footer.jsx</code></td><td>Dark 4-col footer.</td></tr>
+      <tr><td><code class="path">ui_kits/website/PageCard.jsx</code></td><td>Content card themed per cluster.</td></tr>
+      <tr><td><code class="path">ui_kits/website/glossary-faq-search-pages.jsx</code></td><td>Glossary hub, term, FAQ hub, FAQ article, Search; <code class="path">UtilityPanel</code> + <code class="path">RelatedPanel</code>.</td></tr>
+      <tr><td><code class="path">ui_kits/website/comparison-blueprint-pages.jsx</code></td><td>Comparison + blueprint screens and their components: <code class="path">ModelCard</code>, <code class="path">BestForBlock</code>, <code class="path">BlueprintTier</code>, <code class="path">PrincipleList</code>, <code class="path">SetupSequence</code>, <code class="path">NextStepLinkBlock</code>, <code class="path">DecisionShortcut</code>, <code class="path">ProseTable</code>.</td></tr>
+      <tr><td><code class="path">ui_kits/website/trust-page.jsx</code></td><td>Trust / About / Contact prose layout + variant toggle, <code class="path">TrustAside</code>, <code class="path">TCallout</code>, <code class="path">TrustRelated</code>.</td></tr>
+      <tr><td><code class="path">ui_kits/website/not-found-page.jsx</code></td><td>404 recovery — search + 4 cluster cards + glossary/FAQ row.</td></tr>
+      <tr><td><code class="path">ui_kits/website/taxonomy-page.jsx</code></td><td>Single-tag listing — breadcrumb, grouped listing, adjacent tags, hub rail, sparse-tag state.</td></tr>
+      <tr><td><code class="path">ui_kits/website/tags-index-page.jsx</code></td><td>Tags master index — alphabetical groups, page counts, hub rail, thin-tag safeguards.</td></tr>
+      <tr><td><code class="path">ui_kits/website/reading-paths.html</code></td><td>Reading-path shortcode rendering — track and list variants.</td></tr>
+      <tr><td><code class="path">ui_kits/website/README.md</code></td><td>UI-kit notes — what each screen covers, what's intentionally out of scope, what only exists in production.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ───────── 2 ───────── -->
+<section class="section" id="s2">
+  <header class="section-head">
+    <span class="section-num">Section 02</span>
+    <h2 class="section-title">Production Hugo files likely to change</h2>
+  </header>
+  <div class="prose">
+    <p>Each UI-kit pattern maps to a specific Hugo template or partial. Open these files in this order when you start a section — do not edit beyond the mapped paths in one pass.</p>
+  </div>
+
+  <h3 class="sub">Layouts</h3>
+  <table class="file-table">
+    <thead><tr><th>Hugo file</th><th>UI-kit pattern it owns</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">layouts/index.html</code></td><td>Homepage — hero grid, chooser cards, feature card, value props.</td></tr>
+      <tr><td><code class="path">layouts/_default/single.html</code></td><td>Article, template, comparison, blueprint, glossary term, FAQ article. Branches on section / page type.</td></tr>
+      <tr><td><code class="path">layouts/_default/list.html</code></td><td>Hub pages (workflows, blueprints, comparisons, templates, glossary, FAQ) + <strong>no-pages branch</strong> for trust/prose pages.</td></tr>
+      <tr><td><code class="path">layouts/_default/taxonomy.html</code></td><td>Single tag listing (<code class="path">/tags/&lt;slug&gt;/</code>).</td></tr>
+      <tr><td><code class="path">layouts/_default/terms.html</code></td><td>Tags master index (<code class="path">/tags/</code>).</td></tr>
+      <tr><td><code class="path">layouts/_default/search.html</code></td><td>Search results page.</td></tr>
+      <tr><td><code class="path">layouts/404.html</code></td><td>404 recovery page.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Partials</h3>
+  <table class="file-table">
+    <thead><tr><th>Hugo partial</th><th>UI-kit pattern it owns</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">layouts/partials/header.html</code></td><td>Site header, brand mark, primary nav, search form, CTA, <code class="path">[data-nav-toggle]</code> button. Inline logomark SVG lives here.</td></tr>
+      <tr><td><code class="path">layouts/partials/footer.html</code></td><td>Dark 4-col footer, copyright row, bottom links.</td></tr>
+      <tr><td><code class="path">layouts/partials/site-script.html</code></td><td>Tiny vanilla-JS toggle bound to <code class="path">[data-nav-toggle]</code>; back-to-top + analytics attrs (optional).</td></tr>
+      <tr><td><code class="path">layouts/partials/page-card.html</code></td><td>Content card — used by every hub and related panel; themed by cluster.</td></tr>
+      <tr><td><code class="path">layouts/partials/page-type-block.html</code></td><td><strong>Utility panel</strong> — the kicker + bullet panel inside the article body. Variants for workflow / comparison / template / glossary / faq / blueprint.</td></tr>
+      <tr><td><code class="path">layouts/partials/related.html</code></td><td><strong>Related panel</strong> — "Continue the system" footer with mini-cards.</td></tr>
+      <tr><td><code class="path">layouts/partials/article-aside.html</code></td><td>Right-rail aside cards (use-for, section-hub, <strong>tags row</strong>, best-next, page-type). Rendered conditionally — omit the Tags card when front matter has no <code class="path">tags:</code>.</td></tr>
+      <tr><td><code class="path">layouts/partials/resource-icon.html</code></td><td>Per-resource inline SVG icons. Preserve stroke style.</td></tr>
+      <tr><td><code class="path">layouts/partials/feature-image.html</code></td><td>Feature image renderer for article hero.</td></tr>
+      <tr><td><code class="path">layouts/partials/pagination.html</code></td><td>Hub pagination if used. Preserve if already wired.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Shortcodes</h3>
+  <table class="file-table">
+    <thead><tr><th>Hugo shortcode</th><th>Used by</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">layouts/shortcodes/reading-path.html</code></td><td>Hub intros + selected workflow articles. Renders <code class="path">.reading-path</code> ordered list with start/finish auto-labels.</td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">CSS &amp; data</h3>
+  <table class="file-table">
+    <thead><tr><th>File</th><th>Role</th></tr></thead>
+    <tbody>
+      <tr><td><code class="path">static/css/main.css</code></td><td><strong>The only production stylesheet.</strong> Token block, header rules (incl. <code class="path">.nav-open</code> + 820px breakpoint), card, panel, prose, table, list-row, breadcrumb, hub-rail, taxonomy, search-results, 404 styles all live here. No build step.</td></tr>
+      <tr><td><code class="path">assets/favicon.svg</code>, <code class="path">assets/og-default.svg</code></td><td>Brand mark + OG image. The inline header logomark is duplicated inline in <code class="path">header.html</code>; keep all three in sync.</td></tr>
+      <tr><td><code class="path">data/*.yml</code> / <code class="path">data/*.toml</code></td><td>Only touch if the production repo already drives nav, footer, or cluster metadata from data files. Otherwise no changes here.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- ───────── 3 ───────── -->
+<section class="section" id="s3">
+  <header class="section-head">
+    <span class="section-num">Section 03</span>
+    <h2 class="section-title">Implementation order</h2>
+  </header>
+  <div class="prose">
+    <p>Land changes in this sequence. Each step assumes the prior step is settled, mirroring the order the kit was built. Do not interleave; finish a step, build, eyeball the diff, then start the next.</p>
+  </div>
+
+  <ol class="steps">
+    <li><strong>Read the repo's own instructions first.</strong> <span class="step-meta">Open <code class="path">AGENT.md</code> and <code class="path">TRACKER.md</code> at the repo root. Open <code class="path">.claude/skills/soloopsguide-agent/SKILL.md</code> if present. Don't bulk-read other docs.</span></li>
+    <li><strong>Inspect current templates.</strong> <span class="step-meta">Targeted reads of <code class="path">layouts/index.html</code>, <code class="path">layouts/_default/{single,list,taxonomy,terms,search}.html</code>, <code class="path">layouts/404.html</code>, and the partials above. Note current markup, classes, and any inline JS hooks.</span></li>
+    <li><strong>Tokens and typography.</strong> <span class="step-meta">Update the <code class="path">:root</code> token block in <code class="path">static/css/main.css</code> to match the kit's values. Add the Source Sans 3 + Lora font link in <code class="path">layouts/partials/head.html</code> only after fallback validation (Section 05). Don't change layout markup in this step.</span></li>
+    <li><strong>Header + mobile nav.</strong> <span class="step-meta">Rewrite <code class="path">layouts/partials/header.html</code> to remove "Workflows" from the nav list, promote it to the CTA, add <code class="path">[data-nav-toggle]</code> + ARIA. Add the matching toggle handler in <code class="path">site-script.html</code>. Verify open/closed states at 375 / 768 / 1080 / 1280.</span></li>
+    <li><strong>Homepage + hub patterns.</strong> <span class="step-meta">Update <code class="path">layouts/index.html</code> for the hero / chooser / value-prop layout. Update <code class="path">layouts/_default/list.html</code> for hub structure: section hero grid, reading-paths shortcode, journey-note, page-count stat, priority/supporting split.</span></li>
+    <li><strong>Article + template patterns.</strong> <span class="step-meta">Update <code class="path">single.html</code> for the article header grid + aside (use-for, section-hub, tags, best-next, page-type), reading-layout body, <code class="path">page-type-block</code> utility panel, related panel. Wire the template-section branch for the copy/print article-actions toolbar.</span></li>
+    <li><strong>Comparison + blueprint patterns.</strong> <span class="step-meta">Extend <code class="path">single.html</code> (or add section-specific layouts under <code class="path">layouts/workflow-comparisons/</code> / <code class="path">layouts/software-stack-blueprints/</code>) for ModelCard groups, criteria matrix, BestForBlock, DecisionShortcut, PrincipleList, BlueprintTier, SetupSequence, NextStepLinkBlock. Reuse the existing <code class="path">page-type-block</code> with the comparison / blueprint variants.</span></li>
+    <li><strong>Glossary + FAQ patterns.</strong> <span class="step-meta">Hub variants in <code class="path">list.html</code> (term grid, FAQ list); single variants in <code class="path">single.html</code> (term definition, FAQ answer) with their utility + related panels.</span></li>
+    <li><strong>Trust + search + 404.</strong> <span class="step-meta">Wire the no-pages branch of <code class="path">list.html</code> for trust/prose pages (slim 2-card aside, plain related list, callout). Update <code class="path">layouts/_default/search.html</code> for the type-filter tabs + result rows. Rewrite <code class="path">layouts/404.html</code> for the recovery layout.</span></li>
+    <li><strong>Taxonomy + tags index.</strong> <span class="step-meta">Wire <code class="path">layouts/_default/taxonomy.html</code> for the per-tag cross-cluster index. Wire <code class="path">layouts/_default/terms.html</code> for the alphabetical master index. Add the tag-chips row to the article aside, pulling from <code class="path">tags:</code> front matter, with the 2–3 chip cap and empty-row omission.</span></li>
+    <li><strong>Final QA / build.</strong> <span class="step-meta"><code class="path">hugo --gc --minify</code> clean. <code class="path">git diff --check</code> clean. Walk Section 07 checklist. Verify sitemap, RSS, and canonicals are unchanged.</span></li>
+  </ol>
+</section>
+
+<!-- ───────── 4 ───────── -->
+<section class="section" id="s4">
+  <header class="section-head">
+    <span class="section-num">Section 04</span>
+    <h2 class="section-title">Production constraints</h2>
+  </header>
+
+  <div class="two-col">
+    <div class="card">
+      <h4 class="subsub">Read these first</h4>
+      <ul class="editorial-list">
+        <li><code class="path">AGENT.md</code> — repo conventions, branch + commit policy.</li>
+        <li><code class="path">TRACKER.md</code> — what's in flight, what's intentionally deferred.</li>
+        <li><code class="path">.claude/skills/soloopsguide-agent/SKILL.md</code> if present — narrower repo-specific instructions take precedence over this handoff.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="subsub">Discovery discipline</h4>
+      <ul class="editorial-list">
+        <li>Targeted file reads only. Open the files mapped in Section 02; don't sweep <code class="path">layouts/</code>.</li>
+        <li>Avoid broad <code class="path">grep</code> / search across the repo. Use precise paths.</li>
+        <li>Don't blindly read every doc. Read the three above, then work from the kit.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:1rem;">
+    <div class="card">
+      <h4 class="subsub">Preserve in production</h4>
+      <ul class="editorial-list checklist">
+        <li>URLs, slugs, aliases.</li>
+        <li>Front matter shape (<code class="path">tags</code>, <code class="path">hub_priority</code>, dates, etc.).</li>
+        <li>SEO metadata, canonical URLs, robots, sitemap behavior.</li>
+        <li>Pagination if already wired on long hubs.</li>
+        <li>Existing content — no copy edits in this pass.</li>
+        <li>Hugo shortcodes, including <code class="path">reading-path</code>.</li>
+        <li>Production content patterns not in the UI kit (Section 08 lists them).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="subsub">Do not introduce</h4>
+      <ul class="editorial-list dont">
+        <li>Any mention of AI, automation, model names, or assistants in content, comments, commit messages, or tracker entries.</li>
+        <li>Fake authors, fake testimonials, fake reviewer counts, fake credentials, padded statistics.</li>
+        <li>Dark mode. The site has none and is staying that way.</li>
+        <li>Heavy JavaScript. Tiny vanilla-JS toggle only; no framework, no bundler.</li>
+        <li>New build steps, preprocessors, or Tailwind in production.</li>
+        <li>External icon CDNs. Icons stay inline SVG + Unicode glyphs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="callout">
+    <span class="label">Boundary</span>
+    <p>If a kit pattern requires changing a URL, removing a shortcode, or adding a JS framework to land, stop and flag it. The kit defers to production on routing, content, and runtime surface area.</p>
+  </div>
+</section>
+
+<!-- ───────── 5 ───────── -->
+<section class="section" id="s5">
+  <header class="section-head">
+    <span class="section-num">Section 05</span>
+    <h2 class="section-title">Typography decision</h2>
+  </header>
+  <div class="prose">
+    <p>The kit standardizes on <strong>Source Sans 3</strong> for UI and <strong>Lora</strong> for prose. Production currently ships system fonts only; the move to webfonts is conditional on the validation step at the bottom of this section.</p>
+  </div>
+
+  <table class="file-table">
+    <thead><tr><th>Role</th><th>Family</th><th>Fallback</th></tr></thead>
+    <tbody>
+      <tr><td>Headings, nav, buttons, labels, metadata, tables</td><td>Source Sans 3</td><td><code class="path">"Segoe UI", "Helvetica Neue", Arial, system-ui, sans-serif</code></td></tr>
+      <tr><td>Article prose, blockquotes</td><td>Lora</td><td><code class="path">Georgia, "Iowan Old Style", "Palatino Linotype", serif</code></td></tr>
+      <tr><td>Code / monospace</td><td>—</td><td><code class="path">"SFMono-Regular", Consolas, "Liberation Mono", monospace</code></td></tr>
+    </tbody>
+  </table>
+
+  <h3 class="sub">Loading rules</h3>
+  <ul class="editorial-list">
+    <li><strong>If webfont loading is deferred</strong> in this pass, ship the system fallback stack and stop. The fallback is intentionally editorial-credible on its own — Segoe UI / Helvetica Neue for UI, Georgia for prose.</li>
+    <li><strong>Only load required weights.</strong> Source Sans 3: <code class="path">400, 500, 600, 700</code>. Lora: <code class="path">400, 400 italic, 600</code>. Do not load the full variable axes.</li>
+    <li><strong>Use <code class="path">font-display: swap</code></strong> on every <code class="path">@font-face</code>. The site must render legibly with system fonts during the swap window.</li>
+    <li><strong>Self-host via <code class="path">google-webfonts-helper</code></strong> rather than the Google CDN — GDPR, latency, and cache consistency on Cloudflare Pages.</li>
+    <li><strong>Preload Source Sans 3 woff2</strong> in <code class="path">&lt;head&gt;</code> (the 400 + 600 cuts only). Skip preload for Lora — it appears below the fold for most page views.</li>
+  </ul>
+
+  <h3 class="sub">Validate before committing the font change</h3>
+  <ul class="editorial-list checklist">
+    <li>Mobile reading at 375px — article prose stays at the 16.75px / 1.9 line-height target without overflow.</li>
+    <li>Tables — the criteria matrix and category-decision tables remain legible at the comparison/blueprint widths; no horizontal scroll except inside the intentionally scrollable wrapper.</li>
+    <li>Metadata — meta pill row + small/meta sizes (12–14px) stay crisp; Source Sans 3 must hold legibility at 12px.</li>
+    <li>Article prose — Lora 400 in body, 400i in emphasis, 600 in lead/blockquote. Verify with a long workflow article and a long blueprint.</li>
+    <li>CLS — preload pass shows no layout shift on the hero h1 above the fold.</li>
+  </ul>
+</section>
+
+<!-- ───────── 6 ───────── -->
+<section class="section" id="s6">
+  <header class="section-head">
+    <span class="section-num">Section 06</span>
+    <h2 class="section-title">Components and patterns to preserve</h2>
+  </header>
+  <div class="prose">
+    <p>These are the patterns the kit has explicitly designed for. Production already has most of them. Do not remove or simplify any of them in pursuit of a cleaner diff.</p>
+  </div>
+
+  <div class="two-col">
+    <div class="card">
+      <h4 class="subsub">Article surface</h4>
+      <ul class="editorial-list">
+        <li>Reading paths (<code class="path">{{&lt; reading-path &gt;}}</code> shortcode).</li>
+        <li>Article aside utility panel (<code class="path">page-type-block</code>).</li>
+        <li>Related panel ("Continue the system").</li>
+        <li>Article tag chips row (2–3 chips, front-matter-driven, omitted when empty).</li>
+        <li>Template <code class="path">article-actions</code> toolbar (copy-as-text + print).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="subsub">Comparison + blueprint</h4>
+      <ul class="editorial-list">
+        <li>Comparison table (criteria matrix, horizontally scrollable wrapper).</li>
+        <li>Decision criteria panel.</li>
+        <li>Best-for / Not-best-for two-column block.</li>
+        <li>Decision shortcut callout.</li>
+        <li>Blueprint tier cards (Starter / Stable / Scaling) with "Avoid for now" footer.</li>
+        <li>Setup sequence (numbered, with inline next-page links).</li>
+        <li>Next-step-by-outcome link block.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:1rem;">
+    <div class="card">
+      <h4 class="subsub">Hub, glossary, FAQ</h4>
+      <ul class="editorial-list">
+        <li>Journey-note "Start here" block.</li>
+        <li>Section-stat page-count block.</li>
+        <li>Section-featured-link priority/recommended link.</li>
+        <li>Priority pages + supporting pages split on hubs.</li>
+        <li>FAQ list rows with Q badge.</li>
+        <li>Glossary term grid (2-col).</li>
+        <li>Checklist / template body blocks.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h4 class="subsub">Site-level surfaces</h4>
+      <ul class="editorial-list">
+        <li>Search results page (input + type filter tabs + result rows).</li>
+        <li>Trust / prose pages (slim 2-card aside, plain related list, sparing <code class="path">TCallout</code>).</li>
+        <li>404 recovery links (search + 4 cluster cards + narrow glossary/FAQ row).</li>
+        <li>Individual tag listing (<code class="path">/tags/&lt;slug&gt;/</code>) grouped by page type, with adjacent-tag chips + hub rail.</li>
+        <li><code class="path">/tags/</code> master index — alphabetical, page counts, short hints, hub rail.</li>
+        <li>Sparse / thin tag safeguards: omit tags with &lt; 2 pages from the master index; never render "Nothing here yet."</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ───────── 7 ───────── -->
+<section class="section" id="s7">
+  <header class="section-head">
+    <span class="section-num">Section 07</span>
+    <h2 class="section-title">Validation checklist</h2>
+  </header>
+  <div class="prose">
+    <p>Walk this list after the final commit lands and before pushing to <code class="path">main</code>. Each item is a discrete check; treat any failure as a blocker.</p>
+  </div>
+
+  <h3 class="sub">Build &amp; diff</h3>
+  <ul class="editorial-list checklist">
+    <li><code class="path">hugo --gc --minify</code> exits 0 with no warnings about missing layouts or partials.</li>
+    <li><code class="path">git diff --check</code> passes (no whitespace or merge-conflict artifacts).</li>
+  </ul>
+
+  <h3 class="sub">Page renders</h3>
+  <ul class="editorial-list checklist">
+    <li>Homepage renders with hero, chooser, value props, footer.</li>
+    <li>Each cluster hub renders (Client Workflow Systems, Software Stack Blueprints, Workflow Comparisons, Templates &amp; Checklists, Glossary, FAQ).</li>
+    <li>A representative article page renders with full aside (use-for, section-hub, tags, best-next, page-type), utility panel, related panel.</li>
+    <li>A template / checklist page renders with the <code class="path">article-actions</code> toolbar.</li>
+    <li>A comparison page renders with model cards, criteria matrix, best-for block, decision shortcut, next-step block.</li>
+    <li>A blueprint page renders with principles, tiers, category table, setup sequence.</li>
+    <li>A glossary hub and a glossary term render.</li>
+    <li>An FAQ hub and an FAQ article render.</li>
+    <li>A trust / About page renders via the no-pages branch with the slim aside.</li>
+    <li>Search page accepts a query and renders results + filter tabs (or an empty state).</li>
+    <li>A deliberately bad URL hits <code class="path">layouts/404.html</code> and shows the recovery layout.</li>
+    <li>A single tag page (<code class="path">/tags/&lt;slug&gt;/</code>) renders, grouped by page type, with adjacent tags + hub rail.</li>
+    <li><code class="path">/tags/</code> master index renders with alphabetical groups, page counts, and hub rail.</li>
+  </ul>
+
+  <h3 class="sub">Interactions</h3>
+  <ul class="editorial-list checklist">
+    <li>Article aside tag chips route to the correct <code class="path">/tags/&lt;slug&gt;/</code> pages.</li>
+    <li>Articles with no <code class="path">tags:</code> front matter omit the Tags row entirely (no empty header).</li>
+    <li>Mobile nav: hamburger opens, "X" closes, <kbd>Esc</kbd> closes, resizing past 820px closes; <code class="path">aria-expanded</code> mirrors state; focus ring visible on the toggle.</li>
+    <li>Header search submits to <code class="path">/search/?q=…</code> at every breakpoint.</li>
+    <li>404 search reuses the same form pattern; recovery cards keyboard-navigate correctly.</li>
+  </ul>
+
+  <h3 class="sub">Layout &amp; assets</h3>
+  <ul class="editorial-list checklist">
+    <li>No horizontal overflow at 320 / 375 / 768 / 1080 / 1280 / 1440.</li>
+    <li>No broken images. Feature-image fallback path renders correctly when WebP is missing.</li>
+    <li>No placeholder <code class="path">href="#"</code> links anywhere outside intentional anchors.</li>
+    <li>No console errors on the homepage, a representative article, comparison, blueprint, and 404.</li>
+  </ul>
+
+  <h3 class="sub">SEO &amp; routing</h3>
+  <ul class="editorial-list checklist">
+    <li><code class="path">/sitemap.xml</code> and <code class="path">/robots.txt</code> diff to zero (or only to expected additions for the new tag/term pages).</li>
+    <li>Canonical URLs on representative pages match production conventions; no canonical regressions on hub or taxonomy pages.</li>
+    <li>RSS feeds (site, per-section, per-tag if enabled) still render valid XML.</li>
+    <li>Aliases / redirects defined in front matter still resolve.</li>
+  </ul>
+</section>
+
+<!-- ───────── 8 ───────── -->
+<section class="section" id="s8">
+  <header class="section-head">
+    <span class="section-num">Section 08</span>
+    <h2 class="section-title">Known caveats</h2>
+  </header>
+
+  <div class="card">
+    <ul class="editorial-list">
+      <li><strong>Print stylesheet is optional</strong> in this pass. If the existing print rules in <code class="path">main.css</code> still hide header / aside / nav / related panel cleanly, leave them. Don't redesign print here.</li>
+      <li><strong>Back-to-top button is optional.</strong> The kit doesn't require it. If production already renders one via <code class="path">site-script.html</code>, preserve it; otherwise don't add it.</li>
+      <li><strong>Analytics tracking attributes</strong> (<code class="path">data-track</code> on links, etc.) are implementation-specific and stay out of scope for the kit. Preserve the existing attributes; do not redesign the tracking pattern.</li>
+      <li><strong>Real WebP feature images</strong> in <code class="path">static/images/features/&lt;cluster&gt;/&lt;slug&gt;.webp</code> are a separate production asset task. The kit defines the slot; production owns the source files.</li>
+      <li><strong>Pagination on long hubs</strong> must be preserved if already present. If a hub paginates today, it must paginate after this pass with the same URL pattern.</li>
+      <li><strong>RSS-per-tag and sitemap behavior</strong> are Hugo-native concerns. Do not redesign them in the UI kit; handle them carefully in the templates and verify with the Section 07 routing checks.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ───────── 9 ───────── -->
+<section class="section" id="s9">
+  <header class="section-head">
+    <span class="section-num">Section 09</span>
+    <h2 class="section-title">Suggested commit message</h2>
+  </header>
+  <div class="prose">
+    <p>One concise message for the squashed PR or single commit. Plain language, scoped to design + layout fidelity, no mention of tooling.</p>
+  </div>
+
+  <pre class="commit"><span class="subj">design: apply UI-kit fidelity pass across site templates</span>
+
+<span class="body">Update tokens, header/mobile nav, homepage, hubs, article and
+template layouts, comparison and blueprint surfaces, glossary
+and FAQ, trust pages, search and 404, taxonomy listing and the
+/tags/ master index. Add tag chips to the article aside.
+
+Preserves URLs, slugs, aliases, front matter, sitemap behavior,
+canonical URLs, pagination, and existing content. No new build
+step, no framework, no dark mode.</span></pre>
+</section>
+
+</main>
+
+<footer class="handoff-foot">
+  <div class="wrap">
+    <div>
+      <strong>End of handoff package</strong><br />
+      <span class="small">Source: <code style="font-family: var(--font-mono); color: #c8d4dc;">SoloOpsGuide design system</code>. Apply against <code style="font-family: var(--font-mono); color: #c8d4dc;">solo-workflow-site</code>. Stop if a kit pattern requires a routing, content, or framework change to land.</span>
+    </div>
+    <div class="small">v1.0 · Final · May 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>

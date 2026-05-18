@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI","Avenir Next","Helvetica Neue",Arial,sans-serif; background: #fafbfc; padding: 20px 24px; }
+.grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.section-title { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #94a3b8; margin-bottom: 10px; margin-top: 18px; }
+.section-title:first-child { margin-top: 0; }
+
+/* Radius */
+.radius-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; }
+.rbox { background: #0d9488; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 6px; }
+.rlabel { font-size: 10px; color: #fff; font-weight: 600; }
+
+/* Shadow */
+.shadow-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.sbox { width: 56px; height: 40px; border-radius: 10px; background: #fff; display: flex; align-items: center; justify-content: center; }
+.slabel { font-size: 10px; color: #475569; text-align: center; margin-top: 5px; }
+.sitem { display: flex; flex-direction: column; align-items: center; }
+
+/* Spacing */
+.space-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: flex-end; }
+.spc { background: rgba(13,148,136,0.18); border-radius: 3px; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 3px; }
+.spc-label { font-size: 9px; color: #0f766e; font-weight: 600; }
+</style></head>
+<body>
+<div class="section-title">Border Radius</div>
+<div class="radius-row">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:40px;height:40px;border-radius:999px;"><span class="rlabel">full</span></div><span style="font-size:10px;color:#475569;">999px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:28px;"><span class="rlabel">xl</span></div><span style="font-size:10px;color:#475569;">28px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:24px;"><span class="rlabel">lg</span></div><span style="font-size:10px;color:#475569;">24px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:18px;"><span class="rlabel">md</span></div><span style="font-size:10px;color:#475569;">18px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:14px;"><span class="rlabel">sm</span></div><span style="font-size:10px;color:#475569;">14px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:10px;"><span class="rlabel">xs</span></div><span style="font-size:10px;color:#475569;">10px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:4px;"><div class="rbox" style="width:44px;height:44px;border-radius:4px;"><span class="rlabel">base</span></div><span style="font-size:10px;color:#475569;">4px</span></div>
+</div>
+
+<div class="section-title">Shadows</div>
+<div class="shadow-row">
+  <div class="sitem"><div class="sbox" style="box-shadow:0 1px 2px rgba(15,23,42,0.04);"></div><div class="slabel">xs<br>card</div></div>
+  <div class="sitem"><div class="sbox" style="box-shadow:0 14px 34px rgba(17,38,52,0.07);"></div><div class="slabel">sm</div></div>
+  <div class="sitem"><div class="sbox" style="box-shadow:0 24px 60px rgba(17,38,52,0.09);"></div><div class="slabel">md</div></div>
+  <div class="sitem"><div class="sbox" style="box-shadow:0 10px 24px rgba(15,23,42,0.08);"></div><div class="slabel">hover</div></div>
+  <div class="sitem"><div class="sbox" style="background:#0d9488;box-shadow:0 14px 28px rgba(15,139,141,0.16);"></div><div class="slabel">brand<br>btn</div></div>
+</div>
+
+<div class="section-title">Spacing Scale (4px base)</div>
+<div class="space-row">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:4px;height:4px;"></div><span style="font-size:9px;color:#64748b;">4px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:8px;height:8px;"></div><span style="font-size:9px;color:#64748b;">8px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:12px;height:12px;"></div><span style="font-size:9px;color:#64748b;">12px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:16px;height:16px;"></div><span style="font-size:9px;color:#64748b;">16px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:20px;height:20px;"></div><span style="font-size:9px;color:#64748b;">20px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:24px;height:24px;"></div><span style="font-size:9px;color:#64748b;">24px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:32px;height:32px;"></div><span style="font-size:9px;color:#64748b;">32px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:48px;height:48px;"></div><span style="font-size:9px;color:#64748b;">48px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:64px;height:64px;"></div><span style="font-size:9px;color:#64748b;">64px</span></div>
+  <div style="display:flex;flex-direction:column;align-items:center;gap:3px;"><div class="spc" style="width:80px;height:80px;"></div><span style="font-size:9px;color:#64748b;">80px</span></div>
+</div>
+</body></html>

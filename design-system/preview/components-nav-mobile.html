@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SoloOpsGuide — Mobile Header (closed + open)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  :root {
+    --bg:        #fafbfc;
+    --canvas:    #eef2f6;
+    --ink:       #0f172a;
+    --ink-soft:  #334155;
+    --muted:     #64748b;
+    --line:      rgba(226,232,240,1);
+    --line-soft: rgba(226,232,240,0.8);
+    --brand:     #0d9488;
+    --brand-tint:#ccfbf1;
+    --teal-deep: #0f766e;
+    --amber:     #b8823f;
+  }
+  html, body { margin: 0; padding: 0; background: var(--canvas); color: var(--ink-soft); font-family: "Source Sans 3","Helvetica Neue",Arial,sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3 { color: var(--ink); letter-spacing: -0.02em; margin: 0; }
+
+  /* ─── Page chrome ─── */
+  .page { max-width: 1080px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  .page-header { margin-bottom: 2rem; max-width: 640px; }
+  .page-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin: 0 0 0.5rem; }
+  .page-title { font-size: 28px; font-weight: 600; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
+  .page-sub { font-size: 15px; color: var(--muted); margin: 0; }
+
+  /* ─── Card grid ─── */
+  .frames {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+  }
+  @media (max-width: 820px) { .frames { grid-template-columns: 1fr; } }
+
+  .frame-card {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+  }
+  .frame-meta { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; gap: 1rem; }
+  .frame-label { font-size: 13px; font-weight: 600; color: var(--ink); }
+  .frame-state {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0.25rem 0.55rem; border-radius: 999px; border: 1px solid var(--line);
+    color: var(--muted); background: #f8fafc;
+  }
+  .frame-state.open { color: var(--teal-deep); background: var(--brand-tint); border-color: transparent; }
+
+  /* ─── Device frame (375 wide) ─── */
+  .device {
+    width: 375px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid #cbd5e1;
+    border-radius: 28px;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(17,38,52,0.07);
+  }
+  .device-statusbar {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.5rem 1.1rem 0.35rem;
+    font-size: 12px; font-weight: 600; color: var(--ink);
+    background: #fff;
+  }
+  .device-statusbar .icons { display: inline-flex; gap: 0.4rem; align-items: center; color: var(--ink); opacity: 0.7; }
+  .device-statusbar .dot { display: inline-block; width: 14px; height: 8px; border: 1.5px solid currentColor; border-radius: 2px; position: relative; }
+  .device-statusbar .dot::after { content: ""; position: absolute; left: 1px; top: 1px; bottom: 1px; width: 70%; background: currentColor; border-radius: 1px; }
+  .device-body { background: var(--bg); min-height: 540px; }
+
+  /* ─── .site-header — kept conceptually identical to the kit ─── */
+  .site-header { background: #fff; border-bottom: 1px solid var(--line-soft); font-family: inherit; }
+  .site-header-inner { padding: 0 1rem; }
+
+  .header-top {
+    display: flex; align-items: center; gap: 0.75rem;
+    padding: 0.9rem 0;
+    flex-wrap: wrap;
+  }
+
+  .brand { display: inline-flex; align-items: center; gap: 0.65rem; text-decoration: none; flex-shrink: 0; }
+  .brand-icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.25rem; height: 2.25rem; border-radius: 12px; flex-shrink: 0;
+    background: linear-gradient(145deg, #0f8b8d, #0b6d71);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), 0 8px 20px rgba(15,23,42,0.08);
+  }
+  .brand-icon svg { width: 18px; height: 18px; }
+  .brand-name { color: var(--ink); font-size: 17px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; }
+  /* Tagline hidden at mobile widths in production — preview matches that */
+  .brand-tagline { display: none; }
+
+  /* ─── Hamburger / X ─── */
+  .nav-toggle {
+    margin-left: auto;
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 2.5rem; height: 2.5rem; padding: 0;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: #ffffff; color: var(--ink);
+    cursor: pointer; flex-shrink: 0;
+    font-family: inherit;
+  }
+  .nav-toggle:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+  .nav-toggle .bars,
+  .nav-toggle .bars::before,
+  .nav-toggle .bars::after {
+    display: block; width: 18px; height: 2px; background: currentColor;
+    border-radius: 2px; transition: transform 160ms ease, opacity 160ms ease;
+  }
+  .nav-toggle .bars { position: relative; }
+  .nav-toggle .bars::before { content: ""; position: absolute; left: 0; top: -6px; }
+  .nav-toggle .bars::after  { content: ""; position: absolute; left: 0; top:  6px; }
+  /* Open ("X") form */
+  .site-header.nav-open .nav-toggle .bars { background: transparent; }
+  .site-header.nav-open .nav-toggle .bars::before { transform: translateY(6px) rotate(45deg); }
+  .site-header.nav-open .nav-toggle .bars::after  { transform: translateY(-6px) rotate(-45deg); }
+
+  /* ─── .header-actions — closed by default, expanded when .nav-open ─── */
+  .header-actions {
+    display: none;
+    flex: 1 1 100%; width: 100%;
+    flex-direction: column; align-items: stretch;
+    gap: 0.25rem;
+    padding-bottom: 0.75rem;
+  }
+  .site-header.nav-open .header-actions { display: flex; }
+
+  .header-actions nav { width: 100%; }
+  .header-actions ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; width: 100%; }
+  .header-actions li { width: 100%; }
+  .header-actions nav a {
+    display: flex; align-items: center;
+    width: 100%; height: 2.75rem; padding: 0 0.85rem;
+    border-radius: 8px;
+    color: var(--ink-soft); font-size: 15px; font-weight: 400;
+    text-decoration: none;
+  }
+  .header-actions nav a[aria-current="page"] {
+    color: var(--ink); font-weight: 600;
+    background: rgba(15,139,141,0.07);
+  }
+
+  /* Calmer ghost CTA at the bottom of the open menu */
+  .header-cta {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 100%; height: 2.75rem;
+    margin-top: 0.5rem; padding: 0 1rem 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+    background: transparent; color: var(--brand);
+    font-size: 15px; font-weight: 500;
+    text-decoration: none;
+  }
+  .header-cta::after { content: " →"; padding-left: 0.25rem; }
+
+  /* ─── Search bar (stays visible at all widths) ─── */
+  .header-search { padding: 0 0 0.9rem; }
+  .search-form { position: relative; }
+  .search-icon {
+    position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+    width: 14px; height: 14px; border: 2px solid #94a3b8; border-radius: 50%;
+    pointer-events: none;
+  }
+  .search-icon::after {
+    content: ""; position: absolute; right: -4px; bottom: -4px;
+    width: 5px; height: 2px; background: #94a3b8;
+    border-radius: 999px; transform: rotate(45deg);
+  }
+  .search-input {
+    width: 100%; height: 2.5rem; padding: 0 0.85rem 0 2.25rem;
+    border: 1px solid var(--line); border-radius: 10px;
+    background: #f8fafc; color: var(--ink-soft); font-size: 14px;
+    font-family: inherit; outline: none;
+  }
+
+  /* ─── Faux page body so the device doesn't look empty ─── */
+  .stub {
+    padding: 1.1rem 1rem 1.5rem;
+  }
+  .stub-eyebrow { font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--amber); margin: 0 0 0.35rem; }
+  .stub-h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; color: var(--ink); margin: 0 0 0.6rem; }
+  .stub-p { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0 0 1rem; }
+  .stub-card {
+    padding: 0.85rem 0.9rem;
+    border: 1px solid var(--line); border-radius: 12px;
+    background: #fff;
+    font-size: 13px; color: var(--ink-soft);
+  }
+
+  /* ─── Caption strip under each card ─── */
+  .caption {
+    margin-top: 1.1rem;
+    font-size: 13px; line-height: 1.55; color: var(--muted);
+  }
+  .caption strong { color: var(--ink); font-weight: 600; }
+  .caption code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 12px;
+    padding: 0.08rem 0.35rem;
+    background: #f1f5f9; border-radius: 4px;
+    color: #334155;
+  }
+
+  /* ─── State/class summary block ─── */
+  .summary {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+  }
+  .summary h2 { font-size: 16px; font-weight: 600; margin: 0 0 0.85rem; }
+  .summary table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .summary th, .summary td {
+    text-align: left; padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--line-soft);
+    vertical-align: top;
+  }
+  .summary th { color: var(--ink); font-weight: 600; width: 32%; }
+  .summary td { color: var(--muted); }
+  .summary code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 12px;
+    padding: 0.08rem 0.35rem;
+    background: #f1f5f9; border-radius: 4px;
+    color: #334155;
+  }
+  .summary tr:last-child th, .summary tr:last-child td { border-bottom: none; }
+
+  .note {
+    margin-top: 1rem;
+    font-size: 13px; color: var(--muted); line-height: 1.6;
+  }
+  .note strong { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="page-header">
+    <p class="page-eyebrow">Component · Site header</p>
+    <h1 class="page-title">Mobile header — closed and open states</h1>
+    <p class="page-sub">Two static frames at 375px wide showing the production <code>.site-header</code> behavior at mobile widths. Mirrors the <code>.nav-open</code> state used in <code>layouts/partials/header.html</code>.</p>
+  </header>
+
+  <div class="frames">
+
+    <!-- ─────────── CLOSED ─────────── -->
+    <section class="frame-card">
+      <div class="frame-meta">
+        <span class="frame-label">375 × mobile</span>
+        <span class="frame-state">Closed</span>
+      </div>
+
+      <div class="device" aria-label="Mobile header — closed state preview">
+        <div class="device-statusbar" aria-hidden="true">
+          <span>9:41</span>
+          <span class="icons"><span>●●●</span><span>Wi-Fi</span><span class="dot"></span></span>
+        </div>
+        <div class="device-body">
+
+          <header class="site-header">
+            <div class="site-header-inner">
+              <div class="header-top">
+                <a class="brand" href="#">
+                  <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="#f8fafc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="6" y="6" width="52" height="52" rx="16"></rect>
+                      <path d="M20 23h24M20 32h18M20 41h24"></path>
+                      <path d="M42 20l6 6-6 6"></path>
+                    </svg>
+                  </span>
+                  <span>
+                    <span class="brand-name">SoloOpsGuide</span>
+                    <span class="brand-tagline">Workflow-first guidance for solo operators</span>
+                  </span>
+                </a>
+
+                <button
+                  type="button"
+                  class="nav-toggle"
+                  data-nav-toggle
+                  aria-expanded="false"
+                  aria-controls="site-nav-closed"
+                  aria-label="Open menu"
+                >
+                  <span class="bars" aria-hidden="true"></span>
+                </button>
+
+                <div id="site-nav-closed" class="header-actions">
+                  <nav aria-label="Primary">
+                    <ul>
+                      <li><a href="#">Blueprints</a></li>
+                      <li><a href="#">Comparisons</a></li>
+                      <li><a href="#">Templates</a></li>
+                      <li><a href="#">Glossary</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </nav>
+                  <a class="header-cta" href="/client-workflow-systems/">Explore workflows</a>
+                </div>
+              </div>
+
+              <div class="header-search">
+                <form class="search-form" role="search" action="/search/" method="get">
+                  <span class="search-icon" aria-hidden="true"></span>
+                  <input class="search-input" type="search" name="q" aria-label="Search" placeholder="Search workflows, blueprints...">
+                </form>
+              </div>
+            </div>
+          </header>
+
+          <div class="stub">
+            <p class="stub-eyebrow">Client Workflow Systems</p>
+            <h2 class="stub-h1">Freelance Client Workflow System: Inquiry to Final Payment</h2>
+            <p class="stub-p">A structured operating sequence covering the full client lifecycle from first inquiry through delivery, approval, billing, and project close.</p>
+            <div class="stub-card">The freelance client lifecycle has six stages: inquiry, intake, proposal, kickoff, delivery, and close…</div>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="caption"><strong>Closed.</strong> <code>.site-header</code> (no modifier). Tagline hidden, <code>.header-actions</code> is <code>display: none</code>, search remains visible. <code>aria-expanded="false"</code>, button label “Open menu”.</p>
+    </section>
+
+    <!-- ─────────── OPEN ─────────── -->
+    <section class="frame-card">
+      <div class="frame-meta">
+        <span class="frame-label">375 × mobile</span>
+        <span class="frame-state open">Open · .nav-open</span>
+      </div>
+
+      <div class="device" aria-label="Mobile header — open state preview">
+        <div class="device-statusbar" aria-hidden="true">
+          <span>9:41</span>
+          <span class="icons"><span>●●●</span><span>Wi-Fi</span><span class="dot"></span></span>
+        </div>
+        <div class="device-body">
+
+          <header class="site-header nav-open">
+            <div class="site-header-inner">
+              <div class="header-top">
+                <a class="brand" href="#">
+                  <span class="brand-icon" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" stroke="#f8fafc" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="6" y="6" width="52" height="52" rx="16"></rect>
+                      <path d="M20 23h24M20 32h18M20 41h24"></path>
+                      <path d="M42 20l6 6-6 6"></path>
+                    </svg>
+                  </span>
+                  <span>
+                    <span class="brand-name">SoloOpsGuide</span>
+                    <span class="brand-tagline">Workflow-first guidance for solo operators</span>
+                  </span>
+                </a>
+
+                <button
+                  type="button"
+                  class="nav-toggle"
+                  data-nav-toggle
+                  aria-expanded="true"
+                  aria-controls="site-nav-open"
+                  aria-label="Close menu"
+                >
+                  <span class="bars" aria-hidden="true"></span>
+                </button>
+
+                <div id="site-nav-open" class="header-actions">
+                  <nav aria-label="Primary">
+                    <ul>
+                      <li><a href="#" aria-current="page">Blueprints</a></li>
+                      <li><a href="#">Comparisons</a></li>
+                      <li><a href="#">Templates</a></li>
+                      <li><a href="#">Glossary</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+                  </nav>
+                  <a class="header-cta" href="/client-workflow-systems/">Explore workflows</a>
+                </div>
+              </div>
+
+              <div class="header-search">
+                <form class="search-form" role="search" action="/search/" method="get">
+                  <span class="search-icon" aria-hidden="true"></span>
+                  <input class="search-input" type="search" name="q" aria-label="Search" placeholder="Search workflows, blueprints...">
+                </form>
+              </div>
+            </div>
+          </header>
+
+          <div class="stub">
+            <p class="stub-eyebrow">Client Workflow Systems</p>
+            <h2 class="stub-h1">Freelance Client Workflow System: Inquiry to Final Payment</h2>
+            <p class="stub-p">A structured operating sequence covering the full client lifecycle from first inquiry through delivery, approval, billing, and project close.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="caption"><strong>Open.</strong> <code>.site-header.nav-open</code>. <code>.header-actions</code> drops below the top row; nav links stack as 2.75rem rows; <code>aria-expanded="true"</code>; active link uses <code>aria-current="page"</code>; CTA is calmer (ghost) and separated by a hairline so it does not dominate.</p>
+    </section>
+
+  </div>
+
+  <!-- ─────────── Class / state summary ─────────── -->
+  <div class="summary">
+    <h2>Class / state pattern</h2>
+    <table>
+      <tr><th><code>.site-header</code></th><td>Root header element.</td></tr>
+      <tr><th><code>.site-header.nav-open</code></th><td>Open-state modifier on the root.</td></tr>
+      <tr><th><code>.header-top</code></th><td>First row — brand + toggle (+ inline nav at desktop).</td></tr>
+      <tr><th><code>.header-actions</code></th><td>Nav + CTA group. Hidden when closed, stacked when open. <code>id="site-nav"</code> is the target of <code>aria-controls</code>.</td></tr>
+      <tr><th><code>[data-nav-toggle]</code></th><td>Hamburger button. Carries <code>aria-expanded</code>, <code>aria-controls</code>, and an <code>aria-label</code> that swaps between “Open menu” and “Close menu”.</td></tr>
+      <tr><th><code>.header-cta</code></th><td>“Explore workflows” → <code>/client-workflow-systems/</code>. Restyled as a ghost link inside the open menu.</td></tr>
+      <tr><th><code>.brand-tagline</code></th><td>Hidden at ≤ 820px so the closed row stays compact.</td></tr>
+    </table>
+
+    <p class="note">
+      <strong>Production note.</strong> The production site wires <code>[data-nav-toggle]</code> with a tiny vanilla-JS handler in <code>layouts/partials/site-script.html</code> that toggles the <code>nav-open</code> class on <code>.site-header</code> and flips <code>aria-expanded</code>. The UI kit (<code>ui_kits/website/index.html</code> and <code>Header.jsx</code>) uses React state to do the same thing; markup, classes, and ARIA stay identical. This preview is static — both states are rendered side-by-side so the behavior is visible without resizing.
+    </p>
+  </div>
+
+</div>
+
+</body>
+</html>

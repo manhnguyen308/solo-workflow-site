@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI","Avenir Next","Helvetica Neue",Arial,sans-serif; background: #fafbfc; padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.meta { font-size: 11px; color: #94a3b8; width: 100%; letter-spacing: 0.04em; }
+.divider { width: 100%; height: 1px; background: #e2e8f0; }
+.pill { display: inline-flex; align-items: center; min-height: 28px; padding: 0.3rem 0.65rem; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; }
+.p-teal { background: #ccfbf1; color: #0f766e; }
+.p-slate { background: #f1f5f9; color: #475569; }
+.p-amber { background: #fff3e3; color: #926227; }
+.p-outline { background: #fff; border: 1px solid #99f6e4; color: #0f766e; }
+.p-brand-outline { background: #fff; border: 1px solid rgba(15,139,141,0.18); color: #0b6d71; }
+.p-dark { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); color: rgba(239,244,247,0.8); }
+.tag { display: inline-flex; align-items: center; padding: 0.22rem 0.55rem; border: 1px solid rgba(226,232,240,1); border-radius: 999px; background: #fff; color: #475569; font-size: 12px; font-weight: 600; }
+.eyebrow { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; }
+.ey-amber { color: #b8823f; }
+.ey-teal { color: #0d9488; }
+.chooser-dest { font-size: 12px; font-weight: 500; color: #0f766e; }
+</style></head>
+<body>
+  <div class="row"><div class="meta">Meta pills — article header</div>
+    <span class="pill p-teal">Workflow</span>
+    <span class="pill p-teal">Blueprint</span>
+    <span class="pill p-teal">How-to</span>
+    <span class="pill p-slate">Updated Jan 2, 2025</span>
+    <span class="pill p-slate">10 min read</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Feature badges &amp; highlights</div>
+    <span class="pill p-amber">Best starting guide</span>
+    <span class="pill p-outline">Best next move</span>
+    <span class="pill p-brand-outline">Workflow-first guidance</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Card tags — search intent</div>
+    <span class="tag">How-to</span>
+    <span class="tag">Decision guide</span>
+    <span class="tag">Tool decision</span>
+    <span class="tag">Checklist</span>
+    <span class="tag">Definition</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Eyebrow kickers</div>
+    <span class="eyebrow ey-amber">Workflow-First Guidance</span>
+    <span class="eyebrow ey-amber">Start Here</span>
+    <span class="eyebrow ey-teal">Choose Your Next Step</span>
+  </div>
+  <div class="divider"></div>
+  <div class="row"><div class="meta">Footer chips (dark surface)</div>
+    <div style="background:#0f172a;padding:10px 14px;border-radius:12px;display:flex;gap:8px;flex-wrap:wrap;">
+      <span class="pill p-dark">Independent</span>
+      <span class="pill p-dark">Editorial</span>
+      <span class="pill p-dark">No affiliate bias</span>
+    </div>
+  </div>
+</body></html>
