@@ -2257,6 +2257,27 @@ body {
   .button-header {
     justify-content: center;
   }
+
+  /* Mobile-open CTA presented as a calmer ghost link so it does not dominate the menu */
+  .site-header.nav-open .header-actions .button-header {
+    margin-top: 0.5rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--line);
+    border-radius: 10px;
+    background: transparent;
+    color: var(--brand-strong);
+    box-shadow: none;
+  }
+
+  .site-header.nav-open .header-actions .button-header::after {
+    content: " \2192";
+  }
+
+  .site-header.nav-open .header-actions .button-header:hover,
+  .site-header.nav-open .header-actions .button-header:focus-visible {
+    background: var(--brand-soft);
+    color: var(--brand-strong);
+  }
 }
 
 /* Site-wide consistency pass aligned to current homepage system */
