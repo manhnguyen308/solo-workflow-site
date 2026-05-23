@@ -11,6 +11,7 @@ tags = ["definition", "next-action-owner", "workflow"]
 page_type = "glossary"
 search_intent = "informational"
 page_role = "support"
+robots = "noindex,follow"
 hub_priority = 4
 related = ["/workflows/client-status-update-workflow-for-freelancers-and-consultants/", "/workflows/change-request-workflow-for-freelancers-and-consultants/", "/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/", "/glossary/approval-owner/"]
 featured = false
