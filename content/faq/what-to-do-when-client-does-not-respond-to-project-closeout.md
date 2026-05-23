@@ -1,5 +1,5 @@
 +++
-title = "FAQ: What Should I Do When a Client Does Not Respond to Final Project Closeout?"
+title = "Client Not Responding at Project Closeout: What to Do"
 description = "A narrow workflow FAQ for solo operators who have delivered all work and received final approval but cannot formally close the engagement because the client has not acknowledged the closeout request."
 summary = "Use this page when all deliverables are accepted, final billing is resolved, and you need a formal project close but the client has not responded to your closeout message."
 feature_image = "/images/features/faq/client-closeout-no-response-faq.webp"

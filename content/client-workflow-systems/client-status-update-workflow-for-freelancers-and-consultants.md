@@ -1,11 +1,12 @@
 +++
-title = "Client Status Update Workflow for Freelancers and Consultants"
+title = "Client Status Update Workflow"
 description = "A practical client status update workflow that keeps communication calm, visible, and useful without creating extra admin."
 summary = "Use this guide to standardize weekly client updates, reduce reactive check-ins, and keep milestones, blockers, and next actions visible."
 feature_image = "/images/features/workflows/client-status-update-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing structured client status updates, blockers, approvals, and next actions."
 draft = false
 date = 2026-03-29T00:00:00Z
+slug = "client-status-update-workflow-for-freelancers-and-consultants"
 category = "client-workflow-systems"
 tags = ["client-communication", "status-updates", "workflow"]
 page_type = "guide"

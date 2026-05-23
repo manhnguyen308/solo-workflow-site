@@ -1,5 +1,5 @@
 +++
-title = "Recovery Update and Revised Plan Notice Template for Solo Operators"
+title = "Recovery Update Template for Delayed Projects"
 description = "A practical communication template for solo operators who need to explain a formal reset, revised plan, or new operating baseline clearly after the original path is no longer reliable."
 summary = "Use this template to explain what changed, what is no longer valid, what the revised path is, and what confirmation is required before work resumes."
 feature_image = "/images/features/templates/recovery-update-revised-plan-notice-template.webp"

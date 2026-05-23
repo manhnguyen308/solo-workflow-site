@@ -1,5 +1,5 @@
 +++
-title = "Weekly Client Operations Checklist for Solo Service Businesses"
+title = "Weekly Client Operations Checklist"
 description = "A weekly client operations checklist for freelancers, consultants, and solo service businesses to keep delivery, communication, and billing on track."
 summary = "Run this weekly client operations checklist to prevent missed handoffs, hidden delays, and avoidable client friction across active projects."
 feature_image = "/images/features/templates/weekly-client-operations.webp"

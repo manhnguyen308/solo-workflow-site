@@ -1,11 +1,12 @@
 +++
-title = "Invoice and Payment Workflow Setup for Freelancers and Consultants"
+title = "Invoice and Payment Workflow Setup"
 description = "An invoice and payment workflow for freelancers and consultants who need clearer billing triggers, follow-up rules, and payment visibility after delivery."
 summary = "Use this guide to connect invoices to milestones, keep payment status visible, and reduce cash-flow friction with clearer billing operations."
 feature_image = "/images/features/workflows/invoice-payment-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing milestone billing, payment status, and reminder cadence."
 draft = false
 date = 2026-03-30T00:00:00Z
+slug = "invoice-and-payment-workflow-setup-for-freelancers-and-consultants"
 category = "client-workflow-systems"
 tags = ["billing", "invoicing", "payments", "client-workflow"]
 page_type = "guide"

@@ -1,5 +1,5 @@
 +++
-title = "Project Start Readiness and Handoff Boundary Worksheet for Solo Operators"
+title = "Project Start Handoff Readiness Worksheet"
 description = "A practical worksheet for solo operators who need to define readiness conditions, required inputs, approval rules, and next-action ownership before work moves cleanly from one client stage into the next."
 summary = "Use this worksheet to document what must be true before a stage transition is allowed to happen, what blocks it, and what evidence should exist at the handoff boundary."
 feature_image = "/images/features/templates/project-start-readiness-handoff-boundary-worksheet.webp"

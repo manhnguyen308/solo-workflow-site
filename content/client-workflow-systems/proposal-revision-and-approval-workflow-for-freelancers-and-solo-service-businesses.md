@@ -1,11 +1,12 @@
 +++
-title = "Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses"
+title = "Proposal Revision and Approval Workflow"
 description = "A proposal revision and approval workflow for solo service businesses that need clearer review rounds, approval ownership, and cleaner transitions from proposal review into contract and onboarding."
 summary = "Use this workflow to control proposal review, capture revisions cleanly, define final approval clearly, and prevent pre-signature edits from turning into post-signature scope confusion."
 feature_image = "/images/features/workflows/proposal-revision-approval-workflow.webp"
 feature_image_alt = "Editorial workflow illustration representing proposal review stages, revision rounds, approval checkpoints, and contract transition."
 draft = false
 date = 2026-04-10T00:00:00Z
+slug = "proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses"
 category = "client-workflow-systems"
 tags = ["proposal", "approval", "revision", "workflow"]
 page_type = "guide"

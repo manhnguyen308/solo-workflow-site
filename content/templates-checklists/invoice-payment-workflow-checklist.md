@@ -1,11 +1,12 @@
 +++
-title = "Invoice and Payment Workflow Checklist for Service Businesses"
+title = "Invoice and Payment Workflow Checklist"
 description = "A practical invoice and payment checklist for freelancers, consultants, and service businesses that need milestone-based billing and consistent follow-up."
 summary = "Use this invoice and payment workflow checklist to tie invoicing to milestones, standardize follow-up, and reduce avoidable cash-flow friction."
 feature_image = "/images/features/templates/invoice-payment-checklist.webp"
 feature_image_alt = "Illustrated billing checklist with milestone-triggered invoicing and payment follow-up steps."
 draft = false
 date = 2026-03-15T00:00:00Z
+slug = "invoice-and-payment-workflow-checklist-for-service-businesses"
 category = "templates-checklists"
 tags = ["invoicing", "payments", "cash-flow", "checklist"]
 page_type = "template"
