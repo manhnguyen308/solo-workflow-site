@@ -120,7 +120,7 @@ When the message asks for approval, feedback, files, or a timing decision:
 
 If the message is starting to include scope negotiation, switch to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) instead.
 
-## Completion standard
+## When the update is ready
 
 The template has been used well when:
 - the update explains current status without extra clarification,

@@ -179,7 +179,7 @@ Those are better handled by [Proposal-to-Contract Handoff Workflow Setup](/workf
 - ongoing communication: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
 - next delivery stage: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
 
-## Completion standard
+## What good looks like
 
 Treat onboarding as complete only when:
 - the first milestone is active in the system of record,

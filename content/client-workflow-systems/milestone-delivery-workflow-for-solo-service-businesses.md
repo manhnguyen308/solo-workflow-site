@@ -212,7 +212,7 @@ If that reset is already defined and you need to state the revised timing or seq
 - approval and billing gate: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
 - closeout after final approval: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
-## Completion standard
+## Definition of done
 
 This workflow is working when:
 - milestone state is visible without guesswork,

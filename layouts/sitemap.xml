@@ -3,7 +3,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {{- $pages := where .Site.Pages "Kind" "not in" (slice "taxonomy" "term") }}
   {{- range $pages }}
-    {{- if and .Permalink (not (.Params.sitemap_exclude | default false)) }}
+    {{- $robots := .Params.robots | default "" | lower }}
+    {{- if and .Permalink (not (.Params.sitemap_exclude | default false)) (not (in $robots "noindex")) }}
     <url>
       <loc>{{ .Permalink }}</loc>
       {{- if not .Lastmod.IsZero }}

@@ -109,7 +109,7 @@ The goal is clarity, not pressure in the first reminder.
 - If part of the project is paused by the client, document whether billing pauses too or continues based on the contract.
 - If the client approves work informally in chat, log the approval in your system of record before invoicing.
 
-## Completion standard
+## Completion check
 
 This checklist is complete only when:
 - invoice trigger is documented,

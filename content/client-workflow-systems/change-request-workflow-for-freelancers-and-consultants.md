@@ -150,7 +150,7 @@ The risk is not one small change. The risk is silently teaching the client that 
 - letting multiple stakeholders suggest changes without a named approver,
 - burying scope changes inside status updates.
 
-## What this page is not for
+## Where this workflow stops
 
 This page helps you control live change decisions. It does not replace:
 - better proposal scoping,
@@ -178,7 +178,7 @@ This page helps you control live change decisions. It does not replace:
 - If the request is still part of proposal negotiation before approval, go upstream to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the approved change now affects billing, continue to [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
 
-## Completion standard
+## When this workflow is complete
 
 This workflow is working when:
 - new asks get captured and decided without drama,

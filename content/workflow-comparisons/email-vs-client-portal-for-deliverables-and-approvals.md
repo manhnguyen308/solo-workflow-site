@@ -56,7 +56,7 @@ The two main models are:
 - **Email-first:** summaries, files, and approvals mostly move through email.
 - **Client portal or workspace:** email points to a shared client-facing workspace, portal, or review area where the real record lives.
 
-## What this page is not for
+## What stays outside this comparison
 
 This comparison does not decide:
 - your overall stack shape,

@@ -21,7 +21,7 @@ Treat missing client inputs as a named dependency, not as background frustration
 
 This page is for the narrow question of what to do when required assets, access, approvals, or source material do not arrive on time. It does not replace the broader onboarding or delivery workflows. It exists to help you respond cleanly once the dependency is already slowing real work.
 
-## What this page is not for
+## When this answer is too narrow
 
 Do not use this FAQ to define the whole onboarding stage, redesign delivery control, or replace the broader dependency and escalation rules.
 

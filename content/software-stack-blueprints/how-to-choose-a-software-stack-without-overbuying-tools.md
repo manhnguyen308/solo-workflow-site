@@ -203,7 +203,7 @@ The decision is strong enough when you can say:
 - adding a second system because the first one was never configured around the real process,
 - automating a process that still requires judgment every cycle.
 
-## Completion standard
+## How you know the decision is ready
 
 This page has done its job when you can:
 - name the workflow bottleneck first,

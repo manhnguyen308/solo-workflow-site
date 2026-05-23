@@ -338,7 +338,7 @@ If any item is missing, the project may still be deliverable-ready, but it is no
 - final billing control: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - project closeout after transfer: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
-## Completion standard
+## When the handoff is complete
 
 This workflow is working when:
 

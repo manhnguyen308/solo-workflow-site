@@ -162,7 +162,7 @@ Review these items once a week:
 - weekly review rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
 - closeout after final payment state is clear: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
-## Completion standard
+## When this is complete
 
 This workflow is working when:
 - billing triggers are explicit,

@@ -221,7 +221,7 @@ That is why this page matters as a bridge page, not just as a pre-sale detail pa
 - post-approval scope control: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
 - signed-project activation: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 
-## Completion standard
+## How you know approval is controlled
 
 This workflow is working when:
 - proposal review starts and ends in a visible state,

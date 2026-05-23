@@ -108,7 +108,7 @@ This turns the checklist from internal QA into a client-ready handoff asset.
 - If implementation depends on the client's team, name the dependency directly in the handoff.
 - If approval is needed by a certain date, state the deadline and the consequence of delay clearly.
 
-## Completion standard
+## Ready-to-send standard
 
 This checklist is complete only when:
 - the delivered item matches the agreed scope,

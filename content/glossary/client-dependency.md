@@ -24,7 +24,7 @@ This term matters because solo operators often describe work as "blocked" withou
 
 Use this page to clarify what counts as a client dependency and to name the missing client-side item more precisely.
 
-## What this page is not for
+## What this term does not cover
 
 Do not use this page as the main answer to stalled onboarding, delayed delivery, or blocked offboarding. It explains one term inside those broader problems.
 

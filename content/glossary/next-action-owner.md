@@ -24,7 +24,7 @@ This matters because many stalled projects do not fail from lack of effort. They
 
 Use this page to clarify one specific handoff role when stalled work keeps lacking a visible next mover.
 
-## What this page is not for
+## What this term does not cover
 
 Do not use this page to diagnose the whole workflow, define the approval path, or decide the broader communication system. It only explains the role that owns the immediate next move.
 

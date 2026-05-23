@@ -15,7 +15,7 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = false
 +++
 
-Most client communication problems are not caused by bad intent. They are caused by an update rhythm that is vague, inconsistent, or overly dependent on ad hoc messages.
+Client status updates are the operating rhythm that tells a client what moved, what is blocked, and what needs their attention. When that rhythm is vague, inconsistent, or scattered across ad hoc messages, even healthy projects can feel noisier than they should.
 
 A good status update workflow reduces inbound "just checking" messages, keeps approvals moving, and makes delivery feel calmer on both sides.
 
@@ -155,7 +155,7 @@ If the client asks for something that changes deliverables, timing, or fee struc
 - If the issue is where review should happen, continue to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
 - If the whole client path still feels reactive, go upstream to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
-## Completion standard
+## How you know it's working
 
 This workflow is working when:
 - clients know when to expect updates,
