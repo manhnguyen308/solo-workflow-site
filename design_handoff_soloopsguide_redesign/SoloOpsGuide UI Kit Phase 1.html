@@ -1,0 +1,138 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="SoloOpsGuide UI Kit · Phase 1" -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — UI Kit · Phase 1</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+    .kit-doc-card {
+      background: #FAF8F2;
+      color: #2A2620;
+      padding: 56px 64px;
+      font-family: "Public Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .kit-doc-card h1 { font: 500 36px/1.15 "Source Serif 4", serif; letter-spacing: -0.012em; margin: 0 0 8px; }
+    .kit-doc-card .eyebrow { font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.08em; text-transform: uppercase; color: #6B645A; margin-bottom: 16px; }
+    .kit-doc-card .lede { font: 400 19px/1.5 "Source Serif 4", serif; color: #6B645A; max-width: 640px; }
+    .kit-doc-card h3 { font: 600 14px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #2A2620; margin: 32px 0 12px; }
+    .kit-doc-card .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 16px; border-top: 1px solid #D7D1C4; padding-top: 16px; }
+    .kit-doc-card .grid > div { font-size: 14px; color: #2A2620; }
+    .kit-doc-card .grid > div strong { display: block; margin-bottom: 6px; font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #6B645A; }
+    .kit-doc-card ul { padding-left: 18px; margin: 8px 0 0; }
+    .kit-doc-card li { margin-bottom: 6px; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="screens/homepage.jsx"></script>
+  <script type="text/babel" src="screens/homepage-mobile.jsx"></script>
+  <script type="text/babel" src="screens/article.jsx"></script>
+  <script type="text/babel" src="screens/article-mobile.jsx"></script>
+  <script type="text/babel" src="screens/hub.jsx"></script>
+  <script type="text/babel" src="screens/hub-mobile.jsx"></script>
+  <script type="text/babel" src="screens/template.jsx"></script>
+  <script type="text/babel" src="screens/reading-path.jsx"></script>
+
+  <script type="text/babel">
+    const Intro = () => (
+      <div className="kit-doc-card" style={{ width: 1200 }}>
+        <div className="eyebrow">SoloOpsGuide · UI Kit · Phase 1 · 2026-05-18</div>
+        <h1>The future-state operating manual.</h1>
+        <p className="lede">
+          Five screens that establish the editorial, workflow-first system: an article page, a homepage, a shared hub pattern, a template/checklist page, and the differentiating reading-path page. Built on Source Serif 4 + Public Sans + a warm-neutral paper palette with a single deep-blue accent.
+        </p>
+
+        <h3>What's in Phase 1</h3>
+        <ol>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Article (desktop &amp; mobile)</strong> — workflow article with TOC, utility rail, callouts, checklist, template block, path progress, dated editorial meta.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Homepage (desktop &amp; mobile)</strong> — quiet hero, five-hub explainer row, reading-path picker, new and recently revised lists, editorial-policy section.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Hub (desktop &amp; mobile)</strong> — shared pattern for Workflows / Blueprints / Comparisons. Phase-grouped lists, not card grids.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Template/Checklist page</strong> — copyable artifact with when-to-use pair, variable table, usage steps, pre-flight checklist.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Reading Path page</strong> — sequenced multi-step component that crosses hubs to fix one operator problem.</li>
+        </ol>
+
+        <div className="grid">
+          <div>
+            <strong>Typography</strong>
+            Source Serif 4 for long-form prose · Public Sans for UI, tables, nav · JetBrains Mono only inside copyable blocks.
+          </div>
+          <div>
+            <strong>Palette</strong>
+            Warm paper #FAF8F2 · Ink #2A2620 · Accent #2F4E78 · Single caution #B07A2E used only on "not for" callouts.
+          </div>
+          <div>
+            <strong>Density</strong>
+            Articles spacious (32px paragraph gap, 660–760px measure). Hubs information-dense lists. No card grids on hubs.
+          </div>
+        </div>
+      </div>
+    );
+
+    function Kit() {
+      return (
+        <DesignCanvas title="SoloOpsGuide — Phase 1 UI Kit" subtitle="Article · Homepage · Hub · Template · Reading Path">
+          <DCSection id="intro" title="Direction">
+            <DCArtboard id="intro-card" label="Phase 1 overview" width={1200} height={520}>
+              <Intro />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="article" title="01 · Article — workflow article">
+            <DCArtboard id="article-desktop" label="Article · desktop · 1280" width={1280} height={2540}>
+              <ArticleDesktop />
+            </DCArtboard>
+            <DCArtboard id="article-mobile" label="Article · mobile · 390" width={390} height={2380}>
+              <ArticleMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="homepage" title="02 · Homepage">
+            <DCArtboard id="home-desktop" label="Homepage · desktop · 1280" width={1280} height={3140}>
+              <HomepageDesktop />
+            </DCArtboard>
+            <DCArtboard id="home-mobile" label="Homepage · mobile · 390" width={390} height={3400}>
+              <HomepageMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="hub" title="03 · Hub — shared pattern (Workflows shown)">
+            <DCArtboard id="hub-desktop" label="Hub · desktop · 1280" width={1280} height={2580}>
+              <HubDesktop />
+            </DCArtboard>
+            <DCArtboard id="hub-mobile" label="Hub · mobile · 390" width={390} height={2080}>
+              <HubMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="template" title="04 · Template / Checklist page">
+            <DCArtboard id="template-desktop" label="Template · desktop · 1280" width={1280} height={2620}>
+              <TemplateDesktop />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="path" title="05 · Reading Path page — the differentiator">
+            <DCArtboard id="path-desktop" label="Reading path · desktop · 1280" width={1280} height={2280}>
+              <ReadingPathDesktop />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Kit />);
+  </script>
+</body>
+</html>

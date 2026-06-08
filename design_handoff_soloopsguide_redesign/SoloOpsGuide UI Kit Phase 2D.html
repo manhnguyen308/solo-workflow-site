@@ -1,0 +1,265 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="SoloOpsGuide UI Kit Phase 2D" -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — UI Kit · Phase 2D</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+    .kit-doc-card {
+      background: #FAF8F2;
+      color: #2A2620;
+      padding: 56px 64px;
+      font-family: "Public Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .kit-doc-card h1 { font: 500 36px/1.15 "Source Serif 4", serif; letter-spacing: -0.012em; margin: 0 0 8px; }
+    .kit-doc-card .eyebrow { font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.08em; text-transform: uppercase; color: #6B645A; margin-bottom: 16px; }
+    .kit-doc-card .lede { font: 400 19px/1.5 "Source Serif 4", serif; color: #6B645A; max-width: 640px; }
+    .kit-doc-card h3 { font: 600 14px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #2A2620; margin: 32px 0 12px; }
+    .kit-doc-card .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 16px; border-top: 1px solid #D7D1C4; padding-top: 16px; }
+    .kit-doc-card .grid > div { font-size: 14px; color: #2A2620; }
+    .kit-doc-card .grid > div strong { display: block; margin-bottom: 6px; font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #6B645A; }
+    .kit-doc-card ul { padding-left: 18px; margin: 8px 0 0; }
+    .kit-doc-card li { margin-bottom: 6px; }
+    .kit-doc-card a { color: #2F4E78; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="screens/trust-pages.jsx"></script>
+  <script type="text/babel" src="screens/trust-pages-mobile.jsx"></script>
+  <script type="text/babel" src="screens/not-found.jsx"></script>
+  <script type="text/babel" src="screens/tag-topic.jsx"></script>
+
+  <script type="text/babel">
+    const Intro = () => (
+      <div className="kit-doc-card" style={{ width: 1200 }}>
+        <div className="eyebrow">SoloOpsGuide · UI Kit · Phase 2D · Cleanup pass · 2026-05-23</div>
+        <h1>Trust pages, 404, tag/topic — final future-state system.</h1>
+        <p className="lede">
+          Cleanup pass before implementation handoff. <strong>Privacy Policy</strong> added as a seventh trust page on the shared primitive. Placeholder email/date strings neutralised. Editorial-policy LLM paragraph softened to a tool-agnostic editorial-responsibility note. <strong>AdSense safe-zone</strong> ships as a separate reference canvas, not embedded in live mockups. The earlier fidelity-pass UI kit has been archived under <code>archive/obsolete-fidelity-pass/</code> — do not reach into it for new work. Earlier kits: <a href="SoloOpsGuide UI Kit Phase 1.html">Phase 1</a> · <a href="SoloOpsGuide UI Kit Phase 2A.html">2A</a> · <a href="SoloOpsGuide UI Kit Phase 2B.html">2B</a> · <a href="SoloOpsGuide UI Kit Phase 2C.html">2C</a>.
+        </p>
+
+        <h3>What's in Phase 2D (post-cleanup)</h3>
+        <ol>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Trust pages (×7, desktop + mobile)</strong> — About, Editorial Policy, Content Policy, <em>Privacy Policy (added)</em>, Contact, Disclaimer, Terms. One shared <em>trust-page</em> primitive (narrow prose column + sticky TOC aside) with variant content. Role-based wording only ("SoloOpsGuide Editorial"); no named authors, no fake credentials.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>404 page (desktop + mobile)</strong> — calm framing, search input, editorial-update note, eight-cell recovery grid covering every major destination type.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Tag/topic destination (desktop + mobile)</strong> — populated example (Approvals · 24 items grouped by content type) and the sparse-state pattern (Subcontracting · 3 items) with the safeguard banner.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>AdSense safe-zone reference</strong> — separate diagram canvas (<a href="AdSense Safe-Zone Reference.html">AdSense Safe-Zone Reference.html</a>), not inserted into any live page mockup.</li>
+        </ol>
+
+        <h3>What's new in the component set</h3>
+        <div className="grid">
+          <div>
+            <strong>Trust primitives</strong>
+            trust-shell · trust-header · trust-prose (incl. plain-English pair rows) · trust-toc (sticky aside) · policy-callout · related-trust cross-link grid · review-note footer
+          </div>
+          <div>
+            <strong>Tag / topic primitives</strong>
+            tag-header (title + stats split) · tag-group-head · tag-row · sparse-state safeguard · related-topics block
+          </div>
+          <div>
+            <strong>404 primitives</strong>
+            nf-shell · nf-search · nf-update-note · nf-recovery (8-cell hub grid)
+          </div>
+        </div>
+
+        <h3>How these reuse earlier primitives</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>siteHeader / mobileHeader / siteFooter / breadcrumbs</strong> across every page.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>eyebrow + lede</strong> typography (Phase 1) on every header.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>group-head pattern</strong> from search results & FAQ index reused by tag-group-head.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>result-row / faq-row</strong> rhythm reused by tag-row (num · title · summary · meta · date · open →).</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>recovery grid</strong> from search-empty extended to 8 cells for 404.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>callout (border-left accent)</strong> from Phase 1 quietened for trust/policy-callout and nf-update-note.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>review-note footer</strong> derives from the editorial-meta line in Phase 1 articles; promoted to a bordered block.</li>
+        </ul>
+
+        <h3>Trust page design summary</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>One shared primitive, variant content.</strong> Each page is structurally identical — narrow prose column, sticky TOC, related-trust grid, editorial review-note — only the section list and lede change. No bespoke chrome per page.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Plain-English pair rows.</strong> Where a trust section enumerates concepts (e.g. About → "How content is organised"), we use a <code>.pe</code> row (Sans label · prose value) instead of bullets.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Editorial review-note footer</strong> ends every page with role-based maintainer ("SoloOpsGuide Editorial"), last-reviewed date, next-review date, and the page version. No bylines.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>One filled button max</strong> per page rule held — in fact, no filled buttons. Every CTA is a text link.</li>
+        </ul>
+
+        <h3>404 page design summary</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>No "Oops".</strong> H1 is literally "Page not found." Lede explains the three usual causes in plain language.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Update note acknowledges re-slug.</strong> A small bordered note explains pages may have moved during a recent quarterly review — reassuring without being apologetic.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Search field is primary.</strong> Big serif input. Recovery grid below covers all eight destination types (Workflow, Asset, System, Decision, Term, Question, Diagnostic, Topic).</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>No aggressive CTA, no cartoon, no playful tone.</strong></li>
+        </ul>
+
+        <h3>Tag / topic page design summary</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Real destination, not just an archive.</strong> Topic gets a proper title, lede explaining what it covers, a stats block (items · paths · last reviewed · related tags), and grouped sections per content type — Workflows, Templates, Comparisons, Glossary, FAQ, Reading paths.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Grouped by content type, not by date.</strong> Avoids the thin-archive feeling and answers "where does each kind of resource live for this topic?"</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Related topics block</strong> at the bottom in a paper-2 surface; topics that overlap, listed with item counts.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Sparse-state safeguard.</strong> A topic with fewer than ~5 items shows a bordered banner at the top: "this topic has N published items — that's deliberate" and routes to adjacent topics + reading paths + a Contact mention. Prevents thin-archive perception when coverage is genuinely light.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>No keyword-cloud styling, no infinite scroll, no SEO-shaped page.</strong></li>
+        </ul>
+
+        <h3>Mobile behavior</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Trust prose</strong> collapses to a single column. Sticky TOC drops — table of contents is not shown on mobile (the prose is short enough that the cost outweighs the benefit). H1 drops from 44px → 32px, lede 20 → 17. Plain-English pair rows stack key → value.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Related trust-page links</strong> stack from 3-col grid → 1-col list, still bordered, still hover-able.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Tag/topic grouped lists</strong> drop to 1-col stacked rows (num → title → summary → meta → date+open as a row). Header stack collapses from 2-col (title vs stats) to single column with stats in a 2-col grid below.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Related topics</strong> drop from 3-col to 2-col grid (kept as a grid to preserve scannability — at 1-col they'd look like a Top-10 list).</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Sparse topic state</strong> stays bordered, alts stack 1-col.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>404 recovery links</strong> drop to 1-col stacked rows. Search input shrinks to fit, keeps the same border treatment. Update note stays.</li>
+        </ul>
+
+        <h3>Cleanup pass — what changed</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Older fidelity-pass UI kit archived.</strong> The earlier UI work that mirrored production (teal/amber, Source Sans 3 + Lora, SaaS-style cards) is in <code>archive/obsolete-fidelity-pass/</code> with a README explaining why. The package no longer contains two competing design systems.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Privacy Policy added (7th trust page).</strong> Same shared primitive. Plain-English coverage of analytics, cookies, affiliate links, conditional advertising, third-party links, contact messages, choices, updates, and contact. No GDPR/CCPA compliance claim; conditional phrasing where the production behaviour is not confirmed.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Placeholder email + dates neutralised.</strong> No <code>.example</code> email rendered in prose. Dates are now "Updated quarterly" / "Next review in 3 months" in the dating block; the inbox field carries an explicit <code>[… confirm before launch]</code> marker.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Editorial-policy LLM paragraph softened.</strong> Now reads as “editing / formatting / QA tooling may support; editorial responsibility stays with SoloOpsGuide Editorial.” No tool names. No headline framing of AI/tooling.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Sparse-topic threshold</strong> documented as a recommendation, not a hard rule: “Consider merging, noindexing, or improving sparse topic pages with fewer than 5 useful items.” Production decision stays editorial.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>AdSense safe-zone</strong> lives in <a href="AdSense Safe-Zone Reference.html">AdSense Safe-Zone Reference.html</a> as an instructional diagram — not inserted into any live page mockup.</li>
+        </ul>
+
+        <h3>What was deliberately not changed</h3>
+        <ul>
+          <li>Approved future-state screens (homepage, article, hub, blueprint, comparison, glossary index/entry, FAQ index/entry, search, reading-path index, tag/topic, 404, six existing trust pages). These already match the final direction.</li>
+          <li>Voice rules, dating discipline, no-fake-testimonial rule, tag scope discipline, sparse-tag safeguards — already correct.</li>
+        </ul>
+
+        <h3>Remaining out of scope after this cleanup</h3>
+        <ul>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Printable variants.</strong> Per direction: <code>@media print</code> over existing screens, no separate routes. Defer.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Quarterly editorial change log.</strong> Site-wide changes page rather than per-entry diffs. Out of scope for this pass.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>AdSense safe-zone diagram.</strong> Shipped in this pass as a separate reference canvas — see <a href="AdSense Safe-Zone Reference.html">AdSense Safe-Zone Reference.html</a>.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Tag index (A–Z of all topics).</strong> The destination pages exist; the index that lists every topic does not yet. Probably the next surface after Phase 2D.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Author/maintainer page</strong> for "SoloOpsGuide Editorial" — explicitly a role page, not personal bios. Could be folded into About; flag for review.</li>
+        </ul>
+
+        <h3>Remaining risks before implementation handoff</h3>
+        <ul>
+          <li>The editorial inbox + review dates render as explicit placeholders. Live values must be wired in (footer, contact page, dating block) before launch — the placeholder strings are intentionally obvious so reviewers don't miss them.</li>
+          <li>Privacy Policy is conditional on production behaviour: it currently states ads are not enabled and that formal GDPR/CCPA workflows are not in place. If either changes, the policy text and the cookies/analytics sections must be re-walked.</li>
+          <li>Sparse-topic threshold (&lt;5 items) is documented as a recommendation. Final per-page decision (merge / noindex / leave) stays editorial.</li>
+          <li>The Subcontracting topic in the sparse example is a composite. If the site ever publishes real subcontracting content, swap the demo data before launch.</li>
+        </ul>
+      </div>
+    );
+
+    function Kit() {
+      return (
+        <DesignCanvas title="SoloOpsGuide — Phase 2D" subtitle="Trust · 404 · Tag/topic">
+          <DCSection id="intro" title="Phase 2D · Direction">
+            <DCArtboard id="intro-card" label="Phase 2D overview" width={1200} height={1660}>
+              <Intro />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-about" title="15 · Trust · About">
+            <DCArtboard id="about-d" label="About · desktop · 1280" width={1280} height={2520}>
+              <TrustPageDesktop slug="about" />
+            </DCArtboard>
+            <DCArtboard id="about-m" label="About · mobile · 390" width={390} height={2680}>
+              <TrustPageMobile slug="about" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-editorial" title="16 · Trust · Editorial policy">
+            <DCArtboard id="ed-d" label="Editorial policy · desktop · 1280" width={1280} height={2640}>
+              <TrustPageDesktop slug="editorial" />
+            </DCArtboard>
+            <DCArtboard id="ed-m" label="Editorial policy · mobile · 390" width={390} height={2960}>
+              <TrustPageMobile slug="editorial" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-content" title="17 · Trust · Content policy">
+            <DCArtboard id="cp-d" label="Content policy · desktop · 1280" width={1280} height={2480}>
+              <TrustPageDesktop slug="content" />
+            </DCArtboard>
+            <DCArtboard id="cp-m" label="Content policy · mobile · 390" width={390} height={2780}>
+              <TrustPageMobile slug="content" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-privacy" title="17b · Trust · Privacy policy (added in cleanup pass)">
+            <DCArtboard id="pr-d" label="Privacy policy · desktop · 1280" width={1280} height={3160}>
+              <TrustPageDesktop slug="privacy" />
+            </DCArtboard>
+            <DCArtboard id="pr-m" label="Privacy policy · mobile · 390" width={390} height={3520}>
+              <TrustPageMobile slug="privacy" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-contact" title="18 · Trust · Contact">
+            <DCArtboard id="ct-d" label="Contact · desktop · 1280" width={1280} height={2160}>
+              <TrustPageDesktop slug="contact" />
+            </DCArtboard>
+            <DCArtboard id="ct-m" label="Contact · mobile · 390" width={390} height={2380}>
+              <TrustPageMobile slug="contact" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-disclaimer" title="19 · Trust · Disclaimer">
+            <DCArtboard id="dc-d" label="Disclaimer · desktop · 1280" width={1280} height={2380}>
+              <TrustPageDesktop slug="disclaimer" />
+            </DCArtboard>
+            <DCArtboard id="dc-m" label="Disclaimer · mobile · 390" width={390} height={2640}>
+              <TrustPageMobile slug="disclaimer" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="trust-terms" title="20 · Trust · Terms">
+            <DCArtboard id="tm-d" label="Terms · desktop · 1280" width={1280} height={2640}>
+              <TrustPageDesktop slug="terms" />
+            </DCArtboard>
+            <DCArtboard id="tm-m" label="Terms · mobile · 390" width={390} height={2960}>
+              <TrustPageMobile slug="terms" />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="not-found" title="21 · Generic 404">
+            <DCArtboard id="nf-d" label="404 · desktop · 1280" width={1280} height={1320}>
+              <NotFoundDesktop />
+            </DCArtboard>
+            <DCArtboard id="nf-m" label="404 · mobile · 390" width={390} height={1840}>
+              <NotFoundMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="tag-populated" title="22 · Tag/topic · populated (Approvals)">
+            <DCArtboard id="tag-d" label="Topic · desktop · 1280" width={1280} height={3420}>
+              <TagPageDesktop data={TAG_APPROVALS} />
+            </DCArtboard>
+            <DCArtboard id="tag-m" label="Topic · mobile · 390" width={390} height={4720}>
+              <TagPageMobile data={TAG_APPROVALS} />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="tag-sparse" title="23 · Tag/topic · sparse state (Subcontracting)">
+            <DCArtboard id="tag-s-d" label="Sparse topic · desktop · 1280" width={1280} height={2080}>
+              <TagPageDesktop data={TAG_SUBCONTRACT} />
+            </DCArtboard>
+            <DCArtboard id="tag-s-m" label="Sparse topic · mobile · 390" width={390} height={2820}>
+              <TagPageMobile data={TAG_SUBCONTRACT} />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Kit />);
+  </script>
+</body>
+</html>

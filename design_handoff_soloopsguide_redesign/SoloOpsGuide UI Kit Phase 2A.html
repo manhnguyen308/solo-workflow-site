@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="SoloOpsGuide UI Kit · Phase 2A" -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — UI Kit · Phase 2A</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+    .kit-doc-card {
+      background: #FAF8F2;
+      color: #2A2620;
+      padding: 56px 64px;
+      font-family: "Public Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .kit-doc-card h1 { font: 500 36px/1.15 "Source Serif 4", serif; letter-spacing: -0.012em; margin: 0 0 8px; }
+    .kit-doc-card .eyebrow { font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.08em; text-transform: uppercase; color: #6B645A; margin-bottom: 16px; }
+    .kit-doc-card .lede { font: 400 19px/1.5 "Source Serif 4", serif; color: #6B645A; max-width: 640px; }
+    .kit-doc-card h3 { font: 600 14px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #2A2620; margin: 32px 0 12px; }
+    .kit-doc-card .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 16px; border-top: 1px solid #D7D1C4; padding-top: 16px; }
+    .kit-doc-card .grid > div { font-size: 14px; color: #2A2620; }
+    .kit-doc-card .grid > div strong { display: block; margin-bottom: 6px; font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #6B645A; }
+    .kit-doc-card ul { padding-left: 18px; margin: 8px 0 0; }
+    .kit-doc-card li { margin-bottom: 6px; }
+    .kit-doc-card a { color: #2F4E78; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="screens/comparison.jsx"></script>
+  <script type="text/babel" src="screens/comparison-mobile.jsx"></script>
+  <script type="text/babel" src="screens/blueprint.jsx"></script>
+  <script type="text/babel" src="screens/blueprint-mobile.jsx"></script>
+
+  <script type="text/babel">
+    const Intro = () => (
+      <div className="kit-doc-card" style={{ width: 1200 }}>
+        <div className="eyebrow">SoloOpsGuide · UI Kit · Phase 2A · 2026-05-18</div>
+        <h1>The decision and the operating setup.</h1>
+        <p className="lede">
+          Two page types built on the Phase 1 system: the Workflow Comparison page (for picking between operating models) and the Software Stack Blueprint page (for adopting a complete setup). Both reuse the warm-paper palette, the Source Serif 4 + Public Sans pairing, and the editorial-meta pattern. Phase 1 file: <a href="SoloOpsGuide UI Kit Phase 1.html">SoloOpsGuide UI Kit Phase 1.html</a>.
+        </p>
+
+        <h3>What's in Phase 2A</h3>
+        <ol>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Workflow Comparison page (desktop + mobile)</strong> — option cards, decision summary, criteria panel, side-by-side table, best-for/not-best-for pair, recommendation logic, next-step links.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Software Stack Blueprint page (desktop + mobile)</strong> — what-for, who-fits, role-based component inventory, ordered setup sequence with prereqs and outputs, what-to-avoid, maintenance cadence, three-column related rail.</li>
+        </ol>
+
+        <h3>What's new in the component set</h3>
+        <div className="grid">
+          <div>
+            <strong>For comparisons</strong>
+            decision-summary banner · option-card · compare-table · criteria panel · best-for / not-best-for pair · recommendation-logic grid · mcompare (mobile)
+          </div>
+          <div>
+            <strong>For blueprints</strong>
+            who-fits split list · role-inventory table · setup-sequence rail with prereq/output meta · maintenance-cadence grid · three-column related rail
+          </div>
+          <div>
+            <strong>Reused from Phase 1</strong>
+            siteHeader · breadcrumbs · chip · editorialMeta footer block · next-step cards · proseContainer rules · sticky utility rail pattern
+          </div>
+        </div>
+      </div>
+    );
+
+    function Kit() {
+      return (
+        <DesignCanvas title="SoloOpsGuide — Phase 2A" subtitle="Comparison · Blueprint">
+          <DCSection id="intro" title="Phase 2A · Direction">
+            <DCArtboard id="intro-card" label="Phase 2A overview" width={1200} height={520}>
+              <Intro />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="comparison" title="06 · Workflow Comparison">
+            <DCArtboard id="cmp-desktop" label="Comparison · desktop · 1280" width={1280} height={3540}>
+              <ComparisonDesktop />
+            </DCArtboard>
+            <DCArtboard id="cmp-mobile" label="Comparison · mobile · 390" width={390} height={3520}>
+              <ComparisonMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="blueprint" title="07 · Software Stack Blueprint">
+            <DCArtboard id="bp-desktop" label="Blueprint · desktop · 1280" width={1280} height={3780}>
+              <BlueprintDesktop />
+            </DCArtboard>
+            <DCArtboard id="bp-mobile" label="Blueprint · mobile · 390" width={390} height={3120}>
+              <BlueprintMobile />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Kit />);
+  </script>
+</body>
+</html>

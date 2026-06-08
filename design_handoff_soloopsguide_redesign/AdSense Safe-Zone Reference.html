@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — AdSense Safe-Zone Reference</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+
+    .canvas {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 56px 32px 96px;
+      color: #f4efe3;
+    }
+    .canvas .eyebrow {
+      font: 600 12px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #b8b1a3;
+      margin-bottom: 12px;
+    }
+    .canvas h1 {
+      font: 500 40px/1.1 "Source Serif 4", serif;
+      letter-spacing: -0.012em;
+      margin: 0 0 12px;
+      max-width: 880px;
+    }
+    .canvas .lede {
+      font: 400 19px/1.55 "Source Serif 4", serif;
+      color: #d8d2c2;
+      max-width: 720px;
+      margin: 0 0 40px;
+    }
+
+    .panel-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 32px;
+    }
+    @media (max-width: 1080px) { .panel-row { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: #FAF8F2;
+      color: #2A2620;
+      border-radius: 0;
+      padding: 28px 28px 36px;
+      position: relative;
+    }
+    .panel .label {
+      display: inline-block;
+      font: 600 11px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6B645A;
+      margin-bottom: 4px;
+    }
+    .panel h2 {
+      font: 500 22px/1.25 "Source Serif 4", serif;
+      letter-spacing: -0.005em;
+      margin: 0 0 4px;
+      color: #2A2620;
+    }
+    .panel .panel-note {
+      font: 400 14px/1.55 "Public Sans", sans-serif;
+      color: #6B645A;
+      margin: 0 0 20px;
+      max-width: 520px;
+    }
+
+    /* Page diagram */
+    .pg {
+      background: #ffffff;
+      border: 1px solid #D7D1C4;
+      padding: 0;
+      position: relative;
+    }
+    .pg .pg-header {
+      padding: 14px 18px;
+      border-bottom: 1px solid #D7D1C4;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font: 600 12px/1 "Public Sans", sans-serif;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #6B645A;
+    }
+    .pg .pg-header .dot {
+      width: 8px; height: 8px; border-radius: 0; background: #2A2620;
+    }
+    .pg .pg-body {
+      display: grid;
+      grid-template-columns: 1fr 240px;
+      gap: 0;
+    }
+    @media (max-width: 720px) { .pg .pg-body { grid-template-columns: 1fr; } }
+
+    .pg .col-read {
+      padding: 20px 22px 24px;
+      border-right: 1px solid #E5E0D3;
+    }
+    .pg .col-aside {
+      padding: 20px 18px 24px;
+      background: #F6F2E6;
+    }
+
+    .read-eyebrow {
+      font: 600 10px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #2F4E78;
+      margin: 0 0 8px;
+    }
+    .read-h1 {
+      font: 500 28px/1.15 "Source Serif 4", serif;
+      letter-spacing: -0.01em;
+      margin: 0 0 12px;
+      color: #2A2620;
+    }
+    .read-lede {
+      font: 400 16px/1.5 "Source Serif 4", serif;
+      color: #6B645A;
+      margin: 0 0 14px;
+      max-width: 480px;
+    }
+    .read-line {
+      height: 8px;
+      background: #ECE8DC;
+      margin: 6px 0;
+      border-radius: 0;
+    }
+    .read-line.w90 { width: 90%; }
+    .read-line.w70 { width: 70%; }
+    .read-line.w50 { width: 50%; }
+    .read-h2 {
+      font: 500 18px/1.2 "Source Serif 4", serif;
+      color: #2A2620;
+      margin: 22px 0 6px;
+    }
+
+    .aside-block { margin-bottom: 18px; }
+    .aside-label {
+      font: 600 10px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6B645A;
+      margin: 0 0 6px;
+    }
+    .aside-line {
+      height: 7px;
+      background: #DDD7C6;
+      margin: 5px 0;
+    }
+    .aside-line.w60 { width: 60%; }
+    .aside-line.w80 { width: 80%; }
+
+    /* Ad slots */
+    .ad {
+      border: 1px solid #2F4E78;
+      background: #D8E1ED;
+      color: #1B2E47;
+      padding: 12px 14px;
+      font: 500 11px/1.35 "Public Sans", sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 10px;
+    }
+    .ad .ad-label { font-weight: 700; }
+    .ad .ad-spec { color: #2F4E78; font-weight: 500; text-transform: none; letter-spacing: 0; font-style: italic; }
+
+    .ad.bad {
+      border-color: #B0492E;
+      background: #F3D8CE;
+      color: #6B2917;
+    }
+    .ad.bad .ad-spec { color: #6B2917; }
+
+    .ad.disguised {
+      border-color: #B0492E;
+      background: #F3D8CE;
+      color: #6B2917;
+    }
+    .ad.disguised .label-inner {
+      font: 600 10px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #B0492E;
+      margin-bottom: 4px;
+    }
+    .ad.disguised .title-inner {
+      font: 500 16px/1.2 "Source Serif 4", serif;
+      letter-spacing: -0.005em;
+    }
+    .ad.disguised .strike-label {
+      position: absolute;
+      bottom: 6px; right: 8px;
+      font: 700 10px/1 "Public Sans", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #B0492E;
+    }
+
+    .ad.sticky {
+      position: relative;
+      margin-top: 18px;
+    }
+
+    .strike { position: relative; }
+    .strike::after {
+      content: "";
+      position: absolute;
+      left: 8px; right: 8px;
+      top: 50%;
+      border-top: 2px solid #B0492E;
+      transform: rotate(-3deg);
+      transform-origin: center;
+      pointer-events: none;
+    }
+
+    .annotation {
+      position: absolute;
+      font: 500 11px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.02em;
+      color: #6B645A;
+      background: #FAF8F2;
+      padding: 4px 8px;
+      border-left: 2px solid #2F4E78;
+      max-width: 240px;
+    }
+    .annotation.bad { border-left-color: #B0492E; color: #6B2917; }
+
+    /* Legend */
+    .legend {
+      margin-top: 40px;
+      background: #2A2620;
+      color: #f4efe3;
+      padding: 28px 32px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    @media (max-width: 780px) { .legend { grid-template-columns: 1fr; } }
+    .legend h3 {
+      font: 600 12px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+      color: #DCD3BF;
+    }
+    .legend ul { margin: 0; padding-left: 18px; }
+    .legend li {
+      font: 400 14px/1.55 "Public Sans", sans-serif;
+      margin-bottom: 8px;
+      color: #ECE5D0;
+    }
+    .legend .swatch {
+      display: inline-block;
+      width: 14px; height: 14px;
+      vertical-align: -2px;
+      margin-right: 8px;
+    }
+    .legend .swatch.ok { background: #D8E1ED; border: 1px solid #2F4E78; }
+    .legend .swatch.no { background: #F3D8CE; border: 1px solid #B0492E; }
+
+    /* Inline swatches used inside the Placement rules bullets. Scoped to their own
+       class so the .legend section's block styling never applies to them. */
+    .inline-swatch {
+      display: inline-block;
+      width: 14px; height: 14px;
+      vertical-align: -2px;
+      margin-right: 8px;
+    }
+    .inline-swatch.ok { background: #D8E1ED; border: 1px solid #2F4E78; }
+    .inline-swatch.no { background: #F3D8CE; border: 1px solid #B0492E; }
+
+    .rules {
+      margin-top: 24px;
+      background: #FAF8F2;
+      color: #2A2620;
+      padding: 28px 32px;
+    }
+    .rules h3 {
+      font: 600 12px/1.4 "Public Sans", sans-serif;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6B645A;
+      margin: 0 0 12px;
+    }
+    .rules-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 780px) { .rules-grid { grid-template-columns: 1fr; } }
+    .rules h4 {
+      font: 600 13px/1.35 "Public Sans", sans-serif;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #2A2620;
+      margin: 0 0 8px;
+    }
+    .rules ul { margin: 0 0 0 18px; padding: 0; }
+    .rules li {
+      font: 400 14px/1.55 "Public Sans", sans-serif;
+      color: #2A2620;
+      margin-bottom: 6px;
+    }
+    .rules li.no { color: #6B2917; }
+
+    .footnote {
+      margin-top: 32px;
+      font: 400 13px/1.55 "Public Sans", sans-serif;
+      color: #b8b1a3;
+      max-width: 780px;
+    }
+    .footnote a { color: #DCD3BF; }
+  </style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="eyebrow">SoloOpsGuide · Reference · AdSense safe zones</div>
+    <h1>Where ads may and may not appear inside an article surface.</h1>
+    <p class="lede">
+      A reference for editorial and implementation — not a live mockup. The article reading column carries
+      the trust of the site; ads belong in two acceptable slots only, must be visibly distinct from prose,
+      and must never block the page from being read.
+    </p>
+
+    <div class="panel-row">
+      <!-- LEFT: acceptable placements -->
+      <div class="panel">
+        <span class="label">Acceptable layout</span>
+        <h2>Two optional slots. One per article, max.</h2>
+        <p class="panel-note">
+          Ads sit between major H2 sections, or after the main content. Reading column is unobstructed
+          above the fold. Sidebar carries one optional sponsored slot, clearly labelled.
+        </p>
+
+        <div class="pg">
+          <div class="pg-header">
+            <span class="dot"></span>
+            <span>Workflow article · /workflows/&lt;slug&gt;/</span>
+          </div>
+          <div class="pg-body">
+            <div class="col-read">
+              <p class="read-eyebrow">Workflow</p>
+              <h3 class="read-h1">A client-approval workflow you can actually run.</h3>
+              <p class="read-lede">A practical, dated sequence for getting written approval on the first round without losing the engagement.</p>
+              <div class="read-line w90"></div>
+              <div class="read-line w70"></div>
+              <div class="read-line w90"></div>
+              <div class="read-line w50"></div>
+
+              <h4 class="read-h2">1. Frame the approval moment</h4>
+              <div class="read-line w90"></div>
+              <div class="read-line w70"></div>
+              <div class="read-line w90"></div>
+              <div class="read-line w50"></div>
+
+              <!-- mid-article ad slot — between H2s -->
+              <div class="ad" style="margin: 22px 0;">
+                <span class="ad-label">Advertisement</span>
+                <span class="ad-spec">Mid-article · 728×90 or responsive · between H2s</span>
+              </div>
+
+              <h4 class="read-h2">2. Write the approval line</h4>
+              <div class="read-line w90"></div>
+              <div class="read-line w70"></div>
+              <div class="read-line w50"></div>
+
+              <h4 class="read-h2">3. Send. Wait. Restate.</h4>
+              <div class="read-line w90"></div>
+              <div class="read-line w70"></div>
+
+              <!-- end-of-article ad slot -->
+              <div class="ad" style="margin: 22px 0 0;">
+                <span class="ad-label">Advertisement</span>
+                <span class="ad-spec">End of article · responsive · before related</span>
+              </div>
+            </div>
+
+            <div class="col-aside">
+              <div class="aside-block">
+                <p class="aside-label">Use this page for</p>
+                <div class="aside-line w80"></div>
+                <div class="aside-line w60"></div>
+              </div>
+              <div class="aside-block">
+                <p class="aside-label">Best next move</p>
+                <div class="aside-line w80"></div>
+                <div class="aside-line w60"></div>
+              </div>
+
+              <!-- sidebar ad -->
+              <div class="ad" style="margin-top: 18px;">
+                <span class="ad-label">Sponsored</span>
+                <span class="ad-spec">300×250</span>
+              </div>
+
+              <div class="aside-block" style="margin-top: 18px;">
+                <p class="aside-label">Tags</p>
+                <div class="aside-line w60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: forbidden placements -->
+      <div class="panel">
+        <span class="label">Layouts to avoid</span>
+        <h2>What we will not ship.</h2>
+        <p class="panel-note">
+          The same article surface, drawn with the patterns we explicitly do not run. Every red box below
+          breaks one rule.
+        </p>
+
+        <div class="pg">
+          <div class="pg-header">
+            <span class="dot"></span>
+            <span>Same article · with ad-pattern violations</span>
+          </div>
+          <div class="pg-body">
+            <div class="col-read">
+
+              <!-- ad above the fold in reading column -->
+              <div class="ad bad" style="margin: 0 0 16px;">
+                <span class="ad-label">Advertisement</span>
+                <span class="ad-spec">Above the fold · in the reading column · do not ship</span>
+              </div>
+
+              <p class="read-eyebrow">Workflow</p>
+              <h3 class="read-h1">A client-approval workflow you can actually run.</h3>
+              <p class="read-lede">A practical, dated sequence for getting written approval on the first round without losing the engagement.</p>
+              <div class="read-line w90"></div>
+              <div class="read-line w70"></div>
+
+              <h4 class="read-h2">1. Frame the approval moment</h4>
+              <div class="read-line w90"></div>
+
+              <!-- disguised editorial-style ad -->
+              <div class="ad disguised" style="margin: 14px 0; padding: 14px 16px;">
+                <div>
+                  <div class="label-inner">Editor's pick</div>
+                  <div class="title-inner">The CRM that solo operators trust.</div>
+                </div>
+                <div class="strike-label">Looks editorial — do not ship</div>
+              </div>
+
+              <div class="read-line w70"></div>
+
+              <h4 class="read-h2">2. Write the approval line</h4>
+              <div class="read-line w90"></div>
+
+              <!-- ad between every section -->
+              <div class="ad bad" style="margin: 14px 0;">
+                <span class="ad-label">Advertisement</span>
+                <span class="ad-spec">Section break</span>
+              </div>
+
+              <h4 class="read-h2">3. Send. Wait. Restate.</h4>
+              <div class="read-line w90"></div>
+
+              <div class="ad bad" style="margin: 14px 0;">
+                <span class="ad-label">Advertisement</span>
+                <span class="ad-spec">Another section break</span>
+              </div>
+
+              <div class="read-line w50"></div>
+
+              <!-- sticky bottom ad -->
+              <div class="ad bad sticky" style="margin-top: 18px;">
+                <span class="ad-label">Sticky bottom ad</span>
+                <span class="ad-spec">Pinned to viewport · do not ship</span>
+              </div>
+
+            </div>
+
+            <div class="col-aside">
+              <div class="aside-block">
+                <p class="aside-label">Use this page for</p>
+                <div class="aside-line w80"></div>
+              </div>
+              <div class="aside-block">
+                <p class="aside-label">Best next move</p>
+                <div class="aside-line w80"></div>
+              </div>
+              <div class="aside-block">
+                <p class="aside-label">Tags</p>
+                <div class="aside-line w60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules">
+      <h3>Placement rules</h3>
+      <div class="rules-grid">
+        <div>
+          <h4>Acceptable</h4>
+          <ul>
+            <li><span class="inline-swatch ok"></span> One optional mid-article slot, between two H2 sections.</li>
+            <li><span class="inline-swatch ok"></span> One optional end-of-article slot, after the prose and before the related panel.</li>
+            <li><span class="inline-swatch ok"></span> One optional sidebar slot in the article aside, beneath utility cards.</li>
+            <li>Every ad carries a visible <strong>"Advertisement"</strong> or <strong>"Sponsored"</strong> label.</li>
+            <li>Ad container has a visible border or distinct background so the boundary against prose is unambiguous.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Do not ship</h4>
+          <ul>
+            <li class="no"><span class="inline-swatch no"></span> Ads above the fold in the reading column.</li>
+            <li class="no"><span class="inline-swatch no"></span> Ads styled to look like editorial callouts, "editor's picks," or related links.</li>
+            <li class="no"><span class="inline-swatch no"></span> Sticky bottom ads pinned to the viewport.</li>
+            <li class="no"><span class="inline-swatch no"></span> An ad between every section. Maximum one mid-article slot per page.</li>
+            <li class="no"><span class="inline-swatch no"></span> Ads on trust pages, the homepage hero, search results above the fold, or the 404 page.</li>
+            <li class="no"><span class="inline-swatch no"></span> Pop-ups, interstitials, autoplay video ads.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="legend">
+      <div>
+        <h3>Reading this diagram</h3>
+        <ul>
+          <li><span class="swatch ok"></span> Blue-outlined block — acceptable ad slot.</li>
+          <li><span class="swatch no"></span> Red-outlined block — pattern we will not ship.</li>
+          <li>The two pages share the same article skeleton. The only difference is where the ads land and how they are labelled.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Why these rules</h3>
+        <ul>
+          <li>The reading column carries the trust of the site. Anything above the fold there must be prose.</li>
+          <li>Ads disguised as editorial copy break the bargain of the page and are explicitly forbidden by the content policy.</li>
+          <li>Sticky and interstitial formats fight the reader for control of the viewport. The site is a reading surface.</li>
+          <li>One mid-article slot is the practical compromise. Two slots in the body, plus one in the aside, is the ceiling — not a target.</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="footnote">
+      This page is reference only. It is not embedded in any live page mockup, and it does not document the
+      current production layout — display advertising is not enabled on SoloOpsGuide at the time of this kit.
+      If and when ads are enabled, the cookies and analytics sections of the
+      Privacy Policy must be re-walked alongside this diagram.
+    </p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" role="img" aria-labelledby="t d">
+  <title id="t">SoloOpsGuide — Workflow-first guidance for solo operators</title>
+  <desc id="d">SoloOpsGuide mark to the left of the serif wordmark and tagline.</desc>
+  <g transform="translate(8 8)">
+    <path d="M 4 60 C 4 50 22 56 22 42 C 22 34 41 40 41 26 C 41 18 58 24 58 10 L 60 4" fill="none" stroke="#1F3A5F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <path d="M 60 4 L 54 3.5 M 60 4 L 60.5 10" fill="none" stroke="#1F3A5F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path>
+    <rect x="6" y="44" width="20" height="16" rx="2.5" fill="#1F3A5F"></rect>
+    <rect x="23" y="30" width="20" height="16" rx="2.5" fill="#5C8499"></rect>
+    <rect x="40" y="16" width="20" height="16" rx="2.5" fill="#5C8499"></rect>
+    <circle cx="16" cy="52" r="4.6" fill="#FAF8F2"></circle>
+    <text x="16" y="54.6" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="6.6" font-weight="700" fill="#1F3A5F">1</text>
+    <circle cx="33" cy="38" r="4.6" fill="#FAF8F2"></circle>
+    <text x="33" y="40.6" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="6.6" font-weight="700" fill="#1F3A5F">2</text>
+    <circle cx="50" cy="24" r="4.6" fill="#FAF8F2"></circle>
+    <text x="50" y="26.6" text-anchor="middle" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="6.6" font-weight="700" fill="#1F3A5F">3</text>
+  </g>
+  <text x="86" y="42" font-family="Source Serif 4, Georgia, serif" font-size="30" font-weight="500" fill="#2A2620" letter-spacing="-0.3">SoloOpsGuide</text>
+  <text x="86" y="62" font-family="Public Sans, system-ui, sans-serif" font-size="13" font-weight="400" fill="#6B645A">Workflow-first guidance for solo operators</text>
+</svg>

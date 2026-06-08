@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="SoloOpsGuide UI Kit · Phase 2C" -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — UI Kit · Phase 2C</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+    .kit-doc-card {
+      background: #FAF8F2;
+      color: #2A2620;
+      padding: 56px 64px;
+      font-family: "Public Sans", system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .kit-doc-card h1 { font: 500 36px/1.15 "Source Serif 4", serif; letter-spacing: -0.012em; margin: 0 0 8px; }
+    .kit-doc-card .eyebrow { font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.08em; text-transform: uppercase; color: #6B645A; margin-bottom: 16px; }
+    .kit-doc-card .lede { font: 400 19px/1.5 "Source Serif 4", serif; color: #6B645A; max-width: 640px; }
+    .kit-doc-card h3 { font: 600 14px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #2A2620; margin: 32px 0 12px; }
+    .kit-doc-card .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; margin-top: 16px; border-top: 1px solid #D7D1C4; padding-top: 16px; }
+    .kit-doc-card .grid > div { font-size: 14px; color: #2A2620; }
+    .kit-doc-card .grid > div strong { display: block; margin-bottom: 6px; font: 600 12px/1.4 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #6B645A; }
+    .kit-doc-card ul { padding-left: 18px; margin: 8px 0 0; }
+    .kit-doc-card li { margin-bottom: 6px; }
+    .kit-doc-card a { color: #2F4E78; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel" src="design-canvas.jsx"></script>
+  <script type="text/babel" src="components.jsx"></script>
+  <script type="text/babel" src="screens/search-results.jsx"></script>
+  <script type="text/babel" src="screens/search-results-mobile.jsx"></script>
+  <script type="text/babel" src="screens/reading-path-index.jsx"></script>
+  <script type="text/babel" src="screens/reading-path-index-mobile.jsx"></script>
+
+  <script type="text/babel">
+    const Intro = () => (
+      <div className="kit-doc-card" style={{ width: 1200 }}>
+        <div className="eyebrow">SoloOpsGuide · UI Kit · Phase 2C · 2026-05-18</div>
+        <h1>Search and diagnostic discovery.</h1>
+        <p className="lede">
+          Two discovery surfaces that affect every other page: a unified static search results page across all content types, and a reading-path index built as a diagnostic ("what's broken right now?") rather than an archive. Earlier kits: <a href="SoloOpsGuide UI Kit Phase 1.html">Phase 1</a> · <a href="SoloOpsGuide UI Kit Phase 2A.html">Phase 2A</a> · <a href="SoloOpsGuide UI Kit Phase 2B.html">Phase 2B</a>.
+        </p>
+
+        <h3>What's in Phase 2C</h3>
+        <ol>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Search results (desktop + mobile)</strong> — unified site-wide results across 7 content types, grouped result sections with type chips, list-based (not card-wall), keyword highlighting, sort + filter, "not quite right?" tips.</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Search empty state (desktop + mobile)</strong> — clear no-result framing, four-hub recovery card, and a fallback to the diagnostic for "what's actually broken?"</li>
+          <li><strong style={{ display: "inline", fontWeight: 600 }}>Reading-path index (desktop + mobile)</strong> — symptom-led "what's broken right now?" diagnostic grid, problem-clustered path rows with symptom, outcome, steps, estimated time, included content types.</li>
+        </ol>
+
+        <h3>What's new in the component set</h3>
+        <div className="grid">
+          <div>
+            <strong>Search primitives</strong>
+            search-large (header input with caret + clear) · type-filter row · result-row (type · title · snippet · meta · date · open) · group-head · recovery card (hub grid)
+          </div>
+          <div>
+            <strong>Path primitives</strong>
+            symptom-grid (2-col diagnostic) · path-row (num · title · symptom · outcome · types · stats · begin) · hub-cluster cross-link cards
+          </div>
+          <div>
+            <strong>Reused from Phase 1 / 2A / 2B</strong>
+            siteHeader · breadcrumbs · chip · proseContainer rules · editorialMeta footer · sticky utility-rail pattern · phase-grouped section pattern from hub
+          </div>
+        </div>
+
+        <h3>Open questions before Phase 2D</h3>
+        <ul>
+          <li>Trust pages: About, Editorial Policy, Content Policy, Contact, Disclaimer, Terms (deferred from 2C).</li>
+          <li>404 / generic empty states across hubs (vs. the search-specific empty state shipped here).</li>
+          <li>Printable variants for workflow + template + reading-path.</li>
+          <li>Editorial-revision diff page (what changed in the last quarterly review).</li>
+          <li>Tag/topic page (e.g., "all Approvals content") — currently only chips, no destination page.</li>
+        </ul>
+      </div>
+    );
+
+    function Kit() {
+      return (
+        <DesignCanvas title="SoloOpsGuide — Phase 2C" subtitle="Search · Reading-path index">
+          <DCSection id="intro" title="Phase 2C · Direction">
+            <DCArtboard id="intro-card" label="Phase 2C overview" width={1200} height={620}>
+              <Intro />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="search" title="12 · Site-wide search results">
+            <DCArtboard id="sr-desktop" label="Search results · desktop · 1280" width={1280} height={4280}>
+              <SearchResultsDesktop />
+            </DCArtboard>
+            <DCArtboard id="sr-mobile" label="Search results · mobile · 390" width={390} height={4520}>
+              <SearchResultsMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="search-empty" title="13 · Search · no-results state">
+            <DCArtboard id="se-desktop" label="Empty · desktop · 1280" width={1280} height={1620}>
+              <SearchEmptyDesktop />
+            </DCArtboard>
+            <DCArtboard id="se-mobile" label="Empty · mobile · 390" width={390} height={1860}>
+              <SearchEmptyMobile />
+            </DCArtboard>
+          </DCSection>
+
+          <DCSection id="paths" title="14 · Reading-path index — diagnostic">
+            <DCArtboard id="rp-desktop" label="Reading paths · desktop · 1280" width={1280} height={3460}>
+              <ReadingPathIndexDesktop />
+            </DCArtboard>
+            <DCArtboard id="rp-mobile" label="Reading paths · mobile · 390" width={390} height={4400}>
+              <ReadingPathIndexMobile />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Kit />);
+  </script>
+</body>
+</html>

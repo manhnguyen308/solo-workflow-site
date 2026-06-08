@@ -1,0 +1,755 @@
+<!doctype html>
+<!-- @dsCard group="Brand" name="SoloOpsGuide Logo System" -->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoloOpsGuide — Logo System</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <style>
+    html, body { margin: 0; padding: 0; background: #1c1a17; }
+    body { font-family: "Public Sans", system-ui, sans-serif; color: #f4efe3; }
+
+    .lx-frame { width: 100%; height: 100%; background: #FAF8F2; color: #2A2620; box-sizing: border-box; }
+    .lx-pad   { padding: 48px 56px; }
+    .lx-eyebrow {
+      font: 600 11px/1.2 "Public Sans"; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #6B645A;
+    }
+    .lx-title {
+      font: 500 32px/1.15 "Source Serif 4", serif; letter-spacing: -0.012em;
+      margin: 6px 0 6px; color: #2A2620;
+    }
+    .lx-lede {
+      font: 400 16px/1.5 "Source Serif 4", serif; color: #6B645A;
+      max-width: 760px; margin: 0;
+    }
+    .lx-h3 {
+      font: 600 11px/1 "Public Sans"; letter-spacing: 0.14em;
+      text-transform: uppercase; color: #94897B;
+      border-top: 1px solid #D7D1C4; padding-top: 18px; margin: 36px 0 18px;
+    }
+    .lx-note { font: 400 13px/1.55 "Public Sans"; color: #6B645A; max-width: 760px; }
+    code { font: 500 12px/1 "JetBrains Mono", monospace; color: #2F4E78; background: #ECE8DC; padding: 1px 5px; }
+
+    /* favicon grid */
+    .fav-row { display: flex; align-items: flex-end; gap: 36px; flex-wrap: wrap; }
+    .fav-cell { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+    .fav-frame {
+      display: flex; align-items: center; justify-content: center;
+      background: #FAF8F2;
+    }
+    .fav-frame.dark { background: #2A2620; }
+    .fav-frame.bordered { border: 1px solid #D7D1C4; }
+    .fav-cap { font: 500 10px/1.2 "JetBrains Mono", monospace; color: #94897B; letter-spacing: 0.04em; }
+
+    /* browser-tab cluster */
+    .tabs-cluster { display: flex; align-items: flex-end; gap: 4px; background: #DCD6C7; padding: 8px 8px 0; border-radius: 10px 10px 0 0; width: 720px; box-sizing: border-box; }
+    .tab-mock {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 12px 8px 10px;
+      border-top-left-radius: 8px; border-top-right-radius: 8px;
+      width: 220px;
+    }
+    .tab-mock.active { background: #FAF8F2; }
+    .tab-mock.inactive { background: #ECE8DC; }
+    .tab-mock .ttl {
+      font: 500 12px/1 "Public Sans"; color: #2A2620;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1;
+    }
+    .tab-mock.inactive .ttl { color: #6B645A; }
+    .tab-mock .x { color: #94897B; font: 400 12px/1 "Public Sans"; }
+
+    /* live header mock — matches the actual SiteHeader pattern in components.jsx */
+    .hdr-mock {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 28px; border: 1px solid #D7D1C4; background: #FAF8F2;
+      width: 1080px; box-sizing: border-box;
+    }
+    .hdr-mock.dark { background: #1F1B17; border-color: #2F2A24; }
+    .hdr-mock.dark .word { color: #F4EFE3; }
+    .hdr-mock.dark nav { color: #C9C1B0; }
+    .hdr-mock.dark .util { color: #94897B; }
+    .hdr-mock .brand-lockup { display: flex; align-items: center; gap: 12px; }
+    .hdr-mock .word { font: 500 19px/1 "Source Serif 4", serif; letter-spacing: -0.008em; color: #2A2620; }
+    .hdr-mock nav { display: flex; gap: 22px; font: 500 13px/1 "Public Sans"; color: #2A2620; }
+    .hdr-mock nav a.active { color: #2F4E78; border-bottom: 1px solid #2F4E78; padding-bottom: 2px; }
+    .hdr-mock .util { font: 400 12px/1 "Public Sans"; color: #94897B; }
+
+    /* footer mock */
+    .ftr-mock {
+      padding: 32px 32px 24px; border: 1px solid #D7D1C4; background: #F2EFE6;
+      width: 1080px; box-sizing: border-box;
+      display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 36px;
+    }
+    .ftr-mock .col-brand { display: flex; flex-direction: column; gap: 12px; }
+    .ftr-mock .lockup { display: flex; align-items: center; gap: 10px; }
+    .ftr-mock .word { font: 500 17px/1 "Source Serif 4", serif; color: #2A2620; }
+    .ftr-mock .tagline { font: 400 13px/1.45 "Source Serif 4", serif; color: #6B645A; max-width: 240px; }
+    .ftr-mock .ftr-h { font: 600 10px/1 "Public Sans"; letter-spacing: 0.12em; text-transform: uppercase; color: #94897B; margin-bottom: 10px; }
+    .ftr-mock .ftr-li { font: 400 13px/1.7 "Public Sans"; color: #2A2620; }
+    .ftr-mock .ftr-li.dim { color: #6B645A; }
+
+    /* OG card mock — real 1.91:1 ratio */
+    .og-mock {
+      width: 1000px; height: 525px; background: #FAF8F2; box-sizing: border-box;
+      border: 1px solid #D7D1C4; padding: 64px;
+      display: flex; flex-direction: column; justify-content: space-between;
+      position: relative;
+    }
+    .og-mock .og-inner { position: absolute; inset: 44px; border: 1px solid #E5E0D3; pointer-events: none; }
+    .og-mock .og-top { display: flex; align-items: center; gap: 16px; position: relative; z-index: 1; }
+    .og-mock .og-word { font: 500 32px/1 "Source Serif 4", serif; color: #2A2620; letter-spacing: -0.008em; }
+    .og-mock .og-headline {
+      font: 500 56px/1.08 "Source Serif 4", serif; letter-spacing: -0.018em; color: #2A2620;
+      max-width: 760px; position: relative; z-index: 1;
+    }
+    .og-mock .og-kicker {
+      font: 600 13px/1 "Public Sans"; letter-spacing: 0.20em; text-transform: uppercase; color: #6B645A;
+      position: relative; z-index: 1;
+    }
+
+    /* lockup blocks */
+    .lockup-strip {
+      display: flex; flex-direction: column; gap: 8px;
+      padding: 28px 32px; border: 1px solid #D7D1C4; background: #FAF8F2;
+    }
+    .lockup-strip.dark { background: #1F1B17; border-color: #2F2A24; }
+    .lockup-strip.dark .lup-word { color: #F4EFE3; }
+    .lockup-strip.dark .lup-tag  { color: #94897B; }
+    .lockup-strip .lup-row { display: flex; align-items: center; gap: 16px; }
+    .lockup-strip .lup-word { font: 500 32px/1 "Source Serif 4", serif; color: #2A2620; letter-spacing: -0.008em; }
+    .lockup-strip .lup-tag  { font: 400 14px/1 "Public Sans"; color: #6B645A; letter-spacing: 0.005em; }
+    .lockup-strip .lup-cap  { margin-top: 12px; font: 600 10px/1 "Public Sans"; letter-spacing: 0.14em; text-transform: uppercase; color: #94897B; }
+
+    /* clear-space diagram */
+    .clearspace {
+      position: relative; width: 320px; height: 320px; background: #ECE8DC;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .clearspace::before {
+      content: ""; position: absolute; inset: 80px; border: 1px dashed #94897B;
+    }
+    .clearspace .lbl-x {
+      position: absolute; left: 8px; top: 50%; transform: translateY(-50%);
+      font: 500 11px/1 "JetBrains Mono", monospace; color: #6B645A;
+    }
+    .clearspace .lbl-y {
+      position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+      font: 500 11px/1 "JetBrains Mono", monospace; color: #6B645A;
+    }
+
+    /* swatches */
+    .swatch-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .swatch {
+      display: flex; align-items: center; gap: 10px;
+      border: 1px solid #D7D1C4; padding: 10px 12px; background: #FAF8F2;
+    }
+    .swatch .chip { width: 36px; height: 36px; border: 1px solid #D7D1C4; }
+    .swatch .nm { font: 600 11px/1.2 "Public Sans"; letter-spacing: 0.06em; text-transform: uppercase; color: #2A2620; }
+    .swatch .hx { font: 400 11px/1.2 "JetBrains Mono", monospace; color: #6B645A; }
+
+    /* misuse */
+    .dont-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .dont {
+      border: 1px solid #D7D1C4; background: #FAF8F2; padding: 18px;
+      display: flex; flex-direction: column; gap: 10px; align-items: center;
+    }
+    .dont .stamp {
+      font: 600 10px/1 "Public Sans"; letter-spacing: 0.12em; text-transform: uppercase;
+      color: #94897B; padding: 4px 8px; border: 1px solid #D7D1C4; align-self: flex-start;
+    }
+    .dont .lbl { font: 500 12px/1.35 "Source Serif 4", serif; color: #2A2620; text-align: center; max-width: 200px; }
+    .dont .stage { height: 140px; display: flex; align-items: center; justify-content: center; width: 100%; }
+  </style>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel" src="design-canvas.jsx"></script>
+
+  <script type="text/babel">
+    const NAVY = "#1F3A5F";
+    const TEAL = "#5C8499";
+    const PAPER = "#FAF8F2";
+    const INK = "#2A2620";
+
+    /* The Mark — single source of truth as a React component.
+       Two variants: full (with numbers + curve + arrow) and mini (blocks + arrow).
+       Both 64×64 viewBox so they swap cleanly. */
+    const Mark = ({ size = 64, paper = "transparent", navy = NAVY, teal = TEAL, label }) => (
+      <svg width={size} height={size} viewBox="0 0 64 64" style={{ display: "block", background: paper }} role="img" aria-label={label || "SoloOpsGuide"}>
+        <path d="M 4 60 C 4 50 22 56 22 42 C 22 34 41 40 41 26 C 41 18 58 24 58 10 L 60 4"
+              fill="none" stroke={navy} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M 60 4 L 54 3.5 M 60 4 L 60.5 10" fill="none" stroke={navy} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <rect x="6"  y="44" width="20" height="16" rx="2.5" fill={navy}/>
+        <rect x="23" y="30" width="20" height="16" rx="2.5" fill={teal}/>
+        <rect x="40" y="16" width="20" height="16" rx="2.5" fill={teal}/>
+        <circle cx="16" cy="52" r="4.6" fill={paper === "transparent" ? PAPER : paper === "#2A2620" ? PAPER : paper}/>
+        <text x="16" y="54.6" textAnchor="middle" fontFamily="system-ui,-apple-system,Segoe UI,sans-serif" fontSize="6.6" fontWeight="700" fill={navy}>1</text>
+        <circle cx="33" cy="38" r="4.6" fill={paper === "transparent" ? PAPER : paper === "#2A2620" ? PAPER : paper}/>
+        <text x="33" y="40.6" textAnchor="middle" fontFamily="system-ui,-apple-system,Segoe UI,sans-serif" fontSize="6.6" fontWeight="700" fill={navy}>2</text>
+        <circle cx="50" cy="24" r="4.6" fill={paper === "transparent" ? PAPER : paper === "#2A2620" ? PAPER : paper}/>
+        <text x="50" y="26.6" textAnchor="middle" fontFamily="system-ui,-apple-system,Segoe UI,sans-serif" fontSize="6.6" fontWeight="700" fill={navy}>3</text>
+      </svg>
+    );
+
+    const MarkMini = ({ size = 64, paper = "transparent", navy = NAVY, teal = TEAL }) => (
+      <svg width={size} height={size} viewBox="0 0 64 64" style={{ display: "block", background: paper }} role="img" aria-label="SoloOpsGuide">
+        <rect x="6"  y="44" width="20" height="16" rx="2.5" fill={navy}/>
+        <rect x="23" y="30" width="20" height="16" rx="2.5" fill={teal}/>
+        <rect x="40" y="16" width="20" height="16" rx="2.5" fill={teal}/>
+        <path d="M 56 12 L 62 6 M 58 5 L 62 6 L 61 10" fill="none" stroke={navy} strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    );
+
+    /* ──────────────────────────────────────────────────────────── */
+
+    const Cover = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">SoloOpsGuide · Brand · Logo system · v1.0 · 2026-05-27</div>
+        <h2 className="lx-title">The mark, finalized.</h2>
+        <p className="lx-lede">
+          Three numbered blocks ascending from lower-left to upper-right, joined by a curving line
+          that exits as an upward arrow. The visual idea is the system itself: <em>workflow first,
+          then stack, then template</em> — three connected phases with momentum. Conservative palette
+          (deep navy + slate-teal), no gradients, no second accent beyond what the system already uses.
+        </p>
+
+        <div style={{ display: "flex", gap: 36, marginTop: 36, alignItems: "center" }}>
+          <div style={{ background: "#FAF8F2", border: "1px solid #D7D1C4", padding: 32 }}>
+            <Mark size={240} />
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
+            <div>
+              <div className="lx-eyebrow">Wordmark lockup</div>
+              <div style={{ display: "flex", alignItems: "center", gap: 14, marginTop: 10 }}>
+                <Mark size={56} />
+                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                  <span style={{ font: "500 36px/1 'Source Serif 4', serif", color: INK, letterSpacing: "-0.012em" }}>SoloOpsGuide</span>
+                  <span style={{ font: "400 14px/1 'Public Sans'", color: "#6B645A" }}>Workflow-first guidance for solo operators</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="lx-eyebrow">Mini mark (≤ 32px)</div>
+              <div style={{ display: "flex", alignItems: "center", gap: 18, marginTop: 10 }}>
+                <MarkMini size={64} />
+                <div style={{ font: "400 14px/1.5 'Source Serif 4', serif", color: "#6B645A", maxWidth: 320 }}>
+                  At favicon scale the numbered circles blur. The mini variant keeps the silhouette
+                  and adds a small explicit arrow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="lx-h3">Files produced</h3>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "6px 32px", font: "400 13px/1.7 'Public Sans'", maxWidth: 880 }}>
+          <div><code>assets/favicon.svg</code> · full mark · primary favicon</div>
+          <div><code>assets/favicon-mini.svg</code> · simplified mark · ≤ 32px contexts</div>
+          <div><code>assets/mark.svg</code> · full mark · for templates</div>
+          <div><code>assets/mark-lockup.svg</code> · mark + wordmark + tagline</div>
+          <div><code>assets/og-default.svg</code> · open-graph share card · updated</div>
+          <div><code>static/favicon.svg</code>, <code>static/favicon-mini.svg</code>, <code>static/og-default.svg</code> · build output</div>
+        </div>
+      </div></div>
+    );
+
+    const Foundations = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">Foundations</div>
+        <h2 className="lx-title">Colour, grid, clear-space, minimum size.</h2>
+
+        <h3 className="lx-h3">Colour tokens</h3>
+        <div className="swatch-row">
+          <div className="swatch"><div className="chip" style={{ background: NAVY }} /><div><div className="nm">brand-navy</div><div className="hx">#1F3A5F</div></div></div>
+          <div className="swatch"><div className="chip" style={{ background: TEAL }} /><div><div className="nm">brand-teal</div><div className="hx">#5C8499</div></div></div>
+          <div className="swatch"><div className="chip" style={{ background: PAPER }} /><div><div className="nm">paper</div><div className="hx">#FAF8F2</div></div></div>
+          <div className="swatch"><div className="chip" style={{ background: INK }} /><div><div className="nm">ink</div><div className="hx">#2A2620</div></div></div>
+        </div>
+        <p className="lx-note" style={{ marginTop: 12 }}>
+          Brand-navy is darker than the editorial accent <code>#2F4E78</code> used inside body
+          copy; the mark needs more contrast at 16px than the inline accent does.
+        </p>
+        <p className="lx-note" style={{ marginTop: 12 }}>
+          <strong>Brand-teal <code>#5C8499</code> is a logo-mark-only colour.</strong> It exists
+          solely to separate the upper two blocks inside the mark. It must <em>not</em> become a
+          general UI accent, button colour, link colour, callout colour, or content-category
+          colour, and it must not appear in body copy, backgrounds, or any editorial surface.
+          The editorial / site accent remains <code>#2F4E78</code> — that is the only accent the
+          interface uses. The system stays single-accent everywhere outside the mark.
+        </p>
+
+        <h3 className="lx-h3">64-unit grid</h3>
+        <div style={{ display: "flex", gap: 36, alignItems: "flex-start" }}>
+          <div style={{ position: "relative", width: 384, height: 384, background: "#FAF8F2", border: "1px solid #D7D1C4" }}>
+            <svg viewBox="0 0 64 64" width={384} height={384} style={{ position: "absolute", inset: 0 }}>
+              {[...Array(7)].map((_, i) => <line key={"v"+i} x1={(i+1)*8} y1="0" x2={(i+1)*8} y2="64" stroke="#E5E0D3" strokeWidth="0.15"/>)}
+              {[...Array(7)].map((_, i) => <line key={"h"+i} x1="0" y1={(i+1)*8} x2="64" y2={(i+1)*8} stroke="#E5E0D3" strokeWidth="0.15"/>)}
+              {/* mark overlay */}
+              <path d="M 4 60 C 4 50 22 56 22 42 C 22 34 41 40 41 26 C 41 18 58 24 58 10 L 60 4" fill="none" stroke={NAVY} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M 60 4 L 54 3.5 M 60 4 L 60.5 10" fill="none" stroke={NAVY} strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"/>
+              <rect x="6"  y="44" width="20" height="16" rx="2.5" fill={NAVY}/>
+              <rect x="23" y="30" width="20" height="16" rx="2.5" fill={TEAL}/>
+              <rect x="40" y="16" width="20" height="16" rx="2.5" fill={TEAL}/>
+              <circle cx="16" cy="52" r="4.6" fill={PAPER}/>
+              <text x="16" y="54.6" textAnchor="middle" fontFamily="system-ui" fontSize="6.6" fontWeight="700" fill={NAVY}>1</text>
+              <circle cx="33" cy="38" r="4.6" fill={PAPER}/>
+              <text x="33" y="40.6" textAnchor="middle" fontFamily="system-ui" fontSize="6.6" fontWeight="700" fill={NAVY}>2</text>
+              <circle cx="50" cy="24" r="4.6" fill={PAPER}/>
+              <text x="50" y="26.6" textAnchor="middle" fontFamily="system-ui" fontSize="6.6" fontWeight="700" fill={NAVY}>3</text>
+            </svg>
+          </div>
+          <div style={{ flex: 1, maxWidth: 540 }}>
+            <p className="lx-note">
+              The mark sits in a 64×64 viewBox. Blocks are 20×16 with a 2.5-unit corner radius,
+              offset by 17 units horizontally and 14 vertically. The connecting path is a single
+              cubic Bézier passing in front of each block, ending at the arrow tip at (60, 4).
+              Numbered circles are 9.2 units in diameter, centered on each block.
+            </p>
+            <p className="lx-note" style={{ marginTop: 12 }}>
+              These ratios stay constant at every output size — there are no per-size
+              optical adjustments. The numerals are typeset in <code>system-ui</code> at
+              weight 700 so the SVG stays editable and renders reliably across browsers.
+              They are deliberately <em>not</em> outlined to paths yet.
+            </p>
+            <p className="lx-note" style={{ marginTop: 12 }}>
+              <strong>Production note:</strong> final production favicon exports may outline the
+              numerals to paths later <em>if</em> cross-browser rendering looks inconsistent at
+              very small sizes. Until that's observed, keep them as live <code>system-ui</code>
+              text so the mark stays easy to edit.
+            </p>
+          </div>
+        </div>
+
+        <h3 className="lx-h3">Clear space · ¼ × glyph height on all sides</h3>
+        <div style={{ display: "flex", gap: 36, alignItems: "flex-start" }}>
+          <div className="clearspace">
+            <Mark size={160} />
+            <span className="lbl-x">¼ x</span>
+            <span className="lbl-y">¼ x</span>
+          </div>
+          <div style={{ flex: 1, maxWidth: 540 }}>
+            <p className="lx-note">
+              Reserve at least <code>0.25 × mark height</code> of clear paper on every side. In the
+              site header (24px mark) that's 6px of breathing room — already the default header
+              padding. Don't crop or bleed any block into adjacent content.
+            </p>
+          </div>
+        </div>
+
+        <h3 className="lx-h3">Minimum size</h3>
+        <div style={{ display: "flex", gap: 28, alignItems: "flex-end" }}>
+          <div className="fav-cell"><div className="fav-frame bordered" style={{ width: 80, height: 80, padding: 8 }}><Mark size={64} /></div><div className="fav-cap">≥ 24px · full mark</div></div>
+          <div className="fav-cell"><div className="fav-frame bordered" style={{ width: 56, height: 56, padding: 4 }}><MarkMini size={48} /></div><div className="fav-cap">16–24px · mini mark</div></div>
+          <div className="fav-cell"><div className="fav-frame bordered" style={{ width: 40, height: 40, padding: 2 }}><MarkMini size={36} /></div><div className="fav-cap">favicon · mini</div></div>
+        </div>
+        <p className="lx-note" style={{ marginTop: 12 }}>
+          The full mark is legible down to ~24px. Below that, swap in the mini variant —
+          numerals would blur and degrade trust. The mini variant ships as the
+          actual rendered favicon in static builds.
+        </p>
+      </div></div>
+    );
+
+    const Favicons = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">Favicon</div>
+        <h2 className="lx-title">Sizes — light and dark.</h2>
+
+        <h3 className="lx-h3">Full mark on paper · ≥ 24px</h3>
+        <div className="fav-row">
+          {[256, 128, 64, 32].map(s => (
+            <div className="fav-cell" key={s}>
+              <div className="fav-frame bordered" style={{ width: s, height: s, padding: s >= 64 ? 12 : 2 }}>
+                <Mark size={s >= 64 ? s - 12 : s - 2} />
+              </div>
+              <div className="fav-cap">{s}×{s}</div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="lx-h3">Mini mark · ≤ 24px (the actual favicon in production)</h3>
+        <div className="fav-row">
+          {[64, 48, 32, 24, 16].map(s => (
+            <div className="fav-cell" key={s}>
+              <div className="fav-frame bordered" style={{ width: s, height: s, padding: s >= 32 ? 4 : 1 }}>
+                <MarkMini size={s >= 32 ? s - 4 : s - 1} />
+              </div>
+              <div className="fav-cap">{s}×{s}</div>
+            </div>
+          ))}
+        </div>
+
+        <h3 className="lx-h3">Inverse · brand-system reference for dark surfaces & app-icon use</h3>
+        <div className="fav-row">
+          {[256, 128, 64, 32].map(s => (
+            <div className="fav-cell" key={s}>
+              <div className="fav-frame dark" style={{ width: s, height: s, padding: s >= 64 ? 12 : 2 }}>
+                <Mark size={s >= 64 ? s - 12 : s - 2} navy="#E6D7B8" teal="#A8B8C8" paper="#2A2620" />
+              </div>
+              <div className="fav-cap">{s}×{s}</div>
+            </div>
+          ))}
+        </div>
+        <p className="lx-note" style={{ marginTop: 12 }}>
+          On the dark surface the navy block lifts to warm parchment <code>#E6D7B8</code>, and teal
+          lifts to <code>#A8B8C8</code>. Numerals and curve invert to match. Use this variant for the
+          macOS app icon, dark-mode browser tabs (where the OS supplies them), share cards on dark
+          stock, and any third-party surface that renders dark.
+        </p>
+        <p className="lx-note" style={{ marginTop: 12 }}>
+          <strong>These dark previews are a brand-system reference only.</strong> They document how
+          the mark behaves on a dark background — they are <em>not</em> a request to add a dark mode
+          to the SoloOpsGuide site. The site remains paper-on-ink.
+        </p>
+      </div></div>
+    );
+
+    const Tabs = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">In context · Browser tab</div>
+        <h2 className="lx-title">The reason this mark exists.</h2>
+        <p className="lx-lede">
+          A favicon's only job is to be recognized in a strip of 20 tabs. The mini variant carries
+          colour identity (navy + teal) and a directional cue (the arrow) — enough silhouette to
+          spot at a glance.
+        </p>
+        <h3 className="lx-h3">Tab strip · the mark next to neighbours</h3>
+        <div className="tabs-cluster">
+          <div className="tab-mock active">
+            <MarkMini size={14} />
+            <span className="ttl">SoloOpsGuide — Workflows</span>
+            <span className="x">×</span>
+          </div>
+          <div className="tab-mock inactive">
+            <div style={{ width: 14, height: 14, background: "#94897B", borderRadius: 2 }} />
+            <span className="ttl">Inbox (3) — Gmail</span>
+          </div>
+          <div className="tab-mock inactive">
+            <div style={{ width: 14, height: 14, background: "#94897B", borderRadius: 2 }} />
+            <span className="ttl">Figma — Design</span>
+          </div>
+        </div>
+        <h3 className="lx-h3">Real OS rendering (system favicon via &lt;link&gt;)</h3>
+        <p className="lx-note">
+          This document itself uses <code>assets/favicon.svg</code> as its tab icon. Look up at the
+          browser tab to see the mark rendered by the OS at its native size.
+        </p>
+      </div></div>
+    );
+
+    const Header = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">In context · Site header</div>
+        <h2 className="lx-title">Live SoloOpsGuide header — light and dark.</h2>
+        <p className="lx-lede">
+          The mark sits at 28px next to the serif wordmark. Same nav, same width, same padding
+          as the rest of the site. The tagline is intentionally omitted at this scale. The header
+          lockup stays readable at both desktop and mobile widths — the mark holds its silhouette
+          down to the 24px header size and the wordmark keeps its serif legibility on small screens.
+        </p>
+
+        <h3 className="lx-h3">Default · paper</h3>
+        <div className="hdr-mock">
+          <div className="brand-lockup">
+            <Mark size={28} />
+            <span className="word">SoloOpsGuide</span>
+          </div>
+          <nav>
+            <a className="active">Workflows</a>
+            <a>Blueprints</a>
+            <a>Comparisons</a>
+            <a>Templates</a>
+            <a>Glossary</a>
+          </nav>
+          <div className="util">Search</div>
+        </div>
+
+        <h3 className="lx-h3">Dark surface · brand reference only (not a site dark mode)</h3>
+        <div className="hdr-mock dark">
+          <div className="brand-lockup">
+            <Mark size={28} navy="#E6D7B8" teal="#A8B8C8" paper="#1F1B17" />
+            <span className="word">SoloOpsGuide</span>
+          </div>
+          <nav>
+            <a className="active" style={{ color: "#9BB1CE", borderColor: "#9BB1CE" }}>Workflows</a>
+            <a>Blueprints</a>
+            <a>Comparisons</a>
+            <a>Templates</a>
+            <a>Glossary</a>
+          </nav>
+          <div className="util">Search</div>
+        </div>
+      </div></div>
+    );
+
+    const Footer = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">In context · Footer colophon</div>
+        <h2 className="lx-title">Where the tagline lives.</h2>
+        <p className="lx-lede">
+          The footer is where the lockup gets to breathe — mark at 22px, wordmark, tagline below.
+          This is also the only place on the site that re-states <em>what</em> SoloOpsGuide is in
+          plain language. Everywhere else, the work has to speak.
+        </p>
+        <h3 className="lx-h3">Footer · default</h3>
+        <div className="ftr-mock">
+          <div className="col-brand">
+            <div className="lockup">
+              <Mark size={22} />
+              <span className="word">SoloOpsGuide</span>
+            </div>
+            <div className="tagline">Workflow-first guidance for freelancers, consultants, and solo operators.</div>
+            <div className="ftr-li dim" style={{ fontSize: 11, letterSpacing: 0.4, marginTop: 6 }}>© 2026 SoloOpsGuide · Issue 01</div>
+          </div>
+          <div>
+            <div className="ftr-h">Explore</div>
+            <div className="ftr-li">Workflows</div>
+            <div className="ftr-li">Blueprints</div>
+            <div className="ftr-li">Comparisons</div>
+            <div className="ftr-li">Templates</div>
+          </div>
+          <div>
+            <div className="ftr-h">Reference</div>
+            <div className="ftr-li">Glossary</div>
+            <div className="ftr-li">FAQ</div>
+            <div className="ftr-li">Reading paths</div>
+            <div className="ftr-li">Tags</div>
+          </div>
+          <div>
+            <div className="ftr-h">Trust</div>
+            <div className="ftr-li">About</div>
+            <div className="ftr-li">Editorial policy</div>
+            <div className="ftr-li">Privacy policy</div>
+            <div className="ftr-li">Contact</div>
+          </div>
+        </div>
+      </div></div>
+    );
+
+    const OG = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">In context · Open-graph share card</div>
+        <h2 className="lx-title">The default OG image.</h2>
+        <p className="lx-lede">
+          Used when an article doesn't provide its own card. 1200×630 native; a quiet warm paper
+          field with the mark and wordmark in the upper left, a clear editorial headline below,
+          and a category strip at the foot.
+        </p>
+        <h3 className="lx-h3">1000-wide preview · same 1.91:1 ratio as production</h3>
+        <div className="og-mock">
+          <div className="og-inner" />
+          <div>
+            <div className="og-top">
+              <Mark size={48} />
+              <span className="og-word">SoloOpsGuide</span>
+            </div>
+            <div className="og-headline" style={{ marginTop: 40 }}>An operating manual for solo client work.</div>
+          </div>
+          <div className="og-kicker">Workflows · Blueprints · Comparisons · Templates</div>
+        </div>
+        <p className="lx-note" style={{ marginTop: 16 }}>
+          Source SVG: <code>assets/og-default.svg</code>. Renders identically in Twitter/X,
+          LinkedIn, Slack, and iMessage unfurls. Per-article cards override the headline but
+          keep the upper-left lockup.
+        </p>
+      </div></div>
+    );
+
+    const Lockups = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">Lockups</div>
+        <h2 className="lx-title">Variants — six configurations, one mark.</h2>
+
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginTop: 28 }}>
+          <div className="lockup-strip">
+            <div className="lup-row">
+              <Mark size={28} />
+              <span style={{ font: "500 22px/1 'Source Serif 4', serif", color: INK, letterSpacing: "-0.008em" }}>SoloOpsGuide</span>
+            </div>
+            <div className="lup-cap">A · Header lockup · 28px · no tagline</div>
+          </div>
+
+          <div className="lockup-strip">
+            <div className="lup-row">
+              <Mark size={40} />
+              <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                <span className="lup-word" style={{ fontSize: 28 }}>SoloOpsGuide</span>
+                <span className="lup-tag">Workflow-first guidance for solo operators</span>
+              </div>
+            </div>
+            <div className="lup-cap">B · Footer / OG lockup · 40px · with tagline</div>
+          </div>
+
+          <div className="lockup-strip">
+            <div className="lup-row" style={{ flexDirection: "column", alignItems: "flex-start", gap: 14 }}>
+              <Mark size={72} />
+              <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                <span className="lup-word" style={{ fontSize: 36 }}>SoloOpsGuide</span>
+                <span className="lup-tag">Workflow-first guidance for solo operators</span>
+              </div>
+            </div>
+            <div className="lup-cap">C · Stacked · for square share cards · 72px</div>
+          </div>
+
+          <div className="lockup-strip dark">
+            <div className="lup-row">
+              <Mark size={40} navy="#E6D7B8" teal="#A8B8C8" paper="#1F1B17" />
+              <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+                <span className="lup-word" style={{ fontSize: 28 }}>SoloOpsGuide</span>
+                <span className="lup-tag">Workflow-first guidance for solo operators</span>
+              </div>
+            </div>
+            <div className="lup-cap" style={{ color: "#94897B" }}>D · Dark surface · same proportions, inverse colour</div>
+          </div>
+
+          <div className="lockup-strip">
+            <div className="lup-row">
+              <Mark size={56} />
+            </div>
+            <div className="lup-cap">E · Mark only · for avatars / app icon</div>
+          </div>
+
+          <div className="lockup-strip">
+            <div className="lup-row" style={{ alignItems: "baseline" }}>
+              <span className="lup-word" style={{ fontSize: 32 }}>SoloOpsGuide</span>
+            </div>
+            <div className="lup-cap">F · Wordmark only · for in-body mentions, signatures</div>
+          </div>
+        </div>
+      </div></div>
+    );
+
+    const Donts = () => (
+      <div className="lx-frame"><div className="lx-pad">
+        <div className="lx-eyebrow">Misuse</div>
+        <h2 className="lx-title">What the mark is not.</h2>
+        <div className="dont-grid" style={{ marginTop: 28 }}>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage">
+              <Mark size={88} navy="#B81F3F" teal="#E89C2C" />
+            </div>
+            <div className="lbl">Re-colour outside the brand palette. Navy + teal are the only valid combination.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage" style={{ filter: "drop-shadow(0 6px 12px rgba(0,0,0,0.25))" }}>
+              <Mark size={88} />
+            </div>
+            <div className="lbl">Add drop-shadows, glows, or any 3D effects.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage">
+              <div style={{ transform: "rotate(-12deg)" }}><Mark size={88} /></div>
+            </div>
+            <div className="lbl">Rotate the mark. The arrow direction is fixed; it points up-right.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage">
+              <div style={{ transform: "scaleX(0.55)" }}><Mark size={88} /></div>
+            </div>
+            <div className="lbl">Stretch, squash, or otherwise distort the proportions.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage" style={{ background: "linear-gradient(135deg,#FAF8F2,#D8E1ED)" }}>
+              <Mark size={88} />
+            </div>
+            <div className="lbl">Place on gradient or photographic backgrounds. Solid paper or solid ink only.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage">
+              <MarkMini size={88} />
+            </div>
+            <div className="lbl">Use the mini variant above 24px. Above that, use the full numbered mark.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage" style={{ background: "#FAF8F2" }}>
+              <svg width={88} height={88} viewBox="0 0 64 64">
+                <rect x="6"  y="44" width="20" height="16" rx="2.5" fill="#FAF8F2" stroke={NAVY} strokeWidth="0.8"/>
+                <rect x="23" y="30" width="20" height="16" rx="2.5" fill="#FAF8F2" stroke={TEAL} strokeWidth="0.8"/>
+                <rect x="40" y="16" width="20" height="16" rx="2.5" fill="#FAF8F2" stroke={TEAL} strokeWidth="0.8"/>
+              </svg>
+            </div>
+            <div className="lbl">Outline the blocks. They are solid; the contrast comes from fill.</div>
+          </div>
+          <div className="dont">
+            <div className="stamp">Don't</div>
+            <div className="stage">
+              <Mark size={88} navy="#2A2620" teal="#94897B" />
+            </div>
+            <div className="lbl">Use grayscale unless absolutely required for single-colour printing.</div>
+          </div>
+        </div>
+      </div></div>
+    );
+
+    /* ──────────────────────────────────────────────────────────── */
+
+    function App() {
+      return (
+        <DesignCanvas title="SoloOpsGuide — Logo System" subtitle="The chosen mark, applied across the brand">
+          <DCSection id="cover" title="00 · The mark">
+            <DCArtboard id="cover" label="Cover · the mark and its lockup" width={1280} height={920}>
+              <Cover />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="foundations" title="01 · Foundations — colour, grid, clear-space, minimum size">
+            <DCArtboard id="foundations" label="Foundations" width={1280} height={1740}>
+              <Foundations />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="favicons" title="02 · Favicon at every size, light and dark">
+            <DCArtboard id="favicons" label="Favicon · all sizes" width={1280} height={1480}>
+              <Favicons />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="tab" title="03 · In a browser tab">
+            <DCArtboard id="tab" label="In the tab strip" width={1280} height={780}>
+              <Tabs />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="header" title="04 · In the site header">
+            <DCArtboard id="header" label="Header · light + dark" width={1280} height={920}>
+              <Header />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="footer" title="05 · In the footer colophon">
+            <DCArtboard id="footer" label="Footer · default" width={1280} height={920}>
+              <Footer />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="og" title="06 · Open-graph share card">
+            <DCArtboard id="og" label="OG card · 1.91:1" width={1280} height={1100}>
+              <OG />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="lockups" title="07 · Lockup variants">
+            <DCArtboard id="lockups" label="Six lockups" width={1280} height={1200}>
+              <Lockups />
+            </DCArtboard>
+          </DCSection>
+          <DCSection id="donts" title="08 · Misuse">
+            <DCArtboard id="donts" label="Don'ts" width={1280} height={1180}>
+              <Donts />
+            </DCArtboard>
+          </DCSection>
+        </DesignCanvas>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>
