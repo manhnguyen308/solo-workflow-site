@@ -1,33 +1,49 @@
 :root {
   color-scheme: light;
-  --bg: #f6f8fb;
-  --bg-soft: #eef3f6;
-  --surface: #ffffff;
-  --surface-soft: #fbfcfd;
-  --surface-tint: #f2f7f8;
-  --surface-strong: #112634;
-  --surface-dark: #0f1c28;
-  --ink: #173042;
-  --ink-soft: #41576a;
-  --muted: #64788a;
-  --line: rgba(23, 48, 66, 0.1);
-  --line-strong: rgba(23, 48, 66, 0.16);
-  --brand: #0f8b8d;
-  --brand-strong: #0b6d71;
-  --brand-soft: #e7f6f6;
-  --accent: #b8823f;
-  --accent-soft: #fff3e3;
-  --shadow-sm: 0 14px 34px rgba(17, 38, 52, 0.07);
-  --shadow-md: 0 24px 60px rgba(17, 38, 52, 0.09);
-  --radius-xl: 28px;
-  --radius-lg: 24px;
-  --radius-md: 18px;
-  --radius-sm: 14px;
+  /* Future-state redesign tokens: warm-neutral paper palette, deep ink, single editorial accent #2F4E78.
+     Legacy variable names retained as aliases so existing layouts retone without rewrites. */
+  --paper: #FAF8F2;
+  --paper-2: #F2EFE6;
+  --paper-3: #ECE8DC;
+  --ink-deep: #2A2620;
+  --ink-mid: #6B645A;
+  --ink-quiet: #94897B;
+  --rule: #D7D1C4;
+  --rule-2: #E5E0D3;
+  --editorial-accent: #2F4E78;
+  --editorial-accent-soft: #D8E1ED;
+  --editorial-accent-ink: #1B2E47;
+  --caution: #B07A2E;
+
+  /* Legacy aliases (retoned to redesign palette) */
+  --bg: var(--paper);
+  --bg-soft: var(--paper-2);
+  --surface: var(--paper);
+  --surface-soft: var(--paper-2);
+  --surface-tint: var(--paper-2);
+  --surface-strong: var(--ink-deep);
+  --surface-dark: var(--ink-deep);
+  --ink: var(--ink-deep);
+  --ink-soft: var(--ink-mid);
+  --muted: var(--ink-quiet);
+  --line: var(--rule-2);
+  --line-strong: var(--rule);
+  --brand: var(--editorial-accent);
+  --brand-strong: var(--editorial-accent-ink);
+  --brand-soft: var(--editorial-accent-soft);
+  --accent: var(--editorial-accent);
+  --accent-soft: var(--editorial-accent-soft);
+  --shadow-sm: 0 1px 0 rgba(42, 38, 32, 0.04);
+  --shadow-md: 0 1px 0 rgba(42, 38, 32, 0.06);
+  --radius-xl: 4px;
+  --radius-lg: 4px;
+  --radius-md: 2px;
+  --radius-sm: 2px;
   --wrap: 1180px;
-  --measure: 760px;
-  --font-ui: "Source Sans 3", var(--font-ui);
-  --font-body: "Lora", Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --measure: 720px;
+  --font-ui: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Consolas, monospace;
 }
 
 *,
@@ -44,9 +60,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(circle at top left, rgba(15, 139, 141, 0.07), transparent 28%),
-    linear-gradient(180deg, #fafbfd 0%, var(--bg) 30%, #f9fbfd 100%);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-body);
   line-height: 1.72;
@@ -73,8 +87,8 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 [role="button"]:focus-visible {
-  outline: 3px solid rgba(15, 139, 141, 0.2);
-  outline-offset: 3px;
+  outline: 2px solid var(--editorial-accent);
+  outline-offset: 2px;
 }
 
 p,
@@ -272,25 +286,36 @@ select {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 18px;
-  background: linear-gradient(135deg, var(--brand), #0a5e62);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.32), var(--shadow-sm);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .brand-mark svg {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
 }
 
-.brand-mark rect,
-.brand-mark path {
+.brand-mark .bm-stroke {
   fill: none;
-  stroke: #f9fbfb;
-  stroke-width: 2.6;
+  stroke: #1F3A5F;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.brand-mark .bm-ink { fill: #1F3A5F; }
+/* Logo-only teal — must never appear elsewhere in the UI. */
+.brand-mark .bm-teal { fill: #5C8499; }
+.brand-mark .bm-disc { fill: var(--paper); }
+.brand-mark .bm-num {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 6.6px;
+  font-weight: 700;
+  fill: #1F3A5F;
 }
 
 .brand-wordmark {
@@ -2045,25 +2070,35 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.85rem;
-  height: 2.85rem;
-  border-radius: 16px;
-  background: linear-gradient(145deg, #0f8b8d, #0b6d71);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 10px 24px rgba(15, 23, 42, 0.08);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .site-brand-icon svg {
-  width: 1.72rem;
-  height: 1.72rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
 }
 
-.site-brand-icon rect,
-.site-brand-icon path {
+.site-brand-icon .bm-stroke {
   fill: none;
-  stroke: #f8fafc;
-  stroke-width: 2.5;
+  stroke: #1F3A5F;
+  stroke-width: 2.4;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+.site-brand-icon .bm-ink { fill: #1F3A5F; }
+.site-brand-icon .bm-teal { fill: #5C8499; }
+.site-brand-icon .bm-disc { fill: var(--paper); }
+.site-brand-icon .bm-num {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 6.6px;
+  font-weight: 700;
+  fill: #1F3A5F;
 }
 
 .site-brand-copy {
@@ -2962,8 +2997,8 @@ body[data-page-trust="true"] .section-hero-copy .hero-summary {
 }
 
 .back-to-top:focus-visible {
-  outline: 3px solid rgba(15, 139, 141, 0.2);
-  outline-offset: 3px;
+  outline: 2px solid var(--editorial-accent);
+  outline-offset: 2px;
 }
 
 .back-to-top svg {
