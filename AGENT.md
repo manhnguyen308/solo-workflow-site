@@ -162,25 +162,26 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 1. Read `AGENT.md` first.
 2. Read `TRACKER.md` second for current project state.
 3. Read `.claude/skills/soloopsguide-agent/SKILL.md` for the reusable repo workflow.
-4. Think before coding:
+4. For any reader-visible content work or audit, read `humanizer.md` completely. Use its Detect mode for audits unless the task explicitly authorizes rewriting.
+5. Think before coding:
    - state the key assumptions you are making,
    - surface uncertainty or competing interpretations before implementation when they matter,
    - prefer the simplest viable path and say so if a heavier approach is unnecessary.
-5. Plan first for tasks touching 3+ files, unfamiliar systems, layouts, image generators, indexing, build behavior, or anything that could widen beyond the request. Small typo, metadata, or one-file fixes do not need a full plan.
-6. Keep the pass scoped to the user request and finish one task before starting another.
-7. Prefer surgical improvements over broad rewrites.
+6. Plan first for tasks touching 3+ files, unfamiliar systems, layouts, image generators, indexing, build behavior, or anything that could widen beyond the request. Small typo, metadata, or one-file fixes do not need a full plan.
+7. Keep the pass scoped to the user request and finish one task before starting another.
+8. Prefer surgical improvements over broad rewrites.
    - do not refactor adjacent code, comments, or formatting unless the task requires it,
    - match the existing repo style,
    - remove only unused code created by your own changes unless the user explicitly asks for broader cleanup.
-8. For multi-step tasks, define the goal and the check that will prove each meaningful step is complete.
-9. Before committing, run the required validation, then read the diff for unintended scope, URL, generated-output, or public-content changes.
-10. After the pass, update `TRACKER.md` with:
+9. For multi-step tasks, define the goal and the check that will prove each meaningful step is complete.
+10. Before committing, run the required validation, then read the diff for unintended scope, URL, generated-output, or public-content changes.
+11. After the pass, update `TRACKER.md` with:
    - what changed,
    - files touched,
    - build result if relevant,
    - open follow-up items,
    - recommended next step.
-11. For normal repo-editing tasks, after scoped changes and verification are complete:
+12. For normal repo-editing tasks, after scoped changes and verification are complete:
    - create a git commit with a clear message,
    - push the current branch when remotes/auth are available,
    - if push cannot be completed, report the exact blocker rather than implying success.
@@ -191,6 +192,7 @@ Read `AGENT.md` + `TRACKER.md` before every task. Add these for specific work ty
 
 | Task type | Add to reading list |
 | --- | --- |
+| Reader-visible content writing, editing, or audit | `humanizer.md` |
 | New page or content work | `project-docs/CONTENT_OPERATIONS.md` |
 | Feature image work | `project-docs/FEATURE-IMAGE-GUIDELINES.md` |
 | New roadmap feature | `project-docs/NEW_FEATURES_ROADMAP.md` |
