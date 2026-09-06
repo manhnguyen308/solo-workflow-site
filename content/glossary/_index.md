@@ -1,91 +1,32 @@
-﻿+++
++++
 title = "Glossary"
-description = "Plain-English workflow terms that remove ambiguity and route solo operators back to the right implementation page."
+description = "Plain-English workflow terms that help clarify a decision and route solo operators back to the relevant implementation page."
 feature_image = "/images/features/hubs/glossary.webp"
-feature_image_alt = "Editorial glossary illustration with definition cards and reference panels."
+feature_image_alt = "Illustration with definition cards and reference panels."
 +++
 
-Use this glossary when a term is blocking a decision. The purpose here is not to build vocabulary for its own sake, but to remove ambiguity around ownership, handoffs, records, and workflow structure.
+Use this glossary when one term is preventing a workflow or stack decision. Read the definition, apply it to the affected stage, and continue to the linked process when the term is clear.
 
-This section exists to make the rest of the site more usable. The right outcome is not "I learned a definition." The right outcome is "I can now choose the right workflow, tool model, or operating rule with less ambiguity."
+## Choose the term
 
-If you only open one page here, it should usually be because one unclear term is blocking progress somewhere else. The best use of this hub is to resolve that term quickly, then leave for the stronger workflow, blueprint, or comparison page.
+- [System of record](/glossary/system-of-record/) explains where current client status, ownership, and next actions should be authoritative.
+- [Workflow handoff](/glossary/workflow-handoff/) explains what must transfer when one stage ends and another begins.
+- [Approval owner](/glossary/approval-owner/) explains who has authority to accept, reject, or request changes.
+- [Next action owner](/glossary/next-action-owner/) explains who is responsible for the immediate next move.
+- [Client dependency](/glossary/client-dependency/) explains an input, approval, asset, access item, or decision the client must provide.
 
-If the real problem is not vocabulary but a weak stage, a blurry handoff, or an overcomplicated stack, this hub is probably too narrow to solve it.
+If you cannot identify the term because several stages feel unclear, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) instead.
 
-## The safest first path through this hub
+## Apply the definition
 
-1. Open the one term that is actively blocking a decision.
-2. Use the definition only long enough to remove the ambiguity.
-3. Leave for the linked workflow, blueprint, or comparison page as soon as the next move is clearer.
+- For an unclear approval path, define the [Approval owner](/glossary/approval-owner/), then use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when the decision affects scope.
+- For an unclear immediate follow-up, define the [Next action owner](/glossary/next-action-owner/), then use [Client status update workflow for freelancers and consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- For uncertainty about where client truth belongs, define the [System of record](/glossary/system-of-record/), then compare [CRM vs project management tool for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- For an unclear stage boundary, define the [Workflow handoff](/glossary/workflow-handoff/), then use [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+- For a missing client input, define the [Client dependency](/glossary/client-dependency/), then update the affected stage with [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 
-## How to use this hub
+## Skip the glossary when the process is the blocker
 
-- Open the term that is actively blocking a workflow or stack decision.
-- Read the definition in context, then leave the glossary quickly.
-- Use the linked guide or comparison page to apply the term in a real system.
-
-## Start here only when a term is the actual blocker
-
-- Start with a workflow page if the stage itself is weak.
-- Start with a comparison if the decision is about system model or tool category.
-- Start with a blueprint if the stack shape is the real problem.
-- Start here only when one term is preventing a clearer decision.
-
-## Fastest useful starting points
-
-- Start with [System of Record](/glossary/system-of-record/) when the main confusion is where current truth should live.
-- Start with [Workflow Handoff](/glossary/workflow-handoff/) when the main confusion is what should move from one stage into the next.
-- Start with [Approval Owner](/glossary/approval-owner/) when work is waiting on a decision but the real approver is still vague.
-- Start with [Client Dependency](/glossary/client-dependency/) when a missing client-side input is blocking progress.
-
-If you cannot tell which term matters most yet, the glossary is probably not the best first stop.
-
-## Start here by decision type
-
-- If the main question is "where should active client truth live?", start with [System of Record](/glossary/system-of-record/).
-- If the main question is "what exactly should transfer between stages?", start with [Workflow Handoff](/glossary/workflow-handoff/).
-- If the main question is "who can actually move this forward?", start with [Approval Owner](/glossary/approval-owner/).
-- If the main question is "who owns the immediate next move?", start with [Next Action Owner](/glossary/next-action-owner/).
-- If the main question is "what exactly is the client holding up?", start with [Client Dependency](/glossary/client-dependency/).
-- If the real problem is larger than a definition, jump straight to the linked workflow or comparison page instead of staying in the glossary.
-
-## Start with the terms that affect system design
-
-- [Workflow Handoff](/glossary/workflow-handoff/)
-- [System of Record](/glossary/system-of-record/)
-- [Approval Owner](/glossary/approval-owner/)
-- [Next Action Owner](/glossary/next-action-owner/)
-- [Client Dependency](/glossary/client-dependency/)
-
-## Terms that matter most for this site
-
-- [Workflow Handoff](/glossary/workflow-handoff/) clarifies how work should move between lifecycle stages.
-- [System of Record](/glossary/system-of-record/) clarifies where current truth should live inside the stack.
-- [Approval Owner](/glossary/approval-owner/) clarifies who can actually move a deliverable, change request, or milestone forward.
-- [Next Action Owner](/glossary/next-action-owner/) clarifies who owns the immediate next move once a stage is active.
-- [Client Dependency](/glossary/client-dependency/) clarifies what the client still owes before a stage can move cleanly.
-
-## When to leave the glossary
-
-- Return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) when the unclear term is affecting lifecycle design.
-- Use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) when the unclear term is changing where your system of record should live.
-- Use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the definition reveals that your tools already contain duplicated truth.
-- Use [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) or [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) when the real blocker is approval or communication discipline rather than vocabulary.
-
-Leave this hub as soon as the term is clear enough to act. Lingering in glossary pages usually means the real need is implementation, not more definition.
-
-## What makes a glossary page strong on this site
-
-- It should define the term in plain language.
-- It should show how the term affects a real operating decision.
-- It should name common failure modes or misunderstandings.
-- It should point directly to the next page that helps you act on the definition.
-
-## Fast routes from glossary to implementation
-
-- unclear approval path -> [Approval Owner](/glossary/approval-owner/) then [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
-- unclear immediate follow-up -> [Next Action Owner](/glossary/next-action-owner/) then [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
-- unclear system center -> [System of Record](/glossary/system-of-record/) then [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/)
-- unclear stage boundary -> [Workflow Handoff](/glossary/workflow-handoff/) then [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- unclear missing input -> [Client Dependency](/glossary/client-dependency/) then [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+- If the lifecycle itself is unclear, use [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If the stack has duplicated client status across tools, use [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+- If the stack model is undecided, use [CRM vs project management tool for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).

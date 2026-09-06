@@ -1,11 +1,12 @@
 +++
-title = "Client Input Dependency Worksheet for Solo Operators"
-description = "A practical worksheet for solo operators who need to define required client inputs, owners, due stages, quality expectations, and fallback paths so work does not stall on vague or missing dependencies."
+title = "Client input dependency worksheet for solo operators"
+description = "Define a required client input, its owners, due point, acceptable format, blocked work, and fallback path."
 summary = "Use this worksheet to document what you need from the client, who owns it, when it is due, what it should look like, and what happens if it does not arrive."
 feature_image = "/images/features/templates/client-input-dependency-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing client input items, owner columns, due-stage markers, and blocked-work notes."
 draft = false
 date = 2026-04-16T00:00:00Z
+lastmod = 2026-07-31T00:00:00Z
 slug = "client-input-dependency-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["client-inputs", "dependency", "worksheet", "handoff"]
@@ -18,13 +19,11 @@ related = ["/workflows/client-onboarding-workflow-for-freelancers-and-consultant
 featured = true
 +++
 
-Use this worksheet when the real problem is not just that work is blocked, but that the client-side dependency was never defined clearly enough in the first place.
+Use this worksheet when work depends on a client input that has not been defined clearly. Record the item, its owners, its due point, acceptable quality, the work it blocks, and the response if it does not arrive.
 
-This is a support asset, not a workflow guide. Its job is to help you write down what input is required, who owns it, when it is due, what acceptable quality looks like, and what should happen if it does not arrive.
+If the dependency is documented but the project still needs a wait, pause, or escalation decision, use [Escalation and pause-state worksheet](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
-Use this when the missing client-side item itself is still vague. If the dependency is already documented and the real problem is deciding what happens next because the work is still blocked, move to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-
-## When to use this worksheet
+## Use it before an input can block work
 
 Use it when:
 
@@ -35,25 +34,23 @@ Use it when:
 
 If the bigger problem is still the stage boundary itself, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) first.
 
-## What this worksheet does not decide
-
-This worksheet should not decide:
+## Decisions to make elsewhere
 
 - the whole onboarding or delivery workflow,
 - whether the project should continue despite the delay,
 - how the full escalation policy should work across all clients,
 - what tool stack should hold the dependency record.
 
-Those belong on the workflow, FAQ, and system-design pages. This asset only helps you define one client dependency clearly enough to track and communicate it.
+Define the surrounding workflow, escalation policy, and record ownership separately. This worksheet makes one client dependency specific enough to track and communicate.
 
-## How to use it
+## Record one dependency
 
 1. Document one input dependency at a time.
 2. Name both a client-side owner and your-side owner.
 3. Define the due stage or date before the work depends on it.
 4. Write one fallback or escalation path before the delay happens.
 
-Practical rule: if a missing item could block work but you have not defined its owner, due point, and acceptable format, it is still unmanaged.
+An input that can block work needs a named owner, due point, and acceptable format.
 
 ## Client input dependency worksheet
 
@@ -101,7 +98,7 @@ Document who on your side:
 - must update the system when it comes in,
 - communicates the impact if it is late or incomplete.
 
-This avoids the common failure mode where the dependency is "known" but no one is actually watching it.
+This prevents a dependency from being treated as known while nobody is responsible for watching it.
 
 ## Due stage / date
 
@@ -113,7 +110,7 @@ Write the dependency against a visible stage or date:
 - before invoice can trigger,
 - before offboarding can start.
 
-The due point should be earlier than the moment total blockage becomes painful.
+Set the due point before the dependent work must begin.
 
 ## Format / quality expectations
 
@@ -143,7 +140,7 @@ Examples:
 - invoice cannot trigger cleanly,
 - offboarding cannot reach final signoff.
 
-This is what turns the missing item from annoyance into an explicit operational dependency.
+Record the blocked work so its effect is visible in the project record.
 
 ## Fallback or escalation path
 
@@ -156,17 +153,17 @@ Define one practical response:
 - escalate to the approval owner or client lead,
 - pause the transition until the item arrives.
 
-Do not improvise the fallback every time. The point is to reduce ambiguity before the delay occurs.
+Record the fallback before a delay occurs so the response does not depend on improvisation.
 
-If the fallback is no longer enough and the blocked work needs a formal pause, re-scope, proceed, or close-out decision, move next to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+If the fallback is no longer enough, record a pause, re-scope, proceed, or closeout decision with the [escalation and pause-state worksheet](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
 If the repeated dependency failure has already made the old plan unreliable, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) instead of trying to patch the same plan again.
 
-## Suggested use cases
+## Apply the worksheet at these stages
 
 ### Onboarding inputs that block project start
 
-Best when kickoff depends on access, files, stakeholder details, or approved setup information.
+Use this when kickoff depends on access, files, stakeholder details, or approved setup information.
 
 Use with:
 - [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
@@ -174,7 +171,7 @@ Use with:
 
 ### Proposal review dependencies
 
-Best when approval or revision work cannot proceed because key answers or decision-maker responses are missing.
+Use this when approval or revision work cannot proceed because key answers or decision-maker responses are missing.
 
 Use with:
 - [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
@@ -182,7 +179,7 @@ Use with:
 
 ### Delivery assets needed before work continues
 
-Best when active execution depends on content, files, access, or review materials from the client.
+Use this when active execution depends on content, files, access, or review materials from the client.
 
 Use with:
 - [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
@@ -190,7 +187,7 @@ Use with:
 
 ### Approvals or answers needed before billing or offboarding
 
-Best when the work is almost done but one client-side dependency still blocks closure.
+Use this when the work is nearly complete but one client-side dependency still blocks closure.
 
 Use with:
 - [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
@@ -204,16 +201,14 @@ Use with:
 - timeline promises stay unchanged even though required input is missing,
 - the dependency is only described as "waiting on client."
 
-## What to do after completing the worksheet
+## Act on the recorded dependency
 
 - If the dependency is blocking project start, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - If it is blocking active work, continue to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If the dependency is clear but the response pattern is still weak, continue to [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).
 - If the bigger issue is still a vague stage transition, go back to [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
-## Completion standard
-
-This worksheet is complete when:
+## A dependency ready to manage
 
 - the required input is specific enough to verify,
 - both owners are named,

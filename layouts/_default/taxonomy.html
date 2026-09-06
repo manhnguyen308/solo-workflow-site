@@ -3,9 +3,9 @@
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
       <div class="section-hero-copy">
-        <p class="eyebrow">Taxonomy</p>
+        <p class="eyebrow">Browse by topic</p>
         <h1>{{ .Title }}</h1>
-        <p class="hero-summary">Pages related to this topic across workflows, blueprints, comparisons, and implementation assets.</p>
+        <p class="hero-summary">Pages related to this topic across workflows, blueprints, comparisons, templates, and checklists.</p>
       </div>
       <aside class="section-hero-panel">
         <p class="panel-label">Browse by relevance</p>
@@ -22,7 +22,7 @@
     <div class="wrap">
       <div class="section-heading">
         <p class="eyebrow">Connected pages</p>
-        <h2>Browse the most relevant reading paths</h2>
+          <h2>Browse pages on this topic</h2>
       </div>
       {{ if gt (len .Pages) 0 }}
         <div class="card-grid card-grid-2">
@@ -34,7 +34,7 @@
         <div class="utility-panel">
           <p class="utility-kicker">No related pages</p>
           <h2>There is nothing filed under this topic yet</h2>
-          <p>Try the homepage or a main content hub to continue browsing.</p>
+          <p>Try the homepage or a main collection to continue browsing.</p>
         </div>
       {{ end }}
     </div>

@@ -5,32 +5,28 @@
 {{ $trustSections := slice "about" "contact" "editorial-policy" "content-policy" "privacy-policy" "disclaimer" "terms" }}
 {{ $isTrustSection := or (in $trustSections .Section) (in $trustSections .Type) }}
 {{ $isSupportSection := and (eq .Kind "section") $isTrustSection }}
+{{ $isUtilityPage := or (eq .Params.page_type "utility") (eq .Params.page_role "utility") }}
 {{ if .IsHome }}
-  {{ $rawTitle = printf "%s | Workflow Systems, Stack Blueprints, and Templates for Solo Operators" $siteTitle }}
+  {{ $rawTitle = printf "%s | Workflow systems, stack blueprints, and templates for solo operators" $siteTitle }}
 {{ else if eq .Kind "section" }}
   {{ $rawTitle = printf "%s | %s" .Title $siteTitle }}
 {{ else if eq .Kind "taxonomy" }}
-  {{ $rawTitle = printf "%s Topics | %s" .Title $siteTitle }}
+  {{ $rawTitle = printf "%s topics | %s" .Title $siteTitle }}
 {{ else if eq .Kind "term" }}
-  {{ $rawTitle = printf "%s Topic | %s" .Title $siteTitle }}
+  {{ $rawTitle = printf "%s topic | %s" .Title $siteTitle }}
 {{ else }}
   {{ $rawTitle = printf "%s | %s" .Title $siteTitle }}
 {{ end }}
 {{ $title := $rawTitle | plainify | htmlUnescape }}
 <title>{{ $title }}</title>
 {{ $descSource := .Params.description | default .Params.summary | default .Description | default .Summary | default .Site.Params.siteDescription }}
-{{ $desc := $descSource | plainify | htmlUnescape | truncate 165 "" }}
+{{ $desc := $descSource | plainify | htmlUnescape }}
 {{ $featureImage := partial "feature-image.html" . }}
 {{ $measurement := .Site.Params.measurement }}
 {{ $searchConsole := .Site.Params.searchConsole }}
-{{ $pageTypeMeta := .Params.page_type | default (cond .IsHome "home" (cond $isTrustSection "support-page" .Kind)) }}
-{{ $pageRoleMeta := .Params.page_role | default (cond .IsHome "homepage" (cond (and (eq .Kind "section") (not $isTrustSection)) "hub" (cond $isTrustSection "trust-page" "standard"))) }}
 <meta name="description" content="{{ $desc }}">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="{{ .Permalink }}">
-<meta name="soloopsguide:page-type" content="{{ $pageTypeMeta }}">
-<meta name="soloopsguide:page-role" content="{{ $pageRoleMeta }}">
-<meta name="soloopsguide:page-section" content="{{ .Section | default "home" }}">
 {{ with $searchConsole.googleSiteVerification }}<meta name="google-site-verification" content="{{ . }}">{{ end }}
 {{ $robots := "index,follow" }}
 {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}
@@ -38,7 +34,7 @@
 {{ end }}
 {{ with .Params.robots }}{{ $robots = . }}{{ end }}
 <meta name="robots" content="{{ $robots }}">
-<meta property="og:type" content="{{ if or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") (eq .Params.page_type "glossary") }}website{{ else }}article{{ end }}">
+<meta property="og:type" content="{{ if or .IsHome (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "term") (eq .Params.page_type "glossary") $isUtilityPage }}website{{ else }}article{{ end }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
@@ -109,6 +105,12 @@
     "description" $desc
     "isPartOf" (dict "@type" "WebSite" "name" $siteTitle "url" .Site.Home.Permalink)
   }}
+  {{ if not .Date.IsZero }}
+    {{ $schema = merge $schema (dict "datePublished" (.Date.Format "2006-01-02")) }}
+  {{ end }}
+  {{ if not .Lastmod.IsZero }}
+    {{ $schema = merge $schema (dict "dateModified" (.Lastmod.Format "2006-01-02")) }}
+  {{ end }}
   {{ with $featureImage }}
     {{ $schema = merge $schema (dict "image" .src) }}
   {{ end }}
@@ -116,7 +118,7 @@
   {{ $pageType := "Article" }}
   {{ if eq .Params.page_type "glossary" }}
     {{ $pageType = "DefinedTerm" }}
-  {{ else if or (eq .Section "about") (eq .Section "contact") (eq .Section "editorial-policy") (eq .Section "content-policy") (eq .Section "privacy-policy") (eq .Section "disclaimer") (eq .Section "terms") }}
+  {{ else if or $isUtilityPage (eq .Section "about") (eq .Section "contact") (eq .Section "editorial-policy") (eq .Section "content-policy") (eq .Section "privacy-policy") (eq .Section "disclaimer") (eq .Section "terms") }}
     {{ $pageType = "WebPage" }}
   {{ end }}
   {{ if eq $pageType "DefinedTerm" }}
@@ -131,6 +133,21 @@
     {{ with $featureImage }}
       {{ $schema = merge $schema (dict "image" .src) }}
     {{ end }}
+  {{ else if eq $pageType "WebPage" }}
+    {{ $schema = dict
+      "@context" "https://schema.org"
+      "@type" "WebPage"
+      "name" .Title
+      "description" $desc
+      "url" .Permalink
+      "isPartOf" (dict "@type" "WebSite" "name" $siteTitle "url" .Site.Home.Permalink)
+    }}
+    {{ if not .Lastmod.IsZero }}
+      {{ $schema = merge $schema (dict "dateModified" (.Lastmod.Format "2006-01-02")) }}
+    {{ end }}
+    {{ with $featureImage }}
+      {{ $schema = merge $schema (dict "image" .src) }}
+    {{ end }}
   {{ else }}
     {{ $schema = dict
       "@context" "https://schema.org"
@@ -139,13 +156,17 @@
       "name" .Title
       "description" $desc
       "url" .Permalink
-      "datePublished" (.Date.Format "2006-01-02")
-      "dateModified" (.Lastmod.Format "2006-01-02")
       "mainEntityOfPage" .Permalink
       "author" (dict "@type" "Organization" "name" .Site.Params.author)
       "publisher" (dict "@type" "Organization" "name" $siteTitle)
       "isPartOf" (dict "@type" "WebSite" "name" $siteTitle "url" .Site.Home.Permalink)
     }}
+    {{ if not .Date.IsZero }}
+      {{ $schema = merge $schema (dict "datePublished" (.Date.Format "2006-01-02")) }}
+    {{ end }}
+    {{ if not .Lastmod.IsZero }}
+      {{ $schema = merge $schema (dict "dateModified" (.Lastmod.Format "2006-01-02")) }}
+    {{ end }}
     {{ with $featureImage }}
       {{ $schema = merge $schema (dict "image" .src) }}
     {{ end }}
@@ -160,7 +181,7 @@
   {{ $position := 2 }}
   {{ if .IsPage }}
     {{ with .CurrentSection }}
-      {{ if ne .Permalink $.Permalink }}
+      {{ if and (ne .Permalink $.Permalink) (not .IsHome) }}
         {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) }}
         {{ $position = add $position 1 }}
       {{ end }}

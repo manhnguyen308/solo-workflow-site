@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   brandName = "SoloOpsGuide"
-  siteDescription = "Workflow-first guidance for freelancers, consultants, and solo operators building calmer client operations."
+  siteDescription = "Workflow guidance for freelancers, consultants, and solo operators managing client operations."
   defaultImage = "/og-default.svg"
   defaultImageSource = "/images/features/site/soloopsguide-home.svg"
   author = "SoloOpsGuide"
@@ -93,19 +93,19 @@ disableKinds = ["taxonomy", "term"]
   url = "/about/"
   weight = 10
 [[menu.footer]]
-  name = "Contact"
+  name = "Contact availability"
   url = "/contact/"
   weight = 20
 [[menu.footer]]
-  name = "Editorial Policy"
+  name = "Editorial policy"
   url = "/editorial-policy/"
   weight = 30
 [[menu.footer]]
-  name = "Content Policy"
+  name = "Content policy"
   url = "/content-policy/"
   weight = 40
 [[menu.footer]]
-  name = "Privacy Policy"
+  name = "Privacy policy"
   url = "/privacy-policy/"
   weight = 50
 [[menu.footer]]

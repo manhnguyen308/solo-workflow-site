@@ -23,9 +23,16 @@
   <article class="wrap article-shell">
     <header class="article-header">
       <div class="article-header-main">
-        <p class="eyebrow">Site page</p>
+        <p class="eyebrow">Information</p>
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="hero-summary">{{ . }}</p>{{ end }}
+        <div class="article-meta">
+          {{ if not .Lastmod.IsZero }}
+            <span class="meta-pill meta-pill-muted">Updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>
+          {{ else if not .Date.IsZero }}
+            <span class="meta-pill meta-pill-muted">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ end }}
+        </div>
       </div>
       <aside class="article-aside">
         <div class="article-aside-card">
@@ -33,8 +40,8 @@
           <p>{{ .Params.summary | default .Description | default .Site.Params.siteDescription }}</p>
         </div>
         <div class="article-aside-card article-aside-card-soft">
-          <p class="panel-label">Site role</p>
-          <p>Support page that explains how the site works, how to evaluate the content, or how to use it responsibly.</p>
+          <p class="panel-label">What to expect</p>
+          <p>Use the information here to understand the site's standards, limits, or current availability.</p>
         </div>
       </aside>
     </header>
@@ -51,7 +58,7 @@
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
       <div class="section-hero-copy">
-        <p class="eyebrow">Section hub</p>
+        <p class="eyebrow">Guides and resources</p>
         <h1>{{ .Title }}</h1>
         {{ with .Description }}<p class="hero-summary">{{ . }}</p>{{ end }}
         {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
@@ -66,17 +73,17 @@
           {{ end }}
         {{ end }}
         <div class="journey-note">
-          <strong>Use this hub as a curated starting point.</strong>
-          <p>Start with the clearest next-step page, then move into the supporting implementation content that helps you act on it.</p>
+          <strong>Choose the page that matches the current decision.</strong>
+          <p>Start with the broadest unresolved question, then move to a more specific guide, template, or checklist.</p>
         </div>
         <div class="section-stat">
           <span>{{ len .Pages }}</span>
-          <p>pages in this hub</p>
+          <p>pages in this section</p>
         </div>
         {{ with $featuredPage }}
         {{ $featuredTrackLabel := replaceRE "^.*/([^/]+)/?$" "$1" .RelPermalink }}
         <div class="section-featured-link">
-          <span>{{ if gt (len $priorityPages) 0 }}Priority page{{ else }}Recommended page{{ end }}</span>
+          <span>{{ if gt (len $priorityPages) 0 }}Start here{{ else }}First page{{ end }}</span>
           <a href="{{ .RelPermalink }}" data-track="hub_featured_click" data-track-location="section-hero" data-track-label="{{ $featuredTrackLabel }}">{{ .Title }}</a>
         </div>
         {{ end }}
@@ -88,9 +95,9 @@
     <section class="page-section">
       <div class="wrap">
         <div class="section-heading">
-          <p class="eyebrow">Priority pages</p>
-          <h2>Start with the strongest pages in this hub</h2>
-          <p>These pages carry the main lifecycle, decision, and implementation paths for this topic area. Open them before drilling into narrower supporting pages.</p>
+          <p class="eyebrow">Core starting points</p>
+          <h2>Begin with the core pages in this section</h2>
+          <p>These pages cover the main lifecycle, decision, and implementation paths. Open the relevant one before moving to a narrower page.</p>
         </div>
         <div class="card-grid card-grid-2">
           {{ range $priorityPages }}
@@ -104,7 +111,7 @@
       <div class="wrap">
         <div class="section-heading">
           <p class="eyebrow">Recommended entry point</p>
-          <h2>Start with the anchor page</h2>
+          <h2>Use the recommended starting point</h2>
         </div>
         <div class="featured-grid featured-grid-single">
           {{ partial "page-card.html" (dict "page" $featuredPage "style" "featured") }}
@@ -117,9 +124,9 @@
   <section class="page-section">
     <div class="wrap">
       <div class="section-heading">
-        <p class="eyebrow">More pages in this hub</p>
-        <h2>{{ if gt (len $priorityPages) 0 }}Supporting pages and follow-on reading{{ else }}Curated reading list{{ end }}</h2>
-        <p>{{ if gt (len $priorityPages) 0 }}Use these pages after the priority set when you need a narrower workflow fix, implementation asset, or reference page inside the same cluster.{{ else }}Use these pages in sequence where it helps, or jump directly to the one that matches the current bottleneck in your workflow.{{ end }}</p>
+        <p class="eyebrow">More pages in this section</p>
+        <h2>{{ if gt (len $priorityPages) 0 }}Focused guides and practical resources{{ else }}Browse every page{{ end }}</h2>
+        <p>{{ if gt (len $priorityPages) 0 }}Use these when you need a narrower workflow fix, template, checklist, or definition for the same topic.{{ else }}Follow the sequence when it applies, or open the page that matches the current bottleneck.{{ end }}</p>
       </div>
       <div class="card-grid card-grid-2">
         {{ range $rest }}
@@ -134,7 +141,7 @@
       <div class="utility-panel">
         <p class="utility-kicker">Nothing published yet</p>
         <h2>This section is still being filled out</h2>
-        <p>There are no live pages in this section yet. Start from the homepage or browse another content hub for the closest related guidance.</p>
+        <p>There are no live pages in this section yet. Start from the homepage or browse another collection for the closest related guidance.</p>
       </div>
     </div>
   </section>

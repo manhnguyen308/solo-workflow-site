@@ -1,13 +1,13 @@
 +++
 title = "Search SoloOpsGuide"
-description = "Search SoloOpsGuide for workflows, blueprints, comparisons, templates, glossary, and FAQ pages. Filter by content type and look up pages by operational blocker rather than exact title."
-summary = "Use this page to search across the whole site and filter by section."
+description = "Search SoloOpsGuide by workflow problem or page title across guides, comparisons, templates, glossary terms, and FAQs."
+summary = "Search the site by title or the operational problem you need to solve."
 layout = "search"
 url = "/search/"
 robots = "noindex,follow"
 sitemap_exclude = true
-page_type = "support-page"
+page_type = "utility"
 page_role = "utility"
 +++
 
-Search across the full site. You can look up pages by exact title, or describe the operational blocker you are stuck on — approval, billing, onboarding, handoff, closeout, client silence — and narrow results by section.
+Search by exact title or describe the operational blocker. Terms such as approval, billing, onboarding, handoff, closeout, and client silence can narrow the results.

@@ -1,5 +1,7 @@
 # Website content audit: 2026-09-05
 
+> Remediation completed in the September 6 pass. See [the remediation record](CONTENT-AUDIT-REMEDIATION-2026-09-06.md) for resolutions, date allocation, validation, and remaining disclosed site limitations. The findings below preserve the original audit snapshot.
+
 ## Decision
 
 The site is not content-complete under the current `humanizer.md` gate. The technical publishing surface is healthy, but reader-visible content still contains publication blockers and broad polish debt.

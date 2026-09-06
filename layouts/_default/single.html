@@ -33,9 +33,11 @@
         <h1>{{ .Title }}</h1>
         {{ with .Params.description }}<p class="hero-summary">{{ . }}</p>{{ end }}
         <div class="article-meta">
-          {{ with .Params.page_type }}<span class="meta-pill">{{ . }}</span>{{ end }}
-          {{ with .Params.search_intent }}<span class="meta-pill">{{ . }}</span>{{ end }}
-          <span class="meta-pill meta-pill-muted">Updated {{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ if not .Lastmod.IsZero }}
+            <span class="meta-pill meta-pill-muted">Updated {{ .Lastmod.Format "Jan 2, 2006" }}</span>
+          {{ else if not .Date.IsZero }}
+            <span class="meta-pill meta-pill-muted">Published {{ .Date.Format "Jan 2, 2006" }}</span>
+          {{ end }}
         </div>
         {{ if .Params.feature_image }}
           {{ with $featureImage }}
@@ -52,20 +54,14 @@
         </div>
         {{ with $sectionPage }}
         <div class="article-aside-card">
-          <p class="panel-label">Section hub</p>
-          <p>Use the <a href="{{ .RelPermalink }}">{{ .Title }}</a> hub if you need the broader cluster view before going narrower.</p>
+          <p class="panel-label">Broader topic</p>
+          <p>Open <a href="{{ .RelPermalink }}">{{ .Title }}</a> when you need the broader topic before this specific page.</p>
         </div>
         {{ end }}
         {{ with $nextPage }}
         <div class="article-aside-card article-aside-card-soft">
-          <p class="panel-label">Best next move</p>
-          <p>After this page, open <a href="{{ .RelPermalink }}">{{ .Title }}</a> to tighten the adjacent stage or decision.</p>
-        </div>
-        {{ end }}
-        {{ with .Params.page_type }}
-        <div class="article-aside-card article-aside-card-muted">
-          <p class="panel-label">Page type</p>
-          <p>{{ . | title }} page with operational guidance, not general blog content.</p>
+          <p class="panel-label">Continue with</p>
+          <p>After this page, open <a href="{{ .RelPermalink }}">{{ .Title }}</a> for the related task or decision.</p>
         </div>
         {{ end }}
       </aside>
@@ -73,7 +69,7 @@
     <div class="reading-layout">
       <div class="article-body prose">
         {{ if eq .Section "templates-checklists" }}
-        <div class="article-actions" data-article-actions aria-label="Asset actions" data-no-print>
+        <div class="article-actions" data-article-actions aria-label="Template actions" data-no-print>
           <button type="button" class="article-action" data-action="copy" data-track="asset_action" data-track-location="template-actions" data-track-label="copy">
             <span class="article-action-label" data-default-label>Copy as plain text</span>
             <span class="article-action-feedback" aria-hidden="true" hidden>Copied</span>
@@ -85,7 +81,6 @@
         {{ end }}
         {{ .Content }}
       </div>
-      {{ partial "page-type-block.html" . }}
       {{ partial "related.html" . }}
     </div>
   </article>

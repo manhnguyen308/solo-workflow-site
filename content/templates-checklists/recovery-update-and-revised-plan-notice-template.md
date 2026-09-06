@@ -1,11 +1,12 @@
 +++
-title = "Recovery Update Template for Delayed Projects"
-description = "A practical communication template for solo operators who need to explain a formal reset, revised plan, or new operating baseline clearly after the original path is no longer reliable."
+title = "Recovery update template for delayed projects"
+description = "Explain a project reset, retire the outdated plan, state the revised path, and request the confirmation needed before work resumes."
 summary = "Use this template to explain what changed, what is no longer valid, what the revised path is, and what confirmation is required before work resumes."
 feature_image = "/images/features/templates/recovery-update-revised-plan-notice-template.webp"
 feature_image_alt = "Editorial template illustration showing a revised plan notice, reset summary, restart conditions, and confirmation request."
 draft = false
 date = 2026-04-19T00:00:00Z
+lastmod = 2026-07-27T00:00:00Z
 slug = "recovery-update-and-revised-plan-notice-template-for-solo-operators"
 category = "templates-checklists"
 tags = ["recovery-update", "revised-plan", "client-communication", "template"]
@@ -18,13 +19,9 @@ related = ["/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", 
 featured = true
 +++
 
-Use this template when the reset decision has already been made and the next job is communicating it clearly.
+Use this template after the reset decision is defined. Explain what changed, identify the revised plan, and request the confirmation needed before work resumes.
 
-This is a support asset, not a recovery guide. Its job is to help you explain what changed, why the old plan is no longer reliable, what the revised path is, and what response or confirmation is needed before work resumes.
-
-Use this only after the reset decision is already defined. It is the communication layer that follows recovery work, not the page that decides the recovery.
-
-## What this template is for
+## Send it after the reset is defined
 
 Use it when you need to send one visible reset or revised-plan message after:
 
@@ -36,16 +33,7 @@ Use it when you need to send one visible reset or revised-plan message after:
 
 If you still have not decided what the reset actually is, step back first to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
-## When to use it
-
-Use it when:
-
-- you need to replace the old plan with a revised version,
-- the client needs one clear summary instead of scattered updates,
-- the project should not resume until one decision or confirmation is visible,
-- informal patching has already caused confusion and you need a clean message.
-
-## What this template does not decide
+## Decisions to make before writing
 
 This template should not decide:
 
@@ -54,9 +42,9 @@ This template should not decide:
 - whether the new scope is commercially acceptable,
 - the full recovery workflow.
 
-Those decisions belong on the recovery, escalation, delivery, and scope-control pages. This asset only helps you communicate the revised operating reality once you already know what it is.
+Resolve the pause, scope, commercial, and recovery decisions before drafting the notice. The template communicates the revised plan; it does not choose it.
 
-## What this asset should help prevent
+## Confusion the notice should prevent
 
 - vague reset messages that sound like ordinary status updates,
 - clients working from an outdated plan after the reset,
@@ -115,7 +103,7 @@ Thanks,
 
 ## Summary of what changed
 
-Keep this short enough that the reader can repeat it back accurately.
+State the changed plan before its background.
 
 Good examples:
 
@@ -134,7 +122,7 @@ State the invalid part of the old plan plainly:
 - the earlier approval path,
 - the assumption that the existing scope still applies unchanged.
 
-This matters because reset messages fail when they describe the new plan without retiring the old one.
+Name the retired plan as well as its replacement.
 
 ## Revised scope, timeline, or sequence
 
@@ -193,9 +181,9 @@ Aim for:
 - specific,
 - forward-moving.
 
-The message should sound like operational clarification, not apology theater and not a legal threat. The point is to replace confusion with one usable version of the plan.
+Use neutral language that identifies the revised plan without blame or threats.
 
-## Suggested use cases
+## Reset situations
 
 ### Delayed project needs a revised timeline
 
@@ -221,14 +209,14 @@ Use with:
 - [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
 - [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/)
 
-## What to do after sending it
+## Record the response and next state
 
-- If the client confirms the revised path, continue in the relevant workflow page.
+- If the client confirms the revised path, update the authoritative project record and resume under the confirmed plan.
 - If the reset itself is still not fully defined, return to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 - If the project is still only blocked and not yet broken, step back to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 - If the revised plan introduces new billable scope, continue to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
-## Completion standard
+## A notice ready to send
 
 This template is doing its job when:
 

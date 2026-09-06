@@ -1,8 +1,9 @@
 +++
 title = "Disclaimer"
 description = "Important boundaries for using SoloOpsGuide content, including limits around professional advice, outcomes, recommendations, and external tools."
-summary = "SoloOpsGuide provides informational workflow guidance, not legal, financial, or professional advice, and readers remain responsible for implementation decisions."
+summary = "SoloOpsGuide provides informational workflow guidance, not professional advice. Readers remain responsible for implementation decisions."
 date = 2026-03-23T00:00:00Z
+lastmod = 2026-08-25T00:00:00Z
 +++
 
 SoloOpsGuide is an informational site. The content is intended to help readers think more clearly about workflows, systems, and implementation choices in solo service businesses.
@@ -40,4 +41,4 @@ Readers should evaluate:
 
 Content may be updated, expanded, corrected, or retired as the site evolves. Not every page will reflect the same update cadence.
 
-For how content is approached and reviewed, see [Editorial Policy](/editorial-policy/).
+For how content is approached and reviewed, see [Editorial policy](/editorial-policy/).

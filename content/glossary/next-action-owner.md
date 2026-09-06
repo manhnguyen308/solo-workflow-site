@@ -1,11 +1,12 @@
 +++
-title = "Next Action Owner"
+title = "Next action owner"
 description = "A next action owner is the person responsible for the immediate visible step that moves a workflow forward."
-summary = "Use this definition to clarify who owns the next move in a workflow and why stalled handoffs usually reflect missing next-action ownership."
+summary = "Define who owns the immediate next move, where that responsibility is visible, and what should trigger follow-up."
 feature_image = "/images/features/glossary/next-action-owner.webp"
-feature_image_alt = "Editorial glossary illustration representing one named owner responsible for the next visible step in a workflow."
+feature_image_alt = "Illustration representing one named owner responsible for the next visible step in a workflow."
 draft = false
 date = 2026-04-14T00:00:00Z
+lastmod = 2026-07-08T00:00:00Z
 category = "glossary"
 tags = ["definition", "next-action-owner", "workflow"]
 page_type = "glossary"
@@ -19,23 +20,7 @@ featured = false
 
 A **next action owner** is the person responsible for the immediate step that must happen next in a workflow.
 
-This matters because many stalled projects do not fail from lack of effort. They fail because everyone can describe the general stage, but no one is explicitly accountable for the next visible move.
-
-## What this page is for
-
-Use this page to clarify one specific handoff role when stalled work keeps lacking a visible next mover.
-
-## What this term does not cover
-
-Do not use this page to diagnose the whole workflow, define the approval path, or decide the broader communication system. It only explains the role that owns the immediate next move.
-
-## Start here first if...
-
-- the stage itself is still unclear,
-- the missing role is actually the final approver,
-- several people are involved and the routing path itself is weak.
-
-In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Approval Owner](/glossary/approval-owner/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+A stage label such as "in review" does not say who must act. Naming the next action owner makes the immediate responsibility visible.
 
 ## Why it matters
 
@@ -45,11 +30,11 @@ When the next action owner is vague:
 - approvals drift because no one is chasing the answer,
 - the system says a stage is active but nobody knows who should move it.
 
-This is not the same thing as long-term stage ownership. It is narrower. It answers one operational question: who is responsible for the next move right now?
+This role can change as the stage moves. It answers one operational question: who is responsible for the next move right now?
 
-## Practical test
+## Test the next-action assignment
 
-You have a real next action owner only if you can answer:
+A useful assignment answers:
 - what the next step is,
 - who owns it,
 - where that ownership is visible,
@@ -57,18 +42,16 @@ You have a real next action owner only if you can answer:
 
 If the answer is "the team," "the client," or "we're waiting" without more detail, the owner is still missing.
 
-## Common examples
+## Next-action examples by stage
 
 - In onboarding, the next action owner may be the client contact who must provide access.
 - In delivery, it may be the operator who must send the review package.
 - In a change request, it may be the client approver who must accept, defer, or reject the revised scope.
 - In offboarding, it may be the client signer who must confirm closeout or the operator who must issue the final invoice.
 
-## Common misunderstanding
+## Next action owner versus approval owner
 
-Operators often confuse "the approver" with "the next action owner."
-
-Sometimes they are the same person. Often they are not.
+The approver and next action owner can be the same person, but the roles are different.
 
 Example:
 - the approval owner decides whether the revision is accepted,
@@ -76,24 +59,18 @@ Example:
 
 Both roles matter, but they solve different workflow problems.
 
-## Warning signs that this role is missing
+## Signs that the role is missing
 
 - status updates say "waiting on client" with no named contact,
 - the same reminder gets rewritten instead of following one responsibility path,
-- a stage looks active for days with no one advancing it,
-- closeout stalls because everyone assumes someone else sent the final prompt.
+- a stage looks active with no one advancing it,
+- closeout stalls because everyone assumes someone else sent the final request.
 
-## Where this matters most on the site
+## Apply the role to the affected stage
 
-- [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) because updates should point to one clear next move.
-- [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) because scope decisions stall when the next move is not owned.
-- [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) because final signoff, billing, and testimonial timing all depend on one visible next step.
-- [Approval Owner](/glossary/approval-owner/) when the missing role is not the doer but the actual decider.
-
-## Recommended next move
-
-- If the missing ownership is happening in client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
-- If the stall is around scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
-- If the stall is around final closeout, go to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
-
-Once the term is clear, leave this page and fix the stage where the ownership gap is showing up.
+- For unclear ownership in client communication, use [Client status update workflow for freelancers and consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- For a stalled scope decision, use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- For final signoff, billing, or closeout ownership, use [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+- When the missing role is the final decider rather than the immediate doer, define the [Approval owner](/glossary/approval-owner/).
+- When several stakeholders need one feedback route, use the [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+- When the whole stage sequence is unclear, use [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).

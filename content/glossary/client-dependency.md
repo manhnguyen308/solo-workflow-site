@@ -1,11 +1,12 @@
 +++
-title = "Client Dependency"
+title = "Client dependency"
 description = "A client dependency is any input, approval, asset, or decision the client must provide before a workflow stage can move forward."
-summary = "Use this definition to clarify what counts as a client dependency and why delayed inputs or approvals quietly stall delivery, billing, and closeout."
+summary = "Define a missing client input, name its owner and effect, and route it to the workflow stage that cannot continue."
 feature_image = "/images/features/glossary/client-dependency.webp"
-feature_image_alt = "Editorial glossary illustration representing a workflow stage blocked by a required client input or approval."
+feature_image_alt = "Illustration representing a workflow stage blocked by a required client input or approval."
 draft = false
 date = 2026-04-13T00:00:00Z
+lastmod = 2026-07-10T00:00:00Z
 category = "glossary"
 tags = ["definition", "client-dependency", "workflow"]
 page_type = "glossary"
@@ -16,85 +17,41 @@ related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-a
 featured = false
 +++
 
-A **client dependency** is any input, file, approval, access item, or decision the client must provide before the workflow can continue cleanly.
+A **client dependency** is an input, file, approval, access item, or decision the client must provide before a workflow stage can continue.
 
-This term matters because solo operators often describe work as "blocked" without naming what exactly is missing from the client side. Once that dependency stays vague, follow-up weakens and timelines become optimistic fiction.
+"Waiting on client" names a party but not the missing item. A useful dependency record identifies what is missing and how it affects the work.
 
-## What this page is for
+## Examples of client dependencies
 
-Use this page to clarify what counts as a client dependency and to name the missing client-side item more precisely.
+- Access to a tool, file, account, or environment.
+- A decision about scope, priority, or approval.
+- Content, assets, or source material.
+- Availability from a required stakeholder.
+- A procurement or finance action tied to progress.
 
-## What this term does not cover
+The item is a dependency when the current stage cannot meet its agreed completion condition without it.
 
-Do not use this page as the main answer to stalled onboarding, delayed delivery, or blocked offboarding. It explains one term inside those broader problems.
+## Record the dependency
 
-## Start here first if...
+Name:
 
-- the whole stage is weak rather than one dependency,
-- you need the actual response pattern rather than the definition,
-- the work is already blocked badly enough that waiting is no longer neutral.
-
-In those cases, go first to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/), or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-
-## Why it matters
-
-When client dependencies are not explicit:
-- kickoff starts without required access,
-- milestones stall without visible reason,
-- invoices or closeout get delayed behind unspoken approval needs,
-- updates sound reactive because the true blocker was never named.
-
-The fix is not better wording alone. The fix is to record the missing input as a real dependency with an owner, due point, and consequence.
-
-If the term is clear but the actual dependency record is still weak, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) to document the item more precisely.
-
-If the dependency is already defined and the real question is what operating state comes next because the work is still blocked, continue to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-
-## What usually counts as a client dependency
-
-- access to tools, files, or accounts,
-- decision on scope, priority, or approval,
-- content, assets, or source material,
-- stakeholder availability,
-- procurement or finance action tied to progress.
-
-If the work cannot move forward without it, it is a dependency.
-
-## Practical test
-
-You have identified the dependency clearly only if you can say:
 - what is missing,
-- who at the client side owns it,
-- what it blocks,
-- what happens if it does not arrive on time.
+- who on the client side owns it,
+- which task, stage, or date it affects,
+- which follow-up or escalation term applies if it does not arrive.
 
-If you are still writing "waiting on client" with no more detail, the dependency is not documented well enough.
+Replace a vague status such as "waiting on client" with these details. Use the [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/) when the record needs a consistent structure.
 
-## Common failure pattern
+## Keep workarounds visible
 
-The operator keeps working around the missing dependency until the milestone gets fuzzy.
+A temporary workaround can protect progress, but it should not hide the dependency. Record any assumption, rework risk, or schedule effect created by continuing without the input.
 
-That usually creates:
-- unclear revised timelines,
-- weak client communication,
-- hidden rework,
-- billing or signoff delays later in the project.
+If waiting is no longer a neutral state, use the [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) to choose the next operating state. Follow the response and escalation terms already agreed for the project.
 
-Naming the dependency early protects later stages.
+## Match the dependency to the stage
 
-## Where this matters most on the site
-
-- [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) because access and asset dependencies often appear in the first week.
-- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) because proposal review can stall on missing stakeholder answers, approvals, or required commercial inputs.
-- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) because active work often stalls on approval or asset dependencies.
-- [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) because final signoff and handoff can still depend on client action.
-- [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/) when the definition is clear but the response process is not.
-
-## Recommended next move
-
-- If the dependency is blocking proposal review or signature, go to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
-- If the dependency is blocking kickoff, go to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
-- If it is blocking active work, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
-- If you need the narrow response pattern, go to [FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).
-
-If you already understand the term, do not stay in the glossary layer longer than needed.
+- For a missing proposal decision or signature input, use [Proposal revision and approval workflow for freelancers and solo service businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- For access or assets needed before kickoff, use [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
+- For an input blocking active work, use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+- For a final signoff or handoff input, use [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+- For the communication sequence after an input is late, use [FAQ: What should I do when required client inputs are late or incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).

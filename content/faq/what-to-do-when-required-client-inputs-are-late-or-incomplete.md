@@ -1,11 +1,12 @@
 +++
-title = "FAQ: What Should I Do When Required Client Inputs Are Late or Incomplete?"
-description = "A narrow workflow FAQ for solo operators who need a practical response when required client assets, approvals, access, or decisions do not arrive on time."
+title = "FAQ: what should I do when required client inputs are late or incomplete?"
+description = "Respond to missing client assets, approvals, access, or decisions by naming the dependency, owner, effect, and next review point."
 summary = "Use this page when work is stalled by missing client inputs and you need a clear response pattern instead of vague waiting."
 feature_image = "/images/features/faq/client-input-delay-faq.webp"
-feature_image_alt = "Editorial FAQ illustration showing a workflow stage delayed by missing client inputs, with timeline and dependency markers."
+feature_image_alt = "Illustration showing a workflow stage delayed by missing client inputs, with timeline and dependency markers."
 draft = false
 date = 2026-04-12T00:00:00Z
+lastmod = 2026-07-17T00:00:00Z
 category = "faq"
 tags = ["faq", "client-inputs", "dependencies", "workflow"]
 slug = "what-to-do-when-required-client-inputs-are-late-or-incomplete"
@@ -19,21 +20,17 @@ featured = false
 
 Treat missing client inputs as a named dependency, not as background frustration.
 
-This page is for the narrow question of what to do when required assets, access, approvals, or source material do not arrive on time. It does not replace the broader onboarding or delivery workflows. It exists to help you respond cleanly once the dependency is already slowing real work.
+Use this answer when required assets, access, approvals, or source material do not arrive on time. Name the dependency and its effect before deciding whether to continue, pause, or revise the plan.
 
-## When this answer is too narrow
+## Fix the broader stage first when
 
-Do not use this FAQ to define the whole onboarding stage, redesign delivery control, or replace the broader dependency and escalation rules.
-
-## Start upstream first if...
-
-- the stage itself is still poorly designed,
-- the dependency record does not exist yet,
-- the work is already far enough off track that a pause or reset decision is needed.
+- The stage itself is poorly defined.
+- No dependency record exists yet.
+- The work needs a pause or reset decision rather than another reminder.
 
 In those cases, go first to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/), or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
-## What should you do first?
+## Name the missing input first
 
 Document three things immediately:
 - what exact input is missing,
@@ -48,23 +45,19 @@ If the dependency is now severe enough that waiting is no longer a neutral choic
 
 If that blocked state has already made the original plan unreliable, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
-## Should you work around it if you can?
+## Use a workaround only when its limits are visible
 
-Only if the workaround does not hide the true delay.
+A temporary workaround can protect progress when it does not hide the delay, create unrecorded rework, or preserve a timeline that depends on the missing input.
 
-Temporary workarounds are useful when they protect momentum. They become harmful when they create false confidence, hidden rework, or a timeline that still assumes the missing input was not important.
-
-## What if the delay is happening before kickoff?
-
-Treat it as an onboarding readiness issue.
+## Before kickoff, treat it as a readiness issue
 
 Do not let kickoff pretend to be complete if access, assets, or stakeholder clarity are still missing. Use [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) to define what must be present before real execution starts.
 
-## What if the delay is happening during active work?
+## During active work, show the blocked state
 
 Move the milestone into a visible blocked or at-risk state. Do not leave it looking active if progress now depends on client action.
 
-That protects:
+Update the records affected by the delay:
 - status accuracy,
 - review timing,
 - billing expectations,
@@ -80,26 +73,24 @@ Keep the message specific:
 - name the effect on timing or scope,
 - name the next review point.
 
-That works better than writing "waiting on client" because it gives the delay structure and consequence.
+## Revisit the stage when the pattern repeats
 
-## When does this become a larger workflow issue?
-
-It becomes larger than a one-off support question when:
+It becomes larger than a one-off incident when:
 - the same dependency pattern keeps happening at onboarding,
 - work frequently proceeds without required inputs,
 - blocked stages still appear healthy in your system,
-- downstream billing or offboarding gets delayed by upstream vagueness.
+- later billing or offboarding is delayed because the required input was never made explicit.
 
-At that point, leave the FAQ and fix the broader stage design.
+At that point, fix the broader stage design rather than treating each missing input as an isolated reminder problem.
 
-## What if the missing input is delaying closeout?
+## During closeout, keep the dependency visible
 
-Then this is no longer just an onboarding or delivery issue. It is now part of closeout control.
+An unresolved final signoff, handoff approval, or closeout dependency belongs in the closeout record.
 
 Use [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) when the missing input is a final signoff item, handoff approval, or last dependency before archive and billing closure.
 
-## Where to go next
+## Continue with the affected stage
 
-- If the dependency is blocking project start, go to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
-- If it is blocking active work, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
-- If you need the definition first, go to [Client Dependency](/glossary/client-dependency/).
+- If the dependency is blocking project start, go to [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
+- If it is blocking active work, go to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+- If you need the definition first, go to [Client dependency](/glossary/client-dependency/).

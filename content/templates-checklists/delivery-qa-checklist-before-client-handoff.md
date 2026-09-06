@@ -1,11 +1,12 @@
 +++
-title = "Delivery QA Checklist Before Client Handoff"
+title = "Delivery QA checklist before client handoff"
 description = "A pre-handoff QA checklist for milestone or final delivery moments when the delivery workflow is already defined and you need a repeatable quality-control step."
-summary = "Run this checklist before sending work to clients so handoff quality is consistent across projects."
+summary = "Verify scope, file quality, client instructions, delivery evidence, and the next project action before a client handoff."
 feature_image = "/images/features/templates/delivery-qa-checklist.webp"
 feature_image_alt = "Illustrated delivery QA checklist with handoff review steps before client submission."
 draft = false
 date = 2026-03-14T00:00:00Z
+lastmod = 2026-07-22T00:00:00Z
 category = "templates-checklists"
 tags = ["qa", "delivery", "handoff", "checklist"]
 page_type = "template"
@@ -15,13 +16,11 @@ related = ["/templates/client-onboarding-checklist-for-freelancers-and-consultan
 featured = false
 +++
 
-Use this checklist before every delivery handoff, even for "small" updates. Most client frustration comes from small misses, not major failures.
+Use this checklist before a milestone, review package, or final delivery. For a minor update, keep only the checks that match its scope and risk rather than assuming every handoff needs the full list.
 
-This page is the execution checklist for a delivery stage, not the full delivery method. If milestone ownership, approval rules, or handoff timing are still fuzzy, start with [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) first. This page should stay downstream from that workflow guide.
+If milestone ownership, approval rules, or handoff timing are still unclear, define them in [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) before running the quality checks.
 
-It is most useful when the delivery method is already decided and the risk now is avoidable misses at the handoff moment.
-
-## What this checklist assumes you already know
+## Confirm the delivery rule first
 
 - what the milestone or delivery is supposed to include,
 - who can approve it,
@@ -30,7 +29,7 @@ It is most useful when the delivery method is already decided and the risk now i
 
 If any of those are still open questions, go back to the workflow first.
 
-## When this checklist matters most
+## Use the full checklist for these handoffs
 
 Use it before:
 - a milestone submission,
@@ -38,9 +37,7 @@ Use it before:
 - a final delivery,
 - any handoff where the client needs to approve, implement, or pay next.
 
-The more routine the handoff feels, the easier it is to skip one important detail.
-
-## What this checklist is not for
+## Decisions to settle before quality review
 
 Do not use this page to decide:
 - whether the milestone itself is ready to close,
@@ -48,9 +45,9 @@ Do not use this page to decide:
 - who the approval owner is,
 - whether the next invoice should exist at all.
 
-Those decisions belong in the workflow pages upstream from this asset.
+Define those decisions in the milestone, approval, and handoff workflows before running this checklist.
 
-## Pre-handoff QA checklist
+## Pre-handoff quality checks
 
 ### A) Scope alignment
 - Confirm deliverable matches agreed scope.
@@ -72,7 +69,7 @@ Those decisions belong in the workflow pages upstream from this asset.
 - Update milestone status.
 - Trigger next invoice or next-stage action if applicable.
 
-## Minimum evidence to attach before handoff
+## Evidence to include with the handoff
 
 Where relevant, attach:
 - the final file or approved access link,
@@ -80,7 +77,7 @@ Where relevant, attach:
 - any implementation note the client needs to avoid misuse,
 - the exact next response or approval you need back.
 
-This turns the checklist from internal QA into a client-ready handoff asset.
+Attach the evidence the client needs to review the delivery and take the requested next action.
 
 ## Final handoff message structure
 
@@ -89,34 +86,33 @@ This turns the checklist from internal QA into a client-ready handoff asset.
 - What the client should review first.
 - What response is needed and by when.
 
-## Good use cases for this page
+## Handoffs covered by this checklist
 
 - recurring milestone deliveries,
 - final project handoffs,
 - any client-facing delivery where approval unlocks billing, closeout, or the next stage.
 
-## The QA misses that usually cost the most
+## Handoff errors this checklist can catch
 
 - Sending the right file with the wrong version label.
 - Forgetting to mention what the client is supposed to do next.
 - Delivering in email but failing to update the live project record.
-- Finishing a milestone without triggering the invoice or closeout step it should unlock.
+- Finishing a milestone without beginning the invoice or closeout step required by the agreement.
 
-## Edge cases worth deciding in advance
+## Decide these exceptions before sending
 
 - If the client asked for a small extra item, note whether it is included or deferred instead of burying it in the handoff note.
 - If implementation depends on the client's team, name the dependency directly in the handoff.
 - If approval is needed by a certain date, state the deadline and the consequence of delay clearly.
 
-## Ready-to-send standard
+## A ready-to-send handoff includes
 
-This checklist is complete only when:
 - the delivered item matches the agreed scope,
 - the client knows the next expected action,
 - the project record is updated,
 - the next operational trigger is queued.
 
-## Related workflow pages
+## Guides for the surrounding workflow
 
 - Delivery workflow context: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
 - Lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
@@ -125,7 +121,7 @@ This checklist is complete only when:
 - Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
 - Billing follow-through: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
-## What to do next
+## Continue from the handoff result
 
 - If the client needs to review and reply, continue with [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - If the handoff exposes new scope, move to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).

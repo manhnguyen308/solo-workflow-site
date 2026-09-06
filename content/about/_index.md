@@ -1,94 +1,56 @@
 +++
 title = "About"
-description = "Learn what SoloOpsGuide publishes, who it serves, and how freelancers and solo operators should use its workflow-first guidance."
-summary = "Learn who SoloOpsGuide serves, what kind of editorial guidance it publishes, and how to use the site without getting pulled into the wrong layer too early."
+description = "What SoloOpsGuide publishes, who it serves, how recommendations are framed, and which limits readers should apply before acting."
+summary = "Learn who SoloOpsGuide serves, what it publishes, how it reaches recommendations, and where its guidance stops."
 date = 2026-03-20T00:00:00Z
+lastmod = 2026-08-30T00:00:00Z
 +++
 
-SoloOpsGuide is a workflow-first editorial resource for freelancers, consultants, and solo service operators who need clearer operating systems for client work.
+SoloOpsGuide publishes workflow guidance for freelancers, consultants, and solo service operators. Its pages help readers define client stages, assign ownership, choose a manageable stack, and apply those decisions with practical resources.
 
-The site focuses on one practical problem: many solo businesses do not fail because they lack effort or software. They struggle because intake, handoffs, delivery, billing, approvals, and offboarding are held together loosely. SoloOpsGuide exists to make those operating decisions clearer through a focused set of editorial guides, not through endless browsing, trend commentary, or software noise.
+Start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) when the whole client path feels unclear. Use a blueprint or comparison after you can name the workflow or system decision that remains open.
 
-If you are new to the site, the strongest first pages are [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), and [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+## Who the site serves
 
-## What SoloOpsGuide is
+The guidance is written for people who run client work with little or no internal operations support. It is most relevant when one person still owns several parts of intake, delivery, approvals, billing, and closeout.
 
-SoloOpsGuide is a structured editorial resource built around implementation guidance for solo operations. It is intentionally narrower than a general business site and more opinionated about sequence, ownership, handoffs, and operating clarity than a typical software-content site.
+The site is less relevant to self-serve product businesses or larger organizations with dedicated legal, finance, operations, and project-management teams.
 
-It publishes:
-- workflow anchors that map the full client path,
-- stack blueprints that help readers choose simpler system shapes,
-- scenario-based comparisons for bounded tool or model decisions,
-- templates and checklists that support execution inside a live workflow,
-- glossary and FAQ pages that remove friction around terminology and recurring setup questions.
+## What you will find
 
-## Who this site is for
+- Workflow guides define stages, inputs, owners, handoffs, and completion conditions.
+- Stack blueprints describe operating models and the tradeoffs of adding more systems.
+- Comparisons resolve one bounded system or workflow choice.
+- Templates and checklists help apply a rule inside active work.
+- Glossary and FAQ pages clarify one term or blocker before returning to implementation.
 
-This site is most useful for:
-- freelancers running client projects or retainers,
-- consultants building a cleaner delivery and admin system,
-- solo operators adding light support capacity without wanting a bloated stack,
-- small service businesses that need clearer operating rules before adding more tools.
+Each page has limits. A template cannot define the policy it is meant to apply, and a product comparison cannot repair an undefined workflow.
 
-In practice, the best fit is someone whose business is already real enough to feel operational drag but still small enough that the workflow lives mostly inside one person's judgment. The site is built for readers who need stronger rules, better sequencing, and calmer tool decisions without pretending they are running a 20-person operation.
+## How recommendations are framed
 
-It is less useful for:
-- productized businesses built around self-serve checkout,
-- larger agencies with dedicated operations, finance, and project management teams,
-- readers looking for broad software news, trend commentary, or generic productivity advice.
+Recommendations are conditional. They should name the workflow condition, tradeoff, and failure risk that support the choice.
 
-The site is especially meant for readers who are trying to answer questions like:
-- why does client work still feel harder to run than it should,
-- which stage is actually breaking,
-- should the next improvement be process, stack shape, or one bounded tool decision,
-- which asset is useful only after the workflow rule already exists.
+Product capabilities, prices, and plan limits require current primary documentation. Operational guidance that is not based on an external study is presented as a method to adapt, not as a measured result or universal rule. Exact thresholds are labeled as examples unless a cited source establishes them.
 
-## What problem the site solves
+SoloOpsGuide does not claim first-hand product testing unless a page identifies the evidence for that claim.
 
-Most workflow content online is either too abstract to implement or too tied to tool hype to trust for serious operating decisions.
+## Publisher and responsibility
 
-SoloOpsGuide is designed to sit in the middle:
-- practical enough to use in a real business,
-- structured enough to support repeatable decisions,
-- narrow enough to stay relevant to solo client operations,
-- honest about tradeoffs, boundaries, and when a page is not the right fit.
+SoloOpsGuide is the publisher identified on the site. The site does not currently publish personal bylines, a staff roster, or individual professional credentials.
 
-The goal is not to tell every reader to use the same stack. The goal is to help a reader identify the real bottleneck, choose the right layer of decision, and move to the next useful page with less ambiguity.
+The publisher is responsible for the wording, citations, internal links, and correction history of the pages. Readers should judge a recommendation by its stated conditions and sources rather than assume expertise that the site has not documented.
 
-## How to use the site well
+Current correction and contact availability is stated on [Contact availability](/contact/).
 
-- Start with the workflow pages when the client path itself feels messy or reactive.
-- Move into stack blueprints when the sequence is mostly clear but the tools feel awkward or too heavy.
-- Use comparisons when the open question is between two plausible systems, not when the workflow itself is still undefined.
-- Use templates and checklists after the workflow rule is clear and you need a repeatable execution asset.
-- Use glossary and FAQ pages to remove ambiguity quickly, then return to the deeper implementation page.
+## Limits on use
 
-If a page feels too narrow, the answer is usually not to browse wider. It is usually to step back to the stronger upstream workflow or blueprint page first.
+The site provides general informational guidance. It does not replace legal, tax, accounting, financial, privacy, employment, or other regulated professional advice.
 
-## What the site is trying to avoid
+Software terms and features can change after a page is updated. Check the linked primary source and the vendor's current terms before making a purchase or migration decision.
 
-SoloOpsGuide is intentionally not built around:
-- generic "best tools" roundups with weak decision logic,
-- inflated claims about productivity or automation,
-- broad entrepreneurial advice that is disconnected from operational reality,
-- thin content that looks polished but does not improve a real workflow decision.
+## Related policies
 
-## How the site approaches trust
-
-The site aims to be useful by being specific, bounded, and transparent about what each page is for and what it is not meant to solve.
-
-That means:
-- recommendations are framed around scenarios, not universal winners,
-- tradeoffs and failure modes are part of the guidance,
-- implementation pages should point readers to the next useful step,
-- support and policy pages exist to explain how the content should be evaluated and used,
-- site-information pages are meant to clarify standards and boundaries rather than act like placeholder legal filler.
-
-Trust on SoloOpsGuide should come from page purpose, judgment clarity, and operational usefulness, not from trying to sound bigger or more certain than the site really is.
-
-## Related pages
-
-- Editorial standards and methodology: [Editorial Policy](/editorial-policy/)
-- Content boundaries and quality expectations: [Content Policy](/content-policy/)
-- Contact and corrections: [Contact](/contact/)
-- Site terms and limitations: [Disclaimer](/disclaimer/)
+- [Editorial policy](/editorial-policy/) explains sourcing, review, updates, and commercial boundaries.
+- [Content policy](/content-policy/) explains how to apply guides, comparisons, templates, and checklists.
+- [Disclaimer](/disclaimer/) states the limits on advice and outcomes.
+- [Privacy policy](/privacy-policy/) describes the site's current data practices.

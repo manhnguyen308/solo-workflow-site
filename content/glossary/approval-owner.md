@@ -1,11 +1,12 @@
 +++
-title = "Approval Owner"
+title = "Approval owner"
 description = "An approval owner is the person responsible for giving the final go-ahead on deliverables, feedback, scope changes, or milestone decisions."
-summary = "Use this definition to clarify who can approve what in a workflow and why projects slow down when that role stays vague."
+summary = "Use this definition to clarify who can approve what in a workflow and where decisions can stall when that role stays vague."
 feature_image = "/images/features/glossary/approval-owner.webp"
-feature_image_alt = "Editorial glossary illustration representing one named approver controlling workflow decisions."
+feature_image_alt = "Illustration representing one named approver controlling workflow decisions."
 draft = false
 date = 2026-04-02T00:00:00Z
+lastmod = 2026-07-09T00:00:00Z
 category = "glossary"
 tags = ["definition", "approval-owner", "workflow"]
 page_type = "glossary"
@@ -16,114 +17,59 @@ related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflow
 featured = false
 +++
 
-An **approval owner** is the person who has final authority to accept, reject, or request changes to a deliverable, decision, or workflow step.
+An **approval owner** is the person with final authority to accept, reject, or request changes to a deliverable, decision, or workflow step.
 
-This matters because "the client will review it" is not specific enough for a working process.
+"The client will review it" does not identify who can close the decision. Naming the approval owner separates input from authority.
 
-## What this page is for
+## Approval owner versus contributor
 
-Use this page to clarify one blocking term quickly when the real issue is uncertainty about who can actually close a decision.
+A contributor can review, suggest, or raise a concern. The approval owner gives the decision that moves the workflow forward under the agreed review rules.
 
-## What this page is not for
+One approval owner does not prevent other stakeholders from commenting. It gives their comments a defined route to one accountable decision-maker. Use the [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) when that route is missing.
 
-Do not use this glossary page to design the whole review process, fix a broken workflow, or decide how several stakeholders should coordinate. It only explains one role inside those broader systems.
-
-## Start here first if...
-
-- the whole proposal or review workflow is still fuzzy,
-- several people can comment but no routing path exists,
-- the open problem is broader than one approval role.
-
-In those cases, go first to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
-
-## Use this page for
-
-Use this definition when you need to clarify:
-- who actually decides,
-- who can comment without deciding,
-- why work keeps stalling at review points.
-
-If you are still trying to design the whole workflow, this page is too narrow to be the starting point.
-
-## Why it matters in workflows
-
-When approval ownership is vague:
-- feedback arrives from several people with no final decision,
-- scope changes stall because no one can say yes or no,
-- delivery pauses while the team waits for "client review,"
-- billing and next-stage actions get delayed because acceptance was never formalized.
-
-One approval owner does not mean only one person can comment. It means one person is accountable for the final decision.
-
-If many people can comment and the routing path itself is the problem, use [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/) to define how input should move before it reaches the approver.
-
-If the approval path is already clear but the plan itself now needs a revised baseline, leave this term page and move to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
-
-## How to document this in practice
+## Record the authority
 
 For each stage that needs approval, record:
+
 - the person's name or role,
-- what they are allowed to approve,
-- where they should respond,
-- what happens if they do not respond on time.
+- what they are authorized to approve,
+- where the decision should be given,
+- the response or escalation terms already agreed for that stage.
 
-That is usually enough structure for a solo operator. You do not need a full RACI chart to remove this ambiguity.
+A full RACI chart is optional. The record only needs to make the authority and decision path unambiguous.
 
-## Common misunderstanding
+If the approval path is clear but the project now needs a revised baseline, use the [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
-Operators often confuse "stakeholder group" with "approver."
+## Test whether the role is clear
 
-A stakeholder can review, suggest, or influence. The approval owner is the person whose answer actually moves the workflow forward.
+Answer these questions:
 
-## Fast test
-
-You have a real approval owner only if you can answer all three questions:
 - Who can give the final yes, no, or revise decision?
-- At what stage do they hold that authority?
+- At which stage do they hold that authority?
 - Where is that responsibility documented?
 
-If any answer is unclear, the workflow still has an ownership gap.
+An unclear answer identifies an ownership gap that should be fixed before the next review request.
 
-## Practical example
+## Approval examples by stage
 
-- In onboarding, the approval owner might confirm kickoff scope and communication rules.
-- During proposal review, the approval owner might accept the reviewed proposal version or request one more revision round.
-- During delivery, the approval owner might accept a milestone or request revisions.
-- During a scope change, the approval owner might accept the repriced or deferred option.
+- During proposal review, the approval owner may accept the reviewed proposal or request another revision under the agreed process.
+- During onboarding, the approval owner may confirm kickoff scope and communication rules.
+- During delivery, the approval owner may accept a milestone or request revisions.
+- During a scope change, the approval owner may accept, defer, or reject the proposed change.
 
-If that role changes by stage, document it clearly instead of assuming everyone knows.
+If the role changes by stage, document each assignment instead of carrying one assumption through the whole project.
 
-## Warning signs that the approval owner is still unclear
+## Signs the decision path is unclear
 
-- feedback arrives from multiple people but no one closes the loop,
-- "approved" appears in chat but not in the project record,
-- the next invoice or milestone waits because no final answer exists,
-- revision requests keep coming from people who were never named as the decider.
+- Feedback arrives from several people but no one closes the decision.
+- A positive message appears in chat, but the agreed approval record is still empty.
+- Billing or the next milestone is waiting because no final answer exists.
+- Revision requests come from people who were not named as decision-makers.
 
-## What this page is not for
+## Fix the affected stage
 
-This page defines one term. It does not replace:
-- the onboarding workflow,
-- the change-request workflow,
-- the status-update process,
-- a full responsibility matrix.
-
-Use it to remove ambiguity inside those pages, not instead of them.
-
-## Where this matters most on the site
-
-- [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) because unclear approval ownership causes fuzzy project starts.
-- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) because proposal review stalls when several people comment but no one can close the decision.
-- [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) because kickoff gets risky when approvers are not named.
-- [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) because new requests need an actual decision-maker.
-- [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) because review asks should name one accountable responder.
-
-## What to do next
-
-- If the ambiguity is happening before kickoff, go to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
-- If the ambiguity is happening during proposal review itself, go to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
-- If the ambiguity is happening in recurring client communication, go to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
-- If the ambiguity is happening during scope changes, go to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
-- If the ambiguity is happening at milestone review, go to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
-
-If you already understand the term, leave this page and fix the stage that is actually breaking.
+- Before kickoff, use [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) and the [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+- During proposal review, use [Proposal revision and approval workflow for freelancers and solo service businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- During recurring client communication, use [Client status update workflow for freelancers and consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- During scope changes, use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- At milestone review, use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).

@@ -1,11 +1,12 @@
 +++
-title = "Invoice and Payment Workflow Checklist"
-description = "A practical invoice and payment checklist for freelancers, consultants, and service businesses that need milestone-based billing and consistent follow-up."
-summary = "Use this invoice and payment workflow checklist to tie invoicing to milestones, standardize follow-up, and reduce avoidable cash-flow friction."
+title = "Invoice and payment workflow checklist"
+description = "An invoice and payment checklist for recording agreed billing triggers, invoice details, payment status, follow-up terms, and closeout actions."
+summary = "Tie each invoice and follow-up action to the project's agreement, recorded billing trigger, due date, and payment status."
 feature_image = "/images/features/templates/invoice-payment-checklist.webp"
 feature_image_alt = "Illustrated billing checklist with milestone-triggered invoicing and payment follow-up steps."
 draft = false
 date = 2026-03-15T00:00:00Z
+lastmod = 2026-07-21T00:00:00Z
 slug = "invoice-and-payment-workflow-checklist-for-service-businesses"
 category = "templates-checklists"
 tags = ["invoicing", "payments", "cash-flow", "checklist"]
@@ -17,19 +18,21 @@ related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflow
 featured = true
 +++
 
-Most payment issues start before the invoice is sent. Use this checklist to align contract terms, milestone triggers, and follow-up cadence.
+Use this checklist to connect each invoice and follow-up action to the applicable agreement, the project's recorded billing trigger, and the authoritative payment-status record.
 
-This is an execution checklist, not a billing-policy guide. Use it after the invoice workflow rule is already clear. If you are still deciding when invoices should trigger, where billing status should stay visible, or how milestone completion should work, go back to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) first.
+The examples here are operating examples, not legal, accounting, tax, collection, or contract advice. Use the payment terms, notice rules, and remedies in your agreement, together with any professional guidance that applies to your work.
 
-## What this page is for
+If you are still deciding when invoices should trigger, where billing status should stay visible, or how milestone completion should work, read [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) first.
+
+## Run the billing rules already agreed
 
 Use this page to run a billing process that already has defined triggers, ownership, and follow-up rhythm. It is for execution consistency once the underlying billing rule is settled.
 
-## What this page is not for
+## Set policy and contract terms elsewhere
 
 Do not use this checklist to decide your payment policy, redesign milestone acceptance, or choose where invoice truth should live. Those are broader workflow or stack decisions.
 
-## Start upstream first if...
+## Clarify the billing rule first when
 
 - you still debate what counts as invoice-ready,
 - delivery approval is still vague,
@@ -38,7 +41,7 @@ Do not use this checklist to decide your payment policy, redesign milestone acce
 
 Go back first to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/), [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/), or [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
-## What this checklist assumes you already know
+## Information to have before invoicing
 
 - what event actually triggers each invoice,
 - where payment status is authoritative,
@@ -47,47 +50,47 @@ Go back first to [Invoice and Payment Workflow Setup for Freelancers and Consult
 
 If those rules are still vague, this checklist is too early.
 
-## Phase 1: Before work starts
+## Phase 1: before work starts
 
-- Confirm invoice schedule in contract (deposit, milestone, final).
-- Confirm payment terms (for example net-7 or net-14).
+- Confirm the invoice schedule in the applicable agreement.
+- Confirm the payment terms stated in the agreement.
 - Confirm accepted payment methods.
 - Confirm late-payment policy.
 
 If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
-## Phase 2: Before sending each invoice
+## Phase 2: before sending each invoice
 
-- Confirm milestone acceptance criteria are met.
+- Confirm the billing trigger stated in the agreement has occurred.
 - Confirm deliverable evidence is documented.
 - Confirm invoice amount matches contract scope.
 - Confirm due date and payment instructions are present.
 
-Practical rule: if you cannot point to the event that triggered the invoice, you are already one step behind. Tie billing to a visible workflow event, not a vague sense that "it is probably time."
+Tie billing to the event stated in the agreement. If the project record does not show that event, resolve the record before sending the invoice.
 
-## Phase 3: Sending and tracking
+## Phase 3: send and record the invoice
 
 - Send invoice from one consistent system.
-- Log send date and due date immediately.
-- Add reminder dates at +3 days and +7 days after due date.
+- Log the send date and due date when the invoice is sent.
+- Add reminder points based on the due date, agreement, and documented collection process.
 
 If you use a separate billing app, mirror payment state back to the record you check during delivery reviews so overdue invoices do not become invisible.
 
-## Phase 4: Follow-up rhythm
+## Phase 4: follow up under the agreed terms
 
-- **Reminder 1:** friendly reminder after due date.
-- **Reminder 2:** direct reminder with updated status request.
-- **Reminder 3:** escalation note referencing contract terms.
+- Send the initial reminder when the documented due-date condition is met.
+- If the invoice remains unresolved, request a status update through the agreed billing contact and channel.
+- Escalate only through a step permitted by the agreement and applicable requirements.
 
-Keep follow-up professional and structured, not emotional.
+Keep each message factual. Name the invoice, due date, current status, requested action, and the relevant contract term.
 
-## Phase 5: Payment closeout
+## Phase 5: payment closeout
 
 - Mark invoice paid in your system of record.
 - Reconcile payment to milestone and project record.
-- Confirm whether next invoice trigger is scheduled.
+- Confirm the next invoice trigger when another billing event applies.
 
-## Short reminder copy pattern
+## Payment reminder fields
 
 Use a simple structure for payment follow-up:
 - what invoice is outstanding,
@@ -95,36 +98,35 @@ Use a simple structure for payment follow-up:
 - payment link or method,
 - request for status confirmation if payment timing changed.
 
-The goal is clarity, not pressure in the first reminder.
+Keep the first reminder clear and factual.
 
-## Common payment workflow failures
+## Billing record gaps to catch
 
 - Invoices sent without documented milestone completion.
 - Payment terms not confirmed before kickoff.
 - No reminder cadence (manual memory-based follow-up).
 - Inconsistent records between project and billing tools.
 
-## Edge cases to account for
+## Apply the agreement to these exceptions
 
 - If the client requires PO numbers or internal approval before payment, collect that before the invoice is triggered.
 - If part of the project is paused by the client, document whether billing pauses too or continues based on the contract.
 - If the client approves work informally in chat, log the approval in your system of record before invoicing.
 
-## Completion check
+## A complete billing record includes
 
-This checklist is complete only when:
 - invoice trigger is documented,
 - invoice status is visible,
-- follow-up dates exist,
-- the next billing event is already clear.
+- follow-up dates exist when follow-up applies,
+- the next billing event is clear when another event applies.
 
-## Related implementation pages
+## Guides for billing triggers and records
 
 - End-to-end workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 - Billing workflow rule: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - Weekly operations review routine: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
 - Lean stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 
-## Safest next step after this checklist
+## If the same billing gap returns
 
-If invoices are still being sent late or payment state still disappears, move back up a level and fix the billing rule in the workflow page or the billing-visibility decision page rather than running this checklist harder.
+If invoices are still sent after their agreed trigger or payment state remains unclear, revise the billing rule or billing-status ownership decision before repeating the checklist.

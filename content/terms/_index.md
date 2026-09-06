@@ -1,36 +1,41 @@
 +++
 title = "Terms"
-description = "Basic terms for using SoloOpsGuide content, including reader responsibility, content reuse limits, external links, and site changes."
-summary = "These terms explain how SoloOpsGuide content may be used, what responsibilities remain with the reader, and how external links or site changes should be understood."
+layout = "list"
+description = "Terms for using SoloOpsGuide content, including reader responsibility, internal reuse, external links, site changes, and current contact limits."
+summary = "These terms cover permitted use, reader responsibility, external services, site changes, and the current lack of a monitored contact channel."
 date = 2026-03-26T00:00:00Z
+lastmod = 2026-08-26T00:00:00Z
 +++
 
-By using SoloOpsGuide, you agree to use the site for informational purposes and to apply your own judgment when acting on its content.
+By using SoloOpsGuide, you agree to use the site for informational purposes and apply your own judgment before acting on its content.
 
 ## Use of content
 
-The content on SoloOpsGuide is intended for reading, reference, and personal or internal business use.
+The content is available for reading, reference, and personal or internal business use.
 
-Do not republish full pages, copy the site in bulk, or present SoloOpsGuide material as your own without permission.
+You may adapt short excerpts, checklist items, and templates for your own operations. Do not republish complete pages, copy the site in bulk, or present SoloOpsGuide material as original work.
 
 ## Reader responsibility
 
-Readers remain responsible for:
-- implementation decisions,
-- tool selection,
-- contract, privacy, or compliance decisions,
-- business outcomes connected to how the content is applied.
+You remain responsible for:
 
-For additional limitations around advice and outcomes, see [Disclaimer](/disclaimer/).
+- implementation and tool-selection decisions;
+- contracts, privacy, security, tax, accounting, employment, and compliance decisions;
+- backups and record retention;
+- business outcomes connected to the use of the content.
 
-## External links
+See the [Disclaimer](/disclaimer/) for additional limits on advice and outcomes.
 
-SoloOpsGuide may link to third-party websites, products, or services for convenience or context. The site is not responsible for the availability, claims, pricing, security, or content of those external sites.
+## External links and services
+
+SoloOpsGuide may link to third-party sites for evidence or context. The site does not control their availability, claims, prices, security, content, or privacy practices.
+
+Review the provider's current terms and policies before buying a service, creating an account, or submitting information.
 
 ## Changes to the site
 
-Content may be updated, expanded, corrected, or removed over time. SoloOpsGuide does not guarantee that every page will remain unchanged or continuously available.
+Pages may be updated, corrected, moved, or removed. SoloOpsGuide does not guarantee that a page, external link, or recommendation will remain unchanged or continuously available.
 
-## Contact
+## Questions and corrections
 
-For corrections, clarifications, or relevant site questions, use the routing guidance on [Contact](/contact/).
+SoloOpsGuide does not currently publish a monitored contact channel. [Contact availability](/contact/) records the current status without directing readers to an unattended address.

@@ -3,7 +3,7 @@
   <section class="page-hero section-hero">
     <div class="wrap section-hero-grid">
       <div class="section-hero-copy">
-        <p class="eyebrow">{{ if eq .Kind "section" }}Section hub{{ else }}Taxonomy{{ end }}</p>
+        <p class="eyebrow">{{ if eq .Kind "section" }}Browse this collection{{ else }}Topics{{ end }}</p>
         <h1>{{ .Title }}</h1>
         {{ if eq .Kind "section" }}
           {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
@@ -13,7 +13,7 @@
       </div>
       <aside class="section-hero-panel">
         <p class="panel-label">Browse intentionally</p>
-        <p>{{ if eq .Kind "section" }}Use this hub like a guided destination and start with the page that best matches your current operating problem.{{ else }}Taxonomy pages are best for discovery after you already know the kind of workflow problem you are trying to solve.{{ end }}</p>
+        <p>{{ if eq .Kind "section" }}Start with the page that matches your current operating problem.{{ else }}Browse a topic after you know which kind of workflow problem you need to solve.{{ end }}</p>
         <div class="section-stat">
           <span>{{ if eq .Kind "section" }}{{ len .Pages }}{{ else }}{{ len .Data.Terms.Alphabetical }}{{ end }}</span>
           <p>{{ if eq .Kind "section" }}pages in this section{{ else }}topics in this taxonomy{{ end }}</p>
@@ -27,7 +27,7 @@
       {{ if eq .Kind "section" }}
         <div class="section-heading">
           <p class="eyebrow">Browse the section</p>
-          <h2>Pages in this hub</h2>
+          <h2>Pages in this collection</h2>
         </div>
         {{ if gt (len .Pages) 0 }}
           <div class="card-grid card-grid-2">
@@ -38,13 +38,13 @@
         {{ else }}
           <div class="utility-panel">
             <p class="utility-kicker">No pages yet</p>
-            <h2>This section does not have live content yet</h2>
-            <p>Use the homepage or another section hub to continue browsing while this area is still being built out.</p>
+            <h2>No pages are available in this collection</h2>
+            <p>Use the homepage or another collection to find the closest related guidance.</p>
           </div>
         {{ end }}
       {{ else }}
         <div class="section-heading">
-          <p class="eyebrow">Taxonomy topics</p>
+          <p class="eyebrow">Browse by topic</p>
           <h2>Explore connected concepts</h2>
         </div>
         {{ if gt (len .Data.Terms.Alphabetical) 0 }}
@@ -62,7 +62,7 @@
           <div class="utility-panel">
             <p class="utility-kicker">No topics yet</p>
             <h2>There are no taxonomy topics to browse here yet</h2>
-            <p>Use the main content hubs to keep exploring the site.</p>
+            <p>Use the main collections to keep exploring the site.</p>
           </div>
         {{ end }}
       {{ end }}

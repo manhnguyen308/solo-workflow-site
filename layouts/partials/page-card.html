@@ -7,7 +7,7 @@
 {{ else if eq $page.Section "workflow-comparisons" }}
   {{ $displayType = "Comparison" }}
 {{ else if eq $page.Section "templates-checklists" }}
-  {{ $displayType = "Asset" }}
+  {{ $displayType = "Template or checklist" }}
 {{ else if eq $page.Section "glossary" }}
   {{ $displayType = "Glossary" }}
 {{ else if eq $page.Section "faq" }}
@@ -31,7 +31,7 @@
 {{ else if eq $page.Section "workflow-comparisons" }}
   {{ $linkLabel = "Read comparison" }}
 {{ else if eq $page.Section "templates-checklists" }}
-  {{ $linkLabel = "Open asset" }}
+  {{ $linkLabel = "Open resource" }}
 {{ else if eq $page.Section "glossary" }}
   {{ $linkLabel = "View term" }}
 {{ else if eq $page.Section "faq" }}
@@ -54,12 +54,11 @@
   <div class="page-card-body">
     <div class="page-card-top">
       <p class="page-card-type">{{ $displayType }}</p>
-      <span class="page-card-date">{{ $page.Date.Format "Jan 2, 2006" }}</span>
+      {{ if not $page.Lastmod.IsZero }}<span class="page-card-date">Updated {{ $page.Lastmod.Format "Jan 2, 2006" }}</span>{{ end }}
     </div>
     <h3><a href="{{ $page.RelPermalink }}" data-track="card_click" data-track-location="card-title" data-track-label="{{ $trackLabel }}">{{ $page.Title }}</a></h3>
     {{ with ($page.Params.summary | default $page.Params.description) }}<p class="page-card-summary">{{ . }}</p>{{ end }}
     <div class="page-card-footer">
-      {{ with $page.Params.search_intent }}<span class="page-card-tag">{{ . }}</span>{{ end }}
       <a class="page-card-link" href="{{ $page.RelPermalink }}" data-track="card_click" data-track-location="card-link" data-track-label="{{ $trackLabel }}">{{ $linkLabel }}</a>
     </div>
   </div>

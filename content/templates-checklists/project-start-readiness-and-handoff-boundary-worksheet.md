@@ -1,11 +1,12 @@
 +++
-title = "Project Start Handoff Readiness Worksheet"
-description = "A practical worksheet for solo operators who need to define readiness conditions, required inputs, approval rules, and next-action ownership before work moves cleanly from one client stage into the next."
+title = "Project start handoff readiness worksheet"
+description = "A worksheet for defining required inputs, approval evidence, next-action ownership, and blocked conditions at one project-stage boundary."
 summary = "Use this worksheet to document what must be true before a stage transition is allowed to happen, what blocks it, and what evidence should exist at the handoff boundary."
 feature_image = "/images/features/templates/project-start-readiness-handoff-boundary-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing stage-boundary checks, readiness gates, owner markers, and handoff evidence requirements."
 draft = false
 date = 2026-04-18T00:00:00Z
+lastmod = 2026-08-01T00:00:00Z
 slug = "project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["handoff", "readiness", "worksheet", "stage-transition"]
@@ -18,73 +19,57 @@ related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-a
 featured = true
 +++
 
-Use this worksheet when the main problem is not the stage itself, but the boundary between stages.
+Use this worksheet after defining two project stages but before allowing work to cross between them. Record the required inputs, approval evidence, blocked conditions, and next-action owner for that transition. If a required client item is already known, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
 
-This is a support asset, not a lifecycle guide. Its job is to help you define what must be true before work is allowed to move forward, who owns the next move, what evidence should exist, and what should block transition if the boundary is not actually ready.
-
-Use this when the transition rule itself is weak. If the boundary is already clear and the real problem is one missing client-side item, move narrower to [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
-
-Do not use this worksheet to invent a lifecycle stage from scratch. Use it only after the stage workflow already exists and the open issue is boundary quality between two known stages.
-
-## What this page is for
-
-Use this page to define one exact handoff boundary after the stage logic already exists. It is for making "ready to move forward" visible enough to verify instead of debate.
-
-## What this page is not for
-
-Do not use this worksheet to map the full lifecycle, create a brand-new process, or fix a general project-management problem. It only clarifies one transition point at a time.
-
-## When to use this worksheet
+## Signs the boundary needs a written rule
 
 Use it when:
 
-- kickoff keeps starting before the project is truly ready,
-- milestones reach review or billing with fuzzy evidence,
-- final delivery feels complete but offboarding still stalls,
-- the team uses phrases like "basically ready" or "close enough to move" too often.
+- kickoff begins before required inputs are recorded,
+- review or billing begins without the required evidence,
+- final delivery is recorded but closeout conditions remain open,
+- the project record uses labels such as "basically ready" or "close enough to move" instead of verifiable criteria.
 
-If you still need the broader lifecycle method first, use [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) or the specific stage workflow before using this asset.
+If the lifecycle method is still unclear, read [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before defining this boundary.
 
-## Safest next step after this worksheet
+## Route a project that remains blocked
 
-If the boundary is now clear but the project is still blocked, move narrower to [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) or [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/). If the boundary itself still feels conceptually weak, go back to the relevant workflow page rather than adding more worksheet detail.
+If the transition is defined but a required item is missing, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/). If the waiting state needs a decision, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/). If the stage itself remains undefined, document the stage rule before completing this worksheet.
 
-## What this worksheet does not decide
-
-This worksheet should not decide:
+## Decisions to settle elsewhere
 
 - the full workflow design for the whole client lifecycle,
 - tool-stack structure,
 - pricing or scope strategy,
 - whether a change belongs in pre-signature revision or post-signature scope control.
 
-Those decisions belong on the workflow, comparison, and blueprint pages. This asset only documents the transition rule between one stage and the next.
+Set those decisions in the relevant workflow, comparison, or blueprint guide. Use this worksheet only to document the transition rule between one stage and the next.
 
-## How to use it
+## Complete the worksheet in four passes
 
 1. Pick one exact stage transition, not the whole project lifecycle.
-2. Define the readiness rule in operational language rather than emotional language.
+2. State the readiness rule so another person can verify it.
 3. Name one owner for the next move after the transition.
 4. Write what evidence must exist before the boundary is considered passed.
 
-Practical rule: if the stage can still move forward even when nobody can show the evidence, the boundary is still weak.
+If nobody can show the required evidence but the stage still moves forward, revise the boundary rule or the evidence requirement.
 
-## What this worksheet assumes you already know
+## Information to gather first
 
 - which two stages the boundary sits between,
-- what the upstream stage is supposed to produce,
+- what the preceding stage is supposed to produce,
 - who should own the first move after the boundary passes,
 - what should count as valid approval.
 
-If that stage logic is still fuzzy, return to the workflow page before using this asset.
+If the preceding output or next-stage trigger is undefined, document that rule before completing this worksheet.
 
-## Handoff boundary worksheet
+## Record the handoff boundary
 
 | Stage transition | Required inputs | Approval / signoff needed | Next action owner | Blocked / waiting condition | Evidence required before transition |
 |---|---|---|---|---|---|
-| Proposal approved -> onboarding ready | signed scope, kickoff dependencies, stakeholder contacts | approval owner confirms final version | consultant or operator | waiting on access, deposit, or final stakeholder input | approved proposal record, kickoff-ready project record |
-| Delivery complete -> invoice ready | milestone output, QA pass, acceptance point | client acceptance or documented milestone trigger | operator billing owner | review pending, rework open, dependency unresolved | deliverable link, QA note, visible milestone status |
-| Invoice closed -> offboarding ready | payment received or financial close rule met | billing state confirmed | operator or account owner | invoice overdue, procurement delay, hidden extra request | paid status, closeout record draft, next-step state |
+| Proposal approved to onboarding ready | signed scope, kickoff dependencies, stakeholder contacts | approval owner confirms final version | consultant or operator | waiting on access, deposit, or final stakeholder input | approved proposal record, kickoff-ready project record |
+| Delivery complete to invoice ready | milestone output, QA pass, agreed billing trigger | acceptance or other evidence required by the agreement | operator billing owner | review pending, rework open, dependency unresolved | deliverable link, QA note, visible milestone status |
+| Invoice closed to offboarding ready | payment received or financial close rule met | billing state confirmed | operator or account owner | invoice overdue, procurement delay, unresolved extra request | payment status, closeout record draft, next-step state |
 
 ## Stage transition being documented
 
@@ -93,13 +78,13 @@ Write the transition in this format:
 - from which stage,
 - into which stage,
 - what the transition event actually is,
-- what should become true immediately after it happens.
+- what becomes true as a result of it.
 
 Avoid vague labels like "project starts" or "wrap up begins." Use a visible transition such as:
-- proposal approved -> onboarding ready,
-- first milestone active -> delivery underway,
-- delivery complete -> invoice ready,
-- invoice closed -> offboarding ready.
+- proposal approved to onboarding ready,
+- first milestone active to delivery underway,
+- delivery complete to invoice ready,
+- invoice closed to offboarding ready.
 
 ## Required inputs before handoff
 
@@ -121,9 +106,9 @@ If readiness depends on missing client-side materials, answers, or access, defin
 
 If the boundary is already blocked beyond an acceptable waiting window, define the pause or escalation rule separately with [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
-If the work has already crossed that line and the original transition plan is no longer trustworthy, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+If the work has already crossed that line and the original transition plan is no longer reliable, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
-## Required approvals / signoff
+## Required approval or signoff
 
 Define:
 
@@ -137,7 +122,7 @@ Examples:
 - milestone review result is logged explicitly,
 - finance state is confirmed before closeout messaging starts.
 
-Silence, assumption, or emotional confidence should not be treated as approval unless your process explicitly says so.
+Use the approval rule in the signed agreement and documented project process. Do not infer approval from silence unless a valid governing rule explicitly permits that treatment.
 
 ## Owner of next action
 
@@ -148,9 +133,9 @@ For the chosen transition, write:
 - when it should happen,
 - what they need in hand to do it cleanly.
 
-This matters because many lifecycle stalls happen after a transition is "approved" but no one owns the immediate next move.
+Without a named owner, an approved transition can still stall before the next action begins.
 
-## Blocked / waiting conditions
+## Blocked or waiting conditions
 
 Define the conditions that should stop the transition.
 
@@ -163,7 +148,7 @@ Examples:
 
 If a block exists, the stage should remain visible as blocked rather than quietly moving forward.
 
-## Evidence or artifacts required before transition
+## Evidence required before transition
 
 Document what proof should exist before the boundary is passed.
 
@@ -176,44 +161,44 @@ Examples:
 - sent invoice with due date,
 - closeout record with final files linked.
 
-If the artifact only exists in chat memory, the boundary is probably not stable enough yet.
+Copy the evidence into the authoritative record before passing the boundary.
 
 ## What to do if the boundary is not met
 
-- Hold the current stage visibly instead of pretending the next one already started.
+- Keep the current stage marked as blocked instead of marking the next stage as started.
 - Name the missing requirement directly.
 - Name one owner for resolving the block.
 - Set the next review point instead of letting the issue drift into silence.
 
 Example: do not start onboarding because "the client said yes in principle" if approved scope, access, or payment conditions are still incomplete.
 
-## Suggested stage-boundary examples
+## Example boundaries
 
-### Proposal approved -> onboarding ready
+### Proposal approval to onboarding
 
-Best when the real risk is kickoff starting from an unstable agreement.
+Use this boundary when kickoff depends on an approved agreement, access, payment condition, or other recorded start requirement.
 
 Use with:
 - [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
 - [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
 
-### Delivery complete -> invoice ready
+### Delivery completion to invoicing
 
-Best when work is being sent, but billing still depends on memory or soft signals.
+Use this boundary when billing must follow the trigger stated in the agreement and that trigger needs a visible record.
 
 Use with:
 - [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
 - [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 
-### Invoice closed -> offboarding ready
+### Invoice closure to offboarding
 
-Best when closeout timing is vague and testimonial or archive steps start too early.
+Use this boundary when closeout depends on a recorded billing state and final handoff conditions.
 
 Use with:
 - [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
 - [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
 
-## Warning signs of weak handoff design
+## Signs the handoff rule is too weak
 
 - the next stage is active before its inputs are fully visible,
 - approval exists only as a vague feeling or chat impression,
@@ -221,16 +206,14 @@ Use with:
 - blocked states are hidden inside ordinary status updates,
 - billing or closeout triggers happen because it feels "about time."
 
-## What to do after completing the worksheet
+## Continue with the next stage
 
 - If the boundary you documented is proposal review moving into kickoff, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - If the boundary is milestone completion moving into billing, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 - If the boundary is payment closure moving into closeout, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
-- If the bigger problem is still the stage design itself, go back to the relevant workflow page instead of adding more worksheet detail.
+- If the stage design is still undefined, document that rule before adding more boundary detail.
 
-## Completion standard
-
-This worksheet is complete when:
+## A usable boundary record includes
 
 - one exact transition is named,
 - readiness conditions are visible and testable,
