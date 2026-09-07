@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/escalation-pause-state-worksheet.web
 feature_image_alt = "Editorial worksheet illustration showing blocked work, escalation thresholds, pause-state decisions, and restart conditions."
 draft = false
 date = 2026-04-17T00:00:00Z
-lastmod = 2026-07-29T00:00:00Z
+lastmod = 2026-08-23T00:00:00Z
 slug = "escalation-and-pause-state-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["escalation", "pause-state", "blocked-work", "worksheet"]
@@ -35,7 +35,7 @@ When work is stalled and the next state is not documented, record an escalation 
 | Blocked item or stage | Blocking dependency | Duration / severity threshold | Owner of escalation | Allowed next states | Communication required | Billing / scope implication | Restart condition |
 |---|---|---|---|---|---|---|---|
 | Proposal review | final client decision missing | review open beyond agreed window | operator or proposal owner | wait, escalate, re-scope, close out | restate decision needed and impact on kickoff | proposal may expire or require revised timing | one approved response path returns |
-| Delivery milestone | content, asset, or approval missing | blocked long enough to affect due date | operator or delivery owner | pause, proceed with assumptions, split milestone, re-scope | visible blocked update with named dependency | billing trigger may move or milestone may split | required input arrives or revised milestone is approved |
+| Delivery milestone | content, asset, or approval missing | blocked long enough to affect due date | operator or delivery owner | pause, proceed with assumptions, split milestone, re-scope | visible blocked update with named dependency | billing trigger may move or milestone may split | required input is usable, or an approved revised milestone can proceed with the inputs available |
 | Billing / offboarding close | final signoff or finance action missing | closeout cannot complete by planned end date | operator or account owner | wait, escalate, separate financial close, close out operationally | direct closeout status update naming unresolved item | testimonial ask or archive timing may shift | signoff or payment state becomes explicit |
 
 ## Blocked item or stage
@@ -122,15 +122,15 @@ Recording the commercial effect prevents a delivery block from changing scope or
 
 ## Restart conditions
 
-Write what must happen before active work resumes:
+Choose the conditions required for the specific work to resume:
 
 - named client input arrives,
 - approval is explicit,
 - re-scoped milestone is accepted,
 - updated due date is confirmed,
-- payment or signoff state is visible again.
+- any payment or signoff condition required for that work has been met.
 
-Resume work only when the recorded restart condition is met.
+Resume only when all applicable conditions are met. Recording an unpaid balance or missing input makes the block visible; it does not resolve it. A revised plan must either have the inputs it needs or explicitly remove the dependency from the work being restarted.
 
 ## Decisions at common block points
 

@@ -30,21 +30,6 @@ Read the full lifecycle if the problem feels broad, several stages are failing a
 
 If naming the stage is the blocker, the [Workflow Diagnostic Checklist](/templates/workflow-diagnostic-checklist/) can help you triage which category is failing before you choose a stage guide. The [Client Workflow Health Check](/templates/client-workflow-health-check/) is useful if you want to review each area of the lifecycle before focusing on one.
 
-## What the lifecycle map covers
-
-Use the map to see the full lifecycle as one operating system, locate the stage that is failing, and choose a relevant guide or checklist. Once you identify one narrow problem, move to the stage-specific instructions. Make software choices only after the process and record boundaries are clear.
-
-## Why sequence comes before tools
-
-Start here before using a stage-specific guide or checklist if:
-
-- several parts of the client lifecycle feel messy at once,
-- you are not sure which stage is actually failing,
-- tools are multiplying because the sequence itself is unclear,
-- isolated checklists are addressing symptoms without showing the whole operating model.
-
-The lifecycle map shows the boundary between stages and the guide or checklist that addresses each one.
-
 ## How to diagnose the workflow
 
 Read the lifecycle once from start to finish, then answer three questions:
@@ -70,8 +55,10 @@ A different operating model may fit productized businesses with self-service che
 2. **Proposal handoff, review, and approval** - confirm scope, timeline, terms, and who can actually approve the version that moves forward.  
 3. **Onboarding** - align communication cadence, access, assets, and kickoff scope.  
 4. **Delivery and QA** - execute work in milestones with visible status and quality checks.  
-5. **Invoicing and payment** - issue invoice tied to milestones and follow a clear follow-up rhythm.  
+5. **Invoicing and payment** - issue each invoice at its agreed event or date and track payment and follow-up.
 6. **Offboarding and expansion** - record closeout, decide whether to request feedback, and document any agreed follow-on path.
+
+These stages overlap. A deposit may be due before kickoff, milestone invoices may occur during delivery, and retainer billing may follow a recurring date. Use the agreement's trigger for each invoice. Transfer final files, access, and responsibilities through [project handoff](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/) before closing the delivery record, and keep any unpaid balance visible after operational closeout.
 
 ## Decisions to make before moving on
 
@@ -96,10 +83,10 @@ Choose the line that matches the current problem:
 
 ## Lifecycle handoff table
 
-| Stage | What must become true before the next stage | Signs of a gap |
+| Stage | Required record or transition | Signs of a gap |
 |---|---|---|
 | Intake | fit, scope direction, and next step are clear | low-fit leads move forward anyway |
-| Proposal review | one reviewed version and one approval path exist | revision churn and fuzzy ownership |
+| Proposal review | approved scope and signed terms are recorded before onboarding | revision churn and fuzzy ownership |
 | Onboarding | kickoff inputs, owners, and first milestone are visible | access, assets, and expectation gaps |
 | Delivery | milestone state, QA, and approval path are explicit | blocked work hides inside active work |
 | Billing | invoice trigger and payment follow-up are visible | completed work does not become collected revenue |
@@ -150,8 +137,8 @@ Scope-control follow-on: [Change Request Workflow for Freelancers and Consultant
 Approval-check follow-on: [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
 
 ### 5) Invoicing and payment
-**Goal:** connect completed work to the agreed invoice trigger and follow-up record.
-**Inputs:** milestone completion, invoice schedule, payment terms.
+**Goal:** connect each agreed billing event or date to its invoice and follow-up record.
+**Inputs:** invoice schedule, payment terms, and evidence that the relevant trigger has occurred.
 **Output:** paid invoice or formal follow-up sequence.
 
 Detailed guide: [Invoice and payment workflow setup for freelancers and consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
@@ -179,7 +166,7 @@ Closeout non-response follow-on: [FAQ: What Should I Do When a Client Does Not R
 | Scope disputes mid-project | Scope and exclusions were not carried into the agreement | Record in-scope and out-of-scope items before signing |
 | Clients ask for progress in scattered channels | No agreed update channel or rhythm is recorded | Use one cadence and one structured update format |
 | Kickoff starts with missing inputs | Access, owners, or the first milestone are not ready | Use a checklist with an owner for each item |
-| Invoices are issued late | The invoice trigger is not tied to a recorded project event | Tie each invoice trigger to an agreed delivery event |
+| Invoices are issued late | The agreed billing event or date is not tracked | Record each trigger and who issues the invoice |
 | No post-project follow-up decision | Closeout omits feedback and future-work decisions | Record whether each follow-up is sent, deferred, or not applicable |
 
 ## How to choose the first stage to fix
@@ -212,7 +199,7 @@ If you are deciding between systems of record, use [CRM vs Project Management To
 2. Define go/no-go intake criteria and required fields. Use the [intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 3. Standardize [proposal handoff](/workflows/proposal-to-contract-handoff-workflow-setup/) plus revision-and-approval rules.
 4. Implement the [onboarding checklist](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) and assign owners.
-5. Define milestone-to-invoice trigger rules. Use the [invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+5. Record invoice triggers, including any deposit, milestone, or recurring-date rules. Use the [invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 6. Add the [offboarding workflow](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) and testimonial step to the close process.
 7. Review a current or recent client record and patch the gaps you find.
 

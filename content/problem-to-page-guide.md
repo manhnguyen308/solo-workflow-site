@@ -6,7 +6,7 @@ feature_image = "/images/features/hubs/problem-to-page-guide.webp"
 feature_image_alt = "Navigation illustration showing a central 'name the blocker first' panel routing to workflows, comparisons, blueprints, and practical resources."
 draft = false
 date = 2026-04-24T00:00:00Z
-lastmod = 2026-08-24T00:00:00Z
+lastmod = 2026-08-09T00:00:00Z
 slug = "problem-to-page-guide"
 url = "/problem-to-page-guide/"
 page_type = "guide"
@@ -44,7 +44,7 @@ If the problem is broader than one symptom, such as "my whole client process fee
 
 | Problem | Issue to check | Read first | Next if needed |
 | --- | --- | --- | --- |
-| Billing slips after delivery | Billing trigger is not tied to an approved milestone | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) | [FAQ: What Counts as Client Approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) |
+| Billing slips after delivery | The agreed invoice trigger has no owner or follow-up step | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) | [FAQ: What Counts as Client Approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) |
 | Informal "looks good" keeps triggering invoices early | Billing-trigger drift | [FAQ: What Counts as Client Approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) |
 | Billing status lives in the wrong tool | System-of-record drift | [Best Home for Billing Status](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/) | [System-of-Record Rules Worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/) |
 | Invoice follow-up is inconsistent | Missing billing cadence | [Invoice and Payment Workflow Checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) | [Invoice and Payment Workflow Setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) |

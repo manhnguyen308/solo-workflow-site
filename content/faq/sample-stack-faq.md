@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/solo-service-workflow-stack-faq.webp"
 feature_image_alt = "Illustrated FAQ panel stack representing common setup questions and short operational answers."
 draft = false
 date = 2026-03-07T00:00:00Z
-lastmod = 2026-07-11T00:00:00Z
+lastmod = 2026-08-08T00:00:00Z
 slug = "faq-setting-up-a-solo-service-workflow-stack"
 category = "faq"
 tags = ["faq", "setup", "workflow-stack"]
@@ -28,17 +28,7 @@ Use this FAQ when one stack setup question is blocking a decision. Each answer p
 
 In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), or [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
-## Use this FAQ when
-
-- You have one bounded setup question and need the next page quickly.
-- You need a recommendation boundary before changing tools or structure.
-- You already know the blocker is about stack setup, not the whole client lifecycle.
-
-## Match broad decisions to a full guide
-
-- [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) if the whole client path still feels loose.
-- [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if you need a full stack model, not a short answer.
-- [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/) if the real problem is spending boundaries rather than tool order.
+For spending limits rather than tool order, use [how to choose a software stack without overbuying tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 
 ## Should I choose tools before defining my workflow?
 
@@ -74,7 +64,7 @@ If payments are late because milestone completion itself is fuzzy, fix delivery 
 
 ## What if onboarding feels repetitive?
 
-That is a sign to tighten the onboarding stage first, then use a checklist. Start with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) and only then use [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+Repeated steps are normal when comparable projects need the same setup. Use the [client onboarding checklist](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) to make those steps easier to repeat. If repetition means chasing the same missing access, clarifying scope twice, or rebuilding records, repair that part of the [client onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) first.
 
 ## How do I reduce risk while migrating active work?
 

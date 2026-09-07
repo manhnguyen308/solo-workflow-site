@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/client-silence-review-faq.webp"
 feature_image_alt = "Illustration showing a review stage paused by client silence, with follow-up and next-step requests."
 draft = false
 date = 2026-04-11T00:00:00Z
-lastmod = 2026-07-16T00:00:00Z
+lastmod = 2026-08-10T00:00:00Z
 category = "faq"
 tags = ["faq", "client-silence", "review", "workflow"]
 slug = "what-to-do-when-a-client-goes-silent-during-review"
@@ -18,9 +18,7 @@ related = ["/workflows/client-status-update-workflow-for-freelancers-and-consult
 featured = false
 +++
 
-Treat client silence during review as a workflow state, not as a personality mystery.
-
-Use this answer when work has been sent, a decision is still needed, and the client has gone quiet. Record the review state before sending another message so silence does not become an assumed approval or an invisible delay.
+When a client stops replying during review, check whether they received and can open the correct package. Then record the decision still needed, what depends on it, and the next follow-up date. Do not guess why they are silent or mark the work approved without checking the agreed review rule.
 
 ## Define the review path first when
 

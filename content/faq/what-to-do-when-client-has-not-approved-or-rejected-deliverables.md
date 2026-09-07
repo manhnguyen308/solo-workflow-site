@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/pending-approval-decision-faq.webp"
 feature_image_alt = "Illustration showing a deliverable stage held open while an approval decision is still pending."
 draft = false
 date = 2026-04-28T00:00:00Z
-lastmod = 2026-07-14T00:00:00Z
+lastmod = 2026-08-16T00:00:00Z
 category = "faq"
 tags = ["faq", "approval", "follow-up", "milestone", "workflow"]
 slug = "what-to-do-when-client-has-not-approved-or-rejected-deliverables"
@@ -18,9 +18,7 @@ related = ["/workflows/milestone-delivery-workflow-for-solo-service-businesses/"
 featured = false
 +++
 
-Sending deliverables and waiting for a clear decision are two different operating states. This page covers the second one.
-
-Use this answer when work has been sent and the review stage is still open because the client has not responded or has not given a clear decision. Follow the approval, response, and escalation terms already agreed for the project.
+When deliverables have been sent but no clear decision has arrived, record what is still awaiting review and what depends on it. Use the project's agreed approval and response terms to decide whether to wait, follow up, or escalate.
 
 ## Resolve the underlying review rule first when
 
@@ -43,13 +41,13 @@ If those are not clear, define the review gate before following up.
 
 If the agreement requires an explicit decision, keep the stage open until the named approval owner approves, rejects, or requests revisions through the agreed channel. If the agreement defines another mechanism, such as approval after a stated review window, follow that mechanism as written and document the result.
 
-It must stay open when:
+Where explicit approval is required, the review remains unresolved when:
 - the review window has passed but no decision arrived,
 - a response arrived but it was partial, deferring, or positive without committing,
 - a call included encouraging feedback but no written follow-up came,
 - a different stakeholder responded instead of the named approval owner.
 
-A response that does not close the stage is still an open stage.
+Rejection or a revision request resolves the immediate decision but does not make the work accepted. Record the outcome and assign the revision, scope decision, or other next action before changing the milestone status.
 
 ## What should you do while waiting?
 
@@ -79,7 +77,7 @@ If a follow-up does not resolve the state, use the agreed escalation path. The n
 - name what is currently blocked by the missing decision,
 - offer a specific path: confirm approval, request a revision, or agree on an extension.
 
-Move the state from pending to blocked when the agreed escalation trigger is reached or when the missing decision now affects a committed schedule, billing expectation, or dependency.
+Move the state from pending to blocked when the agreed escalation trigger is reached or when the missing decision now affects a committed schedule, billing expectation, or dependency. Record the affected work and use the [escalation and pause-state worksheet](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) to choose a permitted conditional step, pause, or scope decision.
 
 ## What must not happen while the decision is pending?
 
@@ -87,18 +85,9 @@ Do not:
 - issue an invoice when its agreed trigger has not been met,
 - begin the next stage when its agreed approval condition has not been met,
 - archive or close the milestone based on a positive-sounding but non-committal response,
-- treat continued follow-up silence as implied acceptance.
+- treat continued follow-up silence as acceptance without an agreed rule that supports it.
 
 These actions can create an unsupported invoice trigger, an unapproved stage transition, or an inaccurate project record.
-
-## When should this become a formal block?
-
-Treat the state as formally blocked when:
-- the agreed escalation trigger has been reached,
-- the missing decision affects delivery timing, billing expectations, or another dependency,
-- you need to choose among pause, a permitted conditional step, or a scope change.
-
-At that point, name the block explicitly in the project record and use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) to define the next operating state.
 
 ## Continue from the pending decision
 

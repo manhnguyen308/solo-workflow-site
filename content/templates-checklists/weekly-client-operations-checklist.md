@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/weekly-client-operations.webp"
 feature_image_alt = "Illustrated weekly operations checklist with recurring review steps across active client work."
 draft = false
 date = 2026-03-17T00:00:00Z
-lastmod = 2026-07-19T00:00:00Z
+lastmod = 2026-08-12T00:00:00Z
 slug = "weekly-client-operations-checklist-solo-business"
 category = "templates-checklists"
 tags = ["weekly-ops", "checklist", "client-management"]
@@ -18,7 +18,7 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = true
 +++
 
-Use this checklist at a consistent weekly point to review active client work from current project and billing records. Update owners, dates, blockers, approvals, and invoice status.
+Use this checklist at a consistent weekly point to review active client work from current project and billing records. Update owners, dates, blockers, approvals, and invoice status. Keep dated reminders for actions due between reviews so an invoice or urgent client decision does not wait for the weekly check.
 
 ## Define the workflow before maintaining it
 
@@ -39,7 +39,7 @@ Check whether any new work is about to be accepted without confirmed delivery ca
 - Confirm next deliverable owners and deadlines.
 
 ### 3) Client communication review
-- Send weekly status updates for active projects.
+- Send status updates due under each project's agreed cadence.
 - Confirm pending approvals and follow-up deadlines.
 - Log key decisions in your system of record.
 
@@ -47,7 +47,7 @@ Use [Weekly Client Status Update Template](/templates/weekly-client-status-updat
 
 ### 4) Billing and admin review
 - Check invoices due this week.
-- Send scheduled invoices tied to milestones.
+- Send invoices whose agreed triggers have occurred, including deposits, milestones, or recurring billing dates.
 - Follow up on overdue payments.
 
 ### 5) Risk and quality review

@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/invoice-payment-checklist.webp"
 feature_image_alt = "Illustrated billing checklist with milestone-triggered invoicing and payment follow-up steps."
 draft = false
 date = 2026-03-15T00:00:00Z
-lastmod = 2026-07-21T00:00:00Z
+lastmod = 2026-08-29T00:00:00Z
 slug = "invoice-and-payment-workflow-checklist-for-service-businesses"
 category = "templates-checklists"
 tags = ["invoicing", "payments", "cash-flow", "checklist"]
@@ -62,7 +62,7 @@ If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff 
 ## Phase 2: before sending each invoice
 
 - Confirm the billing trigger stated in the agreement has occurred.
-- Confirm deliverable evidence is documented.
+- Record evidence of the agreed trigger, such as the deposit due date, billing period, delivery, or acceptance when required.
 - Confirm invoice amount matches contract scope.
 - Confirm due date and payment instructions are present.
 
@@ -86,8 +86,9 @@ Keep each message factual. Name the invoice, due date, current status, requested
 
 ## Phase 5: payment closeout
 
-- Mark invoice paid in your system of record.
-- Reconcile payment to milestone and project record.
+- Reconcile confirmed receipts against the invoice balance in the authoritative billing record.
+- Record partial payments and any remaining balance. Mark the invoice paid only when the full balance has been settled; record other resolutions under their own status.
+- Mirror the resulting status to the project record when delivery decisions depend on it.
 - Confirm the next invoice trigger when another billing event applies.
 
 ## Payment reminder fields
@@ -102,7 +103,7 @@ Keep the first reminder clear and factual.
 
 ## Billing record gaps to catch
 
-- Invoices sent without documented milestone completion.
+- Invoices sent without evidence of the agreed billing trigger.
 - Payment terms not confirmed before kickoff.
 - No reminder cadence (manual memory-based follow-up).
 - Inconsistent records between project and billing tools.
@@ -111,7 +112,7 @@ Keep the first reminder clear and factual.
 
 - If the client requires PO numbers or internal approval before payment, collect that before the invoice is triggered.
 - If part of the project is paused by the client, document whether billing pauses too or continues based on the contract.
-- If the client approves work informally in chat, log the approval in your system of record before invoicing.
+- If approval is the billing trigger and the client responds in chat, check that the response meets the agreed approval rule. Clarify ambiguous wording and link the qualifying response in your system of record before invoicing.
 
 ## A complete billing record includes
 

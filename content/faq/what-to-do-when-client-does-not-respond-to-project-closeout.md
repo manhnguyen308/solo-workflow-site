@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/client-closeout-no-response-faq.webp"
 feature_image_alt = "Illustration showing a completed project stage waiting for formal engagement closure while the client has not confirmed closeout."
 draft = false
 date = 2026-04-27T00:00:00Z
-lastmod = 2026-07-13T00:00:00Z
+lastmod = 2026-08-15T00:00:00Z
 category = "faq"
 tags = ["faq", "closeout", "offboarding", "client-silence", "workflow"]
 slug = "what-to-do-when-client-does-not-respond-to-project-closeout"
@@ -51,7 +51,7 @@ Send a structured closeout message once:
 - final billing has been handled according to the agreement,
 - there are no open revision requests or outstanding client inputs.
 
-Do not send a closeout message while billing is still open, revisions are pending, or the last milestone is still in review. Closeout is a final step, not an early one.
+Do not describe unresolved billing, revisions, or final review as complete. If the agreement permits operational closeout while a balance remains due, send a message that distinguishes completed delivery from open financial follow-up, with an owner and next action for the balance.
 
 ## What should the closeout message say?
 
@@ -83,7 +83,7 @@ When a follow-up is appropriate under the agreed communication path, it should:
 - name what remains open in the project record,
 - offer a reply path that matches the agreed closeout conditions.
 
-Keep the tone matter-of-fact. The goal is a confirmation, not a conversation.
+Ask for confirmation of the specific open item. Give the client room to identify a remaining obligation rather than asking only for a yes.
 
 ## Record closure only when the terms support it
 
@@ -102,7 +102,7 @@ If the agreement does not define the outcome of silence and an unresolved right 
 Do not:
 
 - treat an unreturned closeout message as automatic acceptance of testimonial use or public case study reference,
-- archive the project with open billing or unresolved revision commitments,
+- archive unresolved billing or revision commitments out of the active follow-up record,
 - reopen project communications on an unrelated topic while the closeout is still pending,
 - assume the client has no further requests simply because no response has arrived.
 

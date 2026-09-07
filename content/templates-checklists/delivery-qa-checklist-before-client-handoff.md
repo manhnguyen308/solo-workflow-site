@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/delivery-qa-checklist.webp"
 feature_image_alt = "Illustrated delivery QA checklist with handoff review steps before client submission."
 draft = false
 date = 2026-03-14T00:00:00Z
-lastmod = 2026-07-22T00:00:00Z
+lastmod = 2026-08-19T00:00:00Z
 category = "templates-checklists"
 tags = ["qa", "delivery", "handoff", "checklist"]
 page_type = "template"
@@ -51,13 +51,14 @@ Define those decisions in the milestone, approval, and handoff workflows before 
 
 ### A) Scope alignment
 - Confirm deliverable matches agreed scope.
-- Confirm requested revisions are incorporated.
+- Confirm agreed in-scope revisions are incorporated; keep unapproved additions in the change-request record.
 - Confirm out-of-scope items are documented separately.
 
 ### B) Technical or content quality
 - Validate file integrity and formatting.
 - Verify links, references, and assets.
 - Confirm naming and versioning conventions are correct.
+- Check that the intended client recipients can open the delivery files and that the shared location does not expose unrelated client or internal material.
 
 ### C) Client readiness
 - Add short summary of what is included.
@@ -65,9 +66,9 @@ Define those decisions in the milestone, approval, and handoff workflows before 
 - Add explicit request for approval or next action.
 
 ### D) Operational controls
-- Log delivery date in the system of record.
-- Update milestone status.
-- Trigger next invoice or next-stage action if applicable.
+- After sending, log the actual delivery date and link in the system of record.
+- Mark the milestone delivered or awaiting review as applicable. Record acceptance separately when it arrives.
+- Trigger an invoice or next-stage action only when its agreed condition has occurred.
 
 ## Evidence to include with the handoff
 

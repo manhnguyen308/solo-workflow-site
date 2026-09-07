@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/workflow-maintenance-faq.webp"
 feature_image_alt = "Illustration representing recurring review questions, weekly checks, and workflow maintenance."
 draft = false
 date = 2026-04-01T00:00:00Z
-lastmod = 2026-07-12T00:00:00Z
+lastmod = 2026-08-07T00:00:00Z
 slug = "faq-reviewing-and-maintaining-a-solo-service-workflow-system"
 category = "faq"
 tags = ["faq", "maintenance", "workflow-review", "operations"]
@@ -22,22 +22,7 @@ Use this FAQ after a client workflow is already in use. It helps you separate te
 
 ## Use a setup guide instead when
 
-Start elsewhere when you are building the workflow for the first time, choosing the stack model, or diagnosing the full client lifecycle.
-
-## Choose a broader starting point when
-
-- the operating model does not exist yet,
-- the whole lifecycle still feels messy instead of merely drifted,
-- the stack shape itself is still undecided.
-
-In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) or [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) before using this FAQ.
-
-## Use this review when
-
-Use it when:
-- the workflow already exists but feels looser than it did before,
-- small issues keep repeating and you need a calm way to triage them,
-- you want to review the system without turning routine maintenance into a redesign project.
+If you are building the process for the first time or cannot identify the failing stage, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If the process is clear but the tool roles are undecided, use the [lean software stack blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 ## Choose a review cadence
 
@@ -107,7 +92,7 @@ If truth is split across several places, use [How to Migrate from Scattered Tool
 
 Ask whether the project record and the client-facing update still match.
 
-If they do not, communication becomes performative instead of operational. Tighten [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) before changing channels or adding more status tooling.
+If they do not, a client may act on an old date or a decision that the project record no longer supports. Correct the conflicting status and tighten the [client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) before changing channels.
 
 ## Match repeated issues to one stage
 

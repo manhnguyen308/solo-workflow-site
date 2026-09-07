@@ -7,7 +7,7 @@ feature_image = "/images/features/workflows/client-decision-log-workflow-for-fre
 feature_image_alt = "Editorial workflow illustration showing decisions captured, confirmed, stored, referenced, and archived across project stages."
 draft = false
 date = 2026-05-09T00:00:00Z
-lastmod = 2026-08-16T00:00:00Z
+lastmod = 2026-08-21T00:00:00Z
 category = "client-workflow-systems"
 tags = ["decision-log", "approval", "scope", "system-of-record", "client-workflow"]
 page_type = "guide"
@@ -66,7 +66,7 @@ Project work creates four kinds of records:
 
 - **Files** show what exists.
 - **Messages** show what was said.
-- **Tools** show what is currently true.
+- **Project records** show the status entered by the people managing the work.
 - **Decisions** show what was agreed and why.
 
 Files, messages, and tools do not always state the resulting decision. The log extracts that decision from the source and records its operational effect.
@@ -101,6 +101,7 @@ Each entry should be short and complete enough to read alone.
 A useful entry includes:
 
 - the date,
+- the effective date, if the decision applies from a different date,
 - the topic in one sentence,
 - the decision made,
 - who decided on the client side,
@@ -136,7 +137,7 @@ A note in your own log does not prove client confirmation. When confirmation is 
 
 For example: "Confirming our call today: scope now includes the second landing page, the delivery date moves to the revised date in the project record, and the additional invoice follows the agreed milestone trigger. Please confirm or send corrections through our approval channel."
 
-If the client confirms, attach that response to the log entry. If the client corrects it, update the log to match the corrected version.
+If the client confirms, attach that response to the log entry. If the client corrects it, retain the original note and append a dated correction with the response linked. Mark the earlier note as superseded so the current decision is clear without losing its history.
 
 For approval-specific decisions, use the [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/) before treating the decision as a billing trigger.
 
@@ -218,7 +219,7 @@ A useful entry can fit in a single table row. The columns below are a starting s
 
 | Field | What it answers |
 | --- | --- |
-| Date | When was this decided? |
+| Date | When was this decided, and when does it take effect if different? |
 | Topic | What is this decision about, in one sentence? |
 | Decision | What exactly was agreed? |
 | Client owner | Who decided on the client side? |
@@ -263,13 +264,7 @@ The log needs to remain short, accurate, and connected to the decisions that rel
 
 ## When to skip a decision log
 
-Not every engagement needs one. Skip the log if:
-
-- the project is short and single-decision,
-- there is only one stakeholder on the client side,
-- the contract and a single approval message already cover every commitment,
-- the engagement does not produce mid-project scope or billing changes,
-- adding the log would create more friction than it removes.
+Skip a separate log when the contract and existing approval records already make every current commitment and relevant change easy to retrieve. A short engagement with one decision may meet that test. Having only one client stakeholder does not remove the need to record later scope, schedule, or billing changes.
 
 If you are unsure whether the engagement needs a log, start one when a scope change, multi-stakeholder decision, or verbal commitment cannot be represented clearly in the existing records.
 

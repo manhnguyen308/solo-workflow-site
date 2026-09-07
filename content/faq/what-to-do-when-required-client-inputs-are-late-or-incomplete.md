@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/client-input-delay-faq.webp"
 feature_image_alt = "Illustration showing a workflow stage delayed by missing client inputs, with timeline and dependency markers."
 draft = false
 date = 2026-04-12T00:00:00Z
-lastmod = 2026-07-17T00:00:00Z
+lastmod = 2026-08-11T00:00:00Z
 category = "faq"
 tags = ["faq", "client-inputs", "dependencies", "workflow"]
 slug = "what-to-do-when-required-client-inputs-are-late-or-incomplete"
@@ -18,9 +18,7 @@ related = ["/glossary/client-dependency/", "/templates/client-input-dependency-w
 featured = false
 +++
 
-Treat missing client inputs as a named dependency, not as background frustration.
-
-Use this answer when required assets, access, approvals, or source material do not arrive on time. Name the dependency and its effect before deciding whether to continue, pause, or revise the plan.
+When required assets, access, approvals, or source material arrive late, identify the exact work that cannot proceed without them. Record who owes the input and when you will follow up, then decide whether unaffected work can continue under the agreed plan.
 
 ## Fix the broader stage first when
 
@@ -47,7 +45,7 @@ If that blocked state has already made the original plan unreliable, move next t
 
 ## Use a workaround only when its limits are visible
 
-A temporary workaround can protect progress when it does not hide the delay, create unrecorded rework, or preserve a timeline that depends on the missing input.
+A temporary workaround can protect progress when the agreed plan permits it and the work has the inputs it needs. Record any assumptions, rework risk, and schedule effects. Giving the missing input an owner does not make dependent work ready to start.
 
 ## Before kickoff, treat it as a readiness issue
 

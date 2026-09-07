@@ -7,7 +7,7 @@ feature_image = "/images/features/templates/client-workflow-health-check.webp"
 feature_image_alt = "Workflow self-review illustration with eight lifecycle-stage rows for solo operators."
 draft = false
 date = 2026-04-30T00:00:00Z
-lastmod = 2026-08-04T00:00:00Z
+lastmod = 2026-08-13T00:00:00Z
 category = "templates-checklists"
 tags = ["health-check", "workflow-audit", "client-operations", "scorecard"]
 page_type = "template"
@@ -68,7 +68,7 @@ Add up your total at the end.
 
 - [ ] I have an onboarding checklist that is applied consistently to comparable projects. (0 / 1 / 2)
 - [ ] Clients know what they need to provide before work starts, and when. (0 / 1 / 2)
-- [ ] I do not begin billable work until the onboarding requirements are complete. (0 / 1 / 2)
+- [ ] I begin each billable activity only when the agreement authorizes it and its required inputs are ready, including paid onboarding work where agreed. (0 / 1 / 2)
 
 **Area 3 subtotal: ___**
 
@@ -78,7 +78,7 @@ Add up your total at the end.
 
 - [ ] Clients know when the next milestone is due and what it includes. (0 / 1 / 2)
 - [ ] I have a written handoff step for each milestone, not just an email drop. (0 / 1 / 2)
-- [ ] I can describe what "delivery complete" means for each milestone without looking it up. (0 / 1 / 2)
+- [ ] I can verify each milestone's completion against its documented deliverables and acceptance criteria. (0 / 1 / 2)
 
 **Area 4 subtotal: ___**
 
@@ -87,7 +87,7 @@ Add up your total at the end.
 ## Area 5: approval and feedback clarity
 
 - [ ] I have one named approval owner for each project. (0 / 1 / 2)
-- [ ] I know exactly what counts as approval before billing or moving to the next stage. (0 / 1 / 2)
+- [ ] I can identify the required approval evidence for each transition that depends on acceptance, and distinguish those events from deposit or recurring billing triggers. (0 / 1 / 2)
 - [ ] Feedback arrives through one channel, not several, because I set that expectation upfront. (0 / 1 / 2)
 
 **Area 5 subtotal: ___**

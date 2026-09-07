@@ -7,7 +7,7 @@ feature_image = "/images/features/workflows/project-handoff-workflow-for-freelan
 feature_image_alt = "Editorial workflow illustration showing final delivery moving through approval, handoff package, billing gate, and closeout ownership."
 draft = false
 date = 2026-05-05T00:00:00Z
-lastmod = 2026-08-15T00:00:00Z
+lastmod = 2026-08-22T00:00:00Z
 category = "client-workflow-systems"
 tags = ["handoff", "delivery", "approval", "closeout", "client-workflow"]
 page_type = "guide"
@@ -79,7 +79,7 @@ Skipping that stage can leave these issues unresolved:
 - the invoice trigger is disputed later,
 - offboarding begins before the client is actually ready to take over.
 
-A clear handoff gives the client the materials and context needed for the next agreed action. It also leaves a transfer record before billing or closeout begins.
+A clear handoff gives the client the materials and context needed for the next agreed action. Record its status alongside billing and closeout. The agreement may require an invoice or payment before final transfer, so handoff is not a universal prerequisite for billing.
 
 ## When to start the handoff process
 
@@ -114,13 +114,13 @@ If you are unsure whether a client response counts as acceptance, use the [Appro
 
 ### The next owner is named
 
-Every transferred item should have an owner. That owner might be the client, a client team member, a vendor, the freelancer during a support window, or nobody because the item is only archived.
+Every transferred item should have an owner. That owner might be the client, a client team member, a vendor, or the freelancer during a support window. For archived items, name who retains the record and handles any later access request.
 
 If ownership is not named, the client may assume you still own future fixes, maintenance, updates, or coordination.
 
 ### The billing connection is clear
 
-Handoff should not blur billing rules. If final payment is triggered by approval, transfer, or both, say which event applies. If the final invoice should wait until explicit approval, do not treat file delivery as enough.
+Handoff should not blur billing rules. State what triggers the final invoice, when payment is due, and whether payment is required before the final transfer. If the final invoice should wait until explicit approval, do not treat file delivery as enough.
 
 For the full billing sequence, use [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 
@@ -193,7 +193,7 @@ Use one of these states:
 - **Ready for approval**: the client has the final package and needs to accept, request revisions, or raise a blocker.
 - **Approved and handed over**: the client has accepted the work and received the final package.
 - **Partially handed over**: some approved pieces are transferred while another piece is still open.
-- **Transferred with open support window**: the client owns the work, but agreed post-handoff support remains active.
+- **Transferred with open support window**: the client has received the agreed materials and responsibility for their use, while agreed post-handoff support remains active.
 - **Not ready for closeout**: handoff exposed an unresolved decision, missing access, or scope gap.
 
 Do not mark the project closed just because the handoff message was sent.
@@ -204,6 +204,7 @@ Once handoff status is clear, decide what happens to the final invoice.
 
 Possible rules, when stated in the agreement:
 
+- invoice or collect payment before final transfer,
 - invoice after explicit final approval,
 - invoice after agreed final transfer,
 - invoice after delivery plus a defined review window,
@@ -261,10 +262,10 @@ Do not overreact, but do not assume those messages mean the same thing.
 
 Use this decision rule:
 
-- If the client clearly accepts the deliverable, log approval and move to the next billing or closeout step.
+- If the authorized client approver accepts the deliverable through the agreed process, log approval and follow the next billing or closeout condition.
 - If the client praises the work but does not approve it, ask one direct confirmation question.
 - If the client asks for something already included in scope, complete that handoff item and keep the status open.
-- If the client asks for new work, route it through the change-request process before treating the project as complete.
+- If the client asks for new work, route it through the change-request process. Keep the accepted work's completion status separate; reopen its scope only if the new request is approved as part of the current engagement.
 - If the client goes quiet, send a bounded follow-up with the approval question and the date when the project will move to the next agreed state.
 
 Ask for the decision in plain language and record the response against the approval standard in the agreement.

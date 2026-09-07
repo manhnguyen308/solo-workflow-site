@@ -6,7 +6,7 @@ feature_image = "/images/features/workflows/client-onboarding-workflow.webp"
 feature_image_alt = "Agreement handoff leading to kickoff readiness and first-milestone setup."
 draft = false
 date = 2026-03-28T00:00:00Z
-lastmod = 2026-08-20T00:00:00Z
+lastmod = 2026-09-03T00:00:00Z
 category = "client-workflow-systems"
 tags = ["onboarding", "kickoff", "client-workflow", "handoff"]
 page_type = "guide"
@@ -39,7 +39,7 @@ By the end of onboarding, the project should have:
 - one agreed communication rhythm,
 - one visible billing trigger for the first invoice event.
 
-If any item is missing, record the exception and its owner before active delivery begins.
+If any item is missing, record the blocker and its owner. Start only work whose required inputs are ready, or document an agreed change that defines what can proceed and what remains blocked.
 
 ## Sequence from agreement to delivery
 
@@ -110,6 +110,7 @@ Use this test: can you open one project record and see the first milestone, the 
 
 Before onboarding ends, confirm:
 - when the first invoice is triggered,
+- whether any payment required before delivery has been received,
 - how invoice timing connects to the milestone,
 - what happens if a client dependency pauses the work,
 - how scope changes will be handled once delivery is active.
@@ -120,12 +121,13 @@ If those rules live only in the contract PDF, move the operational signals into 
 
 Do not schedule active delivery until you can answer yes to these questions:
 - Is the signed scope translated into the live system of record?
-- Are all required access items either complete or explicitly blocked?
+- Are the access and inputs needed for the work being started ready and checked?
 - Is there one named approval owner for the first review point?
 - Is the communication cadence visible and agreed?
 - Is the first billing event tied to a defined milestone or kickoff trigger?
+- Has any payment required before starting been received, or has a different start condition been agreed?
 
-Resolve every blocking "no" or document an agreed exception before active delivery starts.
+Resolve every blocking "no" before active delivery starts. If both parties agree to proceed with limited work, record that scope, its available inputs, the remaining blocker, and the effect on timing. Logging a missing input does not make dependent work ready.
 
 If you need to write the readiness rule down more explicitly, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) before scheduling delivery.
 

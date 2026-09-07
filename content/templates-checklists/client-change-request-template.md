@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/client-change-request-template.webp"
 feature_image_alt = "Editorial template illustration representing a structured client change request form with scope and fee decisions."
 draft = false
 date = 2026-04-04T00:00:00Z
-lastmod = 2026-07-24T00:00:00Z
+lastmod = 2026-08-20T00:00:00Z
 category = "templates-checklists"
 tags = ["template", "change-request", "scope-control"]
 page_type = "template"
@@ -86,6 +86,12 @@ Date received: [date]
 
 7. Internal update required
 - [milestone change / invoice change / delivery note / none]
+
+8. Recorded decision
+- Status: [awaiting decision / approved / deferred / declined]
+- Confirmed scope, fee, and timing: [terms accepted, if approved]
+- Authorized decision-maker and date: [name / date]
+- Decision evidence: [link to the written response or approved change record]
 ```
 
 ## Reply with the decision and its effect
@@ -96,13 +102,13 @@ Use one short reply structure:
 - give one clear outcome,
 - name the next step needed for approval or implementation.
 
-Do not let the reply sound like a discussion that is still open if you have already made the decision.
+Distinguish your proposed outcome from the client's authorization. A price or timing proposal remains pending until the required decision-maker accepts it under the agreed change process. Record a decline or deferral clearly when that is the final outcome.
 
 ## Keep the project record aligned
 
 - Fill in the impact assessment before replying, not after.
 - If the outcome is "unclear," the next step is to clarify the request, not to start the work.
-- If the request is accepted, update the affected project records before the changed work begins.
+- If the request is accepted, record the authorization and agreed scope, fee, and timing, then update the affected project records before the changed work begins.
 - If the request is declined or deferred, keep the record anyway. It prevents the same ambiguity from resurfacing later.
 
 ## Handle informal, approved, and deferred requests
@@ -127,7 +133,7 @@ This template has done its job when:
 - the request is captured in writing,
 - the impact is assessed before work changes,
 - the approver is named,
-- the outcome is recorded in the project workflow.
+- the outcome and its decision evidence are recorded in the project workflow, with pending requests kept separate from approved work.
 
 ## Guides for scope, approval, and billing
 

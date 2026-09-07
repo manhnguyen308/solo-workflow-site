@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/recovery-update-revised-plan-notice-
 feature_image_alt = "Editorial template illustration showing a revised plan notice, reset summary, restart conditions, and confirmation request."
 draft = false
 date = 2026-04-19T00:00:00Z
-lastmod = 2026-07-27T00:00:00Z
+lastmod = 2026-08-24T00:00:00Z
 slug = "recovery-update-and-revised-plan-notice-template-for-solo-operators"
 category = "templates-checklists"
 tags = ["recovery-update", "revised-plan", "client-communication", "template"]
@@ -19,7 +19,7 @@ related = ["/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", 
 featured = true
 +++
 
-Use this template after the reset decision is defined. Explain what changed, identify the revised plan, and request the confirmation needed before work resumes.
+Use this template after the proposed reset is defined. Explain what changed, state whether the revised plan is awaiting approval or already agreed, and request any confirmation or input needed before work resumes.
 
 ## Send it after the reset is defined
 
@@ -81,10 +81,14 @@ What is no longer valid
 Why this reset is needed
 - [plain-language reason: repeated delays, conflicting feedback, missing dependency, scope drift, or similar]
 
+Plan status
+- [proposed and awaiting approval / approved, with decision date and record link]
+
 Revised plan
 - Scope now: [what is included now]
 - Sequence now: [what happens next and in what order]
 - Timing now: [revised dates or timing rule]
+- Billing effect: [unchanged / proposed fee or invoice-trigger change / agreed change]
 
 What I need from you
 - [approval / confirmation / asset / decision / named reply]
@@ -94,8 +98,6 @@ What happens next
 
 Restart condition
 - Work will resume once [clear condition].
-
-If helpful, I can also restate the revised scope or milestone boundary in one short follow-up note.
 
 Thanks,
 [name]
@@ -122,7 +124,7 @@ State the invalid part of the old plan plainly:
 - the earlier approval path,
 - the assumption that the existing scope still applies unchanged.
 
-Name the retired plan as well as its replacement.
+Name the affected plan and the proposed replacement. Do not describe proposed scope, fee, or deadline changes as agreed. Once the required approval is recorded, mark the earlier version as superseded and keep the decision history.
 
 ## Revised scope, timeline, or sequence
 
@@ -211,7 +213,7 @@ Use with:
 
 ## Record the response and next state
 
-- If the client confirms the revised path, update the authoritative project record and resume under the confirmed plan.
+- If the authorized client contact confirms the revised path, record that decision. Resume only when the plan's other start conditions, such as required inputs or payment, are also met.
 - If the reset itself is still not fully defined, return to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 - If the project is still only blocked and not yet broken, step back to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 - If the revised plan introduces new billable scope, continue to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
@@ -221,7 +223,7 @@ Use with:
 This template is doing its job when:
 
 - the reader can tell what changed,
-- the old plan is visibly retired,
+- the reader can distinguish a proposed reset from an approved replacement,
 - the revised path is specific,
 - the needed reply is clear,
 - the restart condition is explicit.

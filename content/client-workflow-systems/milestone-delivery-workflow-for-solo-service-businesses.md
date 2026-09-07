@@ -6,7 +6,7 @@ feature_image = "/images/features/workflows/milestone-delivery-workflow.webp"
 feature_image_alt = "Milestone states moving through QA and client approval."
 draft = false
 date = 2026-03-31T00:00:00Z
-lastmod = 2026-08-18T00:00:00Z
+lastmod = 2026-08-31T00:00:00Z
 category = "client-workflow-systems"
 tags = ["delivery", "milestones", "client-workflow", "handoff"]
 page_type = "guide"
@@ -120,23 +120,25 @@ Use [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checkli
 
 The approval request itself should also be explicit. Do not send work with a vague "let me know what you think" if what you actually need is acceptance, revision notes, or a dependency decision.
 
-If the client responds with positive language but no explicit decision, the review is still open. Use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) to confirm whether a response actually closed the milestone or only acknowledged the work.
+If the client responds with positive language that does not meet the agreed acceptance standard, keep the review open. Use [FAQ: What Counts as Client Approval Before Billing or the Next Stage Starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) to confirm whether a response closed the milestone or only acknowledged the work.
 
 If review feedback is coming from several people or through several channels, lock the routing path first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
-## Step 5: close the milestone with one visible outcome
+## Step 5: record the review outcome and next action
 
-Every milestone should end in one of these states:
+After review, record the applicable state:
 - approved,
 - needs revisions,
 - blocked by dependency,
 - changed via scope process.
 
+"Needs revisions" and "blocked by dependency" keep the milestone open. Close it when the acceptance condition is met, or when an agreed scope decision explicitly removes, replaces, or defers the remaining work. Record that decision separately from approval of delivered work.
+
 Do not leave it in a fuzzy "mostly done" state. Follow the acceptance terms agreed for the engagement. When those terms require explicit approval, positive feedback alone does not close the milestone; record the named [approval owner's](/glossary/approval-owner/) decision through the agreed channel.
 
 If the open question is the boundary between completed delivery and billing or closeout, document that gate with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
-At close, record at least:
+At each review decision, record:
 - the milestone outcome,
 - the approval or revision state,
 - any dependency still open,
@@ -183,6 +185,8 @@ Split the milestone when:
 - billing is tied to one completion event but the work now contains two.
 
 If the revised milestone still cannot be described in one sentence after a split or reset, treat it as a scope or recovery issue.
+
+A split in your task plan does not by itself change client commitments. If it changes approval points, fees, or promised dates, obtain agreement through the change-request process before applying those changes to delivery or billing.
 
 ## Edge cases
 

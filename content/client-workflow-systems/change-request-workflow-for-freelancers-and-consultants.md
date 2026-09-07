@@ -6,7 +6,7 @@ feature_image = "/images/features/workflows/change-request-workflow.webp"
 feature_image_alt = "Scope change moving through impact assessment and approval."
 draft = false
 date = 2026-03-27T00:00:00Z
-lastmod = 2026-08-17T00:00:00Z
+lastmod = 2026-09-01T00:00:00Z
 category = "client-workflow-systems"
 tags = ["change-request", "scope-control", "workflow"]
 page_type = "guide"
@@ -20,7 +20,7 @@ Scope drift can begin when a request enters delivery without a clear decision ab
 
 A change request workflow gives both parties a visible way to assess new requests against the current agreement.
 
-Use this workflow for live scope changes. If the broader client workflow or original project scope is unclear, resolve that earlier problem first.
+Use this workflow for changes to signed scope, including requests made before kickoff. If the broader client workflow or original project scope is unclear, resolve that earlier problem first.
 
 Apply the change terms in the agreement. Where rights, fees, or remedies are uncertain, use qualified advice rather than treating this workflow as a substitute for the contract.
 
@@ -56,8 +56,9 @@ If the record does not answer these questions, define the missing request, owner
 1. capture the request in writing,
 2. compare it against current scope and exclusions,
 3. assess impact on timeline, workload, and fee,
-4. send one explicit decision: included, repriced, deferred, or declined,
-5. update the project record and billing path if the change is approved.
+4. send an explicit assessment: included, repriced, deferred, or declined,
+5. obtain the approval required by the agreement for any changed scope, fee, or dates,
+6. update the project record and billing path before carrying out an approved change.
 
 ## When a request needs change control
 
@@ -112,17 +113,19 @@ Name the person authorized under the engagement to say yes, no, or not now.
 
 If feedback comes from several stakeholders, but no one holds final approval authority, the request can stall the workflow. Use [Approval Owner](/glossary/approval-owner/) if that role is fuzzy.
 
-## Step 5: send a clear decision
+## Step 5: send the assessment and obtain approval
 
 Use one of these outcomes:
 - **Included:** the request fits current scope and timing.
-- **Repriced:** the request is valid but changes effort or fee.
+- **Repriced:** propose the revised fee, scope, and dates for approval.
 - **Deferred:** the request fits a later phase but not the current delivery plan.
 - **Declined:** the request does not fit the engagement or current operating constraints.
 
 Avoid soft replies that sound agreeable but do not decide anything.
 
 If the request is too vague to decide, clarify it before assigning an outcome.
+
+A revised quote is not an approved change. Keep it pending until the authorized parties accept it through the process in the agreement. Record the accepted version, decision, and date before starting the additional work.
 
 ## Step 6: update delivery and billing
 

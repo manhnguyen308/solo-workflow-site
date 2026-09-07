@@ -7,7 +7,7 @@ feature_image = "/images/features/templates/client-offboarding-template.webp"
 feature_image_alt = "Illustrated offboarding template with closeout tasks and testimonial request workflow."
 draft = false
 date = 2026-03-13T00:00:00Z
-lastmod = 2026-07-20T00:00:00Z
+lastmod = 2026-08-14T00:00:00Z
 category = "templates-checklists"
 tags = ["offboarding", "testimonial", "retention", "template"]
 page_type = "template"
@@ -64,7 +64,7 @@ Treat the testimonial request as optional. Send it only when the project record 
 
 ### 3) Billing closure
 - Confirm final invoice is issued and tracked.
-- Confirm payment status.
+- Reconcile the payment status and remaining balance. Keep financial follow-up open with an owner if operational closeout is permitted before payment is settled.
 - Confirm no unresolved scope-change items.
 
 ### 4) Testimonial request
@@ -83,12 +83,17 @@ Use this simple request structure:
 ## Records to preserve before archiving
 
 Before you archive the engagement, capture:
+- the final approval evidence, handoff record, and any remaining billing or support responsibility,
+- who retains the required records and how they can be retrieved,
+- which access permissions end now and which remain necessary for agreed support,
 - feedback the client actually provided,
 - what slowed the project down,
 - what would need to change if the work repeated,
 - whether there is a realistic follow-on need.
 
 These notes give a later project owner a usable account of the closeout.
+
+Confirm that the client can use the transferred materials before removing access needed for the handoff. Remove permissions that are no longer needed, and schedule a review of access retained for support.
 
 ## Delay or omit the testimonial request when
 

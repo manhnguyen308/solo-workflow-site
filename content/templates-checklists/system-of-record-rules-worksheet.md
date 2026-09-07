@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/system-of-record-rules-worksheet.web
 feature_image_alt = "Editorial worksheet illustration showing system-of-record ownership lanes, mirrored data rules, and handoff notes between tools."
 draft = false
 date = 2026-04-22T00:00:00Z
-lastmod = 2026-07-25T00:00:00Z
+lastmod = 2026-08-18T00:00:00Z
 slug = "system-of-record-rules-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["system-of-record", "worksheet", "ownership", "handoffs"]
@@ -70,7 +70,7 @@ If you are still choosing categories instead of writing rules, settle the broade
 |---|---|---|---|---|
 | Client stage and next action | Example: PM workspace | Calendar reminder only | Current stage, next owner, due date | CRM stops after signed agreement |
 | Proposal status and approval state | Example: CRM | Project kickoff date after approval | Open proposal status, pending revision state | Copy approved scope summary into PM at handoff |
-| Invoice status | Example: Billing tool mirrored to PM | Paid / overdue status | Invoice number, payment event detail | Update PM only after invoice is actually sent |
+| Invoice status | Example: Billing tool | Sent / partially paid / paid / overdue status when needed for delivery | Invoice detail, balance, and payment history | Name the update owner; refresh after sending, receipts, due-date changes, or dispute resolution, and record when checked |
 
 ## Client record ownership
 
@@ -103,7 +103,7 @@ Document:
 - what marks proposal approval as final,
 - what changes systems when approved scope becomes active work.
 
-If scope changes after approval, those should move into the change-request process instead of staying mixed into proposal revision notes.
+After signature, route changes to the agreed scope through the change-request process, including requests made before kickoff. Keep pre-signature proposal revisions separate from changes to the signed baseline.
 
 ## Invoice / payment ownership
 
@@ -111,7 +111,7 @@ Document:
 
 - where invoices are created,
 - where payment state is authoritative,
-- what billing signal must be mirrored into the active operating record,
+- what billing signal needs to be mirrored, if delivery decisions depend on it,
 - who is responsible for updating overdue or paid status visibly.
 
 The billing system can own payment events while another tool mirrors a smaller operational signal. Limit that mirrored field to the billing state needed for current work.

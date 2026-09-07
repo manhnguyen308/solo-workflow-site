@@ -6,7 +6,7 @@ feature_image = "/images/features/workflows/proposal-contract-handoff.webp"
 feature_image_alt = "Illustrated handoff scene with two workflow panels connected between proposal and contract stages."
 draft = false
 date = 2026-03-03T00:00:00Z
-lastmod = 2026-08-22T00:00:00Z
+lastmod = 2026-09-02T00:00:00Z
 category = "client-workflow-systems"
 tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
@@ -20,8 +20,6 @@ featured = true
 
 A proposal-to-contract handoff turns discovery decisions into a review-ready scope, timeline, and commercial record. When those details remain implicit, kickoff can begin with different assumptions about the work.
 
-This guide gives you a repeatable pre-kickoff handoff process so the proposal and contract package reflect the work to be delivered.
-
 Its job is to produce a review-ready proposal and contract package. For proposal comments, revisions, and approval after the package is sent, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 
 Use this workflow when clients question what was included after work starts or when discovery details do not carry cleanly into execution.
@@ -33,7 +31,7 @@ This workflow organizes operational handoff. It does not supply contract languag
 ## What this handoff must achieve
 
 Before proposal review begins, your process should produce:
-- one agreed scope statement,
+- one scope statement ready for client review,
 - one delivery timeline with milestone dates,
 - one acceptance definition for each deliverable,
 - one commercial record (fees, invoicing schedule, payment terms),
@@ -75,15 +73,16 @@ If client inputs, approvals, or asset delivery can delay the work, show that dep
 
 ## Step 3: define commercial terms tied to execution
 
-Your contract should align with delivery flow, not arbitrary billing dates:
+Define the billing events or dates that fit the engagement:
 - deposit or kickoff invoice trigger,
 - milestone-based invoicing events,
+- recurring dates for retainer or scheduled billing, when applicable,
 - payment terms and late-payment policy,
 - scope-change pricing rule.
 
 Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to standardize this step.
 
-Payment terms also control workflow transitions. Connect invoice timing to the delivery events defined in the agreement.
+Record whether a workflow transition depends on an invoice being sent, a payment being received, or a delivery event being completed. These are separate conditions.
 
 ## Step 4: run a pre-signature friction check
 
@@ -92,7 +91,7 @@ Ask these questions:
 2. Are out-of-scope items explicit?
 3. Is approval ownership clear?
 4. Is there a written path for change requests?
-5. Is invoice timing tied to the delivery state recorded under the agreement?
+5. Is each invoice tied to a defined event or date, with any payment condition for starting work made explicit?
 
 If any answer is unclear, revise before signing.
 
@@ -136,7 +135,7 @@ If the project is likely to evolve after kickoff, define the post-signature rule
 - Proposal promises are not mirrored in the contract.
 - Exclusions are not documented.
 - Kickoff is scheduled before approval owners are mapped.
-- Payment terms are copied from a template without being matched to delivery events.
+- Payment terms are copied from a template without checking their events, dates, and start conditions against the engagement.
 
 ## When to keep this stage manual
 
@@ -157,12 +156,12 @@ If that is not true yet, keep the handoff manual and visible. Use [Rule-based wo
 
 ## Handoff completion standard
 
-Treat the handoff as complete only when:
-- the review-ready package matches the approved scope and exclusions,
+The package is ready to enter client review when:
+- the proposed scope and exclusions match the discovery record,
 - milestone owners are named,
 - invoice triggers are documented,
-- onboarding inputs are ready once approval is secured.
+- required onboarding inputs and their owners are identified.
 
-If one item is missing, pause kickoff and close the gap first.
+After review, carry the approved version and signed agreement into onboarding. Keep later changes linked to that baseline. If a required item is missing, close the gap before the affected stage begins.
 
 If the package is ready but client review is still active, continue with [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/). If the proposal is already approved and signed, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).

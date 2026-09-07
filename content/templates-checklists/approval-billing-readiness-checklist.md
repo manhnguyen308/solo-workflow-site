@@ -7,7 +7,7 @@ feature_image = "/images/features/templates/approval-billing-readiness-checklist
 feature_image_alt = "Illustrated readiness checklist with rows for approval, invoicing, payment tracking, and closeout."
 draft = false
 date = 2026-04-29T00:00:00Z
-lastmod = 2026-08-02T00:00:00Z
+lastmod = 2026-08-30T00:00:00Z
 category = "templates-checklists"
 tags = ["approval", "billing", "readiness", "checklist", "client-operations"]
 page_type = "template"
@@ -35,7 +35,7 @@ Use this checklist when the process rules are set and you need to confirm that a
 
 ## Conditions to verify at each transition
 
-Check every item that is true before moving to the next stage. Missing items are the gap to fix first.
+Check the conditions for the transition you are making. Mark a condition as not applicable when the agreement does not require it for that event. A deposit or recurring invoice, for example, may be due before delivery or approval. Resolve missing required conditions before moving that part of the project forward.
 
 ### Delivery
 
@@ -48,7 +48,7 @@ Check every item that is true before moving to the next stage. Missing items are
 - [ ] The approval owner is named, including the authority that person has under the agreement.
 - [ ] The approval channel is confirmed, and the client knows where to send the decision.
 - [ ] A decision deadline or review window was stated when the deliverable was sent.
-- [ ] Any "looks good" or informal positive comment has been confirmed as formal acceptance, not assumed to be approval.
+- [ ] The recorded response meets the agreed acceptance rule. An ambiguous positive comment has been clarified with the approval owner.
 - [ ] Change requests have been separated from approval, with new scope documented under the agreed change process.
 
 ### Invoicing
@@ -64,7 +64,7 @@ Check every item that is true before moving to the next stage. Missing items are
 
 ### Closeout
 
-- [ ] All milestones are complete and all invoices are paid or formally resolved.
+- [ ] Delivery and financial closure are recorded separately. Any balance, dispute, or unfinished obligation remains open with an owner and next action until resolved.
 - [ ] The client has been informed of the closeout state through the agreed channel.
 - [ ] Any final handoff materials, account accesses, or documentation have been sent or confirmed complete.
 
@@ -105,10 +105,10 @@ For the full billing process and follow-up cadence, see [Invoice and Payment Wor
 
 A project is ready to close when:
 
-- all milestones are complete and confirmed approved,
-- all invoices are paid, waived, disputed, or otherwise recorded under the applicable agreement and process,
+- the applicable delivery and acceptance conditions are met,
+- invoices are paid or otherwise resolved before financial closure is recorded; a disputed or unpaid balance remains open even if operational closeout is allowed,
 - the client has been explicitly informed that the project is closing,
-- any handoff materials, credentials, or documentation are sent and confirmed received.
+- required handoff materials and documentation are delivered, and the client has confirmed the access needed to use them.
 
 Use the closeout rule in the agreement and project record. Do not infer closure from final delivery alone when the process requires another condition. If the client has not responded to a closeout message, see [FAQ: Client Does Not Respond to Project Closeout](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/).
 
@@ -118,7 +118,7 @@ For the full offboarding and testimonial process, see [Client Offboarding Workfl
 
 ## Route an unchecked item
 
-Do not skip a readiness condition or move forward assuming it will resolve itself. Address the gap first.
+Do not skip a condition that applies to the transition or assume it will resolve itself. Keep the affected transition open while addressing the gap.
 
 | Missing condition | Best first page |
 | --- | --- |

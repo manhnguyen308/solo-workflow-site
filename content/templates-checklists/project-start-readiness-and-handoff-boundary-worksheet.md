@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/project-start-readiness-handoff-boun
 feature_image_alt = "Editorial worksheet illustration showing stage-boundary checks, readiness gates, owner markers, and handoff evidence requirements."
 draft = false
 date = 2026-04-18T00:00:00Z
-lastmod = 2026-08-01T00:00:00Z
+lastmod = 2026-08-27T00:00:00Z
 slug = "project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["handoff", "readiness", "worksheet", "stage-transition"]
@@ -52,7 +52,7 @@ Set those decisions in the relevant workflow, comparison, or blueprint guide. Us
 3. Name one owner for the next move after the transition.
 4. Write what evidence must exist before the boundary is considered passed.
 
-If nobody can show the required evidence but the stage still moves forward, revise the boundary rule or the evidence requirement.
+If nobody can show the required evidence, hold the affected transition and resolve the missing condition. Change the rule only through the project's agreed decision process, with the reason and authorization recorded.
 
 ## Information to gather first
 
@@ -70,6 +70,8 @@ If the preceding output or next-stage trigger is undefined, document that rule b
 | Proposal approved to onboarding ready | signed scope, kickoff dependencies, stakeholder contacts | approval owner confirms final version | consultant or operator | waiting on access, deposit, or final stakeholder input | approved proposal record, kickoff-ready project record |
 | Delivery complete to invoice ready | milestone output, QA pass, agreed billing trigger | acceptance or other evidence required by the agreement | operator billing owner | review pending, rework open, dependency unresolved | deliverable link, QA note, visible milestone status |
 | Invoice closed to offboarding ready | payment received or financial close rule met | billing state confirmed | operator or account owner | invoice overdue, procurement delay, unresolved extra request | payment status, closeout record draft, next-step state |
+
+These are example dependencies, not a required order for every project. A deposit or recurring invoice may be due before delivery. Operational closeout may proceed separately from an open financial record when the agreement permits it. Record only the conditions that govern the transition being checked.
 
 ## Stage transition being documented
 
@@ -170,7 +172,7 @@ Copy the evidence into the authoritative record before passing the boundary.
 - Name one owner for resolving the block.
 - Set the next review point instead of letting the issue drift into silence.
 
-Example: do not start onboarding because "the client said yes in principle" if approved scope, access, or payment conditions are still incomplete.
+Example: do not start delivery because "the client said yes in principle" if that work's approved scope, access, or payment conditions are still incomplete. Onboarding tasks that collect those inputs may already be authorized; keep their status separate from delivery readiness.
 
 ## Example boundaries
 

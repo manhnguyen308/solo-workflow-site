@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/scope-reset-recovery-worksheet.webp"
 feature_image_alt = "Editorial worksheet illustration showing broken plan markers, reset decisions, scope recovery lanes, and restart conditions."
 draft = false
 date = 2026-04-20T00:00:00Z
-lastmod = 2026-07-28T00:00:00Z
+lastmod = 2026-08-25T00:00:00Z
 slug = "scope-reset-and-recovery-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["scope-reset", "recovery", "worksheet", "scope-drift"]
@@ -39,6 +39,8 @@ If the work is only blocked and you still need to decide whether it should pause
 
 ## Keep the reset bounded
 
+Use the worksheet for the affected plan, not for deciding:
+
 - the full client lifecycle,
 - your entire pricing model,
 - whether a brand-new project should be sold instead,
@@ -53,14 +55,14 @@ The agreement, pricing policy, and surrounding workflow still govern the availab
 3. Separate what must be reconfirmed from what must be removed.
 4. Define the restart conditions before promising a new timeline.
 
-When accumulated exceptions make the original plan inaccurate, replace it with a recorded baseline.
+When accumulated exceptions make the original plan inaccurate, draft a replacement and obtain the required approval before treating it as the active baseline.
 
 ## Scope reset and recovery worksheet
 
 | Original plan or scope being reset | What failed or drifted | Assumptions no longer valid | What must be reconfirmed | What changes now | Billing / scope implication | Communication required | Restart condition |
 |---|---|---|---|---|---|---|---|
 | Proposal review path | too many conflicting revisions | one approver can still consolidate input | review owner, revision boundary, decision deadline | extra review path removed, approval path reset | timeline or proposal validity may change | reset message naming owner and decision rule | one clean approval route is active |
-| Active delivery milestone | repeated missing assets and late decisions | milestone can finish on original schedule | current output, dependency owner, due date, acceptance point | milestone paused, split, or re-baselined | invoice trigger or delivery date may move | explicit recovery update with revised milestone logic | revised milestone is approved and dependencies are visible |
+| Active delivery milestone | repeated missing assets and late decisions | milestone can finish on original schedule | current output, dependency owner, due date, acceptance point | milestone paused, split, or re-baselined | invoice trigger or delivery date may move | explicit recovery update with revised milestone logic | revised milestone is approved and inputs needed to resume are available |
 | Closeout sequence | unresolved extras and final decisions remain open | billing and offboarding can close together | final approved scope, payment rule, closeout responsibility | financial close and operational close may separate | final invoice or extra work may need reclassification | direct closeout reset note naming unresolved items | approved closeout path and payment state are clear |
 
 ## Original plan or scope being reset
@@ -120,7 +122,7 @@ Document the concrete changes:
 - re-approve the narrowed scope,
 - split financial close from operational close.
 
-Store the approved reset in the authoritative project record and retire the outdated version.
+Store the approved reset in the authoritative project record and mark the earlier plan as superseded. Preserve its decision history and approval evidence under the project's record-retention rules.
 
 ## Billing / scope implications
 
@@ -144,7 +146,7 @@ Define what the reset message must include:
 - what the new decision path is,
 - what has to happen before active work resumes.
 
-State explicitly that the old plan has been replaced so the message cannot be mistaken for a routine status update.
+State whether the reset is proposed or approved. A missed forecast can be marked unworkable while revised scope, fees, or dates still await agreement. Once authorized, identify which plan the reset replaces and record its effective date.
 
 ## Restart conditions for the revised plan
 
@@ -152,7 +154,7 @@ Write what must be true before the revised plan becomes active:
 
 - one approval path is visible,
 - revised scope is accepted,
-- dependencies are assigned,
+- inputs needed for the resumed work are available; later dependencies have owners and due dates,
 - milestone timing is re-baselined,
 - billing state matches the revised plan.
 

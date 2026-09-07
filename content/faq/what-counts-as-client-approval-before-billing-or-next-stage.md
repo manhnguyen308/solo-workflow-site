@@ -6,7 +6,7 @@ feature_image = "/images/features/faq/client-approval-signoff-faq.webp"
 feature_image_alt = "Illustration showing the difference between informal acknowledgment and formal approval at a milestone handoff."
 draft = false
 date = 2026-04-26T00:00:00Z
-lastmod = 2026-07-15T00:00:00Z
+lastmod = 2026-08-17T00:00:00Z
 category = "faq"
 tags = ["faq", "approval", "signoff", "milestone", "billing"]
 slug = "what-counts-as-client-approval-before-billing-or-next-stage"
@@ -46,10 +46,10 @@ Positive language without a documented decision leaves the stage open when the w
 
 A clear approval record identifies:
 
-- the named approval owner gave the answer,
-- the explicit decision, such as accepted, approved, or go-ahead,
-- it arrived through the agreed review channel,
-- it was recorded in the project record or confirmed in a reply thread.
+- the deliverable, milestone, and exact version being accepted,
+- the named approval owner and the date of their answer,
+- the explicit decision and any conditions or exclusions,
+- the agreed channel and a link to the original decision in the project record.
 
 Compare that record with the approval terms in the agreement. If the workflow requires explicit approval and the record lacks one of these details, ask for clarification before treating the stage as closed.
 
@@ -85,7 +85,7 @@ Ask directly when:
 
 A short message works:
 
-> "Confirming: is this milestone approved so I can close it and move to the next stage, or are there revisions you would like me to address first?"
+> "Can you confirm whether [milestone and version] is approved as delivered, or list the revisions still needed? Once approval is recorded, I can [next step allowed by our agreement]."
 
 The message asks for the decision and gives the client a clear alternative if revisions remain.
 

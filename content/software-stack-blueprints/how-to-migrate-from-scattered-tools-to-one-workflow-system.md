@@ -6,7 +6,7 @@ feature_image = "/images/features/blueprints/migrate-from-scattered-tools.webp"
 feature_image_alt = "Illustrated migration sequence moving scattered tool fragments into one structured operating system."
 draft = false
 date = 2026-03-11T00:00:00Z
-lastmod = 2026-08-10T00:00:00Z
+lastmod = 2026-09-04T00:00:00Z
 category = "software-stack-blueprints"
 tags = ["migration", "stack-cleanup", "workflow-system"]
 page_type = "guide"
@@ -92,7 +92,7 @@ For each cutover:
 2. move or recreate the required records;
 3. verify counts, ownership, status, and links;
 4. tell affected collaborators which location is now authoritative;
-5. keep a rollback note;
+5. record the cutover time, rollback owner, and how later edits will be recovered if the move fails;
 6. retire write access in the old location after verification.
 
 ## Step 6: stabilize before adding features
@@ -109,10 +109,10 @@ The migration is complete when:
 - active records retain the required history and attachments;
 - permissions match current responsibilities;
 - collaborators know where to update and where to look;
-- old systems are read-only, archived, or cancelled according to the retention plan;
+- old systems are read-only or archived, with usable exports verified before any cancellation;
 - weekly review no longer requires reconciling duplicate status.
 
-If a check fails, keep the affected scope in the previous system and correct the mapping before continuing.
+If a check fails before cutover, keep the affected records in the previous system and correct the mapping before continuing. If it fails after people have started updating the new system, pause changes to the affected records and preserve those newer edits. Reconcile them into the restored record, verify the result, and tell collaborators which location is authoritative before work resumes. Returning to an old snapshot without this check can lose decisions made after the switch.
 
 ## After the cutover
 

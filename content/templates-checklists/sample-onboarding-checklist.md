@@ -6,7 +6,7 @@ feature_image = "/images/features/templates/client-onboarding-checklist.webp"
 feature_image_alt = "Illustrated onboarding checklist with staged tasks for kickoff readiness and client setup."
 draft = false
 date = 2026-03-16T00:00:00Z
-lastmod = 2026-07-23T00:00:00Z
+lastmod = 2026-08-28T00:00:00Z
 category = "templates-checklists"
 tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
@@ -17,17 +17,9 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = true
 +++
 
-Use this checklist after the agreement's start conditions are met and before delivery begins. It turns approved scope into a kickoff record with visible owners, dates, access requirements, and controls.
+Use this checklist once the agreement permits onboarding and before delivery begins. It turns approved scope into a kickoff record with visible owners, dates, access requirements, and controls. Confirm any separate delivery start conditions, including a required deposit, before activating the first milestone.
 
 Use it after the start rule is clear. If you are still deciding what should happen between proposal approval and kickoff, read [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) or [Client onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) first.
-
-## Turn approved scope into a live project record
-
-Use this page to run a kickoff that is already defined well enough to execute. It is for translating an approved project into a live operating setup with visible scope, owners, dates, and communication rules.
-
-## Settle these questions before using the checklist
-
-Define the onboarding workflow, proposal commitment, and kickoff condition before using this checklist.
 
 ## Return to the workflow when
 
@@ -71,7 +63,7 @@ Run the checklist in this order:
 4. set dates and milestone reminders,
 5. confirm invoice and change-control rules.
 
-If an item is incomplete, pause kickoff instead of carrying the ambiguity into delivery.
+If a required item is incomplete, keep the work that depends on it blocked. Start an independent part only when its own conditions are met and the agreed plan permits that sequence.
 
 ## Continue into delivery or communication
 
@@ -106,11 +98,13 @@ If kickoff is now clean and the first milestone is live, move next to [Client St
 
 ## Check readiness before kickoff
 
-If any answer below is "no," do not start delivery yet:
+Before starting a milestone, confirm:
 - Is scope written in one source of truth?
 - Does each deliverable have an owner and due date?
 - Does the client know where updates and files will appear?
 - Are payment terms and milestone triggers clear?
+- Have any payment conditions required for this milestone's start been met?
+- Are the access and assets needed for this milestone available and usable?
 
 ## Common onboarding misses
 
@@ -129,7 +123,7 @@ If any answer below is "no," do not start delivery yet:
 
 - Create the first live milestone in your system of record.
 - Send the kickoff summary with owners, dates, and update cadence.
-- Queue the first billing trigger if a deposit or kickoff invoice applies.
+- Issue a deposit or kickoff invoice when its agreed trigger occurs. If payment is required before delivery, confirm it before activating the milestone.
 
 ## A complete onboarding record includes
 
@@ -137,7 +131,8 @@ Treat onboarding as complete only when:
 - scope and exclusions are visible in one place,
 - first milestone and owner are active in the system,
 - communication and approval rules are explicit,
-- required access and assets are either collected or clearly flagged as blockers.
+- required access and assets for the work being started are available and usable; later dependencies have owners and due points,
+- any work with an unmet start condition remains blocked, even if the missing item is recorded.
 
 ## Guides that define the surrounding process
 

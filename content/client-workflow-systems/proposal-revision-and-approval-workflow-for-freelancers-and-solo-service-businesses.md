@@ -6,7 +6,7 @@ feature_image = "/images/features/workflows/proposal-revision-approval-workflow.
 feature_image_alt = "Proposal review stages with revision rounds, approval checkpoints, and a contract transition."
 draft = false
 date = 2026-04-10T00:00:00Z
-lastmod = 2026-08-21T00:00:00Z
+lastmod = 2026-08-26T00:00:00Z
 slug = "proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses"
 category = "client-workflow-systems"
 tags = ["proposal", "approval", "revision", "workflow"]
@@ -21,15 +21,13 @@ featured = false
 
 Proposal review needs one visible version, a defined route for comments, and a named person who can approve the result. Without those controls, revisions can change the proposed scope before anyone records the new agreement.
 
-Use this workflow after the proposal package is ready for review and before the approved terms move into contract and onboarding. Once the project is live, route new scope through change-request control.
+Use this workflow after the proposal package is ready for review and before the approved terms move into contract and onboarding. Once the agreement is signed, route proposed changes to that baseline through change-request control, including changes requested before kickoff.
 
 Use this workflow when the open problem is proposal review itself: revisions are bouncing around, approval ownership is vague, comments are arriving from several people, or signed projects keep starting with hidden ambiguity.
 
 ## Scope of the review workflow
 
-Use this workflow to control review, revision, and approval of a prepared proposal. Prepare the proposal package first, use qualified advice for legal or contractual questions, and route post-signature changes through the live change-request process.
-
-If the proposal itself is still structurally weak, fix the handoff package first. If the project is already signed and active, move into onboarding or change-request control.
+Prepare the proposal package before starting review. Use qualified advice for legal or contractual questions, and preserve the signed version when later changes need a separate decision.
 
 ## Who needs a controlled review
 
@@ -103,23 +101,23 @@ Define which clarification and revision work is included in the proposal process
 
 Keep one active, consolidated set of comments. When feedback changes the offer materially or no longer fits the agreed review boundary, pause line edits and reset the proposal decision with the client.
 
-The goal is to keep proposal review from becoming unpriced delivery work before the project is approved.
+If a revision requires design, research, or other delivery work beyond the proposal discussion, agree how that work will be scoped and paid before starting it.
 
 ## Step 5: distinguish proposal revision from later change requests
 
-The signature and project-start state separate proposal revision from live change control.
+Use the signed agreement as the baseline for later changes. Starting delivery is not a prerequisite for change control.
 
 Proposal revision belongs here when:
 - the work is still pre-signature,
 - the client is clarifying or reshaping the proposed agreement,
 - no live delivery plan has started yet.
 
-Change-request control belongs later when:
+Use change-request control when:
 - the proposal has already been approved,
-- the project is signed or underway,
-- a new ask would alter the live scope, fee, or timeline.
+- the agreement is signed,
+- a new ask would alter the agreed scope, fee, or timeline.
 
-Without that boundary, pre-signature ambiguity can be mistaken for a live scope change. Use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) after the project has crossed into live work.
+Use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) for those changes. If work has started without settled terms, clarify and record the existing commitments before deciding how to handle a new request.
 
 ## Step 6: define what counts as final approval
 
@@ -183,7 +181,7 @@ If the reset is already decided and stakeholders need one clear revised message,
 | Owner check | Who must respond and who can approve? | Clear next action and approval owner |
 | Round control | Is this still ordinary review or a reset conversation? | Bounded review sequence |
 | Final approval | What version is accepted? | Stable approved proposal |
-| Transition | What moves into contract and onboarding? | Kickoff-ready agreement record |
+| Transition | What moves into contract and onboarding? | Approved version and, after signature, the onboarding inputs |
 
 ## Where proposal review loses state
 
@@ -221,4 +219,4 @@ The proposal can move into contract and onboarding when:
 - final approval can be pointed to without guesswork,
 - onboarding starts from an approved and signed agreement.
 
-If the broader issue is still weak scoping before review begins, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). If the proposal is already approved and the project is live, move into [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) or [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) depending on the stage.
+If the broader issue is still weak scoping before review begins, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). After approval and signature, use [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) to prepare delivery. For a proposed change to signed scope, use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
