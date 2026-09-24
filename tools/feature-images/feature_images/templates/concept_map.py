@@ -13,7 +13,7 @@ def render_concept_map(spec, context):
     # Left concept box — dark background, concept name centered
     concept_box = (150, 420, 540, 748)
     helpers["rounded_box"](draw, concept_box, fill=palette["secondary"], outline=palette["secondary"], width=2, radius=32)
-    helpers["pill"](draw, (178, 448, 512, 488), palette["secondary_soft"], "Key concept", fonts["small"], palette["secondary_soft"])
+    helpers["pill"](draw, (178, 448, 512, 488), palette["secondary_soft"], "Key concept", fonts["small"], palette["secondary"])
     helpers["draw_text_block"](draw, spec["concept"], fonts["panel_title"], "#ffffff", (178, 548, 330, 100), 8, report, "concept label", max_lines=2)
 
     # Y-branch connector from concept box right edge to attribute grid

@@ -2,7 +2,7 @@
   "id": "client-closeout-no-response-faq",
   "category": "faq",
   "layout": "faq_card",
-  "palette": "workflow",
+  "palette": "comparison",
   "output_path": "static/images/features/faq/client-closeout-no-response-faq.webp",
   "eyebrow": "FAQ",
   "title": "Closeout Non-Response",

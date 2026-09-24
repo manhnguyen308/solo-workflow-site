@@ -1,0 +1,20 @@
+{
+  "id": "soloopsguide-home",
+  "category": "site",
+  "layout": "hub_overview",
+  "palette": "hub",
+  "output_path": "static/images/features/site/soloopsguide-home.png",
+  "eyebrow": "Solo operations",
+  "title": "SoloOpsGuide",
+  "subtitle": "Workflow systems, stack blueprints, comparisons, and templates for freelancers and solo operators.",
+  "anchor": {
+    "title": "Start with the workflow",
+    "body": "Name the stage that keeps breaking, then choose tools and templates."
+  },
+  "modules": [
+    { "kicker": "Guides", "title": "Workflows", "detail": "Inquiry to final payment." },
+    { "kicker": "Stacks", "title": "Blueprints", "detail": "Lean tool setups." },
+    { "kicker": "Decisions", "title": "Comparisons", "detail": "One tool choice at a time." },
+    { "kicker": "Assets", "title": "Templates", "detail": "Checklists and worksheets." }
+  ]
+}

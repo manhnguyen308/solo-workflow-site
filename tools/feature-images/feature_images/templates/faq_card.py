@@ -26,4 +26,4 @@ def render_faq_card(spec, context):
         row_box = (680, y, 1450, y + 74)
         helpers["rounded_box"](draw, row_box, fill=row_fills[index % 2], outline=palette["stroke"], width=2, radius=22)
         helpers["draw_text_block"](draw, route["label"], fonts["card_title"], palette["ink"], (708, y + 22, 472, 50), 6, report, f"faq route {index}", max_lines=1)
-        helpers["pill"](draw, (1190, y + 14, 1432, y + 60), palette["frame"], route["note"], fonts["pill"], palette["muted"])
+        helpers["pill"](draw, (1190, y + 14, 1432, y + 60), palette["frame"], route["note"], fonts["pill"], palette["muted"], anchor="right")

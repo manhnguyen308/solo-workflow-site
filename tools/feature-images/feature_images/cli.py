@@ -5,7 +5,7 @@ from pathlib import Path
 
 from .canvas import create_canvas
 from .drawing import draw_text_block, linear_gradient, pill, rounded_box, shadowed_box
-from .exporter import ensure_output_path, export_webp
+from .exporter import ensure_output_path, export_image
 from .fonts import get_font_set
 from .palette import get_palette
 from .specs import REPO_ROOT, get_spec, load_all_specs
@@ -39,7 +39,7 @@ def render_spec(spec: dict) -> Path:
     context = build_context(spec)
     renderer(spec, context)
     output_path = ensure_output_path(REPO_ROOT / spec["output_path"], REPO_ROOT)
-    export_webp(context["image"], output_path)
+    export_image(context["image"], output_path)
     context["report"].print_warnings()
     print(f"GENERATED [{spec['id']}] {output_path}")
     return output_path

@@ -14,3 +14,11 @@ def ensure_output_path(path: Path, repo_root: Path) -> Path:
 
 def export_webp(image, output_path: Path) -> None:
     image.save(output_path, format="WEBP", quality=82, method=6)
+
+
+def export_image(image, output_path: Path) -> None:
+    # PNG is for social share images, where some platforms do not render WebP.
+    if output_path.suffix.lower() == ".png":
+        image.save(output_path, format="PNG", optimize=True)
+    else:
+        export_webp(image, output_path)

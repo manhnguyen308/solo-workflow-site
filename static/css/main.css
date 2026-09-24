@@ -2238,7 +2238,7 @@ body {
   font-weight: 600;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 1080px) {
   .site-header-shell {
     padding: 0;
   }
@@ -2328,6 +2328,23 @@ body {
 
 .button-header {
   align-self: center;
+}
+
+/* Collapsed menu: undo the centring above so links stack left-aligned at full width */
+@media (max-width: 1080px) {
+  .primary-nav .menu {
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .primary-nav .menu li {
+    display: block;
+  }
+
+  .primary-nav a {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 
 .page-shell {
@@ -2602,8 +2619,13 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
 }
 
+@media (min-width: 1081px) {
+  .article-header {
+    grid-template-columns: minmax(0, 1.16fr) minmax(260px, 0.84fr);
+  }
+}
+
 .article-header {
-  grid-template-columns: minmax(0, 1.16fr) minmax(260px, 0.84fr);
   align-items: start;
 }
 

@@ -58,6 +58,14 @@ The gate file `data/feature_image_raster_preferences.json` controls which pages 
 
 Do not add new pages to this gate without visual review.
 
+## Typeface and layout rules (applied 2026-09-24)
+
+- Generate on Windows, where `fonts.py` finds Georgia Bold and Arial. On Linux it falls back to Liberation fonts, which look different and are narrower, so mixed runs produce a visibly mixed library. All 62 WebPs were regenerated on Windows on 2026-09-24.
+- `pill()` grows to fit its text. Pass `anchor="right"` for pills pinned to a right edge and `anchor="center"` for centred ones; the default grows rightward.
+- `draw_text_block` height checks measure from the draw origin, so a warning now means the text really leaves its box. Keep bounds inside the visible card.
+- `checklist_card` and `workflow_map` pick one label size per image, shrinking from 40px until every label fits. Very long labels still end up smaller, so keep them short.
+- An `output_path` ending in `.png` exports PNG. Use it only for social share images (currently `site/soloopsguide-home.png`); page and card images stay WebP.
+
 ## QA checklist for new images
 
 - [ ] JSON data config created in the correct `data/<category>/` directory.

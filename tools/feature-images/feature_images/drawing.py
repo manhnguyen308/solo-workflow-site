@@ -13,11 +13,21 @@ def shadowed_box(draw, box, fill, outline, shadow, radius=26, offset=8):
     draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=3)
 
 
-def pill(draw, box, fill, text, font, text_fill):
-    draw.rounded_rectangle(box, radius=(box[3] - box[1]) // 2, fill=fill)
+def pill(draw, box, fill, text, font, text_fill, anchor="left", padding=18):
     text_box = draw.textbbox((0, 0), text, font=font)
     text_width = text_box[2] - text_box[0]
     text_height = text_box[3] - text_box[1]
+    # Grow the pill away from its anchored edge when the text does not fit.
+    needed = text_width + (padding * 2)
+    if needed > box[2] - box[0]:
+        if anchor == "right":
+            box = (box[2] - needed, box[1], box[2], box[3])
+        elif anchor == "center":
+            grow = (needed - (box[2] - box[0])) / 2
+            box = (box[0] - grow, box[1], box[2] + grow, box[3])
+        else:
+            box = (box[0], box[1], box[0] + needed, box[3])
+    draw.rounded_rectangle(box, radius=(box[3] - box[1]) // 2, fill=fill)
     x = box[0] + ((box[2] - box[0]) - text_width) / 2
     y = box[1] + ((box[3] - box[1]) - text_height) / 2 - 2
     draw.text((x, y), text, font=font, fill=text_fill)
@@ -57,7 +67,8 @@ def draw_text_block(draw, text, font, fill, bounds, line_gap, report, warning_la
 
     metrics = draw.textbbox((0, 0), "Ag", font=font)
     line_height = metrics[3] - metrics[1]
-    total_height = (line_height * len(lines)) + (line_gap * max(0, len(lines) - 1))
+    # Measure from the draw origin so the font's top bearing counts toward the box.
+    total_height = metrics[3] + ((line_height + line_gap) * max(0, len(lines) - 1))
     if total_height > height:
         report.warn(f"{warning_label} exceeded box height.")
 

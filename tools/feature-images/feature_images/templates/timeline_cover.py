@@ -22,4 +22,4 @@ def render_timeline_cover(spec, context):
         x = int(start_x + (step * index))
         draw.ellipse((x - 16, 554, x + 16, 586), fill=palette["accent"])
         helpers["rounded_box"](draw, (x - 120, 462, x + 120, 534), fill="#ffffff", outline=palette["stroke"], width=2, radius=24)
-        helpers["pill"](draw, (x - 80, 606, x + 80, 644), palette["accent_soft"], item["label"], fonts["small"], palette["accent"])
+        helpers["pill"](draw, (x - 80, 606, x + 80, 644), palette["accent_soft"], item["label"], fonts["small"], palette["accent"], anchor="center")

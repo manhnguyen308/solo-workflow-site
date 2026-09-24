@@ -7,7 +7,8 @@
 {{ $comparisonAnchor := cond (gt (len $comparisonAnchorPages) 0) (index $comparisonAnchorPages 0) nil }}
 {{ $priorityBlueprint := $blueprintAnchor }}
 {{ $priorityWorkflowHub := .Site.GetPage "section" "client-workflow-systems" }}
-{{ $latest := first 3 (where .Site.RegularPages.ByLastmod.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons")) }}
+{{ $startHerePages := union (union $workflowAnchorPages $blueprintAnchorPages) $comparisonAnchorPages }}
+{{ $latest := first 3 (complement $startHerePages (where .Site.RegularPages.ByLastmod.Reverse "Section" "in" (slice "client-workflow-systems" "software-stack-blueprints" "workflow-comparisons"))) }}
 {{ $workflowCount := len (where .Site.RegularPages "Section" "client-workflow-systems") }}
 {{ $blueprintCount := len (where .Site.RegularPages "Section" "software-stack-blueprints") }}
 {{ $comparisonCount := len (where .Site.RegularPages "Section" "workflow-comparisons") }}

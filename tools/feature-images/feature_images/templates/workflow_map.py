@@ -30,6 +30,10 @@ def render_workflow_map(spec, context):
     top_y = 418
     connector_y = top_y + (card_height // 2)
     last_card_x = start_x + ((len(items) - 1) * (card_width + gap))
+    # One label size per image, reduced until every label keeps equal side padding.
+    label_font = fonts["panel_title"]
+    while label_font.size > 30 and any(draw.textbbox((0, 0), item["label"], font=label_font)[2] > card_width - 56 for item in items):
+        label_font = label_font.font_variant(size=label_font.size - 1)
     draw.line(
         (start_x + (card_width // 2), connector_y, last_card_x + (card_width // 2), connector_y),
         fill=palette["accent_soft"],
@@ -41,7 +45,7 @@ def render_workflow_map(spec, context):
         fill = [palette["accent_soft"], palette["secondary_soft"], palette["warm_soft"], palette["good_soft"]][index % 4]
         helpers["rounded_box"](draw, box, fill=fill, outline=palette["stroke"], width=2, radius=28)
         helpers["pill"](draw, (x + 24, top_y + 24, x + 148, top_y + 68), palette["frame"], item["kicker"], fonts["pill"], palette["muted"])
-        draw.text((x + 28, top_y + 88), item["label"], font=fonts["panel_title"], fill=palette["ink"])
+        draw.text((x + 28, top_y + 88), item["label"], font=label_font, fill=palette["ink"])
         if index < len(items) - 1:
             draw.line((x + card_width, connector_y, x + card_width + gap, connector_y), fill=palette["accent"], width=8)
             draw.ellipse((x + card_width + gap - 11, connector_y - 11, x + card_width + gap + 11, connector_y + 11), fill=palette["accent"])

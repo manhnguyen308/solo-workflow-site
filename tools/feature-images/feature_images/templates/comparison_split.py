@@ -25,13 +25,17 @@ def render_comparison_split(spec, context):
             y = box[1] + 170 + (index * 92)
             helpers["rounded_box"](draw, (box[0] + 30, y, box[2] - 30, y + 70), fill="#ffffff", outline=palette["stroke"], width=2, radius=22)
             draw.text((box[0] + 54, y + 19), item["label"], font=fonts["card_title"], fill=palette["ink"])
-            helpers["pill"](draw, (box[2] - 182, y + 14, box[2] - 32, y + 56), pill_fill, item["note"], fonts["small"], pill_text)
+            helpers["pill"](draw, (box[2] - 182, y + 14, box[2] - 32, y + 56), pill_fill, item["note"], fonts["small"], pill_text, anchor="right")
 
     draw.line((800, 416, 800, 540), fill=palette["stroke"], width=3)
     draw.line((800, 608, 800, 716), fill=palette["stroke"], width=3)
-    helpers["pill"](draw, (754, 540, 846, 608), palette["frame"], "vs", fonts["card_title"], palette["muted"])
+    helpers["pill"](draw, (754, 540, 846, 608), palette["frame"], "vs", fonts["card_title"], palette["muted"], anchor="center")
 
-    decision_box = (344, 754, 1256, 800)
+    decision_box = (250, 754, 1350, 800)
     helpers["rounded_box"](draw, decision_box, fill=palette["frame"], outline=palette["stroke"], width=2, radius=28)
-    draw.text((382, 768), spec["decision"]["title"], font=fonts["pill"], fill=palette["ink"])
-    helpers["draw_text_block"](draw, spec["decision"]["body"], fonts["small"], palette["muted"], (580, 760, 620, 24), 4, report, "comparison decision", max_lines=1)
+    title_origin = (288, 768)
+    draw.text(title_origin, spec["decision"]["title"], font=fonts["pill"], fill=palette["ink"])
+    # Start the body after the label and share its baseline so the two never overlap.
+    body_x = draw.textbbox(title_origin, spec["decision"]["title"], font=fonts["pill"])[2] + 28
+    body_y = title_origin[1] + fonts["pill"].getmetrics()[0] - fonts["small"].getmetrics()[0]
+    helpers["draw_text_block"](draw, spec["decision"]["body"], fonts["small"], palette["muted"], (body_x, body_y, decision_box[2] - 36 - body_x, 26), 4, report, "comparison decision", max_lines=1)
