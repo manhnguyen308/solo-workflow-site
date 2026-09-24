@@ -147,6 +147,7 @@ Read this file first for any future Codex pass in this repo. It contains the dur
 - See `project-docs/BUILD-VALIDATION.md` for full build/deploy details.
 - `public/` is generated build output and should not be committed in normal passes. Cloudflare Pages builds from source with `bash tools/build-cloudflare.sh` and writes the deploy artifact to `public/` during the build.
 - If rendered output looks stale, rebuild before assuming the content is wrong.
+- For any reader-visible change (layout, CSS, images, templates, or content), start the local Hugo server as described under "Local preview" in `README.md`, then check the affected pages in your own built-in browser before committing. Check phone (375px), tablet (768px), and desktop widths when layout or images are involved. A passing build alone does not count as visual verification.
 - Define the success check for the pass before or during implementation so verification is concrete rather than implied.
 - Prefer verification that proves the requested outcome directly, not just that files changed.
 

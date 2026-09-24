@@ -54,6 +54,13 @@ tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/
 
 Note: the vendored binary is Windows-only and cannot run on native Linux. See `project-docs/BUILD-VALIDATION.md` for the full build and validation reference.
 
+Local preview (Hugo Extended 0.160.x):
+```bash
+hugo server --disableFastRender
+```
+
+Then open `http://localhost:1313/`. If a CSS change does not show up, hard-reload the page (Ctrl+Shift+R) because the browser can keep the old stylesheet.
+
 Cloudflare Pages build:
 ```bash
 bash tools/build-cloudflare.sh
