@@ -19,7 +19,7 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 - `archetypes/`: content templates for workflow, guide, comparison, template, glossary, and FAQ pages.
 - `static/`: static assets and generated defaults.
 - `public/`: generated Hugo output for local verification; ignored in git because Cloudflare Pages builds from source.
-- `tools/hugo/`: vendored Hugo binaries.
+- `tools/hugo/`: legacy vendored Hugo binaries (not used for validation).
 - `tools/feature-images/`: Python/Pillow feature image generation workflow.
 - `project-docs/`: non-core operating and reference docs.
 
@@ -34,7 +34,7 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 
 ## Operating docs
 
-- `AGENT.md` — permanent operating rules; read first for every session
+- `CLAUDE.md` — permanent operating rules; read first for every session
 - `TRACKER.md` — current state, recent passes, next actions; read second
 - `project-docs/CONTENT_OPERATIONS.md` — content cluster roadmap and publishing rules
 - `project-docs/NEW_FEATURES_ROADMAP.md` — feature queue for daily improvement passes
@@ -47,12 +47,12 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 
 ## Build commands
 
-Standard local build:
+Standard local build (system Hugo Extended 0.160.1, the version Cloudflare Pages uses):
 ```bash
-tools/hugo/v0.128.0/hugo.exe --gc --minify --baseURL https://soloopsguide.com/
+hugo --gc --minify --baseURL https://soloopsguide.com/
 ```
 
-Note: the vendored binary is Windows-only and cannot run on native Linux. See `project-docs/BUILD-VALIDATION.md` for the full build and validation reference.
+Run `hugo version` first and report the exact version used. The vendored `tools/hugo/v0.128.0/hugo.exe` is a legacy binary and is no longer the source of truth. See `project-docs/BUILD-VALIDATION.md` for the full build and validation reference.
 
 Local preview (Hugo Extended 0.160.x):
 ```bash

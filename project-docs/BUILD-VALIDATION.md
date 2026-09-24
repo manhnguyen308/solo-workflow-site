@@ -30,7 +30,7 @@ If a system Hugo is not available: report the exact blocker. Mark the change as 
 - Pure markdown content changes with no template or shortcode additions.
 - Front matter edits only (title, description, slug, etc.).
 - Static image additions to `static/images/`.
-- Documentation-only changes (AGENT.md, TRACKER.md, project-docs/).
+- Documentation-only changes (CLAUDE.md, TRACKER.md, project-docs/).
 
 ## Cloudflare Pages deployment
 

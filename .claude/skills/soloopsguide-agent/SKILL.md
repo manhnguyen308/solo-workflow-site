@@ -27,9 +27,9 @@ Use this skill for safe production work in the SoloOpsGuide Hugo repo. It turns 
 
 ## Read First
 
-1. `AGENT.md`.
+1. `CLAUDE.md`.
 2. `TRACKER.md`.
-3. Task-specific docs from the `AGENT.md` "When to read what" table.
+3. Task-specific docs from the `CLAUDE.md` "When to read what" table.
 
 Use these source-of-truth docs when relevant:
 
@@ -85,7 +85,7 @@ Use these source-of-truth docs when relevant:
 
 ## Targeted Exploration Rules
 
-- Start from `AGENT.md`, `TRACKER.md`, this skill, and task-specific docs from the active read list.
+- Start from `CLAUDE.md`, `TRACKER.md`, this skill, and task-specific docs from the active read list.
 - Use targeted file reads and exact-term grep against relevant files only.
 - Avoid broad repo scans, archive reads, generated output scans, and unrelated content exploration unless the current evidence requires them.
 - Use source-of-truth docs and existing local patterns before inventing a new workflow or abstraction.

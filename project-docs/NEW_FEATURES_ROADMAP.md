@@ -1,6 +1,6 @@
 # SoloOpsGuide New Features Roadmap
 
-A practical 5-phase roadmap for SoloOpsGuide improvements. Read `AGENT.md` and `TRACKER.md` first. Do not implement more than one feature per pass unless explicitly instructed.
+A practical 5-phase roadmap for SoloOpsGuide improvements. Read `CLAUDE.md` and `TRACKER.md` first. Do not implement more than one feature per pass unless explicitly instructed.
 
 ---
 
@@ -336,7 +336,7 @@ These ideas are excluded from the current roadmap. Do not add them until GSC dat
 
 ## 10. Implementation rules
 
-- Read `AGENT.md` and `TRACKER.md` before starting any feature.
+- Read `CLAUDE.md` and `TRACKER.md` before starting any feature.
 - Implement one feature per pass unless explicitly directed otherwise.
 - Every new page must have:
   - a clear support role (not a hub or cornerstone)
