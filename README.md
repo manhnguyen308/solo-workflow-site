@@ -17,6 +17,7 @@ Workflow-first Hugo site for freelancers and solo service businesses. The site i
 - `content/`: homepage, section hubs, launch pages, glossary/FAQ support, and trust pages.
 - `layouts/`: Hugo templates and reusable partials.
 - `archetypes/`: content templates for workflow, guide, comparison, template, glossary, and FAQ pages.
+- `assets/`: files processed by Hugo Pipes, including the site stylesheet `assets/css/main.css` (published with a content hash in its filename).
 - `static/`: static assets and generated defaults.
 - `public/`: generated Hugo output for local verification; ignored in git because Cloudflare Pages builds from source.
 - `tools/hugo/`: legacy vendored Hugo binaries (not used for validation).
@@ -59,7 +60,7 @@ Local preview (Hugo Extended 0.160.x):
 hugo server --disableFastRender
 ```
 
-Then open `http://localhost:1313/`. If a CSS change does not show up, hard-reload the page (Ctrl+Shift+R) because the browser can keep the old stylesheet.
+Then open `http://localhost:1313/`. The stylesheet URL changes whenever `assets/css/main.css` changes, so browsers pick up CSS edits without a hard reload.
 
 Cloudflare Pages build:
 ```bash

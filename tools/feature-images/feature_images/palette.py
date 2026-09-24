@@ -1,4 +1,4 @@
-# Colour tokens from the site's design system (`:root` in static/css/main.css).
+# Colour tokens from the site's design system (`:root` in assets/css/main.css).
 PAPER = "#FAF8F2"
 RULE = "#D7D1C4"
 INK = "#2A2620"
