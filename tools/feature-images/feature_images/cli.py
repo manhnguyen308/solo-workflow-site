@@ -4,40 +4,21 @@ import argparse
 from pathlib import Path
 
 from .canvas import create_canvas
-from .drawing import draw_text_block, linear_gradient, pill, rounded_box, shadowed_box
 from .exporter import ensure_output_path, export_image
-from .fonts import get_font_set
-from .palette import get_palette
+from .palette import PAPER
 from .specs import REPO_ROOT, get_spec, load_all_specs
-from .templates import TEMPLATES
+from .templates import render_editorial_cover
 from .validation import ValidationReport
 
 
 def build_context(spec: dict) -> dict:
-    image, draw = create_canvas()
-    palette = get_palette(spec.get("palette", "workflow"))
-    fonts = get_font_set()
-    report = ValidationReport(spec["id"])
-    linear_gradient(image, palette["bg_top"], palette["bg_bottom"])
-    return {
-        "image": image,
-        "draw": draw,
-        "palette": palette,
-        "fonts": fonts,
-        "report": report,
-        "helpers": {
-            "draw_text_block": draw_text_block,
-            "pill": pill,
-            "rounded_box": rounded_box,
-            "shadowed_box": shadowed_box,
-        },
-    }
+    image, draw = create_canvas(background=PAPER)
+    return {"image": image, "draw": draw, "report": ValidationReport(spec["id"])}
 
 
 def render_spec(spec: dict) -> Path:
-    renderer = TEMPLATES[spec["layout"]]
     context = build_context(spec)
-    renderer(spec, context)
+    render_editorial_cover(spec, context)
     output_path = ensure_output_path(REPO_ROOT / spec["output_path"], REPO_ROOT)
     export_image(context["image"], output_path)
     context["report"].print_warnings()

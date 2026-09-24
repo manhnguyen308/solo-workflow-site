@@ -1,3 +1,4 @@
+from functools import lru_cache
 from pathlib import Path
 
 from PIL import ImageFont
@@ -5,52 +6,30 @@ from PIL import ImageFont
 
 WINDOWS_FONTS = Path("C:/Windows/Fonts")
 
-LINUX_BOLD_FONTS = [
-    "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
-    "/usr/share/fonts/truetype/ubuntu/Ubuntu-B.ttf",
-]
+# Windows faces come first: Georgia and Segoe UI are the fallbacks in the site's own
+# font stacks. Liberation/DejaVu only keep Linux runs working; they look different,
+# so publish images generated on Windows.
+FACES = {
+    "title": (
+        ["georgiab.ttf"],
+        ["/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"],
+    ),
+    "label": (
+        ["seguisb.ttf", "segoeuib.ttf", "arialbd.ttf"],
+        ["/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"],
+    ),
+    "bold": (
+        ["segoeuib.ttf", "arialbd.ttf"],
+        ["/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf", "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"],
+    ),
+}
 
-LINUX_REGULAR_FONTS = [
-    "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-    "/usr/share/fonts/truetype/ubuntu/Ubuntu-R.ttf",
-]
 
-LINUX_SERIF_BOLD_FONTS = [
-    "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
-    "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
-]
-
-
-def _load_font(candidates: list[str], size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    for candidate in candidates:
-        path = WINDOWS_FONTS / candidate
+@lru_cache(maxsize=None)
+def font(face: str, size: int) -> ImageFont.FreeTypeFont:
+    windows_names, linux_paths = FACES[face]
+    candidates = [WINDOWS_FONTS / name for name in windows_names] + [Path(path) for path in linux_paths]
+    for path in candidates:
         if path.exists():
             return ImageFont.truetype(str(path), size=size)
-    return ImageFont.load_default()
-
-
-def _load_font_cross_platform(windows_candidates: list[str], linux_candidates: list[str], size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
-    for candidate in windows_candidates:
-        path = WINDOWS_FONTS / candidate
-        if path.exists():
-            return ImageFont.truetype(str(path), size=size)
-    for candidate in linux_candidates:
-        path = Path(candidate)
-        if path.exists():
-            return ImageFont.truetype(str(path), size=size)
-    return ImageFont.load_default()
-
-
-def get_font_set() -> dict[str, ImageFont.FreeTypeFont | ImageFont.ImageFont]:
-    return {
-        "eyebrow": _load_font_cross_platform(["arialbd.ttf", "segoeuib.ttf"], LINUX_BOLD_FONTS, 24),
-        "title": _load_font_cross_platform(["georgiab.ttf", "arialbd.ttf"], LINUX_SERIF_BOLD_FONTS + LINUX_BOLD_FONTS, 54),
-        "panel_title": _load_font_cross_platform(["georgiab.ttf", "arialbd.ttf"], LINUX_SERIF_BOLD_FONTS + LINUX_BOLD_FONTS, 40),
-        "subtitle": _load_font_cross_platform(["arial.ttf", "segoeui.ttf"], LINUX_REGULAR_FONTS, 28),
-        "card_title": _load_font_cross_platform(["arialbd.ttf", "segoeuib.ttf"], LINUX_BOLD_FONTS, 28),
-        "card_body": _load_font_cross_platform(["arial.ttf", "segoeui.ttf"], LINUX_REGULAR_FONTS, 23),
-        "pill": _load_font_cross_platform(["arialbd.ttf", "segoeuib.ttf"], LINUX_BOLD_FONTS, 22),
-        "small": _load_font_cross_platform(["arial.ttf", "segoeui.ttf"], LINUX_REGULAR_FONTS, 20),
-    }
+    raise FileNotFoundError(f"No font found for '{face}'. Tried: {', '.join(str(path) for path in candidates)}")

@@ -3,7 +3,7 @@ title = "Workflow tool comparisons for solo operators"
 description = "Resolve one workflow or system choice at a time, including record ownership, stack shape, delivery workspace, review, billing, and booking."
 summary = "Choose the comparison that matches one unresolved decision, make the choice, and continue to the relevant workflow or implementation guide."
 feature_image = "/images/features/hubs/workflow-comparisons.webp"
-feature_image_alt = "Illustration with two contrasted decision panels for workflow tools."
+feature_image_alt = "Cover titled “Workflow Tool Comparisons” with tiles for CRM vs PM, Notion vs ClickUp, Booking tools, and Billing home."
 +++
 
 Use a comparison after you can name one unresolved workflow or system choice. If the client process itself is still unclear, begin with the [freelance client workflow system](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If you need a complete stack model, use the [software stack blueprints](/software-stack-blueprints/).

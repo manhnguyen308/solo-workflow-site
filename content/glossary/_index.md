@@ -2,7 +2,7 @@
 title = "Glossary"
 description = "Plain-English workflow terms that help clarify a decision and route solo operators back to the relevant implementation page."
 feature_image = "/images/features/hubs/glossary.webp"
-feature_image_alt = "Illustration with definition cards and reference panels."
+feature_image_alt = "Cover titled “Workflow Operations Glossary” with tiles for System of record, Workflow handoff, Approval owner, and Client dependency."
 +++
 
 Use this glossary when one term is preventing a workflow or stack decision. Read the definition, apply it to the affected stage, and continue to the linked process when the term is clear.

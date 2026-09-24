@@ -1,88 +1,63 @@
 from __future__ import annotations
 
-from PIL import ImageColor
+import re
+
+from .fonts import font
 
 
-def rounded_box(draw, box, fill, outline=None, width=1, radius=26):
-    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=width)
+def _tokens(text, break_hyphens):
+    # (piece, joiner) pairs; with break_hyphens, "Proposal-to-Contract" can wrap after each hyphen.
+    tokens = []
+    for word in text.split():
+        pieces = re.findall(r"[^-]+-?|-", word) if break_hyphens else [word]
+        for index, piece in enumerate(pieces):
+            tokens.append((piece, "" if index else " "))
+    return tokens
 
 
-def shadowed_box(draw, box, fill, outline, shadow, radius=26, offset=8):
-    x1, y1, x2, y2 = box
-    draw.rounded_rectangle((x1, y1 + offset, x2, y2 + offset), radius=radius, fill=shadow)
-    draw.rounded_rectangle(box, radius=radius, fill=fill, outline=outline, width=3)
-
-
-def pill(draw, box, fill, text, font, text_fill, anchor="left", padding=18):
-    text_box = draw.textbbox((0, 0), text, font=font)
-    text_width = text_box[2] - text_box[0]
-    text_height = text_box[3] - text_box[1]
-    # Grow the pill away from its anchored edge when the text does not fit.
-    needed = text_width + (padding * 2)
-    if needed > box[2] - box[0]:
-        if anchor == "right":
-            box = (box[2] - needed, box[1], box[2], box[3])
-        elif anchor == "center":
-            grow = (needed - (box[2] - box[0])) / 2
-            box = (box[0] - grow, box[1], box[2] + grow, box[3])
-        else:
-            box = (box[0], box[1], box[0] + needed, box[3])
-    draw.rounded_rectangle(box, radius=(box[3] - box[1]) // 2, fill=fill)
-    x = box[0] + ((box[2] - box[0]) - text_width) / 2
-    y = box[1] + ((box[3] - box[1]) - text_height) / 2 - 2
-    draw.text((x, y), text, font=font, fill=text_fill)
-
-
-def connector(draw, start, end, color, width=8):
-    draw.line([start, end], fill=color, width=width)
-    draw.ellipse((end[0] - 10, end[1] - 10, end[0] + 10, end[1] + 10), fill=color)
-
-
-def wrap_text(draw, text, font, max_width):
-    words = text.split()
+def wrap_text(draw, text, text_font, max_width, break_hyphens=False):
     lines: list[str] = []
     current = ""
-    for word in words:
-        trial = word if not current else f"{current} {word}"
-        trial_box = draw.textbbox((0, 0), trial, font=font)
-        if (trial_box[2] - trial_box[0]) <= max_width:
+    for piece, joiner in _tokens(text, break_hyphens):
+        trial = piece if not current else f"{current}{joiner}{piece}"
+        if draw.textlength(trial, font=text_font) <= max_width:
             current = trial
         else:
             if current:
                 lines.append(current)
-            current = word
+            current = piece
     if current:
         lines.append(current)
     return lines
 
 
-def draw_text_block(draw, text, font, fill, bounds, line_gap, report, warning_label, max_lines=None):
-    x, y, width, height = bounds
-    lines = wrap_text(draw, text, font, width)
-    if max_lines is not None and len(lines) > max_lines:
-        report.warn(f"{warning_label} exceeded {max_lines} lines; truncating.")
-        lines = lines[:max_lines]
-        if lines:
-            lines[-1] = lines[-1].rstrip(". ") + "..."
-
-    metrics = draw.textbbox((0, 0), "Ag", font=font)
-    line_height = metrics[3] - metrics[1]
-    # Measure from the draw origin so the font's top bearing counts toward the box.
-    total_height = metrics[3] + ((line_height + line_gap) * max(0, len(lines) - 1))
-    if total_height > height:
-        report.warn(f"{warning_label} exceeded box height.")
-
-    cursor_y = y
-    for line in lines:
-        draw.text((x, cursor_y), line, font=font, fill=fill)
-        cursor_y += line_height + line_gap
+def lines_fit(draw, lines, text_font, width, max_lines):
+    if len(lines) > max_lines or max(draw.textlength(line, font=text_font) for line in lines) > width:
+        return False
+    # Reject a lone symbol such as "+" or "&" stranded on its own line.
+    return len(lines) == 1 or all(len(line) > 2 for line in lines)
 
 
-def linear_gradient(image, top_color, bottom_color):
-    width, height = image.size
-    top_rgb = ImageColor.getrgb(top_color)
-    bottom_rgb = ImageColor.getrgb(bottom_color)
-    for y in range(height):
-        ratio = y / max(height - 1, 1)
-        color = tuple(int(top_rgb[i] + (bottom_rgb[i] - top_rgb[i]) * ratio) for i in range(3))
-        image.paste(color, (0, y, width, y + 1))
+def fit_text(draw, text, face, width, start, floor, max_lines, step=2):
+    """Largest size from `start` down to `floor` where `text` wraps into `max_lines` within `width`.
+
+    Whole words are tried first; breaking after hyphens is the fallback.
+    Returns (font, lines, fits); `fits` is False when even `floor` is too big.
+    """
+    for break_hyphens in (False, True):
+        size = start
+        while size >= floor:
+            text_font = font(face, size)
+            lines = wrap_text(draw, text, text_font, width, break_hyphens)
+            if lines_fit(draw, lines, text_font, width, max_lines):
+                return text_font, lines, True
+            size -= step
+    text_font = font(face, floor)
+    return text_font, wrap_text(draw, text, text_font, width, True), False
+
+
+def tracked_text(draw, xy, text, text_font, fill, spacing):
+    x, y = xy
+    for char in text:
+        draw.text((x, y), char, font=text_font, fill=fill)
+        x += draw.textlength(char, font=text_font) + spacing

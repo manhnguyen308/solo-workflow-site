@@ -2,7 +2,7 @@
 title = "Client workflow templates and checklists for freelancers and solo operators"
 description = "Workflow checklists and templates for solo operators covering onboarding, scope and handoff, delivery, review routing, invoicing, and weekly operations."
 feature_image = "/images/features/hubs/templates-checklists.webp"
-feature_image_alt = "Checklist illustration with structured task cards for repeatable client operations."
+feature_image_alt = "Cover titled “Templates and Checklists” with tiles for Onboarding, Weekly ops, Invoice, and Stack audit."
 +++
 
 Use a template or checklist after the operating rule is clear and you need a repeatable record for one trigger, such as kickoff, review, billing, or closeout.

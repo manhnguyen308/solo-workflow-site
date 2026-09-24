@@ -3,7 +3,7 @@ title = "Client workflow systems for freelancers and solo operators"
 description = "Stage-by-stage client workflow guides for freelancers and solo operators fixing messy client handoffs from inquiry to final payment."
 summary = "Start here when the whole client lifecycle feels messy and you need to identify which stage, handoff, or approval point is failing."
 feature_image = "/images/features/hubs/client-workflow-systems.webp"
-feature_image_alt = "Connected stages across a client delivery workflow."
+feature_image_alt = "Cover titled “Client Workflow Systems” with tiles for Intake, Delivery, Billing, and Closeout."
 +++
 
 Use this collection when the sequence between inquiry, proposal, onboarding, delivery, approval, billing, or closeout feels scattered or inconsistent. It helps you locate the broken stage and choose the guide that addresses it.

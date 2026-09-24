@@ -3,7 +3,7 @@ title = "Software stack blueprints for solo operators"
 description = "Choose a lean operating stack, set buying boundaries, plan a two-person setup, or consolidate tools after the client workflow is clear."
 summary = "Choose a stack model after the workflow is clear, then use the guide that matches setup, delegation, purchase, or migration work."
 feature_image = "/images/features/hubs/software-stack-blueprints.webp"
-feature_image_alt = "Illustration with layered system panels and planning blocks."
+feature_image_alt = "Cover titled “Software Stack Blueprints” with tiles for Lean stack, VA setup, Overbuying, and Migration."
 +++
 
 Use this collection after you can describe the client workflow and the remaining problem is how systems should support it. A blueprint defines tool roles, ownership, and upgrade conditions. It is not a shopping list.

@@ -17,7 +17,7 @@ This directory contains the reusable Python-based feature-image workflow for Sol
 - `requirements.txt`: Python dependency list
 - `feature_images/`: shared engine, templates, validation, and exporter code
 - `feature_images/data/`: per-image JSON configs
-- `feature_images/templates/`: reusable layout templates
+- `feature_images/templates/`: the shared editorial cover template; `layout` picks its drawing
 
 ## Dependency check
 
@@ -66,7 +66,7 @@ C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/featu
 3. Keep the output filename stable and SEO-friendly.
 4. Regenerate the image with `generate_one.py --id <slug>`.
 
-Use a custom per-image generator only when a shared template cannot handle the composition cleanly.
+See `project-docs/FEATURE-IMAGE-GUIDELINES.md` for which fields each layout draws.
 
 ## Output rules
 

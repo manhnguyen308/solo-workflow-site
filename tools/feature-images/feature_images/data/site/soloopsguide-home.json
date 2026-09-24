@@ -5,7 +5,7 @@
   "palette": "hub",
   "output_path": "static/images/features/site/soloopsguide-home.png",
   "eyebrow": "Solo operations",
-  "title": "SoloOpsGuide",
+  "title": "Workflow-first guidance for solo operators",
   "subtitle": "Workflow systems, stack blueprints, comparisons, and templates for freelancers and solo operators.",
   "anchor": {
     "title": "Start with the workflow",

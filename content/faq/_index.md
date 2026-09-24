@@ -2,7 +2,7 @@
 title = "FAQ"
 description = "Short answers for solo workflow, stack setup, onboarding, billing, migration, and rule-based process questions."
 feature_image = "/images/features/hubs/faq.webp"
-feature_image_alt = "Illustration with layered answer cards for workflow setup questions."
+feature_image_alt = "Cover titled “Workflow Operations FAQ” with tiles for Stack setup, Maintenance, Client silence, and Missing input."
 +++
 
 Use this collection when one specific workflow question is blocking your next action. Pick the answer that matches the situation, apply its immediate guidance, and continue to the linked workflow or worksheet when you need the full process.

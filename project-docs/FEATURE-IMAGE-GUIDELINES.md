@@ -5,29 +5,30 @@ Read this before any feature image creation, regeneration, or troubleshooting. A
 ## Approved workflow
 
 1. Create or update a JSON data config under `tools/feature-images/feature_images/data/<category>/`.
-2. Run: `python3 tools/feature-images/generate_one.py --id <id>`
+2. Run on Windows: `C:\Users\vboxuser\AppData\Local\Programs\Python\Python312\python.exe tools/feature-images/generate_one.py --id <id>`
 3. Output goes to: `static/images/features/<category>/<id>.webp`
 4. Update the front matter `feature_image` field on the content page to match the output path.
-5. Verify: confirm the `.webp` file was created, is a reasonable file size (8K–25K), and produced no warnings.
+5. Verify: confirm the `.webp` file was created, is a reasonable file size (roughly 15K–35K), and produced no warnings.
 
-## Layout types
+## Cover style (2026-09-25)
 
-| Layout | Use case | Key fields |
-| --- | --- | --- |
-| `checklist_card` | Templates / checklists | `eyebrow`, `title`, `subtitle`, `trigger` (label + note), `steps` (4 items: label + tag) |
-| `hub_overview` | Hub / navigation pages | `eyebrow`, `title`, `subtitle`, `anchor` (title + body), `modules` (4 items: kicker + title + detail) |
-| `faq_card` | FAQ pages | `eyebrow`, `title`, `subtitle`, `problem` (box text), `routes` (4 items) |
-| `concept_map` | Glossary / conceptual pages | `eyebrow`, `title`, `subtitle`, `concept` (center label), `attributes` (2x2 grid) |
-| `comparison_split` | Comparison pages | `eyebrow`, `title`, `subtitle`, `left` / `right` (label + criteria) |
-| `stack_blueprint` | Blueprint pages | `eyebrow`, `title`, `subtitle`, `layers` (stack rows) |
-| `workflow_map` | Workflow pages (if used) | `eyebrow`, `title`, `subtitle`, `stages` (sequence) |
-| `timeline_cover` | Timeline / sequential | `eyebrow`, `title`, `subtitle`, `phases` |
+Every image is an editorial cover in the site's own palette: warm paper background, thin rule frame, a small navy page-type label with an amber accent bar, a large Georgia Bold title, `soloopsguide.com` at the bottom, and one simple navy and amber line drawing on the right. The shared template is `tools/feature-images/feature_images/templates/editorial_cover.py`; colours live in `palette.py` and fonts in `fonts.py`.
 
-## Palette options
+- The label comes from `category`: workflows → WORKFLOW, comparisons → COMPARISON, templates → TEMPLATE, glossary → GLOSSARY, faq → FAQ, hubs → GUIDE HUB, blueprints → STACK BLUEPRINT, site → SOLOOPSGUIDE.
+- The title comes from `title`. It is set as large as possible (112px down to 72px) in up to three lines, so keep it short, around 40 characters.
+- `layout` picks the drawing and the fields it reads. Other fields in older configs (`subtitle`, `eyebrow`, `palette`, `anchor`, `steps`, and so on) are not drawn.
 
-- `workflow` — teal/green, used for client workflow and operations pages
-- `blueprint` — blue/slate, used for stack and system-of-record pages
-- `comparison` — amber/neutral, used for comparison pages
+| Layout | Use case | Drawing | Fields drawn |
+| --- | --- | --- | --- |
+| `workflow_map` | Workflow pages | Four numbered steps on a vertical line | `items[].label` |
+| `comparison_split` | Comparison pages | Two option panels with a "vs" badge | `left.kicker`, `right.kicker` |
+| `checklist_card` | Templates and checklists | Four checklist rows, three ticked | none |
+| `faq_card` | FAQ pages | Large question mark card | none |
+| `concept_map` | Glossary pages | Definition card | `concept` |
+| `hub_overview` | Hubs, bundles, homepage | 2x2 tiles, first one highlighted | `modules[].title` (first four) |
+| `stack_blueprint` | Blueprint pages | Three stacked layers, base highlighted | `stack_layers[].title` (base first) |
+
+Labels inside a drawing share one size per image and shrink or wrap to fit. The generator warns when a title or label cannot fit at its smallest size; shorten the text rather than ignoring the warning.
 
 ## Path conventions
 
@@ -37,16 +38,6 @@ Read this before any feature image creation, regeneration, or troubleshooting. A
 - Templates: `static/images/features/templates/<id>.webp`
 - Glossary: `static/images/features/glossary/<id>.webp`
 - FAQ: `static/images/features/faq/<id>.webp`
-
-## Text overflow fix (applied 2026-04-22)
-
-The `checklist_card` trigger box is 294px wide. Labels longer than ~294px previously overflowed. Fix applied:
-- `draw.text` replaced with `draw_text_block` for both trigger label and step labels.
-- Trigger label uses `max_lines=2`, `width=294`, `y=490`.
-- Trigger note moved to `y=578`.
-- Step labels use `draw_text_block` with `width=680`, `max_lines=1`.
-
-When writing trigger label text for `checklist_card`, keep it under ~35 characters per line.
 
 ## Approved raster gate
 
@@ -58,22 +49,20 @@ The gate file `data/feature_image_raster_preferences.json` controls which pages 
 
 Do not add new pages to this gate without visual review.
 
-## Typeface and layout rules (applied 2026-09-24)
+## Typeface and output rules
 
-- Generate on Windows, where `fonts.py` finds Georgia Bold and Arial. On Linux it falls back to Liberation fonts, which look different and are narrower, so mixed runs produce a visibly mixed library. All 62 WebPs were regenerated on Windows on 2026-09-24.
-- `pill()` grows to fit its text. Pass `anchor="right"` for pills pinned to a right edge and `anchor="center"` for centred ones; the default grows rightward.
-- `draw_text_block` height checks measure from the draw origin, so a warning now means the text really leaves its box. Keep bounds inside the visible card.
-- `checklist_card` and `workflow_map` pick one label size per image, shrinking from 40px until every label fits. Very long labels still end up smaller, so keep them short.
+- Generate on Windows, where `fonts.py` finds Georgia Bold and Segoe UI (both are fallbacks in the site's own font stacks). On Linux it falls back to Liberation fonts, which look different, so publish only Windows-generated images.
 - An `output_path` ending in `.png` exports PNG. Use it only for social share images (currently `site/soloopsguide-home.png`); page and card images stay WebP.
+- `feature_image_alt` should describe the cover as drawn, for example: Cover titled “Stack Decision Ready?” with a checklist drawing.
 
 ## QA checklist for new images
 
 - [ ] JSON data config created in the correct `data/<category>/` directory.
 - [ ] `generate_one.py --id <id>` ran with no warnings.
 - [ ] Output `.webp` file exists at the expected path.
-- [ ] File size is reasonable (typically 8K–25K; very small may indicate generation failure).
+- [ ] File size is reasonable (typically 15K–35K; very small may indicate generation failure).
 - [ ] Front matter `feature_image` field updated on the content page.
-- [ ] `feature_image_alt` describes the image content specifically (not generic).
+- [ ] `feature_image_alt` describes the cover as drawn: its title and drawing.
 - [ ] No other approved images were accidentally regenerated or overwritten.
 
 ## What not to do
