@@ -474,6 +474,14 @@ select {
   transform: translateY(-1px);
 }
 
+/* Keep the visually hidden submit button at 1px; the button padding above widened it past the viewport on phones */
+.site-search-form button.sr-only {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+}
+
 .button-secondary {
   background: rgba(255, 255, 255, 0.92);
   border-color: rgba(23, 48, 66, 0.12);
