@@ -7,6 +7,10 @@
 {{ $source := $page.Params.feature_image }}
 {{ if not $source }}
   {{ $source = $page.Site.Params.defaultImageSource }}
+  {{/* Pages without their own image share the homepage cover, so describe that cover. */}}
+  {{ with $page.Site.Params.defaultImageAlt }}
+    {{ $alt = . }}
+  {{ end }}
 {{ end }}
 
 {{ if $source }}

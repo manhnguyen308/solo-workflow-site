@@ -2078,40 +2078,26 @@ body {
   display: block;
 }
 
-.site-brand-icon .bm-stroke {
-  fill: none;
-  stroke: #1F3A5F;
-  stroke-width: 2.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.site-brand-icon .bm-ink { fill: #1F3A5F; }
-.site-brand-icon .bm-teal { fill: #5C8499; }
-.site-brand-icon .bm-disc { fill: var(--paper); }
-.site-brand-icon .bm-num {
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  font-size: 6.6px;
-  font-weight: 700;
-  fill: #1F3A5F;
-}
-
 .site-brand-copy {
   display: flex;
   flex-direction: column;
 }
 
 .site-brand-name {
-  color: #0f172a;
+  color: var(--ink);
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.015em;
+}
+
+.site-brand-accent {
+  color: var(--brand);
 }
 
 .site-brand-tagline {
   margin-top: 0.125rem;
-  color: #64748b;
+  color: var(--ink-soft);
   font-size: 13px;
   line-height: 1.35;
 }
