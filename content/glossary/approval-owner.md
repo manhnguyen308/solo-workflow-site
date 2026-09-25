@@ -1,12 +1,12 @@
 +++
 title = "Approval owner"
 description = "An approval owner is the person responsible for giving the final go-ahead on deliverables, feedback, scope changes, or milestone decisions."
-summary = "Use this definition to clarify who can approve what in a workflow and where decisions can stall when that role stays vague."
+summary = "Who can approve what at each stage, and where decisions stall when nobody is named."
 feature_image = "/images/features/glossary/approval-owner.webp"
-feature_image_alt = "Cover titled “Approval Owner” with a definition card for “Decision holder”."
+feature_image_alt = 'Cover titled "Approval Owner" with a definition card for "Decision holder".'
 draft = false
 date = 2026-04-02T00:00:00Z
-lastmod = 2026-07-09T00:00:00Z
+lastmod = 2026-08-02T00:00:00Z
 category = "glossary"
 tags = ["definition", "approval-owner", "workflow"]
 page_type = "glossary"
@@ -69,7 +69,7 @@ If the role changes by stage, document each assignment instead of carrying one a
 ## Fix the affected stage
 
 - Before kickoff, use [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) and the [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
-- During proposal review, use [Proposal revision and approval workflow for freelancers and solo service businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
-- During recurring client communication, use [Client status update workflow for freelancers and consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- During proposal review, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- During recurring client communication, use [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - During scope changes, use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 - At milestone review, use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).

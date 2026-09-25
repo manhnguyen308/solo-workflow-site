@@ -4,10 +4,10 @@ slug = "software-stack-blueprint-solo-freelancer-lean-budget"
 description = "Build a lean solo-freelancer stack by assigning one role to each system, checking total cost, and adding tools only for observed workflow pressure."
 summary = "Define a small operating stack, assign one source of truth, evaluate total cost, and add complexity only when a current workflow requires it."
 feature_image = "/images/features/blueprints/solo-freelancer-lean-budget.webp"
-feature_image_alt = "Cover titled “Software Stack Blueprint” with a three-layer stack: Core system, Workflow support, and Add later."
+feature_image_alt = 'Cover titled "Software Stack Blueprint" with a three-layer stack: Core system, Workflow support, and Add later.'
 draft = false
 date = 2026-03-12T00:00:00Z
-lastmod = 2026-09-03T00:00:00Z
+lastmod = 2026-09-19T00:00:00Z
 category = "software-stack-blueprints"
 tags = ["stack-planning", "budget", "workflow-systems"]
 page_type = "guide"
@@ -108,7 +108,7 @@ More structure is justified when the present system cannot support a required co
 - a repeated manual transfer causes records to disagree;
 - the existing tool cannot produce a record required by an agreement or policy.
 
-These are workflow conditions, not growth badges. Add the narrowest capability that resolves the condition.
+Add the narrowest capability that resolves the condition.
 
 ## Choose the next implementation step
 

@@ -1,12 +1,12 @@
 +++
 title = "Proposal-to-contract handoff workflow setup"
-description = "A proposal-to-contract handoff workflow for freelancers and consultants who need scope, timeline, and payment terms aligned before kickoff."
-summary = "Use this guide to turn discovery context into a review-ready proposal and contract package with clearer scope, ownership, and kickoff readiness."
+description = "Align scope, exclusions, milestone dates, acceptance, and invoice events in one proposal and contract package before client review and kickoff."
+summary = "Run a pre-signature check so both sides agree on what done means, what is excluded, and which event triggers each invoice."
 feature_image = "/images/features/workflows/proposal-contract-handoff.webp"
-feature_image_alt = "Cover titled “Proposal-to-Contract Handoff” with numbered steps: Draft, Review, Sign, and Kickoff."
+feature_image_alt = 'Cover titled "Proposal-to-Contract Handoff" with numbered steps: Draft, Review, Sign, and Kickoff.'
 draft = false
 date = 2026-03-03T00:00:00Z
-lastmod = 2026-09-02T00:00:00Z
+lastmod = 2026-09-16T00:00:00Z
 category = "client-workflow-systems"
 tags = ["handoff", "proposal", "contract", "workflow"]
 page_type = "guide"
@@ -20,11 +20,9 @@ featured = true
 
 A proposal-to-contract handoff turns discovery decisions into a review-ready scope, timeline, and commercial record. When those details remain implicit, kickoff can begin with different assumptions about the work.
 
-Its job is to produce a review-ready proposal and contract package. For proposal comments, revisions, and approval after the package is sent, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+The stage starts once intake has produced a qualified lead and ends when a review-ready proposal and contract package exists. Comments, revisions, and approval after the package is sent belong to the [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 
-Use this workflow when clients question what was included after work starts or when discovery details do not carry cleanly into execution.
-
-Use it after intake has produced a qualified lead record and before the package enters proposal review and approval.
+Fix this stage when clients question what was included after work starts, or when discovery details do not carry into execution.
 
 This workflow organizes operational handoff. It does not supply contract language; use qualified legal guidance when the agreement itself needs review.
 
@@ -32,10 +30,10 @@ This workflow organizes operational handoff. It does not supply contract languag
 
 Before proposal review begins, your process should produce:
 - one scope statement ready for client review,
-- one delivery timeline with milestone dates,
-- one acceptance definition for each deliverable,
-- one commercial record (fees, invoicing schedule, payment terms),
-- one change-request rule.
+- a delivery timeline with milestone dates,
+- an acceptance definition for each deliverable,
+- a commercial record (fees, invoicing schedule, payment terms),
+- a change-request rule.
 
 If any of these are missing, proposal review may begin without required context, and onboarding may require the same details to be reconstructed.
 
@@ -45,7 +43,7 @@ If any of these are missing, proposal review may begin without required context,
 - Consultants who move from discovery calls into custom proposals.
 - Operators who already have qualified leads but still start projects with ambiguity.
 
-If you are still attracting poor-fit work, fix intake first with [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
+If you are still attracting poor-fit work, fix intake first with [How to build a client intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 
 ## Step 1: convert discovery notes into a scope draft
 
@@ -80,7 +78,7 @@ Define the billing events or dates that fit the engagement:
 - payment terms and late-payment policy,
 - scope-change pricing rule.
 
-Use [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to standardize this step.
+Use [Invoice and payment workflow checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to standardize this step.
 
 Record whether a workflow transition depends on an invoice being sent, a payment being received, or a delivery event being completed. These are separate conditions.
 
@@ -94,8 +92,6 @@ Ask these questions:
 5. Is each invoice tied to a defined event or date, with any payment condition for starting work made explicit?
 
 If any answer is unclear, revise before signing.
-
-When the package enters client review, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) to collect comments and record approval.
 
 ## Handoff packet example
 
@@ -115,20 +111,15 @@ Before the package goes into live client review, make sure it already contains:
 - communication cadence assumptions,
 - invoice schedule.
 
-Then move into [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) to control the revision loop and define what counts as final approval.
+Then move into [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) to control the revision loop and define what counts as final approval.
 
 ## Step 6: carry the approved package to onboarding
 
-Once approved and signed, pass this package to onboarding:
-- final scope and exclusions,
-- milestone timeline,
-- stakeholder/approver map,
-- communication cadence,
-- invoice schedule.
+Once the proposal is approved and the agreement signed, pass the same package to onboarding, updated to the approved version.
 
-Then execute onboarding with [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) and the linked [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
+Then run onboarding with [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) and its [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/).
 
-If the project is likely to evolve after kickoff, define the post-signature rule now with [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+If the project is likely to evolve after kickoff, define the post-signature rule now with [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
 ## Gaps that weaken the handoff
 
@@ -149,10 +140,9 @@ If that is not true yet, keep the handoff manual and visible. Use [Rule-based wo
 
 ## Continue through review and onboarding
 
-- Intake foundation: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
-- Review loop after handoff: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- End-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Setup blockers: [FAQ: Setting Up a Solo Service Workflow Stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
+- Intake foundation: [How to build a client intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+- End-to-end context: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Setup blockers: [FAQ: setting up a solo service workflow stack](/faq/faq-setting-up-a-solo-service-workflow-stack/)
 
 ## Handoff completion standard
 
@@ -162,6 +152,6 @@ The package is ready to enter client review when:
 - invoice triggers are documented,
 - required onboarding inputs and their owners are identified.
 
-After review, carry the approved version and signed agreement into onboarding. Keep later changes linked to that baseline. If a required item is missing, close the gap before the affected stage begins.
+If a required item is missing, close the gap before the affected stage begins. After signature, record later changes against the signed baseline.
 
-If the package is ready but client review is still active, continue with [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/). If the proposal is already approved and signed, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
+If the package is ready but client review is still active, continue with [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/). If the proposal is already approved and signed, continue to [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).

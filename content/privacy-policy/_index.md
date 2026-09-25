@@ -3,7 +3,7 @@ title = "Privacy policy"
 description = "Current SoloOpsGuide data practices for hosting logs, site search, Google Fonts, cookies, analytics, advertising, and future contact features."
 summary = "What the current site sends to hosting and font providers, what is not enabled, and which privacy choices are available."
 date = 2026-03-25T00:00:00Z
-lastmod = 2026-08-29T00:00:00Z
+lastmod = 2026-09-10T00:00:00Z
 +++
 
 SoloOpsGuide does not offer reader accounts, a contact form, a newsletter form, or a comment system. The current site code does not enable an audience analytics provider or advertising scripts.
@@ -12,7 +12,7 @@ Loading the site still involves the hosting provider and an external font servic
 
 ## Hosting and request data
 
-SoloOpsGuide is delivered through Cloudflare Pages. A request to the site can expose technical request data to Cloudflare, including an IP address, requested URL, browser or device information, referral information, and security-related data.
+SoloOpsGuide is delivered through Cloudflare Pages. Cloudflare processes technical data about each request, including the visitor's IP address and information about traffic to and from the site.
 
 Cloudflare describes its handling of end-user and log data in its [Privacy policy](https://www.cloudflare.com/privacypolicy/).
 
@@ -26,7 +26,7 @@ SoloOpsGuide does not send the query to a separate search provider in the curren
 
 Pages request Public Sans, Source Serif 4, and JetBrains Mono through the Google Fonts stylesheet and font domains. The browser therefore connects to Google when those files are requested.
 
-Google explains the service request flow in its [Google Fonts technical considerations](https://developers.google.com/fonts/docs/technical_considerations) and describes its data practices in the [Google Privacy policy](https://policies.google.com/privacy).
+According to the [Google Fonts FAQ](https://fonts.google.com/faq#privacy), these requests include the visitor's IP address, the requested URL, and HTTP headers such as the user agent and the referring page. The same FAQ says the Fonts API does not set or log cookies and that Google does not use this information to build user profiles or target advertising. Google's wider data practices are described in the [Google Privacy policy](https://policies.google.com/privacy).
 
 ## Cookies, analytics, and advertising
 

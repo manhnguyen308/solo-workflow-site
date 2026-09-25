@@ -3,10 +3,10 @@ title = "Email vs client portal for deliverables and approvals"
 description = "Choose email or a client portal for delivery review by examining approvers, version control, channel discipline, access, and the required approval record."
 summary = "Keep review in email when one controlled thread is sufficient. Use a portal when shared review and version control require a maintained workspace."
 feature_image = "/images/features/comparisons/email-vs-client-portal.webp"
-feature_image_alt = "Cover titled “Email vs Client Portal” with two options side by side: Email-first and Portal-first."
+feature_image_alt = 'Cover titled "Email vs Client Portal" with two options side by side: Email-first and Portal-first.'
 draft = false
 date = 2026-04-07T00:00:00Z
-lastmod = 2026-08-05T00:00:00Z
+lastmod = 2026-08-08T00:00:00Z
 category = "workflow-comparisons"
 tags = ["comparison", "client-communication", "approvals", "delivery-workflow"]
 page_type = "comparison"
@@ -20,7 +20,7 @@ featured = false
 
 Keep deliverable review in email when one named approver, one controlled thread, and a separate authoritative project record are enough. Use a portal or shared workspace when several reviewers, versions, or access rules make that thread unreliable.
 
-The choice concerns client-facing delivery and approval. It does not choose the internal system of record.
+It covers client-facing delivery and approval; the internal system of record is a separate decision.
 
 ## Describe the approval record
 
@@ -33,11 +33,11 @@ Before choosing a channel, define:
 - the deadline or response rule from the agreement;
 - the place where the final decision is recorded.
 
-A new portal cannot correct an undefined approval rule.
+Define these before comparing channels.
 
 ## Email can remain sufficient
 
-Email uses the same channel as the review thread. It works when the review can stay in one thread and the operator records the final decision in the project system.
+Email needs no new client setup. It works when the review can stay in one thread and the operator records the final decision in the project system.
 
 The model starts to strain when reviewers split into separate threads, files circulate without a version rule, or the project record no longer reflects the latest decision.
 
@@ -59,7 +59,7 @@ The portal still needs a channel rule. If clients continue to approve by email w
 | Multiple reviewers | Requires careful routing and consolidation | Can place comments together with defined permissions |
 | Maintenance | Thread rules and project-record updates | Access, configuration, status, and client adoption |
 
-These are workflow consequences, not ratings. A well-run email process can be clearer than an unused portal.
+A well-run email process can be clearer than an unused portal, so read the table as consequences to weigh.
 
 ## Test one review event
 
@@ -80,5 +80,3 @@ If the test fails because the rule is unclear, fix the rule. If it fails because
 - Connect recurring communication to the [client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 - Clarify milestone acceptance in the [milestone delivery workflow](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - Return to [CRM versus project management](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if the internal authoritative record is still undecided.
-
-Record the chosen channel, version rule, approver, decision location, and next action in the delivery workflow.

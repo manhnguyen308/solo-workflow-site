@@ -2,12 +2,12 @@
 title = "Client offboarding and testimonial request template"
 slug = "client-offboarding--testimonial-request-template"
 description = "An operational offboarding template for closing engagements cleanly once delivery and billing are already clear enough to support a structured closeout."
-summary = "Use this template to record delivery, billing, handoff, closeout, and an optional testimonial or referral request."
+summary = "Record delivery, billing, handoff, and closeout, with an optional testimonial or referral request."
 feature_image = "/images/features/templates/client-offboarding-template.webp"
-feature_image_alt = "Cover titled “Offboarding + Testimonial” with a checklist drawing."
+feature_image_alt = 'Cover titled "Offboarding + Testimonial" with a checklist drawing.'
 draft = false
 date = 2026-03-13T00:00:00Z
-lastmod = 2026-08-14T00:00:00Z
+lastmod = 2026-08-23T00:00:00Z
 category = "templates-checklists"
 tags = ["offboarding", "testimonial", "retention", "template"]
 page_type = "template"
@@ -17,9 +17,9 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = false
 +++
 
-Use this template after the delivery, signoff, and billing states are clear under the project's agreement. It records the final handoff, closeout status, archive actions, and any testimonial or referral request you decide is appropriate.
+This template records the final handoff, closeout status, archive actions, and any testimonial or referral request you decide is appropriate. Complete it after the delivery, signoff, and billing states are clear under the project's agreement.
 
-Read [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) first if the sequence or conditions for closing the engagement are still unclear.
+Read [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) first if the sequence or conditions for closing the engagement are still unclear.
 
 ## Confirm the closeout conditions first
 
@@ -28,25 +28,20 @@ Read [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/
 - the closeout rule is clear,
 - you know whether the testimonial ask should happen now or be deferred.
 
-If closeout timing, signoff, or billing state is still fuzzy, go back to the offboarding or billing workflow first.
+If closeout timing, signoff, or billing state is still unclear, go back to the offboarding or billing workflow first.
 
-## Use the template for a documented closeout
+## What the template covers
 
-Use it for:
 - closing a completed engagement,
 - recording outcomes the client has confirmed,
 - sending a testimonial request at the right moment,
 - preserving the next-step opportunity without forcing it.
 
-Do not use it for:
+It does not cover:
 - resolving delivery disputes,
 - chasing unresolved invoices,
 - replacing a broader client-retention strategy,
 - fixing a project that never had a clean handoff in the first place.
-
-## Run it after delivery, billing, and signoff are recorded
-
-Run after final deliverable acceptance and before closing project records.
 
 Treat the testimonial request as optional. Send it only when the project record supports the claims you invite the client to make and no unresolved delivery, billing, or relationship issue makes the request inappropriate.
 
@@ -117,7 +112,7 @@ Do not infer satisfaction from silence or technical completion. Ask only when a 
 - If there is likely follow-on work, separate the closeout note from the expansion conversation so the testimonial ask does not feel transactional.
 - If outcomes are not yet established, do not invite a results claim. A process-focused request is an option only if it accurately reflects what the client can assess.
 
-## A complete closeout record includes
+## Closeout record check
 
 Offboarding is complete only when:
 - project assets and outcomes are documented,
@@ -127,17 +122,17 @@ Offboarding is complete only when:
 
 ## Guides and records used at closeout
 
-- End-to-end system: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Offboarding workflow: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
-- Final handoff quality: [Delivery QA Checklist Before Client Handoff](/templates/delivery-qa-checklist-before-client-handoff/)
-- Payment closeout discipline: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+- End-to-end system: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Offboarding workflow: [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
+- Final handoff quality: [Delivery QA checklist before client handoff](/templates/delivery-qa-checklist-before-client-handoff/)
+- Payment closeout discipline: [Invoice and payment workflow checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 ## Archive the project and route recurring gaps
 
 After offboarding:
 - archive the project cleanly,
 - note one workflow improvement for the next engagement,
-- carry recurring issues into your next [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/) review.
+- carry recurring issues into your next [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/) review.
 
 If a pattern keeps breaking during closeout, revisit the rule that governs it:
 - Delivery issues: [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)

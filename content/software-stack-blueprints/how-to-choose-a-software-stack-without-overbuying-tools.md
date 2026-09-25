@@ -1,12 +1,12 @@
 +++
 title = "How to choose a software stack without overbuying tools"
 description = "Evaluate one software purchase against a current workflow failure, total operating cost, duplicate records, and a clear removal condition."
-summary = "Use a purchase filter to decide whether a tool solves a current problem, should replace an existing step, or should wait."
+summary = "Test whether a proposed tool solves a current problem, replaces an existing step, or should wait."
 feature_image = "/images/features/blueprints/software-stack-without-overbuying.webp"
-feature_image_alt = "Cover titled “Choose Without Overbuying” with a three-layer stack: Require first, One tool per function, and Delay specialty tools."
+feature_image_alt = 'Cover titled "Choose Without Overbuying" with a three-layer stack: Require first, One tool per function, and Delay specialty tools.'
 draft = false
 date = 2026-04-03T00:00:00Z
-lastmod = 2026-08-11T00:00:00Z
+lastmod = 2026-08-18T00:00:00Z
 category = "software-stack-blueprints"
 tags = ["stack-planning", "overbuying", "workflow-fit", "tool-selection"]
 page_type = "guide"
@@ -18,7 +18,7 @@ related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/co
 featured = false
 +++
 
-Use this guide when you are considering one purchase, upgrade, or replacement and need to decide whether it belongs in the operating stack.
+This guide tests whether one proposed purchase, upgrade, or replacement belongs in the operating stack.
 
 The [lean software stack blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) defines the baseline roles a stack must cover. This page stays with the purchase decision: the current failure, the task a tool would replace, the full operating cost, and the conditions for keeping it.
 

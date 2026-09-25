@@ -1,12 +1,12 @@
 +++
 title = "Client onboarding workflow for freelancers and consultants"
-description = "A client onboarding workflow for freelancers and consultants who need clearer kickoff readiness, access setup, and first-milestone control."
-summary = "Use this guide to turn a signed project into a kickoff-ready client setup with clear owners, dates, communication rules, and first-milestone controls."
+description = "Turn a signed agreement into a kickoff-ready project with confirmed access, owners, communication rules, billing triggers, and a first milestone."
+summary = "Set up named owners, dates, communication rules, and an active first milestone before delivery begins."
 feature_image = "/images/features/workflows/client-onboarding-workflow.webp"
-feature_image_alt = "Cover titled “Client Onboarding Workflow” with numbered steps: Agreement, Kickoff, Setup, and Active."
+feature_image_alt = 'Cover titled "Client Onboarding Workflow" with numbered steps: Agreement, Kickoff, Setup, and Active.'
 draft = false
 date = 2026-03-28T00:00:00Z
-lastmod = 2026-09-03T00:00:00Z
+lastmod = 2026-09-18T00:00:00Z
 category = "client-workflow-systems"
 tags = ["onboarding", "kickoff", "client-workflow", "handoff"]
 page_type = "guide"
@@ -20,9 +20,9 @@ featured = false
 
 Onboarding converts a signed agreement into a project record that can support active delivery. It carries scope, owners, dependencies, approval rules, and billing triggers into the working system.
 
-Use this workflow to make the delivery setup usable before work begins. A welcome message can be part of onboarding, but it does not replace the operational setup.
+Finish onboarding before work begins. A welcome message can be part of it, but it does not replace the operational setup.
 
-If scope, timeline, or commercial rules are still fuzzy, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the proposal is still under review or revision before signature, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) first. Onboarding should activate the agreement, not clarify what was sold.
+If scope, timeline, or commercial rules are still unsettled, fix [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the proposal is still under review or revision before signature, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) first.
 
 ## Who needs this onboarding workflow
 
@@ -34,23 +34,16 @@ If scope, timeline, or commercial rules are still fuzzy, fix [Proposal-to-Contra
 
 By the end of onboarding, the project should have:
 - one clear scope record,
-- one live first milestone,
+- a live first milestone,
 - one named approval owner,
-- one agreed communication rhythm,
-- one visible billing trigger for the first invoice event.
+- an agreed communication rhythm,
+- a visible billing trigger for the first invoice event.
 
 If any item is missing, record the blocker and its owner. Start only work whose required inputs are ready, or document an agreed change that defines what can proceed and what remains blocked.
 
-## Sequence from agreement to delivery
+## Where onboarding sits in the sequence
 
-The sequence should look like this:
-1. intake qualifies the lead,
-2. proposal and contract handoff prepares the review-ready package,
-3. proposal revision and approval settles the version that will be signed,
-4. onboarding turns the signed agreement into a live delivery setup,
-5. milestone delivery starts only after the setup is usable.
-
-For the full lifecycle model, use [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+Onboarding follows proposal review and signature. It ends when milestone delivery can start from a usable setup. For the full lifecycle model, use [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Step 1: translate the signed agreement into a working project record
 
@@ -76,7 +69,7 @@ Treat missing inputs explicitly. Do not rely on the kickoff call to surface all 
 
 If a required item is missing, log it as a blocker with an owner and a due date. "Waiting on client" is not enough. Name the exact dependency and who is responsible for resolving it.
 
-If the client-side inputs themselves are still too vague to track cleanly, document them with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) before scheduling kickoff.
+If the client-side inputs themselves are still too vague to track cleanly, document them with [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/) before scheduling kickoff.
 
 ## Step 3: set communication and approval rules
 
@@ -87,7 +80,7 @@ Define:
 - response timing agreed for the engagement,
 - how blockers or urgent issues are escalated.
 
-If the project has more than one stakeholder, name the final approval owner early. If that role is unclear, use [Approval Owner](/glossary/approval-owner/) before active delivery begins.
+If the project has more than one stakeholder, name the final approval owner early. If that role is unclear, use [Approval owner](/glossary/approval-owner/) before active delivery begins.
 
 This is also the stage to define where routine updates live. When status requests and replies spread across channels, the working record becomes harder to maintain.
 
@@ -101,8 +94,6 @@ That means:
 - the due date is visible,
 - dependencies are named,
 - the completion standard is known.
-
-If the first milestone is not visible in the project record, the setup is not ready for active delivery.
 
 Use this test: can you open one project record and see the first milestone, the owner, the due date, the dependency list, and the review point without opening a contract PDF or searching chat?
 
@@ -129,7 +120,7 @@ Do not schedule active delivery until you can answer yes to these questions:
 
 Resolve every blocking "no" before active delivery starts. If both parties agree to proceed with limited work, record that scope, its available inputs, the remaining blocker, and the effect on timing. Logging a missing input does not make dependent work ready.
 
-If you need to write the readiness rule down more explicitly, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) before scheduling delivery.
+If you need to write the readiness rule down more explicitly, use [Project start handoff readiness worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) before scheduling delivery.
 
 ## Kickoff sequence
 
@@ -162,18 +153,14 @@ Do not try to use onboarding to:
 - design the whole tool stack from scratch,
 - fix a delivery process that has already gone off course during active delivery.
 
-Those are better handled by [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/), [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/), or [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) depending on the unresolved issue.
+Those are better handled by [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/), [How to choose a software stack without overbuying tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/), or [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) depending on the unresolved issue.
 
-## Tools for kickoff and delivery
+## Checklist and update rhythm
 
-- agreement handoff: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- proposal review before signature: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- kickoff checklist: [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
-- ongoing communication: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
-- next delivery stage: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+Run kickoff with the [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/), and set the recurring update format with the [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 
 ## Onboarding completion check
 
 Onboarding is complete after every kickoff-readiness item is either satisfied or covered by an agreed exception, and the first milestone is active in the system of record.
 
-If you want the broader lifecycle context, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If onboarding is now clean and the next pressure point is active execution, continue to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+Once the first milestone is active, continue to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).

@@ -1,12 +1,12 @@
 +++
 title = "FAQ: what should I do when a client goes silent during review?"
 description = "Respond to client silence during review by recording the blocked decision, following the agreed review terms, and naming the next action."
-summary = "Use this page when a client stops responding during review and you need a practical follow-up pattern without confusing silence with approval."
+summary = "Follow up on a stalled review without treating silence as approval."
 feature_image = "/images/features/faq/client-silence-review-faq.webp"
-feature_image_alt = "Cover titled “Client Goes Silent FAQ” with a large question mark."
+feature_image_alt = 'Cover titled "Client Goes Silent FAQ" with a large question mark.'
 draft = false
 date = 2026-04-11T00:00:00Z
-lastmod = 2026-08-10T00:00:00Z
+lastmod = 2026-08-16T00:00:00Z
 category = "faq"
 tags = ["faq", "client-silence", "review", "workflow"]
 slug = "what-to-do-when-a-client-goes-silent-during-review"
@@ -26,23 +26,23 @@ When a client stops replying during review, check whether they received and can 
 - You do not know who can approve the work.
 - Several stakeholders are involved without one feedback route.
 
-In those cases, go first to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), or [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+In those cases, go first to [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), or [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## What to do first
 
 Confirm four things before you send another message:
 - what decision you are actually waiting for,
-- who the [Next Action Owner](/glossary/next-action-owner/) is,
+- who the [Next action owner](/glossary/next-action-owner/) is,
 - what work or billing that silence is blocking,
 - what date should trigger the next follow-up.
 
 An unclear decision, owner, effect, or follow-up date means the review state needs definition before another reminder.
 
-If several stakeholders are involved and the comments are not even reaching one clear approval path yet, define the routing rule first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+If several stakeholders are involved and the comments are not even reaching one clear approval path yet, define the routing rule first with [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
-If the review has stayed blocked long enough that you need to choose pause, escalation, or closeout instead of sending another ordinary follow-up, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+If the review has stayed blocked long enough that you need to choose pause, escalation, or closeout instead of sending another ordinary follow-up, use [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 
-If the blocked review has already damaged the original plan itself and now needs a revised baseline, move next to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+If the blocked review has already damaged the original plan itself and now needs a revised baseline, move next to [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
 ## Follow the agreed review window
 
@@ -62,8 +62,6 @@ Example structure:
 
 > "Checking in on the review package sent Tuesday. The open decision is whether this milestone is approved as-is or needs revisions. Once I have that answer, I can either close the milestone or schedule the next revision step."
 
-This version identifies the delivery, the open decision, and the action that follows the response.
-
 ## When does silence become a workflow problem?
 
 It becomes a workflow problem when:
@@ -78,7 +76,7 @@ At that point, name it in the system as blocked review or pending client decisio
 
 Only if your agreement and review rules explicitly support that. Otherwise, no.
 
-Operationally, silence is not the same thing as acceptance. If you need approval, ask for approval. If you can proceed after a bounded review window under agreed terms, document that rule in advance instead of inventing it during tension.
+Silence is not acceptance unless an agreed rule says so. If you need approval, ask for it. If you can proceed after a bounded review window under agreed terms, document that rule in advance instead of inventing it during tension.
 
 ## What if silence is delaying invoice closure or offboarding?
 
@@ -87,11 +85,11 @@ Separate the layers:
 - billing closure is another,
 - final offboarding is a later stage.
 
-If review silence is blocking invoice or closeout, keep that dependency visible rather than acting as if the project is already finished. Use [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) for the review state, then [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) once true closeout is possible.
+If review silence is blocking invoice or closeout, keep that dependency visible rather than acting as if the project is already finished. Use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) for the review state, then [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/) once true closeout is possible.
 
 ## Continue from the blocked review
 
-- If your updates are too vague to support clean follow-up, go to [Client status update workflow for freelancers and consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
-- If the silence is happening during proposal review before signature, go to [Proposal revision and approval workflow for freelancers and solo service businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- If your updates are too vague to support clean follow-up, go to [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the silence is happening during proposal review before signature, go to [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - If the silence is happening at a milestone approval point, go to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If the project is near the finish line and review silence is blocking closeout, go to [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).

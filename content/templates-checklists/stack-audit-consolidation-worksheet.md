@@ -1,12 +1,12 @@
 +++
 title = "Stack audit and consolidation worksheet for solo operators"
 description = "Inventory the tools involved in client work, mark keep, replace, or retire decisions, and define ownership and migration boundaries."
-summary = "Use this worksheet to inventory your current tools, define where client truth should live, and decide what stays, what moves, and what gets retired."
+summary = "Inventory current tools, name where client status lives, and mark each tool keep, replace, or retire."
 feature_image = "/images/features/templates/stack-audit-consolidation-worksheet.webp"
-feature_image_alt = "Cover titled “Stack Audit Worksheet” with a checklist drawing."
+feature_image_alt = 'Cover titled "Stack Audit Worksheet" with a checklist drawing.'
 draft = false
 date = 2026-04-21T00:00:00Z
-lastmod = 2026-07-26T00:00:00Z
+lastmod = 2026-08-04T00:00:00Z
 slug = "stack-audit-consolidation-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["stack-audit", "consolidation", "worksheet", "migration"]
@@ -19,26 +19,21 @@ related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/gu
 featured = true
 +++
 
-Use this worksheet after choosing a stack model and before changing tools. Inventory each live tool, then resolve record-ownership conflicts before planning a migration.
+After choosing a stack model and before changing tools, inventory each live tool, then resolve record-ownership conflicts before planning a migration.
 
-## Use it before consolidation
+## What an audit resolves
 
-Use it when:
 
 - two or more tools show conflicting client status,
 - no authoritative tool is named for active client information,
 - a migration is planned but its sequence is not documented,
 - the keep, replace, and retire decisions have not been recorded.
 
-If you still need the broader stack model first, start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+If you still need the broader stack model first, start with [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
-If you still have not decided whether the business should stay consolidated or split functions across a specialized stack, start with [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
+If you still have not decided whether the business should stay consolidated or split functions across a specialized stack, start with [All-in-one workspace vs specialized stack](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
 
-If the main issue is not tool inventory but unclear data ownership between systems, use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) before trying to plan the cleanup.
-
-## Choose the next cleanup step
-
-After completing the inventory, use [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) to resolve ownership conflicts or [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) to plan the cleanup sequence.
+If the main issue is unclear data ownership between systems, use [System-of-record rules worksheet for solo operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) before trying to plan the cleanup.
 
 ## Decisions that precede the audit
 
@@ -58,14 +53,6 @@ Choose the system center, stack shape, purchase boundary, and migration method s
 
 When two tools both appear to hold current client status, record the conflict and designate the authoritative one.
 
-## Inputs needed before the audit
-
-- the chosen system center,
-- whether the stack should stay more consolidated or become more specialized,
-- whether the goal is cleanup rather than broad redesign.
-
-If those decisions are still open, settle the broader stack model before using this worksheet.
-
 ## Stack audit worksheet
 
 | Tool / workspace | Primary role today | System of record here? | Keep / Replace / Retire | Migration boundary notes | Owner / dependency notes |
@@ -80,7 +67,7 @@ Before making any decisions, capture:
 
 - every paid app in the stack,
 - every free tool still used for live work,
-- every spreadsheet, doc, or shared folder that still carries operational truth,
+- every spreadsheet, doc, or shared folder that still holds current operating records,
 - every workaround that compensates for a missing workflow rule or tool role.
 
 If a tool is only used for archive or compliance reference, label it that way now. Archive tools should not be confused with live operating systems.
@@ -96,7 +83,7 @@ For each stage, write one answer only:
 
 If the answer changes by project, document the project-specific exception or choose one consistent record.
 
-If this part is still unclear, use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before changing tools.
+If this part is still unclear, use [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before changing tools.
 
 ## Delivery / workspace role
 
@@ -152,7 +139,7 @@ Use **Replace** when:
 
 Use **Retire** when:
 
-- the tool duplicates truth that should live elsewhere,
+- the tool duplicates status that belongs in another record,
 - no one can explain why it is still part of live work,
 - it mainly survives because nobody has closed it down yet.
 
@@ -188,12 +175,14 @@ These notes expose dependencies that the inventory alone may hide. A tool with a
 
 ## Move from inventory to action
 
-- Define an unclear stack model with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
-- Set a purchase boundary with [How to Choose a Software Stack Without Overbuying Tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
-- Plan the cleanup with [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the target shape is clear.
-- Resolve an open stack-shape decision with [All-in-One Workspace vs Specialized Stack for Solo Operators](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
+- Define an unclear stack model with [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- Set a purchase boundary with [How to choose a software stack without overbuying tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
+- Plan the cleanup with [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) when the target shape is clear.
+- Resolve an open stack-shape decision with [All-in-one workspace vs specialized stack](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/).
 
-## An audit ready for a migration decision
+## Audit check
+
+The audit is ready for a migration decision when:
 
 - each live tool has one explicit role,
 - keep / replace / retire is marked on every live row,

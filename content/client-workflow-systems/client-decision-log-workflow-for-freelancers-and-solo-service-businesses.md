@@ -2,12 +2,12 @@
 title = "Client decision log workflow for freelancers and solo service businesses"
 slug = "client-decision-log-workflow-for-freelancers-and-solo-service-businesses"
 description = "Record client approvals, scope changes, owners, and effective dates so later delivery, billing, and closeout decisions use the same evidence."
-summary = "Use this workflow to keep a single, trustworthy record of client decisions across proposal, delivery, change requests, billing, and closeout."
+summary = "Keep one dated record of client decisions from proposal through delivery, change requests, billing, and closeout."
 feature_image = "/images/features/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses.webp"
-feature_image_alt = "Cover titled “Client Decision Log Workflow” with numbered steps: Capture, Confirm, Store, and Archive."
+feature_image_alt = 'Cover titled "Client Decision Log Workflow" with numbered steps: Capture, Confirm, Store, and Archive.'
 draft = false
 date = 2026-05-09T00:00:00Z
-lastmod = 2026-08-21T00:00:00Z
+lastmod = 2026-08-31T00:00:00Z
 category = "client-workflow-systems"
 tags = ["decision-log", "approval", "scope", "system-of-record", "client-workflow"]
 page_type = "guide"
@@ -23,11 +23,11 @@ Scope, billing, and closeout questions are harder to resolve when the original d
 
 A client decision log brings approvals, scope changes, and verbal decisions into one short record that the people on the engagement can review later.
 
-Use this workflow when decisions accumulate across an extended or multi-milestone engagement, several stakeholders are involved, or scope, approval, and billing rules will need to be confirmed again at handoff or closeout. The log is a focused record alongside the project management system.
+The log sits alongside the project management system. It matters most on extended or multi-milestone engagements, with several stakeholders, where scope, approval, and billing rules will need to be confirmed again at handoff or closeout.
 
 Use the agreement, privacy obligations, and records policy to decide what the log can contain and how long to retain it. A log supports the operational record; it does not replace the contract or required evidence of approval.
 
-If the underlying lifecycle still feels unclear, start with [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If a single change is the active issue, use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) instead.
+If the underlying lifecycle is still undefined, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If a single change is the active issue, use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) instead.
 
 ## Scope of the decision log
 
@@ -47,8 +47,6 @@ It should not:
 - track every comment, draft, or thought,
 - duplicate what your tools already store cleanly.
 
-Keep a small, trustworthy record so later decisions use an accurate picture of the engagement.
-
 ## Who needs a decision log
 
 This workflow is useful for:
@@ -58,18 +56,9 @@ This workflow is useful for:
 - solo service businesses with clients that include several stakeholders,
 - anyone whose scope, billing rule, or approval owner has been questioned after the original conversation.
 
-For a short engagement with one decision, the contract and approval message may already provide enough context. Add a log when decisions recur or the existing records no longer show the current state clearly.
-
 ## Records a decision log adds
 
-Project work creates four kinds of records:
-
-- **Files** show what exists.
-- **Messages** show what was said.
-- **Project records** show the status entered by the people managing the work.
-- **Decisions** show what was agreed and why.
-
-Files, messages, and tools do not always state the resulting decision. The log extracts that decision from the source and records its operational effect.
+Files show what exists, messages show what was said, and project records show the status entered by the people managing the work. None of them reliably states what was agreed and why. The log extracts that decision from its source and records its operational effect.
 
 When the decision layer is missing:
 
@@ -92,8 +81,6 @@ Start a separate log when one of these triggers appears:
 - billing depends on milestones that may shift,
 - handoff or closeout will require proof of what was approved.
 
-If none of those triggers apply, a contract plus normal approval messages may be enough. Do not add overhead the engagement does not need.
-
 ## What belongs in a decision log
 
 Each entry should be short and complete enough to read alone.
@@ -112,11 +99,11 @@ A useful entry includes:
 
 Avoid copying full message threads into the log. Reference the source briefly so it can be retrieved if needed, then write the decision in plain language.
 
-If you are not sure where the log itself should live, use the [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) to choose one tool and stop duplicating it casually across others.
+If you are not sure where the log itself should live, use the [System-of-record rules worksheet for solo operators](/templates/system-of-record-rules-worksheet-for-solo-operators/) to choose one tool and stop duplicating it casually across others.
 
 ## The decision log workflow step by step
 
-Use this sequence across the life of the engagement, not just at the start.
+Run these steps from signature through closeout.
 
 ### Step 1: capture the decision while it is fresh
 
@@ -139,7 +126,7 @@ For example: "Confirming our call today: scope now includes the second landing p
 
 If the client confirms, attach that response to the log entry. If the client corrects it, retain the original note and append a dated correction with the response linked. Mark the earlier note as superseded so the current decision is clear without losing its history.
 
-For approval-specific decisions, use the [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/) before treating the decision as a billing trigger.
+For approval-specific decisions, use the [Approval and billing readiness checklist for solo operators](/templates/approval-billing-readiness-checklist/) before treating the decision as a billing trigger.
 
 ### Step 3: store the log in one place
 
@@ -154,7 +141,7 @@ Common options:
 
 Avoid maintaining the same decision log in multiple tools. If two copies conflict, designate one as authoritative and correct the other.
 
-To keep tool ownership clean, run the [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
+To keep tool ownership clean, run the [System-of-record rules worksheet for solo operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 
 ### Step 4: reference the log when decisions repeat
 
@@ -172,7 +159,7 @@ Do not delete or rewrite past entries. The log is most useful when it shows the 
 
 ### Step 5: connect the log to scope, billing, and approval
 
-A decision log is not a sealed archive. It should be visible from the workflows that depend on it.
+Keep the log visible from the workflows that depend on it.
 
 Link the log from:
 
@@ -183,7 +170,7 @@ Link the log from:
 
 If billing or approval state depends on a logged decision, name that decision explicitly in the relevant message. Do not assume the client will remember it.
 
-If a scope shift is in motion, run it through the [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) and add the resolved outcome as a single entry in the log.
+If a scope shift is in motion, run it through the [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) and add the resolved outcome as a single entry in the log.
 
 ### Step 6: use the log at handoff
 
@@ -211,7 +198,7 @@ At closeout:
 - include a link to the archived log in the closeout record,
 - match the archive policy to the rest of the engagement record.
 
-For the wider closeout sequence, use [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+For the wider closeout sequence, use [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
 
 ## What a clean log entry looks like
 
@@ -244,10 +231,6 @@ A consultant logs a recommendation, the client decision-maker who approved it, a
 
 A designer logs the original scope, then logs a decision to defer secondary brand assets to a future engagement. At closeout, the log makes it easy to confirm what is and is not included without rereading the contract or proposal.
 
-### Rule-based setup with ownership transfer
-
-An operations consultant logs the agreed support period, the boundary between consultant fixes and client-side maintenance, and the decision on who handles ongoing changes. When a later request arrives, the log shows whether it fits the current scope or needs a new agreement.
-
 ## Common decision log mistakes
 
 - starting the log only after the first dispute,
@@ -260,24 +243,15 @@ An operations consultant logs the agreed support period, the boundary between co
 - forgetting to reference the log when the same question returns,
 - skipping the log entirely on long projects because "we will remember."
 
-The log needs to remain short, accurate, and connected to the decisions that rely on it.
-
 ## When to skip a decision log
 
 Skip a separate log when the contract and existing approval records already make every current commitment and relevant change easy to retrieve. A short engagement with one decision may meet that test. Having only one client stakeholder does not remove the need to record later scope, schedule, or billing changes.
 
 If you are unsure whether the engagement needs a log, start one when a scope change, multi-stakeholder decision, or verbal commitment cannot be represented clearly in the existing records.
 
-## Records and workflows connected to the log
+## Related pages
 
-- lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- where decisions originate: [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- where decisions get amended: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
-- where decisions get logged at delivery: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
-- where the log lives: [System-of-Record Rules Worksheet for Solo Operators](/templates/system-of-record-rules-worksheet-for-solo-operators/)
-- pre-invoice verification: [Approval and Billing Readiness Checklist for Solo Operators](/templates/approval-billing-readiness-checklist/)
-- transfer with the log attached: [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/)
-- final archive: [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
+Many decisions start during the [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/). Others arise during [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), where each review outcome is a candidate entry.
 
 ## Decision log completion check
 
@@ -290,4 +264,4 @@ The log is usable when:
 - handoff and billing reference logged decisions explicitly,
 - closeout closes the log instead of leaving it ambiguous.
 
-If the wider client lifecycle still feels messy, return to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If the next open issue is final transfer, continue to [Project Handoff Workflow for Freelancers and Solo Service Businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/). If the project is moving into closeout, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+If final transfer is the next open issue, continue to [Project handoff workflow for freelancers and solo service businesses](/workflows/project-handoff-workflow-for-freelancers-and-solo-service-businesses/). When the project moves into closeout, continue to [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).

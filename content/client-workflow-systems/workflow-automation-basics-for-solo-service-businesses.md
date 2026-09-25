@@ -2,12 +2,12 @@
 title = "Rule-based workflow steps for solo service businesses"
 slug = "workflow-automation-basics-for-solo-service-businesses"
 description = "Choose repetitive administrative steps a tool can run from a clear trigger while keeping judgment, exceptions, and fallback ownership visible."
-summary = "Use this guide to choose lower-risk rule-based steps, define failure handling, and preserve a manual fallback."
+summary = "Pick lower-risk steps a tool can run, define how failures are caught, and keep a manual fallback."
 feature_image = "/images/features/workflows/workflow-automation-basics.webp"
-feature_image_alt = "Cover titled “Workflow Automation Basics” with numbered steps: Identify, Map, Automate, and Review."
+feature_image_alt = 'Cover titled "Workflow Automation Basics" with numbered steps: Identify, Map, Automate, and Review.'
 draft = false
 date = 2026-03-06T00:00:00Z
-lastmod = 2026-08-12T00:00:00Z
+lastmod = 2026-08-19T00:00:00Z
 category = "client-workflow-systems"
 tags = ["rule-based-workflows", "operations", "solo-business"]
 page_type = "guide"
@@ -74,7 +74,7 @@ Review completed cases and document known exceptions before letting the rule aff
 
 Choose a case that can be checked and corrected without changing a client commitment. Confirm that the trigger occurs once, the result reaches the intended record, and the fallback owner can see a miss.
 
-Do not expand the rule until the test record shows what happened. A silent failure path is still an undefined process.
+Do not expand the rule until the test record shows what happened, including how a failed run would be noticed.
 
 ## Plan for failure
 
@@ -101,5 +101,3 @@ Return to the manual path, correct the operating rule, and test it again before 
 - For recurring operational review, use [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/).
 - For billing triggers and reminders, use [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 - For stack ownership and migration, use [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
-
-Expand a rule only after its trigger, result, exception path, owner, and fallback remain clear in reviewed cases.

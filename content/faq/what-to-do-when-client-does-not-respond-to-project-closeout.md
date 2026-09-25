@@ -1,12 +1,12 @@
 +++
 title = "Client not responding at project closeout: what to do"
 description = "Handle an unanswered project closeout request without inferring acceptance, permission, or a closure rule that was not agreed in advance."
-summary = "Use this page after delivery, approval, and billing have been handled but the client has not answered the closeout request."
+summary = "What to record and send when delivery, approval, and billing are done but the closeout request goes unanswered."
 feature_image = "/images/features/faq/client-closeout-no-response-faq.webp"
-feature_image_alt = "Cover titled “Closeout Non-Response” with a large question mark."
+feature_image_alt = 'Cover titled "Closeout Non-Response" with a large question mark.'
 draft = false
 date = 2026-04-27T00:00:00Z
-lastmod = 2026-08-15T00:00:00Z
+lastmod = 2026-08-24T00:00:00Z
 category = "faq"
 tags = ["faq", "closeout", "offboarding", "client-silence", "workflow"]
 slug = "what-to-do-when-client-does-not-respond-to-project-closeout"
@@ -28,8 +28,8 @@ The existing agreement, review rules, and closeout plan control what happens nex
 
 Do not use this FAQ to handle silence during mid-project milestone review, define what counts as approval at a delivery stage, or manage an ongoing project with multiple open stages.
 
-- If the client has gone quiet during a mid-project milestone review before final delivery, use [FAQ: What should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
-- If you are unsure whether a client response counted as approval, use [FAQ: What counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/).
+- If the client has gone quiet during a mid-project milestone review before final delivery, use [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
+- If you are unsure whether a client response counted as approval, use [FAQ: what counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
 - If final approval or a billing obligation remains open, use the offboarding workflow to identify the unresolved stage first.
 
 ## What does "project closeout" mean operationally?
@@ -111,6 +111,6 @@ Closing the project record does not grant unrelated permissions that require exp
 ## Continue from the unresolved closeout
 
 - If you have not completed the final milestone and billing process, go to [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
-- If the client is not responding throughout the final review stage, go to [FAQ: What should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+- If the client is not responding throughout the final review stage, go to [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 - If closeout needs a documented pause or escalation decision, use [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
 - If the project is closed and a testimonial request fits the agreed relationship, use [Client offboarding and testimonial request template](/templates/client-offboarding--testimonial-request-template/).

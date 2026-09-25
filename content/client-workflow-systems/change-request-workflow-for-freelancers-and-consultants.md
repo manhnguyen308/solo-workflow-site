@@ -1,12 +1,12 @@
 +++
 title = "Change request workflow for freelancers and consultants"
-description = "A change request workflow for solo operators who need to record scope changes, approval decisions, delivery effects, and billing updates."
-summary = "Use this guide to route scope changes, record their delivery effect, and decide when a request should be included, repriced, deferred, or declined."
+description = "Assess each client change request against the signed scope, record the approval decision, and update dates and billing before the work starts."
+summary = "Route scope changes, record their delivery effect, and decide whether each request is included, repriced, deferred, or declined."
 feature_image = "/images/features/workflows/change-request-workflow.webp"
-feature_image_alt = "Cover titled “Change Request Workflow” with numbered steps: Request, Assess, Decide, and Update."
+feature_image_alt = 'Cover titled "Change Request Workflow" with numbered steps: Request, Assess, Decide, and Update.'
 draft = false
 date = 2026-03-27T00:00:00Z
-lastmod = 2026-09-01T00:00:00Z
+lastmod = 2026-09-15T00:00:00Z
 category = "client-workflow-systems"
 tags = ["change-request", "scope-control", "workflow"]
 page_type = "guide"
@@ -20,29 +20,25 @@ Scope drift can begin when a request enters delivery without a clear decision ab
 
 A change request workflow gives both parties a visible way to assess new requests against the current agreement.
 
-Use this workflow for changes to signed scope, including requests made before kickoff. If the broader client workflow or original project scope is unclear, resolve that earlier problem first.
+It covers changes to signed scope, including requests made before kickoff. If the broader client workflow or original project scope is unclear, resolve that earlier problem first.
 
 Apply the change terms in the agreement. Where rights, fees, or remedies are uncertain, use qualified advice rather than treating this workflow as a substitute for the contract.
 
-## Use this workflow when
+## Where scope changes slip through
 
-Use it when:
 - clients regularly ask for additions mid-project,
 - "quick changes" are affecting delivery dates,
 - billing is slipping because extra work is being absorbed informally,
 - approvals are unclear when a scope change appears.
 
-If the original scope was never clear, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the work is still pre-signature and the proposal is under review, use [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) instead.
+If the original scope was never clear, fix [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first. If the work is still pre-signature and the proposal is under review, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) instead.
 
-If accumulated undocumented changes and workarounds have made the current plan unreliable, reset the operating baseline with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before assessing another request.
+If accumulated undocumented changes and workarounds have made the current plan unreliable, reset the operating baseline with [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before assessing another request.
 
-If the reset is already decided and the next issue is explaining the revised baseline clearly, send it with [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
-
-Do not use this workflow for ordinary delivery feedback that still fits the agreed milestone. Use it when the request may change the operating agreement.
+If the reset is already decided and the next issue is explaining the revised baseline clearly, send it with [Recovery update template for delayed projects](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
 
 ## Questions to answer before deciding
 
-It should let you answer five questions quickly:
 - what exactly is being requested,
 - does it change scope, timing, or cost,
 - who can approve the decision,
@@ -83,7 +79,7 @@ The request record should include:
 - when the client wants it,
 - which deliverable or milestone it affects.
 
-Use [Client Change Request Template](/templates/client-change-request-template/) to standardize this step.
+Use [Client change request template](/templates/client-change-request-template/) to standardize this step.
 
 ## Step 2: compare the request to the agreed scope
 
@@ -111,7 +107,7 @@ Even if you decide not to charge more, record the effect on workload, schedule, 
 
 Name the person authorized under the engagement to say yes, no, or not now.
 
-If feedback comes from several stakeholders, but no one holds final approval authority, the request can stall the workflow. Use [Approval Owner](/glossary/approval-owner/) if that role is fuzzy.
+If feedback comes from several stakeholders, but no one holds final approval authority, the request can stall the workflow. Use [Approval owner](/glossary/approval-owner/) if that role is fuzzy.
 
 ## Step 5: send the assessment and obtain approval
 
@@ -163,19 +159,13 @@ This workflow records live change decisions. Resolve these items separately:
 - If a missed client dependency makes the change urgent, record the missed dependency and its owner.
 - If the project is near final delivery, consider deferral when the request would reopen completed work or delay handoff.
 
-## Records and guides for change decisions
-
-- handoff discipline before the project starts: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- ready-to-use decision format: [Client Change Request Template](/templates/client-change-request-template/)
-- cross-stage decision record: [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/)
-- invoice follow-through: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
-
 ## Route the decision
 
-- If you need the request format, continue to [Client Change Request Template](/templates/client-change-request-template/).
+- If you need the request format, continue to [Client change request template](/templates/client-change-request-template/).
 - If repeated scope changes expose weak original boundaries, return to [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 - If the request is still part of proposal negotiation before approval, return to [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
-- If the approved change now affects billing, continue to [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
+- If the approved change now affects billing, continue to [Invoice and payment workflow checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/).
+- If the decision will matter at handoff or closeout, record it in the [Client decision log workflow for freelancers and solo service businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/).
 
 ## When this workflow is complete
 

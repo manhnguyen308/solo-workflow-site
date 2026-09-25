@@ -1,12 +1,12 @@
 +++
 title = "System of record"
 description = "Define a system of record for solo client work: the single source of truth for active status, next actions, ownership, and operating decisions."
-summary = "A system of record gives active client status, ownership, next actions, and operating decisions one authoritative home."
+summary = "Test whether one record answers what stage a client is in, what happens next, and who owns it."
 feature_image = "/images/features/glossary/system-of-record.webp"
-feature_image_alt = "Cover titled “System of Record” with a definition card for “Source of truth”."
+feature_image_alt = 'Cover titled "System of Record" with a definition card for "Source of truth".'
 draft = false
 date = 2026-03-09T00:00:00Z
-lastmod = 2026-07-07T00:00:00Z
+lastmod = 2026-07-31T00:00:00Z
 category = "glossary"
 tags = ["definition", "system-of-record", "operations"]
 page_type = "glossary"
@@ -17,7 +17,7 @@ related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", 
 featured = false
 +++
 
-A **system of record** is the one place where the current truth about a client engagement is maintained.
+A **system of record** is the one place where the current status of a client engagement is maintained.
 
 For solo service work, a useful record includes:
 - current client stage,
@@ -25,7 +25,7 @@ For solo service work, a useful record includes:
 - current owner,
 - key dates and status.
 
-## One authoritative status, not one app for everything
+## One authoritative status, with files and messages kept elsewhere
 
 When active status lives in several places, the current stage, next action, or owner can be hard to confirm. A system of record gives those operating facts one authoritative home.
 
@@ -51,8 +51,6 @@ If one of those details exists only in memory, add it to the record.
 
 ## What does not need to live there
 
-Do not confuse "system of record" with "the only app in the business."
-
 These can live outside the record as long as the record points to them clearly:
 - source files and large deliverables,
 - long-form meeting notes,
@@ -62,7 +60,7 @@ These can live outside the record as long as the record points to them clearly:
 
 Use this operational test: the record should answer what stage the client is in, what must happen next, and where the supporting material sits.
 
-## Signs that current truth is split
+## Signs that current status is split
 
 - A project board shows tasks, but approvals and next steps live in email.
 - A CRM shows opportunity status, but active client delivery moved to another tool with no clean boundary.
@@ -95,18 +93,18 @@ A hybrid setup needs a written ownership boundary. For example:
 - PM workspace owns active delivery after contract signature.
 - Billing tool owns payment processing, but invoice status is mirrored back to the active record that the operator reviews routinely.
 
-If those boundaries are informal, hybrid creates duplicated truth instead of better visibility.
+If those boundaries are informal, a hybrid setup duplicates status instead of improving visibility.
 
 ## Check the less obvious cases
 
 - If you work alone, the record still carries decisions from one work session to the next.
-- If you use one tool for everything but still store next steps in chat, the tool is not actually your record.
+- If you use one tool for everything but still store next steps in chat, that tool is not your record.
 - If billing matters operationally, unpaid milestone status should be visible from the same place you review delivery risk.
 
 ## Choose the next action
 
-- If you are choosing where active client truth belongs, read [CRM vs project management tool for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
-- If you know the operating model but need to shape the stack around it, use [Software stack blueprint: solo freelancer on a lean budget](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
-- If truth is already fragmented across tools, follow [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+- If you are choosing where active client status belongs, read [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- If you know the operating model but need to shape the stack around it, use [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If status is already fragmented across tools, follow [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
 - If the ownership rule is not written down, use the [System-of-record rules worksheet for solo operators](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 - If the full lifecycle is unclear, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).

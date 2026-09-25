@@ -49,19 +49,19 @@
       </div>
       <aside class="article-aside">
         <div class="article-aside-card">
-          <p class="panel-label">Use this page for</p>
+          <p class="panel-label">In brief</p>
           <p>{{ .Params.summary | default .Params.description | default .Site.Params.siteDescription }}</p>
         </div>
         {{ with $sectionPage }}
         <div class="article-aside-card">
           <p class="panel-label">Broader topic</p>
-          <p>Open <a href="{{ .RelPermalink }}">{{ .Title }}</a> when you need the broader topic before this specific page.</p>
+          <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
         </div>
         {{ end }}
         {{ with $nextPage }}
         <div class="article-aside-card article-aside-card-soft">
           <p class="panel-label">Continue with</p>
-          <p>After this page, open <a href="{{ .RelPermalink }}">{{ .Title }}</a> for the related task or decision.</p>
+          <p><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
         </div>
         {{ end }}
       </aside>

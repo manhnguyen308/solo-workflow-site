@@ -1,12 +1,12 @@
 +++
 title = "Reviewing and maintaining a solo service workflow system: FAQ"
 description = "Review an existing solo service workflow, identify drift, choose the next repair, and decide when a rule-based step is appropriate."
-summary = "Use this FAQ to find recurring workflow drift, choose one repair, and avoid changing tools before the operating rule is clear."
+summary = "Separate recurring workflow drift from a busy week, choose one repair, and hold tool changes until the rule is clear."
 feature_image = "/images/features/faq/workflow-maintenance-faq.webp"
-feature_image_alt = "Cover titled “Workflow Maintenance FAQ” with a large question mark."
+feature_image_alt = 'Cover titled "Workflow Maintenance FAQ" with a large question mark.'
 draft = false
 date = 2026-04-01T00:00:00Z
-lastmod = 2026-08-07T00:00:00Z
+lastmod = 2026-08-10T00:00:00Z
 slug = "faq-reviewing-and-maintaining-a-solo-service-workflow-system"
 category = "faq"
 tags = ["faq", "maintenance", "workflow-review", "operations"]
@@ -18,7 +18,7 @@ related = ["/templates/weekly-client-operations-checklist-solo-business/", "/wor
 featured = false
 +++
 
-Use this FAQ after a client workflow is already in use. It helps you separate temporary workload pressure from a recurring process problem, then choose one stage to repair before changing tools.
+This FAQ assumes a client workflow is already in use. It helps you separate temporary workload pressure from a recurring process problem, then choose one stage to repair before changing tools.
 
 ## Use a setup guide instead when
 
@@ -26,16 +26,16 @@ If you are building the process for the first time or cannot identify the failin
 
 ## Choose a review cadence
 
-Match the review cadence to how often client status changes and how much risk can build between checks. Use the [Weekly client operations checklist for solo service businesses](/templates/weekly-client-operations-checklist-solo-business/) if a weekly control point fits your workload. Run a deeper review when the same problem recurs, a service changes, or the system stops matching the work.
+Match the review cadence to how often client status changes and how much risk can build between checks. Use the [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/) if a weekly control point fits your workload. Run a deeper review when the same problem recurs, a service changes, or the system stops matching the work.
 
 ## What to inspect in a deeper review
 
 Review:
-- where active client truth lives,
+- where current client status lives,
 - which stage creates the most repeated friction,
 - whether billing, approvals, and blockers are still visible,
 - whether any template or tool-run rule is out of sync with the current process,
-- whether new services or client types have quietly changed the workflow assumptions.
+- whether new services or client types have changed the workflow assumptions.
 
 ## A clear sign of workflow drift
 
@@ -86,7 +86,7 @@ Keep the step manual while its rule, inputs, exceptions, or completion condition
 
 Treat split status as an ownership problem before buying or configuring another tool.
 
-If truth is split across several places, use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) before buying anything else.
+If current status is split across several places, use [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/) before buying anything else.
 
 ## Keep the project record and client update aligned
 
@@ -102,7 +102,7 @@ Go back to the affected process:
 - For intake issues, use [How to build a client intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/).
 - For setup issues, use [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - For active-work issues, use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
-- For billing issues, use [Invoice and payment workflow setup for freelancers and consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- For billing issues, use [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 
 ## Choose the first repair
 
@@ -115,11 +115,11 @@ Start with the highest-cost repeated issue:
 - unclear approval path,
 - communication drift.
 
-Fix one pressure point, observe the result, then review the adjacent stage. This keeps the cause and effect visible.
+Fix one pressure point, observe the result, then review the adjacent stage.
 
 ## Continue with the affected process
 
-- If the whole lifecycle feels loose again, open [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
-- If recurring control is the issue, confirm the broader workflow still makes sense, then open [Weekly client operations checklist for solo service businesses](/templates/weekly-client-operations-checklist-solo-business/).
+- If problems appear across several stages again, open [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If recurring control is the issue, confirm the broader workflow still makes sense, then open [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/).
 - If the process is not stable enough for a tool-run rule, open [Rule-based workflow steps for solo service businesses](/workflows/workflow-automation-basics-for-solo-service-businesses/).
 - If tool sprawl is the issue, open [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).

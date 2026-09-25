@@ -4,10 +4,10 @@ slug = "workflow-diagnostic-checklist"
 description = "A checklist for sorting a client-workflow problem into sequence, approval, billing, tool ownership, execution, or narrow-question categories."
 summary = "Use current project records to classify a workflow problem, then open the resource matched to that category."
 feature_image = "/images/features/templates/workflow-diagnostic-checklist.webp"
-feature_image_alt = "Cover titled “Workflow Diagnostic” with a checklist drawing."
+feature_image_alt = 'Cover titled "Workflow Diagnostic" with a checklist drawing.'
 draft = false
 date = 2026-05-02T00:00:00Z
-lastmod = 2026-09-05T00:00:00Z
+lastmod = 2026-09-22T00:00:00Z
 category = "templates-checklists"
 tags = ["diagnostic", "workflow-triage", "client-operations", "checklist"]
 page_type = "template"
@@ -18,7 +18,7 @@ featured = false
 related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment/", "/problem-to-page-guide/", "/templates/workflow-starter-pack/", "/comparisons/crm-vs-project-management-tool-for-client-workflows/", "/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/workflows/milestone-delivery-workflow-for-solo-service-businesses/", "/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/", "/faq/what-counts-as-client-approval-before-billing-or-next-stage/"]
 +++
 
-Use this checklist when a client-workflow problem is visible but its cause is unclear. It is a routing aid, not a validated diagnostic instrument. Base the result on current project records rather than memory or a numerical score.
+When a client-workflow problem is visible but its cause is unclear, this checklist sorts it into a category and points to a first resource. It is a routing aid, not a validated diagnostic instrument. Base the result on current project records rather than memory or a numerical score.
 
 If you already know the specific symptom, use the [Problem-to-page guide](/problem-to-page-guide/) instead. If the entire lifecycle is unclear, read [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before classifying one part.
 
@@ -65,8 +65,6 @@ Clarify the process before comparing software when:
 - billing is not tied to the event stated in the agreement;
 - the record does not show what changes when a deal closes;
 - the system center is still disputed.
-
-A product can store a chosen owner, trigger, or state. It cannot choose those rules for the business.
 
 ## Continue from the result
 

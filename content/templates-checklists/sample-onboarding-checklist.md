@@ -1,12 +1,12 @@
 +++
 title = "Client onboarding checklist for freelancers and consultants"
 description = "A client onboarding checklist for confirming scope, access, ownership, communication, milestones, and billing rules before delivery begins."
-summary = "Use this checklist after the project's start conditions are met and before delivery begins."
+summary = "Run the kickoff checks in order, keep blocked work blocked, and create the first live milestone."
 feature_image = "/images/features/templates/client-onboarding-checklist.webp"
-feature_image_alt = "Cover titled “Client Onboarding Checklist” with a checklist drawing."
+feature_image_alt = 'Cover titled "Client Onboarding Checklist" with a checklist drawing.'
 draft = false
 date = 2026-03-16T00:00:00Z
-lastmod = 2026-08-28T00:00:00Z
+lastmod = 2026-09-09T00:00:00Z
 category = "templates-checklists"
 tags = ["checklist", "onboarding", "client-operations"]
 page_type = "template"
@@ -17,22 +17,16 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = true
 +++
 
-Use this checklist once the agreement permits onboarding and before delivery begins. It turns approved scope into a kickoff record with visible owners, dates, access requirements, and controls. Confirm any separate delivery start conditions, including a required deposit, before activating the first milestone.
-
-Use it after the start rule is clear. If you are still deciding what should happen between proposal approval and kickoff, read [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) or [Client onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) first.
+This checklist turns approved scope into a kickoff record with visible owners, dates, access requirements, and controls. Run it once the agreement permits onboarding and before delivery begins. Confirm any separate delivery start conditions, including a required deposit, before activating the first milestone.
 
 ## Return to the workflow when
 
-- proposal review is still open or approval is still fuzzy,
+- proposal review is still open or approval is unconfirmed,
 - the first milestone is not defined yet,
 - approval ownership or communication rules still need to be chosen,
 - you still need the broader sequence from handoff into kickoff.
 
-In those cases, go back to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/), or [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) before running this checklist.
-
-## Run the checklist before delivery begins
-
-Run it after proposal or contract handoff once the agreement's conditions for starting have been met. Do not rely on a general understanding of the project when scope, access, approval, or billing details still need a written record.
+In those cases, go back to [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/), [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/), or [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) before running this checklist.
 
 ## Information to confirm first
 
@@ -41,7 +35,7 @@ Run it after proposal or contract handoff once the agreement's conditions for st
 - which communication channel and billing rule the project will use,
 - what counts as kickoff-ready versus blocked.
 
-If those rules are not clear yet, this checklist is too early.
+If any of these is still undecided, settle it in the [Client onboarding workflow](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) first.
 
 ## What the onboarding record should establish
 
@@ -51,8 +45,6 @@ The onboarding record makes the project operationally usable by:
 - collecting required access and assets,
 - defining communication and approval rules,
 - locking the first billing and delivery triggers.
-
-If those points are unclear, kickoff is early, not efficient.
 
 ## Run the kickoff checks in order
 
@@ -67,7 +59,7 @@ If a required item is incomplete, keep the work that depends on it blocked. Star
 
 ## Continue into delivery or communication
 
-If kickoff is now clean and the first milestone is live, move next to [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) or [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), depending on whether the next risk is communication rhythm or delivery execution.
+If kickoff is now clean and the first milestone is live, move next to [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) or [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), depending on whether the next risk is communication rhythm or delivery execution.
 
 ## Onboarding checklist
 
@@ -125,7 +117,7 @@ Before starting a milestone, confirm:
 - Send the kickoff summary with owners, dates, and update cadence.
 - Issue a deposit or kickoff invoice when its agreed trigger occurs. If payment is required before delivery, confirm it before activating the milestone.
 
-## A complete onboarding record includes
+## Onboarding record check
 
 Treat onboarding as complete only when:
 - scope and exclusions are visible in one place,
@@ -136,14 +128,8 @@ Treat onboarding as complete only when:
 
 ## Guides that define the surrounding process
 
-- Workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Intake setup: [How to Build a Client Intake and Qualification Workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
-- Contract transition: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- Full onboarding rule: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
-- Ongoing communication rhythm: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
-
-## Do not use the checklist to hide these gaps
-
-- Treating onboarding as an email thread instead of a defined process.
-- Skipping admin controls because the client is "easy to work with."
-- Starting delivery before access and approval roles are confirmed.
+- Workflow context: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Intake setup: [How to build a client intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
+- Contract transition: [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
+- Full onboarding rule: [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
+- Ongoing communication rhythm: [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)

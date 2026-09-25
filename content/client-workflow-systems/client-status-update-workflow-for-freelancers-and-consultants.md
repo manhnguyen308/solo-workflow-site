@@ -1,12 +1,12 @@
 +++
 title = "Client status update workflow"
 description = "Send recurring client updates that record progress, blockers, decisions, required client actions, and the next milestone."
-summary = "Use this guide to standardize recurring client updates and keep milestones, blockers, decisions, and next actions visible."
+summary = "Set a recurring update rhythm that keeps milestones, blockers, decisions, and next actions in front of the client."
 feature_image = "/images/features/workflows/client-status-update-workflow.webp"
-feature_image_alt = "Cover titled “Client Status Update Workflow” with numbered steps: Trigger, Draft, Send, and Confirm."
+feature_image_alt = 'Cover titled "Client Status Update Workflow" with numbered steps: Trigger, Draft, Send, and Confirm.'
 draft = false
 date = 2026-03-29T00:00:00Z
-lastmod = 2026-08-19T00:00:00Z
+lastmod = 2026-08-28T00:00:00Z
 slug = "client-status-update-workflow-for-freelancers-and-consultants"
 category = "client-workflow-systems"
 tags = ["client-communication", "status-updates", "workflow"]
@@ -21,7 +21,7 @@ A status update records what moved, what is blocked, and what needs client atten
 
 A status update workflow gives the client one predictable view of progress, blockers, decisions, and next actions.
 
-Use this guide when communication rhythm is the specific problem. If the whole lifecycle is loose, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+It fits when communication rhythm is the specific problem. If the problem spans the whole lifecycle, start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## Who needs a recurring status process
 
@@ -29,17 +29,16 @@ Use this guide when communication rhythm is the specific problem. If the whole l
 - operators who want fewer reactive follow-ups,
 - businesses where delivery is active but current status is scattered across messages.
 
-If communication rhythm is not the open problem and kickoff remains ambiguous, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) or [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) first.
+If communication rhythm is not the open problem and kickoff remains ambiguous, fix [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) or [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) first.
 
-## When to use this workflow
+## When the update rhythm needs attention
 
-Use it when:
 - clients ask for progress updates outside the agreed cadence,
 - approvals wait on an unnamed action or owner,
 - the current state cannot be reconstructed from the project record,
 - you need one communication pattern that can repeat across projects.
 
-A status update cannot resolve kickoff ambiguity, a scope dispute, or an undecided tool role. Address the underlying workflow or comparison decision first.
+Settle kickoff ambiguity, scope disputes, or undecided tool roles in their own workflow or comparison. An update can report them but cannot resolve them.
 
 ## Basic operating model
 
@@ -87,18 +86,15 @@ A message that says "please review" is incomplete when no one is accountable for
 
 Do not make one email thread the only home for current project state.
 
-If you are deciding whether email is enough or whether a portal or workspace should carry more of the process, use [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
+If you are deciding whether email is enough or whether a portal or workspace should carry more of the process, use [Email vs client portal for deliverables and approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
 
 ## Keep the message and record aligned
 
-- Do not let the update become the only place where current truth lives.
 - Do not bury approvals inside a progress paragraph.
 - Do not mix a scope-change decision into a routine status update.
 - Do not change cadence casually without resetting client expectations.
 
 ## Step 5: separate updates from change requests
-
-A status update should not quietly renegotiate scope.
 
 If the client asks for something that changes deliverables, timing, or fee structure, route that into a formal change-request path instead of burying it in the scheduled update. Use [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
@@ -125,17 +121,10 @@ If the client asks for something that changes deliverables, timing, or fee struc
 - If the work is delayed by missing client inputs, say that directly and include the dependency in the update.
 - If nothing changed during the agreed reporting interval, the update should still confirm current status, known blockers, and what happens next.
 
-## Templates and related decisions
-
-- end-to-end context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- recurring operating rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
-- ready-to-use message structure: [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/)
-
 ## Choose the next resource
 
-- If you need a ready-to-use message structure, continue to [Weekly Client Status Update Template](/templates/weekly-client-status-update-template/).
-- If the issue is where review should happen, continue to [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
-- If the whole client path still feels reactive, return to [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- For a ready-to-use message structure, use the [Weekly client status update template](/templates/weekly-client-status-update-template/).
+- For the weekly review that feeds each update, use the [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/).
 
 ## Status update completion check
 

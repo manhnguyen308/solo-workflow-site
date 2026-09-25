@@ -1,12 +1,12 @@
 +++
 title = "Weekly client status update template"
-description = "A weekly client status update template for freelancers and consultants who already have an update rhythm and need a repeatable message format."
-summary = "Use this template to report progress, status, blockers, required client actions, and the next milestone in a consistent weekly format."
+description = "A copyable weekly status message with sections for progress, status, blockers, client actions, and the next milestone, plus rules for each field."
+summary = "Send the same update structure every week, with one clear client action and a deadline when a response is needed."
 feature_image = "/images/features/templates/weekly-client-status-update-template.webp"
-feature_image_alt = "Cover titled “Weekly Status Update” with a checklist drawing."
+feature_image_alt = 'Cover titled "Weekly Status Update" with a checklist drawing.'
 draft = false
 date = 2026-04-05T00:00:00Z
-lastmod = 2026-07-18T00:00:00Z
+lastmod = 2026-08-03T00:00:00Z
 category = "templates-checklists"
 tags = ["template", "client-communication", "status-updates"]
 page_type = "template"
@@ -16,18 +16,17 @@ related = ["/workflows/client-status-update-workflow-for-freelancers-and-consult
 featured = false
 +++
 
-Use this template after the client update rhythm is agreed. It gives progress, current status, blockers, required client actions, and the next milestone a stable message structure.
+This template gives progress, current status, blockers, required client actions, and the next milestone a stable message structure. It assumes the update rhythm is already agreed.
 
-If the audience, channel, cadence, or escalation rule is still undefined, settle it in [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) before adapting the message.
+If the audience, channel, cadence, or escalation rule is still undefined, settle it in [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) before adapting the message.
 
-## Use the template for recurring project updates
+## Updates this template covers
 
-Use it for:
 - recurring project updates after the communication rhythm is already agreed,
 - situations where the client needs one clear summary plus one clear next action,
 - projects where progress, blockers, and approvals need a repeatable format.
 
-Do not use it for:
+It does not cover:
 - first-time kickoff communication,
 - scope-change negotiation,
 - long retrospective reports,
@@ -46,13 +45,11 @@ Do not use it for:
 - after reviewing the live project record,
 - when the status in the message matches the status in that record.
 
-If you have not defined the communication rule, start with [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) before using this template.
-
 ## Check the project record before sending
 
 Check these first:
 - the project record is current,
-- the milestone status is honest,
+- the milestone status matches the work,
 - any client action has a date,
 - one approval owner is named if review is required.
 
@@ -101,7 +98,7 @@ Thanks,
 ## Write each field from current evidence
 
 - Keep "Progress this week" factual. Do not pad it to make the week sound bigger than it was.
-- Keep "Current status" to one honest label. If the project is blocked, say blocked.
+- Keep "Current status" to one label that matches the record. If the project is blocked, say blocked.
 - Put the real deadline under "What we need from you" instead of hiding it in Notes.
 - If you use a portal or workspace, let the template point to that location rather than trying to duplicate the full review context in email.
 
@@ -119,24 +116,18 @@ When the message asks for approval, feedback, files, or a timing decision:
 - give the date or review window,
 - avoid mixing that request with a new scope discussion.
 
-If the message is starting to include scope negotiation, switch to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) instead.
+If the message is starting to include scope negotiation, switch to [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) instead.
 
-## A complete update makes the next action clear
+## Update check
 
-The template has been used well when:
+The update is ready when:
 - the update explains current status without extra clarification,
 - required client actions are visible,
 - the message matches the live project record,
 - you can reuse the same structure next week without rewriting it from scratch.
 
-## Guides for cadence, channel, and review
-
-- communication workflow: [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
-- weekly operating rhythm: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
-- channel decision: [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/)
-
 ## Route the problem behind the message
 
 - If the update rhythm itself is still messy, revise it with [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
-- If the question is where these updates should live, use [Email vs Client Portal for Deliverables and Approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
-- If the operating rhythm around the update is weak, use [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/).
+- If the question is where these updates should live, use [Email vs client portal for deliverables and approvals](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/).
+- If the operating rhythm around the update is weak, use [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/).

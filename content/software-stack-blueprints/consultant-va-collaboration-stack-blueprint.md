@@ -2,12 +2,12 @@
 title = "Software stack blueprint for a consultant and VA"
 slug = "software-stack-blueprint-consultant--va-collaboration-setup"
 description = "Design a two-person client-operations stack with explicit decision rights, record ownership, permissions, handoffs, and upgrade conditions."
-summary = "Assign consultant and VA responsibilities without duplicating client truth or giving every role access to every system."
+summary = "Assign consultant and VA responsibilities without duplicating client status or giving every role access to every system."
 feature_image = "/images/features/blueprints/consultant-va-collaboration.webp"
-feature_image_alt = "Cover titled “Consultant + VA Setup” with a three-layer stack: Consultant lead, VA execution, and Shared visibility."
+feature_image_alt = 'Cover titled "Consultant + VA Setup" with a three-layer stack: Consultant lead, VA execution, and Shared visibility.'
 draft = false
 date = 2026-03-10T00:00:00Z
-lastmod = 2026-08-09T00:00:00Z
+lastmod = 2026-08-15T00:00:00Z
 category = "software-stack-blueprints"
 tags = ["consultant", "va", "collaboration", "stack-blueprint"]
 page_type = "guide"
@@ -80,7 +80,7 @@ The [proposal handoff workflow](/workflows/proposal-to-contract-handoff-workflow
 
 ## Choose a review cadence from the risk
 
-Do not adopt a generic Monday or Friday ritual by default. Review work often enough to catch a decision before delay changes a client commitment.
+Review work often enough to catch a decision before delay changes a client commitment.
 
 A review should cover:
 

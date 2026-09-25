@@ -1,12 +1,12 @@
 +++
 title = "Project start handoff readiness worksheet"
 description = "A worksheet for defining required inputs, approval evidence, next-action ownership, and blocked conditions at one project-stage boundary."
-summary = "Use this worksheet to document what must be true before a stage transition is allowed to happen, what blocks it, and what evidence should exist at the handoff boundary."
+summary = "Write down what must be true before work crosses from one stage to the next, what blocks it, and what evidence must exist."
 feature_image = "/images/features/templates/project-start-readiness-handoff-boundary-worksheet.webp"
-feature_image_alt = "Cover titled “Stage Readiness and Handoff” with a checklist drawing."
+feature_image_alt = 'Cover titled "Stage Readiness and Handoff" with a checklist drawing.'
 draft = false
 date = 2026-04-18T00:00:00Z
-lastmod = 2026-08-27T00:00:00Z
+lastmod = 2026-09-08T00:00:00Z
 slug = "project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["handoff", "readiness", "worksheet", "stage-transition"]
@@ -19,24 +19,21 @@ related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-a
 featured = true
 +++
 
-Use this worksheet after defining two project stages but before allowing work to cross between them. Record the required inputs, approval evidence, blocked conditions, and next-action owner for that transition. If a required client item is already known, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
+Between two defined project stages, this worksheet records what must be true before work crosses: the required inputs, approval evidence, blocked conditions, and next-action owner. If a required client item is already known, use [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
 
 ## Signs the boundary needs a written rule
 
-Use it when:
 
 - kickoff begins before required inputs are recorded,
 - review or billing begins without the required evidence,
 - final delivery is recorded but closeout conditions remain open,
 - the project record uses labels such as "basically ready" or "close enough to move" instead of verifiable criteria.
 
-If the lifecycle method is still unclear, read [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before defining this boundary.
-
-## Route a project that remains blocked
-
-If the transition is defined but a required item is missing, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/). If the waiting state needs a decision, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/). If the stage itself remains undefined, document the stage rule before completing this worksheet.
+If the lifecycle method is still unclear, read [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) before defining this boundary.
 
 ## Decisions to settle elsewhere
+
+This worksheet does not settle:
 
 - the full workflow design for the whole client lifecycle,
 - tool-stack structure,
@@ -71,7 +68,7 @@ If the preceding output or next-stage trigger is undefined, document that rule b
 | Delivery complete to invoice ready | milestone output, QA pass, agreed billing trigger | acceptance or other evidence required by the agreement | operator billing owner | review pending, rework open, dependency unresolved | deliverable link, QA note, visible milestone status |
 | Invoice closed to offboarding ready | payment received or financial close rule met | billing state confirmed | operator or account owner | invoice overdue, procurement delay, unresolved extra request | payment status, closeout record draft, next-step state |
 
-These are example dependencies, not a required order for every project. A deposit or recurring invoice may be due before delivery. Operational closeout may proceed separately from an open financial record when the agreement permits it. Record only the conditions that govern the transition being checked.
+The rows are examples, and the order differs between projects. A deposit or recurring invoice may be due before delivery. Operational closeout may proceed separately from an open financial record when the agreement permits it. Record only the conditions that govern the transition being checked.
 
 ## Stage transition being documented
 
@@ -102,13 +99,12 @@ Examples:
 
 Inputs should be specific enough that a second person could verify them without guessing what "mostly ready" means.
 
-If readiness depends on several reviewers feeding one decision path, define that routing separately with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+Define related rules in their own records:
 
-If readiness depends on missing client-side materials, answers, or access, define those items separately with [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
-
-If the boundary is already blocked beyond an acceptable waiting window, define the pause or escalation rule separately with [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-
-If the work has already crossed that line and the original transition plan is no longer reliable, reset it explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+- several reviewers feeding one decision: [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/);
+- missing client-side materials, answers, or access: [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/);
+- a boundary blocked beyond an acceptable waiting window: [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/);
+- a transition plan that is no longer reliable because work has already crossed the line: [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
 ## Required approval or signoff
 
@@ -148,7 +144,7 @@ Examples:
 - invoice sent but payment still open,
 - offboarding planned but signoff still unclear.
 
-If a block exists, the stage should remain visible as blocked rather than quietly moving forward.
+If a block exists, keep the stage visibly blocked until the missing condition is resolved.
 
 ## Evidence required before transition
 
@@ -178,27 +174,15 @@ Example: do not start delivery because "the client said yes in principle" if tha
 
 ### Proposal approval to onboarding
 
-Use this boundary when kickoff depends on an approved agreement, access, payment condition, or other recorded start requirement.
-
-Use with:
-- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
+Kickoff depends on an approved agreement, access, payment condition, or other recorded start requirement. See [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) and [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 
 ### Delivery completion to invoicing
 
-Use this boundary when billing must follow the trigger stated in the agreement and that trigger needs a visible record.
-
-Use with:
-- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
-- [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
+Billing must follow the trigger stated in the agreement and that trigger needs a visible record. See [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) and [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 
 ### Invoice closure to offboarding
 
-Use this boundary when closeout depends on a recorded billing state and final handoff conditions.
-
-Use with:
-- [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
-- [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/)
+Closeout depends on a recorded billing state and final handoff conditions. See [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) and [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
 
 ## Signs the handoff rule is too weak
 
@@ -210,12 +194,14 @@ Use with:
 
 ## Continue with the next stage
 
-- If the boundary you documented is proposal review moving into kickoff, continue to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
-- If the boundary is milestone completion moving into billing, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
-- If the boundary is payment closure moving into closeout, continue to [Client Offboarding Workflow for Freelancers and Solo Service Businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
+- If the boundary you documented is proposal review moving into kickoff, continue to [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
+- If the boundary is milestone completion moving into billing, continue to [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- If the boundary is payment closure moving into closeout, continue to [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
 - If the stage design is still undefined, document that rule before adding more boundary detail.
 
-## A usable boundary record includes
+## Boundary record check
+
+The record is ready when:
 
 - one exact transition is named,
 - readiness conditions are visible and testable,

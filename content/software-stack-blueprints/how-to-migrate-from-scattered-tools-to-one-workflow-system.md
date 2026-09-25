@@ -3,10 +3,10 @@ title = "How to migrate from scattered tools to one workflow system"
 description = "Consolidate scattered client tools without fixed timelines by protecting live work, defining authority, piloting the target, and retiring duplicates."
 summary = "Inventory a fragmented stack, protect active records, test the target model, and retire duplicate systems when completion checks pass."
 feature_image = "/images/features/blueprints/migrate-from-scattered-tools.webp"
-feature_image_alt = "Cover titled “Migrate From Scattered Tools” with a three-layer stack: Audit current state, Pick one center, and Retire overlap."
+feature_image_alt = 'Cover titled "Migrate From Scattered Tools" with a three-layer stack: Audit current state, Pick one center, and Retire overlap.'
 draft = false
 date = 2026-03-11T00:00:00Z
-lastmod = 2026-09-04T00:00:00Z
+lastmod = 2026-09-20T00:00:00Z
 category = "software-stack-blueprints"
 tags = ["migration", "stack-cleanup", "workflow-system"]
 page_type = "guide"
@@ -18,7 +18,7 @@ related = ["/guides/software-stack-blueprint-solo-freelancer-lean-budget/", "/co
 featured = true
 +++
 
-Use this guide when live client work is split across systems and the target operating model is already clear. The migration should reduce duplicate authority without interrupting delivery, approval, billing, or record access.
+This guide is for live client work split across systems when the target operating model is already clear. The migration should reduce duplicate authority without interrupting delivery, approval, billing, or record access.
 
 Decide the target shape first with the [lean stack blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) or [all-in-one versus specialized comparison](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/). Use the [stack audit worksheet](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) if the current inventory is incomplete.
 
@@ -59,7 +59,7 @@ Write one rule for each live record:
 - operational payment state;
 - reusable templates and reference material.
 
-Use the [system-of-record rules worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/) when two systems need a deliberate boundary. The target is not one application at any cost. It is one authoritative location for each current fact.
+Use the [system-of-record rules worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/) when two systems need a deliberate boundary. The target is one authoritative location for each current fact, which may still span more than one application.
 
 ## Step 3: separate active records from archives
 

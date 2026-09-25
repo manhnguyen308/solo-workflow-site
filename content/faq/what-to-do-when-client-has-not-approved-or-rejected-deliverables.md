@@ -1,12 +1,12 @@
 +++
 title = "Client has not approved deliverables: what to do next"
 description = "Handle a pending deliverable decision by recording the review state, following the agreed response terms, and escalating when the delay affects work."
-summary = "Use this page when deliverables have been sent, the review remains open, and you need to decide whether to wait, follow up, or escalate."
+summary = "Decide whether to wait, follow up, or escalate when sent deliverables still have no decision."
 feature_image = "/images/features/faq/pending-approval-decision-faq.webp"
-feature_image_alt = "Cover titled “Pending Approval FAQ” with a large question mark."
+feature_image_alt = 'Cover titled "Pending Approval FAQ" with a large question mark.'
 draft = false
 date = 2026-04-28T00:00:00Z
-lastmod = 2026-08-16T00:00:00Z
+lastmod = 2026-08-25T00:00:00Z
 category = "faq"
 tags = ["faq", "approval", "follow-up", "milestone", "workflow"]
 slug = "what-to-do-when-client-has-not-approved-or-rejected-deliverables"
@@ -24,8 +24,8 @@ When deliverables have been sent but no clear decision has arrived, record what 
 
 Do not use this FAQ to define the whole review process, decide what counts as a valid approval, or design the milestone stage from scratch.
 
-- If you need to know whether a response counts as approval, use [FAQ: What counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) first.
-- If the client has gone completely silent after receiving work, use [FAQ: What should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+- If you need to know whether a response counts as approval, use [FAQ: what counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) first.
+- If the client has gone completely silent after receiving work, use [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 - If the milestone stage is poorly defined, fix [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) before choosing a follow-up sequence.
 
 ## What must be true before this FAQ is useful
@@ -35,7 +35,7 @@ To use this page well, you need to know:
 - who the approval owner is,
 - what billing trigger or next-stage start depends on that decision.
 
-If those are not clear, define the review gate before following up.
+If those are not clear, define the review rule before following up.
 
 ## When must the stage stay open?
 
@@ -91,8 +91,8 @@ These actions can create an unsupported invoice trigger, an unapproved stage tra
 
 ## Continue from the pending decision
 
-- If you need to confirm whether a response counted as approval, go to [FAQ: What counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/).
-- If the client has gone silent with no response at all, go to [FAQ: What should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+- If you need to confirm whether a response counted as approval, go to [FAQ: what counts as client approval before billing or the next stage starts?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/)
+- If the client has gone silent with no response at all, go to [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 - If the block requires a pause or scope decision, go to [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-- If approval arrives and billing is next, go to [Invoice and payment workflow setup for freelancers and consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- If approval arrives and billing is next, go to [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 - If this is the final milestone and closeout is next, go to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).

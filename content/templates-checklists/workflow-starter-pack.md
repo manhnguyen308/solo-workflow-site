@@ -3,10 +3,10 @@ title = "Workflow starter pack: templates and checklists by bundle"
 description = "Four template and checklist bundles for client setup, delivery and approval, billing and closeout, and stack cleanup."
 summary = "Choose a bundle after its workflow rule is clear, or open one template when only one trigger needs support."
 feature_image = "/images/features/templates/workflow-starter-pack.webp"
-feature_image_alt = "Cover titled “Workflow Starter Pack” with tiles for Starter pack, Approval bundle, Billing bundle, and Cleanup bundle."
+feature_image_alt = 'Cover titled "Workflow Starter Pack" with tiles for Starter pack, Approval bundle, Billing bundle, and Cleanup bundle.'
 draft = false
 date = 2026-04-25T00:00:00Z
-lastmod = 2026-09-04T00:00:00Z
+lastmod = 2026-09-21T00:00:00Z
 slug = "workflow-starter-pack"
 page_type = "guide"
 search_intent = "implementation"
@@ -42,9 +42,9 @@ Do not import a sample sequence as a contract term or universal cadence. Adapt e
 
 ## Use only what the stage requires
 
-A bundle is a menu, not a requirement to use every item. Choose the resources that correspond to current triggers and records. Record who owns each one and where its result belongs.
+You do not need every item in a bundle. Choose the resources that correspond to current triggers and records. Record who owns each one and where its result belongs.
 
-For an ambiguous client response, use [FAQ: what counts as client approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/). For a closeout request with no response, use [Client not responding at project closeout](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/).
+For an ambiguous client response, use [FAQ: what counts as client approval?](/faq/what-counts-as-client-approval-before-billing-or-next-stage/) For a closeout request with no response, use [Client not responding at project closeout](/faq/what-to-do-when-client-does-not-respond-to-project-closeout/).
 
 ## Finish with one named next action
 
@@ -55,4 +55,4 @@ After completing a resource:
 3. update any affected date, approval, billing, or closeout state;
 4. open another resource only when the next trigger requires it.
 
-The bundle has done its job when the current stage has a usable record and a named next action, not when every linked resource has been opened.
+Stop when the current stage has a usable record and a named next action, even if some linked resources are still unopened.

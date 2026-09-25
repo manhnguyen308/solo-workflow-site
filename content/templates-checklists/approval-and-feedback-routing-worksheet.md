@@ -1,12 +1,12 @@
 +++
 title = "Approval and feedback routing worksheet for multi-stakeholder review"
 description = "Define who may comment, who consolidates feedback, who gives final approval, and how conflicting or late input is handled."
-summary = "Use this worksheet to document how review comments are collected, routed, consolidated, and approved when several stakeholders are involved."
+summary = "Document how review comments are collected, consolidated, and approved when several stakeholders are involved."
 feature_image = "/images/features/templates/approval-feedback-routing-worksheet.webp"
-feature_image_alt = "Cover titled “Approval & Feedback Routing” with a checklist drawing."
+feature_image_alt = 'Cover titled "Approval & Feedback Routing" with a checklist drawing.'
 draft = false
 date = 2026-04-15T00:00:00Z
-lastmod = 2026-07-30T00:00:00Z
+lastmod = 2026-08-05T00:00:00Z
 slug = "approval-and-feedback-routing-worksheet-for-multi-stakeholder-review"
 category = "templates-checklists"
 tags = ["approval", "feedback", "review", "worksheet"]
@@ -19,24 +19,22 @@ related = ["/workflows/proposal-revision-and-approval-workflow-for-freelancers-a
 featured = true
 +++
 
-Use this worksheet when work is entering review and several people can shape the outcome. Define one route for comments, one consolidation owner, one final approval path, and rules for conflicting or late feedback.
+When several people can shape a review outcome, define one route for comments, one consolidation owner, one final approval path, and rules for conflicting or late feedback.
 
-Use this when the review path is messy, not when the main issue is simply that one required input is missing or one blocked state needs escalation.
-
-## Use it when feedback has several sources
-
-Use it when:
+## When feedback comes from several places
 
 - several client stakeholders want to comment on the same proposal or deliverable,
 - feedback arrives through email, chat, calls, and side messages at the same time,
 - contradictory comments are causing rework,
 - one final approval is needed before billing, handoff, or the next revision round.
 
-If the bigger problem is still stage readiness rather than review routing, use [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) first.
+If the bigger problem is still stage readiness rather than review routing, use [Project start handoff readiness worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) first.
 
-If the main problem is that a specific client-side answer, file, or approval item is missing, use [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
+If the main problem is that a specific client-side answer, file, or approval item is missing, use [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/) instead.
 
-## Keep authority and scope outside the worksheet
+## What the worksheet leaves to other records
+
+This worksheet does not settle:
 
 - the entire proposal workflow,
 - the full delivery workflow,
@@ -155,27 +153,15 @@ This rule prevents a late comment from silently reopening a stage that the recor
 
 ### Proposal review with multiple stakeholders
 
-Use this when commercial, legal, and delivery reviewers all comment before signature.
-
-Use with:
-- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- [Approval Owner](/glossary/approval-owner/)
+Commercial, legal, and delivery reviewers all comment before signature. See [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) and [Approval owner](/glossary/approval-owner/).
 
 ### Deliverable review with client + internal approver
 
-Use this when one person reviews the work closely but another person must accept it formally.
-
-Use with:
-- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
-- [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/)
+One person reviews the work closely but another person must accept it formally. See [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) and [Project start handoff readiness worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/).
 
 ### Revision loops with scattered comments
 
-Use this when comments arrive from several threads and no single revision set exists.
-
-Use with:
-- [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
-- [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/)
+Comments arrive from several threads and no single revision set exists. See [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/) and [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
 
 ## Warning signs of broken approval routing
 
@@ -187,12 +173,14 @@ Use with:
 
 ## Route the result into the active workflow
 
-- If the review stage is proposal review before signature, continue to [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
-- If the review stage is milestone or deliverable review, continue to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
+- If the review stage is proposal review before signature, continue to [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- If the review stage is milestone or deliverable review, continue to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If approval authority is unclear, define the [approval owner](/glossary/approval-owner/) before applying the routing rule.
-- If silence is the main issue after routing is defined, continue to [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+- If silence is the main issue after routing is defined, continue to [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 
-## A finished routing rule
+## Routing rule check
+
+The rule is ready when:
 
 - one review stage is documented clearly,
 - who can comment is narrower than "everyone involved",

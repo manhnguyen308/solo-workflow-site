@@ -2,10 +2,10 @@
 title = "Client workflow templates and checklists for freelancers and solo operators"
 description = "Workflow checklists and templates for solo operators covering onboarding, scope and handoff, delivery, review routing, invoicing, and weekly operations."
 feature_image = "/images/features/hubs/templates-checklists.webp"
-feature_image_alt = "Cover titled “Templates and Checklists” with tiles for Onboarding, Weekly ops, Invoice, and Stack audit."
+feature_image_alt = 'Cover titled "Templates and Checklists" with tiles for Onboarding, Weekly ops, Invoice, and Stack audit.'
 +++
 
-Use a template or checklist after the operating rule is clear and you need a repeatable record for one trigger, such as kickoff, review, billing, or closeout.
+Each template or checklist records one trigger, such as kickoff, review, billing, or closeout, after the operating rule for that stage is clear.
 
 If you are still defining the client lifecycle, stack model, or system of record, begin with the relevant [workflow](/client-workflow-systems/), [blueprint](/software-stack-blueprints/), or [comparison](/workflow-comparisons/). Use the [Workflow diagnostic checklist](/templates/workflow-diagnostic-checklist/) when you cannot name the affected stage.
 

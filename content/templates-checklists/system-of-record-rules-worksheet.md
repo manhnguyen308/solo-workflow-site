@@ -1,12 +1,12 @@
 +++
 title = "System-of-record rules worksheet for solo operators"
 description = "Define where each type of client information is authoritative, what may be mirrored, and how records move between systems."
-summary = "Use this worksheet to document system-of-record rules, define ownership by data type, and reduce duplicated truth across a solo operating stack."
+summary = "Name the authoritative record for each type of client data and the rules for copying between tools."
 feature_image = "/images/features/templates/system-of-record-rules-worksheet.webp"
-feature_image_alt = "Cover titled “System-of-Record Rules” with a checklist drawing."
+feature_image_alt = 'Cover titled "System-of-Record Rules" with a checklist drawing.'
 draft = false
 date = 2026-04-22T00:00:00Z
-lastmod = 2026-08-18T00:00:00Z
+lastmod = 2026-08-27T00:00:00Z
 slug = "system-of-record-rules-worksheet-for-solo-operators"
 category = "templates-checklists"
 tags = ["system-of-record", "worksheet", "ownership", "handoffs"]
@@ -19,26 +19,23 @@ related = ["/comparisons/crm-vs-project-management-tool-for-client-workflows/", 
 featured = true
 +++
 
-Use this worksheet after choosing the stack model and inventorying live tools. For each data type, name one authoritative record, define any permitted mirror, and document the handoff between systems. If the live tool inventory is incomplete, use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) first.
+After choosing the stack model and inventorying live tools, name one authoritative record for each data type, define any permitted mirror, and document the handoff between systems. If the live tool inventory is incomplete, use [Stack audit and consolidation worksheet for solo operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/) first.
 
-## Use it when two tools share current status
+## Where ownership rules are missing
 
-Use it when:
 
 - you already know the likely system center but have not documented the rules,
 - two tools still seem to share live status in confusing ways,
 - migration or consolidation keeps stalling because ownership boundaries are vague,
 - you need a cleaner rule than "check both places."
 
-If you still have not chosen CRM-first, PM-first, or hybrid, start with [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+If you still have not chosen CRM-first, PM-first, or hybrid, start with [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
-If you still need the broader stack model first, start with [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
-
-## Continue into cleanup or migration
-
-When ownership rules are clear but cleanup remains, use [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/). If the rules reveal duplicate current tools, use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
+If you still need the broader stack model first, start with [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 ## Choices outside these rules
+
+These rules do not decide:
 
 - whether the business should stay all-in-one or move toward a specialized stack,
 - which tool category to buy,
@@ -167,13 +164,15 @@ Example: "When proposal is approved, copy approved scope summary and kickoff dat
 
 ## Put the ownership rules to work
 
-- If the system-center boundary is undefined, use [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
-- If ownership is now clearer but the stack is still bloated, use [Stack Audit / Consolidation Worksheet for Solo Operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
-- If the rules are clear and the problem is moving the live system safely, continue to [How to Migrate from Scattered Tools to One Workflow System](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
-- If the broader stack model is undefined, use [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
-- If decisions about scope, approval, and billing keep getting relitigated even with clear ownership rules, run the [Client Decision Log Workflow for Freelancers and Solo Service Businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/).
+- If the system-center boundary is undefined, use [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- If ownership is now clearer but the stack is still bloated, use [Stack audit and consolidation worksheet for solo operators](/templates/stack-audit-consolidation-worksheet-for-solo-operators/).
+- If the rules are clear and the problem is moving the live system safely, continue to [How to migrate from scattered tools to one workflow system](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
+- If the broader stack model is undefined, use [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If decisions about scope, approval, and billing keep getting relitigated even with clear ownership rules, run the [Client decision log workflow for freelancers and solo service businesses](/workflows/client-decision-log-workflow-for-freelancers-and-solo-service-businesses/).
 
-## Rules ready to implement
+## Rules check
+
+The rules are ready when:
 
 - each major data type has one explicit owner,
 - mirrored fields are narrow and intentional,

@@ -1,12 +1,12 @@
 +++
 title = "Delivery QA checklist before client handoff"
-description = "A pre-handoff QA checklist for milestone or final delivery moments when the delivery workflow is already defined and you need a repeatable quality-control step."
-summary = "Verify scope, file quality, client instructions, delivery evidence, and the next project action before a client handoff."
+description = "Pre-send QA checks for milestone and final deliveries, covering scope alignment, files and links, client-ready notes, and record updates."
+summary = "Catch wrong versions, missing next steps, and unrecorded deliveries before the client sees the work."
 feature_image = "/images/features/templates/delivery-qa-checklist.webp"
-feature_image_alt = "Cover titled “Delivery QA Checklist” with a checklist drawing."
+feature_image_alt = 'Cover titled "Delivery QA Checklist" with a checklist drawing.'
 draft = false
 date = 2026-03-14T00:00:00Z
-lastmod = 2026-08-19T00:00:00Z
+lastmod = 2026-08-29T00:00:00Z
 category = "templates-checklists"
 tags = ["qa", "delivery", "handoff", "checklist"]
 page_type = "template"
@@ -16,11 +16,13 @@ related = ["/templates/client-onboarding-checklist-for-freelancers-and-consultan
 featured = false
 +++
 
-Use this checklist before a milestone, review package, or final delivery. For a minor update, keep only the checks that match its scope and risk rather than assuming every handoff needs the full list.
+Run these checks before a milestone, review package, or final delivery goes to the client. For a minor update, keep only the checks that match its scope and risk rather than assuming every handoff needs the full list.
 
-If milestone ownership, approval rules, or handoff timing are still unclear, define them in [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) before running the quality checks.
+If milestone ownership, approval rules, or handoff timing are still unclear, define them in [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/) before running the quality checks.
 
 ## Confirm the delivery rule first
+
+Before running the checks, know:
 
 - what the milestone or delivery is supposed to include,
 - who can approve it,
@@ -29,9 +31,8 @@ If milestone ownership, approval rules, or handoff timing are still unclear, def
 
 If any of those are still open questions, go back to the workflow first.
 
-## Use the full checklist for these handoffs
+## When to run the full list
 
-Use it before:
 - a milestone submission,
 - a revision round closeout,
 - a final delivery,
@@ -39,7 +40,7 @@ Use it before:
 
 ## Decisions to settle before quality review
 
-Do not use this page to decide:
+The checklist does not decide:
 - whether the milestone itself is ready to close,
 - whether a change request should be accepted,
 - who the approval owner is,
@@ -78,20 +79,12 @@ Where relevant, attach:
 - any implementation note the client needs to avoid misuse,
 - the exact next response or approval you need back.
 
-Attach the evidence the client needs to review the delivery and take the requested next action.
-
 ## Final handoff message structure
 
 - What is being delivered now.
 - What changed from the prior draft or milestone.
 - What the client should review first.
 - What response is needed and by when.
-
-## Handoffs covered by this checklist
-
-- recurring milestone deliveries,
-- final project handoffs,
-- any client-facing delivery where approval unlocks billing, closeout, or the next stage.
 
 ## Handoff errors this checklist can catch
 
@@ -106,7 +99,9 @@ Attach the evidence the client needs to review the delivery and take the request
 - If implementation depends on the client's team, name the dependency directly in the handoff.
 - If approval is needed by a certain date, state the deadline and the consequence of delay clearly.
 
-## A ready-to-send handoff includes
+## Ready-to-send check
+
+The handoff is ready when:
 
 - the delivered item matches the agreed scope,
 - the client knows the next expected action,
@@ -115,15 +110,15 @@ Attach the evidence the client needs to review the delivery and take the request
 
 ## Guides for the surrounding workflow
 
-- Delivery workflow context: [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
-- Lifecycle context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Onboarding quality baseline: [Client Onboarding Checklist for Freelancers and Consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
-- Weekly operational rhythm: [Weekly Client Operations Checklist (Solo Business)](/templates/weekly-client-operations-checklist-solo-business/)
-- Closeout discipline: [Client Offboarding + Testimonial Request Template](/templates/client-offboarding--testimonial-request-template/)
-- Billing follow-through: [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
+- Delivery workflow context: [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+- Lifecycle context: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Onboarding quality baseline: [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/)
+- Weekly operational rhythm: [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/)
+- Closeout discipline: [Client offboarding and testimonial request template](/templates/client-offboarding--testimonial-request-template/)
+- Billing follow-through: [Invoice and payment workflow checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/)
 
 ## Continue from the handoff result
 
-- If the client needs to review and reply, continue with [Client Status Update Workflow for Freelancers and Consultants](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
-- If the handoff exposes new scope, move to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
-- If the milestone is complete and billing should start, continue to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- If the client needs to review and reply, continue with [Client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/).
+- If the handoff exposes new scope, move to [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- If the milestone is complete and billing should start, continue to [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).

@@ -1,12 +1,12 @@
 +++
 title = "Proposal revision and approval workflow"
 description = "Control proposal review, revisions, approval ownership, and the transition from accepted proposal to contract and onboarding."
-summary = "Use this workflow to control proposal review, capture revisions, define final approval, and separate pre-signature edits from post-signature scope changes."
+summary = "Run proposal review from one visible version, capture revisions, define final approval, and keep pre-signature edits apart from later scope changes."
 feature_image = "/images/features/workflows/proposal-revision-approval-workflow.webp"
-feature_image_alt = "Cover titled “Proposal Revision and Approval” with numbered steps: Submit, Revise, Approve, and Close."
+feature_image_alt = 'Cover titled "Proposal Revision and Approval" with numbered steps: Submit, Revise, Approve, and Close.'
 draft = false
 date = 2026-04-10T00:00:00Z
-lastmod = 2026-08-26T00:00:00Z
+lastmod = 2026-09-07T00:00:00Z
 slug = "proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses"
 category = "client-workflow-systems"
 tags = ["proposal", "approval", "revision", "workflow"]
@@ -21,13 +21,9 @@ featured = false
 
 Proposal review needs one visible version, a defined route for comments, and a named person who can approve the result. Without those controls, revisions can change the proposed scope before anyone records the new agreement.
 
-Use this workflow after the proposal package is ready for review and before the approved terms move into contract and onboarding. Once the agreement is signed, route proposed changes to that baseline through change-request control, including changes requested before kickoff.
+The stage runs from a review-ready proposal package to approved terms that can move into contract and onboarding. Once the agreement is signed, route proposed changes to that baseline through change-request control, including changes requested before kickoff. Use qualified advice for legal or contractual questions.
 
-Use this workflow when the open problem is proposal review itself: revisions are bouncing around, approval ownership is vague, comments are arriving from several people, or signed projects keep starting with hidden ambiguity.
-
-## Scope of the review workflow
-
-Prepare the proposal package before starting review. Use qualified advice for legal or contractual questions, and preserve the signed version when later changes need a separate decision.
+Revisit this stage when revisions bounce between versions, approval ownership is vague, comments arrive from several people, or signed projects start with hidden ambiguity.
 
 ## Who needs a controlled review
 
@@ -35,11 +31,11 @@ Prepare the proposal package before starting review. Use qualified advice for le
 - solo operators who revise proposals manually,
 - businesses where proposal review produces delays or unclear promises.
 
-If the proposal itself is still structurally weak, fix [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first.
+If the proposal itself is still structurally weak, fix [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) first.
 
 ## Review decisions to make explicit
 
-It should make six things explicit:
+The review process needs a clear answer for:
 - when proposal review officially starts,
 - who owns the next action during review,
 - how revision requests are captured,
@@ -49,16 +45,9 @@ It should make six things explicit:
 
 If any of those remain vague, the package may move forward without a stable agreement record.
 
-## Sequence from qualification to onboarding
+## Where review sits in the sequence
 
-The sequence should be:
-1. intake qualifies the opportunity,
-2. proposal handoff produces a review-ready package,
-3. proposal revision and approval controls pre-signature review,
-4. onboarding starts only after proposal approval and signed agreement,
-5. later scope changes move into change-request control.
-
-Use [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) to prepare the package, then use [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) after approval and signing.
+Review starts after [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) produces the package. It ends before [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/), which starts only after approval and a signed agreement. Later scope changes go through change-request control.
 
 ## Step 1: start review with one visible review state
 
@@ -79,7 +68,7 @@ You need to know:
 - who can give final approval,
 - where that authority is documented.
 
-If several stakeholders are commenting, but no one can close the decision, the workflow is still open. Use [Approval Owner](/glossary/approval-owner/) when the decision-maker is fuzzy. Use [Client Dependency](/glossary/client-dependency/) when review is waiting on client-side input rather than your own revision work.
+If several stakeholders are commenting, but no one can close the decision, the workflow is still open. Use [Approval owner](/glossary/approval-owner/) when the decision-maker is fuzzy. Use [Client dependency](/glossary/client-dependency/) when review is waiting on client-side input rather than your own revision work.
 
 If client-side answers or materials are too vague to track, use [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/) to identify and assign them before review resumes.
 
@@ -93,7 +82,7 @@ Every revision request should answer:
 
 Do not treat proposal feedback as a pile of informal comments. If the request changes scope, timing, ownership, or commercial assumptions, record it clearly before editing the proposal.
 
-If several stakeholders are involved and the routing path itself is the problem, define it first with [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
+If several stakeholders are involved and the routing path itself is the problem, define it first with [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## Step 4: define the revision boundary
 
@@ -147,9 +136,9 @@ Once approved:
 - carry forward dependencies that still affect kickoff,
 - carry forward billing triggers that were agreed in review.
 
-Then move to [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) only after the terms are approved and the agreement is signed.
+Then move to [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) only after the terms are approved and the agreement is signed.
 
-If kickoff criteria remain unclear, document the readiness gate with [Project Start Readiness and Handoff Boundary Worksheet for Solo Operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) before kickoff starts.
+If kickoff criteria remain unclear, document the kickoff readiness rule with [Project start handoff readiness worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/) before kickoff starts.
 
 ## What to do when proposal review stalls
 
@@ -164,13 +153,12 @@ If review stalls:
 - name what the stall is blocking,
 - set one visible follow-up point.
 
-If the stall is purely silence during review, use [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+Match the next resource to what the stall has become:
 
-If review reaches the pause or escalation condition defined for the engagement, use [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-
-If repeated revision churn or conflicting input has broken the original review plan itself, reset the review path explicitly with [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) before treating the next round as normal.
-
-If the reset is already decided and stakeholders need one clear revised message, use [Recovery Update and Revised Plan Notice Template for Solo Operators](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
+- silence during review: [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/);
+- a pause or escalation condition defined for the engagement: [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/);
+- revision churn or conflicting input that has broken the review plan: [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/), before treating the next round as normal;
+- a decided reset that stakeholders need to hear in one message: [Recovery update template for delayed projects](/templates/recovery-update-and-revised-plan-notice-template-for-solo-operators/).
 
 ## Practical review map
 
@@ -189,26 +177,7 @@ If the reset is already decided and stakeholders need one clear revised message,
 - revision requests are answered in chat but not reflected in the actual proposal record,
 - proposal edits continue after the team is already preparing kickoff,
 - no one can tell whether the latest version is still under review or already approved,
-- pre-signature revisions quietly become post-signature delivery changes.
-
-## Problems created by unresolved review
-
-Unresolved proposal review can leave these issues open:
-
-- kickoff ambiguity,
-- hidden dependency problems,
-- delivery friction that should have been resolved before signature,
-- later change requests that still depend on unresolved pre-signature review.
-
-Resolve those items before the approved proposal moves into contract and onboarding.
-
-## Related review and handoff guides
-
-- proposal package preparation: [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- ownership clarity: [Approval Owner](/glossary/approval-owner/)
-- blocked review diagnosis: [Client Dependency](/glossary/client-dependency/)
-- post-approval scope control: [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
-- signed-project activation: [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/)
+- pre-signature revisions turn into post-signature delivery changes without a decision.
 
 ## Controlled review outcome
 
@@ -219,4 +188,4 @@ The proposal can move into contract and onboarding when:
 - final approval can be pointed to without guesswork,
 - onboarding starts from an approved and signed agreement.
 
-If the broader issue is still weak scoping before review begins, return to [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/). After approval and signature, use [Client Onboarding Workflow for Freelancers and Consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/) to prepare delivery. For a proposed change to signed scope, use [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+After approval and signature, continue to [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).

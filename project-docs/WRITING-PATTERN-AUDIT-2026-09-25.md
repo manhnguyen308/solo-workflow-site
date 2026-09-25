@@ -1,5 +1,7 @@
 # Writing-pattern audit: 2026-09-25
 
+> Fix pass completed the same day in Edit mode. The findings below preserve the audit snapshot. Resolved: every item under "Defects found while reading"; the kickers and weight-adding contrasts in patterns 1 to 5; the repeated tool-cannot-settle line (16 to 3 copies); first-screen purpose restatements (article aside rewritten, 45 summaries rewritten, "Use this" openers 90 to 8); stacked routing paragraphs, duplicate lists, duplicate completion sections, and "Use with:" blocks; homepage, 404, and list-template card copy; all title-case link anchors (516 normalized to current titles); horizontal rules, bold pseudo-headings, the spaced hyphens, and curly quotes in alt text. Kept on purpose: "Who needs" and failure-point sections that `project-docs/CONTENT_OPERATIONS.md` requires, contrasts where both halves carry information, FAQ question headings, and the FAQ title formats (a search-facing change for a separate pass). Research updates in the same pass: the ClickUp hierarchy now lists optional Subfolders, Calendly plan boundaries now name the Standard and Teams features, and the privacy policy now cites the Google Fonts FAQ for the data sent with font requests.
+
 ## Decision
 
 The site no longer has a word-level problem. Source content has no dash punctuation, no title-case headings, no capitalized words after heading colons, no chatbot residue, no placeholders, and only a handful of watchlist words. The September remediation removed most of what a word scan can catch.

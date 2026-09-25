@@ -1,12 +1,12 @@
 +++
 title = "Recovery update template for delayed projects"
 description = "Explain a project reset, retire the outdated plan, state the revised path, and request the confirmation needed before work resumes."
-summary = "Use this template to explain what changed, what is no longer valid, what the revised path is, and what confirmation is required before work resumes."
+summary = "Tell the client what changed, what no longer applies, what the revised plan is, and what confirmation is needed before work resumes."
 feature_image = "/images/features/templates/recovery-update-revised-plan-notice-template.webp"
-feature_image_alt = "Cover titled “Recovery Update Notice” with a checklist drawing."
+feature_image_alt = 'Cover titled "Recovery Update Notice" with a checklist drawing.'
 draft = false
 date = 2026-04-19T00:00:00Z
-lastmod = 2026-08-24T00:00:00Z
+lastmod = 2026-09-04T00:00:00Z
 slug = "recovery-update-and-revised-plan-notice-template-for-solo-operators"
 category = "templates-checklists"
 tags = ["recovery-update", "revised-plan", "client-communication", "template"]
@@ -19,11 +19,11 @@ related = ["/templates/scope-reset-and-recovery-worksheet-for-solo-operators/", 
 featured = true
 +++
 
-Use this template after the proposed reset is defined. Explain what changed, state whether the revised plan is awaiting approval or already agreed, and request any confirmation or input needed before work resumes.
+Send this notice after the proposed reset is defined. It explains what changed, states whether the revised plan is awaiting approval or already agreed, and requests any confirmation or input needed before work resumes.
 
-## Send it after the reset is defined
+## Situations that call for a reset notice
 
-Use it when you need to send one visible reset or revised-plan message after:
+Send one visible reset message after:
 
 - delays have made the old timeline unreliable,
 - conflicting input has broken the current review path,
@@ -31,18 +31,18 @@ Use it when you need to send one visible reset or revised-plan message after:
 - partial delivery no longer fits the currently workable scope,
 - accumulated changes require one explicit new baseline.
 
-If you still have not decided what the reset actually is, step back first to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+If you still have not decided what the reset actually is, step back first to [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
 
 ## Decisions to make before writing
 
-This template should not decide:
+This template does not decide:
 
 - whether a reset is necessary,
 - whether the work should pause, escalate, or close out,
 - whether the new scope is commercially acceptable,
 - the full recovery workflow.
 
-Resolve the pause, scope, commercial, and recovery decisions before drafting the notice. The template communicates the revised plan; it does not choose it.
+Resolve the pause, scope, commercial, and recovery decisions before drafting the notice.
 
 ## Confusion the notice should prevent
 
@@ -61,7 +61,7 @@ Confirm:
 - whether timing, scope, or billing changed,
 - who needs to reply or approve.
 
-If those are still fuzzy, do not send the notice yet.
+If any of those is still undecided, do not send the notice yet.
 
 ## Recovery update and revised plan notice template
 
@@ -136,11 +136,11 @@ Write only what needs to be true now:
 - what timing has changed,
 - whether billing or signoff timing moved.
 
-Do not dump every project detail into the notice. It should replace ambiguity, not create a second dense project brief.
+Do not put every project detail into the notice.
 
 ## Reason for the reset in plain language
 
-Keep the reason operational, not emotional.
+State the reason in operational terms.
 
 Useful examples:
 
@@ -149,7 +149,7 @@ Useful examples:
 - the current milestone no longer reflects the approved scope,
 - the project needs a revised baseline before work can continue responsibly.
 
-Avoid blame-heavy phrasing. Clarity matters more than frustration.
+Avoid blame-heavy phrasing.
 
 ## What confirmation or input is now required
 
@@ -161,7 +161,7 @@ Name the one thing you need next:
 - one named approval owner,
 - confirmation of revised scope or timeline.
 
-If the client cannot tell what reply is required, the reset message has not finished the job.
+If the client cannot tell what reply is required, revise the message before sending it.
 
 ## Restart conditions / readiness conditions
 
@@ -189,38 +189,30 @@ Use neutral language that identifies the revised plan without blame or threats.
 
 ### Delayed project needs a revised timeline
 
-Use with:
-- [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/)
-- [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/)
+See [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/) and [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 
 ### Accumulated changes require a new approved baseline
 
-Use with:
-- [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/)
-- [Client Change Request Template](/templates/client-change-request-template/)
+See [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/) and [Client change request template](/templates/client-change-request-template/).
 
 ### Blocked dependencies force a reset of sequence
 
-Use with:
-- [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/)
-- [Client Input Dependency Worksheet for Solo Operators](/templates/client-input-dependency-worksheet-for-solo-operators/)
+See [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/) and [Client input dependency worksheet for solo operators](/templates/client-input-dependency-worksheet-for-solo-operators/).
 
 ### Conflicting input invalidates the old plan
 
-Use with:
-- [Proposal Revision and Approval Workflow for Freelancers and Solo Service Businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/)
-- [Approval and Feedback Routing Worksheet for Multi-Stakeholder Review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/)
+See [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/) and [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
 
 ## Record the response and next state
 
 - If the authorized client contact confirms the revised path, record that decision. Resume only when the plan's other start conditions, such as required inputs or payment, are also met.
-- If the reset itself is still not fully defined, return to [Scope Reset and Recovery Worksheet for Solo Operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
-- If the project is still only blocked and not yet broken, step back to [Escalation and Pause-State Worksheet for Solo Operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
-- If the revised plan introduces new billable scope, continue to [Change Request Workflow for Freelancers and Consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
+- If the reset itself is still not fully defined, return to [Scope reset and recovery worksheet for solo operators](/templates/scope-reset-and-recovery-worksheet-for-solo-operators/).
+- If the project is still only blocked and not yet broken, step back to [Escalation and pause-state worksheet for solo operators](/templates/escalation-and-pause-state-worksheet-for-solo-operators/).
+- If the revised plan introduces new billable scope, continue to [Change request workflow for freelancers and consultants](/workflows/change-request-workflow-for-freelancers-and-consultants/).
 
-## A notice ready to send
+## Notice check
 
-This template is doing its job when:
+The notice is ready when:
 
 - the reader can tell what changed,
 - the reader can distinguish a proposed reset from an approved replacement,

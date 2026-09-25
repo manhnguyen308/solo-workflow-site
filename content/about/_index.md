@@ -3,7 +3,7 @@ title = "About"
 description = "What SoloOpsGuide publishes, who it serves, how recommendations are framed, and which limits readers should apply before acting."
 summary = "Learn who SoloOpsGuide serves, what it publishes, how it reaches recommendations, and where its guidance stops."
 date = 2026-03-20T00:00:00Z
-lastmod = 2026-08-30T00:00:00Z
+lastmod = 2026-09-12T00:00:00Z
 +++
 
 SoloOpsGuide publishes workflow guidance for freelancers, consultants, and solo service operators. Its pages help readers define client stages, assign ownership, choose a manageable stack, and apply those decisions with practical resources.
@@ -24,7 +24,7 @@ The site is less relevant to self-serve product businesses or larger organizatio
 - Templates and checklists help apply a rule inside active work.
 - Glossary and FAQ pages clarify one term or blocker before returning to implementation.
 
-Each page has limits. A template cannot define the policy it is meant to apply, and a product comparison cannot repair an undefined workflow.
+Each page has limits: a template applies a policy that is already defined, and a product comparison assumes the workflow is settled.
 
 ## How recommendations are framed
 

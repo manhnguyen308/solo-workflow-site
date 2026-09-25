@@ -1,12 +1,12 @@
 +++
 title = "FAQ: what counts as client approval before billing or the next stage starts?"
 description = "Define client approval, distinguish it from acknowledgment, and verify the agreed trigger before billing or starting the next stage."
-summary = "Use this page when you are unsure whether a client response actually approved the work or only acknowledged it."
+summary = "Tell an approval from an acknowledgment before you bill or start the next stage."
 feature_image = "/images/features/faq/client-approval-signoff-faq.webp"
-feature_image_alt = "Cover titled “What Counts as Approval?” with a large question mark."
+feature_image_alt = 'Cover titled "What Counts as Approval?" with a large question mark.'
 draft = false
 date = 2026-04-26T00:00:00Z
-lastmod = 2026-08-17T00:00:00Z
+lastmod = 2026-08-26T00:00:00Z
 category = "faq"
 tags = ["faq", "approval", "signoff", "milestone", "billing"]
 slug = "what-counts-as-client-approval-before-billing-or-next-stage"
@@ -28,7 +28,7 @@ Use this answer when a client has responded but you cannot tell whether the resp
 - Several stakeholders are commenting without one decision path.
 - The client has not responded at all.
 
-In those cases, go first to [Milestone Delivery Workflow for Solo Service Businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [Approval Owner](/glossary/approval-owner/), or [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/).
+In those cases, go first to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/), [Approval owner](/glossary/approval-owner/), or [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/)
 
 ## Responses that need clarification
 
@@ -37,7 +37,7 @@ Unless your agreement or review rules explicitly say otherwise, do not treat the
 - "looks good so far" or "this is great" in chat,
 - verbal confirmation on a call with no written follow-up,
 - silence after a review window closes,
-- a positive comment from someone who is not the [Approval Owner](/glossary/approval-owner/),
+- a positive comment from someone who is not the [Approval owner](/glossary/approval-owner/),
 - partial feedback that addresses some items but leaves the final decision open.
 
 Positive language without a documented decision leaves the stage open when the workflow requires explicit approval.
@@ -66,7 +66,7 @@ If the billing terms use a different trigger, follow those terms. Do not replace
 
 ## Verify the next-stage trigger
 
-When current-stage approval gates the next stage, confirm that:
+When the next stage depends on current-stage approval, confirm that:
 
 - the approval for the current stage is recorded, not just assumed,
 - any handoff inputs for the next stage are identified,
@@ -87,8 +87,6 @@ A short message works:
 
 > "Can you confirm whether [milestone and version] is approved as delivered, or list the revisions still needed? Once approval is recorded, I can [next step allowed by our agreement]."
 
-The message asks for the decision and gives the client a clear alternative if revisions remain.
-
 ## What to do if approval is genuinely unclear
 
 If the client's response is ambiguous and asking again feels premature:
@@ -97,12 +95,12 @@ If the client's response is ambiguous and asking again feels premature:
 - confirm whether the person who responded is actually the named approval owner,
 - if neither is clear, send a direct clarification request, state what you need, and document the request.
 
-If the review has stayed open long enough that silence is now the main issue, use [FAQ: What Should I Do When a Client Goes Silent During Review?](/faq/what-to-do-when-a-client-goes-silent-during-review/) instead.
+If the review has stayed open long enough that silence is now the main issue, use [FAQ: what should I do when a client goes silent during review?](/faq/what-to-do-when-a-client-goes-silent-during-review/) instead.
 
 ## Continue from the approval state
 
 - If the milestone review stage is still being set up, go to [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - If the approval owner is unclear, go to [Approval owner](/glossary/approval-owner/).
 - If several stakeholders are commenting and no routing rule exists, go to [Approval and feedback routing worksheet for multi-stakeholder review](/templates/approval-and-feedback-routing-worksheet-for-multi-stakeholder-review/).
-- If approval is confirmed and billing is the next step, go to [Invoice and payment workflow setup for freelancers and consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
+- If approval is confirmed and billing is the next step, go to [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/).
 - If the milestone is the final one and closeout is next, go to [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).

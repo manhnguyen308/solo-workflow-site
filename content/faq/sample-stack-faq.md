@@ -1,12 +1,12 @@
 +++
 title = "FAQ: setting up a solo service workflow stack"
 description = "Answer a specific stack setup question, then continue to the workflow, blueprint, or comparison that covers the full decision."
-summary = "Use this FAQ when one stack setup question is blocking a workflow or tool decision."
+summary = "Short answers on tool order, stack size, CRM-first or PM-first operations, and migration risk."
 feature_image = "/images/features/faq/solo-service-workflow-stack-faq.webp"
-feature_image_alt = "Cover titled “Workflow Stack Setup” with a large question mark."
+feature_image_alt = 'Cover titled "Workflow Stack Setup" with a large question mark.'
 draft = false
 date = 2026-03-07T00:00:00Z
-lastmod = 2026-08-08T00:00:00Z
+lastmod = 2026-08-12T00:00:00Z
 slug = "faq-setting-up-a-solo-service-workflow-stack"
 category = "faq"
 tags = ["faq", "setup", "workflow-stack"]
@@ -18,31 +18,31 @@ related = ["/workflows/freelance-client-workflow-system-inquiry-to-final-payment
 featured = false
 +++
 
-Use this FAQ when one stack setup question is blocking a decision. Each answer points to the workflow, blueprint, or comparison that contains the implementation detail.
+Each answer below settles one stack setup question and points to the workflow, blueprint, or comparison that contains the implementation detail.
 
 ## Start with a broader guide when
 
-- the client lifecycle still feels broad and messy,
+- the client lifecycle is not mapped yet,
 - you need a full stack model rather than a short answer,
-- you still cannot tell whether the real problem is workflow design, system center, or tool count.
+- you still cannot tell whether the problem is workflow design, system center, or tool count.
 
-In those cases, go first to [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), or [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+In those cases, go first to [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/), [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/), or [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 For spending limits rather than tool order, use [how to choose a software stack without overbuying tools](/guides/how-to-choose-a-software-stack-without-overbuying-tools/).
 
 ## Should I choose tools before defining my workflow?
 
-No. Define your stage sequence and handoffs first, then pick tool categories that support that flow. Start here: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+No. Define your stage sequence and handoffs first, then pick tool categories that support that flow. Start here: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
 
 ## How many tools should a solo operator start with?
 
-Use the smallest set that gives each responsibility a named home. You need to know where current client status lives, where client communication happens, how billing is handled, and where working files are stored. Plan those responsibilities with [Software stack blueprint: solo freelancer on a lean budget](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+Use the smallest set that gives each responsibility a named home. You need to know where current client status lives, where client communication happens, how billing is handled, and where working files are stored. Plan those responsibilities with [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
 
 The stack is too fragmented when you cannot identify where client status lives or how work advances without checking several places.
 
 ## Should I run CRM-first or PM-first?
 
-If lead management is your bottleneck, start CRM-first. If delivery control is your bottleneck, start PM-first. Compare models here: [CRM vs Project Management Tool for Client Workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+If lead management is your bottleneck, start CRM-first. If delivery control is your bottleneck, start PM-first. Compare models here: [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
 
 If both feel equally messy, map the workflow first. A hybrid setup will not repair an undefined handoff between sales and delivery.
 
@@ -58,9 +58,9 @@ Record the agreed scope, timeline, responsibilities, and payment terms before on
 
 ## How do I make invoice follow-up consistent?
 
-Start with [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) to fix the billing rule, then use the [Invoice and Payment Workflow Checklist for Service Businesses](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to keep the follow-up cadence consistent.
+Start with [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) to fix the billing rule, then use the [Invoice and payment workflow checklist](/templates/invoice-and-payment-workflow-checklist-for-service-businesses/) to keep the follow-up cadence consistent.
 
-If payments are late because milestone completion itself is fuzzy, fix delivery completion rules before changing reminder copy or finance tools.
+If payments are late because milestone completion itself is undefined, fix delivery completion rules before changing reminder copy or finance tools.
 
 ## What if onboarding feels repetitive?
 
@@ -78,7 +78,7 @@ If a task still needs judgment, undocumented exceptions, or frequent rewriting, 
 
 ## Do I need a glossary page before I can make stack decisions?
 
-Use the glossary only when an unclear term is blocking the decision. Read [System of record](/glossary/system-of-record/) to decide where current client truth should live, and [Workflow handoff](/glossary/workflow-handoff/) when a stage boundary is unclear.
+Use the glossary only when an unclear term is blocking the decision. Read [System of record](/glossary/system-of-record/) to decide where current client status should live, and [Workflow handoff](/glossary/workflow-handoff/) when a stage boundary is unclear.
 
 ## What if the problem is process discipline, not tool choice?
 
@@ -86,15 +86,15 @@ Start with the lifecycle workflow, define one stage, and return to the stack dec
 
 ## What if I already have too many places tracking client status?
 
-Treat that as a system-of-record question before adding another tool. Use [System of record](/glossary/system-of-record/) to clarify where current truth should live, then return to [CRM vs project management tool for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if you still need to choose the operating model.
+Treat that as a system-of-record question before adding another tool. Use [System of record](/glossary/system-of-record/) to clarify where current status should live, then return to [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/) if you still need to choose the operating model.
 
 ## Pick the next guide
 
 That depends on the kind of blockage:
 
-- If the client path itself feels unclear, open [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
-- If the issue is stack shape or tool count, open [Software stack blueprint: solo freelancer on a lean budget](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
-- If the issue is where client operations should live, open [CRM vs project management tool for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
-- If the issue is terminology blocking the decision, open [Glossary](/glossary/) and then leave it as soon as the definition is clear.
+- If the client path itself is not mapped yet, open [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/).
+- If the issue is stack shape or tool count, open [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/).
+- If the issue is where client operations should live, open [CRM vs project management for client workflows](/comparisons/crm-vs-project-management-tool-for-client-workflows/).
+- If the issue is terminology blocking the decision, open [Glossary](/glossary/) and return to the decision once the term is clear.
 
 If more than one answer fits, return to the full client workflow or lean stack blueprint before changing the stack.

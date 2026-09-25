@@ -4,10 +4,10 @@ slug = "best-home-for-billing-status-invoicing-tool-vs-system-of-record"
 description = "Decide which billing facts stay authoritative in the invoicing tool and which operational payment states also belong in the client record."
 summary = "Keep invoice detail in the finance system and mirror only the payment state and next action needed to run client work."
 feature_image = "/images/features/comparisons/billing-status-home.webp"
-feature_image_alt = "Cover titled “Best Home for Billing Status” with two options side by side: Invoice tool and System of record."
+feature_image_alt = 'Cover titled "Best Home for Billing Status" with two options side by side: Invoice tool and System of record.'
 draft = false
 date = 2026-04-09T00:00:00Z
-lastmod = 2026-08-07T00:00:00Z
+lastmod = 2026-08-11T00:00:00Z
 category = "workflow-comparisons"
 tags = ["comparison", "billing", "system-of-record", "invoice-workflow"]
 page_type = "comparison"
@@ -21,7 +21,7 @@ featured = false
 
 Keep invoice amount, due date, document, transaction detail, and payment confirmation authoritative in the invoicing or finance system. Also place a limited operational payment state in the main client record when billing changes the next delivery, follow-up, or closeout action.
 
-This is a field-ownership decision. It does not select an invoicing product or define the contractual payment terms.
+It settles field ownership and leaves the choice of invoicing product and the contractual payment terms to other decisions.
 
 ## Separate finance facts from operating facts
 
@@ -64,18 +64,18 @@ Write one rule for each direction:
 4. What happens when a notification or integration fails?
 5. Which action is allowed under the agreement at each state?
 
-A sync does not remove the need for an authority rule.
+Write these rules even if an integration syncs the fields.
 
 ## Respect the agreement
 
-Do not pause work, add fees, treat a project as closed, or change access solely because a generic workflow page suggests it. Follow the signed terms and obtain qualified advice when legal or financial rights are uncertain.
+Pause work, add fees, treat a project as closed, or change access only when the signed terms allow it. Obtain qualified advice when legal or financial rights are uncertain.
 
 The [invoice and payment workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) explains how to connect the status rule to delivery and follow-up. Adapt its examples to the agreement.
 
 ## Put the rule into use
 
 - Document field ownership with the [system-of-record rules worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/).
-- Review approval and billing gates with the [approval and billing readiness checklist](/templates/approval-billing-readiness-checklist/).
+- Check approval and billing conditions with the [approval and billing readiness checklist](/templates/approval-billing-readiness-checklist/).
 - Repair a fragmented record with the [migration guide](/guides/how-to-migrate-from-scattered-tools-to-one-workflow-system/).
 - Return to the [lean stack blueprint](/guides/software-stack-blueprint-solo-freelancer-lean-budget/) if the broader system roles are still unclear.
 

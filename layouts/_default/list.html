@@ -36,12 +36,8 @@
       </div>
       <aside class="article-aside">
         <div class="article-aside-card">
-          <p class="panel-label">Use this page for</p>
+          <p class="panel-label">In brief</p>
           <p>{{ .Params.summary | default .Description | default .Site.Params.siteDescription }}</p>
-        </div>
-        <div class="article-aside-card article-aside-card-soft">
-          <p class="panel-label">What to expect</p>
-          <p>Use the information here to understand the site's standards, limits, or current availability.</p>
         </div>
       </aside>
     </header>
@@ -64,7 +60,7 @@
         {{ with .Content }}<div class="prose prose-lead">{{ . }}</div>{{ end }}
       </div>
       <aside class="section-hero-panel">
-        <p class="panel-label">Start here</p>
+        <p class="panel-label">At a glance</p>
         {{ if .Params.feature_image }}
           {{ with $featureImage }}
           <div class="section-hero-media">
@@ -72,10 +68,6 @@
           </div>
           {{ end }}
         {{ end }}
-        <div class="journey-note">
-          <strong>Choose the page that matches the current decision.</strong>
-          <p>Start with the broadest unresolved question, then move to a more specific guide, template, or checklist.</p>
-        </div>
         <div class="section-stat">
           <span>{{ len .Pages }}</span>
           <p>pages in this section</p>
@@ -95,9 +87,8 @@
     <section class="page-section">
       <div class="wrap">
         <div class="section-heading">
-          <p class="eyebrow">Core starting points</p>
-          <h2>Begin with the core pages in this section</h2>
-          <p>These pages cover the main lifecycle, decision, and implementation paths. Open the relevant one before moving to a narrower page.</p>
+          <p class="eyebrow">Core pages</p>
+          <h2>Open one of these before a narrower page</h2>
         </div>
         <div class="card-grid card-grid-2">
           {{ range $priorityPages }}
@@ -110,8 +101,8 @@
     <section class="page-section">
       <div class="wrap">
         <div class="section-heading">
-          <p class="eyebrow">Recommended entry point</p>
-          <h2>Use the recommended starting point</h2>
+          <p class="eyebrow">Start here</p>
+          <h2>The first page to read in this section</h2>
         </div>
         <div class="featured-grid featured-grid-single">
           {{ partial "page-card.html" (dict "page" $featuredPage "style" "featured") }}
@@ -124,9 +115,8 @@
   <section class="page-section">
     <div class="wrap">
       <div class="section-heading">
-        <p class="eyebrow">More pages in this section</p>
-        <h2>{{ if gt (len $priorityPages) 0 }}Focused guides and practical resources{{ else }}Browse every page{{ end }}</h2>
-        <p>{{ if gt (len $priorityPages) 0 }}Use these when you need a narrower workflow fix, template, checklist, or definition for the same topic.{{ else }}Follow the sequence when it applies, or open the page that matches the current bottleneck.{{ end }}</p>
+        <p class="eyebrow">More in this section</p>
+        <h2>{{ if gt (len $priorityPages) 0 }}Narrower guides for one stage or task{{ else }}Every page in this section{{ end }}</h2>
       </div>
       <div class="card-grid card-grid-2">
         {{ range $rest }}
@@ -139,9 +129,9 @@
   <section class="page-section">
     <div class="wrap">
       <div class="utility-panel">
-        <p class="utility-kicker">Nothing published yet</p>
-        <h2>This section is still being filled out</h2>
-        <p>There are no live pages in this section yet. Start from the homepage or browse another collection for the closest related guidance.</p>
+        <p class="utility-kicker">Empty section</p>
+        <h2>No pages are published here yet</h2>
+        <p>Start from the homepage or open another collection.</p>
       </div>
     </div>
   </section>

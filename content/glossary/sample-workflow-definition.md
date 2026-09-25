@@ -3,10 +3,10 @@ title = "Workflow handoff"
 description = "A workflow handoff is the transfer of responsibility, context, assets, and next-step ownership from one client stage to the next."
 summary = "Define what should transfer between workflow stages and test whether the next owner can begin without reconstructing context."
 feature_image = "/images/features/glossary/workflow-handoff.webp"
-feature_image_alt = "Cover titled “Workflow Handoff” with a definition card for “Stage boundary”."
+feature_image_alt = 'Cover titled "Workflow Handoff" with a definition card for "Stage boundary".'
 draft = false
 date = 2026-03-08T00:00:00Z
-lastmod = 2026-07-06T00:00:00Z
+lastmod = 2026-07-30T00:00:00Z
 category = "glossary"
 tags = ["definition", "workflow-handoff"]
 page_type = "glossary"
@@ -26,7 +26,7 @@ For this guide, a useful handoff transfers three things together:
 
 If any of these are missing, the next owner has to reconstruct context before the stage can move.
 
-## Why this matters for solo operators
+## Handoffs inside a one-person business
 
 Even a solo business has handoffs, such as discovery notes moving into a proposal or an approved milestone moving into invoicing. When one person owns both stages, the record still needs to carry the decision, inputs, and next action forward.
 
@@ -71,7 +71,7 @@ A clean closeout needs more than sending final files. The record should show whi
 
 ## Edge cases and failure modes
 
-- If the same person owns both stages, the handoff still exists. It is just hidden.
+- If the same person owns both stages, the handoff still exists and still needs a record.
 - If the client must provide an approval or asset before the next stage can continue, that dependency is part of the handoff.
 - If a handoff relies on memory or chat history instead of a named record, the next owner may miss context under deadline pressure.
 
@@ -79,7 +79,7 @@ A clean closeout needs more than sending final files. The record should show whi
 
 - Intake to scoping: [How to build a client intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/)
 - Proposal to onboarding: [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/)
-- Start-readiness boundary: [Project start readiness and handoff boundary worksheet for solo operators](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/)
+- Start-readiness boundary: [Project start handoff readiness worksheet](/templates/project-start-readiness-and-handoff-boundary-worksheet-for-solo-operators/)
 - Full lifecycle context: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
 
 ## Repair a recurring handoff problem
@@ -88,5 +88,3 @@ If weak handoffs recur, tighten the stage boundary:
 - Start with [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/) for the full sequence.
 - Use [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/) for the proposal-to-onboarding transition.
 - Use [Client onboarding checklist for freelancers and consultants](/templates/client-onboarding-checklist-for-freelancers-and-consultants/) after the handoff rule is clear and you need an execution check.
-
-Once the definition is clear, return to the stage or handoff that needs repair.

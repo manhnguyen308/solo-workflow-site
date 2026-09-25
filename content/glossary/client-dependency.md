@@ -3,7 +3,7 @@ title = "Client dependency"
 description = "A client dependency is any input, approval, asset, or decision the client must provide before a workflow stage can move forward."
 summary = "Define a missing client input, name its owner and effect, and route it to the workflow stage that cannot continue."
 feature_image = "/images/features/glossary/client-dependency.webp"
-feature_image_alt = "Cover titled “Client Dependency” with a definition card for “Required input”."
+feature_image_alt = 'Cover titled "Client Dependency" with a definition card for "Required input".'
 draft = false
 date = 2026-04-13T00:00:00Z
 lastmod = 2026-07-10T00:00:00Z
@@ -50,8 +50,8 @@ If waiting is no longer a neutral state, use the [Escalation and pause-state wor
 
 ## Match the dependency to the stage
 
-- For a missing proposal decision or signature input, use [Proposal revision and approval workflow for freelancers and solo service businesses](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
+- For a missing proposal decision or signature input, use [Proposal revision and approval workflow](/workflows/proposal-revision-and-approval-workflow-for-freelancers-and-solo-service-businesses/).
 - For access or assets needed before kickoff, use [Client onboarding workflow for freelancers and consultants](/workflows/client-onboarding-workflow-for-freelancers-and-consultants/).
 - For an input blocking active work, use [Milestone delivery workflow for solo service businesses](/workflows/milestone-delivery-workflow-for-solo-service-businesses/).
 - For a final signoff or handoff input, use [Client offboarding workflow for freelancers and solo service businesses](/workflows/client-offboarding-workflow-for-freelancers-and-solo-service-businesses/).
-- For the communication sequence after an input is late, use [FAQ: What should I do when required client inputs are late or incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/).
+- For the communication sequence after an input is late, use [FAQ: what should I do when required client inputs are late or incomplete?](/faq/what-to-do-when-required-client-inputs-are-late-or-incomplete/)

@@ -3,7 +3,7 @@ title = "Workflow tool comparisons for solo operators"
 description = "Resolve one workflow or system choice at a time, including record ownership, stack shape, delivery workspace, review, billing, and booking."
 summary = "Choose the comparison that matches one unresolved decision, make the choice, and continue to the relevant workflow or implementation guide."
 feature_image = "/images/features/hubs/workflow-comparisons.webp"
-feature_image_alt = "Cover titled “Workflow Tool Comparisons” with tiles for CRM vs PM, Notion vs ClickUp, Booking tools, and Billing home."
+feature_image_alt = 'Cover titled "Workflow Tool Comparisons" with tiles for CRM vs PM, Notion vs ClickUp, Booking tools, and Billing home.'
 +++
 
 Use a comparison after you can name one unresolved workflow or system choice. If the client process itself is still unclear, begin with the [freelance client workflow system](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If you need a complete stack model, use the [software stack blueprints](/software-stack-blueprints/).
@@ -12,7 +12,7 @@ Use a comparison after you can name one unresolved workflow or system choice. If
 
 | Decision | Comparison |
 |---|---|
-| Which kind of system should hold active client truth? | [CRM versus project management](/comparisons/crm-vs-project-management-tool-for-client-workflows/) |
+| Which kind of system should hold active client status? | [CRM versus project management](/comparisons/crm-vs-project-management-tool-for-client-workflows/) |
 | Should functions remain in one workspace or split across tools? | [All-in-one workspace versus specialized stack](/comparisons/all-in-one-workspace-vs-specialized-stack-for-solo-operators/) |
 | Which delivery workspace model fits the operating rules? | [Notion versus ClickUp](/comparisons/notion-vs-clickup-for-solo-client-delivery/) |
 | Should deliverables and approvals stay in email or move to a portal? | [Email versus client portal](/comparisons/email-vs-client-portal-for-deliverables-and-approvals/) |
@@ -23,7 +23,7 @@ Use a comparison after you can name one unresolved workflow or system choice. If
 
 Start with the system center when that question is open. Then decide the broader stack shape. Delivery workspace, approval channel, billing visibility, and booking structure come later because each depends on an operating model that is already defined.
 
-A narrow comparison cannot settle an earlier question. If two options both look wrong, return to the workflow or blueprint instead of opening more comparisons.
+If both options look wrong, the open question is probably an earlier one. Return to the workflow or blueprint instead of opening more comparisons.
 
 ## Record the outcome
 
@@ -45,5 +45,3 @@ Product features, prices, and plan limits can change. Follow the primary-source 
 - Use the [client status update workflow](/workflows/client-status-update-workflow-for-freelancers-and-consultants/) after deciding where review communication belongs.
 - Use the [invoice and payment workflow](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) after defining billing visibility.
 - Use the [intake and qualification workflow](/workflows/how-to-build-a-client-intake-and-qualification-workflow/) after deciding how scheduling should work.
-
-Record the selected model, accepted tradeoff, owner, and next action before moving to implementation.

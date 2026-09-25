@@ -3,12 +3,12 @@ title = "Software stack blueprints for solo operators"
 description = "Choose a lean operating stack, set buying boundaries, plan a two-person setup, or consolidate tools after the client workflow is clear."
 summary = "Choose a stack model after the workflow is clear, then use the guide that matches setup, delegation, purchase, or migration work."
 feature_image = "/images/features/hubs/software-stack-blueprints.webp"
-feature_image_alt = "Cover titled “Software Stack Blueprints” with tiles for Lean stack, VA setup, Overbuying, and Migration."
+feature_image_alt = 'Cover titled "Software Stack Blueprints" with tiles for Lean stack, VA setup, Overbuying, and Migration.'
 +++
 
-Use this collection after you can describe the client workflow and the remaining problem is how systems should support it. A blueprint defines tool roles, ownership, and upgrade conditions. It is not a shopping list.
+Open a blueprint once you can describe the client workflow and the remaining problem is how systems should support it. A blueprint defines tool roles, ownership, and upgrade conditions.
 
-If intake, delivery, approval, billing, or closeout still feels undefined, begin with the [freelance client workflow system](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If you have not decided whether a CRM or project-management system should hold active client truth, resolve the [CRM versus project-management decision](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before implementing a stack.
+If intake, delivery, approval, billing, or closeout is still undefined, begin with the [freelance client workflow system](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/). If you have not decided whether a CRM or project-management system should hold active client status, resolve the [CRM versus project-management decision](/comparisons/crm-vs-project-management-tool-for-client-workflows/) before implementing a stack.
 
 ## Choose by the work in front of you
 
@@ -31,7 +31,7 @@ Write down:
 - the tool roles already paid for;
 - the condition that would justify adding another system.
 
-A new tool cannot settle an ownership rule. If two systems both appear to own current client status, document the boundary with the [system-of-record rules worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/).
+If two systems both appear to own current client status, document the boundary before adding a tool. Use the [system-of-record rules worksheet](/templates/system-of-record-rules-worksheet-for-solo-operators/).
 
 ## Follow the path that matches the change
 

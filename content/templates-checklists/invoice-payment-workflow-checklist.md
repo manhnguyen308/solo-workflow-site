@@ -3,10 +3,10 @@ title = "Invoice and payment workflow checklist"
 description = "An invoice and payment checklist for recording agreed billing triggers, invoice details, payment status, follow-up terms, and closeout actions."
 summary = "Tie each invoice and follow-up action to the project's agreement, recorded billing trigger, due date, and payment status."
 feature_image = "/images/features/templates/invoice-payment-checklist.webp"
-feature_image_alt = "Cover titled “Invoice and Payment Checklist” with a checklist drawing."
+feature_image_alt = 'Cover titled "Invoice and Payment Checklist" with a checklist drawing.'
 draft = false
 date = 2026-03-15T00:00:00Z
-lastmod = 2026-08-29T00:00:00Z
+lastmod = 2026-09-11T00:00:00Z
 slug = "invoice-and-payment-workflow-checklist-for-service-businesses"
 category = "templates-checklists"
 tags = ["invoicing", "payments", "cash-flow", "checklist"]
@@ -18,37 +18,21 @@ related = ["/workflows/proposal-to-contract-handoff-workflow-setup/", "/workflow
 featured = true
 +++
 
-Use this checklist to connect each invoice and follow-up action to the applicable agreement, the project's recorded billing trigger, and the authoritative payment-status record.
+This checklist connects each invoice and follow-up action to the applicable agreement, the project's recorded billing trigger, and the authoritative payment-status record.
 
 The examples here are operating examples, not legal, accounting, tax, collection, or contract advice. Use the payment terms, notice rules, and remedies in your agreement, together with any professional guidance that applies to your work.
 
-If you are still deciding when invoices should trigger, where billing status should stay visible, or how milestone completion should work, read [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/) first.
-
-## Run the billing rules already agreed
-
-Use this page to run a billing process that already has defined triggers, ownership, and follow-up rhythm. It is for execution consistency once the underlying billing rule is settled.
-
-## Set policy and contract terms elsewhere
-
-Do not use this checklist to decide your payment policy, redesign milestone acceptance, or choose where invoice truth should live. Those are broader workflow or stack decisions.
+The checklist runs billing rules that are already set. It does not set payment policy, milestone acceptance, or where invoice status lives.
 
 ## Clarify the billing rule first when
 
 - you still debate what counts as invoice-ready,
 - delivery approval is still vague,
 - payment status disappears between tools,
+- nobody owns follow-up,
 - the contract handoff still leaves billing triggers unclear.
 
-Go back first to [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/), [Best Home for Billing Status: Invoicing Tool vs System of Record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/), or [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
-
-## Information to have before invoicing
-
-- what event actually triggers each invoice,
-- where payment status is authoritative,
-- who owns follow-up,
-- how billing connects back to delivery records.
-
-If those rules are still vague, this checklist is too early.
+Settle those first with [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/), [Billing status: invoicing tool or system of record](/comparisons/best-home-for-billing-status-invoicing-tool-vs-system-of-record/), or [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
 ## Phase 1: before work starts
 
@@ -57,7 +41,7 @@ If those rules are still vague, this checklist is too early.
 - Confirm accepted payment methods.
 - Confirm late-payment policy.
 
-If these are unclear, fix contract handoff first: [Proposal-to-Contract Handoff Workflow Setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
+If these are unclear, fix contract handoff first: [Proposal-to-contract handoff workflow setup](/workflows/proposal-to-contract-handoff-workflow-setup/).
 
 ## Phase 2: before sending each invoice
 
@@ -99,8 +83,6 @@ Use a simple structure for payment follow-up:
 - payment link or method,
 - request for status confirmation if payment timing changed.
 
-Keep the first reminder clear and factual.
-
 ## Billing record gaps to catch
 
 - Invoices sent without evidence of the agreed billing trigger.
@@ -114,7 +96,9 @@ Keep the first reminder clear and factual.
 - If part of the project is paused by the client, document whether billing pauses too or continues based on the contract.
 - If approval is the billing trigger and the client responds in chat, check that the response meets the agreed approval rule. Clarify ambiguous wording and link the qualifying response in your system of record before invoicing.
 
-## A complete billing record includes
+## Billing record check
+
+The record is complete when:
 
 - invoice trigger is documented,
 - invoice status is visible,
@@ -123,10 +107,10 @@ Keep the first reminder clear and factual.
 
 ## Guides for billing triggers and records
 
-- End-to-end workflow context: [Freelance Client Workflow System: Inquiry to Final Payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
-- Billing workflow rule: [Invoice and Payment Workflow Setup for Freelancers and Consultants](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
-- Weekly operations review routine: [Weekly Client Operations Checklist for Solo Service Businesses](/templates/weekly-client-operations-checklist-solo-business/)
-- Lean stack planning: [Software Stack Blueprint: Solo Freelancer (Lean Budget)](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
+- End-to-end workflow context: [Freelance client workflow system: inquiry to final payment](/workflows/freelance-client-workflow-system-inquiry-to-final-payment/)
+- Billing workflow rule: [Invoice and payment workflow setup](/workflows/invoice-and-payment-workflow-setup-for-freelancers-and-consultants/)
+- Weekly operations review routine: [Weekly client operations checklist](/templates/weekly-client-operations-checklist-solo-business/)
+- Lean stack planning: [Lean software stack blueprint for solo freelancers](/guides/software-stack-blueprint-solo-freelancer-lean-budget/)
 
 ## If the same billing gap returns
 
