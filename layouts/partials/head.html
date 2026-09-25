@@ -180,20 +180,8 @@
 
 {{ if not .IsHome }}
   {{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" $siteTitle "item" .Site.Home.Permalink) }}
-  {{ $position := 2 }}
-  {{ if .IsPage }}
-    {{ with .CurrentSection }}
-      {{ if and (ne .Permalink $.Permalink) (not .IsHome) }}
-        {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) }}
-        {{ $position = add $position 1 }}
-      {{ end }}
-    {{ end }}
-  {{ else if eq .Kind "section" }}
-    {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) }}
-    {{ $position = add $position 1 }}
-  {{ end }}
-  {{ if and (ne .Kind "section") (ne .Kind "taxonomy") (ne .Kind "term") }}
-    {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" $position "name" .Title "item" .Permalink) }}
+  {{ range $i, $item := partial "breadcrumb-items.html" . }}
+    {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" (add $i 2) "name" $item.name "item" $item.url) }}
   {{ end }}
   {{ if gt (len $crumbs) 1 }}
   <script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $crumbs | jsonify | safeJS }}</script>

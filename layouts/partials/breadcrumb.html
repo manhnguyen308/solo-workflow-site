@@ -1,0 +1,16 @@
+{{- $items := partial "breadcrumb-items.html" . -}}
+{{- if $items -}}
+{{- $last := sub (len $items) 1 -}}
+<nav class="wrap breadcrumb" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ "/" | relURL }}" data-track="breadcrumb_click" data-track-location="breadcrumb" data-track-label="home">Home</a></li>
+    {{- range $i, $item := $items }}
+    {{- if eq $i $last }}
+    <li class="breadcrumb-current{{ if gt $last 0 }} breadcrumb-current-page{{ end }}"><span aria-current="page">{{ $item.name }}</span></li>
+    {{- else }}
+    <li><a href="{{ $item.rel }}" data-track="breadcrumb_click" data-track-location="breadcrumb" data-track-label="{{ $item.name | urlize }}">{{ $item.name }}</a></li>
+    {{- end }}
+    {{- end }}
+  </ol>
+</nav>
+{{- end -}}

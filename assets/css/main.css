@@ -3640,3 +3640,64 @@ body[data-page-trust="true"] .section-hero-copy .hero-summary {
   margin: 1.5rem 0 0;
   max-width: 42rem;
 }
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 0.85rem 0 0.7rem;
+  font-family: var(--font-ui);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--ink-mid);
+}
+
+.breadcrumb ol {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.breadcrumb li + li::before {
+  content: "\203A";
+  margin: 0 0.5rem;
+  color: var(--ink-quiet);
+}
+
+.breadcrumb a {
+  display: inline-block;
+  padding: 0.15rem 0;
+  color: var(--ink-mid);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+}
+
+.breadcrumb a:hover {
+  color: var(--editorial-accent);
+  text-decoration-color: currentColor;
+}
+
+.breadcrumb .breadcrumb-current {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.breadcrumb-current span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 640px) {
+  .breadcrumb .breadcrumb-current-page {
+    display: none;
+  }
+}

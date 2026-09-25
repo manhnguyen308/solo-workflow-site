@@ -1,0 +1,26 @@
+{{- /* Trail items after Home, shared by the visible breadcrumb and the BreadcrumbList schema. Sections use their short main-menu name when they have one. */ -}}
+{{- $items := slice -}}
+{{- $section := false -}}
+{{- if .IsPage -}}
+  {{- with .CurrentSection -}}
+    {{- if and (ne .Permalink $.Permalink) (not .IsHome) -}}
+      {{- $section = . -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if eq .Kind "section" -}}
+  {{- $section = . -}}
+{{- end -}}
+{{- with $section -}}
+  {{- $name := .Title -}}
+  {{- $rel := .RelPermalink -}}
+  {{- range site.Menus.main -}}
+    {{- if eq .URL $rel -}}
+      {{- $name = .Name -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "name" $name "url" .Permalink "rel" .RelPermalink) -}}
+{{- end -}}
+{{- if and (not .IsHome) (ne .Kind "section") (ne .Kind "taxonomy") (ne .Kind "term") -}}
+  {{- $items = $items | append (dict "name" .Title "url" .Permalink "rel" .RelPermalink) -}}
+{{- end -}}
+{{- return $items -}}
